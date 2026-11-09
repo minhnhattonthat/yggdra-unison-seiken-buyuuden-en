@@ -35,6 +35,15 @@
 - MESSAGE%03d: `0x02078760(file, r1, r2, r3, [sp])`, ~70 call sites in arm9 and overlays 10-19 (per-scene events).
   Seen: faction select confirm -> MESSAGE000, card select -> 008, sortie -> 009.
 - SPMES%03d%03d: `0x020771FC`, numbers from bytes at `*(battle+0x34)`, `*(battle+0x38)` (battle object from 0x0206F9D4).
+  These are **duel events**: the duel init 0x0206F1E0 stores the two units at +0x34/+0x38 and asks 0x02077134(a, b, 0)
+  (modes 1/2 at 0x02076728.. during the duel); yes -> 0x02077910 creates the event task. Numbers = unit ids (guess).
+- **Forcing battle-only screens** (`tools/lua/spmes.lua`, from work/states/battle.dst, route `100 -;10 t16,152;600 -`
+  = tap your own castle): the CAUTION draw call (BL at 0x02010BA4) is patched once into BL CALL. Default CALL
+  0x02077910 + `SPA/SPB` = any SPMES file (DUEL EVENT box); `CALL=0x02080388` (+ tips.lua `TIP=n`) = HINT! popup;
+  `CALL=0x02081350 R0=8` = YOU WIN + War Result page. DeSmuME: `setregister("arm9.r15")` does not redirect, and
+  `memory.registerexec` keeps one callback per address (two scripts hooking one address: the last wins).
+- Battle moves (unverified): dragging from the unit (play.py presses with `--gap 0`) draws a 2-square path box; a tap
+  on its end square spent 2 TIME but the unit did not visibly move (work/play/tour_bt3 0006-0007).
 - File open by name: 0x0200A540 (r0 = name); warp.lua waits on it for the epilogue (EPI_MES_nn) and credits (STAFFROLL).
 
 ## Input facts

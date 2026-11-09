@@ -186,7 +186,9 @@ POOLS = [  # (image, start, end, font); end = after the last FF. Found by tools/
 ]
 
 
-ITEM_RECS = (0x1006A0, 221, 0x18)  # arm9 item records: +8 name (sys), +C name (FONT_ITEM), +10 effect, +14 who
+# arm9 item records: +8 name (sys), +C name (FONT_ITEM), +10 effect, +14 who. The first record's +0..+7 overlap the
+# tail of the string before the table ("CNAMEB%03d"): only +8.. are read; 4 records before 0x1006A0 (蒼リンゴ ...).
+ITEM_RECS = (0x100640, 225, 0x18)
 
 
 def item_strings(arm9):

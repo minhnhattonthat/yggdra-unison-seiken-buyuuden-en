@@ -1,120 +1,44 @@
 # Status
 
-Updated at the end of every session. Keep it to what the next session needs; history is in git.
+Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
+phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text packed; submenus toured and
-  measured; every table field placed by code, docs/re/windows.md; left: see "Next (phase 5 session 7)").
-- **Phase 5 session 6 (2026-11-10):**
-  - Extractor blind spot fixed: one-glyph pool strings before the arm9 pool (8F980 ・ territory dots, 8F984 …
-    medallion, 8F988 P battle results) and ov9_06:3ED4 — (text.POOLS starts moved; pool-edge pointer sweep of every
-    image found nothing else). Excluded: ov9_18:3734 "0" (A2 FF, read with struct bytes 3736-373F; A2 stays 0 in
-    the English font).
-  - Unit names (F5380+0) and card names (A7E44+0) are drawn only inside 0x020132E0 composites: info band 0x0200FC88
-    (= ctr 0x020102F8, same band as save / card select), medallion centred line, explore line x 30 y 27. 7 new
-    composites in windows.json. F5380+4, F5B88+0, A7E44+4: no code reads these fields (status "unread").
-  - Battle tips 100500: task 0x0207FD6C (centred, panel x 21, 200 x 2, status "code"), started by 0x02080388 at
-    battle turn start (state machine 0x0207CE20, byte [r4+1] 0xE / 9). `tools/lua/tips.lua` forces the
-    [0x0210E6BB] < 5 check, but no warp/tour state reaches turn start. Battle results labels 100554 (x 40, value
-    x 197): code budget 150.
-  - Marker build sha1 553d3bc6 (smoke ok). States not regenerated (only data strings added).
-- **Next (phase 5 session 7):** debug tool: reach battle turn start / battle results (start the battle from the
-  deploy phase; tour_bt taps) -> see the tip popup and results, turn their "code" rules into measured ones; tour
-  explore unit select (tour_ex2: merchant dialogue needs taps at the box, t128,140 x many ended the explore into
-  turn end) for the info-band composites; then close phase 5 (battle SPMES box stays a guess = debug-tool gap,
-  phase 8). Status values in windows.json: measured / code / composite / unread / guess.
-- **Phase 5 session 5 (2026-11-10):**
-  - Toured + measured (windows.json, windows.md table): battle (sortie hint, CAUTION band, SELECT menu data pages,
-    duel labels), territory composites, explore help pages, war data, medallion line + Get Item! popup, war report
-    event line, faction conditions page + unlock message, save prompts, in-game HELP popup (F79D8). Battle menu =
-    SELECT; L = unit panel (textures); tap the pen cursor = sortie unit list.
-  - `lint.py` composites: windows.json `composites` (ids, `table:START+F`, `'0` literal), every combination checked.
-  - `tools/lua/unlock.lua` (new-unlock bits) shows the faction unlock message; help popups need OK on the new-game
-    help prompt (tour_hp).
-  - Marker build artefact, not a bug: marker dialogue lines (unfilled, ~2x the box) overrun the dialogue's 32 glyph
-    slots into system slots 32+ (war report: event line glyphs replaced dialogue line 2). Real lines <= 142 px x 2
-    use <= 20 cells. JP build (yggdra_en) same frame is clean (work/qa/wrchk).
-  - **Phase 7 to-do:** faction conditions header digit at fixed x 162 (ov9_18 near 0x0211EE48, immediate: set it
-    after translation); option menu 0x0201038C centring by glyph count (unlock message line 2 at x 46): centre by px.
-  - Last marker build after the new rules: sha1 f75355a9 (smoke ok); states regenerated from it, 35/35.
-    HELP popup at the new 210 px x 3 fill fits inside its frame (work/play/tour_hp2 0004).
-- **Next (phase 5 rest):** find where unit names (F5380 +0/+4), class names (F5B88), card names/one-liners (A7E44)
-  are drawn as system text (tours showed only textures: try explore unit select ov9_13 x 32/x 30, prize popup ov9_12,
-  card select info); extras ov9_06 menus (48 labels: card/sound/item dictionaries); 100500 battle tips; battle SPMES
-  box (debug-tool gap). Then re-tour a few changed boxes on the new marker build (help popup, data pages) to confirm
-  the new px fill fits, and close phase 5.
-- **Phase 5 session 4 (2026-11-10):**
-  - Tour kit: `tools/tour.py` (play.py step + systrace log per screen), `tools/drawsites.py` (all 106 system-text
-    call sites, constant x/y), `tools/ptrtables.py` (string -> data table + field; lint rule key `"table"`),
-    `tools/lua/extras_all.lua` (opens every card / sound / item entry: bits 0x0210E6F8..0x0210E71F).
-  - Measured (windows.json): item name 168 (encyclopedia, smaller than the prize list), item effect 200 x 2, equip
-    195, territory name 200, encyclopedia labels, BGM label 66, tutorial titles 130, descriptions 204 x 3.
-  - Card select / card dictionary panels (不明, 未鑑定, timing / condition / effect) are CDS_* textures.
-  - **Gotcha:** after a savestate load DeSmuME shots stay flat grey ~125 frames: play.py `--wait 60+` (tour.py
-    defaults 90).
-  - Battle (tour_bt): the diamond button and START did nothing in the paused pre-battle state; find how to open
-    the battle menu / unit info (arm9 0x02080D88.. run sites x 40/197 y 48-133 = a status panel; 0x0208BB9C.. x 20
-    y 38 = data pages 武器相性 / 地形相性 / 記録).
-- **Next as of session 4 (mostly done in session 5):** tour with tools/tour.py: battle menus + unit panel; sortie map (territory / faction
-  names); territory ov9_14, explore ov9_13, medallion ov9_10, prize popup ov9_12, turn end ov9_02, war report
-  ov9_08, faction select ov9_18 (unlock text), save/load ov9_19; then card names/one-liners (A7E44), unit names
-  (F5380), class names (F5B88), F79D8 help strings. Rebuild the marker (new px) and regen states after.
-  Last builds (2026-11-10 02:22): `build/yggdra_en.nds` sha1 bf09f342 (fonts + VWF + packing, Japanese text, smoke
-  ok); `build/yggdra_marker.nds` sha1 c59da449 (smoke ok). States in work/states/ regenerated from that marker build.
-- **Phase 5 session 3 (2026-11-10):**
-  - **System text packed into 16 px cells** (engine.py `pack_run`/`pack_ctr` replace 0x02012DF4/0x020130AC; per-slot
-    key cache `codes[slot] = 0xC000|key`, `slotkey[]`; slots past the pool cap not drawn; FC handled at real px;
-    docs/re/text.md). 0x02013224 glyph count -> `count11` = ceil(px / 11) (overlay callers lay out 11 x n).
-    35/35 warps; help bands, card_select, prize list, char_intro stats render. Profile ticker: every profile at
-    900 px = 89/128 slots, scrolls through and restarts (work/qa/gate/tick3; was a crash at 130 chars).
-  - `tools/blcalls.py TARGET [N]`: every BL to an address in arm9 + overlays with the next N instructions.
-  - Prize item popup (FONT_ITEM name x 23 y 116, effects x 40 y 132 / x 3 y 167, ov9_12 0x0211EF00.., z 0x294,
-    alpha 0x1ff9770(0xA)): systrace logs it drawn on any tap (item row, decide button), but no frame shows it: tap,
-    120-frame hold, every-2-frames shots, decide, drag to the unit all tried (work/play/prize3). Next try: find who
-    calls that ov9_12 function and its state flag (`tools/lua/callers.lua`), or the 3D poly/alpha attrs.
-- **Phase 5 session 2 (2026-11-10):**
-  - **System-string relocation done** (`tools/sysreloc.py`, docs/re/text.md): fits -> in place, else EXTRA block =
-    new arm9 autoload section at 0x02123460 + main arena lo raised (OS_GetInitArenaLo literals, engine.ARENA_LO;
-    ITCM arena lo raised past the VWF hooks too). Marker build relocates all 1,625 (39 KB) and reaches 35/35 warps.
-  - Who draws what: `tools/lua/systrace.lua` + `tools/sysmap.py` (27 ids on landing screens); regen.py takes
-    `--qa DIR --script X.lua --var N=V` for probe runs (states untouched).
-  - Measured (windows.json/windows.md): centred help + CONFIRM bands 240 px x 3; prize list item names 208 px
-    (lint rule key `item` = item record field); profile ticker (ov9_07) is a slot limit: 82 chars ok, 130 crash.
-- **Next (phase 5, rest), in order:** (1) tour the submenus with play.py + systrace and turn each guess rule into
-  a measured one (prize item popup, above; help menu ov9_03; extras ov9_06 + unlocks ov9_18; explore help pages
-  arm9 0x958EC+; save prompts ov9_15/19; medallion line arm9:9222C). Centred option menu at 0x0201038C centres by
-  a stored glyph count (r5+0x12) with an 11 x n highlight bar: check it on screen, centre by px if off.
-  (2) battle SPMES box (debug-tool gap). (3) FONT_ITEM look. (4) maybe redraw p/q. Packed cells at x < -12 are
-  culled by 0x02012C10 (ticker left edge loses up to 4 px early): cosmetic.
-- **Seen this session:** faction_select top screen (王都パルティナを中心に..., 領主, 領土数, 難易度), save/load band
-  (セーブファイルを選択してください) and turn_end buttons stay Japanese in the marker build: textures (check graphics.md
-  survey covers them).
-- **Phase 5 session 1 (2026-11-10):**
-  - Clipped dialogue letters in old warp shots were a stale savestate (old code); cold boot is clean. Always regen.
-  - Width gate: `docs/re/windows.md` + `script/windows.json` (budgets per id regex, measured/guess) read by
-    `tools/lint.py` (now in `tools/check.py`: encodable, no Japanese, lines, px). Measured: MESSAGE bubbles 142 px x 2
-    (portrait left and right), SPMES_TRE box 184 x 2, TUTO 144 x 2, EDMES paragraphs 208 x 4. Verified by
-    `sh tools/debug/widthgate.sh` (stress build `build/yggdra_gate.nds`, `MARKER_QA="ID=#px x lines|ID=text"`
-    in tools/marker.py, shots work/qa/gate/). Torture line (all 82 glyphs, double spaces) ok.
-  - EDMES paragraphs had no VWF (ov9_15 advanced x by a fixed 11): hooked (`engine.OV_SITES`, `ov_adv`), test added.
-  - jp_left on the marker build (`tools/ptrslots.py` -> `--slots`): found 6 explore help pages after arm9 pool 2
-    (pool end 0x958EB -> 0x95C09); script re-dumped (arm9 1,389 strings). Every other arm9/overlay hit is code or
-    table noise (ov9_06 0x427A = kana sort table, not text). DATA.SFS non-script files not scanned (no pointer form known).
-  - New helpers: `tools/rowscan.py` (box edges in px), `tools/lua/callers.lua` (distinct callers of a function).
-  - Still open from session 1: tutorial yellow description at x 50; item names exist twice (sys +8 and item +C):
-    translate them as one.
-- **Seen in the tours, graphics phase:** dialogue name tags = CNAMEC%02d textures; battle HUD 王国軍/残存戦力, turn-end,
-  tutorial and extras buttons, epithet title bar (ED_H), faction prologue / epilogue / card / banner text: textures
-  (graphics.md).
-- **Phase 4 end (2026-11-10):** FONT_ITEM read (326/330, `tbl/jp_item.tbl`); 221 item-name rows `"font": "item"`;
-  4-byte data block at arm9 0x8F9C0 split off (`text.POOL_DATA`); 22 FONT_SYSTEM/END kanji misreads fixed.
-  `tools/text.py dump [--force]` writes `script/` (message 221 files / 7,920 strings, spmes 407 / 3,348, tuto 28 / 214,
-  edmes 38 / 612, system 10 images / 1,625). Encoding, fonts, kanji: docs/re/text.md.
-- **Done:** Step 0, phases 1-4 (recon docs/re/, warp tool 35 scenes, identity build, extract + roundtrip tests).
-- **Debug-tool gaps (add before phase 8 QA):** game over; stage/SPMES selector and per-faction battles (battle warp
-  stops on the map, no event dialogue); specific MESSAGE events (`MSG=n`, untested on screen); 38 EDMES ending
-  variants and 10 more epilogues; faction 5 has no start territory. `work/play/tuto` is a play.py session (original
-  ROM) inside the tutorial; widthgate.sh replays its presses from work/states/tutorial.dst.
-- **Later phases, known work:** 4x4 texture encoder; system-string relocation; SPMES_WR sentence fragments;
-  alpha-format textures (QUEST, PRIZE, PRISONER, *_TGA, WARRESULT) to shoot for graphics.md.
+- **Phase:** 6. Translate (not started; width gate closed, every string has a budget in script/windows.json).
+- **Phase 5 done (2026-11-10, session 7):**
+  - Width gate closed: 0 strings on a guessed budget (lint). 13,399 strings measured on screen, 60 from code (x/y
+    constants: small separators, medallion popups, extras prompts, sound titles, tutorial scroll text), 150 composite
+    parts (the composite rule in `composites` governs), 114 in fields no code reads (unit epithet F5380+4, class
+    F5B88, card one-liner A7E44+4: screens use textures). Tables: docs/re/windows.md.
+  - Battle SPMES (3,337 strings) measured: DUEL EVENT box 184 x 2, `#184x2` verified (widthgate.sh now forces
+    SPMES001014 via `tools/lua/spmes.lua`). HINT! tips 220 x 2, War Result labels 120, EDMES epithet one-liners 150
+    (bottom 戦績 page, x 102), MESSAGE168 142 x 2.
+  - `tools/lua/spmes.lua`: patches the CAUTION BL (tap own castle) into a call: SPMES file (SPA/SPB), tip popup
+    (CALL=0x02080388 + tips.lua TIP=n), YOU WIN + results (CALL=0x02081350 R0=8). docs/re/scenes.md.
+  - `tools/strcalls.py ID..`: each load of a string address + the BLs after it (run / ctr / band / CAUTION / join):
+    classified the guessed system strings statically.
+  - Extractor fix: item records start at 0x100640 (225, not 221): 4 FONT_ITEM names were decoded as system kana
+    noise (しさうす...), now item font; FONT_ITEM 0x0D 開, 0x0F ず read. Script re-dumped, test updated.
+  - Builds 2026-11-10 03:56: `build/yggdra_en.nds` sha1 bf09f342 (smoke ok, Japanese text); `build/yggdra_marker.nds`
+    sha1 3906c0e9 (smoke ok). States regenerated from that marker build, 35/35.
+- **Next (phase 6):** translate per references/translation.md with the `.claude/agents/translator` type (briefs:
+  docs/translator-brief.md etc. as the skill sets up; glossary.md first: official Atlus Yggdra Union names, D2).
+  Translate as sets: item name +8 and its FONT_ITEM twin +C alike; SPMES_WR fragments; composites (lint checks every
+  combination); EDMES epithet one-liner = ED_N/ED_H texture wording (graphics phase).
+- **Phase 7 to-do (engine/insert):**
+  - 0x02013274 per-line glyph counts x 11 centre the HINT! tips (0x02080258 / 0x020802E8) and the medallion line
+    (ov9_10 0x0211C004): make it px-based like count11 (0x02013224), else English sits left of centre.
+  - Option menu 0x0201038C centres by a stored glyph count (unlock message line 2 at x 46): centre by px.
+  - Faction conditions header count digit at fixed x 162 (ov9_18 near 0x0211EE48, an immediate): set after translation.
+  - Item encyclopedia value x 46 after レア：/装備： is hard-coded in ov9_06: move it if the English labels need more.
+- **Debug-tool gaps (add before phase 8 QA):** game over; real battle play (moves: drag + tap, unverified); specific
+  MESSAGE events (`MSG=n`, untested on screen); 38 EDMES ending variants and 10 more epilogues; faction 5 has no
+  start territory; explore unit-select info-band composites not seen on screen (budget = the measured band).
+  `work/play/tuto` is a play.py session inside the tutorial; widthgate.sh replays it from work/states/tutorial.dst.
+- **Later phases, known work:** 4x4 texture encoder; SPMES_WR sentence fragments; alpha-format textures (QUEST,
+  PRIZE, PRISONER, *_TGA, WARRESULT) to shoot for graphics.md; textures seen Japanese in tours (faction_select top,
+  save/load band, turn_end buttons, battle HUD, name tags CNAMEC, ED_H/ED_N epithets): graphics.md; lowercase p/q
+  maybe redrawn (no descender room).
+- **Gotchas this session** (docs/skill-gotchas.md): states from an older build hang the emulator on the first touch
+  (regen after every build); DeSmuME registerexec = one callback per address; setregister r15 does not jump.
 - **Open bugs:** none.
 - **Waiting on the user:** nothing.

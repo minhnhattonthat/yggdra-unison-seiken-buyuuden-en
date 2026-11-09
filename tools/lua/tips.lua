@@ -16,6 +16,10 @@ if TIP then
   L.on_exec(0x020803D0, function() memory.setregister("arm9.r4", TIP) end)
 end
 L.on_exec(0x02080388, function() L.log("tip task start") end)
+-- battle banner / cut-in task (0x0207CEFC, r0 = type; its end hook 0x0207CE20: 0xE / 9 turn start, 8 results)
+L.on_exec(0x0207CEFC, function() L.log(string.format("banner %d", memory.getregister("arm9.r0"))) end)
+L.on_exec(0x0208119C, function() L.log("results task") end)
+-- No real turn start in reach: start the tip task with tools/lua/spmes.lua --var CALL=0x02080388 (tap own castle).
 -- FORCE_TURN=1: the battle state machine (0x0207CEAC, byte [r4+1]) starts the turn-start task 0x0207F04C at
 -- state 0xE; the pre-battle warp state never gets there, so set it once.
 if FORCE_TURN then

@@ -71,7 +71,7 @@ def test_system_pools_roundtrip():
         on_disk = json.loads((text.SCRIPT / "system" / f"{img}.json").read_text(encoding="utf-8"))["strings"]
         assert [(r["id"], r["font"], r["jp"]) for r in on_disk] == [(r["id"], r["font"], r["jp"]) for r in doc["strings"]]
     items = {f"arm9:{o:X}" for o in text.item_strings(ims["arm9"])}
-    assert items == {r["id"] for r in docs["arm9"]["strings"] if r["font"] == "item"} and len(items) == 221
+    assert items == {r["id"] for r in docs["arm9"]["strings"] if r["font"] == "item"} and len(items) == 225
 
 
 @needs_rom

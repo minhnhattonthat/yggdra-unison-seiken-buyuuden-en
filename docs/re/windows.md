@@ -13,9 +13,9 @@ Both create the object at x = -1; the scene sets the position, so the box is per
 |---|---|---|---|---|---|
 | bubble, portrait left (prize, ending, medallion...) | MESSAGE | 98 | 244 (cloud edge, line 2) | 142 px x 2 | verified: `#142x2` fits, MESSAGE154:0240 in prize |
 | bubble, portrait right (prisoner) | MESSAGE | 11 | 154 | 142 px x 2 | verified: `#142x2` fits, MESSAGE130:04ED (right at the edge) |
-| ending results bubble (戦績, name under it) | MESSAGE168 | - | - | 142 | guess: not measured, same rule |
+| ending results bubble (戦績, name under it) | MESSAGE168 | 7 | ~165 (portrait) | 142 px x 2 | measured: work/qa/m168_zoom.png |
 | explore / shop box | SPMES_TRE | 40 | 239 (fill); page arrow 225-236 on line 2 | 184 px x 2 | verified: `#184x2`, SPMES_TRE:0160 |
-| battle event dialogue | SPMES*** | - | - | 184 px x 2 | guess: no battle event reached yet (warp stops on the map; debug-tool gap) |
+| battle duel event (DUEL EVENT, top screen) | SPMES*** | 40 | ~238; page arrow 228-236 under line 2 | 184 px x 2 | verified: `#184x2`, SPMES001014:0160 (work/qa/gate/spmes_zoom.png, forced by tools/lua/spmes.lua) |
 | tutorial bubble (portrait right) | TUTO | 8 | 159 (fill); arrow 154-162 under line 2 | 144 px x 2 | verified: `#144x2`, TUTO00_01:007B |
 
 ## EDMES (ending, scene 18, ov9_15)
@@ -24,8 +24,8 @@ Both create the object at x = -1; the scene sets the position, so the box is per
   VWF advance from the width table (font id in fp). Pen x 32, panel frame from 242: **208 px x 4 lines**, verified
   with the torture line (EDMES07:0100, last line 206 px). The game fades the text where it crosses the portrait
   (the Japanese does the same).
-- One-line epithets (ナマクラ聖剣士ラッセル): the title bar on that screen is the ED_H texture with the same words;
-  where the string itself is drawn is not seen yet. Guess 140 px.
+- One-line epithets (ナマクラ聖剣士ラッセル, record +0): the top title bar is the ED_H texture with the same words;
+  the string itself is drawn on the bottom 戦績 page after 称号： (ov9_15 0x0211E010, run x 102 y 35): **150 px**.
 
 ## System text (arm9 / overlay pools; 0x02012DF4 runs, 0x020130AC centred)
 Which string draws where: `tools/lua/systrace.lua` logs every call (x, y, font, caller, bytes); on the marker build
@@ -62,7 +62,18 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 | save / load prompts (ov9_19, ov9_15, ov9_05) | ctr 0x020102F8 | 240 x 2 | measured (save band) |
 | in-game HELP popup (help on at new game): title x 22 y 59, body x 24 y 76 x 3 lines, frame at 236 = table F79D8+0 | run 0x02011168 / 0x020111AC | 210 / 210 x 3 | measured (tour_hp 0006) |
 | textures, no system text: battle menu (SELECT), L unit panel, unit status, unit lists, sortie territory panel, faction info panel, VS names | | | toured 2026-11-10 |
-| still guessed: unit names F5380, class names F5B88, cards A7E44, extras ov9_06 menus/messages, 100500 battle tips, explore unit select (ov9_13 x 32 / x 30), prize popup x 23 y 116, ending results ov9_15 x 102 | | 240 x 3 / 100 x 1 | not drawn as system text on any toured screen yet |
+| battle HINT! popup (100500, task 0x0207FD6C): entry 2n white y 49, 2n+1 red y 82/97, yellow panel spans the screen; centred by per-line glyph count (0x02013274) x 11, not px: **phase 7 fix** | run | 220 x 2 | measured (work/qa/tip0_top.png; `spmes.lua --var CALL=0x02080388` + `tips.lua --var TIP=n`) |
+| battle results (War Result page, 100554 labels x 40 y 48 + 21 n, digits from x 176) | run 0x02080D88 | 120 | measured (work/qa/res_final.png; `spmes.lua --var CALL=0x02081350 --var R0=8` = YOU WIN + results) |
+| ending epithet one-liner (EDMES record +0): ov9_15 0x0211E010 run x 102 y 35 bottom screen after 称号：, bar count11*11+40 from x 66 | run | 150 | measured (work/qa/gate/epilogue f000900) |
+| ending results bubble MESSAGE168 (戦績 page): pen x 7, cloud to ~165 | MESSAGE | 142 x 2 | measured (work/qa/m168_zoom.png) |
+| info band messages (explore / prize / medallion / save..., `tools/strcalls.py`: load then BL 0x0200FC88) | band -> ctr 0x020102F8 | 240 x 3 | same band as card_select |
+| battle CAUTION messages (load then BL 0x02010BC8 = the CAUTION task, as arm9:930D8) | ctr 0x02010BA4 | 240 x 1 | same band |
+| extras (ov9_06): menu descriptions table 0x0211FA88 (ctr y 140 help band), prompts / not-yet (ctr y 89), sound titles table 0x0211FAAC (ticker) | ctr / run | 240 x 3 / 228 / 400 | code |
+| medallion (ov9_10): report line 2 (buffer r4+0xA5, centred), warning popups x slide+72 / +50 | run | 240 x 2 / 180 / 200 | code |
+| tutorial scroll descriptions (ov9_03 ctr y 120, 4 lines) | ctr | 240 x 4 | code |
+
+**Static classification:** `python -X utf8 tools/strcalls.py ID..` lists each load of a string's address and the BLs
+right after it (run / ctr / band / join / menu ...): how the "guess" system strings got their rules without a tour.
 
 **Composites** (`composites` in windows.json, checked by lint): strings 0x020132E0 joins before one draw; lint tries every
 combination of the parts (ids, `table:` fields, literal `'0`) line by line.
