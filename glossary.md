@@ -1,29 +1,199 @@
-# Glossary - <Game title>
+# Glossary - Yggdra Unison: Seiken Buyuuden (NDS, 2009)
 
 Binding for every translator and reviewer. Agents propose additions in reports; only the controller edits this file.
+`tools/batches.py check` enforces every table row: if the JP form occurs in a line, one of the EN forms (split on
+` / `) must occur in its English; an `Avoid` spelling fails the check.
 
 ## Rulings (asked of the user once; options and reasons in docs/decisions.md)
-- Honorifics: <kept, hyphenated (Johannes-san) | dropped>. Name order: <JP | Western>.
-- Romanisation source: <official art / anime / Hepburn>.
-- Credits: <stay kanji | English>.
-- Register / flavour: <e.g. keep light JP flavour>. Sound effects: <*Slam!*>.
-- Abbreviations: <default: full names and terms everywhere, prefer engine changes over shortening>.
+- Honorifics: kept, hyphenated, after a name: -san, -chan, -kun, -dono, -sama (D1; lint checks them after a
+  katakana name). Titles are words, not honorifics: 王女 Princess, 陛下 Your Majesty / His Majesty, 殿下 Your
+  Highness, 姫様/お姫様 Princess, 兄様 brother. Name order: Western (only given names occur).
+- Romanisation: official Atlus English (Yggdra Union GBA/PSP, Blaze Union PSP) where one exists (D2), else Hepburn
+  without macrons.
+- Credits: English (D3). Abbreviations: never to fit; engine work first (D4). Report a line that cannot fit as LONG.
+- Register: Atlus's Yggdra Union localisation is the model: plain modern English, fantasy-court formality for royals
+  and knights, rough slang for bandits and thieves, no Japanese flavour words beyond the honorifics.
+- Sound effects and roars: English onomatopoeia, keep the length feel: グワォォォ -> "Grrwaaargh!", ケケケッ ->
+  "Kekekeh!", フフフ -> "Heh heh heh..." (or "Hmhmhm..." for a lady), ガハハハ -> "Gwahahaha!".
 
 ## Style rules
-- Punctuation map: 「」 -> "...", 『』 -> '...', ・・・ -> ..., ！？ -> !?, <more>.
-- <voice notes per character, or point to docs/style-reference.md>
+- Punctuation: 「」 -> "...", 『』 -> '...', … / ・・・ -> ..., ！？ / !? -> ?!, ー (stretched vowel) -> repeated letter,
+  ～ -> ~ (allowed: the font has ~), full-width space -> one space. No [ ] < > (no glyphs).
+- Box sizes are tight (dialogue bubble 142 px x 2 lines, about 22-26 letters a line). Fit by rephrasing, never by
+  cutting meaning or abbreviating. Use `tools/batches.py wrap ID "text"` to break lines.
+- Voices: docs/style-reference.md.
 
-## Characters
+## Characters (unit table F5380; speaker ids in the batches are these)
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| ユグドラ | Yggdra | | Princess of Fantasinia, holder of the Gran Centurio | |
+| ミラノ | Milanor | | thief king, "Silver Wolf" | Milano |
+| デュラン | Durant | | knight, leader of the Third Cavalry | Duran |
+| キリエ | Kylier | | Griffon Rider, rides Al | Kyrie |
+| ニーチェ | Nietzsche | | naive Undine girl | |
+| ロズウェル | Roswell | | Necromancer, head of House Branthese (Black Rose) | |
+| ロザリィ | Rosary | | Witch, head of House Esmeralda (White Rose) | |
+| ラッセル | Russell | | Astral Fencer (魔剣士) | Russel |
+| クルス | Cruz | | revolutionary, Karona Resistance | Kurusu / Cross |
+| エレナ | Elena | | trainee assassin, Leon's sister | |
+| ゴードン | Gordon | | Temple Knight, "Gordon of Steel" | |
+| ガルカーサ | Gulcasa | | Bronquian Emperor, the Flame Emperor (焔帝) | Garcasa |
+| ネシア | Nessiah | | imperial strategist, the Fallen Angel | Nesia |
+| アイギナ | Aegina | | Twin Valkyrie | Aigina |
+| ルシエナ | Luciana | | Twin Valkyrie | Lucienne |
+| レオン | Leon | | the Black Knight | |
+| エミリオ | Emilia | | Dragon General, Scarlet Princess (緋雪姫); hates being called a child | Emilio |
+| バルドゥス | Baldus | | Dragon General, God of War (軍神) | |
+| ユーディ | Eudy | | Court Magician | Yudi |
+| ジルヴァ | Zilva | | assassin | Jilva |
+| インザーギ | Inzaghi | | mercenary captain | |
+| カナン | Canaan | | militia "hero", Monica's lover | Kanan |
+| モニカ | Monica | | village girl from Flaube (フラウベ) | |
+| イシーヌ | Ishiene | | Undine general, Emelone's right hand | |
+| エメローネ | Emelone | | Queen of Embellia (Undines) | Emerone |
+| コブン | Flunky | | Milanor's loyal underling (Atlus name) | Kobun |
+| オルテガ | Ortega | | brigand king | |
+| ドルト | Dort | | desert bandit king, old-man speech | Dolt |
+| ミゼル | Mizer | | bounty hunter, shoe mania | Mizel |
+| アマレウス | Amareus | | assassin serving Juvelon | |
+| マルディム | Mardym | | archbishop, schemer | Mardim |
+| ユベロン | Juvelon | | cardinal, coward | Yuberon |
+| パメラ | Pamela | | ghost witch, money-mad, cheeky | |
+| シモベ | Shimobe | | Nessiah's "eternal servant" | |
+| ソドム | Sodom | | magic warrior | |
+| マモリガミ | Mamorigami | | "living fortress" | |
+| ミステール | Mistel | | "full-time housewife" (専業主婦) | Mistere |
+| フローネ | Flone | | Russell's late fiancee | |
+| 名無し兵士 | Nameless Soldier | | | |
 
 ## Places
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| ファンタジニア | Fantasinia | | kingdom | |
+| ブロンキア | Bronquia / Bronquian | | empire | |
+| エンベリア | Embellia | | Undine realm | |
+| ヴァーレンヒルズ | Verlaine Hills | | 西 West / 東 East | |
+| パルティナ | Paltina | | 北 North / 南 South | |
+| カローナ | Karona | | Castle Karona | |
+| フレアヴェルク | Flarewerk | | imperial capital | |
+| ドロミノス | Drominos | | Drominos Marsh | |
+| ジェノマ | Genoma | | Fort Genoma | |
+| ロナリス | Lonaris | | Fort Lonaris | |
+| イシュナート | Ishnad | | Fortress of Ishnad | |
+| カノッサ | Canossa | | Canossa Road | |
+| マキナ・ブリッジ | Machina Bridge | | | |
+| フラム | Framm | | Framm Granary | |
+| マルドゥーク | Marduk | | | |
+| 嘆きの谷 | Valley of Lament | | | |
+| ロスト・アリエス | Lost Aries | | | |
+| ルナミナ | Lunamina | | Lunamina Pass | |
+| レネシー | Lenessey | | Lenessey Mountains / volcanic region | |
+| 白薔薇 | White Rose / Esmeralda | | 白薔薇館 White Rose Manor; 白薔薇家 House Esmeralda | |
+| 黒薔薇 | Black Rose / Branthese | | 黒薔薇館 Black Rose Manor; 黒薔薇家 House Branthese | |
+| フローランド | Floland | | | |
+| フェリナス | Phelinas | | Phelinas Lakeside | |
+| ロルカ | Lorca | | Lorca Lakeside | |
+| オーランド | Orlando | | Orlando Plains | |
+| 狼の口 | Jaws of the Wolf | | | |
+| ノルン | Norn | | Norn Canyon | |
+| ニルルド | Nyllard | | Nyllard Desert | |
+| ミネルロード | Minerroad | | | |
+| オズ | Oz | | Holy City of Oz | |
+| ロンバルディア | Lombardia | | | |
+| メリアータ | Meriata | | St. Meriata | |
+| アンカルジア | Ancardia | | Ancardia, the Lost Paradise | |
+| 凱旋門 | Arc of Triumph | | | |
+| エリーゼ | Elise | | Undine water capital | |
 
-## Items / skills / terms
+## Factions and houses
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| ブランテーゼ | Branthese | | House Branthese (Roswell) | |
+| エスメラルダ | Esmeralda | | House Esmeralda (Rosary) | |
+| テンプルナイツ | Temple Knights | | | |
+| メリア | Meria | | the Meria faith; 教国 = Theocracy of Meria | |
+| 新生ブロンキア帝国 | New Bronquian Empire | | | |
+| 森の共同戦線 | Forest Alliance | | | |
+
+## Classes (F5B88)
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| フェンサー | Fencer | | | |
+| ヴァルキリー | Valkyrie | | | |
+| ウンディーネ | Undine | | | |
+| バンディット | Bandit | | | |
+| グリフライダー | Griffon Rider | | | |
+| ネクロマンサー | Necromancer | | | |
+| ドラグーン | Dragoon | | | |
+| タクティシャン | Tactician | | | |
+| ジ・エインシャント | The Ancient | | | |
+| スケルトン | Skeleton | | | |
+| ゴーレム | Golem | | | |
+
+## Game terms
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| 聖剣 | Holy Sword | | | |
+| ユニゾンアタック | Unison Attack | | | |
+| ユニゾン | Unison | | | |
+| インパクトサークル | Impact Circle | | | |
+| メダリオン | Medallion | | | |
+| デュエル | Duel | | デュエルイベント Duel Event | |
+| スマッシュヒット | Smash Hit | | | |
+| クリティカルヒット | Critical Hit | | | |
+| ノックバック | Knockback | | | |
+| クラスチェンジ | Class Change | | | |
+| 守将 | commander | | the general holding a territory | |
+| 焔帝 | Flame Emperor | | Gulcasa | |
+| 軍神 | God of War | | Baldus | |
+| 戦乙女 | Valkyrie | | 双生の戦乙女 Twin Valkyries | |
+| 黒騎士 | Black Knight | | Leon | |
+| 魔剣士 | Astral Fencer | | Russell | |
+| 銀狼 | Silver Wolf | | Milanor | |
+| 宮廷魔術師 | Court Magician | | Eudy | |
+| 緋雪姫 | Scarlet Princess | | Emilia | |
+| 専業主婦 | housewife | | Mistel ("full-time housewife") | |
+| 堕天 | Fallen | | 堕天のネシア Nessiah the Fallen | |
+
+## Cards (A7E44; card names are also CARDNAME textures)
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| メイクドール | Make Doll | | | |
+| ネクロゲート | Necrogate | | | |
+| メデューサアイ | Medusa Eye | | | |
+| ポイズンブレス | Poison Breath | | | |
+| グラヴィティカオス | Gravity Chaos | | | |
+| アイテムブレイク | Item Break | | | |
+| スティール | Steal | | | |
+| ブラッディクロー | Bloody Claw | | | |
+| チャリオット | Chariot | | | |
+| シールドバリア | Shield Barrier | | | |
+| フレイム | Flame | | | |
+| ブリザード | Blizzard | | | |
+| サンダーボルト | Thunderbolt | | | |
+| バニッシュ | Banish | | | |
+| ドラゴンキラー | Dragon Killer | | | |
+| アースクウェイク | Earthquake | | | |
+| マインドチェンジ | Mind Change | | | |
+| レヴォリューション | Revolution | | | |
+| ジハード | Jihad | | | |
+| サンクチュアリ | Sanctuary | | | |
+| リフレッシュメント | Refreshment | | | |
+| キスオブデス | Kiss of Death | | | |
+| フォーチュン | Fortune | | | |
+| ミラージュ | Mirage | | | |
+| バンシーズクライ | Banshee's Cry | | | |
+| アイヴィウィップ | Ivy Whip | | | |
+| サンドストーム | Sandstorm | | | |
+| マントラップ | Mantrap | | | |
+| ロックフォール | Rockfall | | | |
+| エースガード | Ace Guard | | | |
+| ジェノサイド | Genocide | | | |
+| リィンカーネーション | Reincarnation | | | |
+| リヴェリオン | Rebellion | | | |
+| ダイヤモンドダスト | Diamond Dust | | | |
+| コーマカルマ | Coma Karma | | | |
+| ジャッジメント・ゼロ | Judgment Zero | | | |
 
 ## Decisions from earlier batches
-- <batch> <JP> -> <EN> (reason)
+- (none yet)
