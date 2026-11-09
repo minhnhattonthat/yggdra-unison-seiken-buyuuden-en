@@ -32,6 +32,21 @@ def test_engine_patch():
 
 
 @needs_rom
+def test_overlay_hooks():
+    import engine
+    import text
+    imgs = text.code_images()
+    at = engine.entries(imgs["arm9"])
+    new = engine.patch_overlays(imgs, at)
+    for img, site, _, entry in engine.OV_SITES:
+        off = site - engine.OV_BASE
+        diff = [i for i in range(0, len(imgs[img]), 4) if imgs[img][i:i + 4] != new[img][i:i + 4]]
+        assert diff == [off]
+        w = int.from_bytes(new[img][off:off + 4], "little")
+        assert w >> 24 == 0xEB and site + 8 + ((w & 0xFFFFFF) - (1 << 24 if w & 0x800000 else 0)) * 4 == at + entry
+
+
+@needs_rom
 def test_english_glyphs():
     import enfont
     import text

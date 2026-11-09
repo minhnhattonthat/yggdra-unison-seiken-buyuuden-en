@@ -15,6 +15,15 @@ HOOKS = f"""
     b hook_step                @ entry +4
     b hook_center              @ entry +8
     b cells_count              @ entry +C
+    b ov_adv                   @ entry +10
+
+ov_adv:                      @ ov9_15 0x0211DC8C add r4,r4,#0xB (ending epilogue, one glyph per 0x02012FFC call)
+    push {{lr}}                   @ r7 = glyph code, fp = font id; r0-r3/ip are free here
+    orr r0, r7, fp, lsl #12
+    mov r1, #0xB
+    bl width
+    add r4, r4, r0
+    pop {{pc}}
 
 @ Dialogue text objects (0x020128B8, FONT_MES) get one 16x16 slot per glyph, and a scene's slot range is sized for
 @ the Japanese (ending: 32). Instead each line is packed into 16 px cells: glyphs are blitted at their VWF pen x,
@@ -264,6 +273,29 @@ SITES = [  # (address, original instruction word, entry offset, or an instructio
     (0x02013114, 0xE0000095, 8),
     (0x020131C8, 0xE0000095, 8),
 ]
+OV_SITES = [  # (overlay image, address, original word, entry offset): overlays load at 0x0211B780
+    ("ov9_15", 0x0211DC8C, 0xE284400B, 0x10),  # EDMES epilogue text: fixed 11 px advance -> VWF
+]
+OV_BASE = 0x0211B780
+
+
+def entries(arm9):
+    """Address of the hook entry table (start of the HOOKS blob) for this original arm9."""
+    code = ndspy.code.MainCodeFile(arm9, 0x02000000)
+    itcm = next(s for s in code.sections if s.ramAddress == ITCM)
+    return ITCM + len(itcm.data) + itcm.bssSize
+
+
+def patch_overlays(images, at):
+    """{image: bytes} -> the OV_SITES overlays with their hooks; at = entries(original arm9)."""
+    out = {}
+    for img, site, orig, entry in OV_SITES:
+        data = bytearray(out.get(img, images[img]))
+        off = site - OV_BASE
+        assert int.from_bytes(data[off:off + 4], "little") == orig, f"{img} {site:#x}: unexpected original instruction"
+        data[off:off + 4] = asm(f"bl #{at + entry:#x}", site)
+        out[img] = bytes(data)
+    return out
 
 
 def asm(src, addr):

@@ -78,8 +78,10 @@ def edits(marker=False):
         skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else ()
         repl |= mk.script_files(skip)
         images = mk.system_images()
-    arm9 = images.get("arm9", text.code_images()["arm9"])
+    orig = text.code_images()
+    arm9 = images.get("arm9", orig["arm9"])
     images["arm9"] = engine.patch_arm9(arm9, wtab)
+    images |= engine.patch_overlays({**orig, **images}, engine.entries(orig["arm9"]))
     return repl, images
 
 

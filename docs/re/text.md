@@ -41,7 +41,7 @@
 ## System text (arm9 + overlays) - extracted to script/system/<image>.json
 - FF-terminated, 00 padding between strings (a string may itself start with 00 = あ: pointer targets are kept as starts).
 - Referenced by absolute u32 pointers: arm9 strings at 0x02000000+off (pointers in arm9 or any overlay), overlay strings at 0x0211B780+off (all 20 overlays load there; pointers only from the same overlay).
-- **Pools** (`text.POOLS`, image, range, font): arm9 0x8F98C-0x9281C and 0x92830-0x958EB (1,383 strings: unit/class/item/card names, effects, help), ov9_02 (2 pools, END), ov9_03 (help menu, 2 pools), ov9_05 (card error), ov9_06 (extras, END, 2 pools), ov9_07 (character profiles, END), ov9_15/ov9_19 (save prompts; a few struct bytes before the first string excluded), ov9_16 (card prompt), ov9_18 (unlock messages, END). Found by `tools/systext.py` (pointer scan) + a packed-run walk; every other pointer hit (285, mostly arm9 code < 0x8F000 and data tables at 0xA1000-0xA8FFF, 0xF5000-0xFFFFF, 0x100648) decodes as noise and is not text.
+- **Pools** (`text.POOLS`, image, range, font): arm9 0x8F98C-0x9281C and 0x92830-0x95C09 (1,389 strings: unit/class/item/card names, effects, help; 0x958EC-0x95C08 = 6 explore help pages pointed at from ov9_13, found by `jp_left.py --slots` (tools/ptrslots.py) on the marker build; the "NDS YGZ ver 1.00" tag follows), ov9_02 (2 pools, END), ov9_03 (help menu, 2 pools), ov9_05 (card error), ov9_06 (extras, END, 2 pools), ov9_07 (character profiles, END), ov9_15/ov9_19 (save prompts; a few struct bytes before the first string excluded), ov9_16 (card prompt), ov9_18 (unlock messages, END). Found by `tools/systext.py` (pointer scan) + a packed-run walk; every other pointer hit (285, mostly arm9 code < 0x8F000 and data tables at 0xA1000-0xA8FFF, 0xF5000-0xFFFFF, 0x100648) decodes as noise and is not text.
 - JSON rows carry `ptrs` (every aligned u32 pointing at the string; some are false positives from data tables, e.g. arm9 0xA7xxx hits mid-string) and `max` (bytes in place incl. FF + trailing padding).
 - **Item records** (`text.ITEM_RECS`): arm9 0x1006A0, 221 x 0x18 bytes: +0/+4 stats, +8 name (FONT_SYSTEM), +C the same name in FONT_ITEM (each pointed at only from here; these were the "noise" strings), +10 effect, +14 who can equip. Rows at +C targets have `"font": "item"` in arm9.json (220 + one below); the item name and its +C twin must be translated alike.
 - **Non-text inside a pool** (`text.POOL_DATA`): arm9 0x8F9C0, 4 bytes `0C 0C 0B 0C` read by code (literals at 0x12FF0/0x130A8), with no FF of its own: the item name ドゼウ at 0x8F9C4 follows it, so an FF split merged them. Skipped, not a row. Every other pointer that lands mid-string is a false positive (data tables at 0xA7xxx, odd addresses).
@@ -76,6 +76,8 @@
 - **System/centred text**: still one slot per glyph; VWF via `hook_step` (0x02012D10) and `hook_center` (0x02013114,
   0x020131C8, centring from the real widths). FC colour mid-line in system text would misplace the next run (no
   string uses FC).
+- **EDMES paragraphs** (ov9_15 0x0211DC88 -> 0x02012FFC, one glyph per call, x += 11 by the overlay): `ov_adv` hook
+  at 0x0211DC8C (engine.OV_SITES, patched per overlay in build.edits). Only caller of 0x02012FFC. Budgets: windows.md.
 
 ## Not text (graphics)
 - The title prologue scroll, faction names/banners, character name plates (CNAME*), card names (CARDNAME*), epilogue titles/messages (EPI_TIT_/EPI_MES_) and more are textures: see `graphics.md`.

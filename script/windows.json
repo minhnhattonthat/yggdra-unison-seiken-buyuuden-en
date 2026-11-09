@@ -1,0 +1,14 @@
+{
+ "about": "Width gate (docs/re/windows.md). First rule whose regex matches the string id wins. px = pen origin to the last usable column (line px = sum of VWF advances + 1, tools/lint.py); lines = max lines per string. status: measured (shot named) or guess (lint counts lines held to a guess; measure before trusting).",
+ "rules": [
+  {"match": "^MESSAGE", "box": "dialogue bubble beside a portrait (left or right)", "px": 142, "lines": 2, "status": "measured", "shot": "work/qa/gate/prize, work/qa/gate/prisoner (#142x2 fits both)"},
+  {"match": "^SPMES_TRE", "box": "explore / shop box", "px": 184, "lines": 2, "status": "measured", "shot": "work/qa/gate/explore (box 40-239; page arrow at 225 on the last line)"},
+  {"match": "^SPMES", "box": "battle event dialogue", "px": 184, "lines": 2, "status": "guess", "shot": "same text object as SPMES_TRE; no battle event reached yet (debug-tool gap)"},
+  {"match": "^TUTO", "box": "tutorial bubble (portrait right)", "px": 144, "lines": 2, "status": "measured", "shot": "work/qa/gate/tuto (#144x2 fits)"},
+  {"match": "^EDMES\\d+:\\w+$", "multi": true, "box": "ending epithet paragraph over the art", "px": 208, "lines": 4, "status": "measured", "shot": "work/qa/gate/epilogue f000900 (torture line, 206 px last line)"},
+  {"match": "^EDMES", "box": "ending epithet one-liner (title bar texture ED_H shows the same words; where the string itself draws is not seen yet)", "px": 140, "lines": 1, "status": "guess"},
+  {"match": "^arm9:", "font": "item", "box": "item name in FONT_ITEM (prize / item lists)", "px": 100, "lines": 1, "status": "guess"},
+  {"match": "^(arm9|ov9_\\d\\d):", "multi": true, "box": "multi-line system text (help band centred under the scene banner: full 256 px band)", "px": 240, "lines": 3, "status": "guess", "shot": "work/qa/warp/sortie, territory, card_select (band is screen-wide; per-string screens not mapped yet)"},
+  {"match": "^(arm9|ov9_\\d\\d):", "box": "one-line system text (labels, names, list fields)", "px": 100, "lines": 1, "status": "guess"}
+ ]
+}

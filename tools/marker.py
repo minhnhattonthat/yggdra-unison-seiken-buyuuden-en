@@ -54,7 +54,22 @@ def short_id(name, off):
     return f"{m.group(1)[0]}{m.group(2).lstrip('0') or '0' if m.group(1) == 'MESSAGE' else m.group(2)}:{off:X}"
 
 
+def qa_lines():
+    """MARKER_QA="MESSAGE166:0240=text|..." overrides single lines (width gate, torture line); "\\n" = new line.
+    "#142x2" = 2 lines of filler, each as close to 142 px as the glyphs allow (the exact-limit test)."""
+    out = {}
+    for item in filter(None, os.environ.get("MARKER_QA", "").split("|")):
+        k, v = item.split("=", 1)
+        if m := re.fullmatch(r"#(\d+)x(\d+)", v):
+            v = "\n".join(fill(f"{n + 1}W", int(m.group(1))) for n in range(int(m.group(2))))
+        out[k] = v.replace("\\n", "\n")
+    return out
+
+
 def script_line(name, off, jp):
+    qa = qa_lines().get(text.sid(name, off))
+    if qa is not None:
+        return encode(qa)
     lines = jp.split("\n")
     # ( ) not [ ]: the font has no brackets
     out = [fill(f"({short_id(name, off)}) ", LINE_PX)] + [fill(f"{n + 2}", LINE_PX) for n in range(len(lines) - 1)]

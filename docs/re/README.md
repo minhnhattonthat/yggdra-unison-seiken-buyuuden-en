@@ -15,6 +15,7 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | sfs.md | ROM layout, DATA.SFS directory (in arm9), name hash, LZ, free space | verified (LZ usage guessed) |
 | text.md | encoding (stride-0xF0 codes, FC/FD/FF), fonts per text family, script files + refs, EDMES, system pools, draw routines, glyph slots, English font + VWF | verified (draw code, on-screen tutorial, roundtrip tests); kanji read; FONT_ITEM read (item names, aligned with FONT_SYSTEM) |
 | graphics.md | textures (.PACK), static sweep, list of Japanese graphics | sweep read; alpha textures to check on screen |
+| windows.md | text boxes per family: pen x, edges, px/lines budgets (script/windows.json), torture line | dialogue/TUTO/EDMES verified with tools/debug/widthgate.sh; battle SPMES + system fields guess |
 | scenes.md | scene manager + ids, game state (player faction, unlock bits), text loaders, touch coordinates, warp | verified by warp runs |
 
 Recon helpers: `tools/unpack.py` (NitroFS + overlays to work/), `tools/code_sections.py` (ITCM/DTCM), `tools/sfs_dump.py`
