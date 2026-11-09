@@ -12,4 +12,9 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| sfs.md | ROM layout, DATA.SFS directory (in arm9), name hash, LZ, free space | verified (LZ usage guessed) |
+| text.md | encoding (glyph-index bytes, F1-F5 prefixes, FD/FF), font, text files, MESSAGE layout | encoding verified; kanji unread; layout partly guessed |
+
+Recon helpers: `tools/unpack.py` (NitroFS + overlays to work/), `tools/code_sections.py` (ITCM/DTCM), `tools/sfs_dump.py`
+(DATA.SFS files to work/sfs/), `tools/fontsheet.py` (glyph sheets), `tools/ygdecode.py` (decode bytes), `tools/textscan.py`,
+`tools/kanji_guess.py`, `tools/mkjptbl.py` (-> tbl/jp.tbl). No prior fan patch found (web search 2026-11-09).
