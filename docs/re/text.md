@@ -46,7 +46,13 @@
 - **Item records** (`text.ITEM_RECS`): arm9 0x1006A0, 221 x 0x18 bytes: +0/+4 stats, +8 name (FONT_SYSTEM), +C the same name in FONT_ITEM (each pointed at only from here; these were the "noise" strings), +10 effect, +14 who can equip. Rows at +C targets have `"font": "item"` in arm9.json (220 + one below); the item name and its +C twin must be translated alike.
 - **Non-text inside a pool** (`text.POOL_DATA`): arm9 0x8F9C0, 4 bytes `0C 0C 0B 0C` read by code (literals at 0x12FF0/0x130A8), with no FF of its own: the item name ドゼウ at 0x8F9C4 follows it, so an FF split merged them. Skipped, not a row. Every other pointer that lands mid-string is a false positive (data tables at 0xA7xxx, odd addresses).
 - **Kanji misreads fixed from system context** (item and help text, read without context before): 癒 録 塊 錆 勲 叉 響 冑 脈 穀 議 掴 籠 獪 男 卿 縛 劣 触 徴 箇 謎. Left as the game wrote them: 慚悔 (for 懺悔), 英雌 (coined, Yggdra), 順ずる.
-- **Insertion:** English longer than `max` moves to new space (decide in phase 5) and every true pointer is rewritten.
+- **Insertion / relocation (done, tools/sysreloc.py):** a string that fits `max` stays in place; a longer one goes
+  into the EXTRA block, a new arm9 autoload section at main RAM 0x02123460 (= the overlay slot end, ov9_13, = the
+  original main arena lo), deduplicated, and every pointer in `ptrs` is rewritten (asserted to hold the old
+  address). `engine.patch_arm9(arm9, wtab, extra)` raises OS_GetInitArenaLo's literals (arm9 0x02025000 switch:
+  main at 0x02025088, ITCM at 0x02025094, which also covered our hooks at 0x01FFBDC0) past what we add. Proven:
+  the marker build relocates all 1,625 system strings (39 KB block), boots, and reaches all 35 warps. Other free
+  RAM: every overlay but ov9_13 can grow up to 0x02123460 (bss turned into zeros, like the ITCM block).
 
 ## Draw routines (arm9, verified by disasm + marker build on screen)
 - **Dialogue text object** `0x020128B8` (callers 0x02006324, 0x02006F78; FONT_MES): counts glyphs (0x02013274, also

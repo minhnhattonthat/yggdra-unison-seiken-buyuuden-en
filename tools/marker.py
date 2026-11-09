@@ -110,21 +110,34 @@ def script_files(skip=()):
     return out
 
 
+def system_fill(code, r):
+    """code: + filler, each JP line filled to its window rule's px (lines capped at the rule's count)."""
+    import lint
+    if r["id"] in qa_lines():
+        return qa_lines()[r["id"]]
+    rule = lint.rule_for(r["id"], r["jp"], r["font"])
+    px = rule["px"] if rule else 100
+    nl = min(r["jp"].count("\n") + 1, rule["lines"] if rule else 1)
+    return "\n".join(fill(code + ":" if n == 0 else f"{n + 1}", px) for n in range(nl))
+
+
 def system_images():
-    """{image: bytes} with every pool string replaced in place by its code; writes work/marker_ids.tsv."""
-    images = {k: bytearray(v) for k, v in text.code_images().items()}
-    rows, n = [], 0
+    """({image: bytes}, extra block): every pool string replaced by its code. MARKER_SYS=slot keeps each in its slot
+    (short codes); default fills each to its windows.json budget and relocates (tools/sysreloc.py).
+    Writes work/marker_ids.tsv (code -> id)."""
+    import sysreloc
+    rows, ids, n = [], [], 0
+    slot = os.environ.get("MARKER_SYS") == "slot"
     for img, doc in text.system_docs().items():
         for r in doc["strings"]:
             code = b36(n)
             n += 1
-            rows.append(f"{code}\t{r['id']}\t{r['jp']}")
-            off = int(r["id"].split(":")[1], 16)
-            raw = system_line(code, r["jp"], r["max"] - 1)
-            images[img][off:off + r["max"]] = (raw + b"\xff").ljust(r["max"], b"\0")
+            ids.append(f"{code}\t{r['id']}\t{r['jp']}".replace("\n", "/"))
+            raw = system_line(code, r["jp"], r["max"] - 1) if slot else encode(system_fill(code, r))
+            rows.append((r, raw))
     (ROOT / "work").mkdir(exist_ok=True)
-    (ROOT / "work/marker_ids.tsv").write_text("\n".join(rows) + "\n", encoding="utf-8")
-    return {k: bytes(v) for k, v in images.items()}
+    (ROOT / "work/marker_ids.tsv").write_text("\n".join(ids) + "\n", encoding="utf-8")
+    return sysreloc.relocate(text.code_images(), rows)
 
 
 def selftest():

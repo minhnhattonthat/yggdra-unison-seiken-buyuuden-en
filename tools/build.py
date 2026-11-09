@@ -72,15 +72,15 @@ def edits(marker=False):
     import engine
     import text
     fonts, wtab = enfont.patched_fonts(text.sfs_files(set(enfont.FONTS)))
-    repl, images = dict(fonts), {}
+    repl, images, extra = dict(fonts), {}, b""
     if marker:
         import marker as mk
         skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else ()
         repl |= mk.script_files(skip)
-        images = mk.system_images()
+        images, extra = mk.system_images()
     orig = text.code_images()
     arm9 = images.get("arm9", orig["arm9"])
-    images["arm9"] = engine.patch_arm9(arm9, wtab)
+    images["arm9"] = engine.patch_arm9(arm9, wtab, extra)
     images |= engine.patch_overlays({**orig, **images}, engine.entries(orig["arm9"]))
     return repl, images
 

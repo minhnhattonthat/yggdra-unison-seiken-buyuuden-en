@@ -27,8 +27,24 @@ def test_engine_patch():
     assert wtab in ni.data[at:]
     changed = [i for i in range(0, len(old.sections[0].data), 4) if old.sections[0].data[i:i + 4] != new.sections[0].data[i:i + 4]]
     # besides the hook sites only the module params change (autoload list pointers move with the ITCM size)
-    extra = sorted(set(0x02000000 + i for i in changed) - {s for s, _, _ in engine.SITES})
-    assert len(changed) == len(engine.SITES) + len(extra) and all(a < 0x02000C00 for a in extra), [hex(a) for a in extra]
+    extra = sorted(set(0x02000000 + i for i in changed) - {s for s, _, _ in engine.SITES} - {0x02025094})
+    assert len(changed) == len(engine.SITES) + len(extra) + 1 and all(a < 0x02000C00 for a in extra), [hex(a) for a in extra]
+    # ITCM arena lo moved past the hooks
+    assert int.from_bytes(new.sections[0].data[0x25094:0x25098], "little") >= engine.ITCM + len(ni.data)
+
+
+@needs_rom
+def test_extra_block():
+    import ndspy.code
+    import enfont
+    import engine
+    import sysreloc
+    import text
+    _, wtab = enfont.patched_fonts(text.sfs_files(set(enfont.FONTS)))
+    new = ndspy.code.MainCodeFile(engine.patch_arm9(text.code_images()["arm9"], wtab, b"\x01" * 100), 0x02000000)
+    sec = next(s for s in new.sections if s.ramAddress == sysreloc.EXTRA)
+    assert sec.data == b"\x01" * 100
+    assert int.from_bytes(new.sections[0].data[0x25088:0x2508C], "little") == sysreloc.EXTRA + 128
 
 
 @needs_rom

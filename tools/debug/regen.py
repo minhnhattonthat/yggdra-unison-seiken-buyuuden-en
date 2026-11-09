@@ -28,14 +28,16 @@ def scenes():
     return out
 
 
-def run(rom, name, vars_):
-    out = ROOT / "work/qa/warp" / name
+def run(rom, name, vars_, qa="work/qa/warp", extra=()):
+    out = ROOT / qa / name
     state = (ROOT / "work/states" / f"{name}.dst").as_posix()
     cmd = [sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts/emu.py"), str(rom), "--out", str(out),
-           "--script", str(ROOT / "tools/debug/warp.lua"), "--frames", "30000", "--timeout", "600",
-           "--var", f"STATE=[[{state}]]"]
+           "--script", str(ROOT / "tools/debug/warp.lua"), "--frames", "30000", "--timeout", "600"]
+    if qa == "work/qa/warp":  # probe runs (--qa elsewhere) leave the states alone
+        cmd += ["--var", f"STATE=[[{state}]]"]
     for v in vars_:
         cmd += ["--var", v]
+    cmd += list(extra)
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     log = out / "log.txt"
     ok = log.exists() and "warp ok" in log.read_text(encoding="utf-8", errors="replace")
@@ -46,19 +48,23 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rom", default=str(ROOT / "rom/yggdra.nds"))
     ap.add_argument("--jobs", type=int, default=6)
+    ap.add_argument("--qa", default="work/qa/warp", help="output dir; anything else = probe run, states untouched")
+    ap.add_argument("--script", action="append", default=[], help="extra Lua probe (repeatable)")
+    ap.add_argument("--var", action="append", default=[], help="extra NAME=LUA for every scene (repeatable)")
     ap.add_argument("names", nargs="*")
     a = ap.parse_args()
     todo = [s for s in scenes() if not a.names or s[0] in a.names]
+    extra = [x for s in a.script for x in ("--script", s)] + [x for v in a.var for x in ("--var", v)]
     (ROOT / "work/states").mkdir(parents=True, exist_ok=True)
     with ThreadPoolExecutor(a.jobs) as ex:
-        res = list(ex.map(lambda s: run(a.rom, *s), todo))
+        res = list(ex.map(lambda s: run(a.rom, *s, a.qa, extra), todo))
     bad = [n for n, ok, _ in res if not ok]
     for n, ok, rc in res:
         print(f"{'ok  ' if ok else 'FAIL'} {n} (exit {rc})")
-    shots = [str(ROOT / "work/qa/warp" / n / "final.png") for n, ok, _ in res if ok]
+    shots = [str(ROOT / a.qa / n / "final.png") for n, ok, _ in res if ok]
     if shots:
         subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts/sheet.py"), *shots, "--cols", "8",
-                        "--max", "16", "--out", str(ROOT / "work/qa/warp/sheet.png")])
+                        "--max", "16", "--out", str(ROOT / a.qa / "sheet.png")])
     print(f"{len(res) - len(bad)}/{len(res)} scenes reached" + (f"; failed: {' '.join(bad)}" if bad else ""))
     return 1 if bad else 0
 

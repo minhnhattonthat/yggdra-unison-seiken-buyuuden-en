@@ -303,7 +303,13 @@ def asm(src, addr):
     return bytes(enc)
 
 
-def patch_arm9(arm9, wtab):
+ARENA_LO = {0x02025088: 0x02123460, 0x02025094: 0x01FFBDC0}  # OS_GetInitArenaLo literals: main, ITCM
+
+
+def patch_arm9(arm9, wtab, extra=b""):
+    """VWF hooks into ITCM; extra = relocated system strings (tools/sysreloc.py), a new autoload section at
+    sysreloc.EXTRA. Both arena lo literals move past what we add, so no heap is ever placed over it."""
+    import sysreloc
     code = ndspy.code.MainCodeFile(arm9, 0x02000000)
     main, itcm = code.sections[0], next(s for s in code.sections if s.ramAddress == ITCM)
     at = ITCM + len(itcm.data) + itcm.bssSize
@@ -313,7 +319,15 @@ def patch_arm9(arm9, wtab):
     itcm.data = bytes(itcm.data) + bytes(itcm.bssSize) + blob
     itcm.bssSize = 0
     assert at + len(blob) <= 0x02000000 - 0x1000, "ITCM full"  # top 4 KB kept clear (unchecked)
+    lo = {0x02025094: (at + len(blob) + 31) & ~31}
+    if extra:
+        code.sections.append(ndspy.code.MainCodeFile.Section(bytes(extra), sysreloc.EXTRA, 0, implicit=False))
+        lo[0x02025088] = (sysreloc.EXTRA + len(extra) + 31) & ~31
+        assert lo[0x02025088] <= 0x02140000, "EXTRA block over 120 KB: check the heap still fits"
     data = bytearray(main.data)
+    for a, v in lo.items():
+        assert int.from_bytes(data[a - 0x02000000:a - 0x02000000 + 4], "little") == ARENA_LO[a]
+        data[a - 0x02000000:a - 0x02000000 + 4] = v.to_bytes(4, "little")
     for site, orig, entry in SITES:
         off = site - 0x02000000
         assert int.from_bytes(data[off:off + 4], "little") == orig, f"{site:#x}: unexpected original instruction"

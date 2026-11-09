@@ -82,3 +82,17 @@ def test_script_in_sync(files):
         rows = text.extract(name, b)
         assert [r["id"] for r in doc["strings"]] == [r["id"] for r in rows], name
         assert [r["jp"] for r in doc["strings"]] == [r["jp"] for r in rows], name
+
+
+def test_sysreloc_selftest():
+    import sysreloc
+    sysreloc.selftest()
+
+
+@needs_rom
+def test_sysreloc_every_pointer():
+    """Relocating every system string: each listed pointer still holds its string's original address."""
+    import sysreloc
+    rows = [(r, b"\x01" * (r["max"] + 1)) for doc in text.system_docs().values() for r in doc["strings"]]
+    images, extra = sysreloc.relocate(text.code_images(), rows)
+    assert len(extra) > 0

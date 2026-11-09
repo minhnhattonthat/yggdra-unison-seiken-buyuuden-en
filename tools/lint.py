@@ -30,9 +30,24 @@ def widths():
     return marker.widths()
 
 
+@cache
+def item_fields():
+    """{arm9 string id: item record field} (+8 name, +C item-font name, +10 effect, +14 who can equip)."""
+    import struct
+    import text
+    arm9 = text.code_images()["arm9"]
+    at, n, size = text.ITEM_RECS
+    return {f"arm9:{struct.unpack_from('<I', arm9, at + i * size + f)[0] - text.ARM9_BASE:X}": f
+            for f in (8, 0xC, 0x10, 0x14) for i in range(n)}
+
+
 def rule_for(sid, jp, font):
     for r in rules():
         if not re.search(r["match"], sid):
+            continue
+        if "ids" in r and sid not in r["ids"]:
+            continue
+        if "item" in r and item_fields().get(sid) != int(r["item"], 16):
             continue
         if r.get("multi") and "\n" not in jp:
             continue

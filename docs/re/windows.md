@@ -27,12 +27,29 @@ Both create the object at x = -1; the scene sets the position, so the box is per
 - One-line epithets (ナマクラ聖剣士ラッセル): the title bar on that screen is the ED_H texture with the same words;
   where the string itself is drawn is not seen yet. Guess 140 px.
 
-## System text (arm9 / overlay pools; 0x02012DCC runs, 0x020130AC centred)
-- Help lines centred under each scene banner (sortie, territory, card select, prize, war report, explore...) sit on
-  a screen-wide band: 240 px, 2-3 lines (guess per string until each string's screen is mapped).
-- Everything else (unit/class/item names, list fields, labels) is a guess: 100 px x 1. Phase 6 must measure list
-  fields with the longest name (the next thing drawn on the row minus the field x) before translating names.
-- System strings are still in place (`max` bytes): English longer than `max` needs the relocation step (status.md).
+## System text (arm9 / overlay pools; 0x02012DF4 runs, 0x020130AC centred)
+Which string draws where: `tools/lua/systrace.lua` logs every call (x, y, font, caller, bytes); on the marker build
+the bytes are marker codes, so `python -X utf8 tools/sysmap.py work/qa/<dir>` maps them to ids (work/sysmap.tsv).
+All 35 warps: `regen.py --rom build/yggdra_marker.nds --qa work/qa/sys2 --script tools/lua/systrace.lua` (27 ids;
+most system text sits in submenus, still to tour). The marker build fills every system string to its rule's px and
+relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrides system ids too.
+
+| Box | Draw | Budget | State |
+|---|---|---|---|
+| centred help band under a scene banner (top screen, y 140) | ctr, overlay callers | 240 px x 3 | measured: 240 px x 2 = ink 9-248 (territory); 3rd line by y |
+| CONFIRM / info band (bottom screen, full width, OK / CANCEL) | ctr, caller 0x020102F8 | 240 px x 3 | measured on card_select (band spans the screen) |
+| character profile ticker (char_intro, y 4, scrolls left) | run, ov9_07 0x0211BC3C | 520 px (slot limit) | measured: 82 chars ok (114/128 slots), 130 chars crashes |
+| item name, system font, prize item list (x 30, scrollbar at 242) | run, prize overlay 0x0211E524/E6A4 | 208 px | measured (work/play/prize2/0003.png) |
+| item name FONT_ITEM, item popup (x 23 y 116), effect lines (x 40 y 132; x 3 y 167 built in a heap buffer) | run | guess | drawn in prize after tapping an item, not visible in the shot yet |
+| medallion line (arm9:9222C, x = 0x80000000 at entry: set later) | run | guess | |
+| everything else (help menu ov9_03, extras ov9_06, unlocks ov9_18, explore pages, item effects / equip lines, save prompts) | | 240 x 3 / 100 x 1 guesses | screens not toured yet |
+
+**Glyph slots:** system text takes one slot per glyph (pool at 0x0210E768; cap 128 in most scenes, 256 tutorial).
+Landing screens with every string at full budget peak at 117/128 (medallion), 114 (char_intro). Long profiles
+overflow: pack system text into 16 px cells like dialogue (engine work, next).
+
+**Unit / class names in lists** (prize UNIT LIST, unit status: ヴァルキリー, 王女ユグドラ, 時間帯, 地形 ...) are textures
+(CNAME*, graphics phase), not system strings.
 
 ## Glyph torture line (verified 2026-11-10, work/qa/gate/epilogue f000900)
 All 82 English glyphs (` !"%&'()*+,-./0-9:;?~—…A-Za-z`) and double spaces render with VWF spacing. The game's own
