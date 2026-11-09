@@ -1,0 +1,40 @@
+# Warp scene list: name, then the warp.lua --var settings (space-separated NAME=LUA, no spaces inside a value).
+# Every entry boots cold and reaches its scene by the game's own flow (tools/debug/warp.lua, docs/re/scenes.md).
+# Regenerate all states + shots: python -X utf8 tools/debug/regen.py [names...]
+# FACTION ids: 0 red (Bronquia side), 1 Fantasinia, 2 Milano, 3,4,6..11 (5 has no start territory). The jump scenes
+# (territory .. tutorial) run on a real turn-1 game of FACTION (default 1).
+title           SCENE='title'
+attract_op      SCENE='attract_op'
+opening         SCENE='opening'
+faction_select  SCENE='faction_select'
+prologue_f00    SCENE='prologue' FACTION=0
+prologue_f01    SCENE='prologue' FACTION=1
+prologue_f02    SCENE='prologue' FACTION=2
+prologue_f03    SCENE='prologue' FACTION=3
+prologue_f04    SCENE='prologue' FACTION=4
+prologue_f06    SCENE='prologue' FACTION=6
+prologue_f07    SCENE='prologue' FACTION=7
+prologue_f08    SCENE='prologue' FACTION=8
+prologue_f09    SCENE='prologue' FACTION=9
+prologue_f10    SCENE='prologue' FACTION=10
+prologue_f11    SCENE='prologue' FACTION=11
+card_select     SCENE='card_select'
+sortie          SCENE='sortie'
+battle          SCENE='battle'
+territory       SCENE='territory'
+explore         SCENE='explore'
+prize           SCENE='prize'
+prisoner        SCENE='prisoner'
+medallion       SCENE='medallion'
+war_report      SCENE='war_report'
+turn_end        SCENE='turn_end'
+save            SCENE='save'
+load            SCENE='load'
+char_intro      SCENE='char_intro'
+extras          SCENE='extras'
+tutorial        SCENE='tutorial'
+ending_f01      SCENE='ending' FACTION=1
+ending_f02      SCENE='ending' FACTION=2
+epilogue_f01    SCENE='epilogue' FACTION=1
+epilogue_f02    SCENE='epilogue' FACTION=2
+credits         SCENE='credits'

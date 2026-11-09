@@ -6,7 +6,8 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder. Read its
 - Build:    `python -X utf8 tools/build.py`        -> build/yggdra_en.nds (checks the dump against `rom.sha1` first)
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this; `git config core.hooksPath tools/hooks` once per clone)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/yggdra_en.nds --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/yggdra_en.nds --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.txt`; never ask the user to play to a scene)
+- Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/yggdra_en.nds --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<scene>'" [--var FACTION=n] --frames 30000` (stops itself at the scene, shot `final.png`; vars per entry in `tools/debug/scenes.txt`, RAM map `docs/re/scenes.md`; never ask the user to play to a scene)
+- All states: `python -X utf8 tools/debug/regen.py [--rom build/yggdra_en.nds] [names]` -> `work/states/<name>.dst` + `work/qa/warp/sheet.png`; rerun after code/font/graphics changes
 - Release:  `python -X utf8 tools/release.py` (xdelta patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 
