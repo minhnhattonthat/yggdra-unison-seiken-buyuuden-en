@@ -10,17 +10,21 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
-- **Batch state (end of session 8):** merged + reviewed (+ fixes): b001-b004, b013-b032. Translated, check OK,
-  NOT reviewed, NOT merged: b005-b012, b033-b044, b049-b070, b072-b076. b071 fails check on 7 EDMES epithets (LONG,
-  below). b045-b048 done too (check OK, not reviewed). ブロンガ = Brongaa (official; MESSAGE172:0374 wrote Bronga).
-  No translator agent is running.
-  Reports for b057+ in work/tl/b0NN.report.txt (b057, b061, b065, b069, b073). Next: pairs.py + reviewer per 2
-  batches (compact: Critical/Important; send fixes + Minors back to a translator agent), merge, commit.
-- **Review flags from translator reports:** エンベリア公国 = Duchy of Embellia (b009-b012 wrote Principality);
-  聖騎士 = Temple Knight (b037-b040 wrote "holy knight"); ブライ = Bly (official Atlus, Mistel's grandfather;
-  b061-b072 wrote "Brai"); "dear" on Eudy in b049-b052 (MESSAGE181:0746 and others) must go; 戦意 = morale in
-  system text, "will to fight" allowed in dialogue; 敵将 "enemy general" in dialogue. Speaker tags doubted
-  (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192): check in review.
+- **Batch state (session 9, 2026-11-10):** merged + reviewed (+ fixes): b001-b016 incl. b005-b012, b013-b034.
+  Translated, check OK, NOT reviewed, NOT merged: b035-b070, b072-b076. b071 fails check only on 7 EDMES epithets
+  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b035-b036 ... b075-b076).
+  Session 9 already applied to the pending .out.tsv files: every "dear" on Eudy (dropped) / Rosary (-> darling),
+  Brai -> Bly, Bronga -> Brongaa, holy knight -> Temple Knight; glossary rows now enforce Bly, Brongaa, Temple
+  Knight (聖騎士), Duchy of Embellia (エンベリア公国) in `batches.py check`.
+  Composite joins (territory captured, capital taken, card decided, item held) re-broken so every combination fits
+  240 px: lint clean (check.py 0 errors). glossary.md "composite sentences" has the joins.
+  **Reviewer route this session:** no subagents allowed (Orca worker) and `codex exec` hit its usage limit (resets
+  2026-11-11 13:07); the controller reviewed pairs itself (~12k tokens per pair). With codex back,
+  `sh tools/codex_review.sh bA bB` runs review + fix for one pair (reports in work/qa/review/). Per pair: read
+  work/qa/pairs/bA-bB.txt, fix Critical/Important in work/tl/bN.out.tsv (Edit; `tools/setval.py` for values ending
+  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b035-b036.
+- **Review flags still to check in review:** 戦意 = morale in system text, "will to fight" allowed in dialogue;
+  敵将 foe/enemy general. Speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
 - **EDMES epithets need engine room (phase 7, D4):** the epithet run is 150 px x1 incl. the name; b071 LONG
   EDMES00:009C/00AB/00BA/00C9/00EA ("<adj> Astral Fencer Russell" 170-196 px), EDMES03:012A, EDMES04:00D8; b073-b076
   dropped ranks (EDMES25/28 Black/White Rose Archsage/King..., list in work/tl/b073.report.txt). Widen the epithet
