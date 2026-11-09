@@ -38,15 +38,15 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 |---|---|---|---|
 | centred help band under a scene banner (top screen, y 140) | ctr, overlay callers | 240 px x 3 | measured: 240 px x 2 = ink 9-248 (territory); 3rd line by y |
 | CONFIRM / info band (bottom screen, full width, OK / CANCEL) | ctr, caller 0x020102F8 | 240 px x 3 | measured on card_select (band spans the screen) |
-| character profile ticker (char_intro, y 4, scrolls left) | run, ov9_07 0x0211BC3C | 520 px (slot limit) | measured: 82 chars ok (114/128 slots), 130 chars crashes |
+| character profile ticker (char_intro, y 4, scrolls left) | run, ov9_07 0x0211BC3C | 900 px (slots) | measured: packed cells, every profile at 900 px = 89/128 slots, scrolls through and restarts (work/qa/gate/tick3) |
 | item name, system font, prize item list (x 30, scrollbar at 242) | run, prize overlay 0x0211E524/E6A4 | 208 px | measured (work/play/prize2/0003.png) |
 | item name FONT_ITEM, item popup (x 23 y 116), effect lines (x 40 y 132; x 3 y 167 built in a heap buffer) | run | guess | drawn in prize after tapping an item, not visible in the shot yet |
 | medallion line (arm9:9222C, x = 0x80000000 at entry: set later) | run | guess | |
 | everything else (help menu ov9_03, extras ov9_06, unlocks ov9_18, explore pages, item effects / equip lines, save prompts) | | 240 x 3 / 100 x 1 guesses | screens not toured yet |
 
-**Glyph slots:** system text takes one slot per glyph (pool at 0x0210E768; cap 128 in most scenes, 256 tutorial).
-Landing screens with every string at full budget peak at 117/128 (medallion), 114 (char_intro). Long profiles
-overflow: pack system text into 16 px cells like dialogue (engine work, next).
+**Glyph slots:** system text is packed into 16 px cells (one slot per 16 px of line, text.md; pool at 0x0210E768,
+cap 128 in most scenes, 256 tutorial); slots past the cap are not drawn instead of overrunning. Before packing
+(one slot per glyph) landing screens peaked at 117/128 (medallion) and a 130-char profile crashed.
 
 **Unit / class names in lists** (prize UNIT LIST, unit status: ヴァルキリー, 王女ユグドラ, 時間帯, 地形 ...) are textures
 (CNAME*, graphics phase), not system strings.

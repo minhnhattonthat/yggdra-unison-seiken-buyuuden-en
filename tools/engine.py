@@ -13,9 +13,12 @@ DRAW = 0x0210E768  # system/centred text state: +0 glyph buffer, +4 u16 codes (c
 HOOKS = f"""
     b glyph_cell               @ entry +0 (sites BL to the entries; lr returns to the site)
     b hook_step                @ entry +4
-    b hook_center              @ entry +8
+    b pack_ctr                 @ entry +8 (function entries B here: lr is the caller's)
     b cells_count              @ entry +C
     b ov_adv                   @ entry +10
+    b pack_run                 @ entry +14
+    b hook_qw                  @ entry +18
+    b count11                  @ entry +1C
 
 ov_adv:                      @ ov9_15 0x0211DC8C add r4,r4,#0xB (ending epilogue, one glyph per 0x02012FFC call)
     push {{lr}}                   @ r7 = glyph code, fp = font id; r0-r3/ip are free here
@@ -216,27 +219,391 @@ hook_step:                   @ 0x02012D10 ldr r0,[sp,#0x18] (run draw 0x02012C10
     mov r1, r6, lsr #7
     add r0, r0, r1, lsl #1
     ldrh r0, [r0]
+    cmp r0, #0xC000            @ packed cell (pack_run): cells sit 16 px apart
+    movhs r0, #16
+    bxhs lr
     ldr r1, [sp, #0x18]
     b width
 
-hook_center:                 @ 0x02013114 / 0x020131C8 mul r0,r5,r0 (r0 = 0xB): r0 = px of the r5 glyphs queued
-    push {{r4, r5, r6, lr}}
-    ldr r1, ={DRAW:#x}
-    ldrh r4, [r1, #0xA]
-    ldr r6, [r1, #4]
-    add r6, r6, r4, lsl #1
-    mov r4, #0
-center_loop:
-    subs r5, r5, #1
-    blt center_done
-    ldrh r0, [r6], #2
-    mov r1, #0xB
-    bl width
-    add r4, r4, r0
-    b center_loop
-center_done:
+hook_qw:                     @ 0x02012D08 mov r3,#0xC in the run draw: quad width 16 for a packed cell, else 12
+    push {{r0, r1, r2, lr}}
+    ldr r0, ={DRAW:#x}
+    ldr r0, [r0, #4]
+    mov r1, r6, lsr #7
+    add r0, r0, r1, lsl #1
+    ldrh r0, [r0]
+    cmp r0, #0xC000
+    movhs r3, #16
+    movlo r3, #12
+    pop {{r0, r1, r2, pc}}
+
+@ System text (run 0x02012DF4, centred 0x020130AC) is redrawn every frame, one slot per glyph, slot cached by
+@ codes[slot] == glyph. Packed instead: each segment (text between FD / FC / FF) is blitted into 16 px cells at VWF
+@ pen x (every block from 0 to the last one reached gets a cell). Cell cache: codes[slot] = 0xC000 | key & 0x1FFF
+@ (no game code or glyph-search key reaches 0xC000) and slotkey[slot] = key (FNV over code, font, x in the cell).
+@ Slots past the pool capacity are not drawn (one glyph per slot overran the pool and crashed).
+@ ps: +0 x0 +4 y +8 z +C font +10 param +14 centred +18 segment x (run) +1C total px +20 segment start
+@ +28 segment px +34/+38 miss mask +3C default advance +40 adv for 0x02012C10 +44 break +48 x +4C break ptr
+@ +50 adv +54 code +58 glyph read
+pack_run:                    @ 0x02012DF4: r0 x, r1 y, r2 z, r3 string, [sp] font (u8), [sp+4] param
+    ldr ip, =ps
+    stm ip, {{r0, r1, r2}}
+    ldrb r0, [sp]
+    str r0, [ip, #0xC]
+    ldr r0, [sp, #4]
+    str r0, [ip, #0x10]
+    mov r0, #0
+    str r0, [ip, #0x14]
+    mov r0, r3
+    b pack
+pack_ctr:                    @ 0x020130AC: r0 y, r1 z, r2 string, r3 font, [sp] param; x = 0x80 - px / 2 per line
+    ldr ip, =ps
+    str r0, [ip, #4]
+    str r1, [ip, #8]
+    str r3, [ip, #0xC]
+    ldr r0, [sp]
+    str r0, [ip, #0x10]
+    mov r0, #1
+    str r0, [ip, #0x14]
+    mov r0, #0
+    str r0, [ip]
+    mov r0, r2
+pack:                          @ -> r0 = ceil(total px / 11) (a glyph count for callers sizing highlight bars)
+    push {{r4, r5, r6, r7, r8, r9, r10, r11, lr}}
+    ldr r11, =ps
+    movs r4, r0
+    beq pk_ret
+    ldr r0, [r11, #0xC]
+    and r0, r0, #3
+    str r0, [r11, #0xC]
+    ldr r1, [r11, #0x14]
+    cmp r1, #0
+    ldreq r2, =0x0208F9C0
+    ldrbeq r2, [r2, r0]
+    movne r2, #0xC
+    str r2, [r11, #0x40]
+    sub r2, r2, #1
+    str r2, [r11, #0x3C]
+    ldr r0, [r11]
+    str r0, [r11, #0x18]
+    mov r0, #0
+    str r0, [r11, #0x1C]
+pk_seg:                        @ pass 1: block keys, r5 pen, r6 blocks
+    str r4, [r11, #0x20]
+    mov r5, #0
+    mov r6, #0
+pk_p1:
+    bl glyph_at
+    cmp r0, #0x10000
+    bhs pk_p1end
+    cmp r2, #0
+    beq pk_p1adv
+    mov r7, r5, asr #4
+    add r8, r5, r2
+    sub r8, r8, #1
+    mov r8, r8, asr #4
+    cmp r8, #63
+    movgt r8, #63
+    ldr r9, =keys
+pk_p1b:
+    cmp r7, r8
+    bgt pk_p1adv
+pk_p1i:
+    cmp r6, r7
+    bgt pk_p1k
+    ldr r10, =0x811C9DC5
+    str r10, [r9, r6, lsl #2]
+    add r6, r6, #1
+    b pk_p1i
+pk_p1k:
+    ldr r10, [r11, #0xC]
+    orr r10, r0, r10, lsl #12
+    sub r3, r5, r7, lsl #4
+    and r3, r3, #0xFF
+    orr r10, r10, r3, lsl #16
+    ldr r3, [r9, r7, lsl #2]
+    eor r3, r3, r10
+    ldr r10, =16777619
+    mul r3, r10, r3
+    str r3, [r9, r7, lsl #2]
+    add r7, r7, #1
+    b pk_p1b
+pk_p1adv:
+    add r5, r5, r1
+    b pk_p1
+pk_p1end:
+    str r0, [r11, #0x44]
+    str r5, [r11, #0x28]
+    ldr r1, [r11, #0x1C]
+    add r1, r1, r5
+    str r1, [r11, #0x1C]
+    ldr r1, [r11, #0x14]
+    cmp r1, #0
+    ldreq r7, [r11, #0x18]
+    movne r7, #0x80
+    subne r7, r7, r5, asr #1
+    str r7, [r11, #0x48]
+    ldr r9, ={DRAW:#x}             @ pass 2: r8 used, r6 = cells that fit, cache check
+    ldrh r8, [r9, #0xA]
+    ldrh r1, [r9, #8]
+    sub r1, r1, r8
+    cmp r6, r1
+    movgt r6, r1
+    cmp r6, #0
+    movlt r6, #0
+    mov r0, #0
+    str r0, [r11, #0x34]
+    str r0, [r11, #0x38]
+    mov r5, #0
+pk_p2:
+    cmp r5, r6
+    bge pk_p2end
+    add r2, r8, r5
+    ldr r3, =keys
+    ldr r3, [r3, r5, lsl #2]
+    mov r0, r3, lsl #19
+    mov r0, r0, lsr #19
+    orr r0, r0, #0xC000
+    ldr r1, [r9, #4]
+    add r1, r1, r2, lsl #1
+    ldr r10, =slotkey
+    ldrh ip, [r1]
+    cmp ip, r0
+    bne pk_miss
+    cmp r2, #512
+    bhs pk_miss
+    ldr ip, [r10, r2, lsl #2]
+    cmp ip, r3
+    beq pk_p2n
+pk_miss:
+    strh r0, [r1]
+    cmp r2, #512
+    strlo r3, [r10, r2, lsl #2]
+    ldr r0, [r9]
+    add r0, r0, r2, lsl #7
+    mov r1, #0
+    mov ip, #0x80
+pk_z:
+    subs ip, ip, #4
+    str r1, [r0, ip]
+    bne pk_z
+    and r0, r5, #31
+    mov r1, #1
+    mov r1, r1, lsl r0
+    mov r0, r5, lsr #5
+    add r0, r11, r0, lsl #2
+    ldr ip, [r0, #0x34]
+    orr ip, ip, r1
+    str ip, [r0, #0x34]
+pk_p2n:
+    add r5, r5, #1
+    b pk_p2
+pk_p2end:                      @ pass 3: blit each glyph into its missed cells
+    ldr r0, [r11, #0x34]
+    ldr r1, [r11, #0x38]
+    orrs r0, r0, r1
+    beq pk_draw
+    str r4, [r11, #0x4C]
+    ldr r4, [r11, #0x20]
+    mov r5, #0
+pk_p3:
+    bl glyph_at
+    cmp r0, #0x10000
+    bhs pk_p3end
+    cmp r2, #0
+    beq pk_p3adv
+    str r1, [r11, #0x50]
+    str r0, [r11, #0x54]
+    mov r7, r5, asr #4
+    add r10, r5, r2
+    sub r10, r10, #1
+    mov r10, r10, asr #4
+    sub r3, r6, #1
+    cmp r10, r3
+    movgt r10, r3
+    mov r0, #0
+    str r0, [r11, #0x58]
+pk_p3b:
+    cmp r7, r10
+    bgt pk_p3adv0
+    mov r0, r7, lsr #5
+    add r0, r11, r0, lsl #2
+    ldr r0, [r0, #0x34]
+    and r1, r7, #31
+    mov r0, r0, lsr r1
+    tst r0, #1
+    beq pk_p3nb
+    ldr r0, [r11, #0x58]
+    cmp r0, #0
+    bne pk_p3have
+    mov r0, #1
+    str r0, [r11, #0x58]
+    ldr r0, [r11, #0xC]
+    ldr r1, [r11, #0x54]
+    ldr r2, =gbuf
+    bl #0x2012130              @ glyph (font r0, code r1) -> gbuf
+pk_p3have:
+    ldr r0, [r9]
+    add r1, r8, r7
+    add r0, r0, r1, lsl #7
+    rsb r1, r5, r7, lsl #4
+    bl blit
+pk_p3nb:
+    add r7, r7, #1
+    b pk_p3b
+pk_p3adv0:
+    ldr r1, [r11, #0x50]
+pk_p3adv:
+    add r5, r5, r1
+    b pk_p3
+pk_p3end:
+    ldr r4, [r11, #0x4C]
+pk_draw:
+    cmp r6, #0
+    beq pk_brk
+    sub sp, sp, #0x10
+    str r8, [sp]
+    ldr r0, [r11, #0x10]
+    str r0, [sp, #4]
+    ldr r0, [r11, #0x40]
+    str r0, [sp, #8]
+    ldr r0, [r11, #0x48]
+    ldr r1, [r11, #4]
+    ldr r2, [r11, #8]
+    mov r3, r6
+    bl #0x2012c10              @ run draw: r6 quads from slot r8
+    add sp, sp, #0x10
+    add r8, r8, r6
+    strh r8, [r9, #0xA]
+pk_brk:
+    ldr r0, [r11, #0x44]
+    and r0, r0, #0xFF
+    cmp r0, #0xFF
+    beq pk_end
+    add r4, r4, #1
+    cmp r0, #0xFD
+    bne pk_fc
+    ldr r3, [r11, #4]
+    add r3, r3, #0xF
+    str r3, [r11, #4]
+    ldr r3, [r11]
+    str r3, [r11, #0x18]
+    b pk_seg
+pk_fc:                         @ FC xx: colour from 0x0209281C, the line goes on after this segment
+    ldr r1, [r11, #0x48]
+    ldr r2, [r11, #0x28]
+    add r1, r1, r2
+    str r1, [r11, #0x18]
+    ldrb r0, [r4], #1
+    ldr r1, =0x0209281C
+    mov r0, r0, lsl #1
+    ldrh r0, [r1, r0]
+    ldr r1, =0x04000480
+    str r0, [r1]
+    b pk_seg
+pk_end:
+    ldr r0, [r11, #0x1C]
+    add r0, r0, #10
+    ldr r1, =5958
+    mul r2, r0, r1
+    mov r4, r2, lsr #16
+pk_ret:
     mov r0, r4
-    pop {{r4, r5, r6, pc}}
+    pop {{r4, r5, r6, r7, r8, r9, r10, r11, pc}}
+
+count11:                     @ 0x02013224 glyph count: callers (ov9_06/07/10/15) lay out boxes / centring as 11 x n
+    push {{r4, r5, r11, lr}}     @ -> ceil(px / 11), px from the font 0 advances
+    ldr r11, =ps
+    movs r4, r0
+    beq c11_done
+    mov r0, #0
+    str r0, [r11, #0xC]
+    mov r0, #11
+    str r0, [r11, #0x3C]
+    mov r5, #0
+c11_loop:
+    bl glyph_at
+    cmp r0, #0x10000
+    addlo r5, r5, r1
+    blo c11_loop
+    and r0, r0, #0xFF
+    cmp r0, #0xFF
+    beq c11_end
+    add r4, r4, #1
+    cmp r0, #0xFC
+    addeq r4, r4, #1
+    b c11_loop
+c11_end:
+    add r0, r5, #10
+    ldr r1, =5958
+    mul r2, r0, r1
+    mov r0, r2, lsr #16
+c11_done:
+    pop {{r4, r5, r11, pc}}
+
+glyph_at:                    @ r4 = string -> r0 code (0x100xx = break byte FC-FF, r4 stays), r1 advance, r2 visible
+    ldrb r0, [r4]
+    cmp r0, #0xFC
+    orrhs r0, r0, #0x10000
+    bxhs lr
+    add r4, r4, #1
+    sub r1, r0, #0xF1
+    cmp r1, #8
+    bhi ga_one
+    ldrb r2, [r4], #1
+    add r1, r1, #1
+    mov r3, #0xF0
+    mla r0, r1, r3, r2
+ga_one:
+    ldr r1, [r11, #0x3C]
+    mov r2, #12                @ the game shows 12 columns of a glyph
+    cmp r0, #0x100
+    bxhs lr
+    ldr r3, [r11, #0xC]
+    ldr ip, =wtab
+    add ip, ip, r3, lsl #8
+    ldrb r3, [ip, r0]
+    cmp r3, #0
+    bxeq lr
+    mov r1, r3
+    ldr ip, =vtab
+    ldrb r2, [ip, r0]
+    bx lr
+
+blit:                        @ gbuf glyph into cell r0: cell column c takes glyph column c + r1 (ink only)
+    push {{r4, r5, r6, r7, lr}}
+    ldr r4, =gbuf
+    mov r5, #0
+bl_row:
+    mov r6, #0
+bl_col:
+    adds r2, r6, r1
+    bmi bl_next
+    cmp r2, #16
+    bge bl_next
+    add r3, r4, r5, lsl #3
+    ldrb r3, [r3, r2, lsr #1]
+    tst r2, #1
+    movne r3, r3, lsr #4
+    ands r3, r3, #0xF
+    beq bl_next
+    add r7, r0, r5, lsl #3
+    add r7, r7, r6, lsr #1
+    ldrb ip, [r7]
+    tst r6, #1
+    biceq ip, ip, #0xF
+    orreq ip, ip, r3
+    bicne ip, ip, #0xF0
+    orrne ip, ip, r3, lsl #4
+    strb ip, [r7]
+bl_next:
+    add r6, r6, #1
+    cmp r6, #16
+    blt bl_col
+    add r5, r5, #1
+    cmp r5, #16
+    blt bl_row
+    pop {{r4, r5, r6, r7, pc}}
 
 width:                       @ r0 = code | font << 12, r1 = default -> r0 = advance
     mov r2, r0, lsr #12
@@ -261,17 +628,25 @@ state:
 .space 0x10
 gbuf:
 .space 0x80
+ps:
+.space 0x60
+keys:
+.space 0x100
+slotkey:
+.space 0x800
 """
-TAIL = 0x590  # wtab .. end of gbuf
+TAIL = 0x590 + 0x960  # wtab .. end of slotkey (zeros; wtab + vtab filled in)
 
 SITES = [  # (address, original instruction word, entry offset, or an instruction to put there)
     (0x02012904, 0xEB00025A, 0xC),       # bl 0x02013274 (glyph count) -> cells_count
     (0x02012B0C, 0xE5980018, 0),         # dialogue glyph: ldr r0,[r8,#0x18] -> bl glyph_cell
     (0x02012B10, 0xE1A02005, "b #0x2012a74"),  # mov r2,r5 -> back to the loop top
     (0x02012784, 0xE3A0300C, "mov r3, #0x10"),  # dialogue quad width 12 -> 16, so a whole cell shows
-    (0x02012D10, 0xE59D0018, 4),
-    (0x02013114, 0xE0000095, 8),
-    (0x020131C8, 0xE0000095, 8),
+    (0x02012D10, 0xE59D0018, 4),         # run draw step: x += VWF advance (16 per packed cell)
+    (0x02012D08, 0xE3A0300C, 0x18),      # run draw quad width: 16 for a packed cell
+    (0x02012DF4, 0xE92D4FF0, ("b", 0x14)),  # system text run -> pack_run (whole function replaced)
+    (0x020130AC, 0xE92D4FF8, ("b", 0x8)),   # centred system text -> pack_ctr
+    (0x02013224, 0xE3500000, ("b", 0x1C)),  # glyph count (layout 11 x n) -> count11 = ceil(px / 11)
 ]
 OV_SITES = [  # (overlay image, address, original word, entry offset): overlays load at 0x0211B780
     ("ov9_15", 0x0211DC8C, 0xE284400B, 0x10),  # EDMES epilogue text: fixed 11 px advance -> VWF
@@ -331,6 +706,8 @@ def patch_arm9(arm9, wtab, extra=b""):
     for site, orig, entry in SITES:
         off = site - 0x02000000
         assert int.from_bytes(data[off:off + 4], "little") == orig, f"{site:#x}: unexpected original instruction"
-        data[off:off + 4] = asm(entry if isinstance(entry, str) else f"bl #{at + entry:#x}", site)
+        src = entry if isinstance(entry, str) else f"{entry[0]} #{at + entry[1]:#x}" if isinstance(entry, tuple) \
+            else f"bl #{at + entry:#x}"
+        data[off:off + 4] = asm(src, site)
     main.data = bytes(data)
     return code.save()

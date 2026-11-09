@@ -79,9 +79,15 @@
   path at 0x02012B0C: each line is blitted into 16 px cells (a cell opens only when a glyph's visible pixels reach it),
   quads widened to 16 (0x02012784). Slots used = sum over lines of ceil(px / 16), fewer than the Japanese used for the
   same width, so every scene's slot budget holds as long as a line fits its box. Typewriter reveal runs per cell.
-- **System/centred text**: still one slot per glyph; VWF via `hook_step` (0x02012D10) and `hook_center` (0x02013114,
-  0x020131C8, centring from the real widths). FC colour mid-line in system text would misplace the next run (no
-  string uses FC).
+- **System/centred text = packed cells too** (`pack_run` / `pack_ctr` replace 0x02012DF4 / 0x020130AC whole): each
+  segment (text up to FD / FC / FF) is blitted into 16 px cells at VWF pen x, every block from 0 to the last one
+  reached gets a slot, then 0x02012C10 draws them (`hook_step` steps 16 and `hook_qw` at 0x02012D08 widens the quad
+  to 16 for a packed cell). The game redraws system text every frame and caches a slot by `codes[slot] == glyph`;
+  a packed slot gets `codes[slot] = 0xC000 | key & 0x1FFF` (above every game code and every key 0x02012130's
+  glyph search uses) plus a full 32-bit key in `slotkey[slot]` (FNV over code, font, x in the cell), so a cell is
+  re-blitted only when its content changes. Slots past the pool capacity (+8) are not drawn (the original overran
+  the pool and crashed). FC xx sets the colour and the line goes on at the real px. Return value = ceil(px / 11)
+  (0x0201038C sizes a highlight bar as 11 x that). Single glyphs (0x02012FFC, EDMES) keep one slot each.
 - **EDMES paragraphs** (ov9_15 0x0211DC88 -> 0x02012FFC, one glyph per call, x += 11 by the overlay): `ov_adv` hook
   at 0x0211DC8C (engine.OV_SITES, patched per overlay in build.edits). Only caller of 0x02012FFC. Budgets: windows.md.
 
