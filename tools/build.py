@@ -70,9 +70,10 @@ def edits(marker=False):
     """(DATA.SFS {name: bytes}, code images {image: bytes}): English fonts + VWF, then text (marker or English)."""
     import enfont
     import engine
+    import gfx
     import text
     fonts, wtab = enfont.patched_fonts(text.sfs_files(set(enfont.FONTS)))
-    repl, images, extra = dict(fonts), {}, b""
+    repl, images, extra = dict(fonts) | gfx.files(), {}, b""
     if marker:
         import marker as mk
         skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else ()

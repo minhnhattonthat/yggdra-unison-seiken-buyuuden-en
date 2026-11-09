@@ -1,0 +1,14 @@
+# Texture English (tools/gen_gfx.py). NAME <TAB> English <TAB> options. Names per glossary.md.
+# Phase banners (SHOOTNAME, top bar of each phase): one size for the class
+SHOOTNAME00	Faction Select	size=28
+SHOOTNAME01	Card Select	size=28
+SHOOTNAME02	Choose Your Target	size=28
+SHOOTNAME03	War Report	size=28
+SHOOTNAME04	Explore	size=28
+SHOOTNAME05	Exploration Report	size=28
+SHOOTNAME06	Medallion Supply	size=28
+SHOOTNAME07	Territory Expansion	size=28
+SHOOTNAME08	Prisoners	size=28
+SHOOTNAME09	Rewards	size=28
+SHOOTNAME10	Exploration Prep	size=28
+SHOOTNAME11	Dismissal	size=28

@@ -14,6 +14,7 @@
 import json
 import struct
 import sys
+from functools import cache
 from pathlib import Path
 
 import ndspy.code
@@ -130,6 +131,12 @@ def main_or(images, img):
     return bytes(sections(images["arm9"])[0x02000000].data) if img == "arm9" else images[img]
 
 
+@cache
+def textures():
+    import gfx
+    return gfx.files()
+
+
 def check_sfs(orig_files, new_files):
     errs = []
     if set(orig_files) != set(new_files):
@@ -141,7 +148,10 @@ def check_sfs(orig_files, new_files):
         if nb is None or name in enfont.FONTS:
             continue
         if name not in script:
-            if nb != b:
+            if name in textures():
+                if nb != textures()[name]:
+                    errs.append(f"{name}: differs from tools/gfx.py's encode of gfx/{name[:-5]}.png")
+            elif nb != b:
                 errs.append(f"{name}: changed (not a font or script file)")
             continue
         sa, strs, refs, _ = text.layout(name, b)

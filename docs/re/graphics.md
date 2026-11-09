@@ -52,6 +52,16 @@ BTLBG*, BUST*, EPI_BUST*, FACE*/FACEALL/FACEEVE/FACEUP/FACEHOL, FLAG*, FS_FLAG*,
 TIT_BG0/1, ST_BG*, STSORBG*, CDSKILLBG*, MSGFRAME, DMGFRAME, etc. ED_NESIA and ICON18-20 have small lettering-like
 marks: confirm on screen.
 
+## Pipeline (phase 8, session 14: works in game, SHOOTNAME00 "Faction Select" seen at faction_select)
+- `gfx/text.tsv` (NAME, English, options) -> `tools/gen_gfx.py` draws gfx/NAME.png (clears the original's text bbox
+  or `box=`, Liberation font from fonts/, fill = per-row brightest colour of the original, outline = its darkest,
+  binary alpha) -> `tools/gfx.py` encodes into a PACK with the original palette untouched (4x4: best palette
+  offset + mode per block; paletted: nearest colour), parts raw, flags 0x100 -> build.py `repl`.
+  `gfx.py check` writes the re-decoded result to work/gfx/enc/ (look at that, not gfx/). romcheck: a changed PACK
+  must equal the encode of its gfx/ PNG. tests/test_gfx.py: an unedited decode re-encodes pixel-identical.
+- The game tints some textures itself (the SHOOTNAME banner shows white texels as a yellow gradient).
+- Not handled yet: `_unk` PACKs (no name: build.rebuild_sfs takes names only), textures needing a new palette.
+
 ## Edit plan (phase 5+)
 - Re-encode: 4x4 compression encoder needed (or switch a texture to a paletted format only if the loader reads the format
   from data, not from code - check the texture params at the load call). Paletted/2bpp ones re-import directly.

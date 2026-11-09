@@ -5,5 +5,5 @@ per file; a font with no known licence doesn't go into a release.
 
 | File | Source (URL, version) | Licence | Redistributable in a patch | Used for | Changes made |
 |---|---|---|---|---|---|
-| <fonts/vwf_8px.png> | <drawn for this project> | <MIT, same as repo> | yes | <dialogue VWF> | <-> |
-| <fonts/Title.ttf> | <url, v1.2> | <OFL 1.1> | <yes, as rendered glyphs> | <typeset.py title cards> | <-> |
+| (in-game Latin glyphs + tools/enfont.py PUNCT) | the game's own FONT_* glyphs; punctuation drawn for this project | game / MIT | yes | dialogue + system VWF | outline added, shifted to column 0 |
+| fonts/LiberationSerif-Bold.ttf, -Regular.ttf, fonts/LiberationSans-Bold.ttf, -Regular.ttf | github.com/liberationfonts/liberation-fonts 2.1.5 | SIL OFL 1.1 (fonts/LICENSE-Liberation.txt) | yes, as rendered pixels | texture lettering (tools/gfx.py) | none |
