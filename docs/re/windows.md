@@ -25,7 +25,9 @@ Both create the object at x = -1; the scene sets the position, so the box is per
   with the torture line (EDMES07:0100, last line 206 px). The game fades the text where it crosses the portrait
   (the Japanese does the same).
 - One-line epithets (ナマクラ聖剣士ラッセル, record +0): the top title bar is the ED_H texture with the same words;
-  the string itself is drawn on the bottom 戦績 page after 称号： (ov9_15 0x0211E010, run x 102 y 35): **150 px**.
+  the string itself is drawn on the bottom 戦績 page after 称号： (ov9_15 0x0211E010, run x 102 y 35): 150 px in the
+  original. `mov r0,#0x66` at 0x0211E004 is now `#0x42` (engine.OV_SITES): run x 66, over the 称号： label (part of
+  the page BG, no text call: blank it in the graphics phase), clipped at 256: **186 px** (work/qa/epi_mk f000900).
 
 ## System text (arm9 / overlay pools; 0x02012DF4 runs, 0x020130AC centred)
 Which string draws where: `tools/lua/systrace.lua` logs every call (x, y, font, caller, bytes); on the marker build
@@ -64,7 +66,7 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 | textures, no system text: battle menu (SELECT), L unit panel, unit status, unit lists, sortie territory panel, faction info panel, VS names | | | toured 2026-11-10 |
 | battle HINT! popup (100500, task 0x0207FD6C): entry 2n white y 49, 2n+1 red y 82/97, yellow panel spans the screen; centred by per-line glyph count (0x02013274) x 11, not px: **phase 7 fix** | run | 220 x 2 | measured (work/qa/tip0_top.png; `spmes.lua --var CALL=0x02080388` + `tips.lua --var TIP=n`) |
 | battle results (War Result page, 100554 labels x 40 y 48 + 21 n, digits from x 176) | run 0x02080D88 | 120 | measured (work/qa/res_final.png; `spmes.lua --var CALL=0x02081350 --var R0=8` = YOU WIN + results) |
-| ending epithet one-liner (EDMES record +0): ov9_15 0x0211E010 run x 102 y 35 bottom screen after 称号：, bar count11*11+40 from x 66 | run | 150 | measured (work/qa/gate/epilogue f000900) |
+| ending epithet one-liner (EDMES record +0): ov9_15 0x0211E010 run x 66 (was 102, after 称号：) y 35 bottom screen, bar count11*11+40 from x 66 | run | 186 | measured (work/qa/epi_mk f000900) |
 | ending results bubble MESSAGE168 (戦績 page): pen x 7, cloud to ~165 | MESSAGE | 142 x 2 | measured (work/qa/m168_zoom.png) |
 | info band messages (explore / prize / medallion / save..., `tools/strcalls.py`: load then BL 0x0200FC88) | band -> ctr 0x020102F8 | 240 x 3 | same band as card_select |
 | battle CAUTION messages (load then BL 0x02010BC8 = the CAUTION task, as arm9:930D8) | ctr 0x02010BA4 | 240 x 1 | same band |

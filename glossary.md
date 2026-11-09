@@ -158,6 +158,12 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 緋雪姫 | Scarlet Princess | | Emilia | |
 | 専業主婦 | housewife | | Mistel ("full-time housewife") | |
 | 堕天 | Fallen | | 堕天のネシア Nessiah the Fallen | |
+| 堕天使 | Fallen Angel | | Nessiah epithets (EDMES36) | |
+| 預言者 | Prophet | | Nessiah epithets | |
+| 教皇 | Pope | | Juvelon epithets | |
+| 枢機卿 | Cardinal | | Juvelon | |
+| 魔導師 | Mage | | Pamela, Rosary (大魔導師 Magus in the White Rose epithet) | |
+| 賞金稼ぎ | Bounty Hunter | | Mizer | |
 
 ## Cards (A7E44; card names are also CARDNAME textures)
 | JP | EN | max | notes | Avoid |

@@ -119,3 +119,16 @@ to run while any line is unticked.
 
 ## b067-b068 (DUEL EVENT lines Luciana..Gulcasa, approved; controller review)
 - [ ] SPMES030036:01EF / 020D Nessiah - ユミラ "Yumira" / ユメール人 "Yumeru": unverified romanisation, check against Atlus lore names
+
+## b069-b070 (DUEL EVENT lines Gulcasa..Nessiah, approved; Luciana addressee + Nessiah taunt fixed in review)
+- [ ] SPMES034036:0160 Nessiah - フフフ dropped (room): add "Heh heh..." if the box allows
+
+## b071-b072 (APP/TRE/WR system lines, EDMES00-13; approved; epithet run widened to 186 px, controller review)
+- [ ] EDMES00:00EA Russell - 悲運 shipped as "Tragic" (Ill-Fated was 196 px): fine unless the ED_H texture wording differs
+- [ ] SPMES_APP02:011B Mistel - 百人力 "With me here, I'm worth a hundred~!" reads a bit stiff: With me, you're / a hundred strong~!
+
+## b073-b076 (EDMES13-37 epithets + epilogues; approved; cut ranks restored at 186 px, controller review)
+- [ ] EDMES25:038A Roswell - 黒薔薇にその人在り "The Black Rose has its man" awkward: "Black Rose has its great man"
+- [ ] EDMES25:00E2 / EDMES28:00DB - 大賢者/大魔導師 shipped Sage / Magus (Archsage/Archmage 189 px > 186): recheck if the budget is ever measured to 190
+- [ ] EDMES30:00B7-00E5 Pamela - ビッグオブ/グレートオブ broken-English joke flattened (Big Mage / Great Mage): consider "Big of Mages"
+- [ ] EDMES26:00D8 / EDMES20:009C / EDMES18:00A7 - translator unsure (流神 Evangelist, ぶち Hothead, 卑屈姫 Sulky): check lore

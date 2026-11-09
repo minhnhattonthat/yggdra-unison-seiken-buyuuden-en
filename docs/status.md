@@ -3,17 +3,30 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 6. Translate in progress (76 batches work/tl/b001-b076 from `tools/batches.py split`; wave 1 b001-b032
-  dispatched session 8; merged batches listed below).
-- **Phase 6 kit (session 8):** `tools/batches.py` split/check/merge/fit/wrap/terms (identical JP in the same box kind
-  batched once, merge copies it to every id; speaker from bytecode opcode `35 id id` / `33 id expr`, ids = unit
-  table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
-  docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
-  script/.
-- **Batch state (session 11, 2026-11-10):** merged + reviewed (+ fixes): b001-b068.
-  Translated, check OK, NOT reviewed, NOT merged: b069-b070, b072-b076. b071 fails check only on 7 EDMES epithets
-  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b069-b070 ... b075-b076), regenerated
-  session 10 after the session-9 fixes (older pairs files were stale: rerun `pairs.py bA bB` if a .out.tsv changes).
+- **Phase:** 7. Insert, fit, check in progress (phase 6 done 2026-11-10, session 12).
+- **Phase 6 done (session 12):** all 76 batches merged into script/ and reviewed (b069-b076 by the controller: codex
+  out, no subagents in an Orca worker); `batches.py check` = 13723 entries, 0 problems; check.py 17 passed, lint 0
+  errors. Session 12 fixes: Luciana addressee SPMES036004:01D4, Nessiah taunt SPMES036000:01DA, Kylier "!?"
+  SPMES036019:01FB, Mistel APP01:0113, EDMES03:0180. Minors for the polish pass in docs/polish.md. Glossary gained
+  Fallen Angel / Prophet / Pope / Cardinal / Mage / Bounty Hunter (EDMES epithets).
+  Kit: `tools/batches.py` split/check/merge/fit/wrap/terms, `tools/pairs.py`, `tools/codex_review.sh bA bB`,
+  docs/translator-brief.md, docs/reviewer-brief.md, docs/style-reference.md. work/tl is gitignored.
+- **EDMES epithet run widened (session 12, D4 engine first):** ov9_15 0x0211E004 `mov r0,#0x66` -> `#0x42`
+  (engine.OV_SITES, now also takes an instruction string): run x 66, budget 186 px (was 150), on screen in
+  work/qa/epi_mk f000900. It now overlaps the 称号： label, part of the 戦績 page BG (no text call in ov9_15):
+  **graphics phase must blank that label** (and translate 忠誠度 / 戦果 / 戦線離脱 / 戦功 on the same BG). Russell's
+  epithets keep "Astral Fencer" (悲運 -> Tragic); ranks cut in b073-b076 restored (Bounty Hunter Mizer, Black Rose
+  King/Emperor Roswell, White Rose Queen/Empress Rosary, Fallen Angel Nessiah, Full-Time Housewife Mistel,
+  "Best"/Peerless/Global/Galactic/Cosmic Mage Pamela-sama). ED_H/ED_N textures carry the same words.
+- **Next (phase 7):** the English build still shows Japanese text: `build.py` inserts script/ only in marker mode
+  (`marker.script_files` / `marker.system_images`). Write the English insert (same SFS repack + system string
+  relocation as the marker path, tools/sysreloc.py), then romdiff with the write log, control codes matched, lint
+  clean, smoke + warp sheet. Engine to-do in "Phase 7 to-do" below. SPMES_WR scout sentence fragments have no
+  composite rule in windows.json yet: add one so lint checks every combination.
+- **Builds session 12 (2026-11-10 ~05:20):** `build/yggdra_en.nds` sha1 591fc5ec (smoke ok, still Japanese text);
+  `build/yggdra_marker.nds` sha1 a3702768. States regenerated from that marker build, 35/35.
+- **Review flags for QA:** speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
+- **Phase 6 history (session 11, 2026-11-10):** merged + reviewed (+ fixes): b001-b068.
   Session 11 fixes: Mistel/Milanor Sailor Moon parody SPMES014035:0197/01B6 ("tidy you up" / "punish you"); Dort
   old-man voice SPMES007017:0188/01B6, SPMES021017:017B; Leon おらおら SPMES008007:0204; Yggdra SPMES034003:019D.
   Session 10 fixes: Eudy "dears" MESSAGE179:075D; Amareus MESSAGE141:0644 / MESSAGE168:06E3; Juvelon
@@ -23,22 +36,6 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   Knight (聖騎士), Duchy of Embellia (エンベリア公国) in `batches.py check`.
   Composite joins (territory captured, capital taken, card decided, item held) re-broken so every combination fits
   240 px: lint clean (check.py 0 errors). glossary.md "composite sentences" has the joins.
-  **Reviewer route this session:** no subagents allowed (Orca worker) and `codex exec` hit its usage limit (resets
-  2026-11-11 13:07); the controller reviewed pairs itself (~12k tokens per pair). With codex back,
-  `sh tools/codex_review.sh bA bB` runs review + fix for one pair (reports in work/qa/review/). Per pair: read
-  work/qa/pairs/bA-bB.txt, fix Critical/Important in work/tl/bN.out.tsv (Edit; `tools/setval.py` for values ending
-  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b069-b070,
-  then b071-b072 (EDMES epithets: phase-7 engine work or temporary fit, D4), b073-b074, b075-b076; then phase 6 is
-  done (DUEL EVENT ~40 KB per pair, ~5 pairs per worker context). Codex still out session 11.
-- **Review flags still to check in review:** 戦意 = morale in system text, "will to fight" allowed in dialogue;
-  敵将 foe/enemy general. Speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
-- **EDMES epithets need engine room (phase 7, D4):** the epithet run is 150 px x1 incl. the name; b071 LONG
-  EDMES00:009C/00AB/00BA/00C9/00EA ("<adj> Astral Fencer Russell" 170-196 px), EDMES03:012A, EDMES04:00D8; b073-b076
-  dropped ranks (EDMES25/28 Black/White Rose Archsage/King..., list in work/tl/b073.report.txt). Widen the epithet
-  draw (ov9_15 run x 102, docs/re/windows.md) then restore the full wording. SPMES_WR scout sentence fragments
-  have no composite rule in windows.json yet (b069-b072 moved breaks between pieces): add one so lint checks them. Resume: `batches.py check bNNN` each; merge the reviewed ones;
-  `pairs.py bA bB` -> reviewer agent (compact: Critical/Important only, Minors applied by the translator in the
-  same fix round); docs/polish.md holds the Minors from the first 4 reviews.
 - **Phase 5 done (2026-11-10, session 7):**
   - Width gate closed: 0 strings on a guessed budget (lint). 13,399 strings measured on screen, 60 from code (x/y
     constants: small separators, medallion popups, extras prompts, sound titles, tutorial scroll text), 150 composite

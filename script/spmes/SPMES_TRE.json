@@ -5,57 +5,57 @@
   {
    "id": "SPMES_TRE:0160",
    "jp": "よう、いらっしゃい!",
-   "en": ""
+   "en": "Hey, welcome!"
   },
   {
    "id": "SPMES_TRE:016B",
    "jp": "あんた、ここは初めてかい?\nだったら、軽く説明してやるよ",
-   "en": ""
+   "en": "First time here? Then\nlemme explain a bit."
   },
   {
    "id": "SPMES_TRE:018C",
    "jp": "探索ってのは、ようは宝探しさ。\nお宝には色々なものがあって…",
-   "en": ""
+   "en": "Exploring means treasure\nhunting. There's all sorts..."
   },
   {
    "id": "SPMES_TRE:01B2",
    "jp": "無事手に入れたら、きっとあんたの\n勢力の役に立つと思うよ",
-   "en": ""
+   "en": "Find some, and I bet it'll\nhelp your faction out."
   },
   {
    "id": "SPMES_TRE:01D8",
    "jp": "さて…誰が探索に行くんだい?",
-   "en": ""
+   "en": "So... who's going to explore?"
   },
   {
    "id": "SPMES_TRE:01EA",
    "jp": "どこへ探索に行くんだい?",
-   "en": ""
+   "en": "Where are you\ngoing to explore?"
   },
   {
    "id": "SPMES_TRE:01F9",
    "jp": "他の誰かにも\n探索を行なわせるかい?",
-   "en": ""
+   "en": "Want anyone else\nto explore too?"
   },
   {
    "id": "SPMES_TRE:0210",
    "jp": "じゃあ、気をつけて行ってきなよ",
-   "en": ""
+   "en": "Well then, take care\nout there."
   },
   {
    "id": "SPMES_TRE:0221",
    "jp": "そうか。\nまた寄ってくれよな!",
-   "en": ""
+   "en": "I see.\nDrop by again!"
   },
   {
    "id": "SPMES_TRE:0232",
    "jp": "残念だけど、今探索を行える\nユニットがいないみたいだな!",
-   "en": ""
+   "en": "Too bad, looks like no units\ncan explore right now!"
   },
   {
    "id": "SPMES_TRE:0254",
    "jp": "残念だけど、今探索を行える\n領土がないみたいだな!",
-   "en": ""
+   "en": "Too bad, seems there's no\nterritory to explore now!"
   }
  ]
 }

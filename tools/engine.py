@@ -648,8 +648,9 @@ SITES = [  # (address, original instruction word, entry offset, or an instructio
     (0x020130AC, 0xE92D4FF8, ("b", 0x8)),   # centred system text -> pack_ctr
     (0x02013224, 0xE3500000, ("b", 0x1C)),  # glyph count (layout 11 x n) -> count11 = ceil(px / 11)
 ]
-OV_SITES = [  # (overlay image, address, original word, entry offset): overlays load at 0x0211B780
+OV_SITES = [  # (overlay image, address, original word, entry offset or instruction): overlays load at 0x0211B780
     ("ov9_15", 0x0211DC8C, 0xE284400B, 0x10),  # EDMES epilogue text: fixed 11 px advance -> VWF
+    ("ov9_15", 0x0211E004, 0xE3A00066, "mov r0, #0x42"),  # EDMES epithet run x 102 -> 66, over the 称号： label
 ]
 OV_BASE = 0x0211B780
 
@@ -668,7 +669,7 @@ def patch_overlays(images, at):
         data = bytearray(out.get(img, images[img]))
         off = site - OV_BASE
         assert int.from_bytes(data[off:off + 4], "little") == orig, f"{img} {site:#x}: unexpected original instruction"
-        data[off:off + 4] = asm(f"bl #{at + entry:#x}", site)
+        data[off:off + 4] = asm(entry if isinstance(entry, str) else f"bl #{at + entry:#x}", site)
         out[img] = bytes(data)
     return out
 
