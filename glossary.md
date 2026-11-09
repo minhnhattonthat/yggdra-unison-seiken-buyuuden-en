@@ -214,7 +214,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   鑑定所 Appraiser; 本拠地 home base; 攻撃拠点 attack base; 拠点 base; 出撃 deploy (出撃ボタン Sortie button);
   褒賞 reward; 戦功値 merit; 密偵 spies; 勢力 faction; 火炎/冷気/雷撃/暗黒/神聖 Fire/Ice/Lightning/Dark/Holy;
   夜間/昼間戦闘 night/day battle; 水辺 waterside; 戦力確認 Check Forces; ミラノ盗賊団 Milanor's Thieves;
-  エンベリア公国 Duchy of Embellia; ドルト盗賊団 Dort's Bandits; オルテガ山賊団 Ortega Brigands; 領主 lord;
+  エンベリア公国 Duchy of Embellia (b009-b012 wrote "Principality": fix to Duchy in review); 五頭竜将 Five Dragon
+  Generals; 敵将 foe general; 戦力外通告 dismiss; 探索 explore; ドルト盗賊団 Dort's Bandits; オルテガ山賊団 Ortega Brigands; 領主 lord;
   ▲/▼ dropped, the sign carries it (ATK+2, DEF-1). Composite: "Attack base: " + n + " more can deploy!";
   unit + " will explore."; "This item is held by (" + unit + ")\nso it can't be selected."; unit + " has\njoined
   your forces!".

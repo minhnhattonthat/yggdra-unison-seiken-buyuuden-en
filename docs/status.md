@@ -10,10 +10,21 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
-- **Batch state (session 8):** merged + reviewed (+ fixes): b001-b004, b013-b032. Translated, check OK, NOT
-  reviewed: b005-b008 (help/system; composite joins set). Translating when session 8 ended (all dispatched):
-  b009-b012, b033-b076; their reports also go to work/tl/b0NN.report.txt for b057+. Next: check each, pairs.py +
-  reviewer per 2 batches, fix Critical/Important (and Minors in the same round), merge, commit. Resume: `batches.py check bNNN` each; merge the reviewed ones;
+- **Batch state (end of session 8):** merged + reviewed (+ fixes): b001-b004, b013-b032. Translated, check OK,
+  NOT reviewed, NOT merged: b005-b012, b033-b044, b049-b070, b072-b076. b071 fails check on 7 EDMES epithets (LONG,
+  below). b045-b048: agent was still running at hand-off; if b04x.out.tsv is missing or fails, re-dispatch.
+  Reports for b057+ in work/tl/b0NN.report.txt (b057, b061, b065, b069, b073). Next: pairs.py + reviewer per 2
+  batches (compact: Critical/Important; send fixes + Minors back to a translator agent), merge, commit.
+- **Review flags from translator reports:** エンベリア公国 = Duchy of Embellia (b009-b012 wrote Principality);
+  聖騎士 = Temple Knight (b037-b040 wrote "holy knight"); ブライ = Bly (official Atlus, Mistel's grandfather;
+  b061-b072 wrote "Brai"); "dear" on Eudy in b049-b052 (MESSAGE181:0746 and others) must go; 戦意 = morale in
+  system text, "will to fight" allowed in dialogue; 敵将 "enemy general" in dialogue. Speaker tags doubted
+  (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192): check in review.
+- **EDMES epithets need engine room (phase 7, D4):** the epithet run is 150 px x1 incl. the name; b071 LONG
+  EDMES00:009C/00AB/00BA/00C9/00EA ("<adj> Astral Fencer Russell" 170-196 px), EDMES03:012A, EDMES04:00D8; b073-b076
+  dropped ranks (EDMES25/28 Black/White Rose Archsage/King..., list in work/tl/b073.report.txt). Widen the epithet
+  draw (ov9_15 run x 102, docs/re/windows.md) then restore the full wording. SPMES_WR scout sentence fragments
+  have no composite rule in windows.json yet (b069-b072 moved breaks between pieces): add one so lint checks them. Resume: `batches.py check bNNN` each; merge the reviewed ones;
   `pairs.py bA bB` -> reviewer agent (compact: Critical/Important only, Minors applied by the translator in the
   same fix round); docs/polish.md holds the Minors from the first 4 reviews.
 - **Phase 5 done (2026-11-10, session 7):**
