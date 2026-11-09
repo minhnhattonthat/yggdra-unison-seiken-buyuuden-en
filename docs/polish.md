@@ -68,3 +68,19 @@ to run while any line is unticked.
 - [ ] ov9_06:3ED8 - "Rare" lacks the colon "For:" has (Rare: is 33 px > 32): move the value x (phase 7 to-do)
 
 ## b033-b034 (cannon/barricade barks, approved after "dear" fix)
+
+## b035-b036 (retreat/village barks, approved; controller review)
+- [ ] MESSAGE115:0614 Zilva - 勝負あったな "It's decided": It's over... Elena.
+- [ ] MESSAGE108:0646 Juvelon - "I'm outta here" slangy for a cardinal: I'm fleeing for now!
+
+## b037-b040 (capture/prisoner barks, approved; controller review)
+- [ ] MESSAGE132:0603 Juvelon - わしゃ…嫌じゃあ old-man voice flat: I don't want to die, I say!
+
+## b041-b042 (recruit/release barks, approved; Amareus/Juvelon lines fixed in review)
+- [ ] MESSAGE141:051F Leon - 100年早え idiom literal: You're a hundred years too early, trash!
+
+## b041-b042 (recruit/release barks, approved; Amareus/Juvelon lines fixed in review)
+- [ ] MESSAGE141:051F Leon - 100年早え idiom literal: You're a hundred years too early, trash!
+
+## b043-b044 (release/dismiss/reward barks, approved; controller review)
+- [ ] MESSAGE150:0512 Mardym - でくのぼうが生意気な said to the player: Wh-What!? Insolent blockhead...!
