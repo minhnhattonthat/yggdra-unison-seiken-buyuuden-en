@@ -37,3 +37,4 @@
 references/graphics.md: NDS 3D-texture games (no tiles/VRAM): keep the original palette and re-encode 4x4 blocks by searching (palette offset, mode) over it; avoids a palette-size change and round-trips pixel-exact (tools/gfx.py).
 - references/graphics.md: a texture can be drawn partly off screen (TM_M at screen x = texture x - 33): centring English in the texture clipped it; check the on-screen frame and align to the original's visible start.
 - references/graphics.md: text on a panel (EPI_WAKU0 pill): clearing the label box to transparent punches a hole; repaint rows from the panel instead (gen_gfx clear=row).
+- references/graphics.md: NDS 3D UI atlases have no layout file: hook the game's 2D quad routine and log (texture name, texcoords) per scene to get each label's real UV rect (here tools/lua/quads.lua); ink segmentation can't split tightly packed labels, and a texture's whole width may not be shown (OP_WR strips 192 of 256, epilogue frame window).

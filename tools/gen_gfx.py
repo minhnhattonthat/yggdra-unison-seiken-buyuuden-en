@@ -1,11 +1,13 @@
 """gen_gfx.py: draw the English texture labels of gfx/text.tsv into gfx/<NAME>.png (tools/gfx.py encodes them).
 
 gfx/text.tsv: NAME <TAB> English (\\n = new line) <TAB> options. One row per label; several rows may share a NAME
-(atlas: each with its own box). Options (space separated, key=value):
+(atlas: each with its own box). A line `#! PREFIX key=v ..` sets defaults for the later rows whose NAME starts with
+PREFIX (a row's own options win). Options (space separated, key=value):
   box=x,y,w,h   rect to clear and draw in (default: bbox of the original's opaque pixels)
   font=serif-b  serif-b serif sans-b sans (fonts/, docs/fonts.md)
   size=N        px (default: the largest that fits the box height per line, capped by width after squeezing)
   align=c       l / c / r inside the box;  wide=N  how far the text may spread past the box (default: to the edge)
+  maxw=N        widest the text may be, px (the part of the texture the screen shows; overrides wide)
   stroke=1      outline px;  min_x=0.7  narrowest horizontal squeeze before the size shrinks
   clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency
 Colours come from the original: fill = per-row brightest opaque colour in the box (keeps gradients), outline =
@@ -30,12 +32,19 @@ TSV = ROOT / "gfx/text.tsv"
 
 
 def rows():
-    out = []
+    out, defaults = [], []
     for line in TSV.read_text(encoding="utf-8").splitlines():
+        if line.startswith("#!"):  # "#! PREFIX key=v ..": options for every later row whose NAME starts with PREFIX
+            prefix, *kv = line[2:].split()
+            defaults.append((prefix, dict(x.split("=", 1) for x in kv)))
         if not line.strip() or line.startswith("#"):
             continue
         name, en, *opt = line.split("\t")
-        o = dict(kv.split("=", 1) for kv in (opt[0].split() if opt else []))
+        o = {}
+        for prefix, d in defaults:
+            if name.startswith(prefix):
+                o.update(d)
+        o.update(kv.split("=", 1) for kv in (opt[0].split() if opt else []))
         out.append((name, en.replace("\\n", "\n"), o))
     return out
 
@@ -94,7 +103,9 @@ def draw(a, text, o):
     outline, fill = colours(a, box)
     wide = int(o["wide"]) if "wide" in o else None
     align = o.get("align", "c")
-    if wide is not None:
+    if "maxw" in o:
+        maxw = int(o["maxw"])
+    elif wide is not None:
         maxw = w + 2 * wide
     elif align == "c":
         maxw = 2 * min(x + w / 2, W - x - w / 2) - 2

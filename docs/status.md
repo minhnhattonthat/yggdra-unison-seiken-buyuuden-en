@@ -4,6 +4,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 8 progress (session 17):** UV rects found: ITCM 0x01FF9AD0 draws every 2D quad (r0 x, r1 y, r3 w, stack
+  h, u0, v0, u1, v1), 0x01FF966C binds a slot, 0x01FF89B4 loads NAME into a slot. `tools/lua/quads.lua` logs
+  "quad NAME u,v,w,h at x,y"; all 35 scenes: `regen.py --rom build/yggdra_en.nds --qa work/qa/quads --script
+  tools/lua/quads.lua --var HOLD=600` (slotN = loaded by another loader; odd 0,0,16,15 rects are mislabelled glyph
+  draws). `tools/atlas.py NAME --quads work/qa/quads/*/log.txt` outlines those rects on the atlas (no --quads:
+  ink segmentation). gen_gfx: `maxw=N`, `#! PREFIX opts` defaults. Done: FORSEL_FONT (faction/sortie panel labels;
+  colons are own cells), BUTTON (all 19 labels; 9 rects inferred from ink, not seen drawn), PRO_FONT プロローグ,
+  CDSEL_MAT 未鑑定 + カード選択 (inferred rect). OP_WR is 26 strips 192 x 16: was clipped at 192, now fits
+  (size 12, lines 0/2 reworded). MS_PRO maxw 222 (touched the frame), EPI_MES maxw 221, EPI_TIT maxw 218 (both
+  were clipped by the frame window). Seen English on screen: Factions/Lord panel, OP_WR, EPI_TIT.
+  Build 2026-11-10 sha1 093dab00 (smoke ok, check.py green, states regenerated 35/35 from it).
+  **Next:** FORSEL 23-px labels (Leader/Guard/Troops/Capital) squeeze 0.6: see the sortie panel on screen, widen
+  the rects in ov9_17/18 code if unreadable; see BUTTON inferred labels + カード選択 on screen; then BTLFONT,
+  EXTRA_FONT, SAVE_FONT, TEND_FONT, TUTO_FONT (rects in work/qa/quads, rerun the probe), then the other atlases
+  (rerun quads.lua on scenes that show them: explore, turn_end, game over, prisoner...), 捕虜処遇, `_unk` PACKs,
+  TU_*; then QA tour + visual-QA verdicts, inkbox, textcover.
 - **Phase 8 progress (session 16):** gfx/text.tsv gained the prose textures, read off the originals (zoomed contact
   sheets; codex was out of quota): OP_WR (26-line prologue scroll), OPK_WR_00-11 (faction select, 7 lines),
   MS_PRO_000-011 (faction prologues; a blank line = paragraph gap), MS_N_00-36 (territory descriptions; MS_M + MS_N

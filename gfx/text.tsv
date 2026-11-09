@@ -977,8 +977,9 @@ WR_SHN02	Defended	size=24
 WR_SHN03	Fallen	size=24
 WR_SHN04	Earthquake	size=24
 WR_SHN05	Plague	size=24
-# Opening prologue scroll (OP_WR, 26 lines, read off the texture)
-OP_WR	The sudden invasion by the New Bronquian Empire,\nand the fall of Karona, the fortress city\nin the north of the Kingdom of Fantasinia—\nthe news shook not only Fantasinia\nbut the entire continent.\nThe long age of peace and prosperity\nhad come to an end...\nLittle by little, the tide of war rose.\nBracing for the decisive battle to come,\neach power quietly began to arm itself.\nAll watched each other's every move,\nunrest flared up across the land,\nand the world stood on a knife's edge.\nIt was truly an age of rival warlords.\nWilling or not, the people were\nswept up into the turmoil of war...\nWhile new powers rose across the land,\nothers were culled and faded away.\nA world of chaos......\nTo fulfill their own ambitions,\nmany mighty ones blazed across\nthe world: an age of flame and steel...\nSome with their wisdom,\nand some by force of arms,\nset out to repaint\nthat world of chaos...	font=sans-b align=l size=13
+# Opening prologue scroll (OP_WR, 26 lines, read off the texture). Drawn as 26 strips u 0..192 x 16 (one per line,
+# quads.lua): every line must fit 192 px and sit in its own 16-px band (box h 416 / 26 lines).
+OP_WR	The New Bronquian Empire's sudden attack,\nand the fall of Karona, the fortress city\nin the Kingdom of Fantasinia's north—\nthe news shook not only Fantasinia\nbut the entire continent.\nThe long age of peace and prosperity\nhad come to an end...\nLittle by little, the tide of war rose.\nBracing for the decisive battle to come,\neach power quietly began to arm itself.\nAll watched each other's every move,\nunrest flared up across the land,\nand the world stood on a knife's edge.\nIt was truly an age of rival warlords.\nWilling or not, the people were\nswept up into the turmoil of war...\nWhile new powers rose across the land,\nothers were culled and faded away.\nA world of chaos......\nTo fulfill their own ambitions,\nmany mighty ones blazed across\nthe world: an age of flame and steel...\nSome with their wisdom,\nand some by force of arms,\nset out to repaint\nthat world of chaos...	font=sans-b align=l size=12 box=0,0,192,416 wide=0
 # Faction-select descriptions (OPK_WR_nn = faction nn, 7 lines, read off the texture)
 OPK_WR_00	Ruled by the Flame Emperor Gulcasa,\na military nation in the continent's\nnorthwest, home to a wealth of\nbattle-hardened generals and\nwell-drilled elite soldiers.\nWith its ample forces as its weapon,\nit can fight a steady war!	font=sans-b align=l size=13
 OPK_WR_01	A kingdom reigning over the heart\nof the continent. Once home to many\nsages, it kept expanding its power,\nbut with the rise of the Bronquian\nEmpire it now faces its downfall.\nSpreading first to the southeast\nto grow its power may be the key.	font=sans-b align=l size=13
@@ -992,7 +993,9 @@ OPK_WR_08	A religious nation in the continent's\nsouthwest. With countless belie
 OPK_WR_09	Elite knights who endured harsh\ntraining to guard the Meria faith.\nGrieving the Theocracy's corruption,\nthey rise up for the sake of the\npeople. With foes on every side,\nmarching the army east\nmay be their way out.	font=sans-b align=l size=13
 OPK_WR_10	A free-spirited band formed by\nthose who long for freedom.\nIts members' beliefs vary and\nthey lack unity, but each one\nis highly capable. As a mixed army\nit is poorly balanced: building up\nits forces is a must.	font=sans-b align=l size=13
 OPK_WR_11	A dreadful army of those who bear\ndark feelings, gathered around a\ncertain fallen angel. To take their\nrevenge on the gods, they begin a\nwar to conquer the continent. Its\ncast is vicious and quirky: the key\nis whether you can wield its power.	font=sans-b align=l size=13
-# Faction prologues (MS_PRO_0nn = faction nn; a blank line = the original's paragraph gap)
+# Faction prologues (MS_PRO_0nn = faction nn; a blank line = the original's paragraph gap). The frame's inner edge
+# is at screen x ~246 (quad at x 0): text from x 20 may run to 242.
+#! MS_PRO_ maxw=222
 MS_PRO_000	Having deposed the former emperor\nand raised the New Bronquian Empire,\nGulcasa, after pacifying his own lands,\nsoon set his sights on uniting them all.\n\nUnder him served able generals, who led\nhis army to victory in the war against\nthe late emperor, and hardened elites.\n\nWith lightning war as his motto,\nGulcasa led these elite troops and\nset out to invade the other nations...	font=sans-b align=l size=14
 MS_PRO_001	As the turmoil of war rages everywhere,\nYggdra Yuril Artwaltz, young princess\nof the Kingdom of Fantasinia, who wishes\nfor stability in all the land, not only\nher own domain, at last resolves to give\nherself to the fight to bring peace.\n\nSeeking a way to peace other than force,\nthe young princess, with the Holy Sword\nof her royal line as her strength, bravely\nfaces the mighty foe closing in on her...	font=sans-b align=l size=14
 MS_PRO_002	In a world where the weak are made to suffer,\nMilanor the Silver Wolf, leader of a band\nof thieves who always resented it, one day\nsees that the oppressors, worn down by\nlong years of war, have grown weaker\nthan expected. Taking it as his chance,\n\nhe and the comrades he trusts most,\nto build a free world where no line\ndivides the high-born from the low,\ncharge into the fray to strike down\nthe oppressors...	font=sans-b align=l size=14
@@ -1044,6 +1047,10 @@ MS_N_34	Sacred ground ruled by popes for ages,\nunder the Church of St. Meriata	
 MS_N_35	A volcanic zone in the Lenessey\nMountains, where few people live	font=sans-b size=14
 MS_N_36	A forbidden land where no one\nmay ever set foot	font=sans-b size=14
 # Epilogue titles and paragraphs (EPI_TIT_nn / EPI_MES_nn = faction nn), unification frame label (EPI_WAKU0)
+# EPI_MES quad at screen x 17, frame window ~x 17-239: text (from tex x 0) at most 221. EPI_TIT: centred, the
+# same window (seen clipped both sides at 254).
+#! EPI_MES_ maxw=221
+#! EPI_TIT_ maxw=218
 EPI_TIT_00	~ Dawn of the Bronquian Era ~	size=20
 EPI_TIT_01	~ The Thousand-Year Reign Begins ~	size=20
 EPI_TIT_02	~ A Thief King Without Peer ~	size=20
@@ -1169,3 +1176,33 @@ CDS_034	Coma Karma	font=serif-b size=11 box=0,0,128,14
 CDS_034	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 20 seconds, the\nbattle map is shrouded\nin darkness\n	font=sans-b align=l size=10 box=1,15,127,105
 CDS_035	Judgment Zero	font=serif-b size=11 box=0,0,128,14
 CDS_035	Trigger Time (1x)\n100\nRequires a retreated\nunit on either side\n\nAll retreated units\non both sides return\nto the battlefield\n	font=sans-b align=l size=10 box=1,15,127,105
+# UI atlases: box = the UV rect the game draws (tools/lua/quads.lua, `atlas.py NAME --quads`), wide=0: the quad
+# shows nothing past its rect. Colons are separate cells in FORSEL_FONT (80, 122, 164): boxes stop before them.
+FORSEL_FONT	Factions	font=sans-b size=14 box=0,0,54,15 wide=0
+FORSEL_FONT	Lord	font=sans-b size=11 box=55,0,23,13 wide=0 align=r
+FORSEL_FONT	Lands	font=sans-b size=11 box=85,0,34,13 wide=0 align=r
+FORSEL_FONT	Level	font=sans-b size=11 box=127,0,34,13 wide=0 align=r
+FORSEL_FONT	Targets	font=sans-b size=14 box=0,15,66,15 wide=0
+FORSEL_FONT	Leader	font=sans-b size=11 box=67,15,23,13 wide=0
+FORSEL_FONT	Guard	font=sans-b size=11 box=92,15,23,13 wide=0
+FORSEL_FONT	Troops	font=sans-b size=11 box=116,15,24,13 wide=0
+FORSEL_FONT	Capital	font=sans-b size=11 box=150,15,23,13 wide=0
+BUTTON	Back	font=sans-b size=11 box=56,0,22,12 wide=0
+BUTTON	Select	font=sans-b size=11 box=102,0,24,12 wide=0
+BUTTON	Forces	font=sans-b size=11 box=0,12,38,12 wide=0
+BUTTON	End	font=sans-b size=11 box=77,12,26,12 wide=0
+BUTTON	Guide	font=sans-b size=11 box=39,24,37,12 wide=0
+# BUTTON labels not seen drawn yet: box = ink run (atlas grid of 12-px rows), check on screen
+BUTTON	Next	font=sans-b size=11 box=78,0,24,12 wide=0
+BUTTON	Profile	font=sans-b size=11 box=39,12,38,12 wide=0
+BUTTON	Expel	font=sans-b size=11 box=103,12,24,12 wide=0
+BUTTON	Explore	font=sans-b size=11 box=0,24,39,12 wide=0
+BUTTON	Unlock	font=sans-b size=11 box=76,24,41,12 wide=0
+BUTTON	Done	font=sans-b size=11 box=0,36,37,12 wide=0
+BUTTON	Appraise	font=sans-b size=11 box=37,36,38,12 wide=0
+BUTTON	Recruit	font=sans-b size=11 box=75,36,35,12 wide=0
+BUTTON	Info	font=sans-b size=11 box=0,48,23,12 wide=0
+PRO_FONT	Prologue	font=sans-b size=11 box=0,28,63,12 wide=0
+CDSEL_MAT	Unknown	font=sans-b size=11 box=120,112,47,15 wide=0
+# カード選択 rect not seen drawn yet: box = its ink (atlas.py --gap 3), the rest of the row to the edge
+CDSEL_MAT	Card Select	font=sans-b size=14 box=168,111,88,20 wide=0
