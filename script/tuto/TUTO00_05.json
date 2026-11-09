@@ -5,72 +5,72 @@
   {
    "id": "TUTO00_05:00A0",
    "jp": "褒賞について\nご説明いたします!!",
-   "en": ""
+   "en": "Allow me to explain\nrewards!!"
   },
   {
    "id": "TUTO00_05:00B6",
    "jp": "探索で手に入れた\nアイテムを「褒賞」として",
-   "en": ""
+   "en": "You can give items\nfound while exploring"
   },
   {
    "id": "TUTO00_05:00D2",
    "jp": "自軍のユニットに\n与えることができます",
-   "en": ""
+   "en": "to your units as\n\"rewards.\""
   },
   {
    "id": "TUTO00_05:00E9",
    "jp": "このアイテムを渡すこと\nによって…",
-   "en": ""
+   "en": "By giving them\nan item..."
   },
   {
    "id": "TUTO00_05:00FC",
    "jp": "任意のユニットの戦意を\n回復することができます",
-   "en": ""
+   "en": "you can restore any\nunit's morale."
   },
   {
    "id": "TUTO00_05:011A",
    "jp": "戦意が下がってしまうと\nHPが下がってしまったり…",
-   "en": ""
+   "en": "Low morale may lower\nHP..."
   },
   {
    "id": "TUTO00_05:0136",
    "jp": "探索時に逃走しやすく\nなってしまいますので",
-   "en": ""
+   "en": "and make them desert\nmore while exploring,"
   },
   {
    "id": "TUTO00_05:0151",
    "jp": "こまめに褒賞を与えるよう\n心がけててください",
-   "en": ""
+   "en": "so try to give\nrewards often."
   },
   {
    "id": "TUTO00_05:016C",
    "jp": "戦意の回復量については\nユニットごとにアイテムの",
-   "en": ""
+   "en": "Each unit has its own\ntaste in items,"
   },
   {
    "id": "TUTO00_05:018A",
    "jp": "好みがあり、その嗜好により\n戦意の回復量が変化します",
-   "en": ""
+   "en": "and this changes how\nmuch morale returns."
   },
   {
    "id": "TUTO00_05:01AF",
    "jp": "渡したアイテムが\n装備可能な場合は",
-   "en": ""
+   "en": "If the item you give\ncan be equipped,"
   },
   {
    "id": "TUTO00_05:01C8",
    "jp": "装備させることができます。\n装備できないアイテムは",
-   "en": ""
+   "en": "the unit can equip it.\nItems it cannot equip"
   },
   {
    "id": "TUTO00_05:01E6",
    "jp": "消費されますが、戦意のみ\n回復できる場合があります",
-   "en": ""
+   "en": "are used up, but may\nstill restore morale."
   },
   {
    "id": "TUTO00_05:0208",
    "jp": "褒賞についての説明は\n以上になります!",
-   "en": ""
+   "en": "That is all on\nrewards!"
   }
  ]
 }

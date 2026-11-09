@@ -5,57 +5,57 @@
   {
    "id": "MESSAGE101:04B0",
    "jp": "すまないが、ここは通せない",
-   "en": ""
+   "en": "Sorry, but you can't\npass."
   },
   {
    "id": "MESSAGE101:04BF",
    "jp": "敵は通さねぇゼ!",
-   "en": ""
+   "en": "No enemy gets by, ya\nhear!"
   },
   {
    "id": "MESSAGE101:04CA",
    "jp": "守りを固めるぞ!",
-   "en": ""
+   "en": "Shore up defenses!"
   },
   {
    "id": "MESSAGE101:04D5",
    "jp": "ここから去ってください!",
-   "en": ""
+   "en": "Please leave this\nplace!"
   },
   {
    "id": "MESSAGE101:04E3",
    "jp": "よし、守備を固めるんだ!",
-   "en": ""
+   "en": "Right, fortify the\ndefenses!"
   },
   {
    "id": "MESSAGE101:04F3",
    "jp": "よし、守りを固めるんだ!",
-   "en": ""
+   "en": "Right, strengthen our\nguard!"
   },
   {
    "id": "MESSAGE101:0502",
    "jp": "あたしたちが守ってみせる!",
-   "en": ""
+   "en": "We'll protect it,\nyou'll see!"
   },
   {
    "id": "MESSAGE101:0511",
    "jp": "ここを我らが陣とする!",
-   "en": ""
+   "en": "This shall be our\ncamp!"
   },
   {
    "id": "MESSAGE101:051F",
    "jp": "守りに入るのは\n気が向かねえが…仕方ねぇ!",
-   "en": ""
+   "en": "Hate playin' defense...\nbut whatever!"
   },
   {
    "id": "MESSAGE101:053B",
    "jp": "守りを固めよ!",
-   "en": ""
+   "en": "Fortify thy defenses!"
   },
   {
    "id": "MESSAGE101:0545",
    "jp": "進入などさせぬ!",
-   "en": ""
+   "en": "None shall enter!"
   },
   {
    "id": "MESSAGE101:0550",
@@ -65,97 +65,97 @@
   {
    "id": "MESSAGE101:055B",
    "jp": "ここは通せない!",
-   "en": ""
+   "en": "None may pass here!"
   },
   {
    "id": "MESSAGE101:0565",
    "jp": "ここは通しませんよ?",
-   "en": ""
+   "en": "I'm afraid you shall\nnot pass here."
   },
   {
    "id": "MESSAGE101:0571",
    "jp": "先には進ませねーぜ!",
-   "en": ""
+   "en": "You ain't gettin'\nany further!"
   },
   {
    "id": "MESSAGE101:057E",
    "jp": "ここからは進ませねえぞ!",
-   "en": ""
+   "en": "No goin' past here,\nya hear!"
   },
   {
    "id": "MESSAGE101:058C",
    "jp": "これで守りはバッチリだ!",
-   "en": ""
+   "en": "Now our defense is\nrock-solid!"
   },
   {
    "id": "MESSAGE101:059A",
    "jp": "通るのは勘弁ならんぞい",
-   "en": ""
+   "en": "No passin' through\nhere, sonny!"
   },
   {
    "id": "MESSAGE101:05A9",
    "jp": "守ってみせるんだから!",
-   "en": ""
+   "en": "I'll defend it, just\nyou watch!"
   },
   {
    "id": "MESSAGE101:05B6",
    "jp": "先手取ったよ!",
-   "en": ""
+   "en": "Got here first!"
   },
   {
    "id": "MESSAGE101:05C1",
    "jp": "させないよ!",
-   "en": ""
+   "en": "Not on my watch!"
   },
   {
    "id": "MESSAGE101:05C8",
    "jp": "これで通れないぜ?",
-   "en": ""
+   "en": "Can't get through\nnow, huh?"
   },
   {
    "id": "MESSAGE101:05D3",
    "jp": "…防御を固めます!",
-   "en": ""
+   "en": "...Fortifying our\ndefenses!"
   },
   {
    "id": "MESSAGE101:05E0",
    "jp": "守りを怠るな!",
-   "en": ""
+   "en": "Don't neglect your\nguard!"
   },
   {
    "id": "MESSAGE101:05EA",
    "jp": "フフ…ここは通さないわよ?",
-   "en": ""
+   "en": "Fufu... you won't\npass here, dear."
   },
   {
    "id": "MESSAGE101:05F9",
    "jp": "防御を固めよ!",
-   "en": ""
+   "en": "Fortify the defenses!"
   },
   {
    "id": "MESSAGE101:0604",
    "jp": "神はおっしゃった。\nここを通してはならんと",
-   "en": ""
+   "en": "God has spoken. Let\nnone pass this place."
   },
   {
    "id": "MESSAGE101:061B",
    "jp": "は、入ってくるでないぞ!?",
-   "en": ""
+   "en": "D-don't you come in,\nhear me!?"
   },
   {
    "id": "MESSAGE101:062A",
    "jp": "ここは渡さないわよ!",
-   "en": ""
+   "en": "You won't get this\nplace, darling!"
   },
   {
    "id": "MESSAGE101:0636",
    "jp": "守りを固めるのも\n策のひとつよ",
-   "en": ""
+   "en": "Fortifying is a\nstrategy too, see?"
   },
   {
    "id": "MESSAGE101:0649",
    "jp": "渡さないんだからね~!",
-   "en": ""
+   "en": "Not handing it\nover~!"
   },
   {
    "id": "MESSAGE101:0656",
@@ -165,37 +165,37 @@
   {
    "id": "MESSAGE101:065D",
    "jp": "グォッグォッグォッ!",
-   "en": ""
+   "en": "Gwoh! Gwoh! Gwoh!"
   },
   {
    "id": "MESSAGE101:0668",
    "jp": "グワォッグワォッ!",
-   "en": ""
+   "en": "Grwaow! Grwaow!"
   },
   {
    "id": "MESSAGE101:0672",
    "jp": "ここに陣を敷くぞ!",
-   "en": ""
+   "en": "We make camp here!"
   },
   {
    "id": "MESSAGE101:067E",
    "jp": "ここで足止めしますわよ?",
-   "en": ""
+   "en": "You'll be stopping\nright here, dear."
   },
   {
    "id": "MESSAGE101:068D",
    "jp": "守りを固めましょう…",
-   "en": ""
+   "en": "Let us fortify our\ndefenses..."
   },
   {
    "id": "MESSAGE101:069A",
    "jp": "陣地を強化するんだ!",
-   "en": ""
+   "en": "Strengthen our\nposition!"
   },
   {
    "id": "MESSAGE101:06A9",
    "jp": "ここは守ってみせる!",
-   "en": ""
+   "en": "We'll hold this\nplace!"
   }
  ]
 }

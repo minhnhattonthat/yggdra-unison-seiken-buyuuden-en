@@ -5,7 +5,7 @@
    "id": "ov9_16:1024",
    "font": "sys",
    "jp": "今回の戦争中に、発動するカードを、\n一枚選択してください",
-   "en": "",
+   "en": "Choose one card to activate\nduring this war.",
    "max": 39,
    "ptrs": [
     "ov9_16:FC8"

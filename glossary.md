@@ -65,6 +65,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ミステール | Mistel | | "full-time housewife" (専業主婦) | Mistere |
 | フローネ | Flone | | Russell's late fiancee | |
 | 名無し兵士 | Nameless Soldier | | | |
+| ブライ | Bly | | Mistel's grandfather (official Atlus) | Brai |
+| ブロンガ | Brongaa | | official Atlus spelling | Bronga |
 
 ## Places
 | JP | EN | max | notes | Avoid |
@@ -111,6 +113,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ブランテーゼ | Branthese | | House Branthese (Roswell) | |
 | エスメラルダ | Esmeralda | | House Esmeralda (Rosary) | |
 | テンプルナイツ | Temple Knights | | | |
+| 聖騎士 | Temple Knight | | 聖騎士団 Temple Knights, 聖騎士領 Temple Knight Lands | holy knight / Holy Knight / holy knights / Holy Knights |
+| エンベリア公国 | Duchy of Embellia / Embellian Duchy | | Emelone's realm | Principality |
 | メリア | Meria | | the Meria faith; 教国 = Theocracy of Meria | |
 | 新生ブロンキア帝国 | New Bronquian Empire | | | |
 | 森の共同戦線 | Forest Alliance | | | |
@@ -202,10 +206,12 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   Temple Knights, Black/White Rose Army. ネシア勢力 Nessiah's Forces; メリア教国 Theocracy of Meria.
 - b001-b004 items: ドゼウ Loach, 斬鉄剣 Steelcutter, ロザリオ Rosario (not Rosary), サザンクロス Southern Cross,
   グランドクロス Grand Cross; キルアウト Kill Out; ユニット出撃 Unit Sorties.
-- b001-b004 composite sentences (pieces joined by code; keep these joins): "After a fierce battle...\n" + army +
-  ": " + territory + " captured!"; "Capital taken! The " + lands + " are\n" + "all yours now!"; "Headed here: " +
-  unit + ",\n" + "already scheduled to go."; "Already sent: " + unit + ".\nBack in " + digits + " turn(s).";
-  "This turn's strategy card is " + card + ".".
+- b001-b004 composite sentences (pieces joined by code before one draw, so a break may sit in any piece; lint checks
+  every combination; keep these joins): "Battle won! " + army + " took\n" + territory + "!"; "Capital taken!\n" +
+  lands + " are " + "all yours!"; "Headed here: " + unit + ",\n" + "already scheduled to go."; "Already sent: " +
+  unit + ".\nBack in " + digits + " turn(s)."; "This turn's strategy card:\n" + card + "."; "This item is held by\n("
+  + unit + ")\nso it can't be selected.". The Edit tool strips trailing spaces: set a piece ending in a space with
+  `python tools/setval.py work/tl/bNNN.out.tsv ID 'text '`.
 - b017-b024: 親分 Boss (Flunky to Milanor); ザコ small fry; 猊下 Your Eminence; 守り神様 guardian god (not the
   Mamorigami unit); オレ様 = Inzaghi's boastful "me" (the great me), never a name + -sama.
 - b025-b032: 姐さん (Flunky) Sis; 砲台 cannon (capture-point cannon); アンク Ankh (Verlaine's Ankhs, Yggdra

@@ -15,7 +15,7 @@
    "id": "ov9_06:3ED8",
    "font": "end",
    "jp": "レア：",
-   "en": "",
+   "en": "Rare",
    "max": 8,
    "ptrs": [
     "ov9_06:231C"
@@ -35,7 +35,7 @@
    "id": "ov9_06:3EE8",
    "font": "end",
    "jp": "内政",
-   "en": "",
+   "en": "Domestic Affairs",
    "max": 8,
    "ptrs": [
     "ov9_06:43B4"
@@ -45,7 +45,7 @@
    "id": "ov9_06:3EF0",
    "font": "end",
    "jp": "タイトル",
-   "en": "",
+   "en": "Title",
    "max": 8,
    "ptrs": [
     "ov9_06:432C"
@@ -55,7 +55,7 @@
    "id": "ov9_06:3EF8",
    "font": "end",
    "jp": "クエスト",
-   "en": "",
+   "en": "Quest",
    "max": 8,
    "ptrs": [
     "ov9_06:43B8"
@@ -65,7 +65,7 @@
    "id": "ov9_06:3F00",
    "font": "end",
    "jp": "エンディング",
-   "en": "",
+   "en": "Ending",
    "max": 8,
    "ptrs": [
     "ov9_06:43BC"
@@ -75,7 +75,7 @@
    "id": "ov9_06:3F08",
    "font": "end",
    "jp": "装備：",
-   "en": "",
+   "en": "For:",
    "max": 8,
    "ptrs": [
     "ov9_06:2324"
@@ -85,7 +85,7 @@
    "id": "ov9_06:3F10",
    "font": "end",
    "jp": "VS守将",
-   "en": "",
+   "en": "VS Commander",
    "max": 8,
    "ptrs": [
     "ov9_06:43A8"
@@ -95,7 +95,7 @@
    "id": "ov9_06:3F18",
    "font": "end",
    "jp": "効果：",
-   "en": "",
+   "en": "Effect:",
    "max": 8,
    "ptrs": [
     "ov9_06:2328"
@@ -105,7 +105,7 @@
    "id": "ov9_06:3F20",
    "font": "end",
    "jp": "VS領主",
-   "en": "",
+   "en": "VS Lord",
    "max": 8,
    "ptrs": [
     "ov9_06:43AC"
@@ -115,7 +115,7 @@
    "id": "ov9_06:3F28",
    "font": "end",
    "jp": "スタッフロール",
-   "en": "",
+   "en": "Staff Roll",
    "max": 8,
    "ptrs": [
     "ov9_06:43C0"
@@ -125,7 +125,7 @@
    "id": "ov9_06:3F30",
    "font": "end",
    "jp": "戦後処理",
-   "en": "",
+   "en": "Aftermath",
    "max": 12,
    "ptrs": [
     "ov9_06:43B0"
@@ -135,7 +135,7 @@
    "id": "ov9_06:3F3C",
    "font": "end",
    "jp": "発見場所：",
-   "en": "",
+   "en": "Found at:",
    "max": 12,
    "ptrs": [
     "ov9_06:232C"
@@ -145,7 +145,7 @@
    "id": "ov9_06:3F48",
    "font": "end",
    "jp": "タイトルに戻ります",
-   "en": "",
+   "en": "Returning to the title screen.",
    "max": 12,
    "ptrs": [
     "ov9_06:4318"
@@ -155,7 +155,7 @@
    "id": "ov9_06:3F54",
    "font": "end",
    "jp": "イベントBGM　悲しげ",
-   "en": "",
+   "en": "Event BGM: Sad",
    "max": 16,
    "ptrs": [
     "ov9_06:4340"
@@ -165,7 +165,7 @@
    "id": "ov9_06:3F64",
    "font": "end",
    "jp": "オープニングデモ　その2",
-   "en": "",
+   "en": "Opening Demo 2",
    "max": 16,
    "ptrs": [
     "ov9_06:4334"
@@ -175,7 +175,7 @@
    "id": "ov9_06:3F74",
    "font": "end",
    "jp": "イベントBGM　ノーマル",
-   "en": "",
+   "en": "Event BGM: Normal",
    "max": 16,
    "ptrs": [
     "ov9_06:4338"
@@ -185,7 +185,7 @@
    "id": "ov9_06:3F84",
    "font": "end",
    "jp": "イベントBGM　コミカル",
-   "en": "",
+   "en": "Event BGM: Comical",
    "max": 16,
    "ptrs": [
     "ov9_06:433C"
@@ -195,7 +195,7 @@
    "id": "ov9_06:3F94",
    "font": "end",
    "jp": "オープニングデモ　その1",
-   "en": "",
+   "en": "Opening Demo 1",
    "max": 16,
    "ptrs": [
     "ov9_06:4330"
@@ -205,7 +205,7 @@
    "id": "ov9_06:3FA4",
    "font": "end",
    "jp": "カードをタッチしてください",
-   "en": "",
+   "en": "Touch a card.",
    "max": 16,
    "ptrs": [
     "ov9_06:3238"
@@ -215,7 +215,7 @@
    "id": "ov9_06:3FB4",
    "font": "end",
    "jp": "イベントBGM　勇ましい",
-   "en": "",
+   "en": "Event BGM: Brave",
    "max": 16,
    "ptrs": [
     "ov9_06:4344"
@@ -225,7 +225,7 @@
    "id": "ov9_06:3FC4",
    "font": "end",
    "jp": "アイテムをタッチしてください",
-   "en": "",
+   "en": "Touch an item.",
    "max": 16,
    "ptrs": [
     "ov9_06:2338"
@@ -235,7 +235,7 @@
    "id": "ov9_06:3FD4",
    "font": "end",
    "jp": "サウンドをタッチしてください",
-   "en": "",
+   "en": "Touch a sound.",
    "max": 16,
    "ptrs": [
     "ov9_06:2360"
@@ -245,7 +245,7 @@
    "id": "ov9_06:3FE4",
    "font": "end",
    "jp": "そのカードはまだ未鑑定です",
-   "en": "",
+   "en": "That card is not yet appraised.",
    "max": 20,
    "ptrs": [
     "ov9_06:3234"
@@ -255,7 +255,7 @@
    "id": "ov9_06:3FF8",
    "font": "end",
    "jp": "ネシア勢力突撃!昼ver",
-   "en": "",
+   "en": "Nessiah's Forces Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4374"
@@ -265,7 +265,7 @@
    "id": "ov9_06:400C",
    "font": "end",
    "jp": "メリア教国突撃!夜ver",
-   "en": "",
+   "en": "Theocracy of Meria Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:4398"
@@ -275,7 +275,7 @@
    "id": "ov9_06:4020",
    "font": "end",
    "jp": "テンプルナイツ突撃!夜ver",
-   "en": "",
+   "en": "Temple Knights Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:439C"
@@ -285,7 +285,7 @@
    "id": "ov9_06:4034",
    "font": "end",
    "jp": "そのアイテムはまだ未入手です",
-   "en": "",
+   "en": "You do not have that item yet.",
    "max": 20,
    "ptrs": [
     "ov9_06:2334"
@@ -295,7 +295,7 @@
    "id": "ov9_06:4048",
    "font": "end",
    "jp": "ネシア勢力突撃!夜ver",
-   "en": "",
+   "en": "Nessiah's Forces Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:43A4"
@@ -305,7 +305,7 @@
    "id": "ov9_06:405C",
    "font": "end",
    "jp": "そのサウンドはまだ未登録です",
-   "en": "",
+   "en": "That sound is not yet unlocked.",
    "max": 20,
    "ptrs": [
     "ov9_06:235C"
@@ -315,7 +315,7 @@
    "id": "ov9_06:4070",
    "font": "end",
    "jp": "メリア教国突撃!昼ver",
-   "en": "",
+   "en": "Theocracy of Meria Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4368"
@@ -325,7 +325,7 @@
    "id": "ov9_06:4084",
    "font": "end",
    "jp": "テンプルナイツ突撃!昼ver",
-   "en": "",
+   "en": "Temple Knights Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:436C"
@@ -335,7 +335,7 @@
    "id": "ov9_06:4098",
    "font": "end",
    "jp": "ブランテーゼ家突撃!夜ver",
-   "en": "",
+   "en": "House Branthese Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:4388"
@@ -345,7 +345,7 @@
    "id": "ov9_06:40AC",
    "font": "end",
    "jp": "エスメラルダ家突撃!夜ver",
-   "en": "",
+   "en": "House Esmeralda Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:438C"
@@ -355,7 +355,7 @@
    "id": "ov9_06:40C0",
    "font": "end",
    "jp": "ブランテーゼ家突撃!昼ver",
-   "en": "",
+   "en": "House Branthese Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4358"
@@ -365,7 +365,7 @@
    "id": "ov9_06:40D4",
    "font": "end",
    "jp": "エスメラルダ家突撃!昼ver",
-   "en": "",
+   "en": "House Esmeralda Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:435C"
@@ -375,7 +375,7 @@
    "id": "ov9_06:40E8",
    "font": "end",
    "jp": "見たいコンテンツをタッチしてください",
-   "en": "",
+   "en": "Touch the content you want to view.",
    "max": 20,
    "ptrs": [
     "ov9_06:4308"
@@ -385,7 +385,7 @@
    "id": "ov9_06:40FC",
    "font": "end",
    "jp": "ゲーム中の曲を聞く事ができます",
-   "en": "",
+   "en": "Listen to the music from the game.",
    "max": 20,
    "ptrs": [
     "ov9_06:4310"
@@ -395,7 +395,7 @@
    "id": "ov9_06:4110",
    "font": "end",
    "jp": "ミラノ盗︀賊団突撃!夜ver",
-   "en": "",
+   "en": "Milanor's Thieves Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:4380"
@@ -405,7 +405,7 @@
    "id": "ov9_06:4124",
    "font": "end",
    "jp": "エンベリア公国突撃!夜ver",
-   "en": "",
+   "en": "Duchy of Embellia Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:4384"
@@ -415,7 +415,7 @@
    "id": "ov9_06:4138",
    "font": "end",
    "jp": "ドルト盗賊団突撃!夜ver",
-   "en": "",
+   "en": "Dort's Bandits Charge! (Night)",
    "max": 20,
    "ptrs": [
     "ov9_06:4394"
@@ -425,7 +425,7 @@
    "id": "ov9_06:414C",
    "font": "end",
    "jp": "ミラノ盗︀賊団突撃!昼ver",
-   "en": "",
+   "en": "Milanor's Thieves Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4350"
@@ -435,7 +435,7 @@
    "id": "ov9_06:4160",
    "font": "end",
    "jp": "エンベリア公国突撃!昼ver",
-   "en": "",
+   "en": "Duchy of Embellia Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4354"
@@ -445,7 +445,7 @@
    "id": "ov9_06:4174",
    "font": "end",
    "jp": "ドルト盗賊団突撃!昼ver",
-   "en": "",
+   "en": "Dort's Bandits Charge! (Day)",
    "max": 20,
    "ptrs": [
     "ov9_06:4364"
@@ -455,7 +455,7 @@
    "id": "ov9_06:4188",
    "font": "end",
    "jp": "オルテガ山賊団突撃!夜ver",
-   "en": "",
+   "en": "Ortega Brigands Charge! (Night)",
    "max": 24,
    "ptrs": [
     "ov9_06:4390"
@@ -465,7 +465,7 @@
    "id": "ov9_06:41A0",
    "font": "end",
    "jp": "オルテガ山賊団突撃!昼ver",
-   "en": "",
+   "en": "Ortega Brigands Charge! (Day)",
    "max": 24,
    "ptrs": [
     "ov9_06:4360"
@@ -475,7 +475,7 @@
    "id": "ov9_06:41B8",
    "font": "end",
    "jp": "森の共同戦線突撃!昼ver",
-   "en": "",
+   "en": "Forest Alliance Charge! (Day)",
    "max": 24,
    "ptrs": [
     "ov9_06:4370"
@@ -485,7 +485,7 @@
    "id": "ov9_06:41D0",
    "font": "end",
    "jp": "ファンタジニア王国突撃!夜ver",
-   "en": "",
+   "en": "Kingdom of Fantasinia Charge! (Night)",
    "max": 24,
    "ptrs": [
     "ov9_06:437C"
@@ -495,7 +495,7 @@
    "id": "ov9_06:41E8",
    "font": "end",
    "jp": "ファンタジニア王国突撃!昼ver",
-   "en": "",
+   "en": "Kingdom of Fantasinia Charge! (Day)",
    "max": 24,
    "ptrs": [
     "ov9_06:434C"
@@ -505,7 +505,7 @@
    "id": "ov9_06:4200",
    "font": "end",
    "jp": "森の共同戦線突撃!夜ver",
-   "en": "",
+   "en": "Forest Alliance Charge! (Night)",
    "max": 24,
    "ptrs": [
     "ov9_06:43A0"
@@ -515,7 +515,7 @@
    "id": "ov9_06:4218",
    "font": "end",
    "jp": "手に入れたアイテムを見る事ができます",
-   "en": "",
+   "en": "View the items you have obtained.",
    "max": 24,
    "ptrs": [
     "ov9_06:430C"
@@ -525,7 +525,7 @@
    "id": "ov9_06:4230",
    "font": "end",
    "jp": "新生ブロンキア帝国突撃!夜ver",
-   "en": "",
+   "en": "New Bronquian Empire Charge! (Night)",
    "max": 24,
    "ptrs": [
     "ov9_06:4378"
@@ -535,7 +535,7 @@
    "id": "ov9_06:4248",
    "font": "end",
    "jp": "新生ブロンキア帝国突撃!昼ver",
-   "en": "",
+   "en": "New Bronquian Empire Charge! (Day)",
    "max": 24,
    "ptrs": [
     "ov9_06:4348"
@@ -545,7 +545,7 @@
    "id": "ov9_06:4260",
    "font": "end",
    "jp": "鑑定に成功したカードを見ることができます",
-   "en": "",
+   "en": "View the cards you have appraised.",
    "max": 26,
    "ptrs": [
     "ov9_06:4314"
@@ -555,7 +555,7 @@
    "id": "ov9_06:431C",
    "font": "end",
    "jp": "000：",
-   "en": "",
+   "en": "000:",
    "max": 8,
    "ptrs": [
     "ov9_06:230C"
@@ -565,7 +565,7 @@
    "id": "ov9_06:4324",
    "font": "end",
    "jp": "BGM00：",
-   "en": "",
+   "en": "BGM00:",
    "max": 8,
    "ptrs": [
     "ov9_06:2354"

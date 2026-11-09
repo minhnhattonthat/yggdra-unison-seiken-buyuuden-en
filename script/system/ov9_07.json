@@ -5,7 +5,7 @@
    "id": "ov9_07:1DEC",
    "font": "end",
    "jp": "傭兵隊長。お金で雇われている。",
-   "en": "",
+   "en": "A mercenary captain. He fights for whoever pays him.",
    "max": 24,
    "ptrs": [
     "ov9_07:2664"
@@ -15,7 +15,7 @@
    "id": "ov9_07:1E04",
    "font": "end",
    "jp": "冥府より喚び出された骸骨の兵士。ロズウェルに忠誠を誓う。",
-   "en": "",
+   "en": "A skeleton soldier summoned from the underworld. Sworn to serve Roswell.",
    "max": 40,
    "ptrs": [
     "ov9_07:26DC"
@@ -25,7 +25,7 @@
    "id": "ov9_07:1E2C",
    "font": "end",
    "jp": "女王エメローネの片腕と称された誇り高き戦士。勇猛果敢。",
-   "en": "",
+   "en": "A proud warrior hailed as Queen Emelone's right hand. Bold and fearless.",
    "max": 44,
    "ptrs": [
     "ov9_07:2690"
@@ -35,7 +35,7 @@
    "id": "ov9_07:1E58",
    "font": "end",
    "jp": "賞金稼ぎ。気の合う仲間と共に、常に賞金首を追っている。",
-   "en": "",
+   "en": "A bounty hunter. Always on the trail of a bounty with his like-minded pals.",
    "max": 44,
    "ptrs": [
     "ov9_07:26B4"
@@ -45,7 +45,7 @@
    "id": "ov9_07:1E84",
    "font": "end",
    "jp": "魔法の力で作り出された岩塊の巨人。ロザリィに忠誠を誓う。",
-   "en": "",
+   "en": "A giant of rock created by magic. Sworn to serve Rosary.",
    "max": 44,
    "ptrs": [
     "ov9_07:26E0"
@@ -55,7 +55,7 @@
    "id": "ov9_07:1EB0",
    "font": "end",
    "jp": "メリアント最強の暗殺者。強い信仰心を持ち、死をも恐れない。",
-   "en": "",
+   "en": "Meriant's deadliest assassin. Deeply devout, she does not even fear death.",
    "max": 44,
    "ptrs": [
     "ov9_07:26C0"
@@ -65,7 +65,7 @@
    "id": "ov9_07:1EDC",
    "font": "end",
    "jp": "魔法の力で作り出された岩塊の巨人。盗族たちに崇められている。",
-   "en": "",
+   "en": "A giant of rock created by magic. Worshipped by thieves.",
    "max": 44,
    "ptrs": [
     "ov9_07:26E4"
@@ -75,7 +75,7 @@
    "id": "ov9_07:1F08",
    "font": "end",
    "jp": "レネシー山脈を根城に、周辺各地で暴れまわる山賊団の首領。",
-   "en": "",
+   "en": "Chief of a brigand gang that runs riot across the land from its lair in the Lenessey Mountains.",
    "max": 44,
    "ptrs": [
     "ov9_07:26A0"
@@ -85,7 +85,7 @@
    "id": "ov9_07:1F34",
    "font": "end",
    "jp": "帝国領民の少年。平和のために立ち上がった民兵たちのリーダー。",
-   "en": "",
+   "en": "A boy of the empire. Leader of the militia who rose up for the sake of peace.",
    "max": 44,
    "ptrs": [
     "ov9_07:2668"
@@ -95,7 +95,7 @@
    "id": "ov9_07:1F60",
    "font": "end",
    "jp": "ファンタジニア王国第三騎士団のリーダー。戦乱の中、王国を守る。",
-   "en": "",
+   "en": "Leader of the Kingdom of Fantasinia's Third Cavalry. He defends the kingdom amid the war.",
    "max": 48,
    "ptrs": [
     "ov9_07:267C"
@@ -105,7 +105,7 @@
    "id": "ov9_07:1F90",
    "font": "end",
    "jp": "ミラノ率いる盗︀賊団に所属する盗︀賊。ミラノの人望に惹かれ従っている。",
-   "en": "",
+   "en": "A thief in Milanor's band. Drawn by Milanor's charisma, he follows him.",
    "max": 48,
    "ptrs": [
     "ov9_07:269C"
@@ -115,7 +115,7 @@
    "id": "ov9_07:1FC0",
    "font": "end",
    "jp": "パルティナ~ロンバルディア間に広がるニルルド砂漠で暗躍する盗賊団の首領。",
-   "en": "",
+   "en": "Chief of a bandit gang lurking in the Nyllard Desert, which stretches from Paltina to Lombardia.",
    "max": 48,
    "ptrs": [
     "ov9_07:26A4"
@@ -125,7 +125,7 @@
    "id": "ov9_07:1FF0",
    "font": "end",
    "jp": "騎士団「テンプルナイツ」のリーダー。教皇直属の臣で、強硬派に抵抗する。",
-   "en": "",
+   "en": "Leader of the knights called the \"Temple Knights.\" A direct vassal of the Pope, he resists the hard-liners.",
    "max": 52,
    "ptrs": [
     "ov9_07:2688"
@@ -135,7 +135,7 @@
    "id": "ov9_07:2024",
    "font": "end",
    "jp": "新生ブロンキア帝国の皇帝。尊敬と畏怖の念を込めて「焔帝」と称されている。",
-   "en": "",
+   "en": "Emperor of the New Bronquian Empire. With respect and awe, he is called the \"Flame Emperor.\"",
    "max": 52,
    "ptrs": [
     "ov9_07:26E8"
@@ -145,7 +145,7 @@
    "id": "ov9_07:2058",
    "font": "end",
    "jp": "漆黒の甲冑を纏った騎士で、五頭竜将の一人。「黒騎士」と恐れられている。",
-   "en": "",
+   "en": "A knight clad in jet-black armor, one of the Five Dragon Generals. Feared as the \"Black Knight.\"",
    "max": 56,
    "ptrs": [
     "ov9_07:2680"
@@ -155,7 +155,7 @@
    "id": "ov9_07:2090",
    "font": "end",
    "jp": "ファンタジニア王国の王女。聖剣グラン・センチュリオを手に、平和のために立ち上がる。",
-   "en": "",
+   "en": "Princess of the Kingdom of Fantasinia. With the Holy Sword Gran Centurio in hand, she rises up for peace.",
    "max": 56,
    "ptrs": [
     "ov9_07:266C"
@@ -165,7 +165,7 @@
    "id": "ov9_07:20C8",
    "font": "end",
    "jp": "エンベリア公国に棲むウンディーネ(水の民)の少女。自らの考えで戦乱に身を投じる。",
-   "en": "",
+   "en": "An Undine (water folk) girl living in the Duchy of Embellia. She has thrown herself into the war by her own choice.",
    "max": 56,
    "ptrs": [
     "ov9_07:268C"
@@ -175,7 +175,7 @@
    "id": "ov9_07:2100",
    "font": "end",
    "jp": "大陸南端の辺境に拠点を構える盗︀賊団のリーダー。人望が厚く戦にも慣れている。",
-   "en": "",
+   "en": "Leader of a band of thieves based on the frontier at the continent's southern tip. Well loved by his men, and no stranger to battle.",
    "max": 56,
    "ptrs": [
     "ov9_07:2698"
@@ -185,7 +185,7 @@
    "id": "ov9_07:2138",
    "font": "end",
    "jp": "帝国領民の少女。カナンとともに立ち上がり、慣れぬ剣を携えて、ロナリス砦に立て籠もる。",
-   "en": "",
+   "en": "A girl of the empire. She rose up with Canaan and, wielding a sword she is not used to, holds out in Fort Lonaris.",
    "max": 60,
    "ptrs": [
     "ov9_07:2678"
@@ -195,7 +195,7 @@
    "id": "ov9_07:2174",
    "font": "end",
    "jp": "エンベリア公国の女王。ウンディーネの長であり、一族の存亡を賭け、望まぬ戦いに身を投じる。",
-   "en": "",
+   "en": "Queen of the Duchy of Embellia. Leader of the Undines, she enters a war she never wanted, with her people's survival at stake.",
    "max": 60,
    "ptrs": [
     "ov9_07:2694"
@@ -205,7 +205,7 @@
    "id": "ov9_07:21B0",
    "font": "end",
    "jp": "ミラノ盗︀賊団所属のグリフライダー。ミラノの幼馴染で、愛獣のグリフォンとともに戦場を駆け回る。",
-   "en": "",
+   "en": "A Griffon Rider in Milanor's band. Milanor's childhood friend, she races across the battlefield with her beloved griffon.",
    "max": 64,
    "ptrs": [
     "ov9_07:26AC"
@@ -215,7 +215,7 @@
    "id": "ov9_07:21F0",
    "font": "end",
    "jp": "堕天のネシア。神々への復讐を誓う。その力は強大でかつては帝国軍五頭竜将のひとりでもあった。",
-   "en": "",
+   "en": "Nessiah the Fallen, sworn to take revenge on the gods. His power is immense; he was once one of the empire's Five Dragon Generals.",
    "max": 64,
    "ptrs": [
     "ov9_07:26F0"
@@ -225,7 +225,7 @@
    "id": "ov9_07:2230",
    "font": "end",
    "jp": "ユベロンの側近。老獪な大司教で、様々な権謀術数を用いて、メリア教国を転覆させるに至った。",
-   "en": "",
+   "en": "Juvelon's aide. A cunning old archbishop whose many schemes and intrigues brought down the Theocracy of Meria.",
    "max": 64,
    "ptrs": [
     "ov9_07:26C8"
@@ -235,7 +235,7 @@
    "id": "ov9_07:2270",
    "font": "end",
    "jp": "レジスタンスを率いるリーダー。故郷である城塞都市カローナを取り返すためファンタジニア王国に所属する。",
-   "en": "",
+   "en": "Leader of the Resistance. He serves the Kingdom of Fantasinia to win back his home, the fortress city of Karona.",
    "max": 64,
    "ptrs": [
     "ov9_07:26B0"
@@ -245,7 +245,7 @@
    "id": "ov9_07:22B0",
    "font": "end",
    "jp": "数々の激戦を潜り抜け、帝国を支えてきた大将軍。五頭竜将の一人。軍神と呼ばれる存在。",
-   "en": "",
+   "en": "A grand general who survived countless fierce battles to uphold the empire. One of the Five Dragon Generals, called the God of War.",
    "max": 68,
    "ptrs": [
     "ov9_07:2684"
@@ -255,7 +255,7 @@
    "id": "ov9_07:22F4",
    "font": "end",
    "jp": "ガルカーサの異母の妹。緋色の羽を振りまきながら、勇ましく戦う姿から「緋雪姫(ひせっき)」と称される。",
-   "en": "",
+   "en": "Gulcasa's half-sister. Fighting bravely amid a flurry of scarlet feathers, she is called the \"Scarlet Princess.\"",
    "max": 68,
    "ptrs": [
     "ov9_07:26A8"
@@ -265,7 +265,7 @@
    "id": "ov9_07:2338",
    "font": "end",
    "jp": "マルドゥークの森に住む魔女。見た目より長い年月を生きているらしい。目的すら不明の謎多き人物。",
-   "en": "",
+   "en": "A witch who lives in the forest of Marduk. She seems to have lived far longer than she looks. A mystery, even her goals are unknown.",
    "max": 68,
    "ptrs": [
     "ov9_07:26D8"
@@ -275,7 +275,7 @@
    "id": "ov9_07:237C",
    "font": "end",
    "jp": "帝国軍暗殺部隊に所属するアサシン。黒騎士レオンの妹でもある。高い潜在能力を秘めているらしい。",
-   "en": "",
+   "en": "An assassin in the imperial assassination corps, and sister of Leon the Black Knight. She is said to hide great potential.",
    "max": 68,
    "ptrs": [
     "ov9_07:26B8"
@@ -285,7 +285,7 @@
    "id": "ov9_07:23C0",
    "font": "end",
    "jp": "天然な性格ながら武芸の実力はなかなかのもの。主婦を自称するが旦那がどこで何をしているかは全くの謎。",
-   "en": "",
+   "en": "An airhead by nature, yet quite the martial artist. Calls herself a housewife, but where her husband is and what he does is a total mystery.",
    "max": 68,
    "ptrs": [
     "ov9_07:26EC"
@@ -295,7 +295,7 @@
    "id": "ov9_07:2404",
    "font": "end",
    "jp": "帝国軍魔導部隊を率いる宮廷魔術師。重火器の扱いにも長け、魔法と砲撃で戦場を荒らす。",
-   "en": "",
+   "en": "The Court Magician leading the imperial magic corps. Skilled with heavy guns too, she ravages battlefields with magic and cannon fire.",
    "max": 68,
    "ptrs": [
     "ov9_07:26D4"
@@ -305,7 +305,7 @@
    "id": "ov9_07:2448",
    "font": "end",
    "jp": "帝国軍暗殺部隊を率いるアサシンリーダー。仮面の下に感情を殺し、常に冷静沈着に任務を遂行する。",
-   "en": "",
+   "en": "Leader of the imperial assassination corps. Her feelings buried beneath a mask, she always carries out her missions with cool composure.",
    "max": 72,
    "ptrs": [
     "ov9_07:26BC"
@@ -315,7 +315,7 @@
    "id": "ov9_07:2490",
    "font": "end",
    "jp": "凄腕の剣士で、「魔剣士」と称される。帝国軍に捕らえられるもその腕を高く買われ五頭竜将の一人となる。",
-   "en": "",
+   "en": "A master swordsman known as the \"Astral Fencer.\" Captured by the empire, his skill earned him a place among the Five Dragon Generals.",
    "max": 72,
    "ptrs": [
     "ov9_07:2660"
@@ -325,7 +325,7 @@
    "id": "ov9_07:24D8",
    "font": "end",
    "jp": "ヴァーレンヒルズの北半分を占める黒薔薇家総帥。同じ大魔導師バロイを祖にもつ白薔薇家と対立を強める。",
-   "en": "",
+   "en": "Head of House Branthese (Black Rose), ruling northern Verlaine Hills. Feuds with the White Rose, also descended from archmage Baroi.",
    "max": 76,
    "ptrs": [
     "ov9_07:26C4"
@@ -335,7 +335,7 @@
    "id": "ov9_07:2524",
    "font": "end",
    "jp": "ヴァーレンヒルズの南半分を占める白薔薇家総帥。同じ大魔導師バロイを祖にもつ黒薔薇家と対立を強める。",
-   "en": "",
+   "en": "Head of House Esmeralda (White Rose), ruling southern Verlaine Hills. Feuds with the Black Rose, also descended from archmage Baroi.",
    "max": 76,
    "ptrs": [
     "ov9_07:26D0"
@@ -345,7 +345,7 @@
    "id": "ov9_07:2570",
    "font": "end",
    "jp": "赤と黒で彩られた甲冑に身を包んだ金髪の少女。神出鬼没の戦乙女として帝国軍に数々の勝利をもたらす。",
-   "en": "",
+   "en": "A blonde girl clad in red-and-black armor. A Valkyrie who strikes from nowhere, she has won the empire many victories.",
    "max": 76,
    "ptrs": [
     "ov9_07:2670"
@@ -355,7 +355,7 @@
    "id": "ov9_07:25BC",
    "font": "end",
    "jp": "黒と赤で彩られた甲冑に身を包んだ金髪の少女。神出鬼没の戦乙女として帝国軍に数々の勝利をもたらす。",
-   "en": "",
+   "en": "A blonde girl clad in black-and-red armor. A Valkyrie who strikes from nowhere, she has won the empire many victories.",
    "max": 76,
    "ptrs": [
     "ov9_07:2674"
@@ -365,7 +365,7 @@
    "id": "ov9_07:2608",
    "font": "end",
    "jp": "巨万の財産を抱える富豪で現メリア教国領主。金で手に入れた地位と武力を利用して、大陸支配を目論む。",
-   "en": "",
+   "en": "A vastly rich tycoon and current lord of the Theocracy of Meria. With rank and might bought with gold, he plots to rule the continent.",
    "max": 76,
    "ptrs": [
     "ov9_07:26CC"

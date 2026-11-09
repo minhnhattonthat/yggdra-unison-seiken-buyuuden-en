@@ -57,3 +57,14 @@ to run while any line is unticked.
 - [ ] 04F8 Luciana - Splendid...\nwork, truly.
 - [ ] 0696 Leon - 俺様: The great me... losing...!
 - [ ] 0590 Flunky - 姐さん: Big Sis
+
+## b005-b012 (system/help/tutorial/start barks, approved; reviewed by the controller, codex quota out)
+- [ ] arm9:95AF4 - 名無しユニット "nameless units": Nameless Soldiers (glossary)
+- [ ] ov9_07:1F60 - 第三騎士団 "Third Cavalry": Third Knight Order
+- [ ] TUTO00_03:0099 - 『ファンタジニア王国』 shortened to 'Fantasinia' (fit?)
+- [ ] TUTO01_06:00B5 - "But only up to bases / held + 1 units." awkward
+- [ ] TUTO01_15:00DF - JP says 探索 at the end of the points page (game's slip): keep or say "points"
+- [ ] MESSAGE001:02D5 Juvelon - "ain't ... I tell ye" too thuggish for a cardinal: "Our fight is not over yet, I say!"
+- [ ] ov9_06:3ED8 - "Rare" lacks the colon "For:" has (Rare: is 33 px > 32): move the value x (phase 7 to-do)
+
+## b033-b034 (cannon/barricade barks, approved after "dear" fix)

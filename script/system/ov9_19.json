@@ -5,7 +5,7 @@
    "id": "ov9_19:1BE8",
    "font": "sys",
    "jp": "セーブが完了しました",
-   "en": "",
+   "en": "Save complete.",
    "max": 16,
    "ptrs": [
     "ov9_19:DF0"
@@ -15,7 +15,7 @@
    "id": "ov9_19:1BF8",
    "font": "sys",
    "jp": "データを上書きしますか?",
-   "en": "",
+   "en": "Overwrite the data?",
    "max": 16,
    "ptrs": [
     "ov9_19:DD4"
@@ -25,7 +25,7 @@
    "id": "ov9_19:1C08",
    "font": "sys",
    "jp": "セーブせずにゲームを進行しますか?",
-   "en": "",
+   "en": "Continue the game without saving?",
    "max": 20,
    "ptrs": [
     "ov9_19:DCC"
@@ -35,7 +35,7 @@
    "id": "ov9_19:1C1C",
    "font": "sys",
    "jp": "セーブ中です...\n電源を切らないでください",
-   "en": "",
+   "en": "Saving...\nDo not turn off the power.",
    "max": 32,
    "ptrs": [
     "ov9_19:DE4"
@@ -45,7 +45,7 @@
    "id": "ov9_19:1C3C",
    "font": "sys",
    "jp": "セーブに失敗しました。\n電源を切りカードを差しなおしてください。",
-   "en": "",
+   "en": "Failed to save. Turn off the power\nand reinsert the Game Card.",
    "max": 38,
    "ptrs": [
     "ov9_19:DF4"

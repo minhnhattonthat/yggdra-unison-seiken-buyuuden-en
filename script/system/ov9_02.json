@@ -5,7 +5,7 @@
    "id": "ov9_02:1690",
    "font": "end",
    "jp": "回",
-   "en": "",
+   "en": "times",
    "max": 4,
    "ptrs": [
     "ov9_02:1318"
@@ -15,7 +15,7 @@
    "id": "ov9_02:1694",
    "font": "end",
    "jp": "人",
-   "en": "",
+   "en": "units",
    "max": 4,
    "ptrs": [
     "ov9_02:1314"
@@ -35,7 +35,7 @@
    "id": "ov9_02:16BC",
    "font": "end",
    "jp": "ノーダメージクリア数",
-   "en": "",
+   "en": "No-Damage Clears",
    "max": 12,
    "ptrs": [
     "ov9_02:1800"
@@ -45,7 +45,7 @@
    "id": "ov9_02:16C8",
    "font": "end",
    "jp": "倒した敵ユニット数",
-   "en": "",
+   "en": "Enemies Defeated",
    "max": 16,
    "ptrs": [
     "ov9_02:17D8"
@@ -55,7 +55,7 @@
    "id": "ov9_02:16D8",
    "font": "end",
    "jp": "探索成功回数",
-   "en": "",
+   "en": "Explorations Won",
    "max": 16,
    "ptrs": [
     "ov9_02:1810"
@@ -65,7 +65,7 @@
    "id": "ov9_02:16E8",
    "font": "end",
    "jp": "仲間にしたユニット数",
-   "en": "",
+   "en": "Units Recruited",
    "max": 16,
    "ptrs": [
     "ov9_02:17C8"
@@ -75,7 +75,7 @@
    "id": "ov9_02:16F8",
    "font": "end",
    "jp": "オブジェクト占領回数",
-   "en": "",
+   "en": "Objects Captured",
    "max": 16,
    "ptrs": [
     "ov9_02:17E8"
@@ -85,7 +85,7 @@
    "id": "ov9_02:1708",
    "font": "end",
    "jp": "探索逃走ユニット数",
-   "en": "",
+   "en": "Exploring Deserters",
    "max": 16,
    "ptrs": [
     "ov9_02:1818"
@@ -95,7 +95,7 @@
    "id": "ov9_02:1718",
    "font": "end",
    "jp": "敵将ユニット戦死数",
-   "en": "",
+   "en": "Foe Generals Killed",
    "max": 16,
    "ptrs": [
     "ov9_02:17E0"
@@ -105,7 +105,7 @@
    "id": "ov9_02:1728",
    "font": "end",
    "jp": "オブジェクト破壊回数",
-   "en": "",
+   "en": "Objects Destroyed",
    "max": 16,
    "ptrs": [
     "ov9_02:17F0"
@@ -115,7 +115,7 @@
    "id": "ov9_02:1738",
    "font": "end",
    "jp": "戦力外通告ユニット数",
-   "en": "",
+   "en": "Units Dismissed",
    "max": 20,
    "ptrs": [
     "ov9_02:17D0"
@@ -125,7 +125,7 @@
    "id": "ov9_02:174C",
    "font": "end",
    "jp": "デュエルイベント発生回数",
-   "en": "",
+   "en": "Duel Events",
    "max": 20,
    "ptrs": [
     "ov9_02:1808"
@@ -135,7 +135,7 @@
    "id": "ov9_02:1760",
    "font": "end",
    "jp": "兵器オブジェクト占領回数",
-   "en": "",
+   "en": "Weapons Captured",
    "max": 20,
    "ptrs": [
     "ov9_02:17F8"
@@ -145,7 +145,7 @@
    "id": "ov9_02:1774",
    "font": "end",
    "jp": "セーブせずに\n次のターンに進みますか?",
-   "en": "",
+   "en": "Continue to the next turn\nwithout saving?",
    "max": 24,
    "ptrs": [
     "ov9_02:12C8"
@@ -155,7 +155,7 @@
    "id": "ov9_02:178C",
    "font": "end",
    "jp": "お疲れさまです\n今回のターンはこれで終了です",
-   "en": "",
+   "en": "Good work!\nThis turn is now over.",
    "max": 28,
    "ptrs": [
     "ov9_02:12E8"

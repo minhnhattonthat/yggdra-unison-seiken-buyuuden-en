@@ -5,32 +5,32 @@
   {
    "id": "TUTO01_13:0060",
    "jp": "クリティカルヒットについて\nご説明いたします!!",
-   "en": ""
+   "en": "Allow me to explain\nthe Critical Hit!!"
   },
   {
    "id": "TUTO01_13:007B",
    "jp": "クリティカルヒットは\nデュエルにおいて…",
-   "en": ""
+   "en": "In a Duel, a\nCritical Hit..."
   },
   {
    "id": "TUTO01_13:0090",
    "jp": "最も高いダメージを相手に\n与えます",
-   "en": ""
+   "en": "deals the highest\ndamage possible."
   },
   {
    "id": "TUTO01_13:00A7",
    "jp": "これを受けた相手のLIFE\n(LP)は0となります",
-   "en": ""
+   "en": "A foe hit by it has its\nLIFE (LP) set to 0."
   },
   {
    "id": "TUTO01_13:00C4",
    "jp": "クリティカルヒットの\n発生条件は表の通りです",
-   "en": ""
+   "en": "The table shows when\nCritical Hits occur."
   },
   {
    "id": "TUTO01_13:00E1",
    "jp": "クリティカルヒットについて\n説明を終了いたします!!",
-   "en": ""
+   "en": "That is all on the\nCritical Hit!!"
   }
  ]
 }

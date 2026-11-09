@@ -5,7 +5,7 @@
    "id": "ov9_03:2BB0",
    "font": "sys",
    "jp": "CPU戦争",
-   "en": "",
+   "en": "CPU Wars",
    "max": 8,
    "ptrs": [
     "ov9_03:31D0"
@@ -15,7 +15,7 @@
    "id": "ov9_03:2BB8",
    "font": "sys",
    "jp": "カードについて",
-   "en": "",
+   "en": "Cards",
    "max": 8,
    "ptrs": [
     "ov9_03:3200"
@@ -25,7 +25,7 @@
    "id": "ov9_03:2BC0",
    "font": "sys",
    "jp": "デュエルについて",
-   "en": "",
+   "en": "Duels",
    "max": 12,
    "ptrs": [
     "ov9_03:3218"
@@ -35,7 +35,7 @@
    "id": "ov9_03:2BCC",
    "font": "sys",
    "jp": "災害について",
-   "en": "",
+   "en": "Disasters",
    "max": 12,
    "ptrs": [
     "ov9_03:31D8"
@@ -45,7 +45,7 @@
    "id": "ov9_03:2BD8",
    "font": "sys",
    "jp": "探索について",
-   "en": "",
+   "en": "Exploration",
    "max": 12,
    "ptrs": [
     "ov9_03:31A0"
@@ -55,7 +55,7 @@
    "id": "ov9_03:2BE4",
    "font": "sys",
    "jp": "スマッシュヒット",
-   "en": "",
+   "en": "Smash Hit",
    "max": 12,
    "ptrs": [
     "ov9_03:3238"
@@ -65,7 +65,7 @@
    "id": "ov9_03:2BF0",
    "font": "sys",
    "jp": "属性について",
-   "en": "",
+   "en": "Elements",
    "max": 12,
    "ptrs": [
     "ov9_03:3258"
@@ -75,7 +75,7 @@
    "id": "ov9_03:2BFC",
    "font": "sys",
    "jp": "褒賞について",
-   "en": "",
+   "en": "Rewards",
    "max": 12,
    "ptrs": [
     "ov9_03:31A8"
@@ -85,7 +85,7 @@
    "id": "ov9_03:2C08",
    "font": "sys",
    "jp": "拠点について",
-   "en": "",
+   "en": "Bases",
    "max": 12,
    "ptrs": [
     "ov9_03:31F8"
@@ -95,7 +95,7 @@
    "id": "ov9_03:2C14",
    "font": "sys",
    "jp": "デュエルの発生",
-   "en": "",
+   "en": "Triggering Duels",
    "max": 12,
    "ptrs": [
     "ov9_03:3210"
@@ -105,7 +105,7 @@
    "id": "ov9_03:2C20",
    "font": "sys",
    "jp": "インパクトサークル",
-   "en": "",
+   "en": "Impact Circle",
    "max": 12,
    "ptrs": [
     "ov9_03:3228"
@@ -115,7 +115,7 @@
    "id": "ov9_03:2C2C",
    "font": "sys",
    "jp": "クリティカルヒット",
-   "en": "",
+   "en": "Critical Hit",
    "max": 12,
    "ptrs": [
     "ov9_03:3240"
@@ -125,7 +125,7 @@
    "id": "ov9_03:2C38",
    "font": "sys",
    "jp": "戦争の進め方",
-   "en": "",
+   "en": "How Wars Work",
    "max": 12,
    "ptrs": [
     "ov9_03:31E0"
@@ -135,7 +135,7 @@
    "id": "ov9_03:2C44",
    "font": "sys",
    "jp": "戦況報告について",
-   "en": "",
+   "en": "War Reports",
    "max": 16,
    "ptrs": [
     "ov9_03:31C8"
@@ -145,7 +145,7 @@
    "id": "ov9_03:2C54",
    "font": "sys",
    "jp": "武器相性について",
-   "en": "",
+   "en": "Weapon Matchups",
    "max": 16,
    "ptrs": [
     "ov9_03:3220"
@@ -155,7 +155,7 @@
    "id": "ov9_03:2C64",
    "font": "sys",
    "jp": "移動速度について",
-   "en": "",
+   "en": "Movement Speed",
    "max": 16,
    "ptrs": [
     "ov9_03:31F0"
@@ -165,7 +165,7 @@
    "id": "ov9_03:2C74",
    "font": "sys",
    "jp": "ユグドラ・ユニゾンとは?",
-   "en": "",
+   "en": "On Yggdra Unison",
    "max": 16,
    "ptrs": [
     "ov9_03:3188"
@@ -175,7 +175,7 @@
    "id": "ov9_03:2C84",
    "font": "sys",
    "jp": "操作方法について",
-   "en": "",
+   "en": "Controls",
    "max": 16,
    "ptrs": [
     "ov9_03:3190"
@@ -185,7 +185,7 @@
    "id": "ov9_03:2C94",
    "font": "sys",
    "jp": "ユニゾンアタックについて",
-   "en": "",
+   "en": "Unison Attacks",
    "max": 16,
    "ptrs": [
     "ov9_03:3230"
@@ -195,7 +195,7 @@
    "id": "ov9_03:2CA4",
    "font": "sys",
    "jp": "守将の捕縛について",
-   "en": "",
+   "en": "Seize Commanders",
    "max": 16,
    "ptrs": [
     "ov9_03:31B0"
@@ -205,7 +205,7 @@
    "id": "ov9_03:2CB4",
    "font": "sys",
    "jp": "守将の登用について",
-   "en": "",
+   "en": "Enlist Commanders",
    "max": 16,
    "ptrs": [
     "ov9_03:31B8"
@@ -215,7 +215,7 @@
    "id": "ov9_03:2CC4",
    "font": "sys",
    "jp": "ユニットの移動方法",
-   "en": "",
+   "en": "Moving Units",
    "max": 16,
    "ptrs": [
     "ov9_03:31E8"
@@ -225,7 +225,7 @@
    "id": "ov9_03:2CD4",
    "font": "sys",
    "jp": "戦争中の表示物",
-   "en": "",
+   "en": "Battle Displays",
    "max": 16,
    "ptrs": [
     "ov9_03:3248"
@@ -235,7 +235,7 @@
    "id": "ov9_03:2CE4",
    "font": "sys",
    "jp": "プレイ勢力選択について",
-   "en": "",
+   "en": "Choosing a Faction",
    "max": 16,
    "ptrs": [
     "ov9_03:3198"
@@ -245,7 +245,7 @@
    "id": "ov9_03:2CF4",
    "font": "sys",
    "jp": "出撃先を決めるには?",
-   "en": "",
+   "en": "Where to Attack?",
    "max": 16,
    "ptrs": [
     "ov9_03:31C0"
@@ -255,7 +255,7 @@
    "id": "ov9_03:2D04",
    "font": "sys",
    "jp": "ユニットを出撃させるには",
-   "en": "",
+   "en": "Deploying Units",
    "max": 16,
    "ptrs": [
     "ov9_03:3208"
@@ -265,7 +265,7 @@
    "id": "ov9_03:2D14",
    "font": "sys",
    "jp": "戦争中の獲得ポイント",
-   "en": "",
+   "en": "Points in War",
    "max": 16,
    "ptrs": [
     "ov9_03:3250"
@@ -275,7 +275,7 @@
    "id": "ov9_03:2D24",
    "font": "sys",
    "jp": "地形によるHPへの影響",
-   "en": "",
+   "en": "Terrain and HP",
    "max": 16,
    "ptrs": [
     "ov9_03:3260"
@@ -285,7 +285,7 @@
    "id": "ov9_03:2D34",
    "font": "sys",
    "jp": "探索について説明します。",
-   "en": "",
+   "en": "This explains exploration.",
    "max": 17,
    "ptrs": [
     "ov9_03:31A4"
@@ -295,7 +295,7 @@
    "id": "ov9_03:2D70",
    "font": "sys",
    "jp": "プレイ勢力選択について\n説明します。",
-   "en": "",
+   "en": "This explains how to choose\nyour faction.",
    "max": 24,
    "ptrs": [
     "ov9_03:319C"
@@ -305,7 +305,7 @@
    "id": "ov9_03:2D88",
    "font": "sys",
    "jp": "本ゲームにおける\nカードについて説明します。",
-   "en": "",
+   "en": "This explains the cards\nused in this game.",
    "max": 28,
    "ptrs": [
     "ov9_03:3204"
@@ -315,7 +315,7 @@
    "id": "ov9_03:2DA4",
    "font": "sys",
    "jp": "戦況報告の概要について\n説明します。",
-   "en": "",
+   "en": "This gives an overview of\nthe war report.",
    "max": 28,
    "ptrs": [
     "ov9_03:31CC"
@@ -325,7 +325,7 @@
    "id": "ov9_03:2DC0",
    "font": "sys",
    "jp": "本ゲームの操作方法について\n説明します。",
-   "en": "",
+   "en": "This explains the controls\nof this game.",
    "max": 28,
    "ptrs": [
     "ov9_03:3194"
@@ -335,7 +335,7 @@
    "id": "ov9_03:2DDC",
    "font": "sys",
    "jp": "戦争時における\n拠点について説明します。",
-   "en": "",
+   "en": "This explains bases\nduring war.",
    "max": 28,
    "ptrs": [
     "ov9_03:31FC"
@@ -345,7 +345,7 @@
    "id": "ov9_03:2DF8",
    "font": "sys",
    "jp": "戦況報告時の\n災害に関して説明します。",
-   "en": "",
+   "en": "This explains the disasters\nin the war report.",
    "max": 32,
    "ptrs": [
     "ov9_03:31DC"
@@ -355,7 +355,7 @@
    "id": "ov9_03:2E18",
    "font": "sys",
    "jp": "戦争時における\n移動速度について説明します。",
-   "en": "",
+   "en": "This explains movement\nspeed during war.",
    "max": 32,
    "ptrs": [
     "ov9_03:31F4"
@@ -365,7 +365,7 @@
    "id": "ov9_03:2E38",
    "font": "sys",
    "jp": "戦況報告時の\nCPU戦争に関して説明します。",
-   "en": "",
+   "en": "This explains the CPU wars\nin the war report.",
    "max": 36,
    "ptrs": [
     "ov9_03:31D4"
@@ -375,7 +375,7 @@
    "id": "ov9_03:2E5C",
    "font": "sys",
    "jp": "デュエル時における\nユニゾンアタックについて\n説明します。",
-   "en": "",
+   "en": "This explains Unison Attacks\nduring Duels.",
    "max": 36,
    "ptrs": [
     "ov9_03:3234"
@@ -385,7 +385,7 @@
    "id": "ov9_03:2E80",
    "font": "sys",
    "jp": "デュエル時における\nスマッシュヒットについて\n説明します。",
-   "en": "",
+   "en": "This explains Smash Hits\nduring Duels.",
    "max": 36,
    "ptrs": [
     "ov9_03:323C"
@@ -395,7 +395,7 @@
    "id": "ov9_03:2EA4",
    "font": "sys",
    "jp": "出撃先を決めるために\n必要な情報の説明します。",
-   "en": "",
+   "en": "This explains the info you\nneed to choose where\nto attack.",
    "max": 36,
    "ptrs": [
     "ov9_03:31C4"
@@ -405,7 +405,7 @@
    "id": "ov9_03:2EC8",
    "font": "sys",
    "jp": "戦争時における\nデュエルの発生について\n説明します。",
-   "en": "",
+   "en": "This explains how Duels\nare triggered during war.",
    "max": 36,
    "ptrs": [
     "ov9_03:3214"
@@ -415,7 +415,7 @@
    "id": "ov9_03:2EEC",
    "font": "sys",
    "jp": "戦争時における\nデュエルの概要について\n説明します。",
-   "en": "",
+   "en": "This gives an overview of\nDuels during war.",
    "max": 36,
    "ptrs": [
     "ov9_03:321C"
@@ -425,7 +425,7 @@
    "id": "ov9_03:2F10",
    "font": "sys",
    "jp": "デュエル時における\nインパクトサークルについて\n説明します。",
-   "en": "",
+   "en": "This explains the\nImpact Circle during Duels.",
    "max": 36,
    "ptrs": [
     "ov9_03:322C"
@@ -435,7 +435,7 @@
    "id": "ov9_03:2F34",
    "font": "sys",
    "jp": "デュエル時における\nクリティカルヒットについて\n説明します。",
-   "en": "",
+   "en": "This explains Critical Hits\nduring Duels.",
    "max": 36,
    "ptrs": [
     "ov9_03:3244"
@@ -445,7 +445,7 @@
    "id": "ov9_03:2F58",
    "font": "sys",
    "jp": "戦争中に表示される\n表示物について説明します。",
-   "en": "",
+   "en": "This explains what is shown\non screen during war.",
    "max": 36,
    "ptrs": [
     "ov9_03:324C"
@@ -455,7 +455,7 @@
    "id": "ov9_03:2F7C",
    "font": "sys",
    "jp": "本ゲームの概要及び\nゲーム目的について\n説明します。",
-   "en": "",
+   "en": "This explains the outline\nand goal of this game.",
    "max": 36,
    "ptrs": [
     "ov9_03:318C"
@@ -465,7 +465,7 @@
    "id": "ov9_03:2FA0",
    "font": "sys",
    "jp": "戦争時における\nユニットの出撃に関して\n説明します。",
-   "en": "",
+   "en": "This explains how to deploy\nunits during war.",
    "max": 36,
    "ptrs": [
     "ov9_03:320C"
@@ -475,7 +475,7 @@
    "id": "ov9_03:2FC4",
    "font": "sys",
    "jp": "戦争時における\nユニットの移動方法について\n説明します。",
-   "en": "",
+   "en": "This explains how to move\nunits during war.",
    "max": 40,
    "ptrs": [
     "ov9_03:31EC"
@@ -485,7 +485,7 @@
    "id": "ov9_03:2FEC",
    "font": "sys",
    "jp": "属性について\nその概要と影響内容について\n説明します。",
-   "en": "",
+   "en": "This explains elements:\nwhat they are and\nwhat they affect.",
    "max": 40,
    "ptrs": [
     "ov9_03:325C"
@@ -495,7 +495,7 @@
    "id": "ov9_03:3014",
    "font": "sys",
    "jp": "デュエル時における\n武器の相性の関係について\n説明します。",
-   "en": "",
+   "en": "This explains how weapon\nmatchups work in Duels.",
    "max": 40,
    "ptrs": [
     "ov9_03:3224"
@@ -505,7 +505,7 @@
    "id": "ov9_03:303C",
    "font": "sys",
    "jp": "守将の捕縛について説明します。\n戦死についても本項で\n説明します。",
-   "en": "",
+   "en": "This explains capturing\ncommanders, and also\ntheir deaths in battle.",
    "max": 48,
    "ptrs": [
     "ov9_03:31B4"
@@ -515,7 +515,7 @@
    "id": "ov9_03:306C",
    "font": "sys",
    "jp": "戦争の進め方について説明します。\n勝敗条件などもここで説明します。",
-   "en": "",
+   "en": "This explains how wars\nproceed, and also the\nconditions for victory.",
    "max": 48,
    "ptrs": [
     "ov9_03:31E4"
@@ -525,7 +525,7 @@
    "id": "ov9_03:309C",
    "font": "sys",
    "jp": "褒賞について説明します。\n戦意回復の仕組みについても\nここで説明します。",
-   "en": "",
+   "en": "This explains rewards,\nand also how morale\nis restored.",
    "max": 52,
    "ptrs": [
     "ov9_03:31AC"
@@ -535,7 +535,7 @@
    "id": "ov9_03:30D0",
    "font": "sys",
    "jp": "地形によるHPへの影響について\nその概要と影響内容について\n説明します。",
-   "en": "",
+   "en": "This explains how terrain\naffects HP: an outline\nand its effects.",
    "max": 52,
    "ptrs": [
     "ov9_03:3264"
@@ -545,7 +545,7 @@
    "id": "ov9_03:3104",
    "font": "sys",
    "jp": "守将の登用について説明します。\n登用の条件に関しても\nここで説明します。",
-   "en": "",
+   "en": "This explains recruiting\ncommanders, and also\nthe conditions for it.",
    "max": 52,
    "ptrs": [
     "ov9_03:31BC"
@@ -555,7 +555,7 @@
    "id": "ov9_03:3138",
    "font": "sys",
    "jp": "戦争中の獲得ポイント、\nその獲得方法と使用方法に\nついて説明します。",
-   "en": "",
+   "en": "This explains points\nearned in war: how to get\nthem and how to use them.",
    "max": 50,
    "ptrs": [
     "ov9_03:3254"

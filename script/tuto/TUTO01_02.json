@@ -5,37 +5,37 @@
   {
    "id": "TUTO01_02:0070",
    "jp": "ユニットの移動方法について\nご説明いたします!!",
-   "en": ""
+   "en": "Allow me to explain\nmoving units!!"
   },
   {
    "id": "TUTO01_02:008F",
    "jp": "移動先の指示方法は、まず\n下画面のユニットにタッチ",
-   "en": ""
+   "en": "To give orders, first\ntouch a unit below"
   },
   {
    "id": "TUTO01_02:00B2",
    "jp": "することで選択します。\nこれをキャッチと言います",
-   "en": ""
+   "en": "to select it. This is\ncalled a Catch."
   },
   {
    "id": "TUTO01_02:00CE",
    "jp": "キャッチしたら行かせたい\n場所へスライドします",
-   "en": ""
+   "en": "Then slide it to where\nit should go."
   },
   {
    "id": "TUTO01_02:00E8",
    "jp": "これによって移動先が決まり\nユニットはその目的地へ",
-   "en": ""
+   "en": "That sets the goal;\nthe unit then heads"
   },
   {
    "id": "TUTO01_02:0109",
    "jp": "自動的に移動を開始します",
-   "en": ""
+   "en": "there on its own."
   },
   {
    "id": "TUTO01_02:011D",
    "jp": "ユニットの移動方法について\n上記の通りとなります!",
-   "en": ""
+   "en": "That is how units\nmove!"
   }
  ]
 }

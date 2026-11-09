@@ -5,27 +5,27 @@
   {
    "id": "TUTO01_04:0060",
    "jp": "ユニットが拠点へ到達すると\nその拠点の種類・状況に応じ",
-   "en": ""
+   "en": "When a unit reaches a\nbase, it acts by type:"
   },
   {
    "id": "TUTO01_04:0087",
    "jp": "「占領」または「破壊」等の\n行動を実行します",
-   "en": ""
+   "en": "it will \"Capture\" or\n\"Destroy\" it, etc."
   },
   {
    "id": "TUTO01_04:00A5",
    "jp": "拠点を占領することにより\n出撃ユニットが1体増えて…",
-   "en": ""
+   "en": "Each base taken lets\nyou deploy one more..."
   },
   {
    "id": "TUTO01_04:00C8",
    "jp": "戦いを有利に展開することが\nできるようになりますので",
-   "en": ""
+   "en": "giving you the upper\nhand in battle, so"
   },
   {
    "id": "TUTO01_04:00E8",
    "jp": "この拠点を如何に確保するか\n戦争の鍵となります",
-   "en": ""
+   "en": "securing bases is the\nkey to the war."
   }
  ]
 }

@@ -5,32 +5,32 @@
   {
    "id": "TUTO01_17:0060",
    "jp": "地形によるHPへの影響に\nついてご説明いたします!!",
-   "en": ""
+   "en": "Allow me to explain\nterrain and HP!!"
   },
   {
    "id": "TUTO01_17:0081",
    "jp": "地形にはユニットのHPに\n影響するものがあります",
-   "en": ""
+   "en": "Some terrain affects\na unit's HP."
   },
   {
    "id": "TUTO01_17:009E",
    "jp": "本拠点上にいるユニットは\nHPが回復します",
-   "en": ""
+   "en": "Units on their home\nbase recover HP."
   },
   {
    "id": "TUTO01_17:00BA",
    "jp": "ユニットクラスによっては\nダメージを受けたり、",
-   "en": ""
+   "en": "Depending on class,\nsome terrain hurts,"
   },
   {
    "id": "TUTO01_17:00D3",
    "jp": "HPが回復する地形も\nあります",
-   "en": ""
+   "en": "and some restores\nHP."
   },
   {
    "id": "TUTO01_17:00E7",
    "jp": "地形によるHPへの影響の\n報告は以上となります!",
-   "en": ""
+   "en": "That is all on\nterrain and HP!"
   }
  ]
 }

@@ -76,7 +76,7 @@
    "id": "arm9:8F99C",
    "font": "sys",
    "jp": "の\n",
-   "en": " are\n",
+   "en": " are ",
    "max": 4,
    "ptrs": [
     "ov9_14:190C"
@@ -206,7 +206,7 @@
    "id": "arm9:8F9D4",
    "font": "sys",
    "jp": "より、",
-   "en": ": ",
+   "en": " took\n",
    "max": 4,
    "ptrs": [
     "ov9_14:1900"
@@ -2166,7 +2166,7 @@
    "id": "arm9:8FFB4",
    "font": "sys",
    "jp": "を占領!",
-   "en": " captured!",
+   "en": "!",
    "max": 8,
    "ptrs": [
     "ov9_14:18F8"
@@ -7209,7 +7209,7 @@
    "id": "arm9:91470",
    "font": "sys",
    "jp": "クリティカルヒット",
-   "en": "",
+   "en": "Critical Hit",
    "max": 12,
    "ptrs": [
     "arm9:101CB0"
@@ -7229,7 +7229,7 @@
    "id": "arm9:91488",
    "font": "sys",
    "jp": "デュエルについて1",
-   "en": "",
+   "en": "About Duels 1",
    "max": 12,
    "ptrs": [
     "arm9:F7A18"
@@ -7239,7 +7239,7 @@
    "id": "arm9:91494",
    "font": "sys",
    "jp": "〇探索とは?",
-   "en": "",
+   "en": "What Is Exploration?",
    "max": 12,
    "ptrs": [
     "ov9_13:77B0"
@@ -7249,7 +7249,7 @@
    "id": "arm9:914A0",
    "font": "sys",
    "jp": "世界樹の葉",
-   "en": "",
+   "en": "World Tree Leaf",
    "max": 12,
    "ptrs": [
     "arm9:101038"
@@ -7269,7 +7269,7 @@
    "id": "arm9:914B8",
    "font": "item",
    "jp": "レッドクリムゾン",
-   "en": "",
+   "en": "Red Crimson",
    "max": 12,
    "ptrs": [
     "arm9:101A8C"
@@ -7289,7 +7289,7 @@
    "id": "arm9:914D0",
    "font": "sys",
    "jp": "ミラノ盗︀賊団",
-   "en": "",
+   "en": "Milanor's Thieves",
    "max": 12,
    "ptrs": [
     "arm9:A7D28"
@@ -7309,7 +7309,7 @@
    "id": "arm9:914E8",
    "font": "sys",
    "jp": "帝国兵の鎧",
-   "en": "",
+   "en": "Imperial Soldier Armor",
    "max": 12,
    "ptrs": [
     "arm9:101188"
@@ -7319,7 +7319,7 @@
    "id": "arm9:914F4",
    "font": "sys",
    "jp": "エンベリア公国",
-   "en": "",
+   "en": "Duchy of Embellia",
    "max": 12,
    "ptrs": [
     "arm9:A7D3C"
@@ -7339,7 +7339,7 @@
    "id": "arm9:9150C",
    "font": "sys",
    "jp": "デュエルについて8",
-   "en": "",
+   "en": "About Duels 8",
    "max": 12,
    "ptrs": [
     "arm9:F7AC4"
@@ -7359,7 +7359,7 @@
    "id": "arm9:91524",
    "font": "sys",
    "jp": "ドルト盗賊団",
-   "en": "",
+   "en": "Dort's Bandits",
    "max": 12,
    "ptrs": [
     "arm9:A7D8C"
@@ -7379,7 +7379,7 @@
    "id": "arm9:9153C",
    "font": "sys",
    "jp": "デュエルについて3",
-   "en": "",
+   "en": "About Duels 3",
    "max": 12,
    "ptrs": [
     "arm9:F7A28"
@@ -7409,7 +7409,7 @@
    "id": "arm9:91560",
    "font": "sys",
    "jp": "フェリナス湖畔",
-   "en": "",
+   "en": "Phelinas Lakeside",
    "max": 12,
    "ptrs": [
     "arm9:A7310"
@@ -7419,7 +7419,7 @@
    "id": "arm9:9156C",
    "font": "sys",
    "jp": "オーランド平野",
-   "en": "",
+   "en": "Orlando Plains",
    "max": 12,
    "ptrs": [
     "arm9:A7328"
@@ -7429,7 +7429,7 @@
    "id": "arm9:91578",
    "font": "item",
    "jp": "羽根付きサンダル",
-   "en": "",
+   "en": "Winged Sandals",
    "max": 12,
    "ptrs": [
     "arm9:10148C"
@@ -7439,7 +7439,7 @@
    "id": "arm9:91584",
    "font": "sys",
    "jp": "デュエルについて4",
-   "en": "",
+   "en": "About Duels 4",
    "max": 12,
    "ptrs": [
     "arm9:F7A34"
@@ -7449,7 +7449,7 @@
    "id": "arm9:91590",
    "font": "sys",
    "jp": "敵をスタンさせる",
-   "en": "",
+   "en": "Stuns the enemy.",
    "max": 12,
    "ptrs": [
     "arm9:A7E80"
@@ -7459,7 +7459,7 @@
    "id": "arm9:9159C",
    "font": "sys",
    "jp": "アンティーク好き",
-   "en": "",
+   "en": "Antique lovers",
    "max": 12,
    "ptrs": [
     "arm9:1016A4"
@@ -7509,7 +7509,7 @@
    "id": "arm9:915D8",
    "font": "sys",
    "jp": "デュエルについて5",
-   "en": "",
+   "en": "About Duels 5",
    "max": 12,
    "ptrs": [
     "arm9:F7A3C"
@@ -7529,7 +7529,7 @@
    "id": "arm9:915F0",
    "font": "sys",
    "jp": "グラヴィティカオス",
-   "en": "",
+   "en": "Gravity Chaos",
    "max": 12,
    "ptrs": [
     "arm9:A7EB4"
@@ -7539,7 +7539,7 @@
    "id": "arm9:915FC",
    "font": "sys",
    "jp": "ダイヤモンドダスト",
-   "en": "",
+   "en": "Diamond Dust",
    "max": 12,
    "ptrs": [
     "arm9:A81E0"
@@ -7559,7 +7559,7 @@
    "id": "arm9:91614",
    "font": "sys",
    "jp": "デュエルについて6",
-   "en": "",
+   "en": "About Duels 6",
    "max": 12,
    "ptrs": [
     "arm9:F7A44"
@@ -7599,7 +7599,7 @@
    "id": "arm9:91644",
    "font": "sys",
    "jp": "黒騎士レオン",
-   "en": "",
+   "en": "Black Knight Leon",
    "max": 12,
    "ptrs": [
     "arm9:F5424"
@@ -7619,7 +7619,7 @@
    "id": "arm9:9165C",
    "font": "sys",
    "jp": "軍神バルドゥス",
-   "en": "",
+   "en": "God of War Baldus",
    "max": 12,
    "ptrs": [
     "arm9:F5438"
@@ -7639,7 +7639,7 @@
    "id": "arm9:91674",
    "font": "sys",
    "jp": "デュエルについて7",
-   "en": "",
+   "en": "About Duels 7",
    "max": 12,
    "ptrs": [
     "arm9:F7A4C"
@@ -7649,7 +7649,7 @@
    "id": "arm9:91680",
    "font": "sys",
    "jp": "特攻のイシーヌ",
-   "en": "",
+   "en": "Ishiene the Reckless",
    "max": 12,
    "ptrs": [
     "arm9:F5474"
@@ -7659,7 +7659,7 @@
    "id": "arm9:9168C",
    "font": "sys",
    "jp": "女王エメローネ",
-   "en": "",
+   "en": "Queen Emelone",
    "max": 12,
    "ptrs": [
     "arm9:F5488"
@@ -7669,7 +7669,7 @@
    "id": "arm9:91698",
    "font": "sys",
    "jp": "忠義なるコブン",
-   "en": "",
+   "en": "Loyal Flunky",
    "max": 12,
    "ptrs": [
     "arm9:F54B0"
@@ -7679,7 +7679,7 @@
    "id": "arm9:916A4",
    "font": "sys",
    "jp": "盗賊王ドルト",
-   "en": "",
+   "en": "Bandit King Dort",
    "max": 12,
    "ptrs": [
     "arm9:F54D8"
@@ -7699,7 +7699,7 @@
    "id": "arm9:916BC",
    "font": "item",
    "jp": "発芽プロテイモ",
-   "en": "",
+   "en": "Sprouted Protato",
    "max": 12,
    "ptrs": [
     "arm9:10145C"
@@ -7719,7 +7719,7 @@
    "id": "arm9:916D4",
    "font": "sys",
    "jp": "妖しのアマレウス",
-   "en": "",
+   "en": "Bewitching Amareus",
    "max": 12,
    "ptrs": [
     "arm9:F5564"
@@ -7739,7 +7739,7 @@
    "id": "arm9:916EC",
    "font": "item",
    "jp": "破滅のハンマー",
-   "en": "",
+   "en": "Hammer of Ruin",
    "max": 12,
    "ptrs": [
     "arm9:1014A4"
@@ -7749,7 +7749,7 @@
    "id": "arm9:916F8",
    "font": "item",
    "jp": "パメラのほうき",
-   "en": "",
+   "en": "Pamela's Broom",
    "max": 12,
    "ptrs": [
     "arm9:1014BC"
@@ -7759,7 +7759,7 @@
    "id": "arm9:91704",
    "font": "sys",
    "jp": "永遠なるシモベ",
-   "en": "",
+   "en": "Eternal Shimobe",
    "max": 12,
    "ptrs": [
     "arm9:F55F0"
@@ -7909,7 +7909,7 @@
    "id": "arm9:917B8",
    "font": "sys",
    "jp": "ミステール専用",
-   "en": "",
+   "en": "Mistel only",
    "max": 12,
    "ptrs": [
     "arm9:100C3C"
@@ -7929,7 +7929,7 @@
    "id": "arm9:917D0",
    "font": "sys",
    "jp": "干からびたトカゲ",
-   "en": "",
+   "en": "Dried-Up Lizard",
    "max": 12,
    "ptrs": [
     "arm9:101530"
@@ -7939,7 +7939,7 @@
    "id": "arm9:917DC",
    "font": "item",
    "jp": "干からびたトカゲ",
-   "en": "",
+   "en": "Dried-Up Lizard",
    "max": 12,
    "ptrs": [
     "arm9:101534"
@@ -7969,7 +7969,7 @@
    "id": "arm9:91800",
    "font": "sys",
    "jp": "悲槍シルヴィア",
-   "en": "",
+   "en": "Sylvia, Lance of Sorrow",
    "max": 12,
    "ptrs": [
     "arm9:101548"
@@ -8029,7 +8029,7 @@
    "id": "arm9:91848",
    "font": "item",
    "jp": "ヒヅメシューズ",
-   "en": "",
+   "en": "Hoof Shoes",
    "max": 12,
    "ptrs": [
     "arm9:101564"
@@ -8089,7 +8089,7 @@
    "id": "arm9:91890",
    "font": "item",
    "jp": "ひらひらリボン",
-   "en": "",
+   "en": "Frilly Ribbon",
    "max": 12,
    "ptrs": [
     "arm9:10157C"
@@ -8109,7 +8109,7 @@
    "id": "arm9:918A8",
    "font": "sys",
    "jp": "プラチナの髪飾り",
-   "en": "",
+   "en": "Platinum Hairpin",
    "max": 12,
    "ptrs": [
     "arm9:1015F0"
@@ -8119,7 +8119,7 @@
    "id": "arm9:918B4",
    "font": "sys",
    "jp": "ウンディーネ専用",
-   "en": "",
+   "en": "Undines only",
    "max": 12,
    "ptrs": [
     "arm9:100DEC"
@@ -8129,7 +8129,7 @@
    "id": "arm9:918C0",
    "font": "sys",
    "jp": "ウンディーネ専用",
-   "en": "",
+   "en": "Undines only",
    "max": 12,
    "ptrs": [
     "arm9:101974"
@@ -8139,7 +8139,7 @@
    "id": "arm9:918CC",
    "font": "sys",
    "jp": "カリンカの赤い実",
-   "en": "",
+   "en": "Red Kalinka Berry",
    "max": 12,
    "ptrs": [
     "arm9:100948"
@@ -8149,7 +8149,7 @@
    "id": "arm9:918D8",
    "font": "sys",
    "jp": "絹織りの頭巾",
-   "en": "",
+   "en": "Silk Hood",
    "max": 12,
    "ptrs": [
     "arm9:1009C0"
@@ -8159,7 +8159,7 @@
    "id": "arm9:918E4",
    "font": "sys",
    "jp": "魔槍ブラシェンド",
-   "en": "",
+   "en": "Demon Lance Brachend",
    "max": 12,
    "ptrs": [
     "arm9:1017B8"
@@ -8169,7 +8169,7 @@
    "id": "arm9:918F0",
    "font": "sys",
    "jp": "ヴァルキリー専用",
-   "en": "",
+   "en": "Valkyries only",
    "max": 12,
    "ptrs": [
     "arm9:101A64"
@@ -8179,7 +8179,7 @@
    "id": "arm9:918FC",
    "font": "sys",
    "jp": "ド派手なターバン",
-   "en": "",
+   "en": "Super-Gaudy Turban",
    "max": 12,
    "ptrs": [
     "arm9:1012C0"
@@ -8189,7 +8189,7 @@
    "id": "arm9:91908",
    "font": "sys",
    "jp": "巨獣ロコンの骨",
-   "en": "",
+   "en": "Bone of Giant Rocon",
    "max": 12,
    "ptrs": [
     "arm9:100A38"
@@ -8199,7 +8199,7 @@
    "id": "arm9:91914",
    "font": "sys",
    "jp": "ヴァルキリー専用",
-   "en": "",
+   "en": "Valkyries only",
    "max": 12,
    "ptrs": [
     "arm9:101A94"
@@ -8209,7 +8209,7 @@
    "id": "arm9:91920",
    "font": "sys",
    "jp": "きらきら火山灰",
-   "en": "",
+   "en": "Sparkly Volcanic Ash",
    "max": 12,
    "ptrs": [
     "arm9:100A68"
@@ -8219,7 +8219,7 @@
    "id": "arm9:9192C",
    "font": "sys",
    "jp": "血濡れのレイピア",
-   "en": "",
+   "en": "Bloodstained Rapier",
    "max": 12,
    "ptrs": [
     "arm9:101158"
@@ -8229,7 +8229,7 @@
    "id": "arm9:91938",
    "font": "sys",
    "jp": "ヴァルキリー専用",
-   "en": "",
+   "en": "Valkyries only",
    "max": 12,
    "ptrs": [
     "arm9:101164"
@@ -8239,7 +8239,7 @@
    "id": "arm9:91944",
    "font": "sys",
    "jp": "グリフォンの羽根",
-   "en": "",
+   "en": "Griffon Feather",
    "max": 12,
    "ptrs": [
     "arm9:100BD0"
@@ -8249,7 +8249,7 @@
    "id": "arm9:91950",
    "font": "sys",
    "jp": "黒ネコの耳飾り",
-   "en": "",
+   "en": "Black Cat Earrings",
    "max": 12,
    "ptrs": [
     "arm9:100C48"
@@ -8259,7 +8259,7 @@
    "id": "arm9:9195C",
    "font": "sys",
    "jp": "幻獣ヤーデのツノ",
-   "en": "",
+   "en": "Horn of Mythic Yade",
    "max": 12,
    "ptrs": [
     "arm9:100CC0"
@@ -8269,7 +8269,7 @@
    "id": "arm9:91968",
    "font": "sys",
    "jp": "幸運のタリスマン",
-   "en": "",
+   "en": "Lucky Talisman",
    "max": 12,
    "ptrs": [
     "arm9:100CD8"
@@ -8279,7 +8279,7 @@
    "id": "arm9:91974",
    "font": "sys",
    "jp": "豪槍一本鬼",
-   "en": "",
+   "en": "Great Spear Lone Ogre",
    "max": 12,
    "ptrs": [
     "arm9:100CF0"
@@ -8289,7 +8289,7 @@
    "id": "arm9:91980",
    "font": "sys",
    "jp": "ウンディーネ専用",
-   "en": "",
+   "en": "Undines only",
    "max": 12,
    "ptrs": [
     "arm9:10126C"
@@ -8299,7 +8299,7 @@
    "id": "arm9:9198C",
    "font": "sys",
    "jp": "悠久のグングニル",
-   "en": "",
+   "en": "Eternal Gungnir",
    "max": 12,
    "ptrs": [
     "arm9:101968"
@@ -8309,7 +8309,7 @@
    "id": "arm9:91998",
    "font": "item",
    "jp": "悠久のグングニル",
-   "en": "",
+   "en": "Eternal Gungnir",
    "max": 12,
    "ptrs": [
     "arm9:10196C"
@@ -8319,7 +8319,7 @@
    "id": "arm9:919A4",
    "font": "sys",
    "jp": "カード選択について",
-   "en": "",
+   "en": "About Card Selection",
    "max": 12,
    "ptrs": [
     "arm9:F79E4"
@@ -8329,7 +8329,7 @@
    "id": "arm9:919B0",
    "font": "sys",
    "jp": "四葉のクローバー",
-   "en": "",
+   "en": "Four-Leaf Clover",
    "max": 12,
    "ptrs": [
     "arm9:1019E0"
@@ -8339,7 +8339,7 @@
    "id": "arm9:919BC",
    "font": "sys",
    "jp": "被ノックバックなし",
-   "en": "",
+   "en": "Immune to Knockback",
    "max": 12,
    "ptrs": [
     "arm9:100ED8"
@@ -8349,7 +8349,7 @@
    "id": "arm9:919C8",
    "font": "sys",
    "jp": "白山羊のチーズ",
-   "en": "",
+   "en": "White Goat Cheese",
    "max": 12,
    "ptrs": [
     "arm9:100F30"
@@ -8359,7 +8359,7 @@
    "id": "arm9:919D4",
    "font": "sys",
    "jp": "白山羊のミルク",
-   "en": "",
+   "en": "White Goat Milk",
    "max": 12,
    "ptrs": [
     "arm9:100F48"
@@ -8369,7 +8369,7 @@
    "id": "arm9:919E0",
    "font": "sys",
    "jp": "領土拡大中",
-   "en": "",
+   "en": "Expanding territory",
    "max": 12,
    "ptrs": [
     "ov9_14:18F0"
@@ -8379,7 +8379,7 @@
    "id": "arm9:919EC",
    "font": "sys",
    "jp": "激戦を制し…\n",
-   "en": "",
+   "en": "Battle won!",
    "max": 12,
    "ptrs": [
     "ov9_14:18FC"
@@ -8389,7 +8389,7 @@
    "id": "arm9:919F8",
    "font": "sys",
    "jp": "ミネルロード西端",
-   "en": "",
+   "en": "Minerroad West End",
    "max": 12,
    "ptrs": [
     "arm9:A7364"
@@ -8399,7 +8399,7 @@
    "id": "arm9:91A04",
    "font": "sys",
    "jp": "最高ダメージ値",
-   "en": "",
+   "en": "Highest Damage",
    "max": 12,
    "ptrs": [
     "arm9:101CC0"
@@ -8409,7 +8409,7 @@
    "id": "arm9:91A10",
    "font": "sys",
    "jp": "ウンディーネ専用",
-   "en": "",
+   "en": "Undines only",
    "max": 12,
    "ptrs": [
     "arm9:101554"
@@ -8419,7 +8419,7 @@
    "id": "arm9:91A1C",
    "font": "sys",
    "jp": "イシュナート要塞",
-   "en": "",
+   "en": "Fortress of Ishnad",
    "max": 12,
    "ptrs": [
     "arm9:A7238"
@@ -8429,7 +8429,7 @@
    "id": "arm9:91A28",
    "font": "sys",
    "jp": "獲得ポイント数",
-   "en": "",
+   "en": "Points Earned",
    "max": 12,
    "ptrs": [
     "arm9:100564",
@@ -8440,7 +8440,7 @@
    "id": "arm9:91A34",
    "font": "sys",
    "jp": "珍園マセラマティ",
-   "en": "",
+   "en": "Odd-Garden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:101170"
@@ -8450,7 +8450,7 @@
    "id": "arm9:91A40",
    "font": "sys",
    "jp": "オルテガ山賊団",
-   "en": "",
+   "en": "Ortega Brigands",
    "max": 12,
    "ptrs": [
     "arm9:A7D78"
@@ -8460,7 +8460,7 @@
    "id": "arm9:91A4C",
    "font": "sys",
    "jp": "西ヴァーレンヒルズ",
-   "en": "",
+   "en": "West Verlaine Hills",
    "max": 12,
    "ptrs": [
     "arm9:A72E0"
@@ -8470,7 +8470,7 @@
    "id": "arm9:91A58",
    "font": "sys",
    "jp": "東ヴァーレンヒルズ",
-   "en": "",
+   "en": "East Verlaine Hills",
    "max": 12,
    "ptrs": [
     "arm9:A72F8"
@@ -8480,7 +8480,7 @@
    "id": "arm9:91A64",
    "font": "sys",
    "jp": "ウンディーネ専用",
-   "en": "",
+   "en": "Undines only",
    "max": 12,
    "ptrs": [
     "arm9:100804"
@@ -8490,7 +8490,7 @@
    "id": "arm9:91A70",
    "font": "sys",
    "jp": "神園マセラマティ",
-   "en": "",
+   "en": "Holy-Garden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:100F78"
@@ -8500,7 +8500,7 @@
    "id": "arm9:91A7C",
    "font": "sys",
    "jp": "神聖都市オズ",
-   "en": "",
+   "en": "Holy City of Oz",
    "max": 12,
    "ptrs": [
     "arm9:A7370"
@@ -8510,7 +8510,7 @@
    "id": "arm9:91A88",
    "font": "sys",
    "jp": "ヴァルキリー専用",
-   "en": "",
+   "en": "Valkyries only",
    "max": 12,
    "ptrs": [
     "arm9:10168C"
@@ -8520,7 +8520,7 @@
    "id": "arm9:91A94",
    "font": "sys",
    "jp": "リィンカーネーション",
-   "en": "",
+   "en": "Reincarnation",
    "max": 12,
    "ptrs": [
     "arm9:A81A8"
@@ -8530,7 +8530,7 @@
    "id": "arm9:91AA0",
    "font": "sys",
    "jp": "ジャッジメント・ゼロ",
-   "en": "",
+   "en": "Judgment Zero",
    "max": 12,
    "ptrs": [
     "arm9:A8218"
@@ -8540,7 +8540,7 @@
    "id": "arm9:91AAC",
    "font": "sys",
    "jp": "魔剣士ラッセル",
-   "en": "",
+   "en": "Astral Fencer Russell",
    "max": 12,
    "ptrs": [
     "arm9:F5384"
@@ -8550,7 +8550,7 @@
    "id": "arm9:91AB8",
    "font": "sys",
    "jp": "フラウベの娘モニカ",
-   "en": "",
+   "en": "Monica, Girl of Flaube",
    "max": 12,
    "ptrs": [
     "arm9:F53FC"
@@ -8560,7 +8560,7 @@
    "id": "arm9:91AC4",
    "font": "sys",
    "jp": "山賊王オルテガ",
-   "en": "",
+   "en": "Brigand King Ortega",
    "max": 12,
    "ptrs": [
     "arm9:F54C4"
@@ -8570,7 +8570,7 @@
    "id": "arm9:91AD0",
    "font": "sys",
    "jp": "緋雪姫エミリオ",
-   "en": "",
+   "en": "Scarlet Princess Emilia",
    "max": 12,
    "ptrs": [
     "arm9:F54EC"
@@ -8580,7 +8580,7 @@
    "id": "arm9:91ADC",
    "font": "sys",
    "jp": "賞金稼ぎミゼル",
-   "en": "",
+   "en": "Bounty Hunter Mizer",
    "max": 12,
    "ptrs": [
     "arm9:F5528"
@@ -8590,7 +8590,7 @@
    "id": "arm9:91AE8",
    "font": "sys",
    "jp": "暗殺者ジルヴァ",
-   "en": "",
+   "en": "Assassin Zilva",
    "max": 12,
    "ptrs": [
     "arm9:F5550"
@@ -8600,7 +8600,7 @@
    "id": "arm9:91AF4",
    "font": "sys",
    "jp": "時間帯について",
-   "en": "",
+   "en": "About Time of Day",
    "max": 12,
    "ptrs": [
     "arm9:F7AD8"
@@ -8610,7 +8610,7 @@
    "id": "arm9:91B00",
    "font": "sys",
    "jp": "農業経験者",
-   "en": "",
+   "en": "Experienced farmers",
    "max": 12,
    "ptrs": [
     "arm9:100B34"
@@ -8620,7 +8620,7 @@
    "id": "arm9:91B0C",
    "font": "sys",
    "jp": "枢機卿ユベロン",
-   "en": "",
+   "en": "Cardinal Juvelon",
    "max": 12,
    "ptrs": [
     "arm9:F55A0"
@@ -8630,7 +8630,7 @@
    "id": "arm9:91B18",
    "font": "sys",
    "jp": "冒が丈夫な人",
-   "en": "",
+   "en": "Those with iron stomachs",
    "max": 12,
    "ptrs": [
     "arm9:100B4C"
@@ -8640,7 +8640,7 @@
    "id": "arm9:91B24",
    "font": "sys",
    "jp": "オブジェクトについて",
-   "en": "",
+   "en": "About Objects",
    "max": 12,
    "ptrs": [
     "arm9:F7A5C"
@@ -8650,7 +8650,7 @@
    "id": "arm9:91B30",
    "font": "sys",
    "jp": "大陸浮上…?",
-   "en": "",
+   "en": "The continent rises...?",
    "max": 12,
    "ptrs": [
     "ov9_14:2354"
@@ -8660,7 +8660,7 @@
    "id": "arm9:91B3C",
    "font": "sys",
    "jp": "〇探索の実行",
-   "en": "",
+   "en": "Starting an Exploration",
    "max": 12,
    "ptrs": [
     "ov9_13:77B8"
@@ -8670,7 +8670,7 @@
    "id": "arm9:91B48",
    "font": "sys",
    "jp": "星屑の砂時計",
-   "en": "",
+   "en": "Stardust Hourglass",
    "max": 12,
    "ptrs": [
     "arm9:101728"
@@ -8680,7 +8680,7 @@
    "id": "arm9:91B54",
    "font": "sys",
    "jp": "カゴの中の白い蝶",
-   "en": "",
+   "en": "Caged White Butterfly",
    "max": 12,
    "ptrs": [
     "arm9:1008D0"
@@ -8690,7 +8690,7 @@
    "id": "arm9:91B60",
    "font": "sys",
    "jp": "信仰心のある者",
-   "en": "",
+   "en": "The faithful",
    "max": 12,
    "ptrs": [
     "arm9:10102C"
@@ -8700,7 +8700,7 @@
    "id": "arm9:91B6C",
    "font": "sys",
    "jp": "ネクロマンサー専用",
-   "en": "",
+   "en": "Necromancers only",
    "max": 12,
    "ptrs": [
     "arm9:101AAC"
@@ -8710,7 +8710,7 @@
    "id": "arm9:91B78",
    "font": "sys",
    "jp": "ネクロマンサー専用",
-   "en": "",
+   "en": "Necromancers only",
    "max": 12,
    "ptrs": [
     "arm9:1010BC"
@@ -8720,7 +8720,7 @@
    "id": "arm9:91B84",
    "font": "sys",
    "jp": "フラム穀倉地帯",
-   "en": "",
+   "en": "Framm Granary",
    "max": 12,
    "ptrs": [
     "arm9:A7280"
@@ -8730,7 +8730,7 @@
    "id": "arm9:91B90",
    "font": "sys",
    "jp": "一部の女性のみ",
-   "en": "",
+   "en": "Certain women only",
    "max": 12,
    "ptrs": [
     "arm9:101134"
@@ -8740,7 +8740,7 @@
    "id": "arm9:91B9C",
    "font": "sys",
    "jp": "ネクロマンサー専用",
-   "en": "",
+   "en": "Necromancers only",
    "max": 12,
    "ptrs": [
     "arm9:1008AC"
@@ -8750,7 +8750,7 @@
    "id": "arm9:91BA8",
    "font": "sys",
    "jp": "読解力のある人",
-   "en": "",
+   "en": "Good readers",
    "max": 12,
    "ptrs": [
     "arm9:1011AC"
@@ -8760,7 +8760,7 @@
    "id": "arm9:91BB4",
    "font": "sys",
    "jp": "読解力のある人",
-   "en": "",
+   "en": "Good readers",
    "max": 12,
    "ptrs": [
     "arm9:1011C4"
@@ -8770,7 +8770,7 @@
    "id": "arm9:91BC0",
    "font": "sys",
    "jp": "読解力のある人",
-   "en": "",
+   "en": "Good readers",
    "max": 12,
    "ptrs": [
     "arm9:1011DC"
@@ -8780,7 +8780,7 @@
    "id": "arm9:91BCC",
    "font": "sys",
    "jp": "黒薔薇のクレスト",
-   "en": "",
+   "en": "Black Rose Crest",
    "max": 12,
    "ptrs": [
     "arm9:100C60"
@@ -8790,7 +8790,7 @@
    "id": "arm9:91BD8",
    "font": "sys",
    "jp": "清き心を持つ者",
-   "en": "",
+   "en": "The pure of heart",
    "max": 12,
    "ptrs": [
     "arm9:101254"
@@ -8800,7 +8800,7 @@
    "id": "arm9:91BE4",
    "font": "sys",
    "jp": "勢力選択について",
-   "en": "",
+   "en": "About Faction Selection",
    "max": 12,
    "ptrs": [
     "arm9:F79D8"
@@ -8810,7 +8810,7 @@
    "id": "arm9:91BF0",
    "font": "sys",
    "jp": "が探索を行います",
-   "en": "",
+   "en": " will explore.",
    "max": 12,
    "ptrs": [
     "ov9_13:5F04"
@@ -8820,7 +8820,7 @@
    "id": "arm9:91BFC",
    "font": "sys",
    "jp": "グリフライダー専用",
-   "en": "",
+   "en": "Griffon Riders only",
    "max": 12,
    "ptrs": [
     "arm9:1013D4"
@@ -8830,7 +8830,7 @@
    "id": "arm9:91C08",
    "font": "sys",
    "jp": "白薔薇のクレスト",
-   "en": "",
+   "en": "White Rose Crest",
    "max": 12,
    "ptrs": [
     "arm9:100F18"
@@ -8840,7 +8840,7 @@
    "id": "arm9:91C14",
    "font": "sys",
    "jp": "捕腐の処遇は?",
-   "en": "",
+   "en": "What will you do with the prisoner?",
    "max": 12,
    "ptrs": [
     "ov9_11:137C"
@@ -8850,7 +8850,7 @@
    "id": "arm9:91C20",
    "font": "sys",
    "jp": "グリフライダー専用",
-   "en": "",
+   "en": "Griffon Riders only",
    "max": 12,
    "ptrs": [
     "arm9:1014AC"
@@ -8860,7 +8860,7 @@
    "id": "arm9:91C2C",
    "font": "sys",
    "jp": "神々の黙示録",
-   "en": "",
+   "en": "Apocalypse of the Gods",
    "max": 12,
    "ptrs": [
     "arm9:101B48"
@@ -8870,7 +8870,7 @@
    "id": "arm9:91C38",
    "font": "sys",
    "jp": "ファンタジニア王国",
-   "en": "",
+   "en": "Kingdom of Fantasinia",
    "max": 12,
    "ptrs": [
     "arm9:A7D14"
@@ -8880,7 +8880,7 @@
    "id": "arm9:91C44",
    "font": "sys",
    "jp": "森の共同戦線",
-   "en": "",
+   "en": "Forest Alliance",
    "max": 12,
    "ptrs": [
     "arm9:A7DC8"
@@ -8890,7 +8890,7 @@
    "id": "arm9:91C50",
    "font": "sys",
    "jp": "帝都フレアヴェルク",
-   "en": "",
+   "en": "Imperial Capital Flarewerk",
    "max": 12,
    "ptrs": [
     "arm9:A71FC"
@@ -8900,7 +8900,7 @@
    "id": "arm9:91C5C",
    "font": "sys",
    "jp": "ネクロマンサー専用",
-   "en": "",
+   "en": "Necromancers only",
    "max": 12,
    "ptrs": [
     "arm9:101614"
@@ -8910,7 +8910,7 @@
    "id": "arm9:91C68",
    "font": "sys",
    "jp": "ドロミノス湿地帯",
-   "en": "",
+   "en": "Drominos Marsh",
    "max": 12,
    "ptrs": [
     "arm9:A7214"
@@ -8920,7 +8920,7 @@
    "id": "arm9:91C74",
    "font": "sys",
    "jp": "小さな女の子のみ",
-   "en": "",
+   "en": "Little girls only",
    "max": 12,
    "ptrs": [
     "arm9:10162C"
@@ -8930,7 +8930,7 @@
    "id": "arm9:91C80",
    "font": "sys",
    "jp": "〇探索の基本",
-   "en": "",
+   "en": "Exploration Basics",
    "max": 12,
    "ptrs": [
     "ov9_13:77B4"
@@ -8940,7 +8940,7 @@
    "id": "arm9:91C8C",
    "font": "sys",
    "jp": "グリフライダー専用",
-   "en": "",
+   "en": "Griffon Riders only",
    "max": 12,
    "ptrs": [
     "arm9:101644"
@@ -8950,7 +8950,7 @@
    "id": "arm9:91C98",
    "font": "sys",
    "jp": "王族の女性のみ",
-   "en": "",
+   "en": "Royal women only",
    "max": 12,
    "ptrs": [
     "arm9:101674"
@@ -8960,7 +8960,7 @@
    "id": "arm9:91CA4",
    "font": "sys",
    "jp": "革命戦士クルス",
-   "en": "",
+   "en": "Revolutionary Cruz",
    "max": 12,
    "ptrs": [
     "arm9:F5514"
@@ -8970,7 +8970,7 @@
    "id": "arm9:91CB0",
    "font": "sys",
    "jp": "ネクロマンサー専用",
-   "en": "",
+   "en": "Necromancers only",
    "max": 12,
    "ptrs": [
     "arm9:1017F4"
@@ -8980,7 +8980,7 @@
    "id": "arm9:91CBC",
    "font": "sys",
    "jp": "大司教マルディム",
-   "en": "",
+   "en": "Archbishop Mardym",
    "max": 12,
    "ptrs": [
     "arm9:F558C"
@@ -8990,7 +8990,7 @@
    "id": "arm9:91CC8",
    "font": "sys",
    "jp": "羽根付きサンダル",
-   "en": "",
+   "en": "Winged Sandals",
    "max": 12,
    "ptrs": [
     "arm9:101488"
@@ -9000,7 +9000,7 @@
    "id": "arm9:91CD4",
    "font": "sys",
    "jp": "魔導戦士ソドム",
-   "en": "",
+   "en": "Magic Warrior Sodom",
    "max": 12,
    "ptrs": [
     "arm9:F5604"
@@ -9010,7 +9010,7 @@
    "id": "arm9:91CE0",
    "font": "sys",
    "jp": "大人の女性のみ",
-   "en": "",
+   "en": "Grown women only",
    "max": 12,
    "ptrs": [
     "arm9:10186C"
@@ -9020,7 +9020,7 @@
    "id": "arm9:91CEC",
    "font": "sys",
    "jp": "攻撃兵器について",
-   "en": "",
+   "en": "About Siege Weapons",
    "max": 16,
    "ptrs": [
     "arm9:F7A64"
@@ -9030,7 +9030,7 @@
    "id": "arm9:91CFC",
    "font": "sys",
    "jp": "探索報告について",
-   "en": "",
+   "en": "About Exploration Reports",
    "max": 16,
    "ptrs": [
     "arm9:F7AB4"
@@ -9040,7 +9040,7 @@
    "id": "arm9:91D0C",
    "font": "sys",
    "jp": "このアイテムは現在(",
-   "en": "",
+   "en": "This item is held by\n(",
    "max": 16,
    "ptrs": [
     "ov9_12:10E0"
@@ -9050,7 +9050,7 @@
    "id": "arm9:91D1C",
    "font": "sys",
    "jp": "領土拡大について",
-   "en": "",
+   "en": "About Territory Expansion",
    "max": 16,
    "ptrs": [
     "arm9:F7A84"
@@ -9060,7 +9060,7 @@
    "id": "arm9:91D2C",
    "font": "sys",
    "jp": "真っ白な珍しい蝶",
-   "en": "",
+   "en": "Rare Pure-White Butterfly",
    "max": 16,
    "ptrs": [
     "arm9:1017D0"
@@ -9070,7 +9070,7 @@
    "id": "arm9:91D3C",
    "font": "sys",
    "jp": "ユニットの動かし方3",
-   "en": "",
+   "en": "Moving Units 3",
    "max": 16,
    "ptrs": [
     "arm9:F7A08"
@@ -9080,7 +9080,7 @@
    "id": "arm9:91D4C",
    "font": "sys",
    "jp": "レネシー火山地帯",
-   "en": "",
+   "en": "Lenessey Volcanic Region",
    "max": 16,
    "ptrs": [
     "arm9:A7394"
@@ -9090,7 +9090,7 @@
    "id": "arm9:91D5C",
    "font": "sys",
    "jp": "占領オブジェクト数",
-   "en": "",
+   "en": "Objects Captured",
    "max": 16,
    "ptrs": [
     "arm9:10055C"
@@ -9100,7 +9100,7 @@
    "id": "arm9:91D6C",
    "font": "sys",
    "jp": "ユニットの動かし方1",
-   "en": "",
+   "en": "Moving Units 1",
    "max": 16,
    "ptrs": [
     "arm9:F79F4"
@@ -9110,7 +9110,7 @@
    "id": "arm9:91D7C",
    "font": "sys",
    "jp": "戦況報告について",
-   "en": "",
+   "en": "About War Reports",
    "max": 16,
    "ptrs": [
     "arm9:F7AAC"
@@ -9120,7 +9120,7 @@
    "id": "arm9:91D8C",
    "font": "sys",
    "jp": "ユニットの動かし方2",
-   "en": "",
+   "en": "Moving Units 2",
    "max": 16,
    "ptrs": [
     "arm9:F79FC"
@@ -9130,7 +9130,7 @@
    "id": "arm9:91D9C",
    "font": "sys",
    "jp": "ユニットの動かし方4",
-   "en": "",
+   "en": "Moving Units 4",
    "max": 16,
    "ptrs": [
     "arm9:F7A10"
@@ -9140,7 +9140,7 @@
    "id": "arm9:91DAC",
    "font": "sys",
    "jp": "探索失敗となります",
-   "en": "",
+   "en": "the exploration fails.",
    "max": 16,
    "ptrs": [
     "ov9_10:2164"
@@ -9150,7 +9150,7 @@
    "id": "arm9:91DBC",
    "font": "sys",
    "jp": "マルドゥーク南西部",
-   "en": "",
+   "en": "Southwest Marduk",
    "max": 16,
    "ptrs": [
     "arm9:A728C"
@@ -9160,7 +9160,7 @@
    "id": "arm9:91DCC",
    "font": "sys",
    "jp": "マルドゥーク北西部",
-   "en": "",
+   "en": "Northwest Marduk",
    "max": 16,
    "ptrs": [
     "arm9:A7298"
@@ -9170,7 +9170,7 @@
    "id": "arm9:91DDC",
    "font": "sys",
    "jp": "ニルルド砂漠北部",
-   "en": "",
+   "en": "North Nyllard Desert",
    "max": 16,
    "ptrs": [
     "arm9:A734C"
@@ -9180,7 +9180,7 @@
    "id": "arm9:91DEC",
    "font": "sys",
    "jp": "ニルルド砂漠南部",
-   "en": "",
+   "en": "South Nyllard Desert",
    "max": 16,
    "ptrs": [
     "arm9:A7358"
@@ -9190,7 +9190,7 @@
    "id": "arm9:91DFC",
    "font": "sys",
    "jp": "失楽の地アンカルジア",
-   "en": "",
+   "en": "Ancardia, the Lost Paradise",
    "max": 16,
    "ptrs": [
     "arm9:A73A0"
@@ -9200,7 +9200,7 @@
    "id": "arm9:91E0C",
    "font": "sys",
    "jp": "騎士団長デュラン",
-   "en": "",
+   "en": "Knight Captain Durant",
    "max": 16,
    "ptrs": [
     "arm9:F5410"
@@ -9210,7 +9210,7 @@
    "id": "arm9:91E1C",
    "font": "sys",
    "jp": "ひかりものが好きな人",
-   "en": "",
+   "en": "Lovers of shiny things",
    "max": 16,
    "ptrs": [
     "arm9:100A74"
@@ -9220,7 +9220,7 @@
    "id": "arm9:91E2C",
    "font": "sys",
    "jp": "天然少女ニーチェ",
-   "en": "",
+   "en": "Airhead Nietzsche",
    "max": 16,
    "ptrs": [
     "arm9:F5460"
@@ -9230,7 +9230,7 @@
    "id": "arm9:91E3C",
    "font": "sys",
    "jp": "魔力を持つ女性",
-   "en": "",
+   "en": "Women with magic",
    "max": 16,
    "ptrs": [
     "arm9:10183C"
@@ -9240,7 +9240,7 @@
    "id": "arm9:91E4C",
    "font": "sys",
    "jp": "チーズ嫌いな人以外",
-   "en": "",
+   "en": "All but cheese haters",
    "max": 16,
    "ptrs": [
     "arm9:100F3C"
@@ -9250,7 +9250,7 @@
    "id": "arm9:91E5C",
    "font": "sys",
    "jp": "風ヲ切裂ク蒼ノ爪",
-   "en": "",
+   "en": "Wind-Rending Blue Claw",
    "max": 16,
    "ptrs": [
     "arm9:1008E8"
@@ -9260,7 +9260,7 @@
    "id": "arm9:91E6C",
    "font": "sys",
    "jp": "捕腐処遇について1",
-   "en": "",
+   "en": "About Prisoners 1",
    "max": 16,
    "ptrs": [
     "arm9:F7A8C"
@@ -9270,7 +9270,7 @@
    "id": "arm9:91E7C",
    "font": "sys",
    "jp": "方向音痴でない人",
-   "en": "",
+   "en": "Anyone who won't get lost",
    "max": 16,
    "ptrs": [
     "arm9:1010D4"
@@ -9280,7 +9280,7 @@
    "id": "arm9:91E8C",
    "font": "sys",
    "jp": "ロザリィ以外の女性",
-   "en": "",
+   "en": "Any woman but Rosary",
    "max": 16,
    "ptrs": [
     "arm9:1010EC"
@@ -9290,7 +9290,7 @@
    "id": "arm9:91E9C",
    "font": "sys",
    "jp": "キノコ嫌いな人以外",
-   "en": "",
+   "en": "All but mushroom haters",
    "max": 16,
    "ptrs": [
     "arm9:10114C"
@@ -9300,7 +9300,7 @@
    "id": "arm9:91EAC",
    "font": "sys",
    "jp": "ナイトにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Knight",
    "max": 16,
    "ptrs": [
     "arm9:1018B0"
@@ -9310,7 +9310,7 @@
    "id": "arm9:91EBC",
    "font": "sys",
    "jp": "捕腐処遇について2",
-   "en": "",
+   "en": "About Prisoners 2",
    "max": 16,
    "ptrs": [
     "arm9:F7B04"
@@ -9320,7 +9320,7 @@
    "id": "arm9:91ECC",
    "font": "sys",
    "jp": "出撃先選択について",
-   "en": "",
+   "en": "About Sortie Targets",
    "max": 16,
    "ptrs": [
     "arm9:F79EC"
@@ -9330,7 +9330,7 @@
    "id": "arm9:91EDC",
    "font": "sys",
    "jp": "ユニット出撃可能!",
-   "en": "",
+   "en": " more can deploy!",
    "max": 16,
    "ptrs": [
     "arm9:51980"
@@ -9340,7 +9340,7 @@
    "id": "arm9:91EEC",
    "font": "sys",
    "jp": "戦意の低いユニットは",
-   "en": "",
+   "en": "Units with low morale",
    "max": 16,
    "ptrs": [
     "ov9_10:2158"
@@ -9350,7 +9350,7 @@
    "id": "arm9:91EFC",
    "font": "sys",
    "jp": "今回の作戦カードが",
-   "en": "",
+   "en": "This turn's strategy card:\n",
    "max": 16,
    "ptrs": [
     "ov9_16:1004"
@@ -9360,7 +9360,7 @@
    "id": "arm9:91F0C",
    "font": "sys",
    "jp": "メダリオン支給について",
-   "en": "",
+   "en": "About Receiving Medallions",
    "max": 16,
    "ptrs": [
     "arm9:F7ABC"
@@ -9370,7 +9370,7 @@
    "id": "arm9:91F1C",
    "font": "sys",
    "jp": "首都を占領したので",
-   "en": "",
+   "en": "Capital taken!\n",
    "max": 16,
    "ptrs": [
     "ov9_14:1908"
@@ -9380,7 +9380,7 @@
    "id": "arm9:91F2C",
    "font": "sys",
    "jp": "派遣される予定です",
-   "en": "",
+   "en": "already scheduled to go.",
    "max": 16,
    "ptrs": [
     "ov9_13:2610"
@@ -9390,7 +9390,7 @@
    "id": "arm9:91F3C",
    "font": "sys",
    "jp": "新生ブロンキア帝国",
-   "en": "",
+   "en": "New Bronquian Empire",
    "max": 16,
    "ptrs": [
     "arm9:A7D00"
@@ -9400,7 +9400,7 @@
    "id": "arm9:91F4C",
    "font": "sys",
    "jp": "攻撃拠点より、あと",
-   "en": "",
+   "en": "Attack base: ",
    "max": 16,
    "ptrs": [
     "arm9:5197C"
@@ -9410,7 +9410,7 @@
    "id": "arm9:91F5C",
    "font": "sys",
    "jp": "聖メリアータ教会領",
-   "en": "",
+   "en": "St. Meriata Church Domain",
    "max": 16,
    "ptrs": [
     "arm9:A7388"
@@ -9420,7 +9420,7 @@
    "id": "arm9:91F6C",
    "font": "sys",
    "jp": "ロザリィ以外の女性",
-   "en": "",
+   "en": "Any woman but Rosary",
    "max": 16,
    "ptrs": [
     "arm9:10090C"
@@ -9430,7 +9430,7 @@
    "id": "arm9:91F7C",
    "font": "sys",
    "jp": "ロザリィ以外の女性",
-   "en": "",
+   "en": "Any woman but Rosary",
    "max": 16,
    "ptrs": [
     "arm9:1009CC"
@@ -9440,7 +9440,7 @@
    "id": "arm9:91F8C",
    "font": "sys",
    "jp": "傭兵隊長インザーギ",
-   "en": "",
+   "en": "Mercenary Captain Inzaghi",
    "max": 16,
    "ptrs": [
     "arm9:F5398"
@@ -9450,7 +9450,7 @@
    "id": "arm9:91F9C",
    "font": "sys",
    "jp": "不思議魔女パメラ",
-   "en": "",
+   "en": "Wondrous Witch Pamela",
    "max": 16,
    "ptrs": [
     "arm9:F55DC"
@@ -9460,7 +9460,7 @@
    "id": "arm9:91FAC",
    "font": "sys",
    "jp": "ぬいぐるみ好きの女性",
-   "en": "",
+   "en": "Women who love plushies",
    "max": 16,
    "ptrs": [
     "arm9:100B7C"
@@ -9470,7 +9470,7 @@
    "id": "arm9:91FBC",
    "font": "sys",
    "jp": "生ける要塞マモリガミ",
-   "en": "",
+   "en": "Living Fortress Mamorigami",
    "max": 16,
    "ptrs": [
     "arm9:F5618"
@@ -9480,7 +9480,7 @@
    "id": "arm9:91FCC",
    "font": "sys",
    "jp": "専業主婦ミステール",
-   "en": "",
+   "en": "Full-Time Housewife Mistel",
    "max": 16,
    "ptrs": [
     "arm9:F5640"
@@ -9490,7 +9490,7 @@
    "id": "arm9:91FDC",
    "font": "sys",
    "jp": "戦争の勝敗条件",
-   "en": "",
+   "en": "Victory Conditions",
    "max": 16,
    "ptrs": [
     "arm9:F7AE0"
@@ -9500,7 +9500,7 @@
    "id": "arm9:91FEC",
    "font": "sys",
    "jp": "ロザリィ&ゴーレム以外",
-   "en": "",
+   "en": "All but Rosary & Golems",
    "max": 16,
    "ptrs": [
     "arm9:100EC4"
@@ -9510,7 +9510,7 @@
    "id": "arm9:91FFC",
    "font": "sys",
    "jp": "領主キャラクター以外",
-   "en": "",
+   "en": "All but faction leaders",
    "max": 16,
    "ptrs": [
     "arm9:100EDC"
@@ -9520,7 +9520,7 @@
    "id": "arm9:9200C",
    "font": "sys",
    "jp": "牛乳嫌いな人以外",
-   "en": "",
+   "en": "All but milk haters",
    "max": 16,
    "ptrs": [
     "arm9:100F54"
@@ -9530,7 +9530,7 @@
    "id": "arm9:9201C",
    "font": "sys",
    "jp": "ミラノ&ガルカーサ専用",
-   "en": "",
+   "en": "Milanor & Gulcasa only",
    "max": 16,
    "ptrs": [
     "arm9:100F84"
@@ -9540,7 +9540,7 @@
    "id": "arm9:9202C",
    "font": "sys",
    "jp": "ハンター&アサシン専用",
-   "en": "",
+   "en": "Hunters & Assassins only",
    "max": 16,
    "ptrs": [
     "arm9:100FFC"
@@ -9550,7 +9550,7 @@
    "id": "arm9:9203C",
    "font": "sys",
    "jp": "ロザリィ&ゴーレム以外",
-   "en": "",
+   "en": "All but Rosary & Golems",
    "max": 16,
    "ptrs": [
     "arm9:101104"
@@ -9560,7 +9560,7 @@
    "id": "arm9:9204C",
    "font": "sys",
    "jp": "ハンターにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Hunter",
    "max": 16,
    "ptrs": [
     "arm9:101880"
@@ -9570,7 +9570,7 @@
    "id": "arm9:9205C",
    "font": "sys",
    "jp": "ミラノ&ガルカーサ専用",
-   "en": "",
+   "en": "Milanor & Gulcasa only",
    "max": 16,
    "ptrs": [
     "arm9:10117C"
@@ -9580,7 +9580,7 @@
    "id": "arm9:9206C",
    "font": "sys",
    "jp": "移動速度がダウンする",
-   "en": "",
+   "en": "Lowers move speed",
    "max": 16,
    "ptrs": [
     "arm9:1018C8"
@@ -9590,7 +9590,7 @@
    "id": "arm9:9207C",
    "font": "sys",
    "jp": "ゴーレムにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Golem",
    "max": 16,
    "ptrs": [
     "arm9:100D28"
@@ -9600,7 +9600,7 @@
    "id": "arm9:9208C",
    "font": "sys",
    "jp": "菜食主義者以外",
-   "en": "",
+   "en": "All but vegetarians",
    "max": 16,
    "ptrs": [
     "arm9:1012B4"
@@ -9610,7 +9610,7 @@
    "id": "arm9:9209C",
    "font": "sys",
    "jp": "ロザリィ&ゴーレム以外",
-   "en": "",
+   "en": "All but Rosary & Golems",
    "max": 16,
    "ptrs": [
     "arm9:1012CC"
@@ -9620,7 +9620,7 @@
    "id": "arm9:920AC",
    "font": "sys",
    "jp": "アサシンにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Assassin",
    "max": 16,
    "ptrs": [
     "arm9:100DA0"
@@ -9630,7 +9630,7 @@
    "id": "arm9:920BC",
    "font": "sys",
    "jp": "移動速度がダウンする",
-   "en": "",
+   "en": "Lowers move speed",
    "max": 16,
    "ptrs": [
     "arm9:100DB8"
@@ -9640,7 +9640,7 @@
    "id": "arm9:920CC",
    "font": "sys",
    "jp": "菜食主義者以外",
-   "en": "",
+   "en": "All but vegetarians",
    "max": 16,
    "ptrs": [
     "arm9:1012FC"
@@ -9650,7 +9650,7 @@
    "id": "arm9:920DC",
    "font": "sys",
    "jp": "ハンター&アサシン専用",
-   "en": "",
+   "en": "Hunters & Assassins only",
    "max": 16,
    "ptrs": [
     "arm9:10135C"
@@ -9660,7 +9660,7 @@
    "id": "arm9:920EC",
    "font": "sys",
    "jp": "甘系が苦手でない人",
-   "en": "",
+   "en": "Those OK with sweets",
    "max": 16,
    "ptrs": [
     "arm9:10138C"
@@ -9670,7 +9670,7 @@
    "id": "arm9:920FC",
    "font": "sys",
    "jp": "移動速度がダウンする",
-   "en": "",
+   "en": "Lowers move speed",
    "max": 16,
    "ptrs": [
     "arm9:101AD8"
@@ -9680,7 +9680,7 @@
    "id": "arm9:9210C",
    "font": "sys",
    "jp": "このカードでよろしいですか?",
-   "en": "",
+   "en": "Choose this card?",
    "max": 16,
    "ptrs": [
     "ov9_16:FEC"
@@ -9690,7 +9690,7 @@
    "id": "arm9:9211C",
    "font": "sys",
    "jp": "退却味方ユニット数",
-   "en": "",
+   "en": "Allies Retreated",
    "max": 16,
    "ptrs": [
     "arm9:100560"
@@ -9700,7 +9700,7 @@
    "id": "arm9:9212C",
    "font": "sys",
    "jp": "が派遣されています\nあと",
-   "en": "",
+   "en": ".\nBack in ",
    "max": 16,
    "ptrs": [
     "ov9_13:262C"
@@ -9710,7 +9710,7 @@
    "id": "arm9:9213C",
    "font": "sys",
    "jp": "ハンター&アサシン専用",
-   "en": "",
+   "en": "Hunters & Assassins only",
    "max": 16,
    "ptrs": [
     "arm9:100924"
@@ -9720,7 +9720,7 @@
    "id": "arm9:9214C",
    "font": "sys",
    "jp": "ロザリィ&ゴーレム以外",
-   "en": "",
+   "en": "All but Rosary & Golems",
    "max": 16,
    "ptrs": [
     "arm9:100984"
@@ -9730,7 +9730,7 @@
    "id": "arm9:9215C",
    "font": "sys",
    "jp": "ミラノ&ガルカーサ専用",
-   "en": "",
+   "en": "Milanor & Gulcasa only",
    "max": 16,
    "ptrs": [
     "arm9:100AD4"
@@ -9740,7 +9740,7 @@
    "id": "arm9:9216C",
    "font": "sys",
    "jp": "宮廷魔術師ユーディ",
-   "en": "",
+   "en": "Court Magician Eudy",
    "max": 16,
    "ptrs": [
     "arm9:F55C8"
@@ -9750,7 +9750,7 @@
    "id": "arm9:9217C",
    "font": "sys",
    "jp": "ウィッチにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Witch",
    "max": 16,
    "ptrs": [
     "arm9:1014C0"
@@ -9760,7 +9760,7 @@
    "id": "arm9:9218C",
    "font": "sys",
    "jp": "菜食主義者以外",
-   "en": "",
+   "en": "All but vegetarians",
    "max": 16,
    "ptrs": [
     "arm9:100BF4"
@@ -9770,7 +9770,7 @@
    "id": "arm9:9219C",
    "font": "sys",
    "jp": "ナイト&ウンディーネ専用",
-   "en": "",
+   "en": "Knights & Undines only",
    "max": 16,
    "ptrs": [
     "arm9:100D14"
@@ -9780,7 +9780,7 @@
    "id": "arm9:921AC",
    "font": "sys",
    "jp": "レオン＋ウンディーネ専用",
-   "en": "",
+   "en": "Leon + Undines only",
    "max": 16,
    "ptrs": [
     "arm9:101944"
@@ -9790,7 +9790,7 @@
    "id": "arm9:921BC",
    "font": "sys",
    "jp": "スケルトンにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Skeleton",
    "max": 16,
    "ptrs": [
     "arm9:1006E0"
@@ -9800,7 +9800,7 @@
    "id": "arm9:921CC",
    "font": "sys",
    "jp": "ゴーレム&スケルトン専用",
-   "en": "",
+   "en": "Golems & Skeletons only",
    "max": 16,
    "ptrs": [
     "arm9:100E64"
@@ -9810,7 +9810,7 @@
    "id": "arm9:921DC",
    "font": "sys",
    "jp": "重装備可能な男性",
-   "en": "",
+   "en": "Men fit for heavy gear",
    "max": 16,
    "ptrs": [
     "arm9:101194"
@@ -9820,7 +9820,7 @@
    "id": "arm9:921EC",
    "font": "sys",
    "jp": "移動タイプが飛行になる",
-   "en": "",
+   "en": "Move type becomes Flying",
    "max": 16,
    "ptrs": [
     "arm9:1018F8"
@@ -9830,7 +9830,7 @@
    "id": "arm9:921FC",
    "font": "sys",
    "jp": "この勢力でよろしいですか?",
-   "en": "",
+   "en": "Choose this faction?",
    "max": 16,
    "ptrs": [
     "ov9_18:1460"
@@ -9840,7 +9840,7 @@
    "id": "arm9:9220C",
    "font": "sys",
    "jp": "フェンサーにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Fencer",
    "max": 16,
    "ptrs": [
     "arm9:101A78"
@@ -9850,7 +9850,7 @@
    "id": "arm9:9221C",
    "font": "sys",
    "jp": "ポイントが不足しています!",
-   "en": "",
+   "en": "Not enough points!",
    "max": 16,
    "ptrs": [
     "ov9_13:2630"
@@ -9860,7 +9860,7 @@
    "id": "arm9:9222C",
    "font": "sys",
    "jp": "今回は戦利品として…",
-   "en": "",
+   "en": "This time, as spoils of war...",
    "max": 16,
    "ptrs": [
     "ov9_10:3234"
@@ -9870,7 +9870,7 @@
    "id": "arm9:9223C",
    "font": "sys",
    "jp": "レオン以外のナイト専用",
-   "en": "",
+   "en": "Knights only, except Leon",
    "max": 16,
    "ptrs": [
     "arm9:1014DC"
@@ -9880,7 +9880,7 @@
    "id": "arm9:9224C",
    "font": "sys",
    "jp": "での探索に失敗しました…",
-   "en": "",
+   "en": "Exploration there failed...",
    "max": 16,
    "ptrs": [
     "ov9_10:136C"
@@ -9890,7 +9890,7 @@
    "id": "arm9:9225C",
    "font": "sys",
    "jp": "重装備可能な男性",
-   "en": "",
+   "en": "Men fit for heavy gear",
    "max": 16,
    "ptrs": [
     "arm9:100654"
@@ -9900,7 +9900,7 @@
    "id": "arm9:9226C",
    "font": "sys",
    "jp": "ナイト&ウンディーネ専用",
-   "en": "",
+   "en": "Knights & Undines only",
    "max": 16,
    "ptrs": [
     "arm9:10066C"
@@ -9910,7 +9910,7 @@
    "id": "arm9:9227C",
    "font": "sys",
    "jp": "ウンディーネ以外の女性",
-   "en": "",
+   "en": "Women other than Undines",
    "max": 16,
    "ptrs": [
     "arm9:1006CC"
@@ -9920,7 +9920,7 @@
    "id": "arm9:9228C",
    "font": "sys",
    "jp": "帝国兵法書地ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Earth",
    "max": 16,
    "ptrs": [
     "arm9:1011A0"
@@ -9930,7 +9930,7 @@
    "id": "arm9:9229C",
    "font": "sys",
    "jp": "帝国兵法書天ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Heaven",
    "max": 16,
    "ptrs": [
     "arm9:1011B8"
@@ -9940,7 +9940,7 @@
    "id": "arm9:922AC",
    "font": "sys",
    "jp": "帝国兵法書人ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Man",
    "max": 16,
    "ptrs": [
     "arm9:1011D0"
@@ -9950,7 +9950,7 @@
    "id": "arm9:922BC",
    "font": "sys",
    "jp": "移動タイプが鈍足になる",
-   "en": "",
+   "en": "Move type becomes Slow",
    "max": 16,
    "ptrs": [
     "arm9:101220"
@@ -9960,7 +9960,7 @@
    "id": "arm9:922CC",
    "font": "sys",
    "jp": "移動タイプが竜騎になる",
-   "en": "",
+   "en": "Move type becomes Dragon",
    "max": 16,
    "ptrs": [
     "arm9:101310"
@@ -9970,7 +9970,7 @@
    "id": "arm9:922DC",
    "font": "sys",
    "jp": "重装備可能な男性",
-   "en": "",
+   "en": "Men fit for heavy gear",
    "max": 16,
    "ptrs": [
     "arm9:101704"
@@ -9980,7 +9980,7 @@
    "id": "arm9:922EC",
    "font": "sys",
    "jp": "スケルトン&男性全員",
-   "en": "",
+   "en": "Skeletons & all men",
    "max": 16,
    "ptrs": [
     "arm9:10171C"
@@ -9990,7 +9990,7 @@
    "id": "arm9:922FC",
    "font": "sys",
    "jp": "双生の戦乙女ルシエナ",
-   "en": "",
+   "en": "Twin Valkyrie Luciana",
    "max": 16,
    "ptrs": [
     "arm9:F53D4"
@@ -10000,7 +10000,7 @@
    "id": "arm9:9230C",
    "font": "sys",
    "jp": "双生の戦乙女アイギナ",
-   "en": "",
+   "en": "Twin Valkyrie Aegina",
    "max": 16,
    "ptrs": [
     "arm9:F53E8"
@@ -10010,7 +10010,7 @@
    "id": "arm9:9231C",
    "font": "sys",
    "jp": "移動タイプが飛行になる",
-   "en": "",
+   "en": "Move type becomes Flying",
    "max": 16,
    "ptrs": [
     "arm9:101490"
@@ -10020,7 +10020,7 @@
    "id": "arm9:9232C",
    "font": "sys",
    "jp": "重装備可能な男性",
-   "en": "",
+   "en": "Men fit for heavy gear",
    "max": 16,
    "ptrs": [
     "arm9:10180C"
@@ -10030,7 +10030,7 @@
    "id": "arm9:9233C",
    "font": "sys",
    "jp": "重装備可能な男性",
-   "en": "",
+   "en": "Men fit for heavy gear",
    "max": 16,
    "ptrs": [
     "arm9:100B94"
@@ -10040,7 +10040,7 @@
    "id": "arm9:9234C",
    "font": "sys",
    "jp": "レオン以外のナイト専用",
-   "en": "",
+   "en": "Knights only, except Leon",
    "max": 16,
    "ptrs": [
     "arm9:100C0C"
@@ -10050,7 +10050,7 @@
    "id": "arm9:9235C",
    "font": "sys",
    "jp": "移動タイプが騎馬になる",
-   "en": "",
+   "en": "Move type becomes Cavalry",
    "max": 16,
    "ptrs": [
     "arm9:101568"
@@ -10060,7 +10060,7 @@
    "id": "arm9:9236C",
    "font": "sys",
    "jp": "ヴァルキリーにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Valkyrie",
    "max": 20,
    "ptrs": [
     "arm9:1015F8"
@@ -10070,7 +10070,7 @@
    "id": "arm9:92380",
    "font": "sys",
    "jp": "退却・死亡敵ユニット数",
-   "en": "",
+   "en": "Foes Fled/Slain",
    "max": 20,
    "ptrs": [
     "arm9:100558"
@@ -10080,7 +10080,7 @@
    "id": "arm9:92394",
    "font": "sys",
    "jp": "18歳未満服用禁止",
-   "en": "",
+   "en": "Not for use under 18",
    "max": 20,
    "ptrs": [
     "arm9:101A34"
@@ -10090,7 +10090,7 @@
    "id": "arm9:923A8",
    "font": "sys",
    "jp": "ウンディーネにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Undine",
    "max": 20,
    "ptrs": [
     "arm9:101778"
@@ -10100,7 +10100,7 @@
    "id": "arm9:923BC",
    "font": "sys",
    "jp": "バンディットにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Bandit",
    "max": 20,
    "ptrs": [
     "arm9:100CB0"
@@ -10110,7 +10110,7 @@
    "id": "arm9:923D0",
    "font": "sys",
    "jp": "グリフライダー・ゴーレム以外",
-   "en": "",
+   "en": "All but Griffon Riders/Golems",
    "max": 20,
    "ptrs": [
     "arm9:10132C"
@@ -10120,7 +10120,7 @@
    "id": "arm9:923E4",
    "font": "sys",
    "jp": "から、無事帰還しました!",
-   "en": "",
+   "en": "Returned safe and sound!",
    "max": 20,
    "ptrs": [
     "ov9_10:1374"
@@ -10130,7 +10130,7 @@
    "id": "arm9:923F8",
    "font": "sys",
    "jp": "離反してしまうことがあります",
-   "en": "",
+   "en": "may desert your army.",
    "max": 20,
    "ptrs": [
     "ov9_10:215C"
@@ -10140,7 +10140,7 @@
    "id": "arm9:9240C",
    "font": "sys",
    "jp": "集落の場所が判明する",
-   "en": "",
+   "en": "Reveals village locations",
    "max": 20,
    "ptrs": [
     "arm9:1010B8"
@@ -10150,7 +10150,7 @@
    "id": "arm9:92420",
    "font": "sys",
    "jp": "純粋な想いを抱く女性",
-   "en": "",
+   "en": "Women with a pure love",
    "max": 20,
    "ptrs": [
     "arm9:10087C"
@@ -10160,7 +10160,7 @@
    "id": "arm9:92434",
    "font": "sys",
    "jp": "この領土に出撃しますか?",
-   "en": "",
+   "en": "Attack this territory?",
    "max": 20,
    "ptrs": [
     "ov9_17:149C"
@@ -10170,7 +10170,7 @@
    "id": "arm9:92448",
    "font": "sys",
    "jp": "白薔薇家総帥ロザリィ",
-   "en": "",
+   "en": "Rosary, Head of House Esmeralda",
    "max": 20,
    "ptrs": [
     "arm9:F55B4"
@@ -10180,7 +10180,7 @@
    "id": "arm9:9245C",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:100D8C"
@@ -10190,7 +10190,7 @@
    "id": "arm9:92470",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:100DD4"
@@ -10200,7 +10200,7 @@
    "id": "arm9:92484",
    "font": "sys",
    "jp": "フェンサー&ヴァルキリー専用",
-   "en": "",
+   "en": "Fencers & Valkyries only",
    "max": 20,
    "ptrs": [
     "arm9:100E1C"
@@ -10210,7 +10210,7 @@
    "id": "arm9:92498",
    "font": "sys",
    "jp": "スケルトンに対して有利となる",
-   "en": "",
+   "en": "Strong against Skeletons",
    "max": 20,
    "ptrs": [
     "arm9:1016A0"
@@ -10220,7 +10220,7 @@
    "id": "arm9:924AC",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:100E94"
@@ -10230,7 +10230,7 @@
    "id": "arm9:924C0",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:100F0C"
@@ -10240,7 +10240,7 @@
    "id": "arm9:924D4",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:10105C"
@@ -10250,7 +10250,7 @@
    "id": "arm9:924E8",
    "font": "sys",
    "jp": "グリフライダーにクラスチェンジする",
-   "en": "",
+   "en": "Class Change to Griffon Rider",
    "max": 20,
    "ptrs": [
     "arm9:100BD8"
@@ -10260,7 +10260,7 @@
    "id": "arm9:924FC",
    "font": "sys",
    "jp": "フェンサー&ヴァルキリー専用",
-   "en": "",
+   "en": "Fencers & Valkyries only",
    "max": 20,
    "ptrs": [
     "arm9:1011F4"
@@ -10270,7 +10270,7 @@
    "id": "arm9:92510",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:1012E4"
@@ -10280,7 +10280,7 @@
    "id": "arm9:92524",
    "font": "sys",
    "jp": "フェンサー&ヴァルキリー専用",
-   "en": "",
+   "en": "Fencers & Valkyries only",
    "max": 20,
    "ptrs": [
     "arm9:1013A4"
@@ -10290,7 +10290,7 @@
    "id": "arm9:92538",
    "font": "sys",
    "jp": "インパクトサークルが最大になる",
-   "en": "",
+   "en": "Impact Circle at max size",
    "max": 20,
    "ptrs": [
     "arm9:100EC0"
@@ -10300,7 +10300,7 @@
    "id": "arm9:9254C",
    "font": "sys",
    "jp": "毒沼ダメージを無効化する",
-   "en": "",
+   "en": "Nullifies poison swamp damage",
    "max": 20,
    "ptrs": [
     "arm9:100EF0"
@@ -10310,7 +10310,7 @@
    "id": "arm9:92560",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:101404"
@@ -10320,7 +10320,7 @@
    "id": "arm9:92574",
    "font": "sys",
    "jp": "インパクトサークルが最大になる",
-   "en": "",
+   "en": "Impact Circle at max size",
    "max": 20,
    "ptrs": [
     "arm9:100FF8"
@@ -10330,7 +10330,7 @@
    "id": "arm9:92588",
    "font": "sys",
    "jp": "共に戦うつもりはないようです…",
-   "en": "",
+   "en": "They don't seem willing to\nfight alongside you...",
    "max": 20,
    "ptrs": [
     "ov9_11:139C"
@@ -10340,7 +10340,7 @@
    "id": "arm9:9259C",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:10150C"
@@ -10350,7 +10350,7 @@
    "id": "arm9:925B0",
    "font": "sys",
    "jp": "探索で歩数をオーバーすると",
-   "en": "",
+   "en": "If you exceed the step limit,",
    "max": 20,
    "ptrs": [
     "ov9_10:2160"
@@ -10360,7 +10360,7 @@
    "id": "arm9:925C4",
    "font": "sys",
    "jp": "ターンで、帰還する予定です",
-   "en": "",
+   "en": " turn(s).",
    "max": 20,
    "ptrs": [
     "ov9_13:2624"
@@ -10370,7 +10370,7 @@
    "id": "arm9:925D8",
    "font": "sys",
    "jp": "インパクトサークルが最小になる",
-   "en": "",
+   "en": "Impact Circle at min size",
    "max": 20,
    "ptrs": [
     "arm9:101208"
@@ -10380,7 +10380,7 @@
    "id": "arm9:925EC",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:10078C"
@@ -10390,7 +10390,7 @@
    "id": "arm9:92600",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:1007BC"
@@ -10400,7 +10400,7 @@
    "id": "arm9:92614",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:10081C"
@@ -10410,7 +10410,7 @@
    "id": "arm9:92628",
    "font": "sys",
    "jp": "宗教都市群ロンバルディア",
-   "en": "",
+   "en": "Temple Cities of Lombardia",
    "max": 20,
    "ptrs": [
     "arm9:A737C"
@@ -10420,7 +10420,7 @@
    "id": "arm9:9263C",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:100864"
@@ -10430,7 +10430,7 @@
    "id": "arm9:92650",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:1016D4"
@@ -10440,7 +10440,7 @@
    "id": "arm9:92664",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:100A2C"
@@ -10450,7 +10450,7 @@
    "id": "arm9:92678",
    "font": "sys",
    "jp": "インパクトサークルが最小になる",
-   "en": "",
+   "en": "Impact Circle at min size",
    "max": 20,
    "ptrs": [
     "arm9:1013E8"
@@ -10460,7 +10460,7 @@
    "id": "arm9:9268C",
    "font": "sys",
    "jp": "フェンサー&ヴァルキリー専用",
-   "en": "",
+   "en": "Fencers & Valkyries only",
    "max": 20,
    "ptrs": [
     "arm9:101794"
@@ -10470,7 +10470,7 @@
    "id": "arm9:926A0",
    "font": "sys",
    "jp": "ドラグーン&バンディット専用",
-   "en": "",
+   "en": "Dragoons & Bandits only",
    "max": 20,
    "ptrs": [
     "arm9:100AA4"
@@ -10480,7 +10480,7 @@
    "id": "arm9:926B4",
    "font": "sys",
    "jp": "黒薔薇家総帥ロズウェル",
-   "en": "",
+   "en": "Roswell, Head of House Branthese",
    "max": 20,
    "ptrs": [
     "arm9:F5578"
@@ -10490,7 +10490,7 @@
    "id": "arm9:926C8",
    "font": "sys",
    "jp": "フェンサー&ヴァルキリー専用",
-   "en": "",
+   "en": "Fencers & Valkyries only",
    "max": 20,
    "ptrs": [
     "arm9:100B64"
@@ -10500,7 +10500,7 @@
    "id": "arm9:926DC",
    "font": "sys",
    "jp": "ネクロマンサー&ウィッチ専用",
-   "en": "",
+   "en": "Necromancers & Witches only",
    "max": 20,
    "ptrs": [
     "arm9:100BAC"
@@ -10510,7 +10510,7 @@
    "id": "arm9:926F0",
    "font": "sys",
    "jp": "インパクトサークルが最小になる",
-   "en": "",
+   "en": "Impact Circle at min size",
    "max": 20,
    "ptrs": [
     "arm9:101520"
@@ -10520,7 +10520,7 @@
    "id": "arm9:92704",
    "font": "sys",
    "jp": "ネクロマンサーに\nクラスチェンジする",
-   "en": "",
+   "en": "Class Change to\nNecromancer",
    "max": 20,
    "ptrs": [
     "arm9:100698"
@@ -10530,7 +10530,7 @@
    "id": "arm9:92718",
    "font": "sys",
    "jp": "集落と探索の関係について",
-   "en": "",
+   "en": "About Villages & Exploring",
    "max": 20,
    "ptrs": [
     "arm9:F7A6C"
@@ -10540,7 +10540,7 @@
    "id": "arm9:9272C",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する",
-   "en": "",
+   "en": "Evades enemy Smash Hits",
    "max": 20,
    "ptrs": [
     "arm9:100A70"
@@ -10550,7 +10550,7 @@
    "id": "arm9:92740",
    "font": "sys",
    "jp": "この宝箱を持って帰りますか?",
-   "en": "",
+   "en": "Take this chest back with you?",
    "max": 20,
    "ptrs": [
     "ov9_13:5064"
@@ -10560,7 +10560,7 @@
    "id": "arm9:92754",
    "font": "sys",
    "jp": "未婚&婚約者がいない人",
-   "en": "",
+   "en": "The unwed and unengaged",
    "max": 20,
    "ptrs": [
     "arm9:100834"
@@ -10570,7 +10570,7 @@
    "id": "arm9:92768",
    "font": "sys",
    "jp": "このユニットはすでに退却しています",
-   "en": "",
+   "en": "This unit has already retreated.",
    "max": 20,
    "ptrs": [
     "arm9:50834"
@@ -10580,7 +10580,7 @@
    "id": "arm9:9277C",
    "font": "sys",
    "jp": "鑑定所とカードの関係について",
-   "en": "",
+   "en": "About Appraisers & Cards",
    "max": 20,
    "ptrs": [
     "arm9:F7A74"
@@ -10590,7 +10590,7 @@
    "id": "arm9:92790",
    "font": "sys",
    "jp": "このユニットはすでに出撃しています",
-   "en": "",
+   "en": "This unit has already deployed.",
    "max": 20,
    "ptrs": [
     "arm9:50830"
@@ -10600,7 +10600,7 @@
    "id": "arm9:927A4",
    "font": "sys",
    "jp": "探索へ進みます\nよろしいですか?",
-   "en": "",
+   "en": "Proceed to exploration.\nAre you sure?",
    "max": 20,
    "ptrs": [
     "ov9_13:2638"
@@ -10610,7 +10610,7 @@
    "id": "arm9:927B8",
    "font": "sys",
    "jp": ")が\n持っているため選択できません",
-   "en": "",
+   "en": ")\nso it can't be selected.",
    "max": 20,
    "ptrs": [
     "ov9_12:10E4"
@@ -10620,7 +10620,7 @@
    "id": "arm9:927CC",
    "font": "sys",
    "jp": "今回、何も報告はないようです",
-   "en": "",
+   "en": "There seems to be nothing\nto report this time.",
    "max": 20,
    "ptrs": [
     "ov9_08:B6C"
@@ -10630,7 +10630,7 @@
    "id": "arm9:927E0",
    "font": "sys",
    "jp": "カード効果により操作できません",
-   "en": "",
+   "en": "A card effect prevents control.",
    "max": 20,
    "ptrs": [
     "arm9:541F8",
@@ -10641,7 +10641,7 @@
    "id": "arm9:927F4",
    "font": "sys",
    "jp": "守将以外の敵のHPを1にする",
-   "en": "",
+   "en": "Sets all enemies but the\ncommander to 1 HP.",
    "max": 20,
    "ptrs": [
     "arm9:A8024"
@@ -10651,7 +10651,7 @@
    "id": "arm9:92808",
    "font": "sys",
    "jp": "ATK4以上かつモンスター以外",
-   "en": "",
+   "en": "Non-monsters with ATK 4+",
    "max": 20,
    "ptrs": [
     "arm9:10099C"
@@ -10661,7 +10661,7 @@
    "id": "arm9:92830",
    "font": "sys",
    "jp": "敵軍ユニットは操作できません!",
-   "en": "",
+   "en": "You can't control enemy units!",
    "max": 20,
    "ptrs": [
     "arm9:54B04"
@@ -10671,7 +10671,7 @@
    "id": "arm9:92844",
    "font": "sys",
    "jp": "タッチ位置が移動範囲外です",
-   "en": "",
+   "en": "That spot is out of move range.",
    "max": 24,
    "ptrs": [
     "arm9:541E0",
@@ -10682,7 +10682,7 @@
    "id": "arm9:9285C",
    "font": "sys",
    "jp": "が\n新たに戦力として加わりました",
-   "en": "",
+   "en": " has\njoined your forces!",
    "max": 24,
    "ptrs": [
     "ov9_11:138C"
@@ -10692,7 +10692,7 @@
    "id": "arm9:92874",
    "font": "sys",
    "jp": "に、行ったきり\n戻ってきませんでした",
-   "en": "",
+   "en": "went there and never\ncame back...",
    "max": 24,
    "ptrs": [
     "ov9_10:1368"
@@ -10702,7 +10702,7 @@
    "id": "arm9:9288C",
    "font": "sys",
    "jp": "他国間で戦争が発生しました",
-   "en": "",
+   "en": "Other nations have gone to war.",
    "max": 24,
    "ptrs": [
     "ov9_08:2744"
@@ -10712,7 +10712,7 @@
    "id": "arm9:928A4",
    "font": "sys",
    "jp": "ランダムで所持アイテムが1つ消失!",
-   "en": "",
+   "en": "One random held item vanishes!",
    "max": 24,
    "ptrs": [
     "arm9:A7EF0"
@@ -10722,7 +10722,7 @@
    "id": "arm9:928BC",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:10156C"
@@ -10732,7 +10732,7 @@
    "id": "arm9:928D4",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:100EF4"
@@ -10742,7 +10742,7 @@
    "id": "arm9:928EC",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:101AC4"
@@ -10752,7 +10752,7 @@
    "id": "arm9:92904",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:101224"
@@ -10762,7 +10762,7 @@
    "id": "arm9:9291C",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:101314"
@@ -10772,7 +10772,7 @@
    "id": "arm9:92934",
    "font": "sys",
    "jp": "使用済みのカードは選択できません!",
-   "en": "",
+   "en": "Used cards can't be selected!",
    "max": 24,
    "ptrs": [
     "ov9_16:FE0"
@@ -10782,7 +10782,7 @@
    "id": "arm9:9294C",
    "font": "sys",
    "jp": "ナイト&ウンディーネ&ゴーレム以外",
-   "en": "",
+   "en": "Not Knights/Undines/Golems",
    "max": 24,
    "ptrs": [
     "arm9:101494"
@@ -10792,7 +10792,7 @@
    "id": "arm9:92964",
    "font": "sys",
    "jp": "その後、彼の者を見たものはいない…",
-   "en": "",
+   "en": "No one ever saw them again...",
    "max": 24,
    "ptrs": [
     "ov9_11:13A4"
@@ -10802,7 +10802,7 @@
    "id": "arm9:9297C",
    "font": "sys",
    "jp": "20秒に1回ワープする\n▼DEFー1",
-   "en": "",
+   "en": "Warps once every 20 sec\nDEF-1",
    "max": 24,
    "ptrs": [
     "arm9:101B08"
@@ -10812,7 +10812,7 @@
    "id": "arm9:92994",
    "font": "sys",
    "jp": "一定時間、敵をゴーレムに変える",
-   "en": "",
+   "en": "For a time, turns enemies\ninto Golems.",
    "max": 24,
    "ptrs": [
     "arm9:A7E48"
@@ -10822,7 +10822,7 @@
    "id": "arm9:929AC",
    "font": "sys",
    "jp": "大型を除く敵のHPを半減させる",
-   "en": "",
+   "en": "Halves the HP of all enemies\nexcept large ones.",
    "max": 24,
    "ptrs": [
     "arm9:A7F28"
@@ -10832,7 +10832,7 @@
    "id": "arm9:929C4",
    "font": "sys",
    "jp": "スタン状態なので、操作できません!",
-   "en": "",
+   "en": "Stunned: can't be controlled!",
    "max": 24,
    "ptrs": [
     "arm9:541FC",
@@ -10843,7 +10843,7 @@
    "id": "arm9:929DC",
    "font": "sys",
    "jp": "インザーギ&ハンター&アサシン専用",
-   "en": "",
+   "en": "Inzaghi, Hunter, Assassin only",
    "max": 24,
    "ptrs": [
     "arm9:100BC4"
@@ -10853,7 +10853,7 @@
    "id": "arm9:929F4",
    "font": "sys",
    "jp": "すでに出撃限界数に達してします!",
-   "en": "",
+   "en": "Sortie limit already reached!",
    "max": 24,
    "ptrs": [
     "arm9:5082C"
@@ -10863,7 +10863,7 @@
    "id": "arm9:92A0C",
    "font": "sys",
    "jp": "全領土があなたの領土になりました!",
-   "en": "",
+   "en": "all yours!",
    "max": 24,
    "ptrs": [
     "ov9_14:1904"
@@ -10873,7 +10873,7 @@
    "id": "arm9:92A24",
    "font": "sys",
    "jp": "一定時間、敵をスケルトンに変える",
-   "en": "",
+   "en": "For a time, turns enemies\ninto Skeletons.",
    "max": 24,
    "ptrs": [
     "arm9:A7E64"
@@ -10883,7 +10883,7 @@
    "id": "arm9:92A3C",
    "font": "sys",
    "jp": "味方の装備アイテムを破損させる!",
-   "en": "",
+   "en": "Breaks your units' equipped items!",
    "max": 24,
    "ptrs": [
     "arm9:A7ED4"
@@ -10893,7 +10893,7 @@
    "id": "arm9:92A54",
    "font": "sys",
    "jp": "移動速度がダウンする\n▼DEFー1",
-   "en": "",
+   "en": "Lowers move speed\nDEF-1",
    "max": 24,
    "ptrs": [
     "arm9:101328"
@@ -10903,7 +10903,7 @@
    "id": "arm9:92A6C",
    "font": "sys",
    "jp": "敵味方の拠点位置が逆転する",
-   "en": "",
+   "en": "Swaps the positions of\nboth sides' bases.",
    "max": 24,
    "ptrs": [
     "arm9:A80CC"
@@ -10913,7 +10913,7 @@
    "id": "arm9:92A84",
    "font": "sys",
    "jp": "被災した領土の兵力が低下します",
-   "en": "",
+   "en": "The stricken land loses troops.",
    "max": 24,
    "ptrs": [
     "ov9_08:5E8C"
@@ -10923,7 +10923,7 @@
    "id": "arm9:92A9C",
    "font": "sys",
    "jp": "この戦争を最初から\nやり直しますか?",
-   "en": "",
+   "en": "Restart this war\nfrom the beginning?",
    "max": 24,
    "ptrs": [
     "arm9:8A568"
@@ -10933,7 +10933,7 @@
    "id": "arm9:92AB4",
    "font": "sys",
    "jp": "一定時間、敵のHPが徐々にダウン",
-   "en": "",
+   "en": "Enemy HP slowly drops for a time.",
    "max": 24,
    "ptrs": [
     "arm9:A7E9C"
@@ -10943,7 +10943,7 @@
    "id": "arm9:92ACC",
    "font": "sys",
    "jp": "敵のHPを半減させる暗黒系ダメージ",
-   "en": "",
+   "en": "Dark damage that halves enemy HP.",
    "max": 24,
    "ptrs": [
     "arm9:A7EB8"
@@ -10953,7 +10953,7 @@
    "id": "arm9:92AE4",
    "font": "sys",
    "jp": "一定時間、1stユニゾンでクリティカル",
-   "en": "",
+   "en": "For a time, the 1st Unison\nis always critical.",
    "max": 24,
    "ptrs": [
     "arm9:A7F0C"
@@ -10963,7 +10963,7 @@
    "id": "arm9:92AFC",
    "font": "sys",
    "jp": "敵のHPを半減させる火炎系ダメージ",
-   "en": "",
+   "en": "Fire damage that halves enemy HP.",
    "max": 24,
    "ptrs": [
     "arm9:A7F60"
@@ -10973,7 +10973,7 @@
    "id": "arm9:92B14",
    "font": "sys",
    "jp": "敵のHPを半減させる冷気系ダメージ",
-   "en": "",
+   "en": "Ice damage that halves enemy HP.",
    "max": 24,
    "ptrs": [
     "arm9:A7F7C"
@@ -10983,7 +10983,7 @@
    "id": "arm9:92B2C",
    "font": "sys",
    "jp": "敵のHPを半減させる雷撃系ダメージ",
-   "en": "",
+   "en": "Lightning damage that\nhalves enemy HP.",
    "max": 24,
    "ptrs": [
     "arm9:A7F98"
@@ -10993,7 +10993,7 @@
    "id": "arm9:92B44",
    "font": "sys",
    "jp": "敵のHPを半減させる神聖系ダメージ",
-   "en": "",
+   "en": "Holy damage that halves enemy HP.",
    "max": 24,
    "ptrs": [
     "arm9:A7FB4"
@@ -11003,7 +11003,7 @@
    "id": "arm9:92B5C",
    "font": "sys",
    "jp": "守将のHPを1にし、他の敵を殲滅する",
-   "en": "",
+   "en": "Sets the commander to 1 HP and\nwipes out all other enemies.",
    "max": 24,
    "ptrs": [
     "arm9:A8040"
@@ -11013,7 +11013,7 @@
    "id": "arm9:92B74",
    "font": "sys",
    "jp": "敵味方ともにランダムな位置にワープ!",
-   "en": "",
+   "en": "All units on both sides warp\nto random spots!",
    "max": 24,
    "ptrs": [
     "arm9:A80B0"
@@ -11023,7 +11023,7 @@
    "id": "arm9:92B8C",
    "font": "sys",
    "jp": "森林地形にいる全てのユニットが消滅",
-   "en": "",
+   "en": "All units in forest terrain vanish.",
    "max": 24,
    "ptrs": [
     "arm9:A8104"
@@ -11033,7 +11033,7 @@
    "id": "arm9:92BA4",
    "font": "sys",
    "jp": "砂漠地形にいる全てのユニットが消滅",
-   "en": "",
+   "en": "All units in desert terrain vanish.",
    "max": 24,
    "ptrs": [
     "arm9:A8120"
@@ -11043,7 +11043,7 @@
    "id": "arm9:92BBC",
    "font": "sys",
    "jp": "毒沼地形にいる全てのユニットが消滅",
-   "en": "",
+   "en": "All units in poison swamp\nterrain vanish.",
    "max": 24,
    "ptrs": [
     "arm9:A813C"
@@ -11053,7 +11053,7 @@
    "id": "arm9:92BD4",
    "font": "sys",
    "jp": "荒野地形にいる全てのユニットが消滅",
-   "en": "",
+   "en": "All units in wasteland terrain vanish.",
    "max": 24,
    "ptrs": [
     "arm9:A8158"
@@ -11063,7 +11063,7 @@
    "id": "arm9:92BEC",
    "font": "sys",
    "jp": "夜間戦闘で、移動速度がアップする",
-   "en": "",
+   "en": "Raises move speed in\nnight battles",
    "max": 28,
    "ptrs": [
     "arm9:100C50"
@@ -11073,7 +11073,7 @@
    "id": "arm9:92C08",
    "font": "sys",
    "jp": "ゲーム中にヘルプメッセージを表示しますか?",
-   "en": "",
+   "en": "Show help messages\nduring the game?",
    "max": 28,
    "ptrs": [
     "ov9_00:820"
@@ -11083,7 +11083,7 @@
    "id": "arm9:92C24",
    "font": "sys",
    "jp": "森林地形での移動速度がアップする",
-   "en": "",
+   "en": "Raises move speed in\nforest terrain",
    "max": 28,
    "ptrs": [
     "arm9:101AC0"
@@ -11093,7 +11093,7 @@
    "id": "arm9:92C40",
    "font": "sys",
    "jp": "ユニットは複数出撃させる事ができます。",
-   "en": "",
+   "en": "You can deploy\nmore than one unit.",
    "max": 28,
    "ptrs": [
     "arm9:100500"
@@ -11103,7 +11103,7 @@
    "id": "arm9:92C5C",
    "font": "sys",
    "jp": "砂漠地形での移動速度がアップする",
-   "en": "",
+   "en": "Raises move speed in\ndesert terrain",
    "max": 28,
    "ptrs": [
     "arm9:1012C8"
@@ -11113,7 +11113,7 @@
    "id": "arm9:92C78",
    "font": "sys",
    "jp": "一定時間、味方へのダメージが半減",
-   "en": "",
+   "en": "For a time, damage to your\nunits is halved.",
    "max": 28,
    "ptrs": [
     "arm9:A7F44"
@@ -11123,7 +11123,7 @@
    "id": "arm9:92C94",
    "font": "sys",
    "jp": "一定時間、インパクトサークルが巨大に",
-   "en": "",
+   "en": "For a time, the\nImpact Circle becomes huge.",
    "max": 28,
    "ptrs": [
     "arm9:A7FD0"
@@ -11133,7 +11133,7 @@
    "id": "arm9:92CB0",
    "font": "sys",
    "jp": "一定時間、インパクトサークルが極小に",
-   "en": "",
+   "en": "For a time, the\nImpact Circle becomes tiny.",
    "max": 28,
    "ptrs": [
     "arm9:A8078"
@@ -11143,7 +11143,7 @@
    "id": "arm9:92CCC",
    "font": "sys",
    "jp": "一定時間、敵ユニットのPOWを1にする",
-   "en": "",
+   "en": "For a time, sets enemy\nunits' POW to 1.",
    "max": 28,
    "ptrs": [
     "arm9:A80E8"
@@ -11153,7 +11153,7 @@
    "id": "arm9:92CE8",
    "font": "sys",
    "jp": "ドラグーンにクラスチェンジする\n▲ATK＋1",
-   "en": "",
+   "en": "Class Change to Dragoon\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:101448"
@@ -11163,7 +11163,7 @@
    "id": "arm9:92D04",
    "font": "sys",
    "jp": "冷気属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Ice-element attacks\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:1015B0"
@@ -11173,7 +11173,7 @@
    "id": "arm9:92D20",
    "font": "sys",
    "jp": "冷気属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Ice-element attacks\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:100668"
@@ -11183,7 +11183,7 @@
    "id": "arm9:92D3C",
    "font": "sys",
    "jp": "暗黒属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Dark-element attacks\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:101610"
@@ -11193,7 +11193,7 @@
    "id": "arm9:92D58",
    "font": "sys",
    "jp": "神聖属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Holy-element attacks\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:100728"
@@ -11203,7 +11203,7 @@
    "id": "arm9:92D74",
    "font": "sys",
    "jp": "暗黒属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Dark-element attacks\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:100788"
@@ -11213,7 +11213,7 @@
    "id": "arm9:92D90",
    "font": "sys",
    "jp": "冷気属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Ice-element attacks\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:101688"
@@ -11223,7 +11223,7 @@
    "id": "arm9:92DAC",
    "font": "sys",
    "jp": "インパクトサークルが最大になる\n▼DEFー1",
-   "en": "",
+   "en": "Impact Circle at max size\nDEF-1",
    "max": 28,
    "ptrs": [
     "arm9:101868"
@@ -11233,7 +11233,7 @@
    "id": "arm9:92DC8",
    "font": "sys",
    "jp": "インパクトサークルが最小になる\n▼ATKー1",
-   "en": "",
+   "en": "Impact Circle at min size\nATK-1",
    "max": 28,
    "ptrs": [
     "arm9:100B60"
@@ -11243,7 +11243,7 @@
    "id": "arm9:92DE4",
    "font": "sys",
    "jp": "暗黒属性の攻撃となる\n▲DEF＋2",
-   "en": "",
+   "en": "Dark-element attacks\nDEF+2",
    "max": 28,
    "ptrs": [
     "arm9:100C68"
@@ -11253,7 +11253,7 @@
    "id": "arm9:92E00",
    "font": "sys",
    "jp": "暗黒属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Dark-element attacks\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:101940"
@@ -11263,7 +11263,7 @@
    "id": "arm9:92E1C",
    "font": "sys",
    "jp": "雷撃属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Lightning-element attacks\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:100D10"
@@ -11273,7 +11273,7 @@
    "id": "arm9:92E38",
    "font": "sys",
    "jp": "火炎属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Fire-element attacks\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:100DD0"
@@ -11283,7 +11283,7 @@
    "id": "arm9:92E54",
    "font": "sys",
    "jp": "雷撃属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Lightning-element attacks\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:101A18"
@@ -11293,7 +11293,7 @@
    "id": "arm9:92E70",
    "font": "sys",
    "jp": "神聖属性の攻撃となる\n▲DEF＋2",
-   "en": "",
+   "en": "Holy-element attacks\nDEF+2",
    "max": 28,
    "ptrs": [
     "arm9:100F20"
@@ -11303,7 +11303,7 @@
    "id": "arm9:92E8C",
    "font": "sys",
    "jp": "火炎属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Fire-element attacks\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:100F68"
@@ -11313,7 +11313,7 @@
    "id": "arm9:92EA8",
    "font": "sys",
    "jp": "火炎属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Fire-element attacks\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:101A90"
@@ -11323,7 +11323,7 @@
    "id": "arm9:92EC4",
    "font": "sys",
    "jp": "神聖属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Holy-element attacks\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:101028"
@@ -11333,7 +11333,7 @@
    "id": "arm9:92EE0",
    "font": "sys",
    "jp": "被災した領土の守備力が低下します",
-   "en": "",
+   "en": "Stricken land's defense drops.",
    "max": 28,
    "ptrs": [
     "ov9_08:4F54"
@@ -11343,7 +11343,7 @@
    "id": "arm9:92EFC",
    "font": "sys",
    "jp": "一定時間、味方ユニット操作不能",
-   "en": "",
+   "en": "For a time, your units\ncan't be controlled.",
    "max": 28,
    "ptrs": [
     "arm9:A7FEC"
@@ -11353,7 +11353,7 @@
    "id": "arm9:92F18",
    "font": "sys",
    "jp": "一定時間、全てのユニットのPOWが6に!",
-   "en": "",
+   "en": "For a time, all units'\nPOW becomes 6!",
    "max": 28,
    "ptrs": [
     "arm9:A8190"
@@ -11363,7 +11363,7 @@
    "id": "arm9:92F34",
    "font": "sys",
    "jp": "一定時間、全ユニットクラスがシャッフル!",
-   "en": "",
+   "en": "For a time, all units'\nclasses get shuffled!",
    "max": 28,
    "ptrs": [
     "arm9:A81AC"
@@ -11373,7 +11373,7 @@
    "id": "arm9:92F50",
    "font": "sys",
    "jp": "一定時間、味方をウンディーネに変える",
-   "en": "",
+   "en": "For a time, turns your\nunits into Undines.",
    "max": 28,
    "ptrs": [
     "arm9:A81E4"
@@ -11383,7 +11383,7 @@
    "id": "arm9:92F6C",
    "font": "sys",
    "jp": "インパクトサークルが最大になる\n▲ATK＋2",
-   "en": "",
+   "en": "Impact Circle at max size\nATK+2",
    "max": 28,
    "ptrs": [
     "arm9:1007D0"
@@ -11393,7 +11393,7 @@
    "id": "arm9:92F88",
    "font": "sys",
    "jp": "HPが0になると、\n一度だけHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:100848"
@@ -11403,7 +11403,7 @@
    "id": "arm9:92FA4",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:1016E8"
@@ -11413,7 +11413,7 @@
    "id": "arm9:92FC0",
    "font": "sys",
    "jp": "インパクトサークルが最大になる\n▲ATK＋1",
-   "en": "",
+   "en": "Impact Circle at max size\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:100860"
@@ -11423,7 +11423,7 @@
    "id": "arm9:92FDC",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP1で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 1 HP",
    "max": 28,
    "ptrs": [
     "arm9:100B48"
@@ -11433,7 +11433,7 @@
    "id": "arm9:92FF8",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:100C20"
@@ -11443,7 +11443,7 @@
    "id": "arm9:93014",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:1018E0"
@@ -11453,7 +11453,7 @@
    "id": "arm9:93030",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:101928"
@@ -11463,7 +11463,7 @@
    "id": "arm9:9304C",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:100D40"
@@ -11473,7 +11473,7 @@
    "id": "arm9:93068",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:100D58"
@@ -11483,7 +11483,7 @@
    "id": "arm9:93084",
    "font": "sys",
    "jp": "インパクトサークルが最小になる\n▲DEF＋1",
-   "en": "",
+   "en": "Impact Circle at min size\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:100EA8"
@@ -11493,7 +11493,7 @@
    "id": "arm9:930A0",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:100F38"
@@ -11503,7 +11503,7 @@
    "id": "arm9:930BC",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:100F50"
@@ -11513,7 +11513,7 @@
    "id": "arm9:930D8",
    "font": "sys",
    "jp": "攻撃拠点以外には指示は出せません!",
-   "en": "",
+   "en": "Only attack bases can take orders!",
    "max": 28,
    "ptrs": [
     "arm9:54AF8",
@@ -11524,7 +11524,7 @@
    "id": "arm9:930F4",
    "font": "sys",
    "jp": "HPが0になると、\n一度だけHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:100FB0"
@@ -11534,7 +11534,7 @@
    "id": "arm9:93110",
    "font": "sys",
    "jp": "新たな勢力として、\nネシア勢が加わりました",
-   "en": "",
+   "en": "Nessiah's forces have joined\nas a new faction!",
    "max": 28,
    "ptrs": [
     "ov9_14:2390"
@@ -11544,7 +11544,7 @@
    "id": "arm9:9312C",
    "font": "sys",
    "jp": "インパクトサークルが最大になる\n▲ATK＋1",
-   "en": "",
+   "en": "Impact Circle at max size\nATK+1",
    "max": 28,
    "ptrs": [
     "arm9:101058"
@@ -11554,7 +11554,7 @@
    "id": "arm9:93148",
    "font": "sys",
    "jp": "戦争はユニットを移動させる事で進みます。",
-   "en": "",
+   "en": "War moves forward\nas you move your units.",
    "max": 28,
    "ptrs": [
     "arm9:100508"
@@ -11564,7 +11564,7 @@
    "id": "arm9:93164",
    "font": "sys",
    "jp": "インパクトサークルが最小になる\n▲DEF＋1",
-   "en": "",
+   "en": "Impact Circle at min size\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:101130"
@@ -11574,7 +11574,7 @@
    "id": "arm9:93180",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:1012B0"
@@ -11584,7 +11584,7 @@
    "id": "arm9:9319C",
    "font": "sys",
    "jp": "一定時間、味方のHPが徐々に回復",
-   "en": "",
+   "en": "For a time, your units'\nHP slowly recovers.",
    "max": 28,
    "ptrs": [
     "arm9:A805C"
@@ -11594,7 +11594,7 @@
    "id": "arm9:931B8",
    "font": "sys",
    "jp": "一定時間、敵の先制攻撃をガードする",
-   "en": "",
+   "en": "For a time, guards against\nenemy first strikes.",
    "max": 28,
    "ptrs": [
     "arm9:A8174"
@@ -11604,7 +11604,7 @@
    "id": "arm9:931D4",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:101388"
@@ -11614,7 +11614,7 @@
    "id": "arm9:931F0",
    "font": "sys",
    "jp": "一定時間、バトルマップが暗闇に包まれる",
-   "en": "",
+   "en": "For a time, darkness\nshrouds the battle map.",
    "max": 28,
    "ptrs": [
     "arm9:A8200"
@@ -11624,7 +11624,7 @@
    "id": "arm9:9320C",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP",
    "max": 28,
    "ptrs": [
     "arm9:101478"
@@ -11634,7 +11634,7 @@
    "id": "arm9:93228",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP",
    "max": 28,
    "ptrs": [
     "arm9:101538"
@@ -11644,7 +11644,7 @@
    "id": "arm9:93244",
    "font": "sys",
    "jp": "デュエルで必ず先制攻撃となる\n▼DEFー1",
-   "en": "",
+   "en": "Always strike first in Duels\nDEF-1",
    "max": 28,
    "ptrs": [
     "arm9:101580"
@@ -11654,7 +11654,7 @@
    "id": "arm9:93260",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する\n▲DEF＋2",
-   "en": "",
+   "en": "Evades enemy Smash Hits\nDEF+2",
    "max": 28,
    "ptrs": [
     "arm9:100650"
@@ -11664,7 +11664,7 @@
    "id": "arm9:9327C",
    "font": "sys",
    "jp": "デュエルで必ず先制攻撃となる\n▼DEFー1",
-   "en": "",
+   "en": "Always strike first in Duels\nDEF-1",
    "max": 28,
    "ptrs": [
     "arm9:101658"
@@ -11674,7 +11674,7 @@
    "id": "arm9:93298",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する\n▲DEF＋1",
-   "en": "",
+   "en": "Evades enemy Smash Hits\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:101718"
@@ -11684,7 +11684,7 @@
    "id": "arm9:932B4",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する\n▲DEF＋1",
-   "en": "",
+   "en": "Evades enemy Smash Hits\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:100908"
@@ -11694,7 +11694,7 @@
    "id": "arm9:932D0",
    "font": "sys",
    "jp": "HPが0になると、\n一度だけHP12で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 12 HP",
    "max": 28,
    "ptrs": [
     "arm9:100950"
@@ -11704,7 +11704,7 @@
    "id": "arm9:932EC",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する\n▲DEF＋1",
-   "en": "",
+   "en": "Evades enemy Smash Hits\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:100980"
@@ -11714,7 +11714,7 @@
    "id": "arm9:93308",
    "font": "sys",
    "jp": "敵のスマッシュヒットを回避する\n▲DEF＋1",
-   "en": "",
+   "en": "Evades enemy Smash Hits\nDEF+1",
    "max": 28,
    "ptrs": [
     "arm9:1009C8"
@@ -11724,7 +11724,7 @@
    "id": "arm9:93324",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP12で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 12 HP",
    "max": 28,
    "ptrs": [
     "arm9:1017A8"
@@ -11734,7 +11734,7 @@
    "id": "arm9:93340",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP12で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 12 HP",
    "max": 28,
    "ptrs": [
     "arm9:100BF0"
@@ -11744,7 +11744,7 @@
    "id": "arm9:9335C",
    "font": "sys",
    "jp": "HP6以下で、インパクトサークルが\n最大になる",
-   "en": "",
+   "en": "At 6 HP or less, the\nImpact Circle is max size",
    "max": 28,
    "ptrs": [
     "arm9:101238"
@@ -11754,7 +11754,7 @@
    "id": "arm9:93378",
    "font": "sys",
    "jp": "全ユニットのHPを1にし、敵残存戦力消滅",
-   "en": "",
+   "en": "Sets all units to 1 HP and\nwipes out enemy reserves.",
    "max": 28,
    "ptrs": [
     "arm9:A81C8"
@@ -11764,7 +11764,7 @@
    "id": "arm9:93394",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAXで復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP",
    "max": 32,
    "ptrs": [
     "arm9:100740"
@@ -11774,7 +11774,7 @@
    "id": "arm9:933B4",
    "font": "sys",
    "jp": "デュエルで必ず先制攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Always strike first in Duels\nATK+2",
    "max": 32,
    "ptrs": [
     "arm9:1008F0"
@@ -11784,7 +11784,7 @@
    "id": "arm9:933D4",
    "font": "sys",
    "jp": "夜間戦闘で、インパクトサークルが\n最大になる",
-   "en": "",
+   "en": "In night battles, the\nImpact Circle is max size",
    "max": 32,
    "ptrs": [
     "arm9:100A10"
@@ -11794,7 +11794,7 @@
    "id": "arm9:933F4",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAXで復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP",
    "max": 32,
    "ptrs": [
     "arm9:100A40"
@@ -11804,7 +11804,7 @@
    "id": "arm9:93414",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAXで復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP",
    "max": 32,
    "ptrs": [
     "arm9:100AE8"
@@ -11814,7 +11814,7 @@
    "id": "arm9:93434",
    "font": "sys",
    "jp": "デュエルで必ず先制攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Always strike first in Duels\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:100E30"
@@ -11824,7 +11824,7 @@
    "id": "arm9:93454",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAXで復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP",
    "max": 32,
    "ptrs": [
     "arm9:101A30"
@@ -11834,7 +11834,7 @@
    "id": "arm9:93474",
    "font": "sys",
    "jp": "このユニットの探索を\n取り消してよろしいですか?",
-   "en": "",
+   "en": "Cancel this unit's\nexploration?",
    "max": 32,
    "ptrs": [
     "ov9_13:5094"
@@ -11844,7 +11844,7 @@
    "id": "arm9:93494",
    "font": "sys",
    "jp": "■戦争に勝利するための秘策をお教えします",
-   "en": "",
+   "en": "Let me teach you the secrets\nof winning wars.",
    "max": 32,
    "ptrs": [
     "ov9_03:1094"
@@ -11854,7 +11854,7 @@
    "id": "arm9:934B4",
    "font": "sys",
    "jp": "捕縛した敵国守将の\n処遇を決定します",
-   "en": "",
+   "en": "Decide the fate of the\ncaptured enemy commander.",
    "max": 32,
    "ptrs": [
     "ov9_11:13B8"
@@ -11864,7 +11864,7 @@
    "id": "arm9:934D4",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAXで復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP",
    "max": 32,
    "ptrs": [
     "arm9:1012F8"
@@ -11874,7 +11874,7 @@
    "id": "arm9:934F4",
    "font": "sys",
    "jp": "敵味方ともにHP残量と減少ぶんが逆転!",
-   "en": "",
+   "en": "Everyone's remaining and\nlost HP swap places!",
    "max": 32,
    "ptrs": [
     "arm9:A8008"
@@ -11884,7 +11884,7 @@
    "id": "arm9:93514",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▲DEF＋1",
-   "en": "",
+   "en": "Knockback distance halved\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:101628"
@@ -11894,7 +11894,7 @@
    "id": "arm9:93534",
    "font": "sys",
    "jp": "攻撃兵器を破壊可能になる\n▲ATK＋1",
-   "en": "",
+   "en": "Can destroy siege weapons\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:100C38"
@@ -11904,7 +11904,7 @@
    "id": "arm9:93554",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▲DEF＋1",
-   "en": "",
+   "en": "Knockback distance halved\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:100C98"
@@ -11914,7 +11914,7 @@
    "id": "arm9:93574",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▲DEF＋1",
-   "en": "",
+   "en": "Knockback distance halved\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:101910"
@@ -11924,7 +11924,7 @@
    "id": "arm9:93594",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:100E78"
@@ -11934,7 +11934,7 @@
    "id": "arm9:935B4",
    "font": "sys",
    "jp": "探索に派遣せずに\n探索準備を終了します",
-   "en": "",
+   "en": "End exploration prep\nwithout sending anyone.",
    "max": 32,
    "ptrs": [
     "ov9_13:2640"
@@ -11944,7 +11944,7 @@
    "id": "arm9:935D4",
    "font": "sys",
    "jp": "夜間戦闘のデュエルで必ず\n先制攻撃となる",
-   "en": "",
+   "en": "Always strike first in\nnight-battle Duels",
    "max": 32,
    "ptrs": [
     "arm9:101358"
@@ -11954,7 +11954,7 @@
    "id": "arm9:935F4",
    "font": "sys",
    "jp": "退却済の敵味方ユニットが戦線に復帰する",
-   "en": "",
+   "en": "Retreated units on both sides\nreturn to the field.",
    "max": 32,
    "ptrs": [
     "arm9:A821C"
@@ -11964,7 +11964,7 @@
    "id": "arm9:93614",
    "font": "sys",
    "jp": "攻撃兵器を破壊可能になる\n▲ATK＋2",
-   "en": "",
+   "en": "Can destroy siege weapons\nATK+2",
    "max": 32,
    "ptrs": [
     "arm9:101430"
@@ -11974,7 +11974,7 @@
    "id": "arm9:93634",
    "font": "sys",
    "jp": "デュエルでグリフライダーに対して有利\n▲ATK＋2",
-   "en": "",
+   "en": "Duel edge vs. Griffon Riders\nATK+2",
    "max": 32,
    "ptrs": [
     "arm9:1016D0"
@@ -11984,7 +11984,7 @@
    "id": "arm9:93654",
    "font": "sys",
    "jp": "夜間戦闘のデュエルで、必ず\n先制攻撃となる",
-   "en": "",
+   "en": "Always strike first in\nnight-battle Duels",
    "max": 32,
    "ptrs": [
     "arm9:101730"
@@ -11994,7 +11994,7 @@
    "id": "arm9:93674",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる　\n▲ATK＋2",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+2",
    "max": 32,
    "ptrs": [
     "arm9:100B90"
@@ -12004,7 +12004,7 @@
    "id": "arm9:93694",
    "font": "sys",
    "jp": "探索準備を終了し、\n探索を実行しますか?",
-   "en": "",
+   "en": "Finish preparations\nand start exploring?",
    "max": 32,
    "ptrs": [
     "ov9_13:263C"
@@ -12014,7 +12014,7 @@
    "id": "arm9:936B4",
    "font": "sys",
    "jp": "ミステールが王国軍へ\n強制的に加入にしました",
-   "en": "",
+   "en": "Mistel has been forced\nto join the Royal Army!",
    "max": 32,
    "ptrs": [
     "ov9_14:2BCC",
@@ -12025,7 +12025,7 @@
    "id": "arm9:936D4",
    "font": "sys",
    "jp": "この戦争を放棄して\nタイトル画面に戻りますか?",
-   "en": "",
+   "en": "Abandon this war and\nreturn to the title screen?",
    "max": 32,
    "ptrs": [
     "arm9:8A56C"
@@ -12035,7 +12035,7 @@
    "id": "arm9:936F4",
    "font": "sys",
    "jp": "戦争の勝利により、\nあなたの領土が拡大します",
-   "en": "",
+   "en": "Your victory in war\nexpands your territory.",
    "max": 32,
    "ptrs": [
     "ov9_14:18EC"
@@ -12045,7 +12045,7 @@
    "id": "arm9:93714",
    "font": "sys",
    "jp": "デュエルで必ず敵に先制攻撃される\n▼ATKー2",
-   "en": "",
+   "en": "Enemy always strikes first\nin Duels ATK-2",
    "max": 32,
    "ptrs": [
     "arm9:101178"
@@ -12055,7 +12055,7 @@
    "id": "arm9:93734",
    "font": "sys",
    "jp": "デュエルでゴーレムに対して有利となる\n▲DEF＋1",
-   "en": "",
+   "en": "Duel edge vs. Golems\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:1011A8"
@@ -12065,7 +12065,7 @@
    "id": "arm9:93754",
    "font": "sys",
    "jp": "デュエルでグリフライダーに対して有利\n▲DEF＋1",
-   "en": "",
+   "en": "Duel edge vs. Griffon Riders\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:1011C0"
@@ -12075,7 +12075,7 @@
    "id": "arm9:93774",
    "font": "sys",
    "jp": "デュエルでナイトに対して\n有利となる　▲ATK＋1",
-   "en": "",
+   "en": "Duel edge vs. Knights\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:101340"
@@ -12085,7 +12085,7 @@
    "id": "arm9:93794",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP1、ATK1で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 1 HP, ATK 1",
    "max": 32,
    "ptrs": [
     "arm9:100680"
@@ -12095,7 +12095,7 @@
    "id": "arm9:937B4",
    "font": "sys",
    "jp": "移動速度がダウンする\n▼ATKー1　▲DEF＋2",
-   "en": "",
+   "en": "Lowers move speed\nATK-1 DEF+2",
    "max": 32,
    "ptrs": [
     "arm9:101670"
@@ -12105,7 +12105,7 @@
    "id": "arm9:937D4",
    "font": "sys",
    "jp": "移動速度がダウンする\n▼ATKー1　▲DEF＋2",
-   "en": "",
+   "en": "Lowers move speed\nATK-1 DEF+2",
    "max": 32,
    "ptrs": [
     "arm9:101700"
@@ -12115,7 +12115,7 @@
    "id": "arm9:937F4",
    "font": "sys",
    "jp": "敵のDEFを無効化した攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:100920"
@@ -12125,7 +12125,7 @@
    "id": "arm9:93814",
    "font": "sys",
    "jp": "移動速度がダウンする\n▼ATKー1　▲DEF＋3",
-   "en": "",
+   "en": "Lowers move speed\nATK-1 DEF+3",
    "max": 32,
    "ptrs": [
     "arm9:101808"
@@ -12135,7 +12135,7 @@
    "id": "arm9:93834",
    "font": "sys",
    "jp": "攻撃兵器で受けるダメージが半減\n▲DEF＋1",
-   "en": "",
+   "en": "Siege weapon damage halved\nDEF+1",
    "max": 32,
    "ptrs": [
     "arm9:101838"
@@ -12145,7 +12145,7 @@
    "id": "arm9:93854",
    "font": "sys",
    "jp": "敵のDEFを無効化した攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+1",
    "max": 32,
    "ptrs": [
     "arm9:100CF8"
@@ -12155,7 +12155,7 @@
    "id": "arm9:93874",
    "font": "sys",
    "jp": "選択中のユニットを\n戦力から外してもよろしいですか?",
-   "en": "",
+   "en": "Remove the selected unit\nfrom your forces?",
    "max": 32,
    "ptrs": [
     "arm9:86E18"
@@ -12165,7 +12165,7 @@
    "id": "arm9:93894",
    "font": "sys",
    "jp": "探索に派遣したユニットの\n探索報告を行います",
-   "en": "",
+   "en": "Reporting on the units\nsent to explore.",
    "max": 32,
    "ptrs": [
     "ov9_10:214C"
@@ -12175,7 +12175,7 @@
    "id": "arm9:938B4",
    "font": "sys",
    "jp": "デュエルで必ず敵に先制攻撃される\n▲DEF＋1",
-   "en": "",
+   "en": "Enemy always strikes first\nin Duels DEF+1",
    "max": 32,
    "ptrs": [
     "arm9:101100"
@@ -12185,7 +12185,7 @@
    "id": "arm9:938D4",
    "font": "sys",
    "jp": "手強い敵はユニゾンアタックで\n倒す事が可能です。",
-   "en": "",
+   "en": "Tough enemies can be beaten\nwith a Unison Attack.",
    "max": 32,
    "ptrs": [
     "arm9:100510"
@@ -12195,7 +12195,7 @@
    "id": "arm9:938F4",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4、ATK6で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP, ATK 6",
    "max": 32,
    "ptrs": [
     "arm9:101148"
@@ -12205,7 +12205,7 @@
    "id": "arm9:93914",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP8、ATK1で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 8 HP, ATK 1",
    "max": 32,
    "ptrs": [
     "arm9:101280"
@@ -12215,7 +12215,7 @@
    "id": "arm9:93934",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4、ATK1で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP, ATK 1",
    "max": 32,
    "ptrs": [
     "arm9:101460"
@@ -12225,7 +12225,7 @@
    "id": "arm9:93954",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP4、ATK6で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 4 HP, ATK 6",
    "max": 32,
    "ptrs": [
     "arm9:1014F0"
@@ -12235,7 +12235,7 @@
    "id": "arm9:93974",
    "font": "sys",
    "jp": "夜間戦闘のデュエルで、\nハンターに対して有利となる",
-   "en": "",
+   "en": "In night-battle Duels,\nedge vs. Hunters",
    "max": 36,
    "ptrs": [
     "arm9:1017F0"
@@ -12245,7 +12245,7 @@
    "id": "arm9:93998",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHP12、ATK6で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with 12 HP, ATK 6",
    "max": 36,
    "ptrs": [
     "arm9:100B18"
@@ -12255,7 +12255,7 @@
    "id": "arm9:939BC",
    "font": "sys",
    "jp": "HP6以下で、移動速度がアップする\n▲ATK＋1",
-   "en": "",
+   "en": "Faster at 6 HP or less\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:101988"
@@ -12265,7 +12265,7 @@
    "id": "arm9:939E0",
    "font": "sys",
    "jp": "夜間戦闘で、移動速度がアップする\n▼DEFー1",
-   "en": "",
+   "en": "Faster in night battles\nDEF-1",
    "max": 36,
    "ptrs": [
     "arm9:100E60"
@@ -12275,7 +12275,7 @@
    "id": "arm9:93A04",
    "font": "sys",
    "jp": "他国間の戦争や災害などの\n状況を報告します",
-   "en": "",
+   "en": "Reporting on wars between\nother nations, disasters...",
    "max": 36,
    "ptrs": [
     "ov9_08:B88"
@@ -12285,7 +12285,7 @@
    "id": "arm9:93A28",
    "font": "sys",
    "jp": "探索に派遣したユニットが\nそろそろ、戻ってくる頃です",
-   "en": "",
+   "en": "The units sent to explore\nshould be back soon.",
    "max": 36,
    "ptrs": [
     "ov9_10:134C"
@@ -12295,7 +12295,7 @@
    "id": "arm9:93A4C",
    "font": "sys",
    "jp": "デュエルでスケルトンに\n対して有利となる　▲DEF＋1",
-   "en": "",
+   "en": "Duel edge vs. Skeletons\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:1011D8"
@@ -12305,7 +12305,7 @@
    "id": "arm9:93A70",
    "font": "sys",
    "jp": "集落が発見不可となる\n▼ATKー1　▼DEFー1",
-   "en": "",
+   "en": "Villages can't be found\nATK-1 DEF-1",
    "max": 36,
    "ptrs": [
     "arm9:101298"
@@ -12315,7 +12315,7 @@
    "id": "arm9:93A94",
    "font": "sys",
    "jp": "デュエルでドラグーンに対して\n有利となる　▲ATK＋1",
-   "en": "",
+   "en": "Duel edge vs. Dragoons\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:1012E0"
@@ -12325,7 +12325,7 @@
    "id": "arm9:93AB8",
    "font": "sys",
    "jp": "一定時間、敵・味方の移動速度が高速に!",
-   "en": "",
+   "en": "For a time, every unit\nmoves at high speed!",
    "max": 36,
    "ptrs": [
     "arm9:A8094"
@@ -12335,7 +12335,7 @@
    "id": "arm9:93ADC",
    "font": "sys",
    "jp": "昼間戦闘での移動速度がアップする\n▲ATK＋1",
-   "en": "",
+   "en": "Faster in day battles\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:1007E8"
@@ -12345,7 +12345,7 @@
    "id": "arm9:93B00",
    "font": "sys",
    "jp": "HPが0になると、一度だけ\nHPMAX、ATK6で復活する",
-   "en": "",
+   "en": "When HP hits 0, revive\nonce with full HP, ATK 6",
    "max": 36,
    "ptrs": [
     "arm9:100890"
@@ -12355,7 +12355,7 @@
    "id": "arm9:93B24",
    "font": "sys",
    "jp": "夜間戦闘で、移動速度がアップする\n▲ATK＋1",
-   "en": "",
+   "en": "Faster in night battles\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:1008A8"
@@ -12365,7 +12365,7 @@
    "id": "arm9:93B48",
    "font": "sys",
    "jp": "水辺地形での移動速度がアップする\n▲DEF＋1",
-   "en": "",
+   "en": "Faster on waterside terrain\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:1008C0"
@@ -12375,7 +12375,7 @@
    "id": "arm9:93B6C",
    "font": "sys",
    "jp": "夜間戦闘で、インパクトサークルが最大\n▲ATK＋2",
-   "en": "",
+   "en": "Max Impact Circle at night\nATK+2",
    "max": 36,
    "ptrs": [
     "arm9:100D88"
@@ -12385,7 +12385,7 @@
    "id": "arm9:93B90",
    "font": "sys",
    "jp": "昼間戦闘で、移動速度がダウンする\n▲DEF＋1",
-   "en": "",
+   "en": "Slower in day battles\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:1019B8"
@@ -12395,7 +12395,7 @@
    "id": "arm9:93BB4",
    "font": "sys",
    "jp": "砂漠地形での移動速度がアップする\n▲ATK＋1",
-   "en": "",
+   "en": "Faster on desert terrain\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:100FC8"
@@ -12405,7 +12405,7 @@
    "id": "arm9:93BD8",
    "font": "sys",
    "jp": "ラスト30秒間、HP吸収攻撃となる\n[dm／2]",
-   "en": "",
+   "en": "Last 30 sec: HP-drain attacks\n(heals dmg/2)",
    "max": 36,
    "ptrs": [
     "arm9:101AA8"
@@ -12415,7 +12415,7 @@
    "id": "arm9:93BFC",
    "font": "sys",
    "jp": "ユニットの戦意回復に役立つ\nメダリオンを入手します",
-   "en": "",
+   "en": "Get Medallions that help\nrestore unit morale.",
    "max": 36,
    "ptrs": [
     "ov9_10:3254"
@@ -12425,7 +12425,7 @@
    "id": "arm9:93C20",
    "font": "sys",
    "jp": "冷気属性の攻撃となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Ice-element attacks\nATK+1 DEF+1",
    "max": 36,
    "ptrs": [
     "arm9:100BA8"
@@ -12435,7 +12435,7 @@
    "id": "arm9:93C44",
    "font": "sys",
    "jp": "雷撃属性の攻撃となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Lightning-element attacks\nATK+1 DEF+1",
    "max": 36,
    "ptrs": [
     "arm9:100C08"
@@ -12445,7 +12445,7 @@
    "id": "arm9:93C68",
    "font": "sys",
    "jp": "戦争後に褒賞で使用できる\nメダリオンが支給されます",
-   "en": "",
+   "en": "You'll be given Medallions to\nuse as rewards after the war.",
    "max": 36,
    "ptrs": [
     "ov9_10:3224"
@@ -12455,7 +12455,7 @@
    "id": "arm9:93C8C",
    "font": "sys",
    "jp": "探索の際、完成済みの\nダンジョンマップが表示される。",
-   "en": "",
+   "en": "Shows the complete dungeon\nmap when exploring.",
    "max": 36,
    "ptrs": [
     "arm9:1010D0"
@@ -12465,7 +12465,7 @@
    "id": "arm9:93CB0",
    "font": "sys",
    "jp": "神聖属性の攻撃となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Holy-element attacks\nATK+1 DEF+1",
    "max": 36,
    "ptrs": [
     "arm9:1014D8"
@@ -12475,7 +12475,7 @@
    "id": "arm9:93CD4",
    "font": "sys",
    "jp": "昼間戦闘で、冷気属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Ice attacks in day battles\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:100CC8"
@@ -12485,7 +12485,7 @@
    "id": "arm9:93CF8",
    "font": "sys",
    "jp": "昼間戦闘で、雷撃属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Lightning attacks by day\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:100E90"
@@ -12495,7 +12495,7 @@
    "id": "arm9:93D1C",
    "font": "sys",
    "jp": "夜間戦闘で、神聖属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Holy attacks in night battles\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:100F08"
@@ -12505,7 +12505,7 @@
    "id": "arm9:93D40",
    "font": "sys",
    "jp": "夜間戦闘で、雷撃属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Lightning attacks at night\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:100FE0"
@@ -12515,7 +12515,7 @@
    "id": "arm9:93D64",
    "font": "sys",
    "jp": "夜間戦闘で、暗黒属性の攻撃となる\n▲ATK＋1",
-   "en": "",
+   "en": "Dark attacks in night battles\nATK+1",
    "max": 36,
    "ptrs": [
     "arm9:101070"
@@ -12525,7 +12525,7 @@
    "id": "arm9:93D88",
    "font": "sys",
    "jp": "夜間戦闘でHPが0になると\n一度だけHP12で復活する",
-   "en": "",
+   "en": "At 0 HP in night battles,\nrevive once with 12 HP",
    "max": 36,
    "ptrs": [
     "arm9:101088"
@@ -12535,7 +12535,7 @@
    "id": "arm9:93DAC",
    "font": "sys",
    "jp": "昼間戦闘で、火炎属性の攻撃となる\n▲DEF＋1",
-   "en": "",
+   "en": "Fire attacks in day battles\nDEF+1",
    "max": 36,
    "ptrs": [
     "arm9:1010A0"
@@ -12545,7 +12545,7 @@
    "id": "arm9:93DD0",
    "font": "sys",
    "jp": "密偵が他勢力の戦争や災害の\n状況をお伝えします",
-   "en": "",
+   "en": "Spies report on other factions'\nwars and disasters.",
    "max": 36,
    "ptrs": [
     "ov9_08:B64"
@@ -12555,7 +12555,7 @@
    "id": "arm9:93DF4",
    "font": "sys",
    "jp": "昼間戦闘で、火炎属性の攻撃となる\n▲ATK＋2",
-   "en": "",
+   "en": "Fire attacks in day battles\nATK+2",
    "max": 36,
    "ptrs": [
     "arm9:101400"
@@ -12565,7 +12565,7 @@
    "id": "arm9:93E18",
    "font": "sys",
    "jp": "4ーUnison以降、クリティカル\n攻撃となる　▲ATK＋1",
-   "en": "",
+   "en": "Critical hits from 4-Unison\non ATK+1",
    "max": 40,
    "ptrs": [
     "arm9:100AA0"
@@ -12575,7 +12575,7 @@
    "id": "arm9:93E40",
    "font": "sys",
    "jp": "3ーUnison以降、クリティカル\n攻撃となる　▲ATK＋1",
-   "en": "",
+   "en": "Critical hits from 3-Unison\non ATK+1",
    "max": 40,
    "ptrs": [
     "arm9:101820"
@@ -12585,7 +12585,7 @@
    "id": "arm9:93E68",
    "font": "sys",
    "jp": "草原地形で、4ーUnison以降\nクリティカル攻撃となる",
-   "en": "",
+   "en": "On grassland, critical hits\nfrom 4-Unison on",
    "max": 40,
    "ptrs": [
     "arm9:1019E8"
@@ -12595,7 +12595,7 @@
    "id": "arm9:93E90",
    "font": "sys",
    "jp": "HP6以下で、敵のガードを\nブレイクする攻撃　▲DEF＋1",
-   "en": "",
+   "en": "At 6 HP or less, attacks\nbreak guard DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:101A00"
@@ -12605,7 +12605,7 @@
    "id": "arm9:93EB8",
    "font": "sys",
    "jp": "ラスト30秒間、3ーUnison以降\nクリティカル攻撃となる",
-   "en": "",
+   "en": "Last 30 sec: critical hits\nfrom 3-Unison on",
    "max": 40,
    "ptrs": [
     "arm9:101A48"
@@ -12615,7 +12615,7 @@
    "id": "arm9:93EE0",
    "font": "sys",
    "jp": "戦争に勝利したので\n敵領土が自国領土に加わります",
-   "en": "",
+   "en": "You won, so the enemy's\nlands join your territory.",
    "max": 40,
    "ptrs": [
     "ov9_14:18E4"
@@ -12625,7 +12625,7 @@
    "id": "arm9:93F08",
    "font": "sys",
    "jp": "探索に派遣するユニットと\n派遣先の領土を決定します",
-   "en": "",
+   "en": "Choose units to send exploring\nand the territory to search.",
    "max": 40,
    "ptrs": [
     "ov9_13:15C0"
@@ -12635,7 +12635,7 @@
    "id": "arm9:93F30",
    "font": "sys",
    "jp": "詳しくは、チュートリアル→天の書\n「拠点について」を参照",
-   "en": "",
+   "en": "For details, see Tutorial,\nBook of Heaven: \"About Bases\"",
    "max": 40,
    "ptrs": [
     "arm9:10051C"
@@ -12645,7 +12645,7 @@
    "id": "arm9:93F58",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋3▼DEFー1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+3 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:101418"
@@ -12655,7 +12655,7 @@
    "id": "arm9:93F80",
    "font": "sys",
    "jp": "夜間戦闘でHPが0になると\n一度だけHP8、ATK6で復活",
-   "en": "",
+   "en": "At 0 HP in night battles,\nrevive once: 8 HP, ATK 6",
    "max": 40,
    "ptrs": [
     "arm9:1006F8"
@@ -12665,7 +12665,7 @@
    "id": "arm9:93FA8",
    "font": "sys",
    "jp": "敵のDEFを無視した攻撃となる\n▲ATK＋3　▼DEFー1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+3 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:101640"
@@ -12675,7 +12675,7 @@
    "id": "arm9:93FD0",
    "font": "sys",
    "jp": "HP6以下のとき、HPが徐々に回復\n[1HP／4sec]",
-   "en": "",
+   "en": "At 6 HP or less, HP slowly\nrecovers (1 HP/4 sec)",
    "max": 40,
    "ptrs": [
     "arm9:100878"
@@ -12685,7 +12685,7 @@
    "id": "arm9:93FF8",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▼ATKー1　▲DEF＋2",
-   "en": "",
+   "en": "Knockback distance halved\nATK-1 DEF+2",
    "max": 40,
    "ptrs": [
     "arm9:1009E0"
@@ -12695,7 +12695,7 @@
    "id": "arm9:94020",
    "font": "sys",
    "jp": "攻撃兵器を破壊可能になる\n▲ATK＋1　▼DEFー1",
-   "en": "",
+   "en": "Can destroy siege weapons\nATK+1 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:100B30"
@@ -12705,7 +12705,7 @@
    "id": "arm9:94048",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋1　▼DEFー1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+1 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:100E00"
@@ -12715,7 +12715,7 @@
    "id": "arm9:94070",
    "font": "sys",
    "jp": "HP6以下で、HP吸収攻撃となる\n[dm]▲ATK＋1",
-   "en": "",
+   "en": "At 6 HP or less, HP-drain\nattacks (heals dmg) ATK+1",
    "max": 40,
    "ptrs": [
     "arm9:101A60"
@@ -12725,7 +12725,7 @@
    "id": "arm9:94098",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▼ATKー1　▲DEF＋2",
-   "en": "",
+   "en": "Knockback distance halved\nATK-1 DEF+2",
    "max": 40,
    "ptrs": [
     "arm9:101190"
@@ -12735,7 +12735,7 @@
    "id": "arm9:940C0",
    "font": "sys",
    "jp": "敵のHPを0にすると、HPが3回復\n▲ATK＋3▼DEF＋2",
-   "en": "",
+   "en": "Felling a foe restores 3 HP\nATK+3 DEF+2",
    "max": 40,
    "ptrs": [
     "arm9:101250"
@@ -12745,7 +12745,7 @@
    "id": "arm9:940E8",
    "font": "sys",
    "jp": "水辺地形でHPが0になると\n一度だけHPランダムで復活する",
-   "en": "",
+   "en": "At 0 HP on waterside terrain,\nrevive once with random HP",
    "max": 40,
    "ptrs": [
     "arm9:101268"
@@ -12755,7 +12755,7 @@
    "id": "arm9:94110",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋2　▼DEFー1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+2 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:1014A8"
@@ -12765,7 +12765,7 @@
    "id": "arm9:94138",
    "font": "sys",
    "jp": "ラスト30秒間、HPが徐々に回復する\n[1HP／4sec]",
-   "en": "",
+   "en": "Last 30 sec: HP slowly\nrecovers (1 HP/4 sec)",
    "max": 40,
    "ptrs": [
     "arm9:101598"
@@ -12775,7 +12775,7 @@
    "id": "arm9:94160",
    "font": "sys",
    "jp": "水辺地形で、HPが徐々に回復する\n[1HP／4sec]",
-   "en": "",
+   "en": "On waterside, HP slowly\nrecovers (1 HP/4 sec)",
    "max": 40,
    "ptrs": [
     "arm9:1006B0"
@@ -12785,7 +12785,7 @@
    "id": "arm9:94188",
    "font": "sys",
    "jp": "以降、装備変更不可となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Can't be unequipped after this\nATK+1 DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:100710"
@@ -12795,7 +12795,7 @@
    "id": "arm9:941B0",
    "font": "sys",
    "jp": "夜間戦闘で、ノックバックされる\n距離が半減　▲DEF＋1",
-   "en": "",
+   "en": "Knockback distance halved\nat night DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:100758"
@@ -12805,7 +12805,7 @@
    "id": "arm9:941D8",
    "font": "sys",
    "jp": "草原地形で、HPが徐々に回復する\n[1HP／6sec]",
-   "en": "",
+   "en": "On grassland, HP slowly\nrecovers (1 HP/6 sec)",
    "max": 40,
    "ptrs": [
     "arm9:100770"
@@ -12815,7 +12815,7 @@
    "id": "arm9:94200",
    "font": "sys",
    "jp": "HP6以下のデュエルで、\n必ず先制攻撃となる　▲DEF＋1",
-   "en": "",
+   "en": "Always strike first in Duels\nat 6 HP or less DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:1016B8"
@@ -12825,7 +12825,7 @@
    "id": "arm9:94228",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+1 DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:100800"
@@ -12835,7 +12835,7 @@
    "id": "arm9:94250",
    "font": "sys",
    "jp": "ノックバックされる距離が半減する\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Knockback distance halved\nATK+1 DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:100998"
@@ -12845,7 +12845,7 @@
    "id": "arm9:94278",
    "font": "sys",
    "jp": "草原地形で、HPが徐々に回復する\n[1HP／6sec]",
-   "en": "",
+   "en": "On grassland, HP slowly\nrecovers (1 HP/6 sec)",
    "max": 40,
    "ptrs": [
     "arm9:100D70"
@@ -12855,7 +12855,7 @@
    "id": "arm9:942A0",
    "font": "sys",
    "jp": "森林地形で、HPが徐々に回復する\n[1HP／5sec]",
-   "en": "",
+   "en": "In forests, HP slowly\nrecovers (1 HP/5 sec)",
    "max": 40,
    "ptrs": [
     "arm9:100E48"
@@ -12865,7 +12865,7 @@
    "id": "arm9:942C8",
    "font": "sys",
    "jp": "敵のガードをブレイクする攻撃となる\n▲ATK＋3　▲DEF＋1",
-   "en": "",
+   "en": "Attacks break enemy guard\nATK+3 DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:100F80"
@@ -12875,7 +12875,7 @@
    "id": "arm9:942F0",
    "font": "sys",
    "jp": "砂漠地形で、HPが徐々に回復する\n[1HP／6sec]",
-   "en": "",
+   "en": "In deserts, HP slowly\nrecovers (1 HP/6 sec)",
    "max": 40,
    "ptrs": [
     "arm9:101010"
@@ -12885,7 +12885,7 @@
    "id": "arm9:94318",
    "font": "sys",
    "jp": "森林地形で、HPが徐々に回復する\n[1HP／5sec]",
-   "en": "",
+   "en": "In forests, HP slowly\nrecovers (1 HP/5 sec)",
    "max": 40,
    "ptrs": [
     "arm9:101040"
@@ -12895,7 +12895,7 @@
    "id": "arm9:94340",
    "font": "sys",
    "jp": "残り歩数が0になりました\n今回の探索はここで終了となります",
-   "en": "",
+   "en": "You have 0 steps left.\nThis exploration ends here.",
    "max": 40,
    "ptrs": [
     "ov9_13:5078"
@@ -12905,7 +12905,7 @@
    "id": "arm9:94368",
    "font": "sys",
    "jp": "ユニットが定員を超えています\n外すユニットを1人選択してください",
-   "en": "",
+   "en": "You have too many units.\nChoose 1 unit to remove.",
    "max": 40,
    "ptrs": [
     "arm9:86E34"
@@ -12915,7 +12915,7 @@
    "id": "arm9:94390",
    "font": "sys",
    "jp": "夜間戦闘で、HPが徐々に回復する\n[1HP／7sec]",
-   "en": "",
+   "en": "At night, HP slowly\nrecovers (1 HP/7 sec)",
    "max": 40,
    "ptrs": [
     "arm9:101118"
@@ -12925,7 +12925,7 @@
    "id": "arm9:943B8",
    "font": "sys",
    "jp": "森林地形で、敵のガードをブレイク\n▲ATK＋1　▼DEFー1",
-   "en": "",
+   "en": "Break enemy guard in forests\nATK+1 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:101508"
@@ -12935,7 +12935,7 @@
    "id": "arm9:943E0",
    "font": "sys",
    "jp": "HPが0になると、一度だけHPMAX\nATK6で復活　▲DEF＋2",
-   "en": "",
+   "en": "At 0 HP, revive once with\nfull HP, ATK 6 DEF+2",
    "max": 40,
    "ptrs": [
     "arm9:1009B0"
@@ -12945,7 +12945,7 @@
    "id": "arm9:94408",
    "font": "sys",
    "jp": "HP6以下のとき、HP吸収攻撃となる\n[dm]　▼DEFー1",
-   "en": "",
+   "en": "At 6 HP or less, HP-drain\nattacks (heals dmg) DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:100B00"
@@ -12955,7 +12955,7 @@
    "id": "arm9:94430",
    "font": "sys",
    "jp": "昼間戦闘のデュエルで、必ず\n先制攻撃となる　▲DEF＋1",
-   "en": "",
+   "en": "Always strike first in\nday-battle Duels DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:101850"
@@ -12965,7 +12965,7 @@
    "id": "arm9:94458",
    "font": "sys",
    "jp": "夜間戦闘のデュエルで、必ず\n先制攻撃となる　▲DEF＋1",
-   "en": "",
+   "en": "Always strike first in\nnight-battle Duels DEF+1",
    "max": 40,
    "ptrs": [
     "arm9:101958"
@@ -12975,7 +12975,7 @@
    "id": "arm9:94480",
    "font": "sys",
    "jp": "水辺地形で、敵のDEFを\n無効化した攻撃　▲ATK＋1",
-   "en": "",
+   "en": "On waterside, attacks ignore\nenemy DEF ATK+1",
    "max": 40,
    "ptrs": [
     "arm9:100DE8"
@@ -12985,7 +12985,7 @@
    "id": "arm9:944A8",
    "font": "sys",
    "jp": "敵のDEFを無効化した攻撃となる\n▲ATK＋2　▼DEFー1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+2 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:100F98"
@@ -12995,7 +12995,7 @@
    "id": "arm9:944D0",
    "font": "sys",
    "jp": "褒賞したアイテムの装備可否を確認し、\n褒賞を終了します",
-   "en": "",
+   "en": "Check who can equip the items\ngiven, then finish rewarding.",
    "max": 40,
    "ptrs": [
     "ov9_12:10C4"
@@ -13005,7 +13005,7 @@
    "id": "arm9:944F8",
    "font": "sys",
    "jp": "今回の発動カードを決定します\nカードにタッチして選択してください",
-   "en": "",
+   "en": "Choose this turn's card.\nTouch a card to select it.",
    "max": 40,
    "ptrs": [
     "ov9_16:101C"
@@ -13015,7 +13015,7 @@
    "id": "arm9:94520",
    "font": "sys",
    "jp": "HP吸収攻撃となる[dm／3]\n▲ATK＋1　▼DEFー1",
-   "en": "",
+   "en": "HP-drain attacks\n(heals dmg/3) ATK+1 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:101160"
@@ -13025,7 +13025,7 @@
    "id": "arm9:94548",
    "font": "sys",
    "jp": "敵のDEFを無効化した攻撃となる\n▲ATK＋1　▼DEFー1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+1 DEF-1",
    "max": 40,
    "ptrs": [
     "arm9:1011F0"
@@ -13035,7 +13035,7 @@
    "id": "arm9:94570",
    "font": "sys",
    "jp": "昼間戦闘で、敵のDEFを\n無効化した攻撃　▲ATK＋1",
-   "en": "",
+   "en": "In day battles, attacks ignore\nenemy DEF ATK+1",
    "max": 40,
    "ptrs": [
     "arm9:1013B8"
@@ -13045,7 +13045,7 @@
    "id": "arm9:94598",
    "font": "sys",
    "jp": "敵のDEFを無効化した攻撃となる\n▲ATK＋1　▲DEF＋1",
-   "en": "",
+   "en": "Attacks ignore enemy DEF\nATK+1 DEF+1",
    "max": 44,
    "ptrs": [
     "arm9:100818"
@@ -13055,7 +13055,7 @@
    "id": "arm9:945C4",
    "font": "sys",
    "jp": "夜間戦闘で、HP吸収攻撃となる\n[dm／3]▼ATKー2",
-   "en": "",
+   "en": "HP-drain attacks at night\n(heals dmg/3) ATK-2",
    "max": 44,
    "ptrs": [
     "arm9:100E18"
@@ -13065,7 +13065,7 @@
    "id": "arm9:945F0",
    "font": "sys",
    "jp": "探索に派遣したユニットの代理に\n名無し兵士が補充されます",
-   "en": "",
+   "en": "Nameless Soldiers fill in\nfor units sent exploring.",
    "max": 44,
    "ptrs": [
     "ov9_13:2644"
@@ -13075,7 +13075,7 @@
    "id": "arm9:9461C",
    "font": "sys",
    "jp": "詳しくは、チュートリアル→地の書\n「ユニゾンアタックについて」を参照",
-   "en": "",
+   "en": "For details, see Tutorial, Book of\nEarth: \"About Unison Attacks\"",
    "max": 44,
    "ptrs": [
     "arm9:100514"
@@ -13085,7 +13085,7 @@
    "id": "arm9:94648",
    "font": "sys",
    "jp": "森林地形で、3ーUnison以降\nクリティカル攻撃　▼DEFー1",
-   "en": "",
+   "en": "In forests, critical hits from\n3-Unison on DEF-1",
    "max": 44,
    "ptrs": [
     "arm9:100A58"
@@ -13095,7 +13095,7 @@
    "id": "arm9:94674",
    "font": "sys",
    "jp": "ラスト30秒間、2ーUnison以降\nクリティカル攻撃　▼DEFー1",
-   "en": "",
+   "en": "Last 30 sec: critical hits\nfrom 2-Unison on DEF-1",
    "max": 44,
    "ptrs": [
     "arm9:100AD0"
@@ -13105,7 +13105,7 @@
    "id": "arm9:946A0",
    "font": "sys",
    "jp": "夜間戦闘で、3ーUnison以降\nクリティカル攻撃　▼DEFー1",
-   "en": "",
+   "en": "At night, critical hits from\n3-Unison on DEF-1",
    "max": 44,
    "ptrs": [
     "arm9:100BC0"
@@ -13115,7 +13115,7 @@
    "id": "arm9:946CC",
    "font": "sys",
    "jp": "HP6以下で、4ーUnison以降\nクリティカル攻撃　▲DEF＋1",
-   "en": "",
+   "en": "At 6 HP or less, critical hits\nfrom 4-Unison on DEF+1",
    "max": 44,
    "ptrs": [
     "arm9:100CE0"
@@ -13125,7 +13125,7 @@
    "id": "arm9:946F8",
    "font": "sys",
    "jp": "ユニットやオブジェクトが重なった場合、\n選択ウィンドウが表示されます。",
-   "en": "",
+   "en": "When units or objects overlap,\na selection window appears.",
    "max": 44,
    "ptrs": [
     "arm9:F7A00"
@@ -13135,7 +13135,7 @@
    "id": "arm9:94724",
    "font": "sys",
    "jp": "詳しくは、チュートリアル→地の書\n「ユニットの移動方法」を参照",
-   "en": "",
+   "en": "For details, see Tutorial, Book of\nEarth: \"How to Move Units\"",
    "max": 44,
    "ptrs": [
     "arm9:10050C"
@@ -13145,7 +13145,7 @@
    "id": "arm9:94750",
    "font": "sys",
    "jp": "夜間戦闘で、HP吸収攻撃となる\n[dm／2]▲DEF＋1",
-   "en": "",
+   "en": "HP-drain attacks at night\n(heals dmg/2) DEF+1",
    "max": 44,
    "ptrs": [
     "arm9:101370"
@@ -13155,7 +13155,7 @@
    "id": "arm9:9477C",
    "font": "sys",
    "jp": "ラスト30秒間、HPが0になると\n一度だけHP12復活　▲DEF＋1",
-   "en": "",
+   "en": "Last 30 sec: at 0 HP, revive\nonce with 12 HP DEF+1",
    "max": 44,
    "ptrs": [
     "arm9:100830"
@@ -13165,7 +13165,7 @@
    "id": "arm9:947A8",
    "font": "sys",
    "jp": "ラスト30秒間、敵のDEFを無効\n化した攻撃となる　▲ATK＋3",
-   "en": "",
+   "en": "Last 30 sec: attacks ignore\nenemy DEF ATK+3",
    "max": 44,
    "ptrs": [
     "arm9:101970"
@@ -13175,7 +13175,7 @@
    "id": "arm9:947D4",
    "font": "sys",
    "jp": "詳しくは、チュートリアル→地の書\n「ユニットを出撃させるには」を参照",
-   "en": "",
+   "en": "For details, see Tutorial, Book of\nEarth: \"How to Deploy Units\"",
    "max": 44,
    "ptrs": [
     "arm9:100504"
@@ -13185,7 +13185,7 @@
    "id": "arm9:94800",
    "font": "sys",
    "jp": "派遣させるユニットを選択した後、\n探索を行う領土を選択してください",
-   "en": "",
+   "en": "Choose the units to send,\nthen the territory to explore.",
    "max": 44,
    "ptrs": [
     "ov9_13:25FC"
@@ -13195,7 +13195,7 @@
    "id": "arm9:9482C",
    "font": "sys",
    "jp": "配下ユニットが4人を超えました\n戦力から外すユニットを選択してください",
-   "en": "",
+   "en": "You have more than 4 units.\nChoose a unit to remove\nfrom your forces.",
    "max": 44,
    "ptrs": [
     "arm9:86E00"
@@ -13205,7 +13205,7 @@
    "id": "arm9:94858",
    "font": "sys",
    "jp": "HPが徐々に減少する　▲ATK＋3\n▼DEFー1[1HP／7sec]",
-   "en": "",
+   "en": "HP slowly drops ATK+3\nDEF-1 (1 HP/7 sec)",
    "max": 48,
    "ptrs": [
     "arm9:1017C0"
@@ -13215,7 +13215,7 @@
    "id": "arm9:94888",
    "font": "sys",
    "jp": "夜間戦闘で、HPが徐々に回復する\n[1HP／8sec]▼DEFー1",
-   "en": "",
+   "en": "At night, HP slowly recovers\n(1 HP/8 sec) DEF-1",
    "max": 48,
    "ptrs": [
     "arm9:1006C8"
@@ -13225,7 +13225,7 @@
    "id": "arm9:948B8",
    "font": "sys",
    "jp": "森林地形で、HPが徐々に回復する\n[1HP／4sec]▼ATKー2",
-   "en": "",
+   "en": "In forests, HP slowly recovers\n(1 HP/4 sec) ATK-2",
    "max": 48,
    "ptrs": [
     "arm9:1007A0"
@@ -13235,7 +13235,7 @@
    "id": "arm9:948E8",
    "font": "sys",
    "jp": "HP6以下のとき、HPが徐々に回復\n[1HP／4sec]▲DEF＋1",
-   "en": "",
+   "en": "At 6 HP or less, HP recovers\n(1 HP/4 sec) DEF+1",
    "max": 48,
    "ptrs": [
     "arm9:1009F8"
@@ -13245,7 +13245,7 @@
    "id": "arm9:94918",
    "font": "sys",
    "jp": "ユニットクラス別の武器の種類と\n無効属性、弱点属性の一覧です",
-   "en": "",
+   "en": "A list of each unit class's weapon\ntype, immunities and weaknesses.",
    "max": 48,
    "ptrs": [
     "arm9:8BBE4"
@@ -13255,7 +13255,7 @@
    "id": "arm9:94948",
    "font": "sys",
    "jp": "システムデータのセーブに失敗しました。\n電源を切りカードを差しなおしてください。",
-   "en": "",
+   "en": "Failed to save system data.\nTurn off the power and\nreinsert the Game Card.",
    "max": 48,
    "ptrs": [
     "ov9_03:294"
@@ -13265,7 +13265,7 @@
    "id": "arm9:94978",
    "font": "sys",
    "jp": "昼間戦闘で、HPが徐々に回復する\n[1HP／5sec]▼ATKー3",
-   "en": "",
+   "en": "By day, HP slowly recovers\n(1 HP/5 sec) ATK-3",
    "max": 48,
    "ptrs": [
     "arm9:1013D0"
@@ -13275,7 +13275,7 @@
    "id": "arm9:949A8",
    "font": "sys",
    "jp": "HP6以下で、HP吸収攻撃となる\n[dm]▲ATK＋3　▼DEFー1",
-   "en": "",
+   "en": "At 6 HP or less, HP-drain\n(heals dmg) ATK+3 DEF-1",
    "max": 48,
    "ptrs": [
     "arm9:101550"
@@ -13285,7 +13285,7 @@
    "id": "arm9:949D8",
    "font": "sys",
    "jp": "Hpが徐々に減少する　▲ATK＋2\n▲DEF＋2　[1HP／7sec]",
-   "en": "",
+   "en": "HP slowly drops ATK+2\nDEF+2 (1 HP/7 sec)",
    "max": 48,
    "ptrs": [
     "arm9:1007B8"
@@ -13295,7 +13295,7 @@
    "id": "arm9:94A08",
    "font": "sys",
    "jp": "ラスト30秒間、HPが徐々に減少する\n[1HP／2sec]▲ATK＋2",
-   "en": "",
+   "en": "Last 30 sec: HP slowly drops\n(1 HP/2 sec) ATK+2",
    "max": 48,
    "ptrs": [
     "arm9:101790"
@@ -13305,7 +13305,7 @@
    "id": "arm9:94A38",
    "font": "sys",
    "jp": "今回の作戦カードが決定しました\n効果は、発動するまで、お楽しみに・・・",
-   "en": "",
+   "en": "This turn's strategy card is set.\nIts effect is a surprise\nuntil it triggers...",
    "max": 48,
    "ptrs": [
     "ov9_16:FFC"
@@ -13315,7 +13315,7 @@
    "id": "arm9:94A68",
    "font": "sys",
    "jp": "昼間戦闘で、HPが徐々に回復する\n[1HP／8sec]　▼ATKー1",
-   "en": "",
+   "en": "By day, HP slowly recovers\n(1 HP/8 sec) ATK-1",
    "max": 48,
    "ptrs": [
     "arm9:1010E8"
@@ -13325,7 +13325,7 @@
    "id": "arm9:94A98",
    "font": "sys",
    "jp": "残り30秒HP徐々に減　▲ATK＋1\n▲DEF＋1[1HP／2sec]",
-   "en": "",
+   "en": "Last 30 sec: HP drops ATK+1\nDEF+1 (1 HP/2 sec)",
    "max": 48,
    "ptrs": [
     "arm9:101760"
@@ -13335,7 +13335,7 @@
    "id": "arm9:94AC8",
    "font": "sys",
    "jp": "ユニットにアイテムを褒賞します\n回復や装備を行い、次の戦争に備えましょう",
-   "en": "",
+   "en": "Reward your units with items.\nHeal and equip them to\nprepare for the next war.",
    "max": 48,
    "ptrs": [
     "ov9_12:1108"
@@ -13345,7 +13345,7 @@
    "id": "arm9:94AF8",
    "font": "sys",
    "jp": "プレイヤー勢力を選択してください\n点滅箇所が現在使用可能な勢力です",
-   "en": "",
+   "en": "Choose your faction.\nFlashing ones are available now.",
    "max": 48,
    "ptrs": [
     "ov9_18:1480"
@@ -13355,7 +13355,7 @@
    "id": "arm9:94B28",
    "font": "sys",
    "jp": "三角形の青い旗がプレイヤー側の本拠地\n赤い砦が敵側の本拠地です。",
-   "en": "",
+   "en": "The blue triangle flag is your\nhome base; the red fort is the\nenemy's.",
    "max": 52,
    "ptrs": [
     "arm9:F7AE4"
@@ -13365,7 +13365,7 @@
    "id": "arm9:94B5C",
    "font": "sys",
    "jp": "夜間戦闘で、HP吸収攻撃となる\n[dm／3]▲ATK＋2▼DEFー1",
-   "en": "",
+   "en": "HP-drain attacks at night\n(heals dmg/3) ATK+2 DEF-1",
    "max": 52,
    "ptrs": [
     "arm9:100A28"
@@ -13375,7 +13375,7 @@
    "id": "arm9:94B90",
    "font": "sys",
    "jp": "夜間戦闘で、HP吸収攻撃となる\n[dm／2]▲ATK＋3▼DEFー1",
-   "en": "",
+   "en": "HP-drain attacks at night\n(heals dmg/2) ATK+3 DEF-1",
    "max": 52,
    "ptrs": [
     "arm9:1019D0"
@@ -13385,7 +13385,7 @@
    "id": "arm9:94BC4",
    "font": "sys",
    "jp": "現在、実行中の戦争に関連した、\n各種記録獲得ポイントの一覧です",
-   "en": "",
+   "en": "A list of the records and points\nearned in the current war.",
    "max": 52,
    "ptrs": [
     "arm9:8D5C4"
@@ -13395,7 +13395,7 @@
    "id": "arm9:94BF8",
    "font": "sys",
    "jp": "まずはユニットを動かしてみましょう。\n青色のユニットにタッチペンを合わせて\nみてください。",
-   "en": "",
+   "en": "First, let's try moving a unit.\nTouch a blue unit with the\nstylus.",
    "max": 52,
    "ptrs": [
     "arm9:F79F8"
@@ -13405,7 +13405,7 @@
    "id": "arm9:94C2C",
    "font": "sys",
    "jp": "出撃する領土を選択してください\n自国に隣接した領土へのみ出撃可能です",
-   "en": "",
+   "en": "Choose a territory to attack.\nYou can only attack lands\nnext to your own.",
    "max": 52,
    "ptrs": [
     "ov9_17:14B8"
@@ -13415,7 +13415,7 @@
    "id": "arm9:94C60",
    "font": "sys",
    "jp": "マップ上に点在する拠点は占領する事で\n様々な恩恵を得ることが可能です。",
-   "en": "",
+   "en": "Capture the bases dotted around\nthe map to gain many benefits.",
    "max": 52,
    "ptrs": [
     "arm9:100518"
@@ -13425,7 +13425,7 @@
    "id": "arm9:94C94",
    "font": "sys",
    "jp": "ユニットクラス別の地形相性一覧です\n時間帯によって地形相性は変化します",
-   "en": "",
+   "en": "Terrain affinity by unit class.\nAffinity changes with the time of\nday.",
    "max": 52,
    "ptrs": [
     "arm9:8CCD4"
@@ -13435,7 +13435,7 @@
    "id": "arm9:94CC8",
    "font": "sys",
    "jp": "天ノ巻では主に、\nゲーム全体の概要や\n戦争以外に関する項目を説明します",
-   "en": "",
+   "en": "The Book of Heaven mainly\ncovers the game overview\nand topics other than war.",
    "max": 52,
    "ptrs": [
     "ov9_03:109C"
@@ -13445,7 +13445,7 @@
    "id": "arm9:94CFC",
    "font": "sys",
    "jp": "敵の移動速度を遅くしてリトライします。\n(獲得戦功値・探索ポイントが半減)",
-   "en": "",
+   "en": "Retry with slower enemies.\n(Merit and exploration\npoints halved)",
    "max": 56,
    "ptrs": [
     "arm9:7FA10"
@@ -13455,7 +13455,7 @@
    "id": "arm9:94D34",
    "font": "sys",
    "jp": "遠くに派遣すると、戻ってくるまでに\n時間がかかり、その間、戦争に参加\nできなくなります。",
-   "en": "",
+   "en": "Units sent far away take long\nto return, and can't fight in\nwars until they do.",
    "max": 56,
    "ptrs": [
     "arm9:F7AA4"
@@ -13465,7 +13465,7 @@
    "id": "arm9:94D6C",
    "font": "sys",
    "jp": "ここでは、他勢力の戦争の状況や災害の\n被災状況などの報告を密偵が行います。",
-   "en": "",
+   "en": "Here, spies report on other\nfactions' wars, disaster damage\nand more.",
    "max": 56,
    "ptrs": [
     "arm9:F7AB0"
@@ -13475,7 +13475,7 @@
    "id": "arm9:94DA4",
    "font": "sys",
    "jp": "本ゲームを遊んでいただく上で\n必要な情報を説明します\n下画面のメニューをタッチしてください",
-   "en": "",
+   "en": "This explains what you need\nto know to play.\nTouch a menu on the bottom screen.",
    "max": 60,
    "ptrs": [
     "ov9_03:10A4"
@@ -13485,7 +13485,7 @@
    "id": "arm9:94DE0",
    "font": "sys",
    "jp": "ここでは、攻め込む領土を選択します。\nプレイヤー領土に隣接した領土へのみ\n出撃可能です。",
-   "en": "",
+   "en": "Here, you choose a territory to\ninvade. You can only attack\nlands next to your own.",
    "max": 60,
    "ptrs": [
     "arm9:F79F0"
@@ -13495,7 +13495,7 @@
    "id": "arm9:94E1C",
    "font": "sys",
    "jp": "また、戦意の低いユニットを探索に\n派遣すると、脱走してしまうことが\nあるので注意が必要です。",
-   "en": "",
+   "en": "Also, be careful: units with low\nmorale sent to explore may\ndesert.",
    "max": 60,
    "ptrs": [
     "arm9:F7AA8"
@@ -13505,7 +13505,7 @@
    "id": "arm9:94E58",
    "font": "sys",
    "jp": "探索に派遣したユニットが\n持ち帰ったアイテムの報告をします。\n脱走した場合、戻ってきません。",
-   "en": "",
+   "en": "Reports items your explorers\nbrought back. Units that desert\nwon't return.",
    "max": 60,
    "ptrs": [
     "arm9:F7AB8"
@@ -13515,7 +13515,7 @@
    "id": "arm9:94E94",
    "font": "sys",
    "jp": "各オブジェクトにユニットが到達すると\n占領や破壊を行え、戦争を有利に進める\nことができます。",
-   "en": "",
+   "en": "A unit that reaches an object\ncan take or destroy it, giving\nyou the edge in the war.",
    "max": 60,
    "ptrs": [
     "arm9:F7A60"
@@ -13525,7 +13525,7 @@
    "id": "arm9:94ED0",
    "font": "sys",
    "jp": "ユニットが所持する武器相性の一覧です\nその相性により、攻守のダメージ値が\n大きく変化します",
-   "en": "",
+   "en": "A list of weapon affinities.\nAffinity greatly changes the\ndamage dealt and taken.",
    "max": 64,
    "ptrs": [
     "arm9:8DC88"
@@ -13535,7 +13535,7 @@
    "id": "arm9:94F10",
    "font": "sys",
    "jp": "特定のユニットクラスの組み合わせで\nデュエルが発生した場合、\nスマッシュヒット(強攻撃)が発生。",
-   "en": "",
+   "en": "When certain unit classes meet\nin a Duel, a Smash Hit (strong\nattack) occurs.",
    "max": 64,
    "ptrs": [
     "arm9:F7A50"
@@ -13545,7 +13545,7 @@
    "id": "arm9:94F50",
    "font": "sys",
    "jp": "敵味方それぞれの本拠地や都市の上にユニ\nットを配置すれば、HPを少しずつ回復さ\nせることができます。",
-   "en": "",
+   "en": "Place units on either side's\nhome base or a town to slowly\nrestore HP.",
    "max": 68,
    "ptrs": [
     "arm9:F7AD4"
@@ -13555,7 +13555,7 @@
    "id": "arm9:94F94",
    "font": "sys",
    "jp": "ユニットをタッチペンで掴んだ状態のまま\n移動させたい位置までカーソルをスライド\nし、タッチペンを離してみましょう。",
-   "en": "",
+   "en": "Hold a unit with the stylus,\nslide the cursor where you want\nit to go, then lift the stylus.",
    "max": 68,
    "ptrs": [
     "arm9:F7A0C"
@@ -13565,7 +13565,7 @@
    "id": "arm9:94FD8",
    "font": "sys",
    "jp": "出撃数には上限があります。オブジェクト\nを占領することで上限が増え、最大5人\nまで出撃可能です。",
-   "en": "",
+   "en": "There is a deploy limit.\nCapturing objects raises it, up\nto a maximum of 5 units.",
    "max": 68,
    "ptrs": [
     "arm9:F7A58"
@@ -13575,7 +13575,7 @@
    "id": "arm9:9501C",
    "font": "sys",
    "jp": "集落は普段隠れていて、ユニットが近づく\nと出現します。占領すると戦争後、探索を\n行うことができます。",
-   "en": "",
+   "en": "Villages stay hidden until a unit\ncomes near. Capture one to\nexplore after the war.",
    "max": 68,
    "ptrs": [
     "arm9:F7A70"
@@ -13585,7 +13585,7 @@
    "id": "arm9:95060",
    "font": "sys",
    "jp": "ユニットを選んで、下の出撃ボタンを\n押すと、ユニットが出撃します。\n開始直後は2体まで出撃が可能です。",
-   "en": "",
+   "en": "Choose a unit and press the\nSortie button below to deploy\nit. At first, up to 2 can deploy.",
    "max": 68,
    "ptrs": [
     "arm9:F7B00"
@@ -13595,7 +13595,7 @@
    "id": "arm9:950A4",
    "font": "sys",
    "jp": "これがユニゾンアタック、プレイヤーだけ\nの必殺技です。連続で決まれば、より大き\nなダメージを与えること可能です。",
-   "en": "",
+   "en": "This is the Unison Attack, your\nown special move. Chain them\nfor even more damage.",
    "max": 68,
    "ptrs": [
     "arm9:F7A38"
@@ -13605,7 +13605,7 @@
    "id": "arm9:950E8",
    "font": "sys",
    "jp": "ポイントを消費してユニットを探索に\n派遣し、アイテムを入手できます。\n1回につき最大4人まで派遣可能。",
-   "en": "",
+   "en": "Spend points to send units to\nexplore and get items. Up to 4\nunits can go at a time.",
    "max": 68,
    "ptrs": [
     "arm9:F7AA0"
@@ -13615,7 +13615,7 @@
    "id": "arm9:9512C",
    "font": "sys",
    "jp": "ただし、攻撃を受けたユニットが本拠地に\nいた場合。逆に攻撃を行った側のユニット\nがノックバックさせられます。",
-   "en": "",
+   "en": "But if the unit hit is on its home\nbase, the attacker suffers the\nKnockback instead.",
    "max": 68,
    "ptrs": [
     "arm9:F7ACC"
@@ -13625,7 +13625,7 @@
    "id": "arm9:95170",
    "font": "sys",
    "jp": "探索報告がない場合、メダリオンが\n支給されます。メダリオンではユニットを\n問わず、一定量回復が可能です。",
-   "en": "",
+   "en": "With no exploration report, you\nget Medallions, which restore a\nset amount to any unit.",
    "max": 72,
    "ptrs": [
     "arm9:F7AC0"
@@ -13635,7 +13635,7 @@
    "id": "arm9:951B8",
    "font": "sys",
    "jp": "ユニットクラスの武器の種類は固定されて\nいます。デュエルでは、互いの武器の相性\nによって優劣が発生します。",
-   "en": "",
+   "en": "Each class has a fixed weapon\ntype. In Duels, weapon affinity\ndecides who has the edge.",
    "max": 72,
    "ptrs": [
     "arm9:F7A48"
@@ -13645,7 +13645,7 @@
    "id": "arm9:95200",
    "font": "sys",
    "jp": "まずは、ユニットを出撃させましょう。\n三角形の旗(本拠地)をタッチすると\nユニット出撃画面に切り替わります。",
-   "en": "",
+   "en": "First, let's deploy a unit. Touch\nthe triangle flag (home base) to\nopen the unit deploy screen.",
    "max": 72,
    "ptrs": [
     "arm9:F7AF8"
@@ -13655,7 +13655,7 @@
    "id": "arm9:95248",
    "font": "sys",
    "jp": "アイテムを渡し、装備・回復が可能。\nユニットが好むアイテムを渡すと\n装備の可否を問わず戦意が回復します。",
-   "en": "",
+   "en": "Give items to equip or heal.\nItems a unit likes restore its\nmorale, equippable or not.",
    "max": 72,
    "ptrs": [
     "arm9:F7A98"
@@ -13665,7 +13665,7 @@
    "id": "arm9:95290",
    "font": "sys",
    "jp": "一定の条件を満たすことで\n他の勢力も使用可能になります。\n(使用条件は戦力確認から確認可能)",
-   "en": "",
+   "en": "Meet certain conditions to\nunlock other factions. (See the\nconditions in Check Forces.)",
    "max": 73,
    "ptrs": [
     "arm9:F79E0"
@@ -13675,7 +13675,7 @@
    "id": "arm9:952D8",
    "font": "sys",
    "jp": "あなたが使用する勢力を選択します。\n初期に選択できる勢力は、ファンタジニア\n王国とミラノ盗︀賊団の2勢力です。",
-   "en": "",
+   "en": "Choose your faction. At first\nyou can pick the Kingdom of\nFantasinia or Milanor's Thieves.",
    "max": 72,
    "ptrs": [
     "arm9:F79DC"
@@ -13685,7 +13685,7 @@
    "id": "arm9:95320",
    "font": "sys",
    "jp": "下画面にこのように大きく”Touch”\nと表示されたら、画面をタッチしてみまし\nょう。インパクトサークルが発生します。",
-   "en": "",
+   "en": "When a big \"Touch\" shows on\nthe bottom screen like this,\ntouch it for an Impact Circle.",
    "max": 72,
    "ptrs": [
     "arm9:F7A24"
@@ -13695,7 +13695,7 @@
    "id": "arm9:95368",
    "font": "sys",
    "jp": "フォーム上部のATTACKの文字を押す\nとユニゾンアタックが発生、入力した番号\nのユニットが続けて攻撃を行います。",
-   "en": "",
+   "en": "Press ATTACK atop the form for\na Unison Attack: the units you\nentered attack in order.",
    "max": 76,
    "ptrs": [
     "arm9:F7A30"
@@ -13705,7 +13705,7 @@
    "id": "arm9:953B4",
    "font": "sys",
    "jp": "装備条件を満たしていても、名無し兵士\nはアイテムを装備できません。アイテム\nで戦意を回復させることのみ可能です。",
-   "en": "",
+   "en": "Nameless Soldiers can't equip\nitems, even if they qualify. Items\nonly restore their morale.",
    "max": 76,
    "ptrs": [
     "arm9:F7AF0"
@@ -13715,7 +13715,7 @@
    "id": "arm9:95400",
    "font": "sys",
    "jp": "戦争に勝利したので、敵国の領土が\nプレイヤー勢力の領土となります。\n領主を倒すと一気に領土が拡大します。",
-   "en": "",
+   "en": "You won, so enemy lands\nbecome yours. Defeat the lord\nto take all their lands at once.",
    "max": 76,
    "ptrs": [
     "arm9:F7A88"
@@ -13725,7 +13725,7 @@
    "id": "arm9:9544C",
    "font": "sys",
    "jp": "この様にユニットは移動先に向かいます。\nマップ上に点在するオブジェクトにユニッ\nトが到達すると戦況を有利に運べます。",
-   "en": "",
+   "en": "Units head for their goal like\nthis. Reach the objects on the\nmap to gain an advantage.",
    "max": 76,
    "ptrs": [
     "arm9:F7A14"
@@ -13735,7 +13735,7 @@
    "id": "arm9:95498",
    "font": "sys",
    "jp": "敵ユニットと接触するとデュエル(決闘)\nに移行します。デュエルでは通常、\n敵・味方互いに1回ずつ攻撃を行います。",
-   "en": "",
+   "en": "Touching an enemy unit starts a\nDuel. Normally, each side\nattacks once in a Duel.",
    "max": 76,
    "ptrs": [
     "arm9:F7A1C"
@@ -13745,7 +13745,7 @@
    "id": "arm9:954E4",
    "font": "sys",
    "jp": "ここでは、以下の選択が行えます。\n・本拠地を選択⇒ユニット出撃画面\n・味方ユニット選択⇒移動指示が可能",
-   "en": "",
+   "en": "Here, you can choose:\n- Home base: unit deploy screen\n- Your unit: give move orders",
    "max": 76,
    "ptrs": [
     "arm9:F7A04"
@@ -13755,7 +13755,7 @@
    "id": "arm9:95530",
    "font": "sys",
    "jp": "敵本拠地にいる守将を倒し、占領すれば\n勝利。味方本拠地を占領されるかタイムが\n0になるとゲームオーバーとなります。",
-   "en": "",
+   "en": "Beat the commander and take\nthe enemy base to win. If yours\nfalls or time is up: game over.",
    "max": 76,
    "ptrs": [
     "arm9:F7AE8"
@@ -13765,7 +13765,7 @@
    "id": "arm9:9557C",
    "font": "sys",
    "jp": "カードごとに定められた発動時間が経過す\nると効果が発動します。プレイヤーに不利\nになるものもあるので注意が必要です。",
-   "en": "",
+   "en": "Each card triggers after its set\ntime. Some work against you, so\nbe careful.",
    "max": 76,
    "ptrs": [
     "arm9:F7A80"
@@ -13775,7 +13775,7 @@
    "id": "arm9:955C8",
    "font": "sys",
    "jp": "入力フォームが現れたら、サークル内に\nいる各ユニットの番号(戦闘開始時に出現\n・移動する数字)を記入してから、",
-   "en": "",
+   "en": "When the form appears, enter\nthe circled units' numbers (seen\nat battle start), then",
    "max": 76,
    "ptrs": [
     "arm9:F7A2C"
@@ -13785,7 +13785,7 @@
    "id": "arm9:95614",
    "font": "sys",
    "jp": "鑑定所は普段隠れていて、ユニットが近づ\nくと出現します。カード発動前に占領する\nと事前にカードの正体が分かります。",
-   "en": "",
+   "en": "Appraisers stay hidden until a\nunit nears. Take one before a\ncard triggers to learn the card.",
    "max": 80,
    "ptrs": [
     "arm9:F7A78"
@@ -13795,7 +13795,7 @@
    "id": "arm9:95664",
    "font": "sys",
    "jp": "地ノ巻では主に、\n戦争に関する項目を説明します\n本作品の特徴でもあるシステム\n「ユニゾンアタック」についても説明します",
-   "en": "",
+   "en": "The Book of Earth mainly covers\nwar topics, including this game's\nsignature system, the\n\"Unison Attack.\"",
    "max": 80,
    "ptrs": [
     "ov9_03:10A0"
@@ -13805,7 +13805,7 @@
    "id": "arm9:956B4",
    "font": "sys",
    "jp": "攻撃を受けた相手はその体制に応じて、\n攻撃を行ったユニットと正反対の方向に\nノックバック(強制移動)させられます。",
-   "en": "",
+   "en": "Depending on stance, the unit\nhit gets Knockback (forced\nmove) away from the attacker.",
    "max": 80,
    "ptrs": [
     "arm9:F7AC8"
@@ -13815,7 +13815,7 @@
    "id": "arm9:95704",
    "font": "sys",
    "jp": "ここでは、戦争中、一定時間経過で発動す\nるカードを1枚選択します。効果はプレイ\nヤーに有利なもの不利なものがあります。",
-   "en": "",
+   "en": "Here, choose one card that\ntriggers after a set time in the\nwar. It may help or hurt you.",
    "max": 80,
    "ptrs": [
     "arm9:F79E8"
@@ -13825,7 +13825,7 @@
    "id": "arm9:95754",
    "font": "sys",
    "jp": "昼と夜の時間帯があり、150秒経過する\nと時間帯が切り替わります。時間帯に\nよりユニットの地形相性が変化します。",
-   "en": "",
+   "en": "Day and night switch every 150\nseconds. The time of day\nchanges units' terrain affinity.",
    "max": 80,
    "ptrs": [
     "arm9:F7ADC"
@@ -13835,7 +13835,7 @@
    "id": "arm9:957A4",
    "font": "sys",
    "jp": "捕縛した敵国の守将の処遇を決定します。\n必要以上のダメージを与え、戦死させて\nしまうと、捕腐処遇は発生しません。",
-   "en": "",
+   "en": "Decide the fate of captured\ncommanders. Kill them with\nexcess damage: no prisoner.",
    "max": 80,
    "ptrs": [
     "arm9:F7A90"
@@ -13845,7 +13845,7 @@
    "id": "arm9:957F4",
    "font": "sys",
    "jp": "敵将が新戦力となるかは、勢力同士の\n相性次第です。相性が悪くても領土を\n広げていけば、仲間にする事は可能です。",
-   "en": "",
+   "en": "Faction affinity decides if a\nfoe joins. Even if poor,\nexpanding lets you recruit them.",
    "max": 80,
    "ptrs": [
     "arm9:F7B08"
@@ -13855,7 +13855,7 @@
    "id": "arm9:95844",
    "font": "sys",
    "jp": "デュエルの先攻後攻は、ユニットの移動\n速度で決まる頻度が高いです。停止状態\nでは後攻になる可能性が高いので注意!",
-   "en": "",
+   "en": "Duel turn order mostly follows\nmove speed. Units standing still\ntend to go second. Careful!",
    "max": 84,
    "ptrs": [
     "arm9:F7A40"
@@ -13865,7 +13865,7 @@
    "id": "arm9:95898",
    "font": "sys",
    "jp": "敵の攻撃兵器を占領すると、占領した側の\n兵器となり、相手ユニットにダメージを与\nえます。一部ユニット占領で破壊も可能。",
-   "en": "",
+   "en": "Capture an enemy siege weapon\nand it hits your foes. Some units\ncan destroy them instead.",
    "max": 84,
    "ptrs": [
     "arm9:F7A68"
@@ -13875,7 +13875,7 @@
    "id": "arm9:958EC",
    "font": "sys",
    "jp": "探索は、戦争中に集落を発見、占領\nすると　戦争終了後に発生します。\n　\n探索を行うには、ポイントが必要です。\nポイントは戦争中、デュエルや\nオブジェクト占領時に入手することが\nできます。",
-   "en": "",
+   "en": "Exploration takes place after a war\nif you found and captured a village\nduring it.\n \nExploring requires points. You earn\npoints during war from Duels and\nfrom capturing objects.",
    "max": 128,
    "ptrs": [
     "ov9_13:77C0"
@@ -13885,7 +13885,7 @@
    "id": "arm9:9596C",
    "font": "sys",
    "jp": "占領した領土にユニットを派遣して、\n簡単なダンジョン形式の宝箱探索を\n行うことができます。\n　\nダンジョンを限られた歩数内で移動し、\nうまく宝箱を発見できれば、アイテム\nを入手することができます。",
-   "en": "",
+   "en": "You can send units to a captured\nterritory to search a simple\ndungeon for treasure chests.\n \nMove through the dungeon within a\nlimited number of steps. Find a\nchest and you obtain an item.",
    "max": 128,
    "ptrs": [
     "ov9_13:77BC"
@@ -13895,7 +13895,7 @@
    "id": "arm9:959EC",
    "font": "sys",
    "jp": "探索はシンプルなダンジョン形式。\n前後左右に移動し、制限歩数内に、\n宝箱を発見できれば探索成功です。\n　\n歩数制限をオーバーしてしまうと、\n宝箱を持ち帰ることができず、\n探索失敗となります。",
-   "en": "",
+   "en": "Exploring is a simple dungeon. Move\nin four directions; find a chest\nwithin the step limit to succeed.\n \nExceed the step limit and you\ncannot bring the chest back: the\nexploration fails.",
    "max": 132,
    "ptrs": [
     "ov9_13:77CC"
@@ -13905,7 +13905,7 @@
    "id": "arm9:95A70",
    "font": "sys",
    "jp": "宝箱発見後の探索報告で、ユニットが\n逃亡することなく、戻ってくれば\nアイテムを入手することができます。\n　\n宝箱の種類や出現数は、様々な\n条件で変化します。何度も探索して\nいろいろ試してみましょう。",
-   "en": "",
+   "en": "After a chest is found, if the unit\nreturns in the report without\ndeserting, you get the item.\n \nChest types and numbers change\nwith various conditions. Explore\noften and try things out!",
    "max": 132,
    "ptrs": [
     "ov9_13:77D0"
@@ -13915,7 +13915,7 @@
    "id": "arm9:95AF4",
    "font": "sys",
    "jp": "最後にクリアした領土から数えて、\n遠い領土ほど、戻ってくるまでに\n時間(＝帰還ターン)を要します。\n　\n配下ユニットを探索に派遣し、戦争に\n参加できない場合、代わりに\n名無しユニットが参戦します。",
-   "en": "",
+   "en": "The farther a territory is from the\nlast one you cleared, the longer\n(return turns) units take to return.\n \nIf units out exploring cannot join a\nwar, nameless units fight instead.",
    "max": 132,
    "ptrs": [
     "ov9_13:77C8"
@@ -13925,7 +13925,7 @@
    "id": "arm9:95B78",
    "font": "sys",
    "jp": "探索に派遣できるユニットは、領主\n名無しを除いた配下ユニットです。\n一度に最大4人まで派遣できます。\n　\n探索に派遣したユニットの、戦意が\n低い場合、宝箱を発見しても、戻って\nこない場合があるので注意が必要です。",
-   "en": "",
+   "en": "You can send any of your units\nexcept your lord and nameless\nunits. Up to 4 can go at once.\n \nTake care: a unit with low morale\nmay not come back, even if it finds\na chest.",
    "max": 145,
    "ptrs": [
     "ov9_13:77C4"

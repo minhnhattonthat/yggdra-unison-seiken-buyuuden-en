@@ -5,7 +5,7 @@
    "id": "ov9_18:3740",
    "font": "end",
    "jp": "」が",
-   "en": "",
+   "en": "\" can now",
    "max": 4,
    "ptrs": [
     "ov9_18:142C"
@@ -25,7 +25,7 @@
    "id": "ov9_18:3748",
    "font": "end",
    "jp": "新たに「",
-   "en": "",
+   "en": "\"",
    "max": 8,
    "ptrs": [
     "ov9_18:1434"
@@ -35,7 +35,7 @@
    "id": "ov9_18:3750",
    "font": "end",
    "jp": "選択可能になりました!",
-   "en": "",
+   "en": "be selected!",
    "max": 16,
    "ptrs": [
     "ov9_18:1430"
@@ -45,7 +45,7 @@
    "id": "ov9_18:3760",
    "font": "end",
    "jp": "④最高ダメージ55以上",
-   "en": "",
+   "en": "4. Highest damage of 55 or more",
    "max": 20,
    "ptrs": [
     "ov9_18:3E74"
@@ -55,7 +55,7 @@
    "id": "ov9_18:3774",
    "font": "end",
    "jp": "⑥クリアした勢力が1種類以上",
-   "en": "",
+   "en": "6. Clear the game with 1+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E94"
@@ -65,7 +65,7 @@
    "id": "ov9_18:378C",
    "font": "end",
    "jp": "⑥クリアした勢力が3種類以上",
-   "en": "",
+   "en": "6. Clear the game with 3+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E1C"
@@ -75,7 +75,7 @@
    "id": "ov9_18:37A4",
    "font": "end",
    "jp": "①配下にパメラがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Pamela in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3EB0"
@@ -85,7 +85,7 @@
    "id": "ov9_18:37BC",
    "font": "end",
    "jp": "⑥クリアした勢力が9種類以上",
-   "en": "",
+   "en": "6. Clear the game with 9+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3EC4"
@@ -95,7 +95,7 @@
    "id": "ov9_18:37D4",
    "font": "end",
    "jp": "⑥クリアした勢力が4種類以上",
-   "en": "",
+   "en": "6. Clear the game with 4+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E34"
@@ -105,7 +105,7 @@
    "id": "ov9_18:37EC",
    "font": "end",
    "jp": "⑤過去最高ダメージが55以上",
-   "en": "",
+   "en": "5. All-time highest damage of 55+",
    "max": 24,
    "ptrs": [
     "ov9_18:3E18"
@@ -115,7 +115,7 @@
    "id": "ov9_18:3804",
    "font": "end",
    "jp": "⑥クリアした勢力が6種類以上",
-   "en": "",
+   "en": "6. Clear the game with 6+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E4C"
@@ -125,7 +125,7 @@
    "id": "ov9_18:381C",
    "font": "end",
    "jp": "⑤過去最高ダメージが65以上",
-   "en": "",
+   "en": "5. All-time highest damage of 65+",
    "max": 24,
    "ptrs": [
     "ov9_18:3E48"
@@ -135,7 +135,7 @@
    "id": "ov9_18:3834",
    "font": "end",
    "jp": "④過去最高ダメージが50以上",
-   "en": "",
+   "en": "4. All-time highest damage of 50+",
    "max": 24,
    "ptrs": [
     "ov9_18:3E5C"
@@ -145,7 +145,7 @@
    "id": "ov9_18:384C",
    "font": "end",
    "jp": "⑥クリアした勢力が8種類以上",
-   "en": "",
+   "en": "6. Clear the game with 8+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3EAC"
@@ -155,7 +155,7 @@
    "id": "ov9_18:3864",
    "font": "end",
    "jp": "⑥クリアした勢力が4種類以上",
-   "en": "",
+   "en": "6. Clear the game with 4+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E64"
@@ -165,7 +165,7 @@
    "id": "ov9_18:387C",
    "font": "end",
    "jp": "①配下にネシアがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Nessiah in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3EC8"
@@ -175,7 +175,7 @@
    "id": "ov9_18:3894",
    "font": "end",
    "jp": "⑥クリアした勢力が7種類以上",
-   "en": "",
+   "en": "6. Clear the game with 7+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3E7C"
@@ -185,7 +185,7 @@
    "id": "ov9_18:38AC",
    "font": "end",
    "jp": "①配下にドルトがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Dort in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E68"
@@ -195,7 +195,7 @@
    "id": "ov9_18:38C4",
    "font": "end",
    "jp": "⑥クリアした勢力が10種類以上",
-   "en": "",
+   "en": "6. Clear the game with 10+ factions",
    "max": 24,
    "ptrs": [
     "ov9_18:3DD4"
@@ -205,7 +205,7 @@
    "id": "ov9_18:38DC",
    "font": "end",
    "jp": "①配下にロザリィがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Rosary in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E38"
@@ -215,7 +215,7 @@
    "id": "ov9_18:38F4",
    "font": "end",
    "jp": "①配下にゴードンがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Gordon in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E98"
@@ -225,7 +225,7 @@
    "id": "ov9_18:390C",
    "font": "end",
    "jp": "①配下にオルデガがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Ortega in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E50"
@@ -235,7 +235,7 @@
    "id": "ov9_18:3924",
    "font": "end",
    "jp": "①配下にユベロンがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Juvelon in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E80"
@@ -245,7 +245,7 @@
    "id": "ov9_18:393C",
    "font": "end",
    "jp": "①配下にエメローネがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Emelone in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E08"
@@ -255,7 +255,7 @@
    "id": "ov9_18:3954",
    "font": "end",
    "jp": "①配下にロズウェルがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Roswell in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3E20"
@@ -265,7 +265,7 @@
    "id": "ov9_18:396C",
    "font": "end",
    "jp": "⑤ノーダメージステージクリア25回以上",
-   "en": "",
+   "en": "5. 25+ no-damage stage clears",
    "max": 24,
    "ptrs": [
     "ov9_18:3EA8"
@@ -275,7 +275,7 @@
    "id": "ov9_18:3984",
    "font": "end",
    "jp": "①配下にガルカーサがいる状態でクリア",
-   "en": "",
+   "en": "1. Clear with Gulcasa in your army",
    "max": 24,
    "ptrs": [
     "ov9_18:3DC0"
@@ -285,7 +285,7 @@
    "id": "ov9_18:399C",
    "font": "end",
    "jp": "③累計入手アイテム25種類以上",
-   "en": "",
+   "en": "3. 25+ kinds of items obtained in all",
    "max": 28,
    "ptrs": [
     "ov9_18:3E10"
@@ -295,7 +295,7 @@
    "id": "ov9_18:39B8",
    "font": "end",
    "jp": "③累計入手アイテム90種類以上",
-   "en": "",
+   "en": "3. 90+ kinds of items obtained in all",
    "max": 28,
    "ptrs": [
     "ov9_18:3E88"
@@ -305,7 +305,7 @@
    "id": "ov9_18:39D4",
    "font": "end",
    "jp": "③累計入手アイテム32種類以上",
-   "en": "",
+   "en": "3. 32+ kinds of items obtained in all",
    "max": 28,
    "ptrs": [
     "ov9_18:3E28"
@@ -315,7 +315,7 @@
    "id": "ov9_18:39F0",
    "font": "end",
    "jp": "②累計入手アイテム30種類以上",
-   "en": "",
+   "en": "2. 30+ kinds of items obtained in all",
    "max": 28,
    "ptrs": [
     "ov9_18:3E54"
@@ -325,7 +325,7 @@
    "id": "ov9_18:3A0C",
    "font": "end",
    "jp": "⑤1周の内で逃走ユニット20人以上",
-   "en": "",
+   "en": "5. 20+ units desert in one run",
    "max": 28,
    "ptrs": [
     "ov9_18:3E90"
@@ -335,7 +335,7 @@
    "id": "ov9_18:3A28",
    "font": "end",
    "jp": "⑤1周の内で逃走ユニット10人以上",
-   "en": "",
+   "en": "5. 10+ units desert in one run",
    "max": 28,
    "ptrs": [
     "ov9_18:3E78"
@@ -345,7 +345,7 @@
    "id": "ov9_18:3A44",
    "font": "end",
    "jp": "②1周の内でデュエルイベントを30回以上",
-   "en": "",
+   "en": "2. 30+ Duel Events in one run",
    "max": 28,
    "ptrs": [
     "ov9_18:3E9C"
@@ -355,7 +355,7 @@
    "id": "ov9_18:3A60",
    "font": "end",
    "jp": "③1回の戦争中、キルアウトを10回以上",
-   "en": "",
+   "en": "3. 10+ Kill Outs in a single war",
    "max": 28,
    "ptrs": [
     "ov9_18:3DC8"
@@ -365,7 +365,7 @@
    "id": "ov9_18:3A7C",
    "font": "end",
    "jp": "③1周の内で探索成功数80回以上",
-   "en": "",
+   "en": "3. 80+ explorations won in one run",
    "max": 28,
    "ptrs": [
     "ov9_18:3E70"
@@ -375,7 +375,7 @@
    "id": "ov9_18:3A98",
    "font": "end",
    "jp": "④1周の中で敵を倒した数が100体以上",
-   "en": "",
+   "en": "4. 100+ enemies defeated in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3DCC"
@@ -385,7 +385,7 @@
    "id": "ov9_18:3AB8",
    "font": "end",
    "jp": "⑤クリア時の配下ユニットが全て領主ユニット",
-   "en": "",
+   "en": "5. Clear with only lord units in army",
    "max": 32,
    "ptrs": [
     "ov9_18:3DD0"
@@ -395,7 +395,7 @@
    "id": "ov9_18:3AD8",
    "font": "end",
    "jp": "③1回の戦争でユニゾンアタックを30回以上",
-   "en": "",
+   "en": "3. 30+ Unison Attacks in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3EB8"
@@ -405,7 +405,7 @@
    "id": "ov9_18:3AF8",
    "font": "end",
    "jp": "②1回の戦争でユニゾンアタックを35回以上",
-   "en": "",
+   "en": "2. 35+ Unison Attacks in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3E0C"
@@ -415,7 +415,7 @@
    "id": "ov9_18:3B18",
    "font": "end",
    "jp": "④1回の戦争でスマッシュヒットを30回以上",
-   "en": "",
+   "en": "4. 30+ Smash Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3EBC"
@@ -425,7 +425,7 @@
    "id": "ov9_18:3B38",
    "font": "end",
    "jp": "②1回の戦争でスマッシュヒットを20回以上",
-   "en": "",
+   "en": "2. 20+ Smash Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3E24"
@@ -435,7 +435,7 @@
    "id": "ov9_18:3B58",
    "font": "end",
    "jp": "⑤1回の戦争でクリティカルヒット30回以上",
-   "en": "",
+   "en": "5. 30+ Critical Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3EC0"
@@ -445,7 +445,7 @@
    "id": "ov9_18:3B78",
    "font": "end",
    "jp": "②1周の内で仲間にしたユニット数15以上",
-   "en": "",
+   "en": "2. 15+ units recruited in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E3C"
@@ -455,7 +455,7 @@
    "id": "ov9_18:3B98",
    "font": "end",
    "jp": "③1回の戦争でクリティカルヒット10回以上",
-   "en": "",
+   "en": "3. 10+ Critical Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3E40"
@@ -465,7 +465,7 @@
    "id": "ov9_18:3BB8",
    "font": "end",
    "jp": "④1周の内でオブジェクト占領150回以上",
-   "en": "",
+   "en": "4. 150+ objects captured in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E44"
@@ -475,7 +475,7 @@
    "id": "ov9_18:3BD8",
    "font": "end",
    "jp": "③1周の内で敵を倒した数が150体以上",
-   "en": "",
+   "en": "3. 150+ enemies defeated in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3EA0"
@@ -485,7 +485,7 @@
    "id": "ov9_18:3BF8",
    "font": "end",
    "jp": "②1回の戦争でスマッシュヒットが15回以上",
-   "en": "",
+   "en": "2. 15+ Smash Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3E6C"
@@ -495,7 +495,7 @@
    "id": "ov9_18:3C18",
    "font": "end",
    "jp": "②1回の戦争でスマッシュヒットを25回以上",
-   "en": "",
+   "en": "2. 25+ Smash Hits in a single war",
    "max": 32,
    "ptrs": [
     "ov9_18:3DC4"
@@ -505,7 +505,7 @@
    "id": "ov9_18:3C38",
    "font": "end",
    "jp": "④1周の中で探索成功回数40回以上",
-   "en": "",
+   "en": "4. 40+ explorations won in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E14"
@@ -515,7 +515,7 @@
    "id": "ov9_18:3C58",
    "font": "end",
    "jp": "⑤1周の内で探索成功回数65回以上",
-   "en": "",
+   "en": "5. 65+ explorations won in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E30"
@@ -525,7 +525,7 @@
    "id": "ov9_18:3C78",
    "font": "end",
    "jp": "④1周の内で敵将戦死回数25回以上",
-   "en": "",
+   "en": "4. 25+ foe generals killed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3EA4"
@@ -535,7 +535,7 @@
    "id": "ov9_18:3C98",
    "font": "end",
    "jp": "⑤1周の内で敵将戦死回数12回以上",
-   "en": "",
+   "en": "5. 12+ foe generals killed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E60"
@@ -545,7 +545,7 @@
    "id": "ov9_18:3CB8",
    "font": "end",
    "jp": "②1周の内で兵器占領回数30回以上",
-   "en": "",
+   "en": "2. 30+ weapons captured in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3EB4"
@@ -555,7 +555,7 @@
    "id": "ov9_18:3CD8",
    "font": "end",
    "jp": "②1周の内で戦力外通告ユニット20人以上",
-   "en": "",
+   "en": "2. 20+ units dismissed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E84"
@@ -565,7 +565,7 @@
    "id": "ov9_18:3CF8",
    "font": "end",
    "jp": "④1周の内でオブジェクト破壊回数60回以上",
-   "en": "",
+   "en": "4. 60+ objects destroyed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E8C"
@@ -575,7 +575,7 @@
    "id": "ov9_18:3D18",
    "font": "end",
    "jp": "④1周の内でオブジェクト破壊回数40回以上",
-   "en": "",
+   "en": "4. 40+ objects destroyed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E2C"
@@ -585,7 +585,7 @@
    "id": "ov9_18:3D38",
    "font": "end",
    "jp": "③1周の内で戦力外通告ユニット10人以上",
-   "en": "",
+   "en": "3. 10+ units dismissed in one run",
    "max": 32,
    "ptrs": [
     "ov9_18:3E58"
@@ -595,7 +595,7 @@
    "id": "ov9_18:3D58",
    "font": "end",
    "jp": "▼以下の条件のうち、いずれか　つ達成すれば、\n選択中の勢力をプレイヤー勢力として選択可能",
-   "en": "",
+   "en": "Unlock by meeting any    of the\nconditions below to play this army.",
    "max": 61,
    "ptrs": [
     "ov9_18:3728"

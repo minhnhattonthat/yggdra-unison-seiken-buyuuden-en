@@ -5,7 +5,7 @@
    "id": "ov9_05:340",
    "font": "sys",
    "jp": "データの読み込みに失敗しました。\n電源を切りカードを差しなおしてください。",
-   "en": "",
+   "en": "Failed to load data. Turn off the\npower and reinsert the Game Card.",
    "max": 45,
    "ptrs": [
     "ov9_05:334"

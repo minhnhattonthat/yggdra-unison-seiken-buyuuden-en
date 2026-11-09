@@ -5,37 +5,37 @@
   {
    "id": "TUTO01_16:0060",
    "jp": "属性について\nご説明いたします!!",
-   "en": ""
+   "en": "Allow me to explain\nelements!!"
   },
   {
    "id": "TUTO01_16:0076",
    "jp": "ユニットは無効属性と\n弱点属性の二つを持ちます",
-   "en": ""
+   "en": "Each unit has a null\nand a weak element."
   },
   {
    "id": "TUTO01_16:0098",
    "jp": "属性は6種類から\n構成されます",
-   "en": ""
+   "en": "There are six elements\nin all."
   },
   {
    "id": "TUTO01_16:00AE",
    "jp": "属性は主にカード効果に\n影響します",
-   "en": ""
+   "en": "Elements mainly\naffect card effects."
   },
   {
    "id": "TUTO01_16:00C7",
    "jp": "特定アイテムを装備すると、\n属性攻撃が行えます",
-   "en": ""
+   "en": "Equip certain items\nfor element attacks."
   },
   {
    "id": "TUTO01_16:00E7",
    "jp": "属性攻撃をした時、相手に\n与えられるダメージが2倍に",
-   "en": ""
+   "en": "Element attacks deal\ndouble damage,"
   },
   {
    "id": "TUTO01_16:010B",
    "jp": "逆に無効属性だった場合は\nダメージは0になります",
-   "en": ""
+   "en": "but against a null\nelement, damage is 0."
   }
  ]
 }
