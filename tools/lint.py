@@ -94,7 +94,46 @@ def check_string(s, font):
     return errs, (len(lines) if r["status"] == "guess" else 0)
 
 
+@cache
+def all_strings():
+    return {s["id"]: s for p in sorted((ROOT / "script").rglob("*.json")) if p.name != "windows.json"
+            for s in json.loads(p.read_text(encoding="utf-8"))["strings"]}
+
+
+def part_texts(part):
+    """English of one composite part: a string id, "table:START+F" (every string of that table field) or "'text"
+    (a literal the code inserts, e.g. a digit). [] while untranslated."""
+    if part.startswith("'"):
+        return [part[1:]]
+    if part.startswith("table:"):
+        ids = [sid for sid, f in table_fields().items() if f == part[6:]]
+    else:
+        ids = [part]
+    return [all_strings()[i]["en"] for i in ids if all_strings().get(i, {}).get("en")]
+
+
+def check_composite(c, texts=part_texts):
+    """Strings the code concatenates (0x020132E0) into one draw: every combination, line by line, within c's px."""
+    import itertools
+    parts = [texts(p) for p in c["parts"]]
+    if not all(parts):
+        return []
+    errs = set()
+    for combo in itertools.product(*parts):
+        lines = "".join(combo).split("\n")
+        if len(lines) > c["lines"]:
+            errs.add(f"{len(lines)} lines > {c['lines']}")
+        for n, line in enumerate(lines, 1):
+            if line_px(line) > c["px"]:
+                errs.add(f"line {n} {line_px(line)} px > {c['px']}: {line!r}")
+    return sorted(f"composite {'+'.join(c['parts'])} ({c['box']}): {e}" for e in errs)
+
+
 def selftest():
+    c = {"parts": ["a", "'0", "b"], "px": 60, "lines": 1, "box": "t"}
+    assert len(check_composite(c, lambda p: {"a": ["Hi "], "b": ["ok", "x\ny", "W" * 12]}.get(p, [p[1:]]))) == 2
+    assert check_composite(c, lambda p: {"a": ["Hi "], "b": ["ok"]}.get(p, [p[1:]])) == []
+    assert check_composite(c, lambda p: {"a": []}.get(p, [p[1:]])) == []
     s = {"id": "MESSAGE154:0240", "jp": "あ", "en": "Hi"}
     assert check_string(s, "mes") == ([], 0)
     assert check_string({**s, "en": "a\nb\nc"}, "mes")[0]
@@ -117,6 +156,8 @@ def main():
             errors += [f"{s['id']}: {m}" for m in e]
             guess += g
             done += bool(s.get("en"))
+    for c in json.loads((ROOT / "script/windows.json").read_text(encoding="utf-8")).get("composites", []):
+        errors += check_composite(c)
     for e in errors:
         print(e)
     print(f"lint: {done} strings with English, {len(errors)} errors, {guess} lines held to guessed budgets")

@@ -46,7 +46,26 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 | sound mode ticker (ov9_06, y 174, scrolls): BGM00： label, title at label x + 66 | run | label 66; title guess | measured label |
 | card dictionary / card select info panels | - | - | textures (CDS_*, graphics.md), not system text |
 | tutorial menu (ov9_03): topic list x 20 on a sloped bar (row top ends 152); page title x 67 y 115 (bar slope ~200); description x 49 y 135, 3 lines, to the screen edge | run | title 130, description 204 x 3 | measured (work/play/tour_tuto 0001-0002) |
-| everything else (unlocks ov9_18, explore pages, battle unit / data pages arm9 0x0208xxxx, save prompts, territory / faction / unit / class / card names outside the encyclopedia) | | 240 x 3 / 100 x 1 guesses | screens not toured yet; `tools/drawsites.py` lists every call site with its constant x/y |
+| battle: sortie hint x 23 y 162 = 91F4C + digit + 91EDC (one run) | run 0x02051688 | 216 each, composite 225 | measured (tour_bt 0008) |
+| battle CAUTION band (bottom y 161, 1 line) | ctr 0x02010BA4 | 240 x 1 | measured (tour_bt2 sheet) |
+| battle data pages (SELECT menu > unit info / weapon affinity / duel data): description x 20 y 38 to the screen edge | run 0x0208BB9C.. | 228 x 3 | measured (tour_bt 0018-0026) |
+| duel data labels (top x 30, number at x 198) = table 101CAC+0 | run 0x0208CEB0 | 164 | measured |
+| territory (ov9_14): captured / capital-taken messages = composites (army / faction lands / territory tables), centred band y 81 | run, x from count11 | composite 240 x 2 | measured (tour_te 0002) |
+| territory 'expanding' line + animated dots | run y 90 | 180 | measured |
+| explore help pages (ov9_13): title x 5 y 7, body x 12 y 28 | run | title 240, body 236 x 7 | measured (tour_exp 0001) |
+| war data (turn end > 戦争データ, ov9_02): label x 39, number to 217, unit x 217 | run | label 130, unit 37 | measured (tour_exp 0006) |
+| medallion line (ov9_10) centred band y 90 | run | 240 x 1 | measured (tour_me 0002) |
+| medallion Get Item! popup: item-font name, centred after the icon | run font 2 | 168 (= system-font copy) | measured |
+| war report event line under the banner (top x 40/45 y 130) | run ov9_08 | 210 | measured (tour_wr 0004 sheet) |
+| faction conditions page (使用条件, ov9_18): header 2 lines x 8 y 21 (count digit at fixed x 162!), rows x 8 y 57..147 | run | 240 x 2 / 240 | measured (tour_fs 0003) |
+| faction unlock message (option menu 0x0201038C band y 80/96): 3748 + faction name + 3740, then 3750 | run | composite 240 | measured (tour_un 0004, tools/lua/unlock.lua) |
+| save / load prompts (ov9_19, ov9_15, ov9_05) | ctr 0x020102F8 | 240 x 2 | measured (save band) |
+| in-game HELP popup (help on at new game): title x 22 y 59, body x 24 y 76 x 3 lines, frame at 236 = table F79D8+0 | run 0x02011168 / 0x020111AC | 210 / 210 x 3 | measured (tour_hp 0006) |
+| textures, no system text: battle menu (SELECT), L unit panel, unit status, unit lists, sortie territory panel, faction info panel, VS names | | | toured 2026-11-10 |
+| still guessed: unit names F5380, class names F5B88, cards A7E44, extras ov9_06 menus/messages, 100500 battle tips, explore unit select (ov9_13 x 32 / x 30), prize popup x 23 y 116, ending results ov9_15 x 102 | | 240 x 3 / 100 x 1 | not drawn as system text on any toured screen yet |
+
+**Composites** (`composites` in windows.json, checked by lint): strings 0x020132E0 joins before one draw; lint tries every
+combination of the parts (ids, `table:` fields, literal `'0`) line by line.
 
 **Tables:** `tools/ptrtables.py` groups the 1,282 table-pointed strings by data table and field (territories
 A71F0 +0, factions A7D00 +0/+4/+8, cards A7E44 +0 name / +4 one-liner, units F5380 +0 / +4, classes F5B88,

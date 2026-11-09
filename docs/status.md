@@ -2,8 +2,27 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text relocated and packed into
-  16 px cells; submenu tours under way: item encyclopedia + tutorial menu measured; rest + battle SPMES box next).
+- **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text packed; most submenus toured
+  and measured, see docs/re/windows.md; left: unit/class/card names, extras menus, battle SPMES box).
+- **Phase 5 session 5 (2026-11-10):**
+  - Toured + measured (windows.json, windows.md table): battle (sortie hint, CAUTION band, SELECT menu data pages,
+    duel labels), territory composites, explore help pages, war data, medallion line + Get Item! popup, war report
+    event line, faction conditions page + unlock message, save prompts, in-game HELP popup (F79D8). Battle menu =
+    SELECT; L = unit panel (textures); tap the pen cursor = sortie unit list.
+  - `lint.py` composites: windows.json `composites` (ids, `table:START+F`, `'0` literal), every combination checked.
+  - `tools/lua/unlock.lua` (new-unlock bits) shows the faction unlock message; help popups need OK on the new-game
+    help prompt (tour_hp).
+  - Marker build artefact, not a bug: marker dialogue lines (unfilled, ~2x the box) overrun the dialogue's 32 glyph
+    slots into system slots 32+ (war report: event line glyphs replaced dialogue line 2). Real lines <= 142 px x 2
+    use <= 20 cells. JP build (yggdra_en) same frame is clean (work/qa/wrchk).
+  - **Phase 7 to-do:** faction conditions header digit at fixed x 162 (ov9_18 near 0x0211EE48, immediate: set it
+    after translation); option menu 0x0201038C centring by glyph count (unlock message line 2 at x 46): centre by px.
+  - Last marker build after the new rules: sha1 f75355a9 (smoke ok); states regenerated from it (work/qa/regen.log).
+- **Next (phase 5 rest):** find where unit names (F5380 +0/+4), class names (F5B88), card names/one-liners (A7E44)
+  are drawn as system text (tours showed only textures: try explore unit select ov9_13 x 32/x 30, prize popup ov9_12,
+  card select info); extras ov9_06 menus (48 labels: card/sound/item dictionaries); 100500 battle tips; battle SPMES
+  box (debug-tool gap). Then re-tour a few changed boxes on the new marker build (help popup, data pages) to confirm
+  the new px fill fits, and close phase 5.
 - **Phase 5 session 4 (2026-11-10):**
   - Tour kit: `tools/tour.py` (play.py step + systrace log per screen), `tools/drawsites.py` (all 106 system-text
     call sites, constant x/y), `tools/ptrtables.py` (string -> data table + field; lint rule key `"table"`),
@@ -16,7 +35,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Battle (tour_bt): the diamond button and START did nothing in the paused pre-battle state; find how to open
     the battle menu / unit info (arm9 0x02080D88.. run sites x 40/197 y 48-133 = a status panel; 0x0208BB9C.. x 20
     y 38 = data pages 武器相性 / 地形相性 / 記録).
-- **Next (phase 5 rest):** tour with tools/tour.py: battle menus + unit panel; sortie map (territory / faction
+- **Next as of session 4 (mostly done in session 5):** tour with tools/tour.py: battle menus + unit panel; sortie map (territory / faction
   names); territory ov9_14, explore ov9_13, medallion ov9_10, prize popup ov9_12, turn end ov9_02, war report
   ov9_08, faction select ov9_18 (unlock text), save/load ov9_19; then card names/one-liners (A7E44), unit names
   (F5380), class names (F5B88), F79D8 help strings. Rebuild the marker (new px) and regen states after.
