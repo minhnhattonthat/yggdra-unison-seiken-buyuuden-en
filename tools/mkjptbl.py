@@ -46,7 +46,7 @@ def main():
     for g in range(NGLYPH):
         lines.append(f"{code_of(g)}={chars.get(g, '{g:%03X}' % g)}")
     (ROOT / "tbl").mkdir(exist_ok=True)
-    (ROOT / "tbl/jp.tbl").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ROOT / "tbl/jp.tbl").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     print(f"tbl/jp.tbl: {NGLYPH} codes, {len(chars)} read")
 
 
