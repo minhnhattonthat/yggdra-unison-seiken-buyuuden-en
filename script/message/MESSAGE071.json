@@ -25,7 +25,7 @@
   {
    "id": "MESSAGE071:04F8",
    "jp": "見事な腕前…です",
-   "en": ""
+   "en": "Your skill is...\nsplendid."
   },
   {
    "id": "MESSAGE071:0505",
@@ -40,7 +40,7 @@
   {
    "id": "MESSAGE071:0518",
    "jp": "な…何ということだ……!",
-   "en": ""
+   "en": "Wh-what is this...!"
   },
   {
    "id": "MESSAGE071:0526",
@@ -50,7 +50,7 @@
   {
    "id": "MESSAGE071:0535",
    "jp": "強くなられたな…",
-   "en": ""
+   "en": "Thou hast grown\nstrong..."
   },
   {
    "id": "MESSAGE071:053F",
@@ -60,7 +60,7 @@
   {
    "id": "MESSAGE071:0549",
    "jp": "やっぱりダメなのかな…",
-   "en": ""
+   "en": "Guess I'm no good\nafter all..."
   },
   {
    "id": "MESSAGE071:0555",
@@ -70,7 +70,7 @@
   {
    "id": "MESSAGE071:0564",
    "jp": "強くなりましたね…",
-   "en": ""
+   "en": "You have grown\nstrong..."
   },
   {
    "id": "MESSAGE071:056F",
@@ -85,7 +85,7 @@
   {
    "id": "MESSAGE071:0594",
    "jp": "こんな青二才に…",
-   "en": ""
+   "en": "To a greenhorn\nlike this..."
   },
   {
    "id": "MESSAGE071:05A0",
@@ -110,7 +110,7 @@
   {
    "id": "MESSAGE071:05DE",
    "jp": "ガキが、やってくれるぜ…",
-   "en": ""
+   "en": "Damn brat, ya\ngot me good..."
   },
   {
    "id": "MESSAGE071:05EB",
@@ -135,12 +135,12 @@
   {
    "id": "MESSAGE071:0620",
    "jp": "腐れ騎士ごときに…",
-   "en": ""
+   "en": "To a mere rotten\nknight..."
   },
   {
    "id": "MESSAGE071:062D",
    "jp": "やめろ、やめてくれ!",
-   "en": ""
+   "en": "Stop, please stop!"
   },
   {
    "id": "MESSAGE071:0638",
@@ -170,7 +170,7 @@
   {
    "id": "MESSAGE071:0675",
    "jp": "グワォ…グワォォォ~…!!",
-   "en": ""
+   "en": "Grwao... Grwaooo~...!!"
   },
   {
    "id": "MESSAGE071:0683",
@@ -180,12 +180,12 @@
   {
    "id": "MESSAGE071:0695",
    "jp": "素敵な殿方に討たれるのなら\n…本望ですわ",
-   "en": ""
+   "en": "To fall to such a\nlovely man... so be it."
   },
   {
    "id": "MESSAGE071:06B1",
    "jp": "私が敗れるとは…",
-   "en": ""
+   "en": "That I would be\ndefeated..."
   }
  ]
 }

@@ -26,7 +26,7 @@ MAX_ENTRIES = 150
 FAMILY_ORDER = ["system", "tuto", "message", "spmes", "edmes"]
 
 # ---- ADAPTER: this game's text format ----
-TOKEN = re.compile(r"\[[^\]\n]*\]")  # this game has no inline control codes; kept for the shared rules
+TOKEN = re.compile(r"(?!)")  # no inline control codes in this game ([dm／2] in effect text is literal text)
 FREE = set()
 VARIABLE = r"\[var[^\]]*\]"
 HONORIFICS = {"さん": "-san", "ちゃん": "-chan", "くん": "-kun", "殿": "-dono", "様": "-sama"}  # D1, after a name

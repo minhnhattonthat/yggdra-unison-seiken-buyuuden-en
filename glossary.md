@@ -210,3 +210,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   Mamorigami unit); オレ様 = Inzaghi's boastful "me" (the great me), never a name + -sama.
 - b025-b032: 姐さん (Flunky) Sis; 砲台 cannon (capture-point cannon); アンク Ankh (Verlaine's Ankhs, Yggdra
   Union); 山賊 brigands (Ortega's), 盗賊 bandits (Dort's) / thieves (Milanor's).
+- b005-b008 (help/system): 作戦カード strategy card; 攻撃兵器 siege weapon; 戦意 morale; 集落 village; 都市 city;
+  鑑定所 Appraiser; 本拠地 home base; 攻撃拠点 attack base; 拠点 base; 出撃 deploy (出撃ボタン Sortie button);
+  褒賞 reward; 戦功値 merit; 密偵 spies; 勢力 faction; 火炎/冷気/雷撃/暗黒/神聖 Fire/Ice/Lightning/Dark/Holy;
+  夜間/昼間戦闘 night/day battle; 水辺 waterside; 戦力確認 Check Forces; ミラノ盗賊団 Milanor's Thieves;
+  エンベリア公国 Duchy of Embellia; ドルト盗賊団 Dort's Bandits; オルテガ山賊団 Ortega Brigands; 領主 lord;
+  ▲/▼ dropped, the sign carries it (ATK+2, DEF-1). Composite: "Attack base: " + n + " more can deploy!";
+  unit + " will explore."; "This item is held by (" + unit + ")\nso it can't be selected."; unit + " has\njoined
+  your forces!".

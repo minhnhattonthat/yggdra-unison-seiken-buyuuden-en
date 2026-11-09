@@ -10,7 +10,7 @@
   {
    "id": "MESSAGE080:04D7",
    "jp": "動きさえしなけりゃ\n怖かねぇゼ!",
-   "en": ""
+   "en": "Long as ya don't\nmove, ya ain't scary!"
   },
   {
    "id": "MESSAGE080:04EA",
@@ -25,7 +25,7 @@
   {
    "id": "MESSAGE080:0502",
    "jp": "残念です、陛下…",
-   "en": ""
+   "en": "I am sorry, Your\nMajesty..."
   },
   {
    "id": "MESSAGE080:050E",
@@ -40,7 +40,7 @@
   {
    "id": "MESSAGE080:0523",
    "jp": "正義の刃に敵うはずは無い!",
-   "en": ""
+   "en": "None can match the\nblade of justice!"
   },
   {
    "id": "MESSAGE080:0536",
@@ -50,7 +50,7 @@
   {
    "id": "MESSAGE080:054C",
    "jp": "勝負はつき申した",
-   "en": ""
+   "en": "The duel is settled."
   },
   {
    "id": "MESSAGE080:0558",
@@ -110,7 +110,7 @@
   {
    "id": "MESSAGE080:0616",
    "jp": "恐ろしいお子様も\nいたもんだぜ…",
-   "en": ""
+   "en": "Man, what a scary\nlittle kid..."
   },
   {
    "id": "MESSAGE080:062A",
@@ -120,7 +120,7 @@
   {
    "id": "MESSAGE080:0634",
    "jp": "陛下…どうぞ安らかに",
-   "en": ""
+   "en": "Your Majesty... rest\nin peace."
   },
   {
    "id": "MESSAGE080:0641",
@@ -140,12 +140,12 @@
   {
    "id": "MESSAGE080:0666",
    "jp": "ア、アマレウス!\nわしを置いて逝くのか!?",
-   "en": ""
+   "en": "A-Amareus! You'd die\nand leave me?!"
   },
   {
    "id": "MESSAGE080:067E",
    "jp": "反抗期ってやつかしらね",
-   "en": ""
+   "en": "A rebellious phase, I\nwonder?"
   },
   {
    "id": "MESSAGE080:068D",
@@ -170,7 +170,7 @@
   {
    "id": "MESSAGE080:06BB",
    "jp": "グワォォーグワォッ!",
-   "en": ""
+   "en": "Grwaaa-grwah!"
   },
   {
    "id": "MESSAGE080:06C6",
@@ -180,12 +180,12 @@
   {
    "id": "MESSAGE080:06D7",
    "jp": "あなたのことは\nきっと忘れませんわ",
-   "en": ""
+   "en": "I'll never forget you,\ndear."
   },
   {
    "id": "MESSAGE080:06EA",
    "jp": "焔帝の名が泣きますよ?\nフフフ…",
-   "en": ""
+   "en": "The Flame Emperor's\nname weeps. Heh heh."
   }
  ]
 }

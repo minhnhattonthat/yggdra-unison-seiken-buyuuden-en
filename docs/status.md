@@ -10,6 +10,12 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
+- **Batch state (session 8):** merged + reviewed: b001-b004, b017-b020. Translated, reviewed, Important fixes sent
+  back to the translator: b013-b016, b029-b032. Translated, review running: b021-b028. Translated, b005-b008
+  composite joins pending (glossary "composite sentences"): b005-b012. Translating: b033-b056. Not dispatched:
+  b057-b076 (SPMES duel events + EDMES endings). Resume: `batches.py check bNNN` each; merge the reviewed ones;
+  `pairs.py bA bB` -> reviewer agent (compact: Critical/Important only, Minors applied by the translator in the
+  same fix round); docs/polish.md holds the Minors from the first 4 reviews.
 - **Phase 5 done (2026-11-10, session 7):**
   - Width gate closed: 0 strings on a guessed budget (lint). 13,399 strings measured on screen, 60 from code (x/y
     constants: small separators, medallion popups, extras prompts, sound titles, tutorial scroll text), 150 composite
