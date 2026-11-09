@@ -5,7 +5,7 @@
   {
    "id": "MESSAGE083:0640",
    "jp": "すまないが、諦めてくれよ",
-   "en": ""
+   "en": "Sorry, but you'll\nhave to give up."
   },
   {
    "id": "MESSAGE083:064E",
@@ -15,7 +15,7 @@
   {
    "id": "MESSAGE083:0657",
    "jp": "よし、倒したぞ!",
-   "en": ""
+   "en": "Alright, I beat 'em!"
   },
   {
    "id": "MESSAGE083:0661",
@@ -35,7 +35,7 @@
   {
    "id": "MESSAGE083:0691",
    "jp": "貴方の負けよ",
-   "en": ""
+   "en": "You lose."
   },
   {
    "id": "MESSAGE083:069B",
@@ -45,7 +45,7 @@
   {
    "id": "MESSAGE083:06A9",
    "jp": "ククク…\nそれなりに楽しめたぜ",
-   "en": ""
+   "en": "Heh heh heh...\nThat was a fun one."
   },
   {
    "id": "MESSAGE083:06BA",
@@ -55,7 +55,7 @@
   {
    "id": "MESSAGE083:06C9",
    "jp": "信念の勝利だ",
-   "en": ""
+   "en": "My convictions\nhave prevailed!"
   },
   {
    "id": "MESSAGE083:06D4",
@@ -70,7 +70,7 @@
   {
    "id": "MESSAGE083:06F2",
    "jp": "ここまでです",
-   "en": ""
+   "en": "This is the end."
   },
   {
    "id": "MESSAGE083:06F9",
@@ -80,7 +80,7 @@
   {
    "id": "MESSAGE083:0709",
    "jp": "俺だってやればできるぞ!",
-   "en": ""
+   "en": "See? I can do it\ntoo when I try!"
   },
   {
    "id": "MESSAGE083:0717",
@@ -95,7 +95,7 @@
   {
    "id": "MESSAGE083:072A",
    "jp": "べーっだ!",
-   "en": ""
+   "en": "Nyeeeh!"
   },
   {
    "id": "MESSAGE083:0730",
@@ -115,12 +115,12 @@
   {
    "id": "MESSAGE083:0750",
    "jp": "任務…完了です",
-   "en": ""
+   "en": "Mission...\naccomplished."
   },
   {
    "id": "MESSAGE083:075C",
    "jp": "任務完了",
-   "en": ""
+   "en": "Mission complete."
   },
   {
    "id": "MESSAGE083:0765",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE083:0774",
    "jp": "私に不可能など無い",
-   "en": ""
+   "en": "Nothing is\nimpossible for me."
   },
   {
    "id": "MESSAGE083:0782",
@@ -145,12 +145,12 @@
   {
    "id": "MESSAGE083:079F",
    "jp": "思い知るといいわ",
-   "en": ""
+   "en": "That'll teach you,\ndarling."
   },
   {
    "id": "MESSAGE083:07AA",
    "jp": "期待外れだったわね",
-   "en": ""
+   "en": "What a letdown."
   },
   {
    "id": "MESSAGE083:07B7",
@@ -175,7 +175,7 @@
   {
    "id": "MESSAGE083:07E1",
    "jp": "思い上がるな!",
-   "en": ""
+   "en": "Don't flatter\nyourself!"
   },
   {
    "id": "MESSAGE083:07EB",
@@ -245,7 +245,7 @@
   {
    "id": "MESSAGE083:088C",
    "jp": "ケーッケッケッケ!",
-   "en": ""
+   "en": "Keeh-kekekeh!"
   },
   {
    "id": "MESSAGE083:0896",
@@ -255,7 +255,7 @@
   {
    "id": "MESSAGE083:089F",
    "jp": "勝負あったな!",
-   "en": ""
+   "en": "That settles it!"
   },
   {
    "id": "MESSAGE083:08A9",
