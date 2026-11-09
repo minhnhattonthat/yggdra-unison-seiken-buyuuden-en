@@ -1,2 +1,3 @@
-# SHA-1 of the supported dump, in sha1sum format (`sha1sum -c rom.sha1` works too). One line per file for discs.
-<sha1>  rom/<file>
+# SHA-1 of the supported dump, in sha1sum format (`sha1sum -c rom.sha1` works too).
+# No-Intro: "Yggdra Unison - Seiken Buyuuden (Japan).nds". Copy or rename it to rom/yggdra.nds.
+ef4d5e4fe56f9a0d3d114c0bd395db20d8dcb7f5  rom/yggdra.nds
