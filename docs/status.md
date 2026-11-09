@@ -2,28 +2,29 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 4. Extract next (phase 3 identity build done 2026-11-09). Last build: `build/yggdra_en.nds` = original
-  (sha1 ef4d5e4f..., no edits yet).
-- **Phase 3:** `tools/build.py` re-lays DATA.SFS (`rebuild_sfs`, replacements via `edits()` {name: bytes}) and
-  patches the arm9 directory, then fixes the ndspy quirks; tests/test_build.py: no-edit build byte-identical, relaid
-  archive keeps every other file. A grown-file ROM booted and warped fine (sfs.md "Rebuild, done").
-- **Done:** Step 0. Phase 1 recon (docs/re/: sfs.md, text.md, graphics.md). Phase 2 debug tool: `tools/debug/warp.lua`
-  drives the game's own touch flow by the scene manager (docs/re/scenes.md: 22 scene ids, player faction, faction
-  unlock bits, text loaders, touch coords); `tools/debug/scenes.txt` lists 35 scenes (title, attract, opening, faction
-  select, 11 faction prologues, card/sortie select, battle, territory, explore, prize, prisoner, medallion, war report,
-  turn end, save, load, char intro, extras, tutorial, ending x2, epilogue x2, credits); `tools/debug/regen.py` reached
-  35/35 from cold boot on the original ROM (states `work/states/<name>.dst`, proof `work/qa/warp/sheet*.png`).
-- **Next (phase 4, extract):** dump MESSAGE/SPMES/TUTO/EDMES etc. (text.md "Text files") and system strings
-  (arm9/overlay pointer fields, text.md "System text": decide per table/field) into `script/` JSON with jp via
-  `tbl/jp.tbl` (unknown kanji as `[XX]` codes until readings are done); roundtrip test (re-encode == original bytes)
-  and coverage test against the original ROM. Kanji readings (text.md) are needed for translators: do them here.
-- **Debug-tool gaps (add before phase 8 QA):** game over (B_GAMEOVER in arm9 battle code; needs a lost battle: find
-  unit HP / lord-defeat state); stage/SPMES selector and per-faction battles (ATTACK_TAP is set for faction 1 only);
-  specific MESSAGE events (`MSG=n` retargets the next MESSAGE load, untested on screen); the 38 EDMES ending variants
-  and the other 10 epilogues (`FACTION=n` should select them: add rows); faction 5 has no start territory. Text
-  coverage (phase 8) will list the rest.
-- **Later phases, known work:** kanji readings for FONT_MES/FONT_SYSTEM/FONT_END (transfer by bitmap hash, text.md);
-  4x4 texture encoder; system-string relocation plan (phase 5); SPMES_WR sentence fragments; alpha-format textures
-  (QUEST, PRIZE, PRISONER, *_TGA, WARRESULT) now reachable by warp: shoot them for graphics.md.
+- **Phase:** 4. Extract in progress (script files + system pools extracted, kanji read; FONT_ITEM strings left).
+  Last build: `build/yggdra_en.nds` = original (no edits yet).
+- **Phase 4 so far (2026-11-10):** `tools/text.py dump [--force]` writes `script/` from the ROM: message 221 files /
+  7,920 strings, spmes 407 / 3,348, tuto 28 / 214, edmes 38 / 612, system 10 images / 1,619 (pools in `text.POOLS`).
+  tests/test_text.py: family counts, decode->encode == bytes for every string, file re-lay == original, system pools
+  roundtrip, script/ in sync with the tables. Encoding corrected (text.md): codes F1-F9 + xx = (b-0xF0)*0xF0+xx,
+  FC xx colour; all fonts share glyphs 00-EB (FONT_MES has ヴー at A0/A1 too); EDMES and ov9_02/06/07/18 use
+  FONT_END. Kanji: 1,770 bitmaps read (`tbl/kanji.tsv`), tables `tbl/jp.tbl`, `jp_sys.tbl`, `jp_end.tbl` generated
+  by `tools/mkjptbl.py`; misreads checked with `tools/kanji_check.py` (janome; `pip install janome`).
+- **Next (finish phase 4):**
+  1. FONT_ITEM: ~48 arm9 strings at field +12 of the 0x18-byte records from 0x1006A0 are FONT_ITEM-encoded (text.md
+     "Not text in the arm9 pool"). Read FONT_ITEM's 330 glyphs (`tools/glyphsheet.py work/sfs/FONT_ITEM.NTFT ...`;
+     add an "item" font to mkjptbl.FONTS/TABLES and kanji.py), decide per field which records use it, set those rows'
+     font, and re-dump. Check for FONT_ITEM text elsewhere (other record tables, overlays).
+  2. Mark non-text rows in system JSON (data pointed at by records) as `"data": true` once FONT_ITEM is decoded.
+  3. Optional: re-read FONT_SYSTEM/END kanji that no script line uses (read without context) once system strings
+     give context (`tools/kanji_check.py` covers script/ only; extend it to script/system).
+  4. Then phase 5 (marker build): width gate, relocation plan for system strings longer than `max`.
+- **Done:** Step 0, phases 1-3 (recon docs/re/, warp tool 35 scenes, identity build).
+- **Debug-tool gaps (add before phase 8 QA):** game over; stage/SPMES selector and per-faction battles; specific
+  MESSAGE events (`MSG=n`, untested on screen); 38 EDMES ending variants and 10 more epilogues; faction 5 has no
+  start territory. `work/play/tuto` is a play.py session inside the tutorial (TUTO00_01 text on screen).
+- **Later phases, known work:** 4x4 texture encoder; system-string relocation (phase 5); SPMES_WR sentence
+  fragments; alpha-format textures (QUEST, PRIZE, PRISONER, *_TGA, WARRESULT) to shoot for graphics.md.
 - **Open bugs:** none.
 - **Waiting on the user:** nothing.

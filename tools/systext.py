@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ygdecode  # noqa: E402
-from mkjptbl import sys_chars  # noqa: E402
+from mkjptbl import chars  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 ARM9, OVL = 0x02000000, 0x0211B780
@@ -35,7 +35,7 @@ def run_end(b, i):
             return j if j > i else -1
         if c < 0xF0 or c == 0xFD:
             j += 1
-        elif 0xF1 <= c <= 0xF3 and j + 1 < len(b):
+        elif 0xF1 <= c <= 0xF9 and j + 1 < len(b) and b[j + 1] < 0xF0:
             j += 2
         else:
             return -1
@@ -58,7 +58,7 @@ def plausible(seg):
 
 
 def main():
-    ygdecode.CH = sys_chars()
+    ygdecode.CH = chars("sys")
     rows = []
     for name, base, b in images():
         for off, sites in sorted(scan(name, base, b).items()):
