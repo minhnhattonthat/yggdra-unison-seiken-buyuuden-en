@@ -58,6 +58,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | アマレウス | Amareus | | assassin serving Juvelon | |
 | マルディム | Mardym | | archbishop, schemer | Mardim |
 | ユベロン | Juvelon | | cardinal, coward | Yuberon |
+| ヨハイム | Johaim | | pope ousted by Juvelon (MS_M_08 texture only; no official form found) | Yohaim |
 | パメラ | Pamela | | ghost witch, money-mad, cheeky | |
 | シモベ | Shimobe | | Nessiah's "eternal servant" | |
 | ソドム | Sodom | | magic warrior | |

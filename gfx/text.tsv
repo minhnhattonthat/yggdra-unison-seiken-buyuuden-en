@@ -936,3 +936,43 @@ CNAMEC68	Theocracy Soldier	font=sans-b size=10 align=l min_x=0.6
 CNAMEC69	Divine Soldier	font=sans-b size=10 align=l min_x=0.6
 CNAMEC70	Outlaw	font=sans-b size=10 align=l min_x=0.6
 CNAMEC71	Nameless Soldier	font=sans-b size=10 align=l min_x=0.6
+# War-event goal lines (EVSFONTnn; lowercase ones follow a force name drawn before them: EVSFORCE), notes EVSFONTSBnn
+EVSFONT00	takes the city	size=15 align=l
+EVSFONT01	's units withdraw	size=15 align=l
+EVSFONT02	takes the cannon	size=15 align=l
+EVSFONT03	destroys the cannon	size=15 align=l
+EVSFONT04	takes the barricade	size=15 align=l
+EVSFONT05	breaks the barricade	size=15 align=l
+EVSFONT06	Take the Defense Base	size=15
+EVSFONT07	Attack Base Falls	size=15
+EVSFONT08	takes the siege weapon	size=15 align=l
+EVSFONT09	Capture the Enemy General	size=15
+EVSFONT10	Enemy General Slain	size=15
+EVSFONT11	Time Over	size=15
+EVSFONT12	Village Found!	size=15
+EVSFONT13	Appraiser Found!	size=15
+EVSFONT14	Special Item Found!	size=15
+EVSFONT15	Withdrawn	size=15
+EVSFONT16	destroys the siege weapon	size=15 align=l
+EVSFONTSB00	(Treasure hunting opens up after the war)	size=12
+EVSFONTSB01	(Over the sortie limit / units that withdraw have HP halved)	size=12
+EVSFONTSB02	(Cannon)	size=12
+EVSFONTSB03	(Arrow Turret)	size=12
+EVSFONTSB04	(Magic Cannon)	size=12
+EVSFONTSB05	(Catapult)	size=12
+EVSFONTSB06	(More units sortied than the maximum allowed)	size=12
+EVSFONTSB07	(An event occurs after the war!!)	size=12
+# Battle outs, sortie call, unification banner (big + small label)
+BATTLEOUT1	Withdrawn	size=18
+BATTLEOUT2	Enemy Retreats	size=18
+BATTLEOUT3	Enemy Slain	size=18
+SELSORTIE	Selected Units, Sortie!	size=16
+SHOOTNAME99	Unification	size=22 box=10,0,109,26
+SHOOTNAME99	Unification	size=15 box=128,0,75,19
+# War report headlines (WR_SHNnn)
+WR_SHN00	War Breaks Out	size=24
+WR_SHN01	Captured	size=24
+WR_SHN02	Defended	size=24
+WR_SHN03	Fallen	size=24
+WR_SHN04	Earthquake	size=24
+WR_SHN05	Plague	size=24

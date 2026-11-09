@@ -4,17 +4,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
-- **Phase 8 progress (session 14):** texture pipeline done and seen in game (docs/re/graphics.md "Pipeline"):
-  add rows to `gfx/text.tsv`, `python -X utf8 tools/gen_gfx.py [NAMEs]`, `python -X utf8 tools/gfx.py check`, look at
-  work/gfx/enc/ (sheet.py), build. English so far: SHOOTNAME00-11 phase banners (seen: work/qa/gfx/shootname00.png),
-  WD_N_00-36 place names (= territory table A71F0+0 order, spot-checked 01/15/33/36; not yet seen on screen).
-  **Next textures, mapped from translated strings (no OCR):** factions 00-11 = table A7D00 (IN_PRO, TM_M,
-  EVSFORCE, CN_M, MS_M?), cards 00-35 = A7E44+0 (CARDNAMEA) / +4 (CS_M), item effects IT_EF001-225 = item +10,
-  ED_N/ED_H = EDMES epithets, unit names CNAME* = F5380 (63 units vs 72 files: check). Verify each group's order
-  with a 4-pair orig/enc sheet as for WD_N. **Then OCR groups** (read zoomed, translate): OP_WR, OPK_WR, MS_PRO,
-  MS_N, EPI_TIT/EPI_MES, CDS, OBJSTR, WR_SHN, EVSFONT*, BATTLEOUT, SELSORTIE, SHOOTNAME99, UI atlases (BUTTON 戻る
-  etc.: need `box=` per label), `_unk` PACKs (need hash keys in build.rebuild_sfs), TU_* screenshots last.
-  Long WD_N names fill the 256 texture width: check on screen.
+- **Phase 8 progress (session 15):** gfx/text.tsv now also has (mapping in its `#` comments): IN_PRO/TM_M/EVSFORCE
+  (faction table), CN_M leaders, MS_M descriptions (read off the texture), CARDNAMEA/CS_M (card table), IT_EF001-225
+  (73 distinct labels, read off; IT_EF113 decodes as noise: untouched, check), ED_N/ED_H (306, = EDMEScc string v /
+  6+v), CNAMEA/B/C (00-36 unit table, 37-71 generic types read off CNAMEA; B098/099/253), EVSFONT/EVSFONTSB event
+  goals, BATTLEOUT1-3, SELSORTIE, SHOOTNAME99, WR_SHN00-05. Seen English on screen: prologue IN_PRO, CNAMEA
+  (char_intro), CNAMEB speaker tags (prisoner, ending). Tools: gfx.py paletted colour 0 = transparent, `WIDTH`
+  override (CNAMEC is 64x16), gen_gfx per-line centring. New Johaim (ヨハイム, pope) in MS_M_08: add to glossary.
+  **Next:** the bottom-band title labels (捕虜処遇 / 全土統一 / 探索準備 seen Japanese on prisoner/ending/explore: find
+  the texture), class name ゴーレム in char_intro; OCR groups: OP_WR, OPK_WR, MS_PRO, MS_N, EPI_TIT/EPI_MES, CDS,
+  OBJSTR, UI atlases (BUTTON 戻る etc.: `box=` per label), `_unk` PACKs (need hash keys in build.rebuild_sfs), TU_*
+  last. EVSFONT lowercase lines follow a force name: check the join on screen (war events).
+- **Phase 8 (session 14):** texture pipeline (docs/re/graphics.md "Pipeline"): add rows to `gfx/text.tsv`,
+  `python -X utf8 tools/gen_gfx.py [NAMEs]`, `python -X utf8 tools/gfx.py check`, look at work/gfx/enc/ (sheet.py),
+  build. SHOOTNAME00-11, WD_N_00-36 (= territory table A71F0+0). Long WD_N names fill 256 px: check on screen.
+- **regen.py defaults to the original ROM:** pass `--rom build/yggdra_en.nds`.
 - **Phase 7 review fixes (session 14):** lint fails a stub last line (< 6 chars, previous line not a sentence end;
   stat lines ATK+1 and composite parts exempt, composites checked per combination), leading/trailing blanks must
   match the Japanese (composite parts exempt); `MESSAGE000:*` keeps only あいうえお filler rows. `batches.py wrap`
@@ -35,8 +39,8 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   the Get Item! popup, ED_H/ED_N, 戦績 BG label 称号：): references/graphics.md + docs/re/graphics.md; then the QA
   tour, visual-QA verdicts (do them yourself, read-only pass, no subagents in an Orca worker), inkbox, textcover.
   Phase-7 leftovers to see on screen: docs/polish.md "Phase 7".
-- **Build session 14:** `build/yggdra_en.nds` with SHOOTNAME textures (sha1 a636e0c8, before WD_N): warp states
-  NOT regenerated since session 13: run `tools/debug/regen.py` before using work/states.
+- **Build session 15 (2026-11-10 06:47):** `build/yggdra_en.nds` sha1 574ccd99 (smoke ok); work/states regenerated
+  from build efe5505e (before the EVSFONT/WR_SHN rows): regen again before using states.
 - **Builds session 13 (2026-11-10 ~05:55):** `build/yggdra_en.nds` sha1 f56f2adb (smoke ok, English text, 35/35
   warps reached on this build, states regenerated from it); `build/yggdra_marker.nds` sha1 67f7db67 (states NOT
   from it: regen before using marker states).
