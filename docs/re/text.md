@@ -48,5 +48,34 @@
 - **Kanji misreads fixed from system context** (item and help text, read without context before): 癒 録 塊 錆 勲 叉 響 冑 脈 穀 議 掴 籠 獪 男 卿 縛 劣 触 徴 箇 謎. Left as the game wrote them: 慚悔 (for 懺悔), 英雌 (coined, Yggdra), 順ずる.
 - **Insertion:** English longer than `max` moves to new space (decide in phase 5) and every true pointer is rewritten.
 
+## Draw routines (arm9, verified by disasm + marker build on screen)
+- **Dialogue text object** `0x020128B8` (callers 0x02006324, 0x02006F78; FONT_MES): counts glyphs (0x02013274, also
+  per-line counts for 2 lines at obj+0x2D), allocates per-glyph x/y/colour/alpha u16 arrays (obj+8/+C/+10/+14), then
+  per glyph seeks/reads the 0x80-byte glyph from the font file (0x01FFACDC / 0x01FFAF1C) into the next **glyph slot**
+  and stores x (obj+0x24, +0x0B per glyph) and y (obj+0x26, +0x11 per FD). Quads drawn per frame by 0x02012560..0x0201278C
+  (`mov r3,#0xC` = quad width 12).
+- **System text runs** `0x02012DCC` and **centred text** `0x020130AC`: queue glyph codes (`code | font << 12`) in the
+  pool at 0x0210E768 (+0 glyph buffer, +4 codes, +8 capacity, +0xA used), then 0x02012C10 draws a run, x += font
+  advance - 1. Advance per font id at arm9 0x0208F9C0 = `0C 0C 0B 0C` (the POOL_DATA block). Centring = 0x80 - 11*n/2.
+- **Font ids**: 0 SYSTEM, 1 MES, 2 ITEM, 3 END (name table 0x020F7BB4).
+- **Glyph slots (verified, tools/lua/glyphslots.lua):** each scene sizes the pool at 0x0210E768 for the Japanese: the
+  ending (scene 18) has capacity 176, slots 0-31 reserved, dialogue objects start at slot 144 (u16 0x0210E7BA) = **32
+  glyphs per dialogue**. One glyph per letter overflowed it and hung the ending (marker build, MESSAGE16x/17x).
+
+## English font + VWF (phase 5, tools/enfont.py + tools/engine.py; verified on screen in the marker build)
+- English reuses the game's Latin glyphs (A2-AB digits, AC-DF letters, E0 ! E1 ? E3 ~ E6/E7 ( ) E8 … E9 —) and adds
+  ASCII punctuation in rare kana slots: 8A space (game blank), 39 . 3A , 47 ' 48 - 49 : 4A ; 4B " 97 / 98 % 99 + 9A & 9B *
+  (`tbl/en.tbl`, generated). No [ ] < > glyphs. Every English glyph is shifted to column 0; advance = outline width - 1.
+  The same glyphs go into all four fonts (FONT_ITEM palette-mapped: its outline is index 1; look not checked yet).
+- Hook code + tables sit after the ITCM block's bss (0x01FFBDC0..0x01FFC6A0; ITCM data grows, bss 0, see engine.py):
+  width table 4x256 (advance per font id, 0 = game advance), vtab 256 (visible px, FONT_MES), state, glyph buffer.
+- **Dialogue = packed cells**: `cells_count` replaces the glyph count at 0x02012904 and `glyph_cell` the per-glyph
+  path at 0x02012B0C: each line is blitted into 16 px cells (a cell opens only when a glyph's visible pixels reach it),
+  quads widened to 16 (0x02012784). Slots used = sum over lines of ceil(px / 16), fewer than the Japanese used for the
+  same width, so every scene's slot budget holds as long as a line fits its box. Typewriter reveal runs per cell.
+- **System/centred text**: still one slot per glyph; VWF via `hook_step` (0x02012D10) and `hook_center` (0x02013114,
+  0x020131C8, centring from the real widths). FC colour mid-line in system text would misplace the next run (no
+  string uses FC).
+
 ## Not text (graphics)
 - The title prologue scroll, faction names/banners, character name plates (CNAME*), card names (CARDNAME*), epilogue titles/messages (EPI_TIT_/EPI_MES_) and more are textures: see `graphics.md`.

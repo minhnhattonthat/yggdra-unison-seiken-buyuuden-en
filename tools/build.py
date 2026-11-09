@@ -47,9 +47,17 @@ def rebuild_sfs(data, arm9, repl):
     return bytes(out), bytes(arm9)
 
 
-def build_rom(repl=None, orig_path=ORIG):
+def build_rom(repl=None, orig_path=ORIG, images=None):
+    """repl: {DATA.SFS name: bytes}; images: {"arm9" | "ov9_NN": bytes} replacing arm9 / overlays (same size)."""
     orig = orig_path.read_bytes()
     rom = ndspy.rom.NintendoDSRom(orig)
+    for img, b in (images or {}).items():
+        if img == "arm9":
+            rom.arm9 = b
+        else:
+            ov = rom.loadArm9Overlays()[int(img[4:])]
+            assert len(b) == len(ov.data), f"{img}: size changed"
+            rom.files[ov.fileID] = b
     if repl:
         rom.files[rom.filenames.idOf("DATA.SFS")], rom.arm9 = rebuild_sfs(rom.getFileByName("DATA.SFS"), rom.arm9, repl)
     out = bytearray(rom.save())
@@ -58,17 +66,32 @@ def build_rom(repl=None, orig_path=ORIG):
     return bytes(out)
 
 
-def edits():
-    """Replaced DATA.SFS files {name: bytes}. Text and graphics insertion plug in here (phases 4+)."""
-    return {}
+def edits(marker=False):
+    """(DATA.SFS {name: bytes}, code images {image: bytes}): English fonts + VWF, then text (marker or English)."""
+    import enfont
+    import engine
+    import text
+    fonts, wtab = enfont.patched_fonts(text.sfs_files(set(enfont.FONTS)))
+    repl, images = dict(fonts), {}
+    if marker:
+        import marker as mk
+        skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else ()
+        repl |= mk.script_files(skip)
+        images = mk.system_images()
+    arm9 = images.get("arm9", text.code_images()["arm9"])
+    images["arm9"] = engine.patch_arm9(arm9, wtab)
+    return repl, images
 
 
 def main():
     check_rom.check()
-    out = build_rom(edits())
-    OUT.parent.mkdir(exist_ok=True)
-    OUT.write_bytes(out)
-    print(OUT.relative_to(ROOT), hex(len(out)), hashlib.sha1(out).hexdigest())
+    marker = "--marker" in sys.argv
+    repl, images = edits(marker)
+    out = build_rom(repl, images=images)
+    dst = OUT.with_name("yggdra_marker.nds") if marker else OUT
+    dst.parent.mkdir(exist_ok=True)
+    dst.write_bytes(out)
+    print(dst.relative_to(ROOT), hex(len(out)), hashlib.sha1(out).hexdigest())
 
 
 if __name__ == "__main__":
