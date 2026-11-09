@@ -4,7 +4,9 @@ Reads systrace.lua logs from a marker-build run (each drawn string starts with i
 work/marker_ids.tsv) and writes work/sysmap.tsv: id, scene, kind (run / ctr), x, y, font, caller, jp.
 
     python -X utf8 tools/debug/regen.py --rom build/yggdra_marker.nds --qa work/qa/sys --script tools/lua/systrace.lua
-    python -X utf8 tools/sysmap.py [work/qa/sys]      -> work/sysmap.tsv + summary (drawn ids per image)
+    python -X utf8 tools/sysmap.py [work/qa/sys] [OUT.tsv]  -> work/sysmap.tsv + summary (drawn ids per image)
+    Submenu tours: play.py sessions with --script tools/lua/systrace.lua; append each step's _run/log.txt to
+    work/qa/tour/<screen>/log.txt, then sysmap.py work/qa/tour work/sysmap_tour.tsv.
 """
 import re
 import sys
@@ -53,7 +55,7 @@ def main():
                 rows.add((sid, log.parent.name, d["kind"], d["x"], d["y"], d["font"], d["lr"], jp.replace("\n", "/")))
             else:
                 other.add((log.parent.name, d["kind"], d["x"], d["y"], d["lr"], text[:40].replace("\n", "/")))
-    out = ROOT / "work/sysmap.tsv"
+    out = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "work/sysmap.tsv"
     out.write_text("".join("\t".join(map(str, r)) + "\n" for r in sorted(rows)), encoding="utf-8")
     drawn = {r[0] for r in rows}
     per = {}

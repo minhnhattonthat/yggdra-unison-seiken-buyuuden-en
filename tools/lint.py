@@ -41,6 +41,14 @@ def item_fields():
             for f in (8, 0xC, 0x10, 0x14) for i in range(n)}
 
 
+@cache
+def table_fields():
+    """{system string id: "START+FIELD"} (hex) from the data table pointing at it (tools/ptrtables.py)."""
+    import ptrtables
+    return {sid: f"{start:X}+{f:X}" for start, _, _, fl in ptrtables.tables(ptrtables.rows())
+            for f, ids in fl.items() for sid in ids}
+
+
 def rule_for(sid, jp, font):
     for r in rules():
         if not re.search(r["match"], sid):
@@ -48,6 +56,8 @@ def rule_for(sid, jp, font):
         if "ids" in r and sid not in r["ids"]:
             continue
         if "item" in r and item_fields().get(sid) != int(r["item"], 16):
+            continue
+        if "table" in r and table_fields().get(sid) != r["table"]:
             continue
         if r.get("multi") and "\n" not in jp:
             continue
@@ -92,6 +102,7 @@ def selftest():
     assert check_string({**s, "en": "あ"}, "mes")[0]
     assert rule_for("EDMES07:0100", "a\nb", "end")["lines"] == 4 and rule_for("EDMES07:009C", "a", "end")["lines"] == 1
     assert rule_for("arm9:8F98C", "a", "item")["font"] == "item"
+    assert rule_for("arm9:900EC", "a", "sys")["table"] == "A71F0+0"  # territory name (item gallery location)
 
 
 def main():

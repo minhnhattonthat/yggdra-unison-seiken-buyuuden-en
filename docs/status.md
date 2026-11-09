@@ -3,7 +3,23 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text relocated and packed into
-  16 px cells; submenu budgets + battle SPMES box next).
+  16 px cells; submenu tours under way: item encyclopedia + tutorial menu measured; rest + battle SPMES box next).
+- **Phase 5 session 4 (2026-11-10):**
+  - Tour kit: `tools/tour.py` (play.py step + systrace log per screen), `tools/drawsites.py` (all 106 system-text
+    call sites, constant x/y), `tools/ptrtables.py` (string -> data table + field; lint rule key `"table"`),
+    `tools/lua/extras_all.lua` (opens every card / sound / item entry: bits 0x0210E6F8..0x0210E71F).
+  - Measured (windows.json): item name 168 (encyclopedia, smaller than the prize list), item effect 200 x 2, equip
+    195, territory name 200, encyclopedia labels, BGM label 66, tutorial titles 130, descriptions 204 x 3.
+  - Card select / card dictionary panels (不明, 未鑑定, timing / condition / effect) are CDS_* textures.
+  - **Gotcha:** after a savestate load DeSmuME shots stay flat grey ~125 frames: play.py `--wait 60+` (tour.py
+    defaults 90).
+  - Battle (tour_bt): the diamond button and START did nothing in the paused pre-battle state; find how to open
+    the battle menu / unit info (arm9 0x02080D88.. run sites x 40/197 y 48-133 = a status panel; 0x0208BB9C.. x 20
+    y 38 = data pages 武器相性 / 地形相性 / 記録).
+- **Next (phase 5 rest):** tour with tools/tour.py: battle menus + unit panel; sortie map (territory / faction
+  names); territory ov9_14, explore ov9_13, medallion ov9_10, prize popup ov9_12, turn end ov9_02, war report
+  ov9_08, faction select ov9_18 (unlock text), save/load ov9_19; then card names/one-liners (A7E44), unit names
+  (F5380), class names (F5B88), F79D8 help strings. Rebuild the marker (new px) and regen states after.
   Last builds (2026-11-10 02:22): `build/yggdra_en.nds` sha1 bf09f342 (fonts + VWF + packing, Japanese text, smoke
   ok); `build/yggdra_marker.nds` sha1 c59da449 (smoke ok). States in work/states/ regenerated from that marker build.
 - **Phase 5 session 3 (2026-11-10):**

@@ -42,7 +42,17 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 | item name, system font, prize item list (x 30, scrollbar at 242) | run, prize overlay 0x0211E524/E6A4 | 208 px | measured (work/play/prize2/0003.png) |
 | item name FONT_ITEM, item popup (x 23 y 116), effect lines (x 40 y 132; x 3 y 167 built in a heap buffer) | run | guess | drawn in prize after tapping an item, not visible in the shot yet |
 | medallion line (arm9:9222C, x = 0x80000000 at entry: set later) | run | guess | |
-| everything else (help menu ov9_03, extras ov9_06, unlocks ov9_18, explore pages, item effects / equip lines, save prompts) | | 240 x 3 / 100 x 1 guesses | screens not toured yet |
+| item encyclopedia (extras ov9_06, top screen): no. label x 41 / name x 85 y 12; レア： 装備： x 14 + value x 46; 効果： x 14 y 83 + effect x 41 y 96 (2 lines); 発見場所： x 14 y 136 + territory name x 41 y 152; panel frame 242 | run | name 168 (screen edge), effect 200 x 2, equip 195, territory 200, labels 32 / 227 / 44 | measured (work/play/tour_ex 0002; open every entry with `tools/lua/extras_all.lua`) |
+| sound mode ticker (ov9_06, y 174, scrolls): BGM00： label, title at label x + 66 | run | label 66; title guess | measured label |
+| card dictionary / card select info panels | - | - | textures (CDS_*, graphics.md), not system text |
+| tutorial menu (ov9_03): topic list x 20 on a sloped bar (row top ends 152); page title x 67 y 115 (bar slope ~200); description x 49 y 135, 3 lines, to the screen edge | run | title 130, description 204 x 3 | measured (work/play/tour_tuto 0001-0002) |
+| everything else (unlocks ov9_18, explore pages, battle unit / data pages arm9 0x0208xxxx, save prompts, territory / faction / unit / class / card names outside the encyclopedia) | | 240 x 3 / 100 x 1 guesses | screens not toured yet; `tools/drawsites.py` lists every call site with its constant x/y |
+
+**Tables:** `tools/ptrtables.py` groups the 1,282 table-pointed strings by data table and field (territories
+A71F0 +0, factions A7D00 +0/+4/+8, cards A7E44 +0 name / +4 one-liner, units F5380 +0 / +4, classes F5B88,
+help F79D8, items 100648 = record +8..). A windows.json rule with `"table": "A71F0+0"` covers a whole field.
+Tours: `tools/tour.py SCREEN --new STATE` then `tools/tour.py SCREEN <presses>` (play.py + systrace; logs to
+work/qa/tour/SCREEN), `tools/sysmap.py work/qa/tour work/sysmap_tour.tsv` -> ids.
 
 **Glyph slots:** system text is packed into 16 px cells (one slot per 16 px of line, text.md; pool at 0x0210E768,
 cap 128 in most scenes, 256 tutorial); slots past the cap are not drawn instead of overrunning. Before packing
