@@ -5,22 +5,22 @@
   {
    "id": "MESSAGE175:0560",
    "jp": "これさえ押さえれば\n後は何とかなるだろう!",
-   "en": ""
+   "en": "Hold this, and the\nrest should work out!"
   },
   {
    "id": "MESSAGE175:0579",
    "jp": "こいつを占領しときゃ\n後は楽勝ってもんだゼ!",
-   "en": ""
+   "en": "Take this, and the\nrest is a cakewalk!"
   },
   {
    "id": "MESSAGE175:0595",
    "jp": "ここさえ押さえれば…\n後は何とかなる!",
-   "en": ""
+   "en": "If we hold this...\nwe'll manage the rest!"
   },
   {
    "id": "MESSAGE175:05AC",
    "jp": "占領しました!",
-   "en": ""
+   "en": "It is captured!"
   },
   {
    "id": "MESSAGE175:05B6",
@@ -40,17 +40,17 @@
   {
    "id": "MESSAGE175:05DC",
    "jp": "ここを占領すれば…\n勝ったようなものです!",
-   "en": ""
+   "en": "If we take this...\nvictory is ours!"
   },
   {
    "id": "MESSAGE175:05F5",
    "jp": "目障りだ、どきやがれ!",
-   "en": ""
+   "en": "Outta my way,\neyesore!"
   },
   {
    "id": "MESSAGE175:0603",
    "jp": "これで敵の士気を\n下げることが出来よう",
-   "en": ""
+   "en": "This shall sap the\nfoe's morale."
   },
   {
    "id": "MESSAGE175:061C",
@@ -60,7 +60,7 @@
   {
    "id": "MESSAGE175:0631",
    "jp": "ここ、もらったー♪",
-   "en": ""
+   "en": "Got iiit~!"
   },
   {
    "id": "MESSAGE175:063B",
@@ -70,7 +70,7 @@
   {
    "id": "MESSAGE175:0644",
    "jp": "敵に奪われる前に…\n確保しましょう",
-   "en": ""
+   "en": "Ere the foe takes it...\nlet us secure it."
   },
   {
    "id": "MESSAGE175:065B",
@@ -80,47 +80,47 @@
   {
    "id": "MESSAGE175:0665",
    "jp": "お先に頂くでやんすよ!",
-   "en": ""
+   "en": "Dibs, if ya please!"
   },
   {
    "id": "MESSAGE175:0673",
    "jp": "ここは頂いたぞぉ!",
-   "en": ""
+   "en": "This is ours now!"
   },
   {
    "id": "MESSAGE175:067E",
    "jp": "ここワシらが貰ったぞい!",
-   "en": ""
+   "en": "This here's ours, heh!"
   },
   {
    "id": "MESSAGE175:068C",
    "jp": "抵抗すると痛い目に\n遣うんだからね!",
-   "en": ""
+   "en": "Resist and you'll\nget hurt, you know!"
   },
   {
    "id": "MESSAGE175:06A4",
    "jp": "やっぱりこれがなくちゃね!\nエヘヘ♪",
-   "en": ""
+   "en": "Can't do without this!\nEhehe~!"
   },
   {
    "id": "MESSAGE175:06B7",
    "jp": "ここはもらった!",
-   "en": ""
+   "en": "This one's mine!"
   },
   {
    "id": "MESSAGE175:06C0",
    "jp": "オイラに逆らうと\n痛い目を見るぜぃ!",
-   "en": ""
+   "en": "Cross me and\nyou'll regret it!"
   },
   {
    "id": "MESSAGE175:06D7",
    "jp": "…入手成功です",
-   "en": ""
+   "en": "...Obtained."
   },
   {
    "id": "MESSAGE175:06E3",
    "jp": "ここは我らが頂く!",
-   "en": ""
+   "en": "This is ours."
   },
   {
    "id": "MESSAGE175:06EF",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE175:06FA",
    "jp": "フッ…この私を相手に\n隙を見せるとは……",
-   "en": ""
+   "en": "Heh... Showing an\nopening to me, of all..."
   },
   {
    "id": "MESSAGE175:0713",
@@ -145,7 +145,7 @@
   {
    "id": "MESSAGE175:074D",
    "jp": "意外と手ごたえ\n無かったわね?",
-   "en": ""
+   "en": "That was easier\nthan expected, hm?"
   },
   {
    "id": "MESSAGE175:0761",
@@ -155,7 +155,7 @@
   {
    "id": "MESSAGE175:077A",
    "jp": "ヒューヒューヒュー♪\nいっただきぃ~♪",
-   "en": ""
+   "en": "Whee-whee-whee~!\nYoink~!"
   },
   {
    "id": "MESSAGE175:078E",
@@ -175,7 +175,7 @@
   {
    "id": "MESSAGE175:07C2",
    "jp": "占領したぞ!",
-   "en": ""
+   "en": "Captured!"
   },
   {
    "id": "MESSAGE175:07CB",
@@ -215,12 +215,12 @@
   {
    "id": "MESSAGE175:0819",
    "jp": "この程度とは…",
-   "en": ""
+   "en": "Is that all...?"
   },
   {
    "id": "MESSAGE175:0823",
    "jp": "意外とあっさり\nカタがついたわね!",
-   "en": ""
+   "en": "That was settled\neasily enough!"
   },
   {
    "id": "MESSAGE175:0837",
@@ -230,12 +230,12 @@
   {
    "id": "MESSAGE175:083F",
    "jp": "よし!\nこれで優勢になったな!",
-   "en": ""
+   "en": "Good! We've got\nthe upper hand!"
   },
   {
    "id": "MESSAGE175:0851",
    "jp": "気の毒だけど…\nここは頂くわよ",
-   "en": ""
+   "en": "Sorry for you...\nbut this is mine."
   }
  ]
 }

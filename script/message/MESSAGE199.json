@@ -40,22 +40,22 @@
   {
    "id": "MESSAGE199:0676",
    "jp": "行ってみましょうか…",
-   "en": ""
+   "en": "I suppose I shall go..."
   },
   {
    "id": "MESSAGE199:0681",
    "jp": "行きゃあいいんだろ?",
-   "en": ""
+   "en": "Fine, I'll go, okay?"
   },
   {
    "id": "MESSAGE199:068C",
    "jp": "…分かり申した",
-   "en": ""
+   "en": "...So be it."
   },
   {
    "id": "MESSAGE199:0696",
    "jp": "よし、行ってみるとするか…",
-   "en": ""
+   "en": "Right, let me go\nand see..."
   },
   {
    "id": "MESSAGE199:06A4",
@@ -65,7 +65,7 @@
   {
    "id": "MESSAGE199:06AE",
    "jp": "調べてきてやろう",
-   "en": ""
+   "en": "I'll search it for you."
   },
   {
    "id": "MESSAGE199:06B8",
@@ -175,7 +175,7 @@
   {
    "id": "MESSAGE199:078B",
    "jp": "調べてみるか…",
-   "en": ""
+   "en": "I'll have a look..."
   },
   {
    "id": "MESSAGE199:0794",
@@ -190,7 +190,7 @@
   {
    "id": "MESSAGE199:07A7",
    "jp": "行ってみるか…",
-   "en": ""
+   "en": "Guess I'll go..."
   },
   {
    "id": "MESSAGE199:07AF",

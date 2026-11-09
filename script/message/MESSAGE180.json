@@ -5,7 +5,7 @@
   {
    "id": "MESSAGE180:0560",
    "jp": "君たちに渡すわけには\nいかないんでね…",
-   "en": ""
+   "en": "I can't let you\nhave this..."
   },
   {
    "id": "MESSAGE180:0576",
@@ -15,22 +15,22 @@
   {
    "id": "MESSAGE180:0585",
    "jp": "お前たちに渡すわけには\nいかないんだ!",
-   "en": ""
+   "en": "We can't let you\nhave this!"
   },
   {
    "id": "MESSAGE180:059B",
    "jp": "ここは私たちが\n使わせてもらいます!",
-   "en": ""
+   "en": "We shall be\nusing this!"
   },
   {
    "id": "MESSAGE180:05AF",
    "jp": "これ以上の抵抗は無駄だ!\n大人しく降伏しろッ!",
-   "en": ""
+   "en": "Resistance is futile!\nSurrender quietly!"
   },
   {
    "id": "MESSAGE180:05D1",
    "jp": "これ以上の抵抗は無駄だ!\n大人しく降伏するんだッ!",
-   "en": ""
+   "en": "Resisting is pointless!\nGive up now!"
   },
   {
    "id": "MESSAGE180:05F5",
@@ -40,7 +40,7 @@
   {
    "id": "MESSAGE180:0601",
    "jp": "敵に使われる前に制圧だ!",
-   "en": ""
+   "en": "Seize it before the\nfoe uses it!"
   },
   {
    "id": "MESSAGE180:0613",
@@ -60,12 +60,12 @@
   {
    "id": "MESSAGE180:064D",
    "jp": "ニーチェ、\nここ、もらっちゃうよ?",
-   "en": ""
+   "en": "Nietzsche's\ntaking this, 'kay?"
   },
   {
    "id": "MESSAGE180:065F",
    "jp": "敵に利用などさせぬ!",
-   "en": ""
+   "en": "The foe shall not use\nit!"
   },
   {
    "id": "MESSAGE180:066D",
@@ -80,32 +80,32 @@
   {
    "id": "MESSAGE180:068C",
    "jp": "ここは俺たちが\n頂くでやんす!",
-   "en": ""
+   "en": "This here's ours,\nyessir!"
   },
   {
    "id": "MESSAGE180:069E",
    "jp": "使わせはせんぞぉ!\n使わせはぁー!",
-   "en": ""
+   "en": "Ya won't use it!\nYa won't, I say!"
   },
   {
    "id": "MESSAGE180:06B2",
    "jp": "おらおら!　近付くヤツは\n脳天カチ割ってやるぞぃ!",
-   "en": ""
+   "en": "Hey hey! Come close\nan' I'll split yer skull!"
   },
   {
    "id": "MESSAGE180:06D1",
    "jp": "あなたたちになんか\nここは渡さないよ!",
-   "en": ""
+   "en": "I won't give this\nto the likes of you!"
   },
   {
    "id": "MESSAGE180:06E6",
    "jp": "こんなの使われたら\n後が面倒だからね!",
-   "en": ""
+   "en": "If they use this,\nit'll be a pain later!"
   },
   {
    "id": "MESSAGE180:06FE",
    "jp": "こんな物騒なものは\n使わせないよ!",
-   "en": ""
+   "en": "Nobody's using a\nthing this dangerous!"
   },
   {
    "id": "MESSAGE180:0713",
@@ -115,7 +115,7 @@
   {
    "id": "MESSAGE180:0723",
    "jp": "確保…完了しました",
-   "en": ""
+   "en": "Securing... complete."
   },
   {
    "id": "MESSAGE180:0731",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE180:0748",
    "jp": "貴様らに使わせるわけには\nいかない!",
-   "en": ""
+   "en": "I cannot let you\nuse this!"
   },
   {
    "id": "MESSAGE180:075E",
@@ -140,12 +140,12 @@
   {
    "id": "MESSAGE180:0776",
    "jp": "て、敵には使わせんぞ?",
-   "en": ""
+   "en": "Th-the enemy won't\nuse it, eh?"
   },
   {
    "id": "MESSAGE180:0784",
    "jp": "さぁて…覚悟を決めて頂戴!",
-   "en": ""
+   "en": "Now then... brace\nyourself!"
   },
   {
    "id": "MESSAGE180:0797",
@@ -155,7 +155,7 @@
   {
    "id": "MESSAGE180:07AD",
    "jp": "うほっ!\n制圧成功!",
-   "en": ""
+   "en": "Ooh!\nSeized it!"
   },
   {
    "id": "MESSAGE180:07BC",
@@ -175,52 +175,52 @@
   {
    "id": "MESSAGE180:07F3",
    "jp": "これで形勢逆転だぜ!",
-   "en": ""
+   "en": "Now the tables turn!"
   },
   {
    "id": "MESSAGE180:0802",
    "jp": "いい気味ね!",
-   "en": ""
+   "en": "Serves you right,\nhmph!"
   },
   {
    "id": "MESSAGE180:080B",
    "jp": "この勢いで進撃だ!",
-   "en": ""
+   "en": "Keep up the charge!"
   },
   {
    "id": "MESSAGE180:0818",
    "jp": "まだ抵抗する気?",
-   "en": ""
+   "en": "Still want to resist?"
   },
   {
    "id": "MESSAGE180:0824",
    "jp": "俺たちの力\n思い知ったか!?",
-   "en": ""
+   "en": "Now you know\nour strength!?"
   },
   {
    "id": "MESSAGE180:0837",
    "jp": "容赦なんか\nしないんだから!",
-   "en": ""
+   "en": "I won't hold\nback, you know!"
   },
   {
    "id": "MESSAGE180:0848",
    "jp": "戦争のやり方を\n教えてやるよ!",
-   "en": ""
+   "en": "Let me teach you\nhow war's done!"
   },
   {
    "id": "MESSAGE180:085C",
    "jp": "思い知りなさい!",
-   "en": ""
+   "en": "Learn your lesson!"
   },
   {
    "id": "MESSAGE180:0867",
    "jp": "貴様らに使わせぬ!",
-   "en": ""
+   "en": "You shall not use it!"
   },
   {
    "id": "MESSAGE180:0874",
    "jp": "このままいけば\n勝てるんじゃない?",
-   "en": ""
+   "en": "Keep this up and\nwe might just win!"
   },
   {
    "id": "MESSAGE180:0887",
@@ -230,12 +230,12 @@
   {
    "id": "MESSAGE180:088E",
    "jp": "こいつは\n使わせない!",
-   "en": ""
+   "en": "I won't let you\nuse this!"
   },
   {
    "id": "MESSAGE180:089B",
    "jp": "大したことないわね!",
-   "en": ""
+   "en": "Hmph, that was easy!"
   }
  ]
 }

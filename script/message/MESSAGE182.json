@@ -15,17 +15,17 @@
   {
    "id": "MESSAGE182:057D",
    "jp": "これで…\n少しは役に立てたのかな…?",
-   "en": ""
+   "en": "Maybe now... I've been\nof some use...?"
   },
   {
    "id": "MESSAGE182:0593",
    "jp": "ここを使って一気に\n勝負を決めましょう!",
-   "en": ""
+   "en": "Let us use this to\nsettle things at once!"
   },
   {
    "id": "MESSAGE182:05AE",
    "jp": "ここを渡しはしない!",
-   "en": ""
+   "en": "I will not give\nthis place up!"
   },
   {
    "id": "MESSAGE182:05BA",
@@ -40,12 +40,12 @@
   {
    "id": "MESSAGE182:05DC",
    "jp": "ここは我らが頂く!",
-   "en": ""
+   "en": "This is ours."
   },
   {
    "id": "MESSAGE182:05E8",
    "jp": "こんなもの、\n貴様らに使わせるかよ!",
-   "en": ""
+   "en": "Like I'd let you\nbastards use this!"
   },
   {
    "id": "MESSAGE182:05FE",
@@ -55,12 +55,12 @@
   {
    "id": "MESSAGE182:060D",
    "jp": "ここは使わせぬ!",
-   "en": ""
+   "en": "None shall use this!"
   },
   {
    "id": "MESSAGE182:0617",
    "jp": "ここ、渡さないよ?",
-   "en": ""
+   "en": "You can't have\nthis, okay?"
   },
   {
    "id": "MESSAGE182:0622",
@@ -75,17 +75,17 @@
   {
    "id": "MESSAGE182:0648",
    "jp": "こいつは、オレたちが\nもらうぜ!",
-   "en": ""
+   "en": "We'll be taking\nthis, thanks!"
   },
   {
    "id": "MESSAGE182:0659",
    "jp": "こいつは、俺たちが\nもらうでやんすよ!",
-   "en": ""
+   "en": "We'll be takin'\nthis, yessir!"
   },
   {
    "id": "MESSAGE182:066E",
    "jp": "制圧だぞぉ!",
-   "en": ""
+   "en": "Took it, ya hear meee!"
   },
   {
    "id": "MESSAGE182:0677",
@@ -100,27 +100,27 @@
   {
    "id": "MESSAGE182:06A0",
    "jp": "使われる前に奪っちゃえ!",
-   "en": ""
+   "en": "Grab it before\nthey use it!"
   },
   {
    "id": "MESSAGE182:06B0",
    "jp": "やった、制圧したぞ!",
-   "en": ""
+   "en": "Yes, we took it!"
   },
   {
    "id": "MESSAGE182:06BD",
    "jp": "相手に使われたら\nやっかいだからな!",
-   "en": ""
+   "en": "Be a pain if they\nused it on us!"
   },
   {
    "id": "MESSAGE182:06D3",
    "jp": "敵には、使わせない…",
-   "en": ""
+   "en": "The enemy will\nnot use it..."
   },
   {
    "id": "MESSAGE182:06E0",
    "jp": "これで脅威は減った…!",
-   "en": ""
+   "en": "That's one less\nthreat...!"
   },
   {
    "id": "MESSAGE182:06EF",
@@ -130,32 +130,32 @@
   {
    "id": "MESSAGE182:0705",
    "jp": "これで戦いを有利に\n運べるな…",
-   "en": ""
+   "en": "This will turn the\nbattle in our favor..."
   },
   {
    "id": "MESSAGE182:0719",
    "jp": "おお、これぞ神の軍勢に\n相応しい武器だ!",
-   "en": ""
+   "en": "Ah, a weapon worthy\nof God's army!"
   },
   {
    "id": "MESSAGE182:0734",
    "jp": "ハァハァ…\nま、間に合ったようじゃな!",
-   "en": ""
+   "en": "Huff, huff...\nL-looks like I made it!"
   },
   {
    "id": "MESSAGE182:074A",
    "jp": "撃たれるとウザいものね!\nだから、頂くわよ?",
-   "en": ""
+   "en": "Getting shot's lame!\nSo it's mine, okay?"
   },
   {
    "id": "MESSAGE182:0763",
    "jp": "うふふ…\n私タイムの始まりよ?",
-   "en": ""
+   "en": "Ufufu... Now begins\nmy time to shine!"
   },
   {
    "id": "MESSAGE182:0774",
    "jp": "パメラ様、一番乗りィィィ!",
-   "en": ""
+   "en": "Pamela-sama's\nfirst iiiin!"
   },
   {
    "id": "MESSAGE182:0786",
@@ -165,7 +165,7 @@
   {
    "id": "MESSAGE182:078D",
    "jp": "貴方たちには\n使わせませんわよ?",
-   "en": ""
+   "en": "You won't be\nusing this, dear."
   },
   {
    "id": "MESSAGE182:07A1",
@@ -175,52 +175,52 @@
   {
    "id": "MESSAGE182:07BA",
    "jp": "これでひと安心だな!",
-   "en": ""
+   "en": "That's a relief!"
   },
   {
    "id": "MESSAGE182:07C7",
    "jp": "制圧したわよ!",
-   "en": ""
+   "en": "Captured it!"
   },
   {
    "id": "MESSAGE182:07D1",
    "jp": "勝利は目前だぞ!",
-   "en": ""
+   "en": "Victory is near!"
   },
   {
    "id": "MESSAGE182:07DE",
    "jp": "これで反撃に\n出られるわね!",
-   "en": ""
+   "en": "Now we can\nstrike back!"
   },
   {
    "id": "MESSAGE182:07F0",
    "jp": "こんなもんに撃たれたら\nたまんねぇもんな!",
-   "en": ""
+   "en": "Gettin' shot by this\nthing would suck!"
   },
   {
    "id": "MESSAGE182:0807",
    "jp": "これ以上の抵抗は\n無意味よ!",
-   "en": ""
+   "en": "Further resistance\nis pointless!"
   },
   {
    "id": "MESSAGE182:081D",
    "jp": "この調子で\nガンガン行こうぜ!",
-   "en": ""
+   "en": "Let's keep this up\nand go all out!"
   },
   {
    "id": "MESSAGE182:082F",
    "jp": "抵抗する気も失せたでしょ?",
-   "en": ""
+   "en": "Lost the will to\nresist yet?"
   },
   {
    "id": "MESSAGE182:0841",
    "jp": "我らの勝利は目前だ!",
-   "en": ""
+   "en": "Our victory is\nat hand!"
   },
   {
    "id": "MESSAGE182:0851",
    "jp": "こんなもの…\n使わせるわけにはいかないわ",
-   "en": ""
+   "en": "This thing... I can't\nlet you use it."
   },
   {
    "id": "MESSAGE182:0867",
@@ -235,7 +235,7 @@
   {
    "id": "MESSAGE182:087A",
    "jp": "やった…制圧したわよ!",
-   "en": ""
+   "en": "Yes... we captured it!"
   }
  ]
 }

@@ -84,3 +84,13 @@ to run while any line is unticked.
 
 ## b043-b044 (release/dismiss/reward barks, approved; controller review)
 - [ ] MESSAGE150:0512 Mardym - でくのぼうが生意気な said to the player: Wh-What!? Insolent blockhead...!
+
+## b045-b046 (reward/village/unification barks, approved; controller review)
+- [ ] MESSAGE160:0584 Gordon - "...?" after a statement reads odd: That village concerns me...
+- [ ] MESSAGE168:04D2 Canaan - "Congrats" casual to the Emperor: Congratulations on / uniting all, Majesty!
+
+## b047-b048 (ending/weapon-capture barks, approved; Eudy "dears", Amareus/Flunky congrats fixed in review)
+- [ ] MESSAGE173:0749 Rosary - 百人力 "I'm a hundred strong!" literal: I'm worth a hundred!
+
+## b049-b050 (weapon/Appraiser/item barks, approved; controller review)
+- [ ] MESSAGE188:08F2 Nameless Soldier - no end punctuation: Looks like we can / get cards appraised!

@@ -20,7 +20,7 @@
   {
    "id": "MESSAGE208:066E",
    "jp": "何か見つけたわ!",
-   "en": ""
+   "en": "I found something!"
   },
   {
    "id": "MESSAGE208:0679",
@@ -45,7 +45,7 @@
   {
    "id": "MESSAGE208:06AE",
    "jp": "何か見つけたぜ?",
-   "en": ""
+   "en": "Found somethin'!"
   },
   {
    "id": "MESSAGE208:06B9",
@@ -60,7 +60,7 @@
   {
    "id": "MESSAGE208:06CF",
    "jp": "何か見つけたよ?",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:06DA",
@@ -90,12 +90,12 @@
   {
    "id": "MESSAGE208:0723",
    "jp": "何か見つけたぞい!\nガハハハ!",
-   "en": ""
+   "en": "Found me somethin'!\nGahahaha!"
   },
   {
    "id": "MESSAGE208:0735",
    "jp": "何か見つけたよ?",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:0740",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE208:079F",
    "jp": "ほう。これは…",
-   "en": ""
+   "en": "Oh? This is..."
   },
   {
    "id": "MESSAGE208:07A7",
@@ -155,7 +155,7 @@
   {
    "id": "MESSAGE208:07F3",
    "jp": "何か見つけた~!",
-   "en": ""
+   "en": "Found somethiiing~!"
   },
   {
    "id": "MESSAGE208:07FE",
@@ -190,7 +190,7 @@
   {
    "id": "MESSAGE208:084B",
    "jp": "何か見つけたぜ?",
-   "en": ""
+   "en": "Found somethin'!"
   },
   {
    "id": "MESSAGE208:0856",
@@ -200,32 +200,32 @@
   {
    "id": "MESSAGE208:0862",
    "jp": "何か見つけたぞ!",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:086D",
    "jp": "何か見つけたわ!",
-   "en": ""
+   "en": "I found something!"
   },
   {
    "id": "MESSAGE208:0878",
    "jp": "何か見つけたぜ?",
-   "en": ""
+   "en": "Found somethin'!"
   },
   {
    "id": "MESSAGE208:0883",
    "jp": "何か見つけたよ!",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:088E",
    "jp": "何か見つけたぞ!",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:0899",
    "jp": "何か見つけたわ!",
-   "en": ""
+   "en": "I found something!"
   },
   {
    "id": "MESSAGE208:08A4",
@@ -240,7 +240,7 @@
   {
    "id": "MESSAGE208:08C0",
    "jp": "何か手に入れたぞ!",
-   "en": ""
+   "en": "Got something!"
   },
   {
    "id": "MESSAGE208:08CD",
@@ -255,12 +255,12 @@
   {
    "id": "MESSAGE208:08DB",
    "jp": "何か見つけたぞ!",
-   "en": ""
+   "en": "Found something!"
   },
   {
    "id": "MESSAGE208:08E6",
    "jp": "何か見つけたわ!",
-   "en": ""
+   "en": "I found something!"
   }
  ]
 }

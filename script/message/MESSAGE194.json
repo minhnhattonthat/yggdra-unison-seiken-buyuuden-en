@@ -15,7 +15,7 @@
   {
    "id": "MESSAGE194:0659",
    "jp": "分かりました。\n行ってきます!",
-   "en": ""
+   "en": "Understood.\nI'm off!"
   },
   {
    "id": "MESSAGE194:066A",
@@ -30,12 +30,12 @@
   {
    "id": "MESSAGE194:068E",
    "jp": "フン…待っていろ",
-   "en": ""
+   "en": "Hmph... Wait here."
   },
   {
    "id": "MESSAGE194:0698",
    "jp": "じゃあ、行ってくるわね",
-   "en": ""
+   "en": "Well, I'm off then."
   },
   {
    "id": "MESSAGE194:06A4",
@@ -45,7 +45,7 @@
   {
    "id": "MESSAGE194:06B0",
    "jp": "フン…行って来るぜ",
-   "en": ""
+   "en": "Hmph... I'm off."
   },
   {
    "id": "MESSAGE194:06BB",
@@ -60,7 +60,7 @@
   {
    "id": "MESSAGE194:06E3",
    "jp": "じゃあ、待っててね",
-   "en": ""
+   "en": "Wait for me, okay?"
   },
   {
    "id": "MESSAGE194:06EE",
@@ -95,22 +95,22 @@
   {
    "id": "MESSAGE194:0758",
    "jp": "ボク、ちょっと見てくるね",
-   "en": ""
+   "en": "I'll go take a look!"
   },
   {
    "id": "MESSAGE194:0766",
    "jp": "ウチ、行ってくるね!",
-   "en": ""
+   "en": "Off I go, then!"
   },
   {
    "id": "MESSAGE194:0771",
    "jp": "行ってくるよ",
-   "en": ""
+   "en": "I'll head out."
   },
   {
    "id": "MESSAGE194:0778",
    "jp": "じゃあ、行ってくるぜ",
-   "en": ""
+   "en": "Alright, I'm goin'!"
   },
   {
    "id": "MESSAGE194:0783",
@@ -125,32 +125,32 @@
   {
    "id": "MESSAGE194:0799",
    "jp": "フフ…見てきてあげるわ",
-   "en": ""
+   "en": "Fufu... I'll go\nlook for you."
   },
   {
    "id": "MESSAGE194:07A6",
    "jp": "私が見てきてやろう",
-   "en": ""
+   "en": "I'll go see.\nConsider it a favor."
   },
   {
    "id": "MESSAGE194:07B1",
    "jp": "では、調べてこよう",
-   "en": ""
+   "en": "Then I shall\ninvestigate."
   },
   {
    "id": "MESSAGE194:07BC",
    "jp": "い…行ってみよう",
-   "en": ""
+   "en": "I-I'll go see..."
   },
   {
    "id": "MESSAGE194:07C5",
    "jp": "ちょっと見てくるわ",
-   "en": ""
+   "en": "I'll go have a\nquick look."
   },
   {
    "id": "MESSAGE194:07D0",
    "jp": "じゃあ、期待して待っててね",
-   "en": ""
+   "en": "Then wait for me, and\nexpect great things~"
   },
   {
    "id": "MESSAGE194:07E1",
@@ -175,17 +175,17 @@
   {
    "id": "MESSAGE194:0809",
    "jp": "俺が確かめてやろう",
-   "en": ""
+   "en": "I'll see for myself."
   },
   {
    "id": "MESSAGE194:0815",
    "jp": "ちょっと見てきますわね!",
-   "en": ""
+   "en": "I'll just pop over\nand look!"
   },
   {
    "id": "MESSAGE194:0823",
    "jp": "調べてみる価値は\nありそうですね…",
-   "en": ""
+   "en": "It does seem worth\ninvestigating..."
   },
   {
    "id": "MESSAGE194:0838",
