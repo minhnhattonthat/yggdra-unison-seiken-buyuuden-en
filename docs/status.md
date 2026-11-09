@@ -12,7 +12,8 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   script/.
 - **Batch state (end of session 8):** merged + reviewed (+ fixes): b001-b004, b013-b032. Translated, check OK,
   NOT reviewed, NOT merged: b005-b012, b033-b044, b049-b070, b072-b076. b071 fails check on 7 EDMES epithets (LONG,
-  below). b045-b048: agent was still running at hand-off; if b04x.out.tsv is missing or fails, re-dispatch.
+  below). b045-b048 done too (check OK, not reviewed). ブロンガ = Brongaa (official; MESSAGE172:0374 wrote Bronga).
+  No translator agent is running.
   Reports for b057+ in work/tl/b0NN.report.txt (b057, b061, b065, b069, b073). Next: pairs.py + reviewer per 2
   batches (compact: Critical/Important; send fixes + Minors back to a translator agent), merge, commit.
 - **Review flags from translator reports:** エンベリア公国 = Duchy of Embellia (b009-b012 wrote Principality);
