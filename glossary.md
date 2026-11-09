@@ -59,6 +59,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | マルディム | Mardym | | archbishop, schemer | Mardim |
 | ユベロン | Juvelon | | cardinal, coward | Yuberon |
 | ヨハイム | Johaim | | pope ousted by Juvelon (MS_M_08 texture only; no official form found) | Yohaim |
+| ユグドラ・ユリル・アルトワルツ | Yggdra Yuril Artwaltz | | full name (MS_PRO_001 texture) | |
+| バロイ | Baroi | | archmage, founder of both Rose houses | Baloy |
+| バーラバーサ | Barabasa | | sun god of Dort's bandits (MS_PRO_007, EPI_MES_07 textures) | |
+| アリエス | Aries | | 告死天使 Angel of Death, fell at Lost Aries (MS_N_16) | |
 | パメラ | Pamela | | ghost witch, money-mad, cheeky | |
 | シモベ | Shimobe | | Nessiah's "eternal servant" | |
 | ソドム | Sodom | | magic warrior | |
@@ -103,6 +107,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ミネルロード | Minerroad | | | |
 | オズ | Oz | | Holy City of Oz | |
 | ロンバルディア | Lombardia | | | |
+| ロンバルド | Lombard | | city at the centre of Lombardia (MS_N_33) | |
+| 修羅門 | Asura Gate | | Fortress of Ishnad (MS_N_06) | |
+| ロドニー街道 / アルウィン大河 / カルナ運河 | Rodney Road / Alwin River / Karna Canal | | MS_N_09, MS_N_26 | |
 | メリアータ | Meriata | | St. Meriata | |
 | アンカルジア | Ancardia | | Ancardia, the Lost Paradise | |
 | 凱旋門 | Arc of Triumph | | | |

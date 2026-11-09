@@ -4,6 +4,24 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 8 progress (session 16):** gfx/text.tsv gained the prose textures, read off the originals (zoomed contact
+  sheets; codex was out of quota): OP_WR (26-line prologue scroll), OPK_WR_00-11 (faction select, 7 lines),
+  MS_PRO_000-011 (faction prologues; a blank line = paragraph gap), MS_N_00-36 (territory descriptions; MS_M + MS_N
+  now all size 14), EPI_TIT/EPI_MES_00-11 (epilogues), EPI_WAKU0 全土統一 pill label (new gen_gfx `clear=row`:
+  repaint a panel instead of punching a transparent hole), OBJSTR00-13 (title + 3 lines, two boxes), CDS_000-035
+  (card panels: name + 9 lines; ★ -> •, not in Liberation). Glossary: Yggdra Yuril Artwaltz, Baroi, Barabasa, Aries,
+  Lombard, Asura Gate, Rodney Road / Alwin River / Karna Canal. TM_M faction names were clipped on screen (texture
+  drawn at x - 33): now left-aligned in box 50,0. Build 2026-11-10 07:19 sha1 0ddc741c (smoke ok, check.py green);
+  work/states regenerated 35/35 from build 7b781960 (same code, only TM_M differs): regen before graphics checks.
+  faction_select still shows Japanese 勢力選択 / 領主: / 領土数: / 難易度: (FORSEL_FONT?) and 戻る / 戦力確認 / 決定
+  (BUTTON). OPK_WR did not appear on faction select or its confirm box: probably the new-game opening (scene 17).
+  **Next:** see these on screen (OPK_WR, prologue_fNN MS_PRO, opening OP_WR scroll with KEEP=true,
+  epilogue EPI, territory/sortie MS_N, card_select CDS, battle map OBJSTR help); then the UI atlases (BTLFONT,
+  BTLMN_FONT, SYSTEX, TREFONT 探索準備, EXTRA_FONT, SAVE_FONT, BUTTON, SEN_FONT, ENETREFONT, TUTO_FONT, TR_FONT,
+  TUKOKU_FONT, WR_FONT, PRIZE_FONT, PRO_FONT, TERAGGFONT, OP_FONT, HELP_MAT, CDSEL_MAT, CDSKILLFNT0/1, FORSEL_FONT,
+  GMOVERFONT, TEND_FONT: dumps in work/gfx/ui via `gfx.py dump NAME --out work/gfx/ui`): each label needs its rect
+  (connected components of the atlas, or the .BI / code rects) and a `box=` row; English must fit the same rect.
+  Then 捕虜処遇 bottom band (probably an atlas above), ゴーレム in char_intro, `_unk` PACKs, TU_* last.
 - **Phase 8 progress (session 15):** gfx/text.tsv now also has (mapping in its `#` comments): IN_PRO/TM_M/EVSFORCE
   (faction table), CN_M leaders, MS_M descriptions (read off the texture), CARDNAMEA/CS_M (card table), IT_EF001-225
   (73 distinct labels, read off; IT_EF113 decodes as noise: untouched, check), ED_N/ED_H (306, = EDMEScc string v /
@@ -11,10 +29,8 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   goals, BATTLEOUT1-3, SELSORTIE, SHOOTNAME99, WR_SHN00-05. Seen English on screen: prologue IN_PRO, CNAMEA
   (char_intro), CNAMEB speaker tags (prisoner, ending). Tools: gfx.py paletted colour 0 = transparent, `WIDTH`
   override (CNAMEC is 64x16), gen_gfx per-line centring. New Johaim (ヨハイム, pope) in MS_M_08: add to glossary.
-  **Next:** the bottom-band title labels (捕虜処遇 / 全土統一 / 探索準備 seen Japanese on prisoner/ending/explore: find
-  the texture), class name ゴーレム in char_intro; OCR groups: OP_WR, OPK_WR, MS_PRO, MS_N, EPI_TIT/EPI_MES, CDS,
-  OBJSTR, UI atlases (BUTTON 戻る etc.: `box=` per label), `_unk` PACKs (need hash keys in build.rebuild_sfs), TU_*
-  last. EVSFONT lowercase lines follow a force name: check the join on screen (war events).
+  `_unk` PACKs need hash keys in build.rebuild_sfs. EVSFONT lowercase lines follow a force name: check the join on
+  screen (war events).
 - **Phase 8 (session 14):** texture pipeline (docs/re/graphics.md "Pipeline"): add rows to `gfx/text.tsv`,
   `python -X utf8 tools/gen_gfx.py [NAMEs]`, `python -X utf8 tools/gfx.py check`, look at work/gfx/enc/ (sheet.py),
   build. SHOOTNAME00-11, WD_N_00-36 (= territory table A71F0+0). Long WD_N names fill 256 px: check on screen.
@@ -39,8 +55,6 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   the Get Item! popup, ED_H/ED_N, 戦績 BG label 称号：): references/graphics.md + docs/re/graphics.md; then the QA
   tour, visual-QA verdicts (do them yourself, read-only pass, no subagents in an Orca worker), inkbox, textcover.
   Phase-7 leftovers to see on screen: docs/polish.md "Phase 7".
-- **Build session 15 (2026-11-10 06:47):** `build/yggdra_en.nds` sha1 574ccd99 (smoke ok); work/states regenerated
-  from build efe5505e (before the EVSFONT/WR_SHN rows): regen again before using states.
 - **Builds session 13 (2026-11-10 ~05:55):** `build/yggdra_en.nds` sha1 f56f2adb (smoke ok, English text, 35/35
   warps reached on this build, states regenerated from it); `build/yggdra_marker.nds` sha1 67f7db67 (states NOT
   from it: regen before using marker states).

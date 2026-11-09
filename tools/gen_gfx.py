@@ -7,6 +7,7 @@ gfx/text.tsv: NAME <TAB> English (\\n = new line) <TAB> options. One row per lab
   size=N        px (default: the largest that fits the box height per line, capped by width after squeezing)
   align=c       l / c / r inside the box;  wide=N  how far the text may spread past the box (default: to the edge)
   stroke=1      outline px;  min_x=0.7  narrowest horizontal squeeze before the size shrinks
+  clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency
 Colours come from the original: fill = per-row brightest opaque colour in the box (keeps gradients), outline =
 the darkest common opaque colour. Alpha is binary (4x4 textures have no partial alpha).
 
@@ -114,7 +115,10 @@ def draw(a, text, o):
         ImageDraw.Draw(inner).text(pos, ln, font=f, fill=255)
     nw = max(1, round(cw * xs))
     outer, inner = (np.array(im.resize((nw, ch), Image.LANCZOS)) / 255.0 for im in (outer, inner))
-    a[y:y + h, x:x + w] = 0
+    if o.get("clear") == "row":  # text on a panel: repaint each row with the panel colour left of the box
+        a[y:y + h, x:x + w] = a[y:y + h, x - 1:x]
+    else:
+        a[y:y + h, x:x + w] = 0
     if align == "c":
         ox = round(x + w / 2 - nw / 2)
     elif align == "l":

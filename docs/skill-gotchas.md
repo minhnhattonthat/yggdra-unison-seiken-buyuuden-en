@@ -35,3 +35,5 @@
 - references/emulator-qa.md (NDS, this repo's tools/lua/spmes.lua + tips.lua): a 10-frame tap through the patched CAUTION call starts the tip task once per frame, so TIP=1..3 shots show several tips overlaid; only TIP=0 / a single-frame tap gives one clean popup.
 - references/emulator-qa.md (play.py, NDS): work/states/faction_select.dst from regen ignored every touch for 6 steps; reaching faction select from title.dst (new game, tap through the opening) works.
 references/graphics.md: NDS 3D-texture games (no tiles/VRAM): keep the original palette and re-encode 4x4 blocks by searching (palette offset, mode) over it; avoids a palette-size change and round-trips pixel-exact (tools/gfx.py).
+- references/graphics.md: a texture can be drawn partly off screen (TM_M at screen x = texture x - 33): centring English in the texture clipped it; check the on-screen frame and align to the original's visible start.
+- references/graphics.md: text on a panel (EPI_WAKU0 pill): clearing the label box to transparent punches a hole; repaint rows from the panel instead (gen_gfx clear=row).

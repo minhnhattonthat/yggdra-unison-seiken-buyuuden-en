@@ -63,15 +63,16 @@ IN_PRO_008	~ Theocracy of Meria ~	font=sans-b size=12
 IN_PRO_009	~ Temple Knights ~	font=sans-b size=12
 IN_PRO_010	~ Forest Alliance ~	font=sans-b size=12
 IN_PRO_011	~ Nessiah's Forces ~	font=sans-b size=12
-TM_M_00	New Bronquian Empire	size=22
-TM_M_01	Kingdom of Fantasinia	size=22
-TM_M_02	Milanor's Thieves	size=22
-TM_M_03	Duchy of Embellia	size=22
-TM_M_04	House Branthese	size=22
-TM_M_05	House Esmeralda	size=22
-TM_M_06	Ortega Brigands	size=22
-TM_M_10	Forest Alliance	size=22
-TM_M_11	Nessiah's Forces	size=22
+# TM_M is drawn at screen x = texture x - 33 (faction_select info panel), the portrait covers screen x > ~225: left-align
+TM_M_00	New Bronquian Empire	size=22 align=l box=50,0,150,24
+TM_M_01	Kingdom of Fantasinia	size=22 align=l box=50,0,150,24
+TM_M_02	Milanor's Thieves	size=22 align=l box=50,0,150,24
+TM_M_03	Duchy of Embellia	size=22 align=l box=50,0,150,24
+TM_M_04	House Branthese	size=22 align=l box=50,0,150,24
+TM_M_05	House Esmeralda	size=22 align=l box=50,0,150,24
+TM_M_06	Ortega Brigands	size=22 align=l box=50,0,150,24
+TM_M_10	Forest Alliance	size=22 align=l box=50,0,150,24
+TM_M_11	Nessiah's Forces	size=22 align=l box=50,0,150,24
 EVSFORCE00	Imperial Army	size=15 align=l
 EVSFORCE01	Royal Army	size=15 align=l
 EVSFORCE02	Thieves	size=15 align=l
@@ -98,18 +99,18 @@ CN_M_09	Gordon of Steel	font=sans-b align=l size=14
 CN_M_10	Wondrous Witch\nPamela	font=sans-b align=l size=14 box=0,0,127,31
 CN_M_11	Nessiah\nthe Fallen	font=sans-b align=l size=14 box=0,0,127,31
 # Faction descriptions (MS_M_nn, read off the texture)
-MS_M_00	A great power ruling the lands west\nof Canossa under the Flame Emperor	font=sans-b
-MS_M_01	A rich realm on the fertile heartland,\ncentered on the royal capital Paltina	font=sans-b
-MS_M_02	A band of thieves based in the southern\nwastes, its power ever growing	font=sans-b
-MS_M_03	Ruled by the queen of the Undines, who\nhave dwelt by the Five Lakes of old	font=sans-b
-MS_M_04	A noble house of the Black Rose crest,\nruling the eastern Verlaine Hills	font=sans-b
-MS_M_05	A noble house of the White Rose crest,\nruling the western Verlaine Hills	font=sans-b
-MS_M_06	Ruffians under Brigand King Ortega,\nnesting in the Lenessey Mountains	font=sans-b
-MS_M_07	A reckless horde under Bandit King\nDort, roaming the Nyllard Desert	font=sans-b
-MS_M_08	A new regime run by Juvelon's faction,\nwhich ousted Pope Johaim by force	font=sans-b
-MS_M_09	Meria's own knights, long sworn to guard\nthe Pope and the holy land	font=sans-b
-MS_M_10	An alliance of the witch of Marduk\nand a band of bounty hunters	font=sans-b
-MS_M_11	A band in revolt against the gods,\nled by Nessiah the Fallen Angel	font=sans-b
+MS_M_00	A great power ruling the lands west\nof Canossa under the Flame Emperor	font=sans-b size=14
+MS_M_01	A rich realm on the fertile heartland,\ncentered on the royal capital Paltina	font=sans-b size=14
+MS_M_02	A band of thieves based in the southern\nwastes, its power ever growing	font=sans-b size=14
+MS_M_03	Ruled by the queen of the Undines, who\nhave dwelt by the Five Lakes of old	font=sans-b size=14
+MS_M_04	A noble house of the Black Rose crest,\nruling the eastern Verlaine Hills	font=sans-b size=14
+MS_M_05	A noble house of the White Rose crest,\nruling the western Verlaine Hills	font=sans-b size=14
+MS_M_06	Ruffians under Brigand King Ortega,\nnesting in the Lenessey Mountains	font=sans-b size=14
+MS_M_07	A reckless horde under Bandit King\nDort, roaming the Nyllard Desert	font=sans-b size=14
+MS_M_08	A new regime run by Juvelon's faction,\nwhich ousted Pope Johaim by force	font=sans-b size=14
+MS_M_09	Meria's own knights, long sworn to guard\nthe Pope and the holy land	font=sans-b size=14
+MS_M_10	An alliance of the witch of Marduk\nand a band of bounty hunters	font=sans-b size=14
+MS_M_11	A band in revolt against the gods,\nled by Nessiah the Fallen Angel	font=sans-b size=14
 # Cards nn = table arm9 A7E44 + nn*0x1C (+0 name -> CARDNAMEA, +4 effect -> CS_M as one line)
 CARDNAMEA00	Make Doll	font=sans-b size=12
 CARDNAMEA01	Necrogate	font=sans-b size=12
@@ -976,3 +977,195 @@ WR_SHN02	Defended	size=24
 WR_SHN03	Fallen	size=24
 WR_SHN04	Earthquake	size=24
 WR_SHN05	Plague	size=24
+# Opening prologue scroll (OP_WR, 26 lines, read off the texture)
+OP_WR	The sudden invasion by the New Bronquian Empire,\nand the fall of Karona, the fortress city\nin the north of the Kingdom of Fantasinia—\nthe news shook not only Fantasinia\nbut the entire continent.\nThe long age of peace and prosperity\nhad come to an end...\nLittle by little, the tide of war rose.\nBracing for the decisive battle to come,\neach power quietly began to arm itself.\nAll watched each other's every move,\nunrest flared up across the land,\nand the world stood on a knife's edge.\nIt was truly an age of rival warlords.\nWilling or not, the people were\nswept up into the turmoil of war...\nWhile new powers rose across the land,\nothers were culled and faded away.\nA world of chaos......\nTo fulfill their own ambitions,\nmany mighty ones blazed across\nthe world: an age of flame and steel...\nSome with their wisdom,\nand some by force of arms,\nset out to repaint\nthat world of chaos...	font=sans-b align=l size=13
+# Faction-select descriptions (OPK_WR_nn = faction nn, 7 lines, read off the texture)
+OPK_WR_00	Ruled by the Flame Emperor Gulcasa,\na military nation in the continent's\nnorthwest, home to a wealth of\nbattle-hardened generals and\nwell-drilled elite soldiers.\nWith its ample forces as its weapon,\nit can fight a steady war!	font=sans-b align=l size=13
+OPK_WR_01	A kingdom reigning over the heart\nof the continent. Once home to many\nsages, it kept expanding its power,\nbut with the rise of the Bronquian\nEmpire it now faces its downfall.\nSpreading first to the southeast\nto grow its power may be the key.	font=sans-b align=l size=13
+OPK_WR_02	A band of noble thieves led by\nMilanor, the thief king feared as\nthe Silver Wolf. Its fearless valor\nand phantom-like speed have made\nits name ring out to the far frontier.\nDefeat the nearby powers to lay\nthe groundwork for unification.	font=sans-b align=l size=13
+OPK_WR_03	The water folk's duchy in the\ncontinent's southeast, ruled by\nQueen Emelone. A peace-loving race,\nyet they are said to fight without\nfear once an enemy appears.\nTheir forte, fighting in the water,\nmay be the shortcut to victory.	font=sans-b align=l size=13
+OPK_WR_04	A self-governed domain in the\nVerlaine Hills, east of the continent.\nRoswell, young head of House Branthese\nof the Black Rose crest, harbored\ndreams of uniting the land...\nSettle the feud with rival House\nEsmeralda fast, and ready for the rest.	font=sans-b align=l size=13
+OPK_WR_05	A self-governed domain in the\nVerlaine Hills, east of the continent.\nRosary, young head of House Esmeralda\nof the White Rose crest, had awaited\nthe hour to settle with her neighbor...\nSettle the feud with rival House\nBranthese fast, and ready for the rest.	font=sans-b align=l size=13
+OPK_WR_06	An armed band led by Brigand King\nOrtega, holed up in the Lenessey\nMountains. Quick to smell gold,\ntheir natural cheer lets them toy\neven with the great nations.\nHold the great nations in check\nand grow your power bit by bit.	font=sans-b align=l size=13
+OPK_WR_07	Ruffians under Dort, self-styled\nBandit King, who prowl the Nyllard\nDesert. They are said to be such\na reckless lot that even armies\ngo out of their way to avoid them.\nBring the western lands to heel and\na way forward may come into view.	font=sans-b align=l size=13
+OPK_WR_08	A religious nation in the continent's\nsouthwest. With countless believers\nacross the land, it is said to hold\nvast funds from their donations.\n\nFar too weak yet to survive; finding\npeople skilled in war is a must.	font=sans-b align=l size=13
+OPK_WR_09	Elite knights who endured harsh\ntraining to guard the Meria faith.\nGrieving the Theocracy's corruption,\nthey rise up for the sake of the\npeople. With foes on every side,\nmarching the army east\nmay be their way out.	font=sans-b align=l size=13
+OPK_WR_10	A free-spirited band formed by\nthose who long for freedom.\nIts members' beliefs vary and\nthey lack unity, but each one\nis highly capable. As a mixed army\nit is poorly balanced: building up\nits forces is a must.	font=sans-b align=l size=13
+OPK_WR_11	A dreadful army of those who bear\ndark feelings, gathered around a\ncertain fallen angel. To take their\nrevenge on the gods, they begin a\nwar to conquer the continent. Its\ncast is vicious and quirky: the key\nis whether you can wield its power.	font=sans-b align=l size=13
+# Faction prologues (MS_PRO_0nn = faction nn; a blank line = the original's paragraph gap)
+MS_PRO_000	Having deposed the former emperor\nand raised the New Bronquian Empire,\nGulcasa, after pacifying his own lands,\nsoon set his sights on uniting them all.\n\nUnder him served able generals, who led\nhis army to victory in the war against\nthe late emperor, and hardened elites.\n\nWith lightning war as his motto,\nGulcasa led these elite troops and\nset out to invade the other nations...	font=sans-b align=l size=14
+MS_PRO_001	As the turmoil of war rages everywhere,\nYggdra Yuril Artwaltz, young princess\nof the Kingdom of Fantasinia, who wishes\nfor stability in all the land, not only\nher own domain, at last resolves to give\nherself to the fight to bring peace.\n\nSeeking a way to peace other than force,\nthe young princess, with the Holy Sword\nof her royal line as her strength, bravely\nfaces the mighty foe closing in on her...	font=sans-b align=l size=14
+MS_PRO_002	In a world where the weak are made to suffer,\nMilanor the Silver Wolf, leader of a band\nof thieves who always resented it, one day\nsees that the oppressors, worn down by\nlong years of war, have grown weaker\nthan expected. Taking it as his chance,\n\nhe and the comrades he trusts most,\nto build a free world where no line\ndivides the high-born from the low,\ncharge into the fray to strike down\nthe oppressors...	font=sans-b align=l size=14
+MS_PRO_003	In a pure world by the waterside, the\nUndines, water folk who shunned strife\nand lived in quiet, were grieved by the\nhumans' repeated invasions.\n\nHumans and the water folk had once\nlived in harmony. So there must be a\nreason they would turn to such folly...\nSo thought Emelone, queen of the water\nfolk, and seeking the answer, to strike\nat its root, she dared to set out into\nthe very heart of the war...	font=sans-b align=l size=14
+MS_PRO_004	Roswell, young head of House Branthese,\na family of the Black Rose crest that has\nbred great mages for generations, worked\nday after day to revive the legendary\nmagic created by Baroi, its founder...\nBut one day the Black Rose lands were\nattacked; in the chaos his research was\nlost, and his lands were badly damaged.\n\nFor his honor, and to revive the magic,\nRoswell sought new power, and led\nhis forces out on the march...	font=sans-b align=l size=14
+MS_PRO_005	Rosary, young head of House Esmeralda,\na family of the White Rose crest that has\nbred great mages for generations, vied\nwith her rival Roswell next door to revive\nthe legendary magic of Baroi, the founder.\n\nThen the White Rose lands were attacked;\nin the chaos her research was lost, and\nher lands suffered a heavy blow.\n\nHer research wiped clean, she found that\nher knowledge had been used for war, and\nto cut off the evil at its root, she made\nher way into the heart of the turmoil...	font=sans-b align=l size=14
+MS_PRO_006	Ortega, chief of a brigand band proud\nof its brawn, longs to test how far his\nstrength will take him in these wild\ntimes, and so, with his men in tow,\nhe takes on a reckless war: to go\nas far as they can go.\n\nHaving never held land of their own\nand used to wandering, his men gladly\njoin their chief's challenge and charge\ninto a world of warring rivals...	font=sans-b align=l size=14
+MS_PRO_007	Unable to bear that Barabasa, the sun\ngod they worship, is scorned in the\nworld outside, Bandit King Dort, to spread\nthe faith of the sun god through the\nworld and crush all other faiths, gathers\nhis men and marches out of the desert.\n\nMany hardships lay on the road ahead,\nbut carefree by nature, they had no fear,\nand seeking their god and a good time,\nthey simply charged on and on...	font=sans-b align=l size=14
+MS_PRO_008	Through the word of its god, the Meria\nchurch had put down strong roots in every\nland, growing for ages through its mighty\nconnections. But with the rise of Juvelon's\nfaction, its hollow doctrine bred a gap\nbetween rich and poor, and income dwindled.\n\nAlarmed, Cardinal Juvelon, seeking\nstill more income and new hunting grounds,\nbegan an invasion that went by\nthe name of missionary work...	font=sans-b align=l size=14
+MS_PRO_009	Driven out by their feud with Juvelon's\nfaction, the righteous Meria faithful,\nwith Pope Johaim to sustain their hearts,\nkept the old faith and awaited the chance\nto bring the true teachings back to the world.\n\nThen Gordon, head of the Temple Knights,\nreturned from his pilgrimage, and the\nmoment drew ever nearer.\nThe Temple Knights' march\nwas about to begin...	font=sans-b align=l size=14
+MS_PRO_010	Never at home in town, living quietly\nfar from human settlements, they\nstill sometimes longed to make\ntheir presence known.\n\nHaving acted each on their own until\nnow, and each bitterly driven back,\nthey now banded together around Pamela\nand boldly rose up against those who\ncame to ravage the forest, and those\nwho looked down on them...	font=sans-b align=l size=14
+MS_PRO_011	Cast down from heaven by divine\npunishment and sealed away for ages,\na lone fallen angel... Yet even after\nthat span, long as eternity, his hatred\nof the gods had not faded, but had\nonly grown stronger...\nAt last able to move again, he\ndescended to the earth as Nessiah,\nand to take his revenge on the gods,\nfirst set out to seize rule of the land...	font=sans-b align=l size=14
+# Territory descriptions (MS_N_nn = territory nn, as WD_N; read off the texture)
+MS_N_00	A mountain castle on the rocky south\nheights, seat of Flame Emperor Gulcasa	font=sans-b size=14
+MS_N_01	The imperial capital, highly developed\nthrough thorough city planning	font=sans-b size=14
+MS_N_02	A stately gate at the capital's entrance,\nshowing the empire's might to all	font=sans-b size=14
+MS_N_03	A barren land of toxic wetlands\nshrouded in miasma	font=sans-b size=14
+MS_N_04	A plain fort the people built\nagainst the royal army's invasion	font=sans-b size=14
+MS_N_05	A small fort the people threw together\nfrom building stone they brought	font=sans-b size=14
+MS_N_06	An impregnable fortress guarded by two\ncannons, the Asura Gate and its canals	font=sans-b size=14
+MS_N_07	A stone-paved road linking\nKarona and Ishnad	font=sans-b size=14
+MS_N_08	An old castle built in the age of absolute\nmonarchy, home to kings through the ages	font=sans-b size=14
+MS_N_09	A great stone bridge on the Rodney Road,\nspanning the mighty Alwin River	font=sans-b size=14
+MS_N_10	The capital of Fantasinia, spreading\nout around Castle Paltina	font=sans-b size=14
+MS_N_11	The south of the royal capital, home to\nmany people and thriving districts	font=sans-b size=14
+MS_N_12	The royal capital's richest farmland,\ncovered in golden wheat fields	font=sans-b size=14
+MS_N_13	A forest in the northeast whose name\nmeans "One Who Knows All"	font=sans-b size=14
+MS_N_14	The deep forest of Marduk, where\nthe holy World Tree towers	font=sans-b size=14
+MS_N_15	A valley past the forest where\nwild winds always rage	font=sans-b size=14
+MS_N_16	A barren waste where Aries, the Angel\nof Death, is said to have fallen	font=sans-b size=14
+MS_N_17	The only mountain road from the\nLenessey Mountains toward Framm	font=sans-b size=14
+MS_N_18	The steep Lenessey peaks, known\nas the "Mountains of Mist"	font=sans-b size=14
+MS_N_19	The manor of the west hills, kept by\nHouse Esmeralda (White Rose) for ages	font=sans-b size=14
+MS_N_20	The western hills ruled by\nHouse Esmeralda (White Rose)	font=sans-b size=14
+MS_N_21	The manor of the east hills, kept by\nHouse Branthese (Black Rose) for ages	font=sans-b size=14
+MS_N_22	The eastern hills ruled by\nHouse Branthese (Black Rose)	font=sans-b size=14
+MS_N_23	An island on the Five Lakes, long\nthe heart of the Duchy of Embellia	font=sans-b size=14
+MS_N_24	A land where humans and the Undine\nwater folk have lived together of old	font=sans-b size=14
+MS_N_25	The border area between\nEmbellia and Fantasinia	font=sans-b size=14
+MS_N_26	A plain spreading around the Karna\nCanal, south of the royal capital	font=sans-b size=14
+MS_N_27	The key pass from Norn Canyon\nout to the Orlando Plains	font=sans-b size=14
+MS_N_28	A steep canyon at the royal capital's\nsouth end, base of Milanor's Thieves	font=sans-b size=14
+MS_N_29	A yellow-earth desert west of Paltina,\nbeneath a scorching sun	font=sans-b size=14
+MS_N_30	A land under the Theocracy of Meria's\nprotection, rich from trade of old	font=sans-b size=14
+MS_N_31	The west end of a trade route linking\noasis towns across the Nyllard Desert	font=sans-b size=14
+MS_N_32	A city with strong defenses,\nthe gateway to Lombardia	font=sans-b size=14
+MS_N_33	A capital region of towns\nlinked around Lombard	font=sans-b size=14
+MS_N_34	Sacred ground ruled by popes for ages,\nunder the Church of St. Meriata	font=sans-b size=14
+MS_N_35	A volcanic zone in the Lenessey\nMountains, where few people live	font=sans-b size=14
+MS_N_36	A forbidden land where no one\nmay ever set foot	font=sans-b size=14
+# Epilogue titles and paragraphs (EPI_TIT_nn / EPI_MES_nn = faction nn), unification frame label (EPI_WAKU0)
+EPI_TIT_00	~ Dawn of the Bronquian Era ~	size=20
+EPI_TIT_01	~ The Thousand-Year Reign Begins ~	size=20
+EPI_TIT_02	~ A Thief King Without Peer ~	size=20
+EPI_TIT_03	~ Eternal Peace Arrives ~	size=20
+EPI_TIT_04	~ Return of the Noble Archmage ~	size=20
+EPI_TIT_05	~ Return of the Noble Archmage ~	size=20
+EPI_TIT_06	~ In Search of Freedom ~	size=20
+EPI_TIT_07	~ Reign of the Sun God of Chaos ~	size=20
+EPI_TIT_08	~ Herald of a New Revolution ~	size=20
+EPI_TIT_09	~ Under the Meria Faith's Protection ~	size=20
+EPI_TIT_10	~ Into an Age of Emptiness ~	size=20
+EPI_TIT_11	~ Twilight of the Gods ~	size=20
+EPI_WAKU0	Unification	font=serif-b size=14 box=66,4,124,18 clear=row wide=0
+EPI_MES_00	After a long, long war, the New Bronquian\nEmpire achieved the unification of the land.\nKeeping its strict discipline even after\nthe fighting ended, it remained a nation\nunshaken for centuries to come.\nAnd the great deeds of Gulcasa, the first\nemperor, who built this great empire in a\nsingle generation, were told and praised\nfor ages after...	font=sans-b align=l size=14
+EPI_MES_01	Soon after unifying the land, Yggdra,\nruler of Fantasinia, declared that she\nwould lay down arms. The wounds the war\nleft on the world were deep, but the sight\nof her striving, however unseasoned, to\nmend the world at last moved many hearts,\nand her will to save everyone was\nembraced even by former enemy peoples.\nIn the end, after reconciliation,\ntrue peace arrived...	font=sans-b align=l size=14
+EPI_MES_02	Though once no more than a local band,\nMilanor's Thieves, with their spirit of\nhelping the weak and crushing the strong,\nat last united the people's hearts.\nIn this tide that yearned for freedom,\nthe war died down before long, and even\namid the toil of rebuilding a world laid\nwaste, smiles never left the people's faces;\nand in time, a free world was built...	font=sans-b align=l size=14
+EPI_MES_03	Through Queen Emelone's skill, charisma\nand deeply loving nature, the age of\nwar quietly came to a close.\nFirmly driving off invaders who came now\nand then, the water folk, who by nature\nshun strife, kept up their ties with humans,\nand little by little the rift between them\nclosed, until a gentle, peaceful age came\nwhen humans and Undines lived side by side...	font=sans-b align=l size=14
+EPI_MES_04	A new magic nation under a young ruler...\nAbsorbing even rival House Esmeralda,\nRoswell, head of House Branthese,\npursued his own research, and at last\nsucceeded in reviving the lost magic\nsaid to have been created by Baroi,\nthe founder. Through the ancient wisdom\nhe revived, this nation of magic is said\nto have flourished for all time...	font=sans-b align=l size=14
+EPI_MES_05	A new magic nation under a young ruler...\nAbsorbing even rival House Branthese,\nRosary, head of House Esmeralda,\npursued her own research, and at last\nsucceeded in reviving the lost magic\nsaid to have been created by Baroi,\nthe founder. Through the ancient wisdom\nshe revived, this nation of magic is said\nto have walked the road of prosperity...	font=sans-b align=l size=14
+EPI_MES_06	At the hands of insolent ruffians, the\nworld was united at the end of chaos,\nbut never having cared for ruling in the\nfirst place, the freedom-loving brigands\ncast off the ties of rank and honor,\ngathered all the treasure they could carry,\nand in time went back home to Lenessey,\nwhere they lived merrily with their friends...	font=sans-b align=l size=14
+EPI_MES_07	Relying on Barabasa, the sun god they\nblindly believed in, the bandits who\nclimbed to the top of the world are said\nto have run rampant everywhere, until\na rebel army formed by Temple Knights\nthey had let slip wiped them out as an\nevil cult... After that, the faith in\nBarabasa lived on only quietly, in remote\nfrontiers where people seldom went...	font=sans-b align=l size=14
+EPI_MES_08	Through the holy doctrine of the Meria\nfaith and overwhelming economic might,\nthe Theocracy of Meria once unified the land...\nBut the anger of a people who grieved the\ngap between rich and poor reached its limit;\nrife with corruption, the nation sank ever\nlower, riots to break the deadlock flared\neverywhere, and an age of civil war began...	font=sans-b align=l size=14
+EPI_MES_09	Once on the brink of ruin, persecuted by\nJuvelon's faction of the Meria faith, the\nTemple Knights, guided by God, won battle\nafter battle and at last unified the land.\nTrue to justice to the very end, the Temple\nKnights never forgot the true teachings\nof the Meria faith and protected the\npeople for ages, and their fairness was\ntold as a fine tale for ages to come...	font=sans-b align=l size=14
+EPI_MES_10	A mysterious power that appeared one day\nlike a comet... With wild, unpredictable\ntactics they ran rings around every foe\nthey met, and at last, unstoppable,\nunified the land. But a little later,\nPamela, the alliance's leader, vanished\ntogether with the Undines.\nWithout her, the alliance lost its reason\nto exist, and in time, split by differing\naims, it is said to have disbanded...	font=sans-b align=l size=14
+EPI_MES_11	Having quelled the war humans could never\nend, reaching the first stage of his goal,\nNessiah the Fallen Angel used all his power\nto leave for the realm of the gods for revenge.\nMany went with him on that campaign,\nbut it is said none ever returned...\nAfterward, on the earth now without a ruler,\na struggle to choose a new ruler arose,\nand the age of war went on and on...	font=sans-b align=l size=14
+# Map-object help panels (OBJSTRnn: centred title + 3 left lines)
+OBJSTR00	Attack Base	font=serif-b size=13 box=0,0,256,15
+OBJSTR00	The attacking side's (player's) home base.\nIf enemy units capture it,\nthe player is defeated.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR01	Defense Base	font=serif-b size=13 box=0,0,256,15
+OBJSTR01	The defending side's (CPU's) home base.\nIf player units capture it,\nthe player wins.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR02	Village	font=serif-b size=13 box=0,0,256,15
+OBJSTR02	Reaching it lets you take on a quest\nafter winning the war.\nIt has no effect for the defender (CPU).	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR03	City	font=serif-b size=13 box=0,0,256,15
+OBJSTR03	Capturing it adds 1 to your deployable units.\nIf you take a city the opponent holds,\ntheir deployable units also drop by 1.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR04	Barricade	font=serif-b size=13 box=0,0,256,15
+OBJSTR04	Capturing it adds 1\nto your deployable units.\nOnly the defender (CPU) can capture it.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR05	Cannon	font=serif-b size=13 box=0,0,256,15
+OBJSTR05	Capturing it adds 1\nto your deployable units.\nOnly the attacker (player) can capture it.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR06	Special Item	font=serif-b size=13 box=0,0,256,15
+OBJSTR06	A stylish hand mirror framed in gold, shining\ndazzlingly, bewitching all who see it.\nIt gives off an aura housewives would love.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR07	Appraiser	font=serif-b size=13 box=0,0,256,15
+OBJSTR07	An appraiser for strategy cards. Capture it to\nlearn a card's true nature before it activates.\nOnly the attacker (player) can capture it.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR08	Siege Weapon (Cannon)	font=serif-b size=13 box=0,0,256,15
+OBJSTR08	Becomes a weapon of the side that takes it,\nfiring shells at set intervals.\nShells are slow but deal heavy damage.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR09	Siege Weapon (Arrow Turret)	font=serif-b size=13 box=0,0,256,15
+OBJSTR09	Becomes a weapon of the side that takes it,\nfiring arrows at set intervals.\nIt turns the way a unit last moved.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR10	Siege Weapon (Magic Cannon)	font=serif-b size=13 box=0,0,256,15
+OBJSTR10	Becomes a weapon of the side that takes it,\nfiring a straight beam that lingers\na while and blocks units' movement.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR11	Siege Weapon (Catapult)	font=serif-b size=13 box=0,0,256,15
+OBJSTR11	Becomes a weapon of the side that takes it,\nhurling boulders at set intervals.\nEach boulder splits three ways after launch.	font=sans-b align=l size=12 box=1,15,255,45
+OBJSTR13	Special Item	font=serif-b size=13 box=0,0,256,15
+OBJSTR13	A solemn book with a divine glow,\nsomehow hard to approach.\nSaid to be a must-have for any prophet.	font=sans-b align=l size=12 box=1,15,255,45
+# Card description panels (CDS_0nn = card nn, as CARDNAMEA): centred name + 8 left lines (time, condition, effect)
+CDS_000	Make Doll	font=serif-b size=11 box=0,0,128,14
+CDS_000	Trigger Time (2x)\n200→100\nRequires an allied\nWitch deployed\n\nTurns all deployed\nenemies into Golems\nfor 30 seconds\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_001	Necrogate	font=serif-b size=11 box=0,0,128,14
+CDS_001	Trigger Time (2x)\n200→100\nRequires an allied\nNecromancer deployed\n\nTurns all deployed\nenemies into Skeletons\nfor 30 seconds\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_002	Medusa Eye	font=serif-b size=11 box=0,0,128,14
+CDS_002	Trigger Time (3x)\n240→180→120\nNo condition\n\n\nStuns all\ndeployed enemies\n\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_003	Poison Breath	font=serif-b size=11 box=0,0,128,14
+CDS_003	Trigger Time (3x)\n240→150→70\nRequires an allied\nSkeleton deployed\n\nEach time, all deployed\nenemies' HP slowly\ndrops for 30→20→10\nseconds	font=sans-b align=l size=10 box=1,15,127,105
+CDS_004	Gravity Chaos	font=serif-b size=11 box=0,0,128,14
+CDS_004	Trigger Time (2x)\n240→120\nNo condition\n\n\nHalves the HP of all\ndeployed enemies\n• No effect if Dark-immune\n• Dark-weak foes go to 1 HP	font=sans-b align=l size=10 box=1,15,127,105
+CDS_005	Item Break	font=serif-b size=11 box=0,0,128,14
+CDS_005	Trigger Time (1x)\n100\nRequires an enemy\nFencer deployed\n\nItems equipped by all\nyour units break\nand are lost\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_006	Steal	font=serif-b size=11 box=0,0,128,14
+CDS_006	Trigger Time (3x)\n180→120→60\nRequires an enemy\nBandit deployed\n\nItems vanish one by one,\nat random, from your\nitem stock\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_007	Bloody Claw	font=serif-b size=11 box=0,0,128,14
+CDS_007	Trigger Time (3x)\n150→100→50\nRequires an allied\nAssassin deployed\n\nEach time, for 5→5→10\nseconds, the first Unison\nAttack hit is critical\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_008	Chariot	font=serif-b size=11 box=0,0,128,14
+CDS_008	Trigger Time (2x)\n200→100\nRequires an allied\nKnight deployed\n\nHalves the HP of all\ndeployed enemies\n• Griffon Riders, Dragoons,\nKnights, Golems immune	font=sans-b align=l size=10 box=1,15,127,105
+CDS_009	Shield Barrier	font=serif-b size=11 box=0,0,128,14
+CDS_009	Trigger Time (3x)\n210→150→90\nNo condition\n\n\nFor 20 seconds,\ndamage to your units\nis halved\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_010	Flame	font=serif-b size=11 box=0,0,128,14
+CDS_010	Trigger Time (2x)\n200→100\nNo condition\n\n\nHalves the HP of all\ndeployed enemies\n• No effect if Fire-immune\n• Fire-weak foes go to 1 HP	font=sans-b align=l size=10 box=1,15,127,105
+CDS_011	Blizzard	font=serif-b size=11 box=0,0,128,14
+CDS_011	Trigger Time (2x)\n200→100\nNo condition\n\n\nHalves the HP of all\ndeployed enemies\n• No effect if Ice-immune\n• Ice-weak foes go to 1 HP	font=sans-b align=l size=10 box=1,15,127,105
+CDS_012	Thunderbolt	font=serif-b size=11 box=0,0,128,14
+CDS_012	Trigger Time (2x)\n200→100\nNo condition\n\n\nHalves the HP of all\ndeployed enemies\n• No effect if Lightning-immune\n• Lightning-weak foes go to 1 HP	font=sans-b align=l size=10 box=1,15,127,105
+CDS_013	Banish	font=serif-b size=11 box=0,0,128,14
+CDS_013	Trigger Time (2x)\n200→100\nNo condition\n\n\nHalves the HP of all\ndeployed enemies\n• No effect if Holy-immune\n• Holy-weak foes go to 1 HP	font=sans-b align=l size=10 box=1,15,127,105
+CDS_014	Dragon Killer	font=serif-b size=11 box=0,0,128,14
+CDS_014	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 20 seconds, the\nImpact Circle that\nappears becomes huge\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_015	Earthquake	font=serif-b size=11 box=0,0,128,14
+CDS_015	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 10 seconds, none\nof your deployed units\ncan be controlled\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_016	Mind Change	font=serif-b size=11 box=0,0,128,14
+CDS_016	Trigger Time (3x)\n200→150→100\nNo condition\n\n\nThe remaining and lost\nHP of every deployed\nunit swap places\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_017	Revolution	font=serif-b size=11 box=0,0,128,14
+CDS_017	Trigger Time (1x)\n60\nRequires an allied\nValkyrie deployed\n\nSets the HP of all\ndeployed enemies to 1\n• No effect on commanders\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_018	Jihad	font=serif-b size=11 box=0,0,128,14
+CDS_018	Trigger Time (1x)\n60\nRequires your lord to be\nthe only unit deployed\n\nWipes out all\ndeployed enemies\n• Commanders go to 1 HP\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_019	Sanctuary	font=serif-b size=11 box=0,0,128,14
+CDS_019	Trigger Time (1x)\n180\nNo condition\n\n\nFor 60 seconds, the HP\nof all your deployed\nunits slowly recovers\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_020	Refreshment	font=serif-b size=11 box=0,0,128,14
+CDS_020	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 20 seconds, the\nImpact Circle that\nappears becomes tiny\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_021	Kiss of Death	font=serif-b size=11 box=0,0,128,14
+CDS_021	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 20 seconds, every\ndeployed unit on both\nsides moves at high speed\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_022	Fortune	font=serif-b size=11 box=0,0,128,14
+CDS_022	Trigger Time (3x)\n200→120→60\nNo condition\n\n\nEvery deployed unit\nchanges position\n• Attack and defense\nbases are not affected	font=sans-b align=l size=10 box=1,15,127,105
+CDS_023	Mirage	font=serif-b size=11 box=0,0,128,14
+CDS_023	Trigger Time (1x)\n150\nNo condition\n\n\nThe base positions of\nboth sides' units\nare swapped\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_024	Banshee's Cry	font=serif-b size=11 box=0,0,128,14
+CDS_024	Trigger Time (1x)\n180\nNo condition\n\n\nFor 60 seconds, the ATK\nof all deployed enemies\nbecomes 1\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_025	Ivy Whip	font=serif-b size=11 box=0,0,128,14
+CDS_025	Trigger Time (2x)\n200→100\nNo condition\n\n\nWipes out all units\non forest terrain\n\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_026	Sandstorm	font=serif-b size=11 box=0,0,128,14
+CDS_026	Trigger Time (2x)\n200→100\nNo condition\n\n\nWipes out all units\non desert terrain\n\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_027	Mantrap	font=serif-b size=11 box=0,0,128,14
+CDS_027	Trigger Time (2x)\n200→100\nNo condition\n\n\nWipes out all units\non poison swamp terrain\n\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_028	Rockfall	font=serif-b size=11 box=0,0,128,14
+CDS_028	Trigger Time (2x)\n200→100\nNo condition\n\n\nWipes out all units\non wasteland terrain\n\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_029	Ace Guard	font=serif-b size=11 box=0,0,128,14
+CDS_029	Trigger Time (1x)\n60\nRequires your lord\nto be alive\n\nFor 30 seconds, guards\nagainst every enemy\nfirst strike\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_030	Genocide	font=serif-b size=11 box=0,0,128,14
+CDS_030	Trigger Time (1x)\n60\nRequires an allied\nDragoon deployed\n\nFor 30 seconds, all units'\nATK becomes 6 and the\nImpact Circle turns L-size\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_031	Reincarnation	font=serif-b size=11 box=0,0,128,14
+CDS_031	Trigger Time (1x)\n150\nNo condition\n\n\nFor 50 seconds, the unit\nclasses of all deployed\nunits shuffle at random\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_032	Rebellion	font=serif-b size=11 box=0,0,128,14
+CDS_032	Trigger Time (1x)\n20\nNo condition\n\n\nSets the HP of all\ndeployed units to 1 and\nwipes out enemy reserves\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_033	Diamond Dust	font=serif-b size=11 box=0,0,128,14
+CDS_033	Trigger Time (1x)\n240\nRequires an enemy\nUndine deployed\n\nFor 60 seconds, all\nyour units turn\ninto Undines\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_034	Coma Karma	font=serif-b size=11 box=0,0,128,14
+CDS_034	Trigger Time (2x)\n200→100\nNo condition\n\n\nFor 20 seconds, the\nbattle map is shrouded\nin darkness\n	font=sans-b align=l size=10 box=1,15,127,105
+CDS_035	Judgment Zero	font=serif-b size=11 box=0,0,128,14
+CDS_035	Trigger Time (1x)\n100\nRequires a retreated\nunit on either side\n\nAll retreated units\non both sides return\nto the battlefield\n	font=sans-b align=l size=10 box=1,15,127,105
