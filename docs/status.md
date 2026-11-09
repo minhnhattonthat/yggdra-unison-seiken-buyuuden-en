@@ -2,8 +2,26 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text packed; most submenus toured
-  and measured, see docs/re/windows.md; left: unit/class/card names, extras menus, battle SPMES box).
+- **Phase:** 5. Marker build in progress (dialogue/TUTO/EDMES measured; system text packed; submenus toured and
+  measured; every table field placed by code, docs/re/windows.md; left: see "Next (phase 5 session 7)").
+- **Phase 5 session 6 (2026-11-10):**
+  - Extractor blind spot fixed: one-glyph pool strings before the arm9 pool (8F980 ・ territory dots, 8F984 …
+    medallion, 8F988 P battle results) and ov9_06:3ED4 — (text.POOLS starts moved; pool-edge pointer sweep of every
+    image found nothing else). Excluded: ov9_18:3734 "0" (A2 FF, read with struct bytes 3736-373F; A2 stays 0 in
+    the English font).
+  - Unit names (F5380+0) and card names (A7E44+0) are drawn only inside 0x020132E0 composites: info band 0x0200FC88
+    (= ctr 0x020102F8, same band as save / card select), medallion centred line, explore line x 30 y 27. 7 new
+    composites in windows.json. F5380+4, F5B88+0, A7E44+4: no code reads these fields (status "unread").
+  - Battle tips 100500: task 0x0207FD6C (centred, panel x 21, 200 x 2, status "code"), started by 0x02080388 at
+    battle turn start (state machine 0x0207CE20, byte [r4+1] 0xE / 9). `tools/lua/tips.lua` forces the
+    [0x0210E6BB] < 5 check, but no warp/tour state reaches turn start. Battle results labels 100554 (x 40, value
+    x 197): code budget 150.
+  - Marker build sha1 553d3bc6 (smoke ok). States not regenerated (only data strings added).
+- **Next (phase 5 session 7):** debug tool: reach battle turn start / battle results (start the battle from the
+  deploy phase; tour_bt taps) -> see the tip popup and results, turn their "code" rules into measured ones; tour
+  explore unit select (tour_ex2: merchant dialogue needs taps at the box, t128,140 x many ended the explore into
+  turn end) for the info-band composites; then close phase 5 (battle SPMES box stays a guess = debug-tool gap,
+  phase 8). Status values in windows.json: measured / code / composite / unread / guess.
 - **Phase 5 session 5 (2026-11-10):**
   - Toured + measured (windows.json, windows.md table): battle (sortie hint, CAUTION band, SELECT menu data pages,
     duel labels), territory composites, explore help pages, war data, medallion line + Get Item! popup, war report

@@ -2,6 +2,36 @@
  "file": "arm9",
  "strings": [
   {
+   "id": "arm9:8F980",
+   "font": "sys",
+   "jp": "・",
+   "en": "",
+   "max": 4,
+   "ptrs": [
+    "ov9_14:18F4"
+   ]
+  },
+  {
+   "id": "arm9:8F984",
+   "font": "sys",
+   "jp": "…",
+   "en": "",
+   "max": 4,
+   "ptrs": [
+    "ov9_10:135C"
+   ]
+  },
+  {
+   "id": "arm9:8F988",
+   "font": "sys",
+   "jp": "P",
+   "en": "",
+   "max": 4,
+   "ptrs": [
+    "arm9:81168"
+   ]
+  },
+  {
    "id": "arm9:8F98C",
    "font": "item",
    "jp": "邪眼",

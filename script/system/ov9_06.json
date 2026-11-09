@@ -2,6 +2,16 @@
  "file": "ov9_06",
  "strings": [
   {
+   "id": "ov9_06:3ED4",
+   "font": "end",
+   "jp": "—",
+   "en": "",
+   "max": 4,
+   "ptrs": [
+    "ov9_06:2320"
+   ]
+  },
+  {
    "id": "ov9_06:3ED8",
    "font": "end",
    "jp": "レア：",

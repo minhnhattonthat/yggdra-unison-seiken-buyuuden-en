@@ -172,11 +172,12 @@ def rebuild(name, b, new):
 # --- system text: string pools in arm9 / overlays, reached by absolute u32 pointers (docs/re/text.md) ---
 ARM9_BASE, OVL_BASE = 0x02000000, 0x0211B780
 POOLS = [  # (image, start, end, font); end = after the last FF. Found by tools/systext.py + pointer scan.
-    ("arm9", 0x8F98C, 0x9281C, "sys"), ("arm9", 0x92830, 0x95C09, "sys"),  # 958EC-95C08: explore help pages (jp_left on the marker build)
+    # 8F980-8F98B: one-glyph strings ・ … P (territory dots ov9_14, medallion composite, battle results arm9 0x81168)
+    ("arm9", 0x8F980, 0x9281C, "sys"), ("arm9", 0x92830, 0x95C09, "sys"),  # 958EC-95C08: explore help pages (jp_left on the marker build)
     ("ov9_02", 0x1690, 0x169D, "end"), ("ov9_02", 0x16BC, 0x17A8, "end"),
     ("ov9_03", 0x2BB0, 0x2D45, "sys"), ("ov9_03", 0x2D70, 0x316A, "sys"),
     ("ov9_05", 0x340, 0x36D, "sys"),
-    ("ov9_06", 0x3ED8, 0x427A, "end"), ("ov9_06", 0x431C, 0x432C, "end"),
+    ("ov9_06", 0x3ED4, 0x427A, "end"), ("ov9_06", 0x431C, 0x432C, "end"),  # 3ED4: — (one glyph)
     ("ov9_07", 0x1DEC, 0x2654, "end"),
     ("ov9_15", 0x46DC, 0x4742, "sys"),  # 46D0-46DB: struct bytes before the first string
     ("ov9_16", 0x1024, 0x104B, "sys"),

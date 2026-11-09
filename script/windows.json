@@ -30,7 +30,16 @@
   {"match": "^(ov9_19|ov9_15|ov9_05):", "box": "save / load prompt in the CONFIRM band (centred, screen-wide band, 2 lines)", "px": 240, "lines": 2, "status": "measured", "shot": "work/qa/tour/sv/s.png (save done band), work/play/tour_un 0002 (CONFIRM band)"},
   {"match": "^arm9:", "table": "F79D8+0", "multi": true, "box": "in-game HELP popup page body (help on at new game; x 24 y 76, 3 lines, panel inner edge 235, frame 236)", "px": 210, "lines": 3, "status": "measured", "shot": "work/play/tour_hp 0006 (rowscan: frame at 2x 472)"},
   {"match": "^arm9:", "table": "F79D8+0", "box": "in-game HELP popup title (x 22 y 59, same panel)", "px": 210, "lines": 1, "status": "measured", "shot": "work/play/tour_hp 0006"},
-  {"match": "^arm9:", "table": "100500+0", "box": "battle tip pages (詳しくは、チュートリアル→...): not seen; held to the HELP popup body", "px": 210, "lines": 3, "status": "guess"},
+  {"match": "^arm9:", "table": "100500+0", "multi": true, "box": "battle tip popup (task 0x0207FD6C, started at battle turn start while [0x0210E6BB] < 5): pair 2n centred at y 32/41, 2n+1 centred at y 82, x = 128 - count11*11/2, panel from x 21 (0x01FF9BD4 args) = 214 wide", "px": 200, "lines": 2, "status": "code", "shot": "not seen: the warp battle state never reaches turn start (tools/lua/tips.lua forces the check; debug-tool gap)"},
+  {"match": "^arm9:", "table": "100554+0", "box": "battle results label (0x02080D88 x 40 y 48 + 21 n; value at x 197)", "px": 150, "lines": 1, "status": "code", "shot": "not seen (battle results: debug-tool gap)"},
+  {"match": "^arm9:", "ids": ["arm9:8F988"], "box": "battle results points suffix P (0x02080FE8 x 215 y 133)", "px": 40, "lines": 1, "status": "code"},
+  {"match": "^arm9:", "ids": ["arm9:8F980"], "box": "territory 'expanding' animated dot (ov9_14, appended to arm9:919E0)", "px": 12, "lines": 1, "status": "code"},
+  {"match": "^arm9:", "ids": ["arm9:8F984"], "box": "medallion composite tail (… after the territory name)", "px": 240, "lines": 1, "status": "composite"},
+  {"match": "^arm9:", "table": "F5380+0", "box": "unit name: drawn only inside composites (info band, medallion, explore line; composites govern)", "px": 240, "lines": 1, "status": "composite"},
+  {"match": "^arm9:", "table": "A7E44+0", "box": "card name: drawn only in the card-decided info band composite (ov9_16)", "px": 240, "lines": 1, "status": "composite"},
+  {"match": "^arm9:", "table": "F5380+4", "box": "unit epithet + name: no code reads this field (only +0, +8.. have accessors); screens use CNAME* textures", "px": 240, "lines": 1, "status": "unread"},
+  {"match": "^arm9:", "table": "F5B88+0", "box": "class name: no code reads this field (accessors at 0x02057E2C.. read +4..+A); screens use textures", "px": 240, "lines": 1, "status": "unread"},
+  {"match": "^arm9:", "table": "A7E44+4", "box": "card one-liner: no code reads this field (only +0 at 0x02044FBC, +A..+18); card panels are CDS_* textures", "px": 240, "lines": 2, "status": "unread"},
   {"match": "^arm9:", "item": "8", "box": "item name (system font): item encyclopedia title row x 85 to the screen edge (smallest seen; prize item list x 30 to the scrollbar at 242 = 208)", "px": 168, "lines": 1, "status": "measured", "shot": "work/play/tour_ex 0002 (extras item encyclopedia), work/play/prize2/0003.png"},
   {"match": "^arm9:", "item": "10", "box": "item effect, item encyclopedia x 41 y 96 to the panel frame at 242 (prize popup x 40 not seen yet)", "px": 200, "lines": 2, "status": "measured", "shot": "work/play/tour_ex 0002 (rowscan: panel fill to 241, frame 242-244)"},
   {"match": "^arm9:", "item": "14", "box": "who can equip, item encyclopedia x 46 y 56 to the panel frame at 242", "px": 195, "lines": 1, "status": "measured", "shot": "work/play/tour_ex 0002"},
@@ -52,6 +61,13 @@
   {"parts": ["arm9:91F4C", "'0", "arm9:91EDC"], "box": "battle sortie hint x 23 y 162 to the screen edge", "px": 225, "lines": 1, "shot": "work/play/tour_bt 0008"},
   {"parts": ["arm9:919EC", "table:A7D00+8", "arm9:8F9D4", "table:A71F0+0", "arm9:8FFB4"], "box": "territory captured (ov9_14 0x0211CF3C): line 1, then army + より + territory + を占領, centred in the band", "px": 240, "lines": 2, "shot": "work/play/tour_te 0002"},
   {"parts": ["arm9:91F1C", "table:A7D00+4", "arm9:8F99C", "arm9:92A0C"], "box": "capital taken (ov9_14 0x0211CFC4): line 1 + faction lands + の, line 2, centred in the band", "px": 240, "lines": 2, "shot": "work/play/tour_te 0002"},
-  {"parts": ["ov9_18:3748", "table:A7D00+0", "ov9_18:3740"], "box": "faction unlock message line 1 (option-menu band)", "px": 240, "lines": 1, "shot": "work/play/tour_un 0004"}
+  {"parts": ["ov9_18:3748", "table:A7D00+0", "ov9_18:3740"], "box": "faction unlock message line 1 (option-menu band)", "px": 240, "lines": 1, "shot": "work/play/tour_un 0004"},
+  {"parts": ["arm9:91D0C", "table:F5380+0", "arm9:927B8"], "box": "prize: item held by a unit (ov9_12 0x0211C240 -> info band 0x0200FC88 = ctr 0x020102F8, as save prompts / card select)", "px": 240, "lines": 3, "shot": "band measured on card_select; this message not seen"},
+  {"parts": ["table:F5380+0", "arm9:9285C"], "box": "prisoner: unit joins (ov9_11 0x0211C21C -> info band)", "px": 240, "lines": 3, "shot": "band measured; message not seen"},
+  {"parts": ["arm9:8FA9C", "table:F5380+0", "arm9:8F998", "arm9:91F2C"], "box": "explore: unit planned for this territory (ov9_13 0x0211D390 -> info band)", "px": 240, "lines": 3, "shot": "band measured; message not seen"},
+  {"parts": ["arm9:8FA08", "table:F5380+0", "arm9:9212C", "'00", "arm9:925C4"], "box": "explore: unit already dispatched, back in N turns (ov9_13 0x0211D508 -> info band)", "px": 240, "lines": 3, "shot": "band measured; message not seen"},
+  {"parts": ["arm9:91EFC", "table:A7E44+0", "arm9:91194"], "box": "card select: card decided (ov9_16 0x0211BF64, info band with the card name coloured)", "px": 240, "lines": 3, "shot": "band measured on card_select"},
+  {"parts": ["table:F5380+0", "arm9:8F998", "table:A71F0+0", "arm9:8F984"], "box": "medallion: unit + territory line (ov9_10 0x0211BFE8 into r4+0x1D, centred run 0x0211D250, x = 128 - w/2)", "px": 240, "lines": 2, "shot": "medallion band measured (tour_me 0002); this line not seen"},
+  {"parts": ["arm9:8FD3C", "table:F5380+0", "arm9:91BF0"], "box": "explore: next unit explores (ov9_13 0x02120EE8, run x 30 y 27 to the screen edge)", "px": 226, "lines": 1, "shot": "not seen (x from code)"}
  ]
 }

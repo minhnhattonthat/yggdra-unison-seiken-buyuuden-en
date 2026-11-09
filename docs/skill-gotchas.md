@@ -27,3 +27,4 @@
 - references/emulator-qa.md §Agent playtest (NDS): play.py step PNGs are 2x with a 2 px gap (514x770; bottom screen y = (png_y - 386) / 2); images shown to the agent are rescaled, so read box edges with a row scan of the PNG, never by eye off a sheet.
 - references/pipeline.md §Marker: base-36 marker codes in a font whose lowercase p/q read like P/9 get misread off shots (q0 read as 90); map drawn strings by a draw-routine probe (systrace) instead of reading the code.
 - references/pipeline.md §Marker: script markers left unfilled can run past a box by 2x and overrun a per-object glyph-slot budget (NDS dialogue 32 slots) into other text's slots: looks like a text-corruption bug, check the JP build on the same frame first.
+- references/pipeline.md (Extract): a min-length >= 2 filter on pointer-scanned strings drops real one-glyph strings (… ・ P —) used as composite parts; sweep pointers to pool edges for runs of 1 code.
