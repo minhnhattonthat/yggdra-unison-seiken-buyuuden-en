@@ -54,16 +54,24 @@ def test_rebuild_moves_refs(files):
 
 @needs_rom
 def test_system_pools_roundtrip():
-    """Every pool is strings + zero padding only, and each string re-encodes to its bytes."""
+    """Every pool byte is a string, zero padding or a POOL_DATA block; each string re-encodes (in its row's font)
+    to its bytes; every item record's FONT_ITEM name is a row in font "item"; script/system matches the ROM."""
     ims = text.code_images()
-    for img, lo, hi, font in text.POOLS:
+    docs = text.system_docs(ims)
+    for img, lo, hi, _ in text.POOLS:
         b = ims[img]
-        strs = text.pool_strings(b, lo, hi, set(text.pointer_sites(ims, img, lo, hi)))
-        covered = sum(e - s for s, e in strs)
-        assert covered + b[lo:hi].count(0) >= hi - lo - sum(b[s:e].count(0) for s, e in strs), (img, hex(lo))
-        for s, e in strs:
-            raw = b[s:e - 1]
-            assert text.encode(font, text.decode(font, raw)) == raw, (img, hex(s))
+        strs = text.pool_strings(b, lo, hi, set(text.pointer_sites(ims, img, lo, hi)), img)
+        used = sum(e - s for s, e in strs) + sum(n for (i, o), n in text.POOL_DATA.items() if i == img and lo <= o < hi)
+        assert used + b[lo:hi].count(0) - sum(b[s:e].count(0) for s, e in strs) >= hi - lo, (img, hex(lo))
+    for img, doc in docs.items():
+        b = ims[img]
+        for r in doc["strings"]:
+            s = int(r["id"].split(":")[1], 16)
+            assert text.encode(r["font"], r["jp"]) == b[s:b.index(b"\xff", s)], r["id"]
+        on_disk = json.loads((text.SCRIPT / "system" / f"{img}.json").read_text(encoding="utf-8"))["strings"]
+        assert [(r["id"], r["font"], r["jp"]) for r in on_disk] == [(r["id"], r["font"], r["jp"]) for r in doc["strings"]]
+    items = {f"arm9:{o:X}" for o in text.item_strings(ims["arm9"])}
+    assert items == {r["id"] for r in docs["arm9"]["strings"] if r["font"] == "item"} and len(items) == 221
 
 
 @needs_rom

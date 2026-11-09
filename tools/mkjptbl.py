@@ -1,6 +1,7 @@
 """mkjptbl.py: write the three text tables from the fonts and the kanji readings.
 
-    python -X utf8 tools/mkjptbl.py     -> tbl/jp.tbl (FONT_MES), tbl/jp_sys.tbl (FONT_SYSTEM), tbl/jp_end.tbl (FONT_END)
+    python -X utf8 tools/mkjptbl.py     -> tbl/jp.tbl (FONT_MES), tbl/jp_sys.tbl (FONT_SYSTEM), tbl/jp_end.tbl (FONT_END),
+                                           tbl/jp_item.tbl (FONT_ITEM)
 
 Text code -> glyph (arm9 0x02012AF4): byte < 0xF0 is glyph b; F1..F9, xx is glyph (b - 0xF0) * 0xF0 + xx.
 FD = new line, FC xx = colour (xx indexes the table at 0x0209281C), FF = end. See docs/re/text.md.
@@ -13,9 +14,16 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FONTS = {"mes": "FONT_MES.NTFT", "sys": "FONT_SYSTEM.NTFT", "end": "FONT_END.NTFT"}
-TABLES = {"mes": "tbl/jp.tbl", "sys": "tbl/jp_sys.tbl", "end": "tbl/jp_end.tbl"}
+FONTS = {"mes": "FONT_MES.NTFT", "sys": "FONT_SYSTEM.NTFT", "end": "FONT_END.NTFT", "item": "FONT_ITEM.NTFT"}
+TABLES = {"mes": "tbl/jp.tbl", "sys": "tbl/jp_sys.tbl", "end": "tbl/jp_end.tbl", "item": "tbl/jp_item.tbl"}
 FIRST_KANJI = 0xEC
+# FONT_ITEM (bold item names, arm9 item record field +C) has no fixed kana block: every glyph, kana too, is read
+# per bitmap (taken from the FONT_SYSTEM name in field +8 of the same record; docs/re/text.md).
+NO_LAYOUT = {"item"}
+
+
+def first_read(font):
+    return 0 if font in NO_LAYOUT else FIRST_KANJI
 
 # Glyph order 00-EB, the same in all three fonts (read off glyph sheets; verified in game: tutorial and menus).
 KANA = ("あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん"
@@ -52,11 +60,13 @@ def font_bytes(font):
 def chars(font, data=None):
     """{glyph: char} for one font; unread kanji are absent."""
     data = font_bytes(font) if data is None else data
-    out = {i: c for i, c in enumerate(KANA)}
-    out.update({0x50 + i: c for i, c in enumerate(KATA)})
-    out.update({0xA0 + i: c for i, c in enumerate(LATIN)})
+    out = {}
+    if font not in NO_LAYOUT:
+        out = {i: c for i, c in enumerate(KANA)}
+        out.update({0x50 + i: c for i, c in enumerate(KATA)})
+        out.update({0xA0 + i: c for i, c in enumerate(LATIN)})
     rd = readings()
-    for g in range(FIRST_KANJI, len(data) // 128):
+    for g in range(first_read(font), len(data) // 128):
         c = rd.get(key(data[g * 128:(g + 1) * 128]))
         if c:
             out[g] = c

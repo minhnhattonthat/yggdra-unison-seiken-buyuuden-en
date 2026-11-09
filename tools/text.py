@@ -185,6 +185,15 @@ POOLS = [  # (image, start, end, font); end = after the last FF. Found by tools/
 ]
 
 
+ITEM_RECS = (0x1006A0, 221, 0x18)  # arm9 item records: +8 name (sys), +C name (FONT_ITEM), +10 effect, +14 who
+
+
+def item_strings(arm9):
+    """arm9 offsets of the FONT_ITEM item names (field +C of each item record; each is pointed at only from there)."""
+    at, n, size = ITEM_RECS
+    return {struct.unpack_from("<I", arm9, at + i * size + 0xC)[0] - ARM9_BASE for i in range(n)}
+
+
 def base_of(img):
     return ARM9_BASE if img == "arm9" else OVL_BASE
 
@@ -204,11 +213,19 @@ def pointer_sites(images, img, lo, hi):
     return out
 
 
-def pool_strings(b, lo, hi, starts):
+POOL_DATA = {  # (image, offset): length of a non-text block inside a pool (skipped like padding, never translated)
+    ("arm9", 0x8F9C0): 4,  # 0C 0C 0B 0C, read by code (literals at arm9 0x12FF0, 0x130A8); item name ドゼウ follows
+}
+
+
+def pool_strings(b, lo, hi, starts, img=None):
     """[(start, end incl. FF)] of a pool. Zero bytes between strings are padding, except at a pointer target
-    (a string may begin with code 00 = あ). Raises if the pool holds anything else."""
+    (a string may begin with code 00 = あ); POOL_DATA blocks are skipped. Raises if the pool holds anything else."""
     out, p = [], lo
     while p < hi:
+        if (img, p) in POOL_DATA:
+            p += POOL_DATA[img, p]
+            continue
         if b[p] == 0 and p not in starts:
             p += 1
             continue
@@ -224,11 +241,13 @@ def system_docs(images=None):
     """{image: doc} for script/system/<image>.json (strings of every pool of that image, in address order)."""
     images = code_images() if images is None else images
     docs = {}
-    for img, lo, hi, font in POOLS:
+    items = item_strings(images["arm9"])
+    for img, lo, hi, pool_font in POOLS:
         b = images[img]
         ptrs = pointer_sites(images, img, lo, hi)
         doc = docs.setdefault(img, {"file": img, "strings": []})
-        for s, e in pool_strings(b, lo, hi, set(ptrs)):
+        for s, e in pool_strings(b, lo, hi, set(ptrs), img):
+            font = "item" if img == "arm9" and s in items else pool_font
             row = {"id": f"{img}:{s:X}", "font": font, "jp": decode(font, b[s:e - 1]), "en": "",
                    "max": len(b[s:e]) + len(b[e:hi]) - len(b[e:hi].lstrip(b"\0")), "ptrs": ptrs.get(s, [])}
             if not row["ptrs"]:

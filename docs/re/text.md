@@ -6,7 +6,7 @@
   - byte `00..EF` = glyph `b`;
   - `F1..F9, xx` = glyph `(b - 0xF0) * 0xF0 + xx` (**stride 0xF0**, `mla r0, r1, #0xF0, xx` at 0x02012B00; an older note said 0x100, which shifted every code from F2 on);
   - `FC xx` = colour (xx indexes the u16 table at 0x0209281C), `FD` = new line (y += 0x11), `FF` = end. Glyph advance is 0x0B px (fixed). No other codes appear in any string; names are spelled out.
-- Control inventory (`tools/text.py` layout checks): MESSAGE/SPMES/TUTO/EDMES and the system pools hold only glyph codes, FD and FF (no FC seen yet).
+- Control inventory (`tools/text.py` layout checks): MESSAGE/SPMES/TUTO/EDMES and the system pools hold only glyph codes, FD and FF (no FC seen yet). Item names in FONT_ITEM use the same F1 xx two-byte form.
 
 ### Fonts
 | Font | Glyphs | Used by (verified by decoding with each font) |
@@ -14,7 +14,7 @@
 | FONT_MES.NTFT | 0x56E | MESSAGE/SPMES/TUTO (tutorial on screen) |
 | FONT_SYSTEM.NTFT | 0x398 | arm9 string pools, ov9_03 (help), ov9_05, ov9_15/16/19 (save, card prompt). Loaded at boot, sits in RAM at 0x0212E840 |
 | FONT_END.NTFT | 0x582 | EDMES, ov9_02, ov9_06 (extras), ov9_07 (character profiles), ov9_18 (unlocks). First 697 glyphs = FONT_SYSTEM |
-| FONT_ITEM.NTFT | 0x14A | bold display font, custom order of first use. **Some arm9 card/item record strings use it** (record stride 0x18 from arm9 0x1006A0, field +12; e.g. arm9 0x8FD64 `CA CB CC 10 CD`): not read yet |
+| FONT_ITEM.NTFT | 0x14A | bold display font, no fixed kana block (custom order). Used by the item names at field +C of the 221 item records (below). Read by aligning each record's FONT_SYSTEM name (+8) with its FONT_ITEM name: 326 of 330 glyphs, no conflicts; 0x0D, 0x0F, 0x11A (unused by any record) and 0x149 (blank) left unread. Table `tbl/jp_item.tbl` |
 | FONT_8X8.NTFT/.LTFT | - | debug / small labels (unread) |
 - Glyphs 00-EB are the same in all three text fonts (MES, SYSTEM, END): 00-4F hiragana, 50-9F katakana with ヂ ヅ slots holding `・` and a blank, A0 ヴ, A1 ー, A2-AB 0-9, AC-C5 A-Z, C6-DF a-z, E0-EB `!?♪~「」()…—。、`. Kanji from EC differ per font (MES: order of first use 下 行 私 神...).
 - **Kanji readings: done** (1,770 bitmaps, `tbl/kanji.tsv` keyed by bitmap hash, so a reading fills every font with the same pixels). Read by eye from `tools/kanji.py todo` sheets, look-alikes checked with `tools/kanji.py ctx`/`dupes`, then `tools/kanji_check.py` (janome tokenizer) flagged kanji never inside a dictionary word and unknown compounds: ~45 misreads fixed that way (選/遥, 願/顔, 賛/貿, 滅/減, 熟/熱...). Remaining risk: FONT_SYSTEM/END glyphs no script line uses were read without context.
@@ -43,7 +43,9 @@
 - Referenced by absolute u32 pointers: arm9 strings at 0x02000000+off (pointers in arm9 or any overlay), overlay strings at 0x0211B780+off (all 20 overlays load there; pointers only from the same overlay).
 - **Pools** (`text.POOLS`, image, range, font): arm9 0x8F98C-0x9281C and 0x92830-0x958EB (1,383 strings: unit/class/item/card names, effects, help), ov9_02 (2 pools, END), ov9_03 (help menu, 2 pools), ov9_05 (card error), ov9_06 (extras, END, 2 pools), ov9_07 (character profiles, END), ov9_15/ov9_19 (save prompts; a few struct bytes before the first string excluded), ov9_16 (card prompt), ov9_18 (unlock messages, END). Found by `tools/systext.py` (pointer scan) + a packed-run walk; every other pointer hit (285, mostly arm9 code < 0x8F000 and data tables at 0xA1000-0xA8FFF, 0xF5000-0xFFFFF, 0x100648) decodes as noise and is not text.
 - JSON rows carry `ptrs` (every aligned u32 pointing at the string; some are false positives from data tables, e.g. arm9 0xA7xxx hits mid-string) and `max` (bytes in place incl. FF + trailing padding).
-- **Not text in the arm9 pool (to mark in phase 5):** ~48 strings pointed at by field +12 of the 0x18-byte records from arm9 0x1006A0 decode as noise in FONT_SYSTEM (`DぉちE`, `xyz?d~じ♪`): they are in FONT_ITEM order (codes rise in first-use order), probably card-name banners. Read FONT_ITEM, decide whether field +12 is FONT_ITEM for all records, and give those rows font "item".
+- **Item records** (`text.ITEM_RECS`): arm9 0x1006A0, 221 x 0x18 bytes: +0/+4 stats, +8 name (FONT_SYSTEM), +C the same name in FONT_ITEM (each pointed at only from here; these were the "noise" strings), +10 effect, +14 who can equip. Rows at +C targets have `"font": "item"` in arm9.json (220 + one below); the item name and its +C twin must be translated alike.
+- **Non-text inside a pool** (`text.POOL_DATA`): arm9 0x8F9C0, 4 bytes `0C 0C 0B 0C` read by code (literals at 0x12FF0/0x130A8), with no FF of its own: the item name ドゼウ at 0x8F9C4 follows it, so an FF split merged them. Skipped, not a row. Every other pointer that lands mid-string is a false positive (data tables at 0xA7xxx, odd addresses).
+- **Kanji misreads fixed from system context** (item and help text, read without context before): 癒 録 塊 錆 勲 叉 響 冑 脈 穀 議 掴 籠 獪 男 卿 縛 劣 触 徴 箇 謎. Left as the game wrote them: 慚悔 (for 懺悔), 英雌 (coined, Yggdra), 順ずる.
 - **Insertion:** English longer than `max` moves to new space (decide in phase 5) and every true pointer is rewritten.
 
 ## Not text (graphics)
