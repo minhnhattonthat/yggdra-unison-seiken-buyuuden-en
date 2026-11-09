@@ -5,7 +5,7 @@
   {
    "id": "SPMES022029:0160",
    "jp": "敵が来るわ!\n戦闘準備!",
-   "en": ""
+   "en": "The enemy's coming!\nPrepare for battle!"
   },
   {
    "id": "SPMES022029:0173",
@@ -15,12 +15,12 @@
   {
    "id": "SPMES022029:0180",
    "jp": "…あうっ!　しまった…!",
-   "en": ""
+   "en": "...Ow! Oh no...!"
   },
   {
    "id": "SPMES022029:018D",
    "jp": "悪く思わないでください…\n…これも任務なんです……",
-   "en": ""
+   "en": "Please don't think ill of me...\n...This is my mission..."
   },
   {
    "id": "SPMES022029:01AB",
@@ -30,7 +30,7 @@
   {
    "id": "SPMES022029:01B7",
    "jp": "くっ!　さすがレオンの妹…\nやってくれるじゃない……!",
-   "en": ""
+   "en": "Tch! Leon's sister, all\nright... Not bad, are you...!"
   },
   {
    "id": "SPMES022029:01D4",
@@ -40,7 +40,7 @@
   {
    "id": "SPMES022029:01E1",
    "jp": "どう?　降伏すれば\n命だけは助けてあげるわよ?",
-   "en": ""
+   "en": "Well? Surrender, and I'll\nat least spare you, hmm?"
   }
  ]
 }

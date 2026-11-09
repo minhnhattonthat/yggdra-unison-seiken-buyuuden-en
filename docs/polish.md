@@ -103,3 +103,16 @@ to run while any line is unticked.
 
 ## b057-b058 (DUEL EVENT lines Russell..Yggdra, approved; controller review)
 - (no Minors)
+
+## b059-b060 (DUEL EVENT lines Yggdra..Leon, approved; Dort/Leon voice fixed in review)
+- (no Minors)
+
+## b061-b062 (DUEL EVENT lines Leon..Russell, approved; controller review)
+- [ ] SPMES009035:01A8 Mistel - "I'll settle it now, dear?" question mark reads odd: I'll settle it now, dear~
+- [ ] SPMES012024:018E Amareus - no end punctuation: Juvelon-sama... / I'm so... sorry...
+
+## b063-b064 (DUEL EVENT lines Milanor..Kylier, approved; Mistel "punish you" parody joke fixed in review)
+- (no Minors)
+
+## b065-b066 (DUEL EVENT lines Kylier..Mardym, approved; controller review)
+- [ ] SPMES020004:0140 Cruz - JP names Aegina but the duel file is Luciana's (game text?): check on screen
