@@ -30,6 +30,19 @@ def read_dir(arm9, data_len):
     return ents
 
 
+def unpack_pack(b):
+    """.PACK graphics: u32 flags, u32 size[3], then the 3 parts back to back; flags bit i = part i is LZ-compressed.
+    Returns [(raw_part, decompressed_or_None)]."""
+    flags, *sizes = struct.unpack_from("<4I", b, 0)
+    out, o = [], 0x10
+    for i, n in enumerate(sizes):
+        raw = b[o:o + n]
+        out.append((raw, decompress(raw)[0] if flags >> i & 1 and n else None))
+        o += n
+    assert o == len(b), f"PACK sizes end at {o:#x}, file {len(b):#x}"
+    return out
+
+
 def decompress(src):
     """Halfword LZ: u32 out size, u16 n, n u16 control words, then literal halfwords.
     Control bit15 set: copy ((w>>10)&0x1F)+2 halfwords from (w&0x3FF) halfwords back; else w literal halfwords."""

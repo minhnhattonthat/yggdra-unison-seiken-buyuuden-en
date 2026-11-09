@@ -14,7 +14,7 @@ import sfs  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 
 
-EXTS = ("", ".BIN", ".NTFT", ".NTFP", ".NTFI", ".NTFS")
+EXTS = ("", ".BIN", ".NTFT", ".NTFP", ".NTFI", ".NTFS", ".PACK", ".BI", ".LTFT")  # .PACK/.BI/.LTFT: runtime log
 
 
 def expand(pat):

@@ -36,6 +36,23 @@ def glyph_chars():
     return chars
 
 
+def sys_chars():
+    """FONT_SYSTEM order (menus/system text in arm9 and overlays): kana as FONT_MES except ヂヅ -> ・ and a blank,
+    then ヴ ー before the digits; kanji from tbl/kanji_sys.tsv."""
+    chars = {i: c for i, c in enumerate(KANA)}
+    kata = KATA.replace("ヂ", "・").replace("ヅ", "　")
+    chars.update({0x50 + i: c for i, c in enumerate(kata)})
+    chars.update({0xA0 + i: c for i, c in enumerate("ヴー" + ASCII + "!?♪~「」()…—。、")})
+    kt = ROOT / "tbl/kanji_sys.tsv"
+    if kt.exists():
+        for line in kt.read_text(encoding="utf-8").splitlines():
+            if line and not line.startswith("#"):
+                g, c = line.split("\t")[:2]
+                if c:
+                    chars[int(g, 16)] = c
+    return chars
+
+
 def code_of(g):
     return f"{g:02X}" if g < 0xF0 else f"{0xF1 + (g - 0xF0) // 0x100:02X}{(g - 0xF0) % 0x100:02X}"
 
