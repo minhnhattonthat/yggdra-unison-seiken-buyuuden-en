@@ -25,12 +25,12 @@
   {
    "id": "MESSAGE173:05AE",
    "jp": "ここは我が軍が頂く!",
-   "en": "This belongs to our\narmy!"
+   "en": "This belongs\nto our army!"
   },
   {
    "id": "MESSAGE173:05BC",
    "jp": "ここは我ら帝国が頂く!",
-   "en": "The Empire claims\nthis!"
+   "en": "The Empire\nclaims this!"
   },
   {
    "id": "MESSAGE173:05CC",
@@ -75,7 +75,7 @@
   {
    "id": "MESSAGE173:0652",
    "jp": "おらおら、甘いんだよ!",
-   "en": "Hey hey! Way too\nsoft!"
+   "en": "Hey hey! Way\ntoo soft!"
   },
   {
    "id": "MESSAGE173:065F",
@@ -120,7 +120,7 @@
   {
    "id": "MESSAGE173:06E1",
    "jp": "ここは我が軍が頂いた!",
-   "en": "Our army has taken\nthis!"
+   "en": "Our army has\ntaken this!"
   },
   {
    "id": "MESSAGE173:06F0",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE173:0700",
    "jp": "ここは我が黒薔薇が頂いた!",
-   "en": "My Black Rose claims\nthis!"
+   "en": "My Black Rose\nclaims this!"
   },
   {
    "id": "MESSAGE173:0713",

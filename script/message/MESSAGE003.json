@@ -50,7 +50,7 @@
   {
    "id": "MESSAGE003:053F",
    "jp": "これを受け取るがよい",
-   "en": "Accept this, I bid\nthee."
+   "en": "Accept this,\nI bid thee."
   },
   {
    "id": "MESSAGE003:054C",
@@ -65,7 +65,7 @@
   {
    "id": "MESSAGE003:056F",
    "jp": "お前にくれてやる",
-   "en": "Here. I'll give it to\nyou."
+   "en": "Here. I'll give\nit to you."
   },
   {
    "id": "MESSAGE003:0579",
@@ -110,7 +110,7 @@
   {
    "id": "MESSAGE003:05CD",
    "jp": "こんなものを見つけたぜぃ!",
-   "en": "Look what I found,\nheh!"
+   "en": "Look what I\nfound, heh!"
   },
   {
    "id": "MESSAGE003:05DC",

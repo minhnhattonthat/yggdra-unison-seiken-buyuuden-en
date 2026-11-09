@@ -65,12 +65,12 @@
   {
    "id": "MESSAGE180:065F",
    "jp": "敵に利用などさせぬ!",
-   "en": "The foe shall not use\nit!"
+   "en": "The foe shall\nnot use it!"
   },
   {
    "id": "MESSAGE180:066D",
    "jp": "貴方がたに渡しはしません",
-   "en": "I shall not hand it to\nyou."
+   "en": "I shall not\nhand it to you."
   },
   {
    "id": "MESSAGE180:067D",
@@ -180,7 +180,7 @@
   {
    "id": "MESSAGE180:0802",
    "jp": "いい気味ね!",
-   "en": "Serves you right,\nhmph!"
+   "en": "Serves you\nright, hmph!"
   },
   {
    "id": "MESSAGE180:080B",

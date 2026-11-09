@@ -1,6 +1,6 @@
 # Rows that ship with empty en (original bytes kept, tools/insert.py). id (fnmatch pattern) <TAB> reason.
 # tools/lint.py fails on any other row with jp and no en, and on a listed exact id that has English.
-MESSAGE000:*	debug test file: its あいうえお filler lines stay (no event reaches them, text.md); its real lines are English
+MESSAGE000:*	debug test file: its あいうえお filler lines stay (no event reaches them, text.md); its real lines are English (lint: the wildcard keeps only rows whose jp is all あいうえお)
 arm9:8F984	one-glyph … : composite/separator glyph E8, kept in the en font
 arm9:8F988	"P" (battle results), Latin glyph already
 arm9:8FC3C	"CLEAR", Latin already

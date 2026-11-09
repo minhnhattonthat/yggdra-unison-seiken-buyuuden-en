@@ -25,12 +25,12 @@
   {
    "id": "MESSAGE005:04E8",
    "jp": "貴様に渡すものなどない",
-   "en": "I have nothing for\nyou."
+   "en": "I have nothing\nfor you."
   },
   {
    "id": "MESSAGE005:04F7",
    "jp": "貴様に渡すものはない",
-   "en": "There is nothing for\nyou."
+   "en": "There is\nnothing for you."
   },
   {
    "id": "MESSAGE005:0505",
@@ -130,7 +130,7 @@
   {
    "id": "MESSAGE005:05FF",
    "jp": "くれてやるものは無い",
-   "en": "I have nothing to\ngive."
+   "en": "I have nothing\nto give."
   },
   {
    "id": "MESSAGE005:060B",
@@ -175,7 +175,7 @@
   {
    "id": "MESSAGE005:067C",
    "jp": "実にくだらぬ任務だったな",
-   "en": "A truly pointless\ntask."
+   "en": "A truly\npointless task."
   },
   {
    "id": "MESSAGE005:068C",

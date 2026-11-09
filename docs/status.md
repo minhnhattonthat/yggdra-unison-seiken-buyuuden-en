@@ -4,6 +4,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 7 review fixes (session 14):** lint fails a stub last line (< 6 chars, previous line not a sentence end;
+  stat lines ATK+1 and composite parts exempt, composites checked per combination), leading/trailing blanks must
+  match the Japanese (composite parts exempt); `MESSAGE000:*` keeps only あいうえお filler rows. `batches.py wrap`
+  is balanced now; `batches.py widows NAME` re-balances every widow: 250 rows merged (work/tl/fix7b).
+  Open minor: romcheck passes `romdiff.check` an empty write log (no per-write original-byte check yet).
 - **Phase 7 done (session 13):** English insert `tools/insert.py` (script files re-laid, system strings in place or
   relocated, empty en = original bytes, only ids in `script/keep_jp.txt`: MESSAGE000 filler + 7 symbol strings; lint
   enforces it). `tools/romcheck.py` (also tests/test_build.py, builds its own ROM): code-image writes only at string

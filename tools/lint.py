@@ -71,6 +71,25 @@ def line_px(line):
     return sum(widths()[c] for c in line) + 1 if line else 0
 
 
+SENTENCE_END = tuple(".!?\"'”’)")
+STAT = re.compile(r"[A-Z]{2,3}[+-]\d+")  # item effect stat on its own line, as the Japanese lays it out
+
+
+def widow(en):
+    """A multi-line paragraph ending on a stub line (< 6 chars) that is not its own sentence (pipeline.md §Checks)."""
+    lines = en.strip("\n").split("\n")
+    last = lines[-1].strip()
+    return (len(lines) > 1 and len(last) < 6 and not STAT.fullmatch(last)
+            and not lines[-2].rstrip().endswith(SENTENCE_END))
+
+
+@cache
+def composite_ids():
+    """Ids drawn only joined to others: their own line breaks are checked as the composite."""
+    doc = json.loads((ROOT / "script/windows.json").read_text(encoding="utf-8"))
+    return {i for c in doc.get("composites", []) for p in c["parts"] for i in p.split("|")}
+
+
 def check_string(s, font):
     """-> (errors, guess_lines) for one script row."""
     en, errs = s.get("en", ""), []
@@ -91,6 +110,12 @@ def check_string(s, font):
     for n, line in enumerate(lines, 1):
         if line_px(line) > r["px"]:
             errs.append(f"line {n} {line_px(line)} px > {r['px']} ({r['box']})")
+    if s["id"] not in composite_ids():
+        if widow(en):
+            errs.append(f"stub last line {lines[-1]!r}: re-wrap balanced (batches.py wrap)")
+        edges = lambda t: (t[:len(t) - len(t.lstrip())], t[len(t.rstrip()):])  # noqa: E731
+        if edges(en) != edges(s["jp"].replace("　", " ")):
+            errs.append("leading/trailing blanks differ from the Japanese")
     return errs, (len(lines) if r["status"] == "guess" else 0)
 
 
@@ -121,6 +146,8 @@ def check_composite(c, texts=part_texts):
     errs = set()
     for combo in itertools.product(*parts):
         lines = "".join(combo).split("\n")
+        if widow("".join(combo)):
+            errs.add(f"stub last line {lines[-1]!r}")
         if len(lines) > c["lines"]:
             errs.add(f"{len(lines)} lines > {c['lines']}")
         for n, line in enumerate(lines, 1):
@@ -131,7 +158,7 @@ def check_composite(c, texts=part_texts):
 
 def selftest():
     c = {"parts": ["a", "'0", "b"], "px": 60, "lines": 1, "box": "t"}
-    assert len(check_composite(c, lambda p: {"a": ["Hi "], "b": ["ok", "x\ny", "W" * 12]}.get(p, [p[1:]]))) == 2
+    assert len(check_composite(c, lambda p: {"a": ["Hi "], "b": ["ok", "x.\ny", "W" * 12]}.get(p, [p[1:]]))) == 2
     assert check_composite(c, lambda p: {"a": ["Hi "], "b": ["ok"]}.get(p, [p[1:]])) == []
     assert check_composite(c, lambda p: {"a": []}.get(p, [p[1:]])) == []
     s = {"id": "MESSAGE154:0240", "jp": "あ", "en": "Hi"}
@@ -139,10 +166,14 @@ def selftest():
     assert check_string({**s, "en": "a\nb\nc"}, "mes")[0]
     assert any("px" in e for e in check_string({**s, "en": "W" * 40}, "mes")[0])
     assert check_string({**s, "en": "あ"}, "mes")[0]
+    assert check_string({**s, "en": "Accept this, I bid\nthee."}, "mes")[0]
+    assert check_string({**s, "en": "Hi\n"}, "mes")[0] and not check_string({**s, "jp": "　あ", "en": " Hi"}, "mes")[0]
+    assert not widow("Accept this,\nI bid thee.") and not widow("Run.\nNow!") and not widow("Ice attacks\nATK+1")
     assert rule_for("EDMES07:0100", "a\nb", "end")["lines"] == 4 and rule_for("EDMES07:009C", "a", "end")["lines"] == 1
     assert rule_for("arm9:8F98C", "a", "item")["font"] == "item"
     assert rule_for("arm9:900EC", "a", "sys")["table"] == "A71F0+0"  # territory name (item gallery location)
     assert check_keep({"id": "x:1", "jp": "あ", "en": ""}) and not check_keep({"id": "MESSAGE000:0590", "jp": "あ"})
+    assert check_keep({"id": "MESSAGE000:0590", "jp": "勝負"})
     assert check_keep({"id": "arm9:8F988", "jp": "P", "en": "P"})
 
 
@@ -155,7 +186,9 @@ def keep_jp():
 
 def check_keep(s):
     import fnmatch
-    kept = any(fnmatch.fnmatchcase(s["id"], p) for p in keep_jp())
+    # a wildcard (MESSAGE000:*) keeps only the あいうえお test filler, so a real line under it can't lose its English
+    kept = s["id"] in keep_jp() or (re.fullmatch(r"[あいうえお\n]+", s["jp"]) is not None
+                                    and any(fnmatch.fnmatchcase(s["id"], p) for p in keep_jp()))
     if s["jp"] and not s.get("en") and not kept:
         return ["no English (add it, or list the id in script/keep_jp.txt with a reason)"]
     if s["id"] in keep_jp() and s.get("en"):  # exact ids only: a pattern may cover translated rows too

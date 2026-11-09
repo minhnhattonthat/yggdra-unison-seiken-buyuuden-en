@@ -5,12 +5,12 @@
   {
    "id": "MESSAGE101:04B0",
    "jp": "すまないが、ここは通せない",
-   "en": "Sorry, but you can't\npass."
+   "en": "Sorry, but you\ncan't pass."
   },
   {
    "id": "MESSAGE101:04BF",
    "jp": "敵は通さねぇゼ!",
-   "en": "No enemy gets by, ya\nhear!"
+   "en": "No enemy gets\nby, ya hear!"
   },
   {
    "id": "MESSAGE101:04CA",
@@ -40,7 +40,7 @@
   {
    "id": "MESSAGE101:0511",
    "jp": "ここを我らが陣とする!",
-   "en": "This shall be our\ncamp!"
+   "en": "This shall be\nour camp!"
   },
   {
    "id": "MESSAGE101:051F",

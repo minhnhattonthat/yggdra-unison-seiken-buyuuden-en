@@ -4,7 +4,8 @@
     python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English
     python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
     python -X utf8 tools/batches.py fit ID "English"     px per line against ID's box (\\n = line break)
-    python -X utf8 tools/batches.py wrap ID "English"    greedy-wrap to ID's box; prints the \\n form to paste
+    python -X utf8 tools/batches.py wrap ID "English"    balanced wrap to ID's box; prints the \\n form to paste
+    python -X utf8 tools/batches.py widows NAME          work/tl/NAME(.out).tsv: stub-last-line rows re-balanced
 
 From the skill's assets/batches.py; ADAPTER fitted to script/<family>/*.json ("strings" rows, widths from
 tools/lint.py). Identical JP in the same box kind is batched once (first id) and merged into every copy.
@@ -345,22 +346,60 @@ def merge(new, overwrite):
     print(f"merged: {changed} entries changed")
 
 
-def fit(eid, en, wrap=False):
+def balance(words, px, k):
+    """words in k lines, each <= px: no stub last line if any split avoids one, then the narrowest longest line,
+    then the least squared slack. None if they can't fit."""
+    import itertools
+    import lint
+    best = None
+    for cuts in itertools.combinations(range(1, len(words)), k - 1):
+        lines = [" ".join(words[a:b]) for a, b in zip((0,) + cuts, cuts + (len(words),))]
+        w = [lint.line_px(x) for x in lines]
+        if max(w) > px:
+            continue
+        key = (lint.widow("\n".join(lines)), max(w), sum((px - x) ** 2 for x in w))
+        if best is None or key < best[0]:
+            best = (key, lines)
+    return best and best[1]
+
+
+def wrap(en, px):
+    """Balanced wrap in the fewest lines greedy needs."""
+    words = en.replace("\n", " ").split(" ")
+    for k in range(1, len(words) + 1):
+        lines = balance(words, px, k)
+        if lines:
+            return "\n".join(lines)
+    return en
+
+
+def rewrap_widow(en, px):
+    """Re-balance a widowed string's last paragraph (lines after the last sentence end) in the same line count."""
+    import lint
+    lines = en.split("\n")
+    start = max((i + 1 for i, x in enumerate(lines[:-1]) if x.rstrip().endswith(lint.SENTENCE_END)), default=0)
+    tail = balance(" ".join(lines[start:]).split(" "), px, len(lines) - start)
+    return "\n".join(lines[:start] + tail) if tail else en
+
+
+def widows(name):
+    """work/tl/NAME.tsv + NAME.out.tsv: every shipped string with a stub last line, re-balanced (merge after review)."""
+    import lint
+    rows = [(i, rewrap_widow(e["en"], rule(e)["px"])) for i, e in index().items()
+            if e.get("en") and lint.widow(e["en"]) and i not in lint.composite_ids()]
+    (TL / f"{name}.tsv").write_text("".join(f"{i}\n" for i, _ in rows), encoding="utf-8", newline="\n")
+    (TL / f"{name}.out.tsv").write_text("".join(f"{i}\t{en.replace(chr(10), chr(92) + 'n')}\n" for i, en in rows),
+                                        encoding="utf-8", newline="\n")
+    print(f"{len(rows)} widows, {sum(lint.widow(en) for _, en in rows)} still widowed after re-balancing")
+
+
+def fit(eid, en, wrap_it=False):
     import lint
     e = index()[eid]
     r = rule(e)
     en = en.replace("\\n", "\n")
-    if wrap:
-        lines, cur = [], ""
-        for word in en.replace("\n", " ").split(" "):
-            cand = f"{cur} {word}" if cur else word
-            if cur and lint.line_px(cand) > r["px"]:
-                lines.append(cur)
-                cur = word
-            else:
-                cur = cand
-        lines.append(cur)
-        en = "\n".join(lines)
+    if wrap_it:
+        en = wrap(en, r["px"])
         print(en.replace("\n", "\\n"))
     for line in en.split("\n"):
         print(f"  {lint.line_px(line):4d}/{r['px']} px  {line}")
@@ -380,6 +419,8 @@ def main(argv):
         return write_terms()
     if cmd in ("fit", "wrap"):
         return fit(args[0], args[1], cmd == "wrap")
+    if cmd == "widows":
+        return widows(args[0])
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
     entries, terms = index(), glossary()

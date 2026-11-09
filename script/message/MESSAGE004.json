@@ -25,7 +25,7 @@
   {
    "id": "MESSAGE004:0546",
    "jp": "さあ、お受け取りください",
-   "en": "Here, please accept\nthis."
+   "en": "Here, please\naccept this."
   },
   {
    "id": "MESSAGE004:0555",
@@ -90,7 +90,7 @@
   {
    "id": "MESSAGE004:0647",
    "jp": "ええもん見つけたわい!",
-   "en": "Found me a good'un,\nheh!"
+   "en": "Found me a\ngood'un, heh!"
   },
   {
    "id": "MESSAGE004:0654",
@@ -105,7 +105,7 @@
   {
    "id": "MESSAGE004:067B",
    "jp": "大将、これを受け取ってくれ",
-   "en": "Boss, take this, will\nya?"
+   "en": "Boss, take\nthis, will ya?"
   },
   {
    "id": "MESSAGE004:068D",
@@ -180,7 +180,7 @@
   {
    "id": "MESSAGE004:075A",
    "jp": "どうぞ受け取ってくださいな",
-   "en": "Please do take this,\ndear."
+   "en": "Please do take\nthis, dear."
   },
   {
    "id": "MESSAGE004:076A",
