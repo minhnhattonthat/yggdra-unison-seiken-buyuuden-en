@@ -10,10 +10,10 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
-- **Batch state (session 8):** merged + reviewed: b001-b004, b017-b020. Translated, reviewed, Important fixes sent
-  back to the translator: b013-b016, b029-b032. Translated, review running: b021-b028. Translated, b005-b008
-  composite joins pending (glossary "composite sentences"): b005-b012. Translating: b033-b056. Not dispatched:
-  b057-b076 (SPMES duel events + EDMES endings). Resume: `batches.py check bNNN` each; merge the reviewed ones;
+- **Batch state (session 8):** merged + reviewed (+ fixes): b001-b004, b013-b032. Translated, check OK, NOT
+  reviewed: b005-b008 (help/system; composite joins set). Translating when session 8 ended (all dispatched):
+  b009-b012, b033-b076; their reports also go to work/tl/b0NN.report.txt for b057+. Next: check each, pairs.py +
+  reviewer per 2 batches, fix Critical/Important (and Minors in the same round), merge, commit. Resume: `batches.py check bNNN` each; merge the reviewed ones;
   `pairs.py bA bB` -> reviewer agent (compact: Critical/Important only, Minors applied by the translator in the
   same fix round); docs/polish.md holds the Minors from the first 4 reviews.
 - **Phase 5 done (2026-11-10, session 7):**
