@@ -17,7 +17,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
     use <= 20 cells. JP build (yggdra_en) same frame is clean (work/qa/wrchk).
   - **Phase 7 to-do:** faction conditions header digit at fixed x 162 (ov9_18 near 0x0211EE48, immediate: set it
     after translation); option menu 0x0201038C centring by glyph count (unlock message line 2 at x 46): centre by px.
-  - Last marker build after the new rules: sha1 f75355a9 (smoke ok); states regenerated from it (work/qa/regen.log).
+  - Last marker build after the new rules: sha1 f75355a9 (smoke ok); states regenerated from it, 35/35.
+    HELP popup at the new 210 px x 3 fill fits inside its frame (work/play/tour_hp2 0004).
 - **Next (phase 5 rest):** find where unit names (F5380 +0/+4), class names (F5B88), card names/one-liners (A7E44)
   are drawn as system text (tours showed only textures: try explore unit select ov9_13 x 32/x 30, prize popup ov9_12,
   card select info); extras ov9_06 menus (48 labels: card/sound/item dictionaries); 100500 battle tips; battle SPMES
