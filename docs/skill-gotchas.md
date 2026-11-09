@@ -34,3 +34,4 @@
 - emulator-qa/translation (Claude Code): the Edit tool strips trailing spaces from a line, so composite pieces ending in a space lost it ("All theMilanor's"); tools/setval.py sets one .out.tsv value exactly.
 - references/emulator-qa.md (NDS, this repo's tools/lua/spmes.lua + tips.lua): a 10-frame tap through the patched CAUTION call starts the tip task once per frame, so TIP=1..3 shots show several tips overlaid; only TIP=0 / a single-frame tap gives one clean popup.
 - references/emulator-qa.md (play.py, NDS): work/states/faction_select.dst from regen ignored every touch for 6 steps; reaching faction select from title.dst (new game, tap through the opening) works.
+references/graphics.md: NDS 3D-texture games (no tiles/VRAM): keep the original palette and re-encode 4x4 blocks by searching (palette offset, mode) over it; avoids a palette-size change and round-trips pixel-exact (tools/gfx.py).
