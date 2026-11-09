@@ -135,3 +135,8 @@ to run while any line is unticked.
 - [ ] ov9_18:3D58 - faction conditions header: count digit at fixed x 162 lands in the 4-space gap (prefix ends x 159, "of" at x 175), computed, not seen on screen: check in phase 8
 - [ ] ov9_10 medallion unit + territory line (lines_px12) - not seen on screen: check in phase 8
 - [ ] MESSAGE*/SPMES* ellipsis-only lines (54) set to "..." by fix7a (glossary rule), unreviewed in context
+
+## Phase 8 (textures, controller)
+- [ ] SEN_FONT 戦 / 撃 / 斬 cells (13-14 px, 戦績 page "0戦 0撃 0斬") are "Btl" / "KO" / "Kill": abbreviations; widen the cells (page code) or reword
+- [ ] SAVE_FONT "Theocracy of Meria" squeezed to 0.52 in its 53-px ink rect: see the save slot on screen, widen if the game rect allows
+- [ ] BTLFONT terrain / move-type / speed cells squeezed 0.53-0.8 (20 px): see the battle HUD, consider a narrow pixel font

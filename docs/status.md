@@ -4,6 +4,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 8 progress (session 18):** gfx/text.tsv gained CN_N_00-36 (territory leaders on the sortie Targets panel,
+  = unit epithet strings; seen Japanese there before: tap t155,65 from work/states/sortie.dst), BTLFONT (残存戦力 +
+  terrain / move-type / speed cells, 20 px wide, squeezed 0.53-0.8; War Result, Terrain View, Unit Sortie!,
+  Deployed!, Retreated, Active), EXTRA_FONT (menu + big copies + title headers), SAVE_FONT (prompts, faction names,
+  Lands, Play Time, Next/Back), TEND_FONT, TUTO_FONT, SEN_FONT (戦績 page: Loyalty / Retreats / Merit, Btl KO Kill
+  cells, 回 blanked, Low/Avg/High), OP_FONT, GMOVERFONT, TERAGGFONT, HELP_MAT, WR_FONT, PRIZE_FONT. Most of those
+  rects are ink rects (`atlas.py --region x,y,w,h` new: segment inside a region), not seen drawn: none of
+  BTLMN_FONT SYSTEX SYSTEX2 TREFONT ENETREFONT TR_FONT TUKOKU_FONT WR_FONT PRIZE_FONT TERAGGFONT OP_FONT HELP_MAT
+  CDSKILLFNT0/1 GMOVERFONT is drawn on any of the 35 warp scenes (HOLD=600). Glossary: atlas terms line.
+  Abbreviations flagged for polish (docs/polish.md "Phase 8"). Build 2026-11-10 sha1 6b3ebc6a (smoke ok, check.py
+  green, states regenerated 35/35 from it). Seen English on screen (work/qa/s18_sheet.png): sortie leader plate
+  (CN_N), turn_end menu (TEND), save prompt, extras menu, tutorial menu (TUTO book buttons squeezed but readable).
+  Still Japanese there: the title-logo ruby + subtitle on the save top screen (TIT_LOGO / SAVE_BG0).
+  **Next:** see on screen: save slot faction names (SAVE, needs a save), 戦績 page (SEN), battle HUD (BTLFONT terrain cells: tap a square in battle); then BTLMN_FONT, SYSTEX,
+  TREFONT, ENETREFONT, TR_FONT, TUKOKU_FONT, CDSKILLFNT0/1, SYSTEX2 (dump + ink rects; drive the scenes that show
+  them with emu.py taps from work/states), 捕虜処遇, `_unk` PACKs, TU_*; then QA tour + verdicts, inkbox, textcover.
 - **Phase 8 progress (session 17):** UV rects found: ITCM 0x01FF9AD0 draws every 2D quad (r0 x, r1 y, r3 w, stack
   h, u0, v0, u1, v1), 0x01FF966C binds a slot, 0x01FF89B4 loads NAME into a slot. `tools/lua/quads.lua` logs
   "quad NAME u,v,w,h at x,y"; all 35 scenes: `regen.py --rom build/yggdra_en.nds --qa work/qa/quads --script

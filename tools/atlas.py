@@ -2,6 +2,7 @@
 
     python -X utf8 tools/atlas.py NAME.. [--gap 4] [--zoom 3] [--out work/gfx/atlas] [--quads work/qa/quads/*/log.txt]
 
+--region x,y,w,h (repeatable): segment inside each region only (label rows that touch merge otherwise).
 --quads: the rects the game draws (tools/lua/quads.lua over the warp scenes: regen.py --qa work/qa/quads
 --script tools/lua/quads.lua --var HOLD=600) instead of segmenting; only labels on those screens show up.
 
@@ -51,6 +52,8 @@ def main(argv):
     ap.add_argument("--zoom", type=int, default=3)
     ap.add_argument("--out", default="work/gfx/atlas")
     ap.add_argument("--quads", nargs="+", help="quads.lua log files: use the drawn rects instead of segmenting")
+    ap.add_argument("--region", action="append", type=lambda s: tuple(map(int, s.split(","))),
+                    help="x,y,w,h (repeatable): segment only inside it, for label rows with no blank row between")
     a = ap.parse_args(argv)
     out = ROOT / a.out
     out.mkdir(parents=True, exist_ok=True)
@@ -64,7 +67,11 @@ def main(argv):
                          for ln in Path(p).read_text(encoding="utf-8").splitlines()
                          if ln.startswith("quad " + name + " ")}, key=lambda r: (r[1], r[0]))
         else:
-            rs = rects(opaque & (px[..., :3].sum(-1) > 300), opaque, a.gap)
+            ink = opaque & (px[..., :3].sum(-1) > 300)
+            rs = []
+            for x, y, w, h in a.region or [(0, 0, rgba.width, rgba.height)]:
+                rs += [(rx + x, ry + y, rw, rh) for rx, ry, rw, rh in
+                       rects(ink[y:y + h, x:x + w], opaque[y:y + h, x:x + w], a.gap)]
         print(f"{name} {rgba.size}")
         for i, r in enumerate(rs):
             print(f"  {i:2d} {','.join(map(str, r))}")

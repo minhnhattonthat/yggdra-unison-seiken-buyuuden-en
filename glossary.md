@@ -249,6 +249,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   夜間/昼間戦闘 night/day battle; 水辺 waterside; 戦力確認 Check Forces; ミラノ盗賊団 Milanor's Thieves;
   エンベリア公国 Duchy of Embellia (b009-b012 wrote "Principality": fix to Duchy in review); 五頭竜将 Five Dragon
   Generals; 敵将 foe general; 戦力外通告 dismiss; 探索 explore; ドルト盗賊団 Dort's Bandits; オルテガ山賊団 Ortega Brigands; 領主 lord;
+  Texture atlases (phase 8): アイテム図鑑 Item Catalog; カード事典 Card Catalog; サウンドモード Sound Mode; 称号 Titles
+  (配下/領主称号 Unit/Lord Titles); 残存戦力 Strength; terrain 街区 Town 街道 Road 荒野 Waste 砂漠 Desert 城砦 Fort
+  森林 Forest 水辺 Water 草原 Plain 毒沼 Swamp 山岳 Peaks; speeds 激遅 Crawl 遅い Slow 普通 Normal 速い Fast; move
+  types 騎馬 Horse 哨戒 Scout 水棲 Swim 鈍足 Heavy 飛行 Fly 歩行 Foot 夜襲 Night 竜騎 Dragon (20-px cells).
   ▲/▼ dropped, the sign carries it (ATK+2, DEF-1). Composite: "Attack base: " + n + " more can deploy!";
   unit + " will explore."; "This item is held by (" + unit + ")\nso it can't be selected."; unit + " has\njoined
   your forces!".
