@@ -5,7 +5,7 @@
    "id": "arm9:8F980",
    "font": "sys",
    "jp": "・",
-   "en": "",
+   "en": ".",
    "max": 4,
    "ptrs": [
     "ov9_14:18F4"
@@ -35,7 +35,7 @@
    "id": "arm9:8F98C",
    "font": "item",
    "jp": "邪眼",
-   "en": "",
+   "en": "Evil Eye",
    "max": 4,
    "ptrs": [
     "arm9:100E5C"
@@ -45,7 +45,7 @@
    "id": "arm9:8F990",
    "font": "sys",
    "jp": "：",
-   "en": "",
+   "en": ":",
    "max": 4,
    "ptrs": [
     "arm9:81164"
@@ -55,7 +55,7 @@
    "id": "arm9:8F994",
    "font": "item",
    "jp": "聖書",
-   "en": "",
+   "en": "Bible",
    "max": 4,
    "ptrs": [
     "arm9:101024"
@@ -65,7 +65,7 @@
    "id": "arm9:8F998",
    "font": "sys",
    "jp": "が\n",
-   "en": "",
+   "en": ",\n",
    "max": 4,
    "ptrs": [
     "ov9_10:1360",
@@ -76,7 +76,7 @@
    "id": "arm9:8F99C",
    "font": "sys",
    "jp": "の\n",
-   "en": "",
+   "en": " are\n",
    "max": 4,
    "ptrs": [
     "ov9_14:190C"
@@ -86,7 +86,7 @@
    "id": "arm9:8F9A0",
    "font": "item",
    "jp": "金塊",
-   "en": "",
+   "en": "Gold Ingot",
    "max": 4,
    "ptrs": [
     "arm9:100AE4"
@@ -96,7 +96,7 @@
    "id": "arm9:8F9A4",
    "font": "sys",
    "jp": "／",
-   "en": "",
+   "en": "/",
    "max": 4,
    "ptrs": [
     "arm9:81158"
@@ -106,7 +106,7 @@
    "id": "arm9:8F9A8",
    "font": "item",
    "jp": "毛皮",
-   "en": "",
+   "en": "Fur Pelt",
    "max": 4,
    "ptrs": [
     "arm9:100C7C"
@@ -116,7 +116,7 @@
    "id": "arm9:8F9AC",
    "font": "item",
    "jp": "斬鉄剣",
-   "en": "",
+   "en": "Steelcutter",
    "max": 4,
    "ptrs": [
     "arm9:100DFC"
@@ -126,7 +126,7 @@
    "id": "arm9:8F9B0",
    "font": "sys",
    "jp": "ロープ",
-   "en": "",
+   "en": "Rope",
    "max": 4,
    "ptrs": [
     "arm9:101AD0"
@@ -136,7 +136,7 @@
    "id": "arm9:8F9B4",
    "font": "sys",
    "jp": "ミラノ",
-   "en": "",
+   "en": "Milanor",
    "max": 4,
    "ptrs": [
     "arm9:F5498"
@@ -146,7 +146,7 @@
    "id": "arm9:8F9B8",
    "font": "sys",
    "jp": "ネシア",
-   "en": "",
+   "en": "Nessiah",
    "max": 4,
    "ptrs": [
     "arm9:F5650"
@@ -156,7 +156,7 @@
    "id": "arm9:8F9BC",
    "font": "sys",
    "jp": "ドルト",
-   "en": "",
+   "en": "Dort",
    "max": 4,
    "ptrs": [
     "arm9:F54D4"
@@ -166,7 +166,7 @@
    "id": "arm9:8F9C4",
    "font": "item",
    "jp": "ドゼウ",
-   "en": "",
+   "en": "Loach",
    "max": 4,
    "ptrs": [
     "arm9:1012AC"
@@ -176,7 +176,7 @@
    "id": "arm9:8F9C8",
    "font": "item",
    "jp": "転生石",
-   "en": "",
+   "en": "Rebirth Stone",
    "max": 4,
    "ptrs": [
     "arm9:101264"
@@ -186,7 +186,7 @@
    "id": "arm9:8F9CC",
    "font": "sys",
    "jp": "ソドム",
-   "en": "",
+   "en": "Sodom",
    "max": 4,
    "ptrs": [
     "arm9:F5600"
@@ -196,7 +196,7 @@
    "id": "arm9:8F9D0",
    "font": "sys",
    "jp": "カナン",
-   "en": "",
+   "en": "Canaan",
    "max": 4,
    "ptrs": [
     "arm9:F53A8"
@@ -206,7 +206,7 @@
    "id": "arm9:8F9D4",
    "font": "sys",
    "jp": "より、",
-   "en": "",
+   "en": ": ",
    "max": 4,
    "ptrs": [
     "ov9_14:1900"
@@ -216,7 +216,7 @@
    "id": "arm9:8F9D8",
    "font": "sys",
    "jp": "レオン",
-   "en": "",
+   "en": "Leon",
    "max": 4,
    "ptrs": [
     "arm9:F5420"
@@ -226,7 +226,7 @@
    "id": "arm9:8F9DC",
    "font": "sys",
    "jp": "ミゼル",
-   "en": "",
+   "en": "Mizer",
    "max": 4,
    "ptrs": [
     "arm9:F5524"
@@ -236,7 +236,7 @@
    "id": "arm9:8F9E0",
    "font": "sys",
    "jp": "パメラ",
-   "en": "",
+   "en": "Pamela",
    "max": 4,
    "ptrs": [
     "arm9:F55D8"
@@ -246,7 +246,7 @@
    "id": "arm9:8F9E4",
    "font": "sys",
    "jp": "シモベ",
-   "en": "",
+   "en": "Shimobe",
    "max": 4,
    "ptrs": [
     "arm9:F55EC"
@@ -256,7 +256,7 @@
    "id": "arm9:8F9E8",
    "font": "sys",
    "jp": "ナイト",
-   "en": "",
+   "en": "Knight",
    "max": 4,
    "ptrs": [
     "arm9:F5BA0"
@@ -266,7 +266,7 @@
    "id": "arm9:8F9EC",
    "font": "sys",
    "jp": "コブン",
-   "en": "",
+   "en": "Flunky",
    "max": 4,
    "ptrs": [
     "arm9:F54AC"
@@ -276,7 +276,7 @@
    "id": "arm9:8F9F0",
    "font": "sys",
    "jp": "エレナ",
-   "en": "",
+   "en": "Elena",
    "max": 4,
    "ptrs": [
     "arm9:F5538"
@@ -286,7 +286,7 @@
    "id": "arm9:8F9F4",
    "font": "sys",
    "jp": "モニカ",
-   "en": "",
+   "en": "Monica",
    "max": 4,
    "ptrs": [
     "arm9:F53F8"
@@ -296,7 +296,7 @@
    "id": "arm9:8F9F8",
    "font": "sys",
    "jp": "ドゼウ",
-   "en": "",
+   "en": "Loach",
    "max": 4,
    "ptrs": [
     "arm9:1012A8"
@@ -306,7 +306,7 @@
    "id": "arm9:8F9FC",
    "font": "sys",
    "jp": "ガード",
-   "en": "",
+   "en": "Guard",
    "max": 4,
    "ptrs": [
     "arm9:101CBC"
@@ -316,7 +316,7 @@
    "id": "arm9:8FA00",
    "font": "sys",
    "jp": "キリエ",
-   "en": "",
+   "en": "Kylier",
    "max": 4,
    "ptrs": [
     "arm9:F54FC"
@@ -326,7 +326,7 @@
    "id": "arm9:8FA04",
    "font": "sys",
    "jp": "クルス",
-   "en": "",
+   "en": "Cruz",
    "max": 4,
    "ptrs": [
     "arm9:F5510"
@@ -336,7 +336,7 @@
    "id": "arm9:8FA08",
    "font": "sys",
    "jp": "既に",
-   "en": "",
+   "en": "Already sent: ",
    "max": 4,
    "ptrs": [
     "ov9_13:2628"
@@ -346,7 +346,7 @@
    "id": "arm9:8FA0C",
    "font": "item",
    "jp": "ロープ",
-   "en": "",
+   "en": "Rope",
    "max": 4,
    "ptrs": [
     "arm9:101AD4"
@@ -356,7 +356,7 @@
    "id": "arm9:8FA10",
    "font": "item",
    "jp": "黒曜石",
-   "en": "",
+   "en": "Obsidian",
    "max": 4,
    "ptrs": [
     "arm9:100D3C"
@@ -366,7 +366,7 @@
    "id": "arm9:8FA14",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100DBC"
@@ -376,7 +376,7 @@
    "id": "arm9:8FA1C",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:1019EC"
@@ -386,7 +386,7 @@
    "id": "arm9:8FA24",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100A5C"
@@ -396,7 +396,7 @@
    "id": "arm9:8FA2C",
    "font": "item",
    "jp": "皮の帽子",
-   "en": "",
+   "en": "Leather Cap",
    "max": 8,
    "ptrs": [
     "arm9:10097C"
@@ -406,7 +406,7 @@
    "id": "arm9:8FA34",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100744"
@@ -416,7 +416,7 @@
    "id": "arm9:8FA3C",
    "font": "sys",
    "jp": "ユーディ",
-   "en": "",
+   "en": "Eudy",
    "max": 8,
    "ptrs": [
     "arm9:F55C4"
@@ -426,7 +426,7 @@
    "id": "arm9:8FA44",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100D2C"
@@ -436,7 +436,7 @@
    "id": "arm9:8FA4C",
    "font": "item",
    "jp": "蒼リンゴ",
-   "en": "",
+   "en": "Blue Apple",
    "max": 8,
    "ptrs": [
     "arm9:10067C"
@@ -446,7 +446,7 @@
    "id": "arm9:8FA54",
    "font": "item",
    "jp": "ウポラ像",
-   "en": "",
+   "en": "Upora Statue",
    "max": 8,
    "ptrs": [
     "arm9:10079C"
@@ -456,7 +456,7 @@
    "id": "arm9:8FA5C",
    "font": "sys",
    "jp": "ジルヴァ",
-   "en": "",
+   "en": "Zilva",
    "max": 8,
    "ptrs": [
     "arm9:F554C"
@@ -466,7 +466,7 @@
    "id": "arm9:8FA64",
    "font": "sys",
    "jp": "虫カゴ",
-   "en": "",
+   "en": "Bug Cage",
    "max": 8,
    "ptrs": [
     "arm9:101890"
@@ -476,7 +476,7 @@
    "id": "arm9:8FA6C",
    "font": "sys",
    "jp": "エミリオ",
-   "en": "",
+   "en": "Emilia",
    "max": 8,
    "ptrs": [
     "arm9:F54E8"
@@ -486,7 +486,7 @@
    "id": "arm9:8FA74",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100CE4"
@@ -496,7 +496,7 @@
    "id": "arm9:8FA7C",
    "font": "sys",
    "jp": "デュラン",
-   "en": "",
+   "en": "Durant",
    "max": 8,
    "ptrs": [
     "arm9:F540C"
@@ -506,7 +506,7 @@
    "id": "arm9:8FA84",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:1018CC"
@@ -516,7 +516,7 @@
    "id": "arm9:8FA8C",
    "font": "item",
    "jp": "七星宝剣",
-   "en": "",
+   "en": "Seven Star Sword",
    "max": 8,
    "ptrs": [
     "arm9:100E14"
@@ -526,7 +526,7 @@
    "id": "arm9:8FA94",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:101ADC"
@@ -536,7 +536,7 @@
    "id": "arm9:8FA9C",
    "font": "sys",
    "jp": "ここには",
-   "en": "",
+   "en": "Headed here:",
    "max": 8,
    "ptrs": [
     "ov9_13:2614"
@@ -546,7 +546,7 @@
    "id": "arm9:8FAA4",
    "font": "sys",
    "jp": "ユグドラ",
-   "en": "",
+   "en": "Yggdra",
    "max": 8,
    "ptrs": [
     "arm9:F53BC"
@@ -556,7 +556,7 @@
    "id": "arm9:8FAAC",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100A14"
@@ -566,7 +566,7 @@
    "id": "arm9:8FAB4",
    "font": "sys",
    "jp": "フレイム",
-   "en": "",
+   "en": "Flame",
    "max": 8,
    "ptrs": [
     "arm9:A7F5C"
@@ -576,7 +576,7 @@
    "id": "arm9:8FABC",
    "font": "item",
    "jp": "虫カゴ",
-   "en": "",
+   "en": "Bug Cage",
    "max": 8,
    "ptrs": [
     "arm9:101894"
@@ -586,7 +586,7 @@
    "id": "arm9:8FAC4",
    "font": "item",
    "jp": "錆びた鎖",
-   "en": "",
+   "en": "Rusty Chain",
    "max": 8,
    "ptrs": [
     "arm9:100DB4"
@@ -596,7 +596,7 @@
    "id": "arm9:8FACC",
    "font": "sys",
    "jp": "毛皮",
-   "en": "",
+   "en": "Fur Pelt",
    "max": 8,
    "ptrs": [
     "arm9:100C78"
@@ -606,7 +606,7 @@
    "id": "arm9:8FAD4",
    "font": "item",
    "jp": "ボロ布",
-   "en": "",
+   "en": "Old Rag",
    "max": 8,
    "ptrs": [
     "arm9:101744"
@@ -616,7 +616,7 @@
    "id": "arm9:8FADC",
    "font": "sys",
    "jp": "ロザリィ",
-   "en": "",
+   "en": "Rosary",
    "max": 8,
    "ptrs": [
     "arm9:F55B0"
@@ -626,7 +626,7 @@
    "id": "arm9:8FAE4",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:101734"
@@ -636,7 +636,7 @@
    "id": "arm9:8FAEC",
    "font": "item",
    "jp": "疾風の弓",
-   "en": "",
+   "en": "Gale Bow",
    "max": 8,
    "ptrs": [
     "arm9:100E2C"
@@ -646,7 +646,7 @@
    "id": "arm9:8FAF4",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:101014"
@@ -656,7 +656,7 @@
    "id": "arm9:8FAFC",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:101B0C"
@@ -666,7 +666,7 @@
    "id": "arm9:8FB04",
    "font": "sys",
    "jp": "ハンター",
-   "en": "",
+   "en": "Hunter",
    "max": 8,
    "ptrs": [
     "arm9:F5BD0"
@@ -676,7 +676,7 @@
    "id": "arm9:8FB0C",
    "font": "sys",
    "jp": "ゴーレム",
-   "en": "",
+   "en": "Golem",
    "max": 8,
    "ptrs": [
     "arm9:F5C0C"
@@ -686,7 +686,7 @@
    "id": "arm9:8FB14",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:1007A4"
@@ -696,7 +696,7 @@
    "id": "arm9:8FB1C",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100FE4"
@@ -706,7 +706,7 @@
    "id": "arm9:8FB24",
    "font": "sys",
    "jp": "ゴードン",
-   "en": "",
+   "en": "Gordon",
    "max": 8,
    "ptrs": [
     "arm9:F5448"
@@ -716,7 +716,7 @@
    "id": "arm9:8FB2C",
    "font": "sys",
    "jp": "邪眼",
-   "en": "",
+   "en": "Evil Eye",
    "max": 8,
    "ptrs": [
     "arm9:100E58"
@@ -726,7 +726,7 @@
    "id": "arm9:8FB34",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:10072C"
@@ -736,7 +736,7 @@
    "id": "arm9:8FB3C",
    "font": "sys",
    "jp": "ウィッチ",
-   "en": "",
+   "en": "Witch",
    "max": 8,
    "ptrs": [
     "arm9:F5BF4"
@@ -746,7 +746,7 @@
    "id": "arm9:8FB44",
    "font": "sys",
    "jp": "ラッセル",
-   "en": "",
+   "en": "Russell",
    "max": 8,
    "ptrs": [
     "arm9:F5380"
@@ -756,7 +756,7 @@
    "id": "arm9:8FB4C",
    "font": "sys",
    "jp": "トラップ",
-   "en": "",
+   "en": "Trap",
    "max": 8,
    "ptrs": [
     "arm9:101320"
@@ -766,7 +766,7 @@
    "id": "arm9:8FB54",
    "font": "item",
    "jp": "トラップ",
-   "en": "",
+   "en": "Trap",
    "max": 8,
    "ptrs": [
     "arm9:101324"
@@ -776,7 +776,7 @@
    "id": "arm9:8FB5C",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:10159C"
@@ -786,7 +786,7 @@
    "id": "arm9:8FB64",
    "font": "item",
    "jp": "砂の薔薇",
-   "en": "",
+   "en": "Desert Rose",
    "max": 8,
    "ptrs": [
     "arm9:10100C"
@@ -796,7 +796,7 @@
    "id": "arm9:8FB6C",
    "font": "sys",
    "jp": "イシーヌ",
-   "en": "",
+   "en": "Ishiene",
    "max": 8,
    "ptrs": [
     "arm9:F5470"
@@ -806,7 +806,7 @@
    "id": "arm9:8FB74",
    "font": "sys",
    "jp": "聖書",
-   "en": "",
+   "en": "Bible",
    "max": 8,
    "ptrs": [
     "arm9:101020"
@@ -816,7 +816,7 @@
    "id": "arm9:8FB7C",
    "font": "sys",
    "jp": "オルテガ",
-   "en": "",
+   "en": "Ortega",
    "max": 8,
    "ptrs": [
     "arm9:F54C0"
@@ -826,7 +826,7 @@
    "id": "arm9:8FB84",
    "font": "sys",
    "jp": "ルシエナ",
-   "en": "",
+   "en": "Luciana",
    "max": 8,
    "ptrs": [
     "arm9:F53D0"
@@ -836,7 +836,7 @@
    "id": "arm9:8FB8C",
    "font": "sys",
    "jp": "ボロ布",
-   "en": "",
+   "en": "Old Rag",
    "max": 8,
    "ptrs": [
     "arm9:101740"
@@ -846,7 +846,7 @@
    "id": "arm9:8FB94",
    "font": "item",
    "jp": "宝の地図",
-   "en": "",
+   "en": "Treasure Map",
    "max": 8,
    "ptrs": [
     "arm9:1010CC"
@@ -856,7 +856,7 @@
    "id": "arm9:8FB9C",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:10129C"
@@ -866,7 +866,7 @@
    "id": "arm9:8FBA4",
    "font": "item",
    "jp": "鉄の足枷",
-   "en": "",
+   "en": "Iron Shackles",
    "max": 8,
    "ptrs": [
     "arm9:10121C"
@@ -876,7 +876,7 @@
    "id": "arm9:8FBAC",
    "font": "sys",
    "jp": "金塊",
-   "en": "",
+   "en": "Gold Ingot",
    "max": 8,
    "ptrs": [
     "arm9:100AE0"
@@ -886,7 +886,7 @@
    "id": "arm9:8FBB4",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:10174C"
@@ -896,7 +896,7 @@
    "id": "arm9:8FBBC",
    "font": "sys",
    "jp": "ニーチェ",
-   "en": "",
+   "en": "Nietzsche",
    "max": 8,
    "ptrs": [
     "arm9:F545C"
@@ -906,7 +906,7 @@
    "id": "arm9:8FBC4",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:100714"
@@ -916,7 +916,7 @@
    "id": "arm9:8FBCC",
    "font": "sys",
    "jp": "アサシン",
-   "en": "",
+   "en": "Assassin",
    "max": 8,
    "ptrs": [
     "arm9:F5BDC"
@@ -926,7 +926,7 @@
    "id": "arm9:8FBD4",
    "font": "sys",
    "jp": "全員",
-   "en": "",
+   "en": "Everyone",
    "max": 8,
    "ptrs": [
     "arm9:1006B4"
@@ -936,7 +936,7 @@
    "id": "arm9:8FBDC",
    "font": "sys",
    "jp": "ユベロン",
-   "en": "",
+   "en": "Juvelon",
    "max": 8,
    "ptrs": [
     "arm9:F559C"
@@ -946,7 +946,7 @@
    "id": "arm9:8FBE4",
    "font": "item",
    "jp": "ドクロ石",
-   "en": "",
+   "en": "Skull Stone",
    "max": 8,
    "ptrs": [
     "arm9:101294"
@@ -956,7 +956,7 @@
    "id": "arm9:8FBEC",
    "font": "sys",
    "jp": "ジハード",
-   "en": "",
+   "en": "Jihad",
    "max": 8,
    "ptrs": [
     "arm9:A803C"
@@ -966,7 +966,7 @@
    "id": "arm9:8FBF4",
    "font": "sys",
    "jp": "アイギナ",
-   "en": "",
+   "en": "Aegina",
    "max": 8,
    "ptrs": [
     "arm9:F53E4"
@@ -976,7 +976,7 @@
    "id": "arm9:8FBFC",
    "font": "sys",
    "jp": "くるみパン",
-   "en": "",
+   "en": "Walnut Bread",
    "max": 8,
    "ptrs": [
     "arm9:100C18"
@@ -986,7 +986,7 @@
    "id": "arm9:8FC04",
    "font": "sys",
    "jp": "アマレウス",
-   "en": "",
+   "en": "Amareus",
    "max": 8,
    "ptrs": [
     "arm9:F5560"
@@ -996,7 +996,7 @@
    "id": "arm9:8FC0C",
    "font": "sys",
    "jp": "ウポラ像",
-   "en": "",
+   "en": "Upora Statue",
    "max": 8,
    "ptrs": [
     "arm9:100798"
@@ -1006,7 +1006,7 @@
    "id": "arm9:8FC14",
    "font": "item",
    "jp": "妖しの果実",
-   "en": "",
+   "en": "Bewitching Fruit",
    "max": 8,
    "ptrs": [
     "arm9:1006F4"
@@ -1016,7 +1016,7 @@
    "id": "arm9:8FC1C",
    "font": "sys",
    "jp": "狼の口",
-   "en": "",
+   "en": "Jaws of the Wolf",
    "max": 8,
    "ptrs": [
     "arm9:A7334"
@@ -1026,7 +1026,7 @@
    "id": "arm9:8FC24",
    "font": "sys",
    "jp": "ナイトメア",
-   "en": "",
+   "en": "Nightmare",
    "max": 8,
    "ptrs": [
     "arm9:101368"
@@ -1036,7 +1036,7 @@
    "id": "arm9:8FC2C",
    "font": "sys",
    "jp": "チカラダケ",
-   "en": "",
+   "en": "Power Shroom",
    "max": 8,
    "ptrs": [
     "arm9:101140"
@@ -1046,7 +1046,7 @@
    "id": "arm9:8FC34",
    "font": "sys",
    "jp": "ヘッドギア",
-   "en": "",
+   "en": "Headgear",
    "max": 8,
    "ptrs": [
     "arm9:101710"
@@ -1066,7 +1066,7 @@
    "id": "arm9:8FC44",
    "font": "item",
    "jp": "どくまむし",
-   "en": "",
+   "en": "Pit Viper",
    "max": 8,
    "ptrs": [
     "arm9:10127C"
@@ -1076,7 +1076,7 @@
    "id": "arm9:8FC4C",
    "font": "sys",
    "jp": "バルドゥス",
-   "en": "",
+   "en": "Baldus",
    "max": 8,
    "ptrs": [
     "arm9:F5434"
@@ -1086,7 +1086,7 @@
    "id": "arm9:8FC54",
    "font": "sys",
    "jp": "インザーギ",
-   "en": "",
+   "en": "Inzaghi",
    "max": 9,
    "ptrs": [
     "arm9:F5394"
@@ -1096,7 +1096,7 @@
    "id": "arm9:8FC5C",
    "font": "item",
    "jp": "アラン人形",
-   "en": "",
+   "en": "Alan Doll",
    "max": 8,
    "ptrs": [
     "arm9:10070C"
@@ -1106,7 +1106,7 @@
    "id": "arm9:8FC64",
    "font": "sys",
    "jp": "どくまむし",
-   "en": "",
+   "en": "Pit Viper",
    "max": 8,
    "ptrs": [
     "arm9:101278"
@@ -1116,7 +1116,7 @@
    "id": "arm9:8FC6C",
    "font": "sys",
    "jp": "フェンサー",
-   "en": "",
+   "en": "Fencer",
    "max": 8,
    "ptrs": [
     "arm9:F5B88"
@@ -1126,7 +1126,7 @@
    "id": "arm9:8FC74",
    "font": "item",
    "jp": "プロテイモ",
-   "en": "",
+   "en": "Protato",
    "max": 8,
    "ptrs": [
     "arm9:1016E4"
@@ -1136,7 +1136,7 @@
    "id": "arm9:8FC7C",
    "font": "item",
    "jp": "くるみパン",
-   "en": "",
+   "en": "Walnut Bread",
    "max": 8,
    "ptrs": [
     "arm9:100C1C"
@@ -1146,7 +1146,7 @@
    "id": "arm9:8FC84",
    "font": "sys",
    "jp": "ドクロ石",
-   "en": "",
+   "en": "Skull Stone",
    "max": 8,
    "ptrs": [
     "arm9:101290"
@@ -1156,7 +1156,7 @@
    "id": "arm9:8FC8C",
    "font": "sys",
    "jp": "キルアウト",
-   "en": "",
+   "en": "Kill Out",
    "max": 8,
    "ptrs": [
     "arm9:101CB4"
@@ -1166,7 +1166,7 @@
    "id": "arm9:8FC94",
    "font": "sys",
    "jp": "ミステール",
-   "en": "",
+   "en": "Mistel",
    "max": 8,
    "ptrs": [
     "arm9:F563C"
@@ -1176,7 +1176,7 @@
    "id": "arm9:8FC9C",
    "font": "item",
    "jp": "殺意の仮面",
-   "en": "",
+   "en": "Mask of Malice",
    "max": 8,
    "ptrs": [
     "arm9:100D9C"
@@ -1186,7 +1186,7 @@
    "id": "arm9:8FCA4",
    "font": "sys",
    "jp": "ガルカーサ",
-   "en": "",
+   "en": "Gulcasa",
    "max": 8,
    "ptrs": [
     "arm9:F5628"
@@ -1196,7 +1196,7 @@
    "id": "arm9:8FCAC",
    "font": "sys",
    "jp": "ロズウェル",
-   "en": "",
+   "en": "Roswell",
    "max": 8,
    "ptrs": [
     "arm9:F5574"
@@ -1206,7 +1206,7 @@
    "id": "arm9:8FCB4",
    "font": "item",
    "jp": "悪霊の呪符",
-   "en": "",
+   "en": "Evil Spirit Talisman",
    "max": 8,
    "ptrs": [
     "arm9:1006DC"
@@ -1216,7 +1216,7 @@
    "id": "arm9:8FCBC",
    "font": "sys",
    "jp": "バニッシュ",
-   "en": "",
+   "en": "Banish",
    "max": 8,
    "ptrs": [
     "arm9:A7FB0"
@@ -1226,7 +1226,7 @@
    "id": "arm9:8FCC4",
    "font": "sys",
    "jp": "ミラノ領",
-   "en": "",
+   "en": "Milanor's Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D2C"
@@ -1236,7 +1236,7 @@
    "id": "arm9:8FCCC",
    "font": "item",
    "jp": "ココリの実",
-   "en": "",
+   "en": "Kokori Fruit",
    "max": 8,
    "ptrs": [
     "arm9:100D54"
@@ -1246,7 +1246,7 @@
    "id": "arm9:8FCD4",
    "font": "item",
    "jp": "金色の麦穂",
-   "en": "",
+   "en": "Golden Wheat Ear",
    "max": 8,
    "ptrs": [
     "arm9:100D6C"
@@ -1256,7 +1256,7 @@
    "id": "arm9:8FCDC",
    "font": "item",
    "jp": "山葡萄",
-   "en": "",
+   "en": "Wild Grapes",
    "max": 8,
    "ptrs": [
     "arm9:101924"
@@ -1266,7 +1266,7 @@
    "id": "arm9:8FCE4",
    "font": "item",
    "jp": "魔水晶",
-   "en": "",
+   "en": "Magic Crystal",
    "max": 8,
    "ptrs": [
     "arm9:1017A4"
@@ -1276,7 +1276,7 @@
    "id": "arm9:8FCEC",
    "font": "item",
    "jp": "ナイトメア",
-   "en": "",
+   "en": "Nightmare",
    "max": 8,
    "ptrs": [
     "arm9:10136C"
@@ -1286,7 +1286,7 @@
    "id": "arm9:8FCF4",
    "font": "sys",
    "jp": "メダリオン",
-   "en": "",
+   "en": "Medallion",
    "max": 8,
    "ptrs": [
     "arm9:101B18"
@@ -1296,7 +1296,7 @@
    "id": "arm9:8FCFC",
    "font": "item",
    "jp": "ミーティア",
-   "en": "",
+   "en": "Meteor",
    "max": 8,
    "ptrs": [
     "arm9:10181C"
@@ -1306,7 +1306,7 @@
    "id": "arm9:8FD04",
    "font": "item",
    "jp": "禁断の果実",
-   "en": "",
+   "en": "Forbidden Fruit",
    "max": 8,
    "ptrs": [
     "arm9:100B14"
@@ -1316,7 +1316,7 @@
    "id": "arm9:8FD0C",
    "font": "sys",
    "jp": "蒼リンゴ",
-   "en": "",
+   "en": "Blue Apple",
    "max": 8,
    "ptrs": [
     "arm9:100678"
@@ -1326,7 +1326,7 @@
    "id": "arm9:8FD14",
    "font": "item",
    "jp": "メダリオン",
-   "en": "",
+   "en": "Medallion",
    "max": 8,
    "ptrs": [
     "arm9:101B1C"
@@ -1336,7 +1336,7 @@
    "id": "arm9:8FD1C",
    "font": "item",
    "jp": "ヘッドギア",
-   "en": "",
+   "en": "Headgear",
    "max": 8,
    "ptrs": [
     "arm9:101714"
@@ -1346,7 +1346,7 @@
    "id": "arm9:8FD24",
    "font": "sys",
    "jp": "ネシア軍",
-   "en": "",
+   "en": "Nessiah's Army",
    "max": 8,
    "ptrs": [
     "arm9:A7DE4"
@@ -1356,7 +1356,7 @@
    "id": "arm9:8FD2C",
    "font": "item",
    "jp": "手作りの弓",
-   "en": "",
+   "en": "Handmade Bow",
    "max": 8,
    "ptrs": [
     "arm9:101204"
@@ -1366,7 +1366,7 @@
    "id": "arm9:8FD34",
    "font": "item",
    "jp": "丈夫な長靴",
-   "en": "",
+   "en": "Sturdy Boots",
    "max": 8,
    "ptrs": [
     "arm9:100EEC"
@@ -1376,7 +1376,7 @@
    "id": "arm9:8FD3C",
    "font": "sys",
    "jp": "続けて、",
-   "en": "",
+   "en": "Next, ",
    "max": 8,
    "ptrs": [
     "ov9_13:5F00"
@@ -1386,7 +1386,7 @@
    "id": "arm9:8FD44",
    "font": "sys",
    "jp": "ミーティア",
-   "en": "",
+   "en": "Meteor",
    "max": 8,
    "ptrs": [
     "arm9:101818"
@@ -1396,7 +1396,7 @@
    "id": "arm9:8FD4C",
    "font": "sys",
    "jp": "スケルトン",
-   "en": "",
+   "en": "Skeleton",
    "max": 8,
    "ptrs": [
     "arm9:F5C00"
@@ -1406,7 +1406,7 @@
    "id": "arm9:8FD54",
    "font": "sys",
    "jp": "プロテイモ",
-   "en": "",
+   "en": "Protato",
    "max": 8,
    "ptrs": [
     "arm9:1016E0"
@@ -1416,7 +1416,7 @@
    "id": "arm9:8FD5C",
    "font": "item",
    "jp": "魂のるつぼ",
-   "en": "",
+   "en": "Soul Crucible",
    "max": 8,
    "ptrs": [
     "arm9:101114"
@@ -1426,7 +1426,7 @@
    "id": "arm9:8FD64",
    "font": "item",
    "jp": "世界樹の葉",
-   "en": "",
+   "en": "World Tree Leaf",
    "max": 8,
    "ptrs": [
     "arm9:10103C"
@@ -1436,7 +1436,7 @@
    "id": "arm9:8FD6C",
    "font": "sys",
    "jp": "マルディム",
-   "en": "",
+   "en": "Mardym",
    "max": 8,
    "ptrs": [
     "arm9:F5588"
@@ -1446,7 +1446,7 @@
    "id": "arm9:8FD74",
    "font": "sys",
    "jp": "マモリガミ",
-   "en": "",
+   "en": "Mamorigami",
    "max": 8,
    "ptrs": [
     "arm9:F5614"
@@ -1456,7 +1456,7 @@
    "id": "arm9:8FD7C",
    "font": "sys",
    "jp": "ネシア領",
-   "en": "",
+   "en": "Nessiah's Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7DE0"
@@ -1466,7 +1466,7 @@
    "id": "arm9:8FD84",
    "font": "item",
    "jp": "豪槍一本鬼",
-   "en": "",
+   "en": "Great Spear One-Horn",
    "max": 8,
    "ptrs": [
     "arm9:100CF4"
@@ -1476,7 +1476,7 @@
    "id": "arm9:8FD8C",
    "font": "sys",
    "jp": "ミラージュ",
-   "en": "",
+   "en": "Mirage",
    "max": 8,
    "ptrs": [
     "arm9:A80C8"
@@ -1486,7 +1486,7 @@
    "id": "arm9:8FD94",
    "font": "item",
    "jp": "真・斬鉄剣",
-   "en": "",
+   "en": "True Steelcutter",
    "max": 8,
    "ptrs": [
     "arm9:100F94"
@@ -1496,7 +1496,7 @@
    "id": "arm9:8FD9C",
    "font": "item",
    "jp": "帝国兵の鎧",
-   "en": "",
+   "en": "Imperial Soldier Armor",
    "max": 8,
    "ptrs": [
     "arm9:10118C"
@@ -1506,7 +1506,7 @@
    "id": "arm9:8FDA4",
    "font": "sys",
    "jp": "エメローネ",
-   "en": "",
+   "en": "Emelone",
    "max": 8,
    "ptrs": [
     "arm9:F5484"
@@ -1516,7 +1516,7 @@
    "id": "arm9:8FDAC",
    "font": "item",
    "jp": "チカラダケ",
-   "en": "",
+   "en": "Power Shroom",
    "max": 8,
    "ptrs": [
     "arm9:101144"
@@ -1526,7 +1526,7 @@
    "id": "arm9:8FDB4",
    "font": "sys",
    "jp": "ドラグーン",
-   "en": "",
+   "en": "Dragoon",
    "max": 8,
    "ptrs": [
     "arm9:F5C18"
@@ -1536,7 +1536,7 @@
    "id": "arm9:8FDBC",
    "font": "sys",
    "jp": "ブリザード",
-   "en": "",
+   "en": "Blizzard",
    "max": 8,
    "ptrs": [
     "arm9:A7F78"
@@ -1546,7 +1546,7 @@
    "id": "arm9:8FDC4",
    "font": "sys",
    "jp": "スティール",
-   "en": "",
+   "en": "Steal",
    "max": 8,
    "ptrs": [
     "arm9:A7EEC"
@@ -1556,7 +1556,7 @@
    "id": "arm9:8FDCC",
    "font": "sys",
    "jp": "森林領",
-   "en": "",
+   "en": "Forest Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7DCC"
@@ -1566,7 +1566,7 @@
    "id": "arm9:8FDD4",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:101B50"
@@ -1576,7 +1576,7 @@
    "id": "arm9:8FDDC",
    "font": "item",
    "jp": "神々の黙示録",
-   "en": "",
+   "en": "Apocalypse of the Gods",
    "max": 8,
    "ptrs": [
     "arm9:101B4C"
@@ -1586,7 +1586,7 @@
    "id": "arm9:8FDE4",
    "font": "sys",
    "jp": "教国領",
-   "en": "",
+   "en": "Theocracy Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7DA4"
@@ -1596,7 +1596,7 @@
    "id": "arm9:8FDEC",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:101898"
@@ -1606,7 +1606,7 @@
    "id": "arm9:8FDF4",
    "font": "item",
    "jp": "朽ち果てた剣",
-   "en": "",
+   "en": "Rotted Sword",
    "max": 8,
    "ptrs": [
     "arm9:100B5C"
@@ -1616,7 +1616,7 @@
    "id": "arm9:8FDFC",
    "font": "sys",
    "jp": "タマゴのカラ",
-   "en": "",
+   "en": "Eggshell",
    "max": 8,
    "ptrs": [
     "arm9:1010F8"
@@ -1626,7 +1626,7 @@
    "id": "arm9:8FE04",
    "font": "sys",
    "jp": "カローナ城",
-   "en": "",
+   "en": "Castle Karona",
    "max": 8,
    "ptrs": [
     "arm9:A7250"
@@ -1636,7 +1636,7 @@
    "id": "arm9:8FE0C",
    "font": "sys",
    "jp": "フローランド",
-   "en": "",
+   "en": "Floland",
    "max": 8,
    "ptrs": [
     "arm9:A7304"
@@ -1646,7 +1646,7 @@
    "id": "arm9:8FE14",
    "font": "sys",
    "jp": "キルブレード",
-   "en": "",
+   "en": "Kill Blade",
    "max": 8,
    "ptrs": [
     "arm9:100A98"
@@ -1656,7 +1656,7 @@
    "id": "arm9:8FE1C",
    "font": "item",
    "jp": "貝殻の胸あて",
-   "en": "",
+   "en": "Seashell Breastplate",
    "max": 8,
    "ptrs": [
     "arm9:1008BC"
@@ -1666,7 +1666,7 @@
    "id": "arm9:8FE24",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:1019A0"
@@ -1676,7 +1676,7 @@
    "id": "arm9:8FE2C",
    "font": "item",
    "jp": "キャッツアイ",
-   "en": "",
+   "en": "Cat's Eye",
    "max": 8,
    "ptrs": [
     "arm9:100A0C"
@@ -1686,7 +1686,7 @@
    "id": "arm9:8FE34",
    "font": "sys",
    "jp": "スターダスト",
-   "en": "",
+   "en": "Stardust",
    "max": 8,
    "ptrs": [
     "arm9:100FD8"
@@ -1696,7 +1696,7 @@
    "id": "arm9:8FE3C",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:100AB8"
@@ -1706,7 +1706,7 @@
    "id": "arm9:8FE44",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:1015C8"
@@ -1716,7 +1716,7 @@
    "id": "arm9:8FE4C",
    "font": "sys",
    "jp": "グリフグリル",
-   "en": "",
+   "en": "Griffon Grill",
    "max": 8,
    "ptrs": [
     "arm9:100BE8"
@@ -1726,7 +1726,7 @@
    "id": "arm9:8FE54",
    "font": "sys",
    "jp": "カチューシャ",
-   "en": "",
+   "en": "Hairband",
    "max": 8,
    "ptrs": [
     "arm9:100900"
@@ -1736,7 +1736,7 @@
    "id": "arm9:8FE5C",
    "font": "sys",
    "jp": "盗︀賊団",
-   "en": "",
+   "en": "Thieves",
    "max": 8,
    "ptrs": [
     "arm9:A7D30"
@@ -1746,7 +1746,7 @@
    "id": "arm9:8FE64",
    "font": "item",
    "jp": "オリハルコン",
-   "en": "",
+   "en": "Orichalcum",
    "max": 8,
    "ptrs": [
     "arm9:10088C"
@@ -1756,7 +1756,7 @@
    "id": "arm9:8FE6C",
    "font": "item",
    "jp": "カチューシャ",
-   "en": "",
+   "en": "Hairband",
    "max": 8,
    "ptrs": [
     "arm9:100904"
@@ -1766,7 +1766,7 @@
    "id": "arm9:8FE74",
    "font": "sys",
    "jp": "斬鉄剣",
-   "en": "",
+   "en": "Steelcutter",
    "max": 8,
    "ptrs": [
     "arm9:100DF8"
@@ -1776,7 +1776,7 @@
    "id": "arm9:8FE7C",
    "font": "sys",
    "jp": "教国軍",
-   "en": "",
+   "en": "Theocracy Army",
    "max": 8,
    "ptrs": [
     "arm9:A7DA8"
@@ -1786,7 +1786,7 @@
    "id": "arm9:8FE84",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:101B20"
@@ -1796,7 +1796,7 @@
    "id": "arm9:8FE8C",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:1015E0"
@@ -1806,7 +1806,7 @@
    "id": "arm9:8FE94",
    "font": "sys",
    "jp": "オーガニウム",
-   "en": "",
+   "en": "Ogrenium",
    "max": 8,
    "ptrs": [
     "arm9:100840"
@@ -1816,7 +1816,7 @@
    "id": "arm9:8FE9C",
    "font": "sys",
    "jp": "ヴァルキリー",
-   "en": "",
+   "en": "Valkyrie",
    "max": 8,
    "ptrs": [
     "arm9:F5B94"
@@ -1826,7 +1826,7 @@
    "id": "arm9:8FEA4",
    "font": "item",
    "jp": "グリフグリル",
-   "en": "",
+   "en": "Griffon Grill",
    "max": 8,
    "ptrs": [
     "arm9:100BEC"
@@ -1836,7 +1836,7 @@
    "id": "arm9:8FEAC",
    "font": "sys",
    "jp": "魔水晶",
-   "en": "",
+   "en": "Magic Crystal",
    "max": 8,
    "ptrs": [
     "arm9:1017A0"
@@ -1846,7 +1846,7 @@
    "id": "arm9:8FEB4",
    "font": "sys",
    "jp": "ナイトキラー",
-   "en": "",
+   "en": "Knight Killer",
    "max": 8,
    "ptrs": [
     "arm9:101338"
@@ -1856,7 +1856,7 @@
    "id": "arm9:8FEBC",
    "font": "item",
    "jp": "淑女のコート",
-   "en": "",
+   "en": "Lady's Coat",
    "max": 8,
    "ptrs": [
     "arm9:100EA4"
@@ -1866,7 +1866,7 @@
    "id": "arm9:8FEC4",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:1017D8"
@@ -1876,7 +1876,7 @@
    "id": "arm9:8FECC",
    "font": "item",
    "jp": "オーガニウム",
-   "en": "",
+   "en": "Ogrenium",
    "max": 8,
    "ptrs": [
     "arm9:100844"
@@ -1886,7 +1886,7 @@
    "id": "arm9:8FED4",
    "font": "sys",
    "jp": "黒曜石",
-   "en": "",
+   "en": "Obsidian",
    "max": 8,
    "ptrs": [
     "arm9:100D38"
@@ -1896,7 +1896,7 @@
    "id": "arm9:8FEDC",
    "font": "sys",
    "jp": "キャッツアイ",
-   "en": "",
+   "en": "Cat's Eye",
    "max": 8,
    "ptrs": [
     "arm9:100A08"
@@ -1906,7 +1906,7 @@
    "id": "arm9:8FEE4",
    "font": "sys",
    "jp": "サザンクロス",
-   "en": "",
+   "en": "Southern Cross",
    "max": 8,
    "ptrs": [
     "arm9:100D80"
@@ -1916,7 +1916,7 @@
    "id": "arm9:8FEEC",
    "font": "sys",
    "jp": "王国領",
-   "en": "",
+   "en": "Kingdom Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D18"
@@ -1926,7 +1926,7 @@
    "id": "arm9:8FEF4",
    "font": "sys",
    "jp": "ガラスのビン",
-   "en": "",
+   "en": "Glass Bottle",
    "max": 8,
    "ptrs": [
     "arm9:100930"
@@ -1936,7 +1936,7 @@
    "id": "arm9:8FEFC",
    "font": "sys",
    "jp": "公国領",
-   "en": "",
+   "en": "Embellian Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D40"
@@ -1946,7 +1946,7 @@
    "id": "arm9:8FF04",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:101B38"
@@ -1956,7 +1956,7 @@
    "id": "arm9:8FF0C",
    "font": "item",
    "jp": "タマゴのカラ",
-   "en": "",
+   "en": "Eggshell",
    "max": 8,
    "ptrs": [
     "arm9:1010FC"
@@ -1966,7 +1966,7 @@
    "id": "arm9:8FF14",
    "font": "sys",
    "jp": "盗賊団",
-   "en": "",
+   "en": "Bandits",
    "max": 8,
    "ptrs": [
     "arm9:A7D94"
@@ -1976,7 +1976,7 @@
    "id": "arm9:8FF1C",
    "font": "sys",
    "jp": "マントラップ",
-   "en": "",
+   "en": "Mantrap",
    "max": 8,
    "ptrs": [
     "arm9:A8138"
@@ -1986,7 +1986,7 @@
    "id": "arm9:8FF24",
    "font": "sys",
    "jp": "不発弾",
-   "en": "",
+   "en": "Dud Bomb",
    "max": 8,
    "ptrs": [
     "arm9:1015D8"
@@ -1996,7 +1996,7 @@
    "id": "arm9:8FF2C",
    "font": "sys",
    "jp": "コーマカルマ",
-   "en": "",
+   "en": "Coma Karma",
    "max": 8,
    "ptrs": [
     "arm9:A81FC"
@@ -2006,7 +2006,7 @@
    "id": "arm9:8FF34",
    "font": "item",
    "jp": "ダークマター",
-   "en": "",
+   "en": "Dark Matter",
    "max": 8,
    "ptrs": [
     "arm9:101084"
@@ -2016,7 +2016,7 @@
    "id": "arm9:8FF3C",
    "font": "item",
    "jp": "太陽のオーブ",
-   "en": "",
+   "en": "Orb of the Sun",
    "max": 8,
    "ptrs": [
     "arm9:10109C"
@@ -2026,7 +2026,7 @@
    "id": "arm9:8FF44",
    "font": "sys",
    "jp": "王国軍",
-   "en": "",
+   "en": "Royal Army",
    "max": 8,
    "ptrs": [
     "arm9:A7D1C"
@@ -2036,7 +2036,7 @@
    "id": "arm9:8FF4C",
    "font": "item",
    "jp": "インフェルノ",
-   "en": "",
+   "en": "Inferno",
    "max": 8,
    "ptrs": [
     "arm9:100784"
@@ -2046,7 +2046,7 @@
    "id": "arm9:8FF54",
    "font": "sys",
    "jp": "帝国軍",
-   "en": "",
+   "en": "Imperial Army",
    "max": 8,
    "ptrs": [
     "arm9:A7D08"
@@ -2056,7 +2056,7 @@
    "id": "arm9:8FF5C",
    "font": "item",
    "jp": "きらきら金貨",
-   "en": "",
+   "en": "Shiny Gold Coin",
    "max": 8,
    "ptrs": [
     "arm9:100A84"
@@ -2066,7 +2066,7 @@
    "id": "arm9:8FF64",
    "font": "sys",
    "jp": "ガントレット",
-   "en": "",
+   "en": "Gauntlet",
    "max": 8,
    "ptrs": [
     "arm9:100990"
@@ -2076,7 +2076,7 @@
    "id": "arm9:8FF6C",
    "font": "sys",
    "jp": "ジェノサイド",
-   "en": "",
+   "en": "Genocide",
    "max": 8,
    "ptrs": [
     "arm9:A818C"
@@ -2086,7 +2086,7 @@
    "id": "arm9:8FF74",
    "font": "sys",
    "jp": "公国軍",
-   "en": "",
+   "en": "Embellian Army",
    "max": 8,
    "ptrs": [
     "arm9:A7D44"
@@ -2096,7 +2096,7 @@
    "id": "arm9:8FF7C",
    "font": "sys",
    "jp": "エースガード",
-   "en": "",
+   "en": "Ace Guard",
    "max": 8,
    "ptrs": [
     "arm9:A8170"
@@ -2106,7 +2106,7 @@
    "id": "arm9:8FF84",
    "font": "sys",
    "jp": "ウンディーネ",
-   "en": "",
+   "en": "Undine",
    "max": 8,
    "ptrs": [
     "arm9:F5BAC"
@@ -2116,7 +2116,7 @@
    "id": "arm9:8FF8C",
    "font": "item",
    "jp": "天使の輪",
-   "en": "",
+   "en": "Angel's Halo",
    "max": 8,
    "ptrs": [
     "arm9:10124C"
@@ -2126,7 +2126,7 @@
    "id": "arm9:8FF94",
    "font": "sys",
    "jp": "ココリの実",
-   "en": "",
+   "en": "Kokori Fruit",
    "max": 8,
    "ptrs": [
     "arm9:100D50"
@@ -2136,7 +2136,7 @@
    "id": "arm9:8FF9C",
    "font": "item",
    "jp": "バナナンの実",
-   "en": "",
+   "en": "Bananan Fruit",
    "max": 8,
    "ptrs": [
     "arm9:101474"
@@ -2146,7 +2146,7 @@
    "id": "arm9:8FFA4",
    "font": "sys",
    "jp": "山賊団",
-   "en": "",
+   "en": "Brigands",
    "max": 8,
    "ptrs": [
     "arm9:A7D80"
@@ -2156,7 +2156,7 @@
    "id": "arm9:8FFAC",
    "font": "sys",
    "jp": "森林軍",
-   "en": "",
+   "en": "Forest Army",
    "max": 8,
    "ptrs": [
     "arm9:A7DD0"
@@ -2166,7 +2166,7 @@
    "id": "arm9:8FFB4",
    "font": "sys",
    "jp": "を占領!",
-   "en": "",
+   "en": " captured!",
    "max": 8,
    "ptrs": [
     "ov9_14:18F8"
@@ -2176,7 +2176,7 @@
    "id": "arm9:8FFBC",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:100B78"
@@ -2186,7 +2186,7 @@
    "id": "arm9:8FFC4",
    "font": "sys",
    "jp": "盗賊領",
-   "en": "",
+   "en": "Bandit Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D90"
@@ -2196,7 +2196,7 @@
    "id": "arm9:8FFCC",
    "font": "item",
    "jp": "ガントレット",
-   "en": "",
+   "en": "Gauntlet",
    "max": 8,
    "ptrs": [
     "arm9:100994"
@@ -2206,7 +2206,7 @@
    "id": "arm9:8FFD4",
    "font": "sys",
    "jp": "帝国領",
-   "en": "",
+   "en": "Imperial Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D04"
@@ -2216,7 +2216,7 @@
    "id": "arm9:8FFDC",
    "font": "sys",
    "jp": "ロナリス砦",
-   "en": "",
+   "en": "Fort Lonaris",
    "max": 8,
    "ptrs": [
     "arm9:A722C"
@@ -2226,7 +2226,7 @@
    "id": "arm9:8FFE4",
    "font": "item",
    "jp": "サザンクロス",
-   "en": "",
+   "en": "Southern Cross",
    "max": 8,
    "ptrs": [
     "arm9:100D84"
@@ -2236,7 +2236,7 @@
    "id": "arm9:8FFEC",
    "font": "item",
    "jp": "悪魔のシッポ",
-   "en": "",
+   "en": "Devil's Tail",
    "max": 8,
    "ptrs": [
     "arm9:1006C4"
@@ -2246,7 +2246,7 @@
    "id": "arm9:8FFF4",
    "font": "item",
    "jp": "小さな胸あて",
-   "en": "",
+   "en": "Small Breastplate",
    "max": 8,
    "ptrs": [
     "arm9:10112C"
@@ -2256,7 +2256,7 @@
    "id": "arm9:8FFFC",
    "font": "sys",
    "jp": "クリアタイム",
-   "en": "",
+   "en": "Clear Time",
    "max": 8,
    "ptrs": [
     "arm9:100554"
@@ -2266,7 +2266,7 @@
    "id": "arm9:90004",
    "font": "sys",
    "jp": "バンディット",
-   "en": "",
+   "en": "Bandit",
    "max": 8,
    "ptrs": [
     "arm9:F5BB8"
@@ -2276,7 +2276,7 @@
    "id": "arm9:9000C",
    "font": "sys",
    "jp": "ジェノマ砦",
-   "en": "",
+   "en": "Fort Genoma",
    "max": 8,
    "ptrs": [
     "arm9:A7220"
@@ -2286,7 +2286,7 @@
    "id": "arm9:90014",
    "font": "item",
    "jp": "乙女の涙",
-   "en": "",
+   "en": "Maiden's Tear",
    "max": 8,
    "ptrs": [
     "arm9:100874"
@@ -2296,7 +2296,7 @@
    "id": "arm9:9001C",
    "font": "item",
    "jp": "きれいな貝殻",
-   "en": "",
+   "en": "Pretty Seashell",
    "max": 8,
    "ptrs": [
     "arm9:100AB4"
@@ -2306,7 +2306,7 @@
    "id": "arm9:90024",
    "font": "item",
    "jp": "深紅のマント",
-   "en": "",
+   "en": "Crimson Mantle",
    "max": 8,
    "ptrs": [
     "arm9:100F64"
@@ -2316,7 +2316,7 @@
    "id": "arm9:9002C",
    "font": "item",
    "jp": "サラマンドラ",
-   "en": "",
+   "en": "Salamander",
    "max": 8,
    "ptrs": [
     "arm9:100DCC"
@@ -2326,7 +2326,7 @@
    "id": "arm9:90034",
    "font": "sys",
    "jp": "サラマンドラ",
-   "en": "",
+   "en": "Salamander",
    "max": 8,
    "ptrs": [
     "arm9:100DC8"
@@ -2336,7 +2336,7 @@
    "id": "arm9:9003C",
    "font": "sys",
    "jp": "オリハルコン",
-   "en": "",
+   "en": "Orichalcum",
    "max": 8,
    "ptrs": [
     "arm9:100888"
@@ -2346,7 +2346,7 @@
    "id": "arm9:90044",
    "font": "sys",
    "jp": "エーテリオン",
-   "en": "",
+   "en": "Etherion",
    "max": 8,
    "ptrs": [
     "arm9:1007B0"
@@ -2356,7 +2356,7 @@
    "id": "arm9:9004C",
    "font": "item",
    "jp": "虹色アーク",
-   "en": "",
+   "en": "Rainbow Arc",
    "max": 8,
    "ptrs": [
     "arm9:1013B4"
@@ -2366,7 +2366,7 @@
    "id": "arm9:90054",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:101AF0"
@@ -2376,7 +2376,7 @@
    "id": "arm9:9005C",
    "font": "item",
    "jp": "珊瑚のスピア",
-   "en": "",
+   "en": "Coral Spear",
    "max": 8,
    "ptrs": [
     "arm9:100DE4"
@@ -2386,7 +2386,7 @@
    "id": "arm9:90064",
    "font": "item",
    "jp": "キルブレード",
-   "en": "",
+   "en": "Kill Blade",
    "max": 8,
    "ptrs": [
     "arm9:100A9C"
@@ -2396,7 +2396,7 @@
    "id": "arm9:9006C",
    "font": "item",
    "jp": "ナイトキラー",
-   "en": "",
+   "en": "Knight Killer",
    "max": 8,
    "ptrs": [
     "arm9:10133C"
@@ -2406,7 +2406,7 @@
    "id": "arm9:90074",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:1008D8"
@@ -2416,7 +2416,7 @@
    "id": "arm9:9007C",
    "font": "item",
    "jp": "マージリング",
-   "en": "",
+   "en": "Mage Ring",
    "max": 8,
    "ptrs": [
     "arm9:10175C"
@@ -2426,7 +2426,7 @@
    "id": "arm9:90084",
    "font": "item",
    "jp": "ガラスのビン",
-   "en": "",
+   "en": "Glass Bottle",
    "max": 8,
    "ptrs": [
     "arm9:100934"
@@ -2436,7 +2436,7 @@
    "id": "arm9:9008C",
    "font": "sys",
    "jp": "アクエリアス",
-   "en": "",
+   "en": "Aquarius",
    "max": 8,
    "ptrs": [
     "arm9:1006A8"
@@ -2446,7 +2446,7 @@
    "id": "arm9:90094",
    "font": "sys",
    "jp": "メイクドール",
-   "en": "",
+   "en": "Make Doll",
    "max": 8,
    "ptrs": [
     "arm9:A7E44"
@@ -2456,7 +2456,7 @@
    "id": "arm9:9009C",
    "font": "sys",
    "jp": "チャリオット",
-   "en": "",
+   "en": "Chariot",
    "max": 8,
    "ptrs": [
     "arm9:A7F24"
@@ -2466,7 +2466,7 @@
    "id": "arm9:900A4",
    "font": "sys",
    "jp": "嘆きの谷",
-   "en": "",
+   "en": "Valley of Lament",
    "max": 8,
    "ptrs": [
     "arm9:A72A4"
@@ -2476,7 +2476,7 @@
    "id": "arm9:900AC",
    "font": "sys",
    "jp": "フォーチュン",
-   "en": "",
+   "en": "Fortune",
    "max": 8,
    "ptrs": [
     "arm9:A80AC"
@@ -2486,7 +2486,7 @@
    "id": "arm9:900B4",
    "font": "item",
    "jp": "エーテリオン",
-   "en": "",
+   "en": "Etherion",
    "max": 8,
    "ptrs": [
     "arm9:1007B4"
@@ -2496,7 +2496,7 @@
    "id": "arm9:900BC",
    "font": "sys",
    "jp": "魂のるつぼ",
-   "en": "",
+   "en": "Soul Crucible",
    "max": 8,
    "ptrs": [
     "arm9:101110"
@@ -2506,7 +2506,7 @@
    "id": "arm9:900C4",
    "font": "sys",
    "jp": "インフェルノ",
-   "en": "",
+   "en": "Inferno",
    "max": 8,
    "ptrs": [
     "arm9:100780"
@@ -2516,7 +2516,7 @@
    "id": "arm9:900CC",
    "font": "sys",
    "jp": "山賊領",
-   "en": "",
+   "en": "Brigand Lands",
    "max": 8,
    "ptrs": [
     "arm9:A7D7C"
@@ -2526,7 +2526,7 @@
    "id": "arm9:900D4",
    "font": "item",
    "jp": "スターダスト",
-   "en": "",
+   "en": "Stardust",
    "max": 8,
    "ptrs": [
     "arm9:100FDC"
@@ -2536,7 +2536,7 @@
    "id": "arm9:900DC",
    "font": "sys",
    "jp": "転生石",
-   "en": "",
+   "en": "Rebirth Stone",
    "max": 8,
    "ptrs": [
     "arm9:101260"
@@ -2546,7 +2546,7 @@
    "id": "arm9:900E4",
    "font": "sys",
    "jp": "錆びた鎖",
-   "en": "",
+   "en": "Rusty Chain",
    "max": 8,
    "ptrs": [
     "arm9:100DB0"
@@ -2556,7 +2556,7 @@
    "id": "arm9:900EC",
    "font": "sys",
    "jp": "ルナミナ峠",
-   "en": "",
+   "en": "Lunamina Pass",
    "max": 8,
    "ptrs": [
     "arm9:A72BC"
@@ -2566,7 +2566,7 @@
    "id": "arm9:900F4",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:100968"
@@ -2576,7 +2576,7 @@
    "id": "arm9:900FC",
    "font": "item",
    "jp": "不発弾",
-   "en": "",
+   "en": "Dud Bomb",
    "max": 8,
    "ptrs": [
     "arm9:1015DC"
@@ -2586,7 +2586,7 @@
    "id": "arm9:90104",
    "font": "sys",
    "jp": "ネクロゲート",
-   "en": "",
+   "en": "Necrogate",
    "max": 8,
    "ptrs": [
     "arm9:A7E60"
@@ -2596,7 +2596,7 @@
    "id": "arm9:9010C",
    "font": "sys",
    "jp": "山葡萄",
-   "en": "",
+   "en": "Wild Grapes",
    "max": 8,
    "ptrs": [
     "arm9:101920"
@@ -2606,7 +2606,7 @@
    "id": "arm9:90114",
    "font": "item",
    "jp": "癒しのハーブ",
-   "en": "",
+   "en": "Healing Herb",
    "max": 8,
    "ptrs": [
     "arm9:10076C"
@@ -2616,7 +2616,7 @@
    "id": "arm9:9011C",
    "font": "item",
    "jp": "麦わら帽子",
-   "en": "",
+   "en": "Straw Hat",
    "max": 8,
    "ptrs": [
     "arm9:10187C"
@@ -2626,7 +2626,7 @@
    "id": "arm9:90124",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 8,
    "ptrs": [
     "arm9:100C80"
@@ -2636,7 +2636,7 @@
    "id": "arm9:9012C",
    "font": "sys",
    "jp": "凱旋門",
-   "en": "",
+   "en": "Arc of Triumph",
    "max": 8,
    "ptrs": [
     "arm9:A7208"
@@ -2646,7 +2646,7 @@
    "id": "arm9:90134",
    "font": "sys",
    "jp": "キスオブデス",
-   "en": "",
+   "en": "Kiss of Death",
    "max": 8,
    "ptrs": [
     "arm9:A8090"
@@ -2656,7 +2656,7 @@
    "id": "arm9:9013C",
    "font": "item",
    "jp": "メプルの果実",
-   "en": "",
+   "en": "Mepple Fruit",
    "max": 9,
    "ptrs": [
     "arm9:1018DC"
@@ -2666,7 +2666,7 @@
    "id": "arm9:90144",
    "font": "item",
    "jp": "アクエリアス",
-   "en": "",
+   "en": "Aquarius",
    "max": 8,
    "ptrs": [
     "arm9:1006AC"
@@ -2676,7 +2676,7 @@
    "id": "arm9:9014C",
    "font": "item",
    "jp": "毛皮のコート",
-   "en": "",
+   "en": "Fur Coat",
    "max": 8,
    "ptrs": [
     "arm9:100C94"
@@ -2686,7 +2686,7 @@
    "id": "arm9:90154",
    "font": "item",
    "jp": "命のミサンガ",
-   "en": "",
+   "en": "Lifeline Bracelet",
    "max": 8,
    "ptrs": [
     "arm9:10073C"
@@ -2696,7 +2696,7 @@
    "id": "arm9:9015C",
    "font": "item",
    "jp": "絹織りの頭巾",
-   "en": "",
+   "en": "Silk Hood",
    "max": 8,
    "ptrs": [
     "arm9:1009C4"
@@ -2706,7 +2706,7 @@
    "id": "arm9:90164",
    "font": "sys",
    "jp": "ダークマター",
-   "en": "",
+   "en": "Dark Matter",
    "max": 8,
    "ptrs": [
     "arm9:101080"
@@ -2716,7 +2716,7 @@
    "id": "arm9:9016C",
    "font": "sys",
    "jp": "リヴェリオン",
-   "en": "",
+   "en": "Rebellion",
    "max": 8,
    "ptrs": [
     "arm9:A81C4"
@@ -2726,7 +2726,7 @@
    "id": "arm9:90174",
    "font": "sys",
    "jp": "マージリング",
-   "en": "",
+   "en": "Mage Ring",
    "max": 8,
    "ptrs": [
     "arm9:101758"
@@ -2736,7 +2736,7 @@
    "id": "arm9:9017C",
    "font": "sys",
    "jp": "効果なし",
-   "en": "",
+   "en": "No effect",
    "max": 9,
    "ptrs": [
     "arm9:100A88"
@@ -2746,7 +2746,7 @@
    "id": "arm9:90184",
    "font": "item",
    "jp": "アンクの欠片",
-   "en": "",
+   "en": "Ankh Shard",
    "max": 8,
    "ptrs": [
     "arm9:100724"
@@ -2756,7 +2756,7 @@
    "id": "arm9:9018C",
    "font": "sys",
    "jp": "エクスカリバー",
-   "en": "",
+   "en": "Excalibur",
    "max": 8,
    "ptrs": [
     "arm9:1007C8"
@@ -2766,7 +2766,7 @@
    "id": "arm9:90194",
    "font": "sys",
    "jp": "ダークセイバー",
-   "en": "",
+   "en": "Dark Saber",
    "max": 8,
    "ptrs": [
     "arm9:101068"
@@ -2776,7 +2776,7 @@
    "id": "arm9:9019C",
    "font": "sys",
    "jp": "ナイト専用",
-   "en": "",
+   "en": "Knights only",
    "max": 8,
    "ptrs": [
     "arm9:100CFC"
@@ -2786,7 +2786,7 @@
    "id": "arm9:901A4",
    "font": "sys",
    "jp": "グリフライダー",
-   "en": "",
+   "en": "Griffon Rider",
    "max": 8,
    "ptrs": [
     "arm9:F5BC4"
@@ -2796,7 +2796,7 @@
    "id": "arm9:901AC",
    "font": "sys",
    "jp": "ネクロマンサー",
-   "en": "",
+   "en": "Necromancer",
    "max": 9,
    "ptrs": [
     "arm9:F5BE8"
@@ -2806,7 +2806,7 @@
    "id": "arm9:901B4",
    "font": "item",
    "jp": "アイアンヘルム",
-   "en": "",
+   "en": "Iron Helm",
    "max": 8,
    "ptrs": [
     "arm9:10064C"
@@ -2816,7 +2816,7 @@
    "id": "arm9:901BC",
    "font": "sys",
    "jp": "テンプルナイツ",
-   "en": "",
+   "en": "Temple Knights",
    "max": 8,
    "ptrs": [
     "arm9:A7DB4"
@@ -2826,7 +2826,7 @@
    "id": "arm9:901C4",
    "font": "sys",
    "jp": "癒しのハーブ",
-   "en": "",
+   "en": "Healing Herb",
    "max": 8,
    "ptrs": [
     "arm9:100768"
@@ -2836,7 +2836,7 @@
    "id": "arm9:901CC",
    "font": "sys",
    "jp": "ふりふりレース",
-   "en": "",
+   "en": "Frilly Lace",
    "max": 8,
    "ptrs": [
     "arm9:101650"
@@ -2846,7 +2846,7 @@
    "id": "arm9:901D4",
    "font": "sys",
    "jp": "エルフィンボウ",
-   "en": "",
+   "en": "Elfin Bow",
    "max": 8,
    "ptrs": [
     "arm9:1007E0"
@@ -2856,7 +2856,7 @@
    "id": "arm9:901DC",
    "font": "sys",
    "jp": "サンダーボルト",
-   "en": "",
+   "en": "Thunderbolt",
    "max": 8,
    "ptrs": [
     "arm9:A7F94"
@@ -2866,7 +2866,7 @@
    "id": "arm9:901E4",
    "font": "sys",
    "jp": "マジカルソード",
-   "en": "",
+   "en": "Magical Sword",
    "max": 8,
    "ptrs": [
     "arm9:101788"
@@ -2876,7 +2876,7 @@
    "id": "arm9:901EC",
    "font": "sys",
    "jp": "カードについて",
-   "en": "",
+   "en": "About Cards",
    "max": 8,
    "ptrs": [
     "arm9:F7A7C"
@@ -2886,7 +2886,7 @@
    "id": "arm9:901F4",
    "font": "item",
    "jp": "鉄のチョーカー",
-   "en": "",
+   "en": "Iron Choker",
    "max": 8,
    "ptrs": [
     "arm9:101234"
@@ -2896,7 +2896,7 @@
    "id": "arm9:901FC",
    "font": "sys",
    "jp": "▼DEFー1",
-   "en": "",
+   "en": "DEF -1",
    "max": 8,
    "ptrs": [
     "arm9:100938"
@@ -2906,7 +2906,7 @@
    "id": "arm9:90204",
    "font": "sys",
    "jp": "皮の帽子",
-   "en": "",
+   "en": "Leather Cap",
    "max": 8,
    "ptrs": [
     "arm9:100978"
@@ -2916,7 +2916,7 @@
    "id": "arm9:9020C",
    "font": "item",
    "jp": "マジカルソード",
-   "en": "",
+   "en": "Magical Sword",
    "max": 8,
    "ptrs": [
     "arm9:10178C"
@@ -2926,7 +2926,7 @@
    "id": "arm9:90214",
    "font": "item",
    "jp": "凶刃ベルセルク",
-   "en": "",
+   "en": "Cruel Blade Berserk",
    "max": 8,
    "ptrs": [
     "arm9:100A24"
@@ -2936,7 +2936,7 @@
    "id": "arm9:9021C",
    "font": "sys",
    "jp": "バナナンの実",
-   "en": "",
+   "en": "Bananan Fruit",
    "max": 8,
    "ptrs": [
     "arm9:A7BB8",
@@ -2949,7 +2949,7 @@
    "id": "arm9:90224",
    "font": "item",
    "jp": "禁忌のロザリオ",
-   "en": "",
+   "en": "Forbidden Rosario",
    "max": 8,
    "ptrs": [
     "arm9:100AFC"
@@ -2959,7 +2959,7 @@
    "id": "arm9:9022C",
    "font": "sys",
    "jp": "グランドクロス",
-   "en": "",
+   "en": "Grand Cross",
    "max": 8,
    "ptrs": [
     "arm9:100B88"
@@ -2969,7 +2969,7 @@
    "id": "arm9:90234",
    "font": "sys",
    "jp": "ワープシューズ",
-   "en": "",
+   "en": "Warp Shoes",
    "max": 8,
    "ptrs": [
     "arm9:101B00"
@@ -2979,7 +2979,7 @@
    "id": "arm9:9023C",
    "font": "item",
    "jp": "グランドクロス",
-   "en": "",
+   "en": "Grand Cross",
    "max": 8,
    "ptrs": [
     "arm9:100B8C"
@@ -2989,7 +2989,7 @@
    "id": "arm9:90244",
    "font": "item",
    "jp": "黄昏のヴェール",
-   "en": "",
+   "en": "Twilight Veil",
    "max": 8,
    "ptrs": [
     "arm9:1010E4"
@@ -2999,7 +2999,7 @@
    "id": "arm9:9024C",
    "font": "item",
    "jp": "絹のコルセット",
-   "en": "",
+   "en": "Silk Corset",
    "max": 8,
    "ptrs": [
     "arm9:1009DC"
@@ -3009,7 +3009,7 @@
    "id": "arm9:90254",
    "font": "sys",
    "jp": "ひらひらリボン",
-   "en": "",
+   "en": "Fluttery Ribbon",
    "max": 8,
    "ptrs": [
     "arm9:101578"
@@ -3019,7 +3019,7 @@
    "id": "arm9:9025C",
    "font": "sys",
    "jp": "ミスティコート",
-   "en": "",
+   "en": "Misty Coat",
    "max": 8,
    "ptrs": [
     "arm9:101830"
@@ -3029,7 +3029,7 @@
    "id": "arm9:90264",
    "font": "item",
    "jp": "ミスティコート",
-   "en": "",
+   "en": "Misty Coat",
    "max": 8,
    "ptrs": [
     "arm9:101834"
@@ -3039,7 +3039,7 @@
    "id": "arm9:9026C",
    "font": "sys",
    "jp": "ナマクラソード",
-   "en": "",
+   "en": "Dull Sword",
    "max": 8,
    "ptrs": [
     "arm9:101398"
@@ -3049,7 +3049,7 @@
    "id": "arm9:90274",
    "font": "sys",
    "jp": "宝の地図",
-   "en": "",
+   "en": "Treasure Map",
    "max": 8,
    "ptrs": [
     "arm9:1010C8"
@@ -3059,7 +3059,7 @@
    "id": "arm9:9027C",
    "font": "sys",
    "jp": "スナイプグラス",
-   "en": "",
+   "en": "Snipe Glass",
    "max": 8,
    "ptrs": [
     "arm9:100FF0"
@@ -3069,7 +3069,7 @@
    "id": "arm9:90284",
    "font": "sys",
    "jp": "腐︀ったドゼウ",
-   "en": "",
+   "en": "Rotten Loach",
    "max": 8,
    "ptrs": [
     "arm9:100B40"
@@ -3079,7 +3079,7 @@
    "id": "arm9:9028C",
    "font": "item",
    "jp": "オーガブレード",
-   "en": "",
+   "en": "Ogre Blade",
    "max": 8,
    "ptrs": [
     "arm9:10085C"
@@ -3089,7 +3089,7 @@
    "id": "arm9:90294",
    "font": "sys",
    "jp": "▼DEFー1",
-   "en": "",
+   "en": "DEF -1",
    "max": 8,
    "ptrs": [
     "arm9:101748"
@@ -3099,7 +3099,7 @@
    "id": "arm9:9029C",
    "font": "item",
    "jp": "ブラックマリア",
-   "en": "",
+   "en": "Black Maria",
    "max": 8,
    "ptrs": [
     "arm9:101624"
@@ -3109,7 +3109,7 @@
    "id": "arm9:902A4",
    "font": "sys",
    "jp": "ドラゴンブーツ",
-   "en": "",
+   "en": "Dragon Boots",
    "max": 8,
    "ptrs": [
     "arm9:101308"
@@ -3119,7 +3119,7 @@
    "id": "arm9:902AC",
    "font": "item",
    "jp": "奇跡のティアラ",
-   "en": "",
+   "en": "Miracle Tiara",
    "max": 8,
    "ptrs": [
     "arm9:1009AC"
@@ -3129,7 +3129,7 @@
    "id": "arm9:902B4",
    "font": "sys",
    "jp": "タクティシャン",
-   "en": "",
+   "en": "Tactician",
    "max": 8,
    "ptrs": [
     "arm9:F5C24"
@@ -3139,7 +3139,7 @@
    "id": "arm9:902BC",
    "font": "item",
    "jp": "黒ネコの耳飾り",
-   "en": "",
+   "en": "Black Cat Earrings",
    "max": 8,
    "ptrs": [
     "arm9:100C4C"
@@ -3149,7 +3149,7 @@
    "id": "arm9:902C4",
    "font": "item",
    "jp": "フォーミュラー",
-   "en": "",
+   "en": "Formula",
    "max": 8,
    "ptrs": [
     "arm9:1015AC"
@@ -3159,7 +3159,7 @@
    "id": "arm9:902CC",
    "font": "item",
    "jp": "ナイトスコープ",
-   "en": "",
+   "en": "Night Scope",
    "max": 8,
    "ptrs": [
     "arm9:101354"
@@ -3169,7 +3169,7 @@
    "id": "arm9:902D4",
    "font": "item",
    "jp": "白山羊のミルク",
-   "en": "",
+   "en": "White Goat Milk",
    "max": 8,
    "ptrs": [
     "arm9:100F4C"
@@ -3179,7 +3179,7 @@
    "id": "arm9:902DC",
    "font": "item",
    "jp": "ケモノのマント",
-   "en": "",
+   "en": "Beast Mantle",
    "max": 8,
    "ptrs": [
     "arm9:100CAC"
@@ -3189,7 +3189,7 @@
    "id": "arm9:902E4",
    "font": "sys",
    "jp": "シールドバリア",
-   "en": "",
+   "en": "Shield Barrier",
    "max": 8,
    "ptrs": [
     "arm9:A7F40"
@@ -3199,7 +3199,7 @@
    "id": "arm9:902EC",
    "font": "sys",
    "jp": "虹色アーク",
-   "en": "",
+   "en": "Rainbow Arc",
    "max": 8,
    "ptrs": [
     "arm9:1013B0"
@@ -3209,7 +3209,7 @@
    "id": "arm9:902F4",
    "font": "sys",
    "jp": "勇者バッジ",
-   "en": "",
+   "en": "Hero Badge",
    "max": 8,
    "ptrs": [
     "arm9:101980"
@@ -3219,7 +3219,7 @@
    "id": "arm9:902FC",
    "font": "sys",
    "jp": "フォーミュラー",
-   "en": "",
+   "en": "Formula",
    "max": 8,
    "ptrs": [
     "arm9:1015A8"
@@ -3229,7 +3229,7 @@
    "id": "arm9:90304",
    "font": "sys",
    "jp": "リヴェンジャー",
-   "en": "",
+   "en": "Revenger",
    "max": 8,
    "ptrs": [
     "arm9:101A58"
@@ -3239,7 +3239,7 @@
    "id": "arm9:9030C",
    "font": "item",
    "jp": "夢見の帽子",
-   "en": "",
+   "en": "Dreamer's Hat",
    "max": 8,
    "ptrs": [
     "arm9:1019B4"
@@ -3249,7 +3249,7 @@
    "id": "arm9:90314",
    "font": "sys",
    "jp": "草刈り鎌",
-   "en": "",
+   "en": "Grass Sickle",
    "max": 8,
    "ptrs": [
     "arm9:100B28"
@@ -3259,7 +3259,7 @@
    "id": "arm9:9031C",
    "font": "sys",
    "jp": "ネシア勢力",
-   "en": "",
+   "en": "Nessiah's Forces",
    "max": 8,
    "ptrs": [
     "arm9:A7DDC"
@@ -3269,7 +3269,7 @@
    "id": "arm9:90324",
    "font": "sys",
    "jp": "ナイト専用",
-   "en": "",
+   "en": "Knights only",
    "max": 8,
    "ptrs": [
     "arm9:101344"
@@ -3279,7 +3279,7 @@
    "id": "arm9:9032C",
    "font": "item",
    "jp": "草刈り鎌",
-   "en": "",
+   "en": "Grass Sickle",
    "max": 8,
    "ptrs": [
     "arm9:100B2C"
@@ -3289,7 +3289,7 @@
    "id": "arm9:90334",
    "font": "item",
    "jp": "ライオンハート",
-   "en": "",
+   "en": "Lionheart",
    "max": 8,
    "ptrs": [
     "arm9:1019FC"
@@ -3299,7 +3299,7 @@
    "id": "arm9:9033C",
    "font": "item",
    "jp": "首領のハチマキ",
-   "en": "",
+   "en": "Boss's Headband",
    "max": 8,
    "ptrs": [
     "arm9:100EBC"
@@ -3309,7 +3309,7 @@
    "id": "arm9:90344",
    "font": "item",
    "jp": "白山羊のチーズ",
-   "en": "",
+   "en": "White Goat Cheese",
    "max": 8,
    "ptrs": [
     "arm9:100F34"
@@ -3319,7 +3319,7 @@
    "id": "arm9:9034C",
    "font": "item",
    "jp": "リヴェンジャー",
-   "en": "",
+   "en": "Revenger",
    "max": 8,
    "ptrs": [
     "arm9:101A5C"
@@ -3329,7 +3329,7 @@
    "id": "arm9:90354",
    "font": "sys",
    "jp": "褒賞しない",
-   "en": "",
+   "en": "No prize",
    "max": 8,
    "ptrs": [
     "ov9_12:30C8"
@@ -3339,7 +3339,7 @@
    "id": "arm9:9035C",
    "font": "item",
    "jp": "ダークセイバー",
-   "en": "",
+   "en": "Dark Saber",
    "max": 8,
    "ptrs": [
     "arm9:10106C"
@@ -3349,7 +3349,7 @@
    "id": "arm9:90364",
    "font": "sys",
    "jp": "ポイズンブレス",
-   "en": "",
+   "en": "Poison Breath",
    "max": 8,
    "ptrs": [
     "arm9:A7E98"
@@ -3359,7 +3359,7 @@
    "id": "arm9:9036C",
    "font": "item",
    "jp": "ドラゴンブーツ",
-   "en": "",
+   "en": "Dragon Boots",
    "max": 8,
    "ptrs": [
     "arm9:10130C"
@@ -3369,7 +3369,7 @@
    "id": "arm9:90374",
    "font": "sys",
    "jp": "南パルティナ",
-   "en": "",
+   "en": "South Paltina",
    "max": 8,
    "ptrs": [
     "arm9:A7274"
@@ -3379,7 +3379,7 @@
    "id": "arm9:9037C",
    "font": "item",
    "jp": "フェアリーベル",
-   "en": "",
+   "en": "Fairy Bell",
    "max": 8,
    "ptrs": [
     "arm9:101594"
@@ -3389,7 +3389,7 @@
    "id": "arm9:90384",
    "font": "item",
    "jp": "エクスカリバー",
-   "en": "",
+   "en": "Excalibur",
    "max": 8,
    "ptrs": [
     "arm9:1007CC"
@@ -3399,7 +3399,7 @@
    "id": "arm9:9038C",
    "font": "item",
    "jp": "エルフィンボウ",
-   "en": "",
+   "en": "Elfin Bow",
    "max": 8,
    "ptrs": [
     "arm9:1007E4"
@@ -3409,7 +3409,7 @@
    "id": "arm9:90394",
    "font": "sys",
    "jp": "鉄の足枷",
-   "en": "",
+   "en": "Iron Shackles",
    "max": 8,
    "ptrs": [
     "arm9:101218"
@@ -3419,7 +3419,7 @@
    "id": "arm9:9039C",
    "font": "sys",
    "jp": "ブラックマリア",
-   "en": "",
+   "en": "Black Maria",
    "max": 8,
    "ptrs": [
     "arm9:101620"
@@ -3429,7 +3429,7 @@
    "id": "arm9:903A4",
    "font": "sys",
    "jp": "ブレイヴリング",
-   "en": "",
+   "en": "Brave Ring",
    "max": 8,
    "ptrs": [
     "arm9:1016B0"
@@ -3439,7 +3439,7 @@
    "id": "arm9:903AC",
    "font": "sys",
    "jp": "勇者カナン",
-   "en": "",
+   "en": "Canaan the Hero",
    "max": 8,
    "ptrs": [
     "arm9:F53AC"
@@ -3449,7 +3449,7 @@
    "id": "arm9:903B4",
    "font": "sys",
    "jp": "パメラのほうき",
-   "en": "",
+   "en": "Pamela's Broom",
    "max": 8,
    "ptrs": [
     "arm9:1014B8"
@@ -3459,7 +3459,7 @@
    "id": "arm9:903BC",
    "font": "sys",
    "jp": "ナイト専用",
-   "en": "",
+   "en": "Knights only",
    "max": 8,
    "ptrs": [
     "arm9:10144C"
@@ -3469,7 +3469,7 @@
    "id": "arm9:903C4",
    "font": "sys",
    "jp": "ハイパードリル",
-   "en": "",
+   "en": "Hyper Drill",
    "max": 8,
    "ptrs": [
     "arm9:101410"
@@ -3479,7 +3479,7 @@
    "id": "arm9:903CC",
    "font": "sys",
    "jp": "ナイトスコープ",
-   "en": "",
+   "en": "Night Scope",
    "max": 8,
    "ptrs": [
     "arm9:101350"
@@ -3489,7 +3489,7 @@
    "id": "arm9:903D4",
    "font": "item",
    "jp": "ジュエルロッド",
-   "en": "",
+   "en": "Jewel Rod",
    "max": 8,
    "ptrs": [
     "arm9:100E8C"
@@ -3499,7 +3499,7 @@
    "id": "arm9:903DC",
    "font": "item",
    "jp": "ジャックハンド",
-   "en": "",
+   "en": "Jack Hand",
    "max": 8,
    "ptrs": [
     "arm9:100E74"
@@ -3509,7 +3509,7 @@
    "id": "arm9:903E4",
    "font": "item",
    "jp": "ブレイヴリング",
-   "en": "",
+   "en": "Brave Ring",
    "max": 8,
    "ptrs": [
     "arm9:1016B4"
@@ -3519,7 +3519,7 @@
    "id": "arm9:903EC",
    "font": "sys",
    "jp": "メデューサアイ",
-   "en": "",
+   "en": "Medusa Eye",
    "max": 8,
    "ptrs": [
     "arm9:A7E7C"
@@ -3529,7 +3529,7 @@
    "id": "arm9:903F4",
    "font": "sys",
    "jp": "サンクチュアリ",
-   "en": "",
+   "en": "Sanctuary",
    "max": 8,
    "ptrs": [
     "arm9:A8058"
@@ -3539,7 +3539,7 @@
    "id": "arm9:903FC",
    "font": "sys",
    "jp": "ジャックハンド",
-   "en": "",
+   "en": "Jack Hand",
    "max": 8,
    "ptrs": [
     "arm9:100E70"
@@ -3549,7 +3549,7 @@
    "id": "arm9:90404",
    "font": "sys",
    "jp": "ロックフォール",
-   "en": "",
+   "en": "Rockfall",
    "max": 8,
    "ptrs": [
     "arm9:A8154"
@@ -3559,7 +3559,7 @@
    "id": "arm9:9040C",
    "font": "sys",
    "jp": "ジュエルロッド",
-   "en": "",
+   "en": "Jewel Rod",
    "max": 8,
    "ptrs": [
     "arm9:100E88"
@@ -3569,7 +3569,7 @@
    "id": "arm9:90414",
    "font": "sys",
    "jp": "アラン人形",
-   "en": "",
+   "en": "Alan Doll",
    "max": 8,
    "ptrs": [
     "arm9:100708"
@@ -3579,7 +3579,7 @@
    "id": "arm9:9041C",
    "font": "sys",
    "jp": "疾風の弓",
-   "en": "",
+   "en": "Gale Bow",
    "max": 8,
    "ptrs": [
     "arm9:100E28"
@@ -3589,7 +3589,7 @@
    "id": "arm9:90424",
    "font": "sys",
    "jp": "デスブリンガー",
-   "en": "",
+   "en": "Deathbringer",
    "max": 8,
    "ptrs": [
     "arm9:1011E8"
@@ -3599,7 +3599,7 @@
    "id": "arm9:9042C",
    "font": "item",
    "jp": "デスブリンガー",
-   "en": "",
+   "en": "Deathbringer",
    "max": 8,
    "ptrs": [
     "arm9:1011EC"
@@ -3609,7 +3609,7 @@
    "id": "arm9:90434",
    "font": "sys",
    "jp": "ロルカ湖畔",
-   "en": "",
+   "en": "Lorca Lakeside",
    "max": 8,
    "ptrs": [
     "arm9:A731C"
@@ -3619,7 +3619,7 @@
    "id": "arm9:9043C",
    "font": "sys",
    "jp": "ノルン峡谷",
-   "en": "",
+   "en": "Norn Canyon",
    "max": 8,
    "ptrs": [
     "arm9:A7340"
@@ -3629,7 +3629,7 @@
    "id": "arm9:90444",
    "font": "sys",
    "jp": "砂の薔薇",
-   "en": "",
+   "en": "Desert Rose",
    "max": 8,
    "ptrs": [
     "arm9:101008"
@@ -3639,7 +3639,7 @@
    "id": "arm9:9044C",
    "font": "sys",
    "jp": "バーニングサン",
-   "en": "",
+   "en": "Burning Sun",
    "max": 8,
    "ptrs": [
     "arm9:1013F8"
@@ -3649,7 +3649,7 @@
    "id": "arm9:90454",
    "font": "sys",
    "jp": "ドラゴンキラー",
-   "en": "",
+   "en": "Dragon Killer",
    "max": 8,
    "ptrs": [
     "arm9:A7FCC"
@@ -3659,7 +3659,7 @@
    "id": "arm9:9045C",
    "font": "item",
    "jp": "ノーブルグラス",
-   "en": "",
+   "en": "Noble Glass",
    "max": 8,
    "ptrs": [
     "arm9:1013E4"
@@ -3669,7 +3669,7 @@
    "id": "arm9:90464",
    "font": "sys",
    "jp": "ブロンキア城",
-   "en": "",
+   "en": "Castle Bronquia",
    "max": 8,
    "ptrs": [
     "arm9:A71F0"
@@ -3679,7 +3679,7 @@
    "id": "arm9:9046C",
    "font": "sys",
    "jp": "命のミサンガ",
-   "en": "",
+   "en": "Lifeline Bracelet",
    "max": 8,
    "ptrs": [
     "arm9:100738"
@@ -3689,7 +3689,7 @@
    "id": "arm9:90474",
    "font": "sys",
    "jp": "鋼のゴードン",
-   "en": "",
+   "en": "Gordon of Steel",
    "max": 8,
    "ptrs": [
     "arm9:F544C"
@@ -3699,7 +3699,7 @@
    "id": "arm9:9047C",
    "font": "sys",
    "jp": "▼ATKー3",
-   "en": "",
+   "en": "ATK -3",
    "max": 8,
    "ptrs": [
     "arm9:1013A0"
@@ -3709,7 +3709,7 @@
    "id": "arm9:90484",
    "font": "sys",
    "jp": "サンドストーム",
-   "en": "",
+   "en": "Sandstorm",
    "max": 8,
    "ptrs": [
     "arm9:A811C"
@@ -3719,7 +3719,7 @@
    "id": "arm9:9048C",
    "font": "sys",
    "jp": "はぐれドラゴン",
-   "en": "",
+   "en": "Stray Dragon",
    "max": 8,
    "ptrs": [
     "arm9:101440"
@@ -3729,7 +3729,7 @@
    "id": "arm9:90494",
    "font": "sys",
    "jp": "ノーブルグラス",
-   "en": "",
+   "en": "Noble Glass",
    "max": 8,
    "ptrs": [
     "arm9:1013E0"
@@ -3739,7 +3739,7 @@
    "id": "arm9:9049C",
    "font": "sys",
    "jp": "天使の輪",
-   "en": "",
+   "en": "Angel's Halo",
    "max": 8,
    "ptrs": [
     "arm9:101248"
@@ -3749,7 +3749,7 @@
    "id": "arm9:904A4",
    "font": "item",
    "jp": "希望のロザリオ",
-   "en": "",
+   "en": "Rosario of Hope",
    "max": 8,
    "ptrs": [
     "arm9:1009F4"
@@ -3759,7 +3759,7 @@
    "id": "arm9:904AC",
    "font": "item",
    "jp": "勇者バッジ",
-   "en": "",
+   "en": "Hero Badge",
    "max": 8,
    "ptrs": [
     "arm9:101984"
@@ -3769,7 +3769,7 @@
    "id": "arm9:904B4",
    "font": "sys",
    "jp": "パワーフルーツ",
-   "en": "",
+   "en": "Power Fruit",
    "max": 8,
    "ptrs": [
     "arm9:1014E8"
@@ -3779,7 +3779,7 @@
    "id": "arm9:904BC",
    "font": "sys",
    "jp": "鋼のペルソナ",
-   "en": "",
+   "en": "Steel Persona",
    "max": 8,
    "ptrs": [
     "arm9:101428"
@@ -3789,7 +3789,7 @@
    "id": "arm9:904C4",
    "font": "item",
    "jp": "バーニングサン",
-   "en": "",
+   "en": "Burning Sun",
    "max": 8,
    "ptrs": [
     "arm9:1013FC"
@@ -3799,7 +3799,7 @@
    "id": "arm9:904CC",
    "font": "item",
    "jp": "ゴーレムスーツ",
-   "en": "",
+   "en": "Golem Suit",
    "max": 8,
    "ptrs": [
     "arm9:100D24"
@@ -3809,7 +3809,7 @@
    "id": "arm9:904D4",
    "font": "item",
    "jp": "ハイパードリル",
-   "en": "",
+   "en": "Hyper Drill",
    "max": 8,
    "ptrs": [
     "arm9:101414"
@@ -3819,7 +3819,7 @@
    "id": "arm9:904DC",
    "font": "item",
    "jp": "キラービーの巣",
-   "en": "",
+   "en": "Killer Bee Nest",
    "max": 8,
    "ptrs": [
     "arm9:100A54"
@@ -3829,7 +3829,7 @@
    "id": "arm9:904E4",
    "font": "sys",
    "jp": "レオン専用",
-   "en": "",
+   "en": "Leon only",
    "max": 8,
    "ptrs": [
     "arm9:1017C4"
@@ -3839,7 +3839,7 @@
    "id": "arm9:904EC",
    "font": "sys",
    "jp": "ゴーレムスーツ",
-   "en": "",
+   "en": "Golem Suit",
    "max": 8,
    "ptrs": [
     "arm9:100D20"
@@ -3849,7 +3849,7 @@
    "id": "arm9:904F4",
    "font": "item",
    "jp": "妖刀夜叉",
-   "en": "",
+   "en": "Cursed Blade Yaksha",
    "max": 8,
    "ptrs": [
     "arm9:1019CC"
@@ -3859,7 +3859,7 @@
    "id": "arm9:904FC",
    "font": "item",
    "jp": "巨獣ロコンの骨",
-   "en": "",
+   "en": "Bone of the Beast Rokon",
    "max": 8,
    "ptrs": [
     "arm9:100A3C"
@@ -3869,7 +3869,7 @@
    "id": "arm9:90504",
    "font": "sys",
    "jp": "オーガブレード",
-   "en": "",
+   "en": "Ogre Blade",
    "max": 8,
    "ptrs": [
     "arm9:100858"
@@ -3879,7 +3879,7 @@
    "id": "arm9:9050C",
    "font": "item",
    "jp": "ガトリングボウ",
-   "en": "",
+   "en": "Gatling Bow",
    "max": 8,
    "ptrs": [
     "arm9:10091C"
@@ -3889,7 +3889,7 @@
    "id": "arm9:90514",
    "font": "sys",
    "jp": "ガトリングボウ",
-   "en": "",
+   "en": "Gatling Bow",
    "max": 8,
    "ptrs": [
     "arm9:100918"
@@ -3899,7 +3899,7 @@
    "id": "arm9:9051C",
    "font": "sys",
    "jp": "まやかしの笛",
-   "en": "",
+   "en": "Flute of Illusion",
    "max": 8,
    "ptrs": [
     "arm9:1017E8"
@@ -3909,7 +3909,7 @@
    "id": "arm9:90524",
    "font": "sys",
    "jp": "メリア教国",
-   "en": "",
+   "en": "Theocracy of Meria",
    "max": 8,
    "ptrs": [
     "arm9:A7DA0"
@@ -3919,7 +3919,7 @@
    "id": "arm9:9052C",
    "font": "sys",
    "jp": "北パルティナ",
-   "en": "",
+   "en": "North Paltina",
    "max": 8,
    "ptrs": [
     "arm9:A7268"
@@ -3929,7 +3929,7 @@
    "id": "arm9:90534",
    "font": "item",
    "jp": "開かずのカバン",
-   "en": "",
+   "en": "Unopenable Bag",
    "max": 8,
    "ptrs": [
     "arm9:100694"
@@ -3939,7 +3939,7 @@
    "id": "arm9:9053C",
    "font": "item",
    "jp": "ナマクラソード",
-   "en": "",
+   "en": "Dull Sword",
    "max": 8,
    "ptrs": [
     "arm9:10139C"
@@ -3949,7 +3949,7 @@
    "id": "arm9:90544",
    "font": "sys",
    "jp": "フェアリーベル",
-   "en": "",
+   "en": "Fairy Bell",
    "max": 8,
    "ptrs": [
     "arm9:101590"
@@ -3959,7 +3959,7 @@
    "id": "arm9:9054C",
    "font": "sys",
    "jp": "ケモノのマント",
-   "en": "",
+   "en": "Beast Mantle",
    "max": 8,
    "ptrs": [
     "arm9:100CA8"
@@ -3969,7 +3969,7 @@
    "id": "arm9:90554",
    "font": "sys",
    "jp": "ナイト専用",
-   "en": "",
+   "en": "Knights only",
    "max": 8,
    "ptrs": [
     "arm9:10141C"
@@ -3979,7 +3979,7 @@
    "id": "arm9:9055C",
    "font": "item",
    "jp": "スナイプグラス",
-   "en": "",
+   "en": "Snipe Glass",
    "max": 8,
    "ptrs": [
     "arm9:100FF4"
@@ -3989,7 +3989,7 @@
    "id": "arm9:90564",
    "font": "sys",
    "jp": "アイアンヘルム",
-   "en": "",
+   "en": "Iron Helm",
    "max": 8,
    "ptrs": [
     "arm9:100648"
@@ -3999,7 +3999,7 @@
    "id": "arm9:9056C",
    "font": "sys",
    "jp": "ライオンハート",
-   "en": "",
+   "en": "Lionheart",
    "max": 8,
    "ptrs": [
     "arm9:1019F8"
@@ -4009,7 +4009,7 @@
    "id": "arm9:90574",
    "font": "sys",
    "jp": "乙女の涙",
-   "en": "",
+   "en": "Maiden's Tear",
    "max": 8,
    "ptrs": [
     "arm9:100870"
@@ -4019,7 +4019,7 @@
    "id": "arm9:9057C",
    "font": "item",
    "jp": "ドラゴンイーター",
-   "en": "",
+   "en": "Dragon Eater",
    "max": 12,
    "ptrs": [
     "arm9:1012DC"
@@ -4029,7 +4029,7 @@
    "id": "arm9:90588",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 13,
    "ptrs": [
     "arm9:1018FC"
@@ -4039,7 +4039,7 @@
    "id": "arm9:90594",
    "font": "item",
    "jp": "アイスジャベリン",
-   "en": "",
+   "en": "Ice Javelin",
    "max": 12,
    "ptrs": [
     "arm9:100664"
@@ -4049,7 +4049,7 @@
    "id": "arm9:905A0",
    "font": "sys",
    "jp": "アイスジャベリン",
-   "en": "",
+   "en": "Ice Javelin",
    "max": 12,
    "ptrs": [
     "arm9:100660"
@@ -4059,7 +4059,7 @@
    "id": "arm9:905AC",
    "font": "item",
    "jp": "グリフォンの羽根",
-   "en": "",
+   "en": "Griffon Feather",
    "max": 12,
    "ptrs": [
     "arm9:100BD4"
@@ -4069,7 +4069,7 @@
    "id": "arm9:905B8",
    "font": "item",
    "jp": "ブラックブランド",
-   "en": "",
+   "en": "Black Brand",
    "max": 12,
    "ptrs": [
     "arm9:10160C"
@@ -4079,7 +4079,7 @@
    "id": "arm9:905C4",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:100DA4"
@@ -4089,7 +4089,7 @@
    "id": "arm9:905D0",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:100CB4"
@@ -4099,7 +4099,7 @@
    "id": "arm9:905DC",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:100C54"
@@ -4109,7 +4109,7 @@
    "id": "arm9:905E8",
    "font": "sys",
    "jp": "ニーチェ専用",
-   "en": "",
+   "en": "Nietzsche only",
    "max": 12,
    "ptrs": [
     "arm9:1008DC"
@@ -4119,7 +4119,7 @@
    "id": "arm9:905F4",
    "font": "item",
    "jp": "ブラッディローズ",
-   "en": "",
+   "en": "Bloody Rose",
    "max": 12,
    "ptrs": [
     "arm9:10163C"
@@ -4129,7 +4129,7 @@
    "id": "arm9:90600",
    "font": "sys",
    "jp": "スマッシュヒット",
-   "en": "",
+   "en": "Smash Hit",
    "max": 12,
    "ptrs": [
     "arm9:101CAC"
@@ -4139,7 +4139,7 @@
    "id": "arm9:9060C",
    "font": "sys",
    "jp": "アンクの欠片",
-   "en": "",
+   "en": "Ankh Shard",
    "max": 12,
    "ptrs": [
     "arm9:100720"
@@ -4149,7 +4149,7 @@
    "id": "arm9:90618",
    "font": "sys",
    "jp": "レッドクリムゾン",
-   "en": "",
+   "en": "Red Crimson",
    "max": 12,
    "ptrs": [
     "arm9:101A88"
@@ -4159,7 +4159,7 @@
    "id": "arm9:90624",
    "font": "sys",
    "jp": "ラッセル専用",
-   "en": "",
+   "en": "Russell only",
    "max": 12,
    "ptrs": [
     "arm9:100E04"
@@ -4169,7 +4169,7 @@
    "id": "arm9:90630",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:100894"
@@ -4179,7 +4179,7 @@
    "id": "arm9:9063C",
    "font": "sys",
    "jp": "ブルースティング",
-   "en": "",
+   "en": "Blue Sting",
    "max": 12,
    "ptrs": [
     "arm9:101680"
@@ -4189,7 +4189,7 @@
    "id": "arm9:90648",
    "font": "sys",
    "jp": "ハンター専用",
-   "en": "",
+   "en": "Hunters only",
    "max": 12,
    "ptrs": [
     "arm9:100E34"
@@ -4199,7 +4199,7 @@
    "id": "arm9:90654",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:101824"
@@ -4209,7 +4209,7 @@
    "id": "arm9:90660",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:101524"
@@ -4219,7 +4219,7 @@
    "id": "arm9:9066C",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:100E4C"
@@ -4229,7 +4229,7 @@
    "id": "arm9:90678",
    "font": "sys",
    "jp": "バンシーズクライ",
-   "en": "",
+   "en": "Banshee's Cry",
    "max": 12,
    "ptrs": [
     "arm9:A80E4"
@@ -4239,7 +4239,7 @@
    "id": "arm9:90684",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:100E7C"
@@ -4249,7 +4249,7 @@
    "id": "arm9:90690",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:1019A4"
@@ -4259,7 +4259,7 @@
    "id": "arm9:9069C",
    "font": "sys",
    "jp": "エレガントスピア",
-   "en": "",
+   "en": "Elegant Spear",
    "max": 12,
    "ptrs": [
     "arm9:1007F8"
@@ -4269,7 +4269,7 @@
    "id": "arm9:906A8",
    "font": "item",
    "jp": "エレガントスピア",
-   "en": "",
+   "en": "Elegant Spear",
    "max": 12,
    "ptrs": [
     "arm9:1007FC"
@@ -4279,7 +4279,7 @@
    "id": "arm9:906B4",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:100EAC"
@@ -4289,7 +4289,7 @@
    "id": "arm9:906C0",
    "font": "sys",
    "jp": "ダウジングロッド",
-   "en": "",
+   "en": "Dowsing Rod",
    "max": 12,
    "ptrs": [
     "arm9:1010B0"
@@ -4299,7 +4299,7 @@
    "id": "arm9:906CC",
    "font": "sys",
    "jp": "プリンセスドレス",
-   "en": "",
+   "en": "Princess Dress",
    "max": 12,
    "ptrs": [
     "arm9:101668"
@@ -4309,7 +4309,7 @@
    "id": "arm9:906D8",
    "font": "sys",
    "jp": "ブロンズシールド",
-   "en": "",
+   "en": "Bronze Shield",
    "max": 12,
    "ptrs": [
     "arm9:1016F8"
@@ -4319,7 +4319,7 @@
    "id": "arm9:906E4",
    "font": "sys",
    "jp": "ラッセル専用",
-   "en": "",
+   "en": "Russell only",
    "max": 12,
    "ptrs": [
     "arm9:1019D4"
@@ -4329,7 +4329,7 @@
    "id": "arm9:906F0",
    "font": "item",
    "jp": "ブロンズシールド",
-   "en": "",
+   "en": "Bronze Shield",
    "max": 12,
    "ptrs": [
     "arm9:1016FC"
@@ -4339,7 +4339,7 @@
    "id": "arm9:906FC",
    "font": "sys",
    "jp": "アイヴィウィップ",
-   "en": "",
+   "en": "Ivy Whip",
    "max": 12,
    "ptrs": [
     "arm9:A8100"
@@ -4349,7 +4349,7 @@
    "id": "arm9:90708",
    "font": "sys",
    "jp": "小さな胸あて",
-   "en": "",
+   "en": "Small Breastplate",
    "max": 12,
    "ptrs": [
     "arm9:101128"
@@ -4359,7 +4359,7 @@
    "id": "arm9:90714",
    "font": "sys",
    "jp": "鉄のチョーカー",
-   "en": "",
+   "en": "Iron Choker",
    "max": 12,
    "ptrs": [
     "arm9:101230"
@@ -4369,7 +4369,7 @@
    "id": "arm9:90720",
    "font": "item",
    "jp": "イブニングドレス",
-   "en": "",
+   "en": "Evening Dress",
    "max": 12,
    "ptrs": [
     "arm9:100754"
@@ -4379,7 +4379,7 @@
    "id": "arm9:9072C",
    "font": "item",
    "jp": "風ヲ切裂ク蒼ノ爪",
-   "en": "",
+   "en": "Wind-Rending Azure Claw",
    "max": 12,
    "ptrs": [
     "arm9:1008EC"
@@ -4389,7 +4389,7 @@
    "id": "arm9:90738",
    "font": "sys",
    "jp": "ドラゴンイーター",
-   "en": "",
+   "en": "Dragon Eater",
    "max": 12,
    "ptrs": [
     "arm9:1012D8"
@@ -4399,7 +4399,7 @@
    "id": "arm9:90744",
    "font": "sys",
    "jp": "ゴーレム以外",
-   "en": "",
+   "en": "All but Golems",
    "max": 12,
    "ptrs": [
     "arm9:100F6C"
@@ -4409,7 +4409,7 @@
    "id": "arm9:90750",
    "font": "sys",
    "jp": "ハンター専用",
-   "en": "",
+   "en": "Hunters only",
    "max": 12,
    "ptrs": [
     "arm9:101A1C"
@@ -4419,7 +4419,7 @@
    "id": "arm9:9075C",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:101884"
@@ -4429,7 +4429,7 @@
    "id": "arm9:90768",
    "font": "item",
    "jp": "カリンカの赤い実",
-   "en": "",
+   "en": "Red Kalinka Berry",
    "max": 12,
    "ptrs": [
     "arm9:10094C"
@@ -4439,7 +4439,7 @@
    "id": "arm9:90774",
    "font": "sys",
    "jp": "枯れた花束",
-   "en": "",
+   "en": "Withered Bouquet",
    "max": 12,
    "ptrs": [
     "arm9:100960"
@@ -4449,7 +4449,7 @@
    "id": "arm9:90780",
    "font": "sys",
    "jp": "ロザリィ以外",
-   "en": "",
+   "en": "All but Rosary",
    "max": 12,
    "ptrs": [
     "arm9:100C6C"
@@ -4459,7 +4459,7 @@
    "id": "arm9:9078C",
    "font": "item",
    "jp": "枯れた花束",
-   "en": "",
+   "en": "Withered Bouquet",
    "max": 12,
    "ptrs": [
     "arm9:100964"
@@ -4469,7 +4469,7 @@
    "id": "arm9:90798",
    "font": "item",
    "jp": "マーメイドフィン",
-   "en": "",
+   "en": "Mermaid Fin",
    "max": 12,
    "ptrs": [
     "arm9:101774"
@@ -4479,7 +4479,7 @@
    "id": "arm9:907A4",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:100FCC"
@@ -4489,7 +4489,7 @@
    "id": "arm9:907B0",
    "font": "sys",
    "jp": "ウィッチ専用",
-   "en": "",
+   "en": "Witches only",
    "max": 12,
    "ptrs": [
     "arm9:101A4C"
@@ -4499,7 +4499,7 @@
    "id": "arm9:907BC",
    "font": "sys",
    "jp": "絹のコルセット",
-   "en": "",
+   "en": "Silk Corset",
    "max": 12,
    "ptrs": [
     "arm9:1009D8"
@@ -4509,7 +4509,7 @@
    "id": "arm9:907C8",
    "font": "item",
    "jp": "魔槍ブラシェンド",
-   "en": "",
+   "en": "Demon Spear Brachend",
    "max": 12,
    "ptrs": [
     "arm9:1017BC"
@@ -4519,7 +4519,7 @@
    "id": "arm9:907D4",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:1015E4"
@@ -4529,7 +4529,7 @@
    "id": "arm9:907E0",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:101A7C"
@@ -4539,7 +4539,7 @@
    "id": "arm9:907EC",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:10084C"
@@ -4549,7 +4549,7 @@
    "id": "arm9:907F8",
    "font": "sys",
    "jp": "ソーサリーグラス",
-   "en": "",
+   "en": "Sorcery Glass",
    "max": 12,
    "ptrs": [
     "arm9:101050"
@@ -4559,7 +4559,7 @@
    "id": "arm9:90804",
    "font": "item",
    "jp": "カゴの中の白い蝶",
-   "en": "",
+   "en": "Caged White Butterfly",
    "max": 12,
    "ptrs": [
     "arm9:1008D4"
@@ -4569,7 +4569,7 @@
    "id": "arm9:90810",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:10177C"
@@ -4579,7 +4579,7 @@
    "id": "arm9:9081C",
    "font": "sys",
    "jp": "きらきら金貨",
-   "en": "",
+   "en": "Shiny Gold Coin",
    "max": 12,
    "ptrs": [
     "arm9:100A80"
@@ -4589,7 +4589,7 @@
    "id": "arm9:90828",
    "font": "item",
    "jp": "マルスの大盾",
-   "en": "",
+   "en": "Great Shield of Mars",
    "max": 12,
    "ptrs": [
     "arm9:101804"
@@ -4599,7 +4599,7 @@
    "id": "arm9:90834",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:10108C"
@@ -4609,7 +4609,7 @@
    "id": "arm9:90840",
    "font": "sys",
    "jp": "きれいな貝殻",
-   "en": "",
+   "en": "Pretty Seashell",
    "max": 12,
    "ptrs": [
     "arm9:100AB0"
@@ -4619,7 +4619,7 @@
    "id": "arm9:9084C",
    "font": "item",
    "jp": "ギロチンカッター",
-   "en": "",
+   "en": "Guillotine Cutter",
    "max": 12,
    "ptrs": [
     "arm9:100ACC"
@@ -4629,7 +4629,7 @@
    "id": "arm9:90858",
    "font": "sys",
    "jp": "聖騎士団",
-   "en": "",
+   "en": "Temple Knights",
    "max": 12,
    "ptrs": [
     "arm9:A7DBC"
@@ -4639,7 +4639,7 @@
    "id": "arm9:90864",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:1019BC"
@@ -4649,7 +4649,7 @@
    "id": "arm9:90870",
    "font": "item",
    "jp": "フレースヴェルク",
-   "en": "",
+   "en": "Hraesvelgr",
    "max": 12,
    "ptrs": [
     "arm9:1016CC"
@@ -4659,7 +4659,7 @@
    "id": "arm9:9087C",
    "font": "sys",
    "jp": "エレメントロッド",
-   "en": "",
+   "en": "Element Rod",
    "max": 12,
    "ptrs": [
     "arm9:100810"
@@ -4669,7 +4669,7 @@
    "id": "arm9:90888",
    "font": "item",
    "jp": "エレメントロッド",
-   "en": "",
+   "en": "Element Rod",
    "max": 12,
    "ptrs": [
     "arm9:100814"
@@ -4679,7 +4679,7 @@
    "id": "arm9:90894",
    "font": "sys",
    "jp": "ミラージュコート",
-   "en": "",
+   "en": "Mirage Coat",
    "max": 12,
    "ptrs": [
     "arm9:101848"
@@ -4689,7 +4689,7 @@
    "id": "arm9:908A0",
    "font": "item",
    "jp": "ミラージュコート",
-   "en": "",
+   "en": "Mirage Coat",
    "max": 12,
    "ptrs": [
     "arm9:10184C"
@@ -4699,7 +4699,7 @@
    "id": "arm9:908AC",
    "font": "sys",
    "jp": "ユニゾンアタック",
-   "en": "",
+   "en": "Unison Attack",
    "max": 12,
    "ptrs": [
     "arm9:101CB8"
@@ -4709,7 +4709,7 @@
    "id": "arm9:908B8",
    "font": "item",
    "jp": "腐ったドゼウ",
-   "en": "",
+   "en": "Rotten Loach",
    "max": 12,
    "ptrs": [
     "arm9:100B44"
@@ -4719,7 +4719,7 @@
    "id": "arm9:908C4",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:101AF4"
@@ -4729,7 +4729,7 @@
    "id": "arm9:908D0",
    "font": "sys",
    "jp": "クマのぬいぐるみ",
-   "en": "",
+   "en": "Teddy Bear",
    "max": 12,
    "ptrs": [
     "arm9:100B70"
@@ -4739,7 +4739,7 @@
    "id": "arm9:908DC",
    "font": "item",
    "jp": "ブルースティング",
-   "en": "",
+   "en": "Blue Sting",
    "max": 12,
    "ptrs": [
     "arm9:101684"
@@ -4749,7 +4749,7 @@
    "id": "arm9:908E8",
    "font": "item",
    "jp": "クマのぬいぐるみ",
-   "en": "",
+   "en": "Teddy Bear",
    "max": 12,
    "ptrs": [
     "arm9:100B74"
@@ -4759,7 +4759,7 @@
    "id": "arm9:908F4",
    "font": "item",
    "jp": "スウィートベリー",
-   "en": "",
+   "en": "Sweet Berry",
    "max": 12,
    "ptrs": [
     "arm9:100FAC"
@@ -4769,7 +4769,7 @@
    "id": "arm9:90900",
    "font": "item",
    "jp": "プリンセスドレス",
-   "en": "",
+   "en": "Princess Dress",
    "max": 12,
    "ptrs": [
     "arm9:10166C"
@@ -4779,7 +4779,7 @@
    "id": "arm9:9090C",
    "font": "sys",
    "jp": "深紅のマント",
-   "en": "",
+   "en": "Crimson Mantle",
    "max": 12,
    "ptrs": [
     "arm9:100F60"
@@ -4789,7 +4789,7 @@
    "id": "arm9:90918",
    "font": "sys",
    "jp": "クリスタルロッド",
-   "en": "",
+   "en": "Crystal Rod",
    "max": 12,
    "ptrs": [
     "arm9:100BA0"
@@ -4799,7 +4799,7 @@
    "id": "arm9:90924",
    "font": "item",
    "jp": "クリスタルロッド",
-   "en": "",
+   "en": "Crystal Rod",
    "max": 12,
    "ptrs": [
     "arm9:100BA4"
@@ -4809,7 +4809,7 @@
    "id": "arm9:90930",
    "font": "sys",
    "jp": "クリティカライザ",
-   "en": "",
+   "en": "Criticalizer",
    "max": 12,
    "ptrs": [
     "arm9:100BB8"
@@ -4819,7 +4819,7 @@
    "id": "arm9:9093C",
    "font": "sys",
    "jp": "ゴーレム以外",
-   "en": "",
+   "en": "All but Golems",
    "max": 12,
    "ptrs": [
     "arm9:10195C"
@@ -4829,7 +4829,7 @@
    "id": "arm9:90948",
    "font": "item",
    "jp": "クリティカライザ",
-   "en": "",
+   "en": "Criticalizer",
    "max": 12,
    "ptrs": [
     "arm9:100BBC"
@@ -4839,7 +4839,7 @@
    "id": "arm9:90954",
    "font": "sys",
    "jp": "麦わら帽子",
-   "en": "",
+   "en": "Straw Hat",
    "max": 12,
    "ptrs": [
     "arm9:101878"
@@ -4849,7 +4849,7 @@
    "id": "arm9:90960",
    "font": "sys",
    "jp": "名馬ワードナ",
-   "en": "",
+   "en": "Werdna the Steed",
    "max": 12,
    "ptrs": [
     "arm9:1018A8"
@@ -4859,7 +4859,7 @@
    "id": "arm9:9096C",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:101B24"
@@ -4869,7 +4869,7 @@
    "id": "arm9:90978",
    "font": "sys",
    "jp": "目隠しの布",
-   "en": "",
+   "en": "Blindfold",
    "max": 12,
    "ptrs": [
     "arm9:1018C0"
@@ -4879,7 +4879,7 @@
    "id": "arm9:90984",
    "font": "sys",
    "jp": "クルセイドランス",
-   "en": "",
+   "en": "Crusade Lance",
    "max": 12,
    "ptrs": [
     "arm9:100C00"
@@ -4889,7 +4889,7 @@
    "id": "arm9:90990",
    "font": "item",
    "jp": "目隠しの布",
-   "en": "",
+   "en": "Blindfold",
    "max": 12,
    "ptrs": [
     "arm9:1018C4"
@@ -4899,7 +4899,7 @@
    "id": "arm9:9099C",
    "font": "sys",
    "jp": "開かずのカバン",
-   "en": "",
+   "en": "Unopenable Bag",
    "max": 12,
    "ptrs": [
     "arm9:100690"
@@ -4909,7 +4909,7 @@
    "id": "arm9:909A8",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:101B3C"
@@ -4919,7 +4919,7 @@
    "id": "arm9:909B4",
    "font": "sys",
    "jp": "クローバーライト",
-   "en": "",
+   "en": "Clover Light",
    "max": 12,
    "ptrs": [
     "arm9:100C30"
@@ -4929,7 +4929,7 @@
    "id": "arm9:909C0",
    "font": "item",
    "jp": "悲槍シルヴィア",
-   "en": "",
+   "en": "Grief Spear Sylvia",
    "max": 12,
    "ptrs": [
     "arm9:10154C"
@@ -4939,7 +4939,7 @@
    "id": "arm9:909CC",
    "font": "item",
    "jp": "クローバーライト",
-   "en": "",
+   "en": "Clover Light",
    "max": 12,
    "ptrs": [
     "arm9:100C34"
@@ -4949,7 +4949,7 @@
    "id": "arm9:909D8",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:101B54"
@@ -4959,7 +4959,7 @@
    "id": "arm9:909E4",
    "font": "item",
    "jp": "エンゲージリング",
-   "en": "",
+   "en": "Engagement Ring",
    "max": 12,
    "ptrs": [
     "arm9:10082C"
@@ -4969,7 +4969,7 @@
    "id": "arm9:909F0",
    "font": "item",
    "jp": "黒薔薇のクレスト",
-   "en": "",
+   "en": "Black Rose Crest",
    "max": 12,
    "ptrs": [
     "arm9:100C64"
@@ -4979,7 +4979,7 @@
    "id": "arm9:909FC",
    "font": "item",
    "jp": "メルヘン偽翼",
-   "en": "",
+   "en": "Fairytale Fake Wings",
    "max": 12,
    "ptrs": [
     "arm9:1018F4"
@@ -4989,7 +4989,7 @@
    "id": "arm9:90A08",
    "font": "sys",
    "jp": "モーニングドレス",
-   "en": "",
+   "en": "Morning Dress",
    "max": 12,
    "ptrs": [
     "arm9:101908"
@@ -4999,7 +4999,7 @@
    "id": "arm9:90A14",
    "font": "sys",
    "jp": "ハンター専用",
-   "en": "",
+   "en": "Hunters only",
    "max": 12,
    "ptrs": [
     "arm9:10120C"
@@ -5009,7 +5009,7 @@
    "id": "arm9:90A20",
    "font": "sys",
    "jp": "黒薔薇領",
-   "en": "",
+   "en": "Black Rose Lands",
    "max": 12,
    "ptrs": [
     "arm9:A7D54"
@@ -5019,7 +5019,7 @@
    "id": "arm9:90A2C",
    "font": "sys",
    "jp": "手作りの弓",
-   "en": "",
+   "en": "Handmade Bow",
    "max": 12,
    "ptrs": [
     "arm9:101200"
@@ -5029,7 +5029,7 @@
    "id": "arm9:90A38",
    "font": "item",
    "jp": "ナナのキャンディ",
-   "en": "",
+   "en": "Nana's Candy",
    "max": 12,
    "ptrs": [
     "arm9:101384"
@@ -5039,7 +5039,7 @@
    "id": "arm9:90A44",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:10123C"
@@ -5049,7 +5049,7 @@
    "id": "arm9:90A50",
    "font": "sys",
    "jp": "探索について",
-   "en": "",
+   "en": "About Exploring",
    "max": 12,
    "ptrs": [
     "arm9:F7A9C"
@@ -5059,7 +5059,7 @@
    "id": "arm9:90A5C",
    "font": "item",
    "jp": "幸運のタリスマン",
-   "en": "",
+   "en": "Lucky Talisman",
    "max": 12,
    "ptrs": [
     "arm9:100CDC"
@@ -5069,7 +5069,7 @@
    "id": "arm9:90A68",
    "font": "sys",
    "jp": "エンゲージリング",
-   "en": "",
+   "en": "Engagement Ring",
    "max": 12,
    "ptrs": [
     "arm9:100828"
@@ -5079,7 +5079,7 @@
    "id": "arm9:90A74",
    "font": "item",
    "jp": "スコーピオテール",
-   "en": "",
+   "en": "Scorpion Tail",
    "max": 12,
    "ptrs": [
     "arm9:100FC4"
@@ -5089,7 +5089,7 @@
    "id": "arm9:90A80",
    "font": "sys",
    "jp": "アイテムブレイク",
-   "en": "",
+   "en": "Item Break",
    "max": 12,
    "ptrs": [
     "arm9:A7ED0"
@@ -5099,7 +5099,7 @@
    "id": "arm9:90A8C",
    "font": "sys",
    "jp": "闇夜のローブ",
-   "en": "",
+   "en": "Robe of Dark Night",
    "max": 12,
    "ptrs": [
     "arm9:101950"
@@ -5109,7 +5109,7 @@
    "id": "arm9:90A98",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:101914"
@@ -5119,7 +5119,7 @@
    "id": "arm9:90AA4",
    "font": "item",
    "jp": "闇夜のローブ",
-   "en": "",
+   "en": "Robe of Dark Night",
    "max": 12,
    "ptrs": [
     "arm9:101954"
@@ -5129,7 +5129,7 @@
    "id": "arm9:90AB0",
    "font": "sys",
    "jp": "ドラゴンステーキ",
-   "en": "",
+   "en": "Dragon Steak",
    "max": 12,
    "ptrs": [
     "arm9:1012F0"
@@ -5139,7 +5139,7 @@
    "id": "arm9:90ABC",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:100CCC"
@@ -5149,7 +5149,7 @@
    "id": "arm9:90AC8",
    "font": "sys",
    "jp": "レネシー山脈",
-   "en": "",
+   "en": "Lenessey Mountains",
    "max": 12,
    "ptrs": [
     "arm9:A72C8"
@@ -5159,7 +5159,7 @@
    "id": "arm9:90AD4",
    "font": "sys",
    "jp": "スコーピオテール",
-   "en": "",
+   "en": "Scorpion Tail",
    "max": 12,
    "ptrs": [
     "arm9:100FC0"
@@ -5169,7 +5169,7 @@
    "id": "arm9:90AE0",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:10069C"
@@ -5179,7 +5179,7 @@
    "id": "arm9:90AEC",
    "font": "sys",
    "jp": "ブラッディローズ",
-   "en": "",
+   "en": "Bloody Rose",
    "max": 12,
    "ptrs": [
     "arm9:101638"
@@ -5189,7 +5189,7 @@
    "id": "arm9:90AF8",
    "font": "sys",
    "jp": "ユミナの日記",
-   "en": "",
+   "en": "Yumina's Diary",
    "max": 12,
    "ptrs": [
     "arm9:101998"
@@ -5199,7 +5199,7 @@
    "id": "arm9:90B04",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:101584"
@@ -5209,7 +5209,7 @@
    "id": "arm9:90B10",
    "font": "sys",
    "jp": "妖しの果実",
-   "en": "",
+   "en": "Bewitching Fruit",
    "max": 12,
    "ptrs": [
     "arm9:1006F0"
@@ -5219,7 +5219,7 @@
    "id": "arm9:90B1C",
    "font": "item",
    "jp": "レンジャーブーツ",
-   "en": "",
+   "en": "Ranger Boots",
    "max": 12,
    "ptrs": [
     "arm9:101ABC"
@@ -5229,7 +5229,7 @@
    "id": "arm9:90B28",
    "font": "sys",
    "jp": "妖刀夜叉",
-   "en": "",
+   "en": "Cursed Blade Yaksha",
    "max": 12,
    "ptrs": [
     "arm9:1019C8"
@@ -5239,7 +5239,7 @@
    "id": "arm9:90B34",
    "font": "sys",
    "jp": "七星宝剣",
-   "en": "",
+   "en": "Seven Star Sword",
    "max": 12,
    "ptrs": [
     "arm9:100E10"
@@ -5249,7 +5249,7 @@
    "id": "arm9:90B40",
    "font": "sys",
    "jp": "シャーマンマスク",
-   "en": "",
+   "en": "Shaman Mask",
    "max": 12,
    "ptrs": [
     "arm9:100E40"
@@ -5259,7 +5259,7 @@
    "id": "arm9:90B4C",
    "font": "item",
    "jp": "ビーズの腕輪",
-   "en": "",
+   "en": "Bead Bracelet",
    "max": 12,
    "ptrs": [
     "arm9:10151C"
@@ -5269,7 +5269,7 @@
    "id": "arm9:90B58",
    "font": "item",
    "jp": "帝国兵法書天ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Heaven",
    "max": 12,
    "ptrs": [
     "arm9:1011BC"
@@ -5279,7 +5279,7 @@
    "id": "arm9:90B64",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:101374"
@@ -5289,7 +5289,7 @@
    "id": "arm9:90B70",
    "font": "item",
    "jp": "錬金のモノクル",
-   "en": "",
+   "en": "Alchemist's Monocle",
    "max": 12,
    "ptrs": [
     "arm9:101AA4"
@@ -5299,7 +5299,7 @@
    "id": "arm9:90B7C",
    "font": "sys",
    "jp": "装備可：",
-   "en": "",
+   "en": "Equip: ",
    "max": 12,
    "ptrs": [
     "ov9_12:3954"
@@ -5309,7 +5309,7 @@
    "id": "arm9:90B88",
    "font": "sys",
    "jp": "ビーズの腕輪",
-   "en": "",
+   "en": "Bead Bracelet",
    "max": 12,
    "ptrs": [
     "arm9:101518"
@@ -5319,7 +5319,7 @@
    "id": "arm9:90B94",
    "font": "item",
    "jp": "ライトニングボウ",
-   "en": "",
+   "en": "Lightning Bow",
    "max": 12,
    "ptrs": [
     "arm9:101A14"
@@ -5329,7 +5329,7 @@
    "id": "arm9:90BA0",
    "font": "sys",
    "jp": "ハンター専用",
-   "en": "",
+   "en": "Hunters only",
    "max": 12,
    "ptrs": [
     "arm9:1013BC"
@@ -5339,7 +5339,7 @@
    "id": "arm9:90BAC",
    "font": "item",
    "jp": "ラカンの秘薬",
-   "en": "",
+   "en": "Rakan's Elixir",
    "max": 12,
    "ptrs": [
     "arm9:101A2C"
@@ -5349,7 +5349,7 @@
    "id": "arm9:90BB8",
    "font": "item",
    "jp": "ガーゴイルロッド",
-   "en": "",
+   "en": "Gargoyle Rod",
    "max": 12,
    "ptrs": [
     "arm9:1008A4"
@@ -5359,7 +5359,7 @@
    "id": "arm9:90BC4",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:100D44"
@@ -5369,7 +5369,7 @@
    "id": "arm9:90BD0",
    "font": "sys",
    "jp": "ラッキーブルーム",
-   "en": "",
+   "en": "Lucky Broom",
    "max": 12,
    "ptrs": [
     "arm9:101A40"
@@ -5379,7 +5379,7 @@
    "id": "arm9:90BDC",
    "font": "sys",
    "jp": "シルヴァームーン",
-   "en": "",
+   "en": "Silver Moon",
    "max": 12,
    "ptrs": [
     "arm9:100F00"
@@ -5389,7 +5389,7 @@
    "id": "arm9:90BE8",
    "font": "item",
    "jp": "ラッキーブルーム",
-   "en": "",
+   "en": "Lucky Broom",
    "max": 12,
    "ptrs": [
     "arm9:101A44"
@@ -5399,7 +5399,7 @@
    "id": "arm9:90BF4",
    "font": "sys",
    "jp": "太陽のオーブ",
-   "en": "",
+   "en": "Orb of the Sun",
    "max": 12,
    "ptrs": [
     "arm9:101098"
@@ -5409,7 +5409,7 @@
    "id": "arm9:90C00",
    "font": "item",
    "jp": "白薔薇のクレスト",
-   "en": "",
+   "en": "White Rose Crest",
    "max": 12,
    "ptrs": [
     "arm9:100F1C"
@@ -5419,7 +5419,7 @@
    "id": "arm9:90C0C",
    "font": "sys",
    "jp": "男性全員",
-   "en": "",
+   "en": "All men",
    "max": 12,
    "ptrs": [
     "arm9:1018B4"
@@ -5429,7 +5429,7 @@
    "id": "arm9:90C18",
    "font": "sys",
    "jp": "破滅のハンマー",
-   "en": "",
+   "en": "Hammer of Ruin",
    "max": 12,
    "ptrs": [
     "arm9:1014A0"
@@ -5439,7 +5439,7 @@
    "id": "arm9:90C24",
    "font": "item",
    "jp": "シルヴァームーン",
-   "en": "",
+   "en": "Silver Moon",
    "max": 12,
    "ptrs": [
     "arm9:100F04"
@@ -5449,7 +5449,7 @@
    "id": "arm9:90C30",
    "font": "sys",
    "jp": "気まぐれキリエ",
-   "en": "",
+   "en": "Fickle Kylier",
    "max": 12,
    "ptrs": [
     "arm9:F5500"
@@ -5459,7 +5459,7 @@
    "id": "arm9:90C3C",
    "font": "item",
    "jp": "鋼のペルソナ",
-   "en": "",
+   "en": "Steel Persona",
    "max": 12,
    "ptrs": [
     "arm9:10142C"
@@ -5469,7 +5469,7 @@
    "id": "arm9:90C48",
    "font": "item",
    "jp": "ビーストファング",
-   "en": "",
+   "en": "Beast Fang",
    "max": 12,
    "ptrs": [
     "arm9:101504"
@@ -5479,7 +5479,7 @@
    "id": "arm9:90C54",
    "font": "sys",
    "jp": "マインドチェンジ",
-   "en": "",
+   "en": "Mind Change",
    "max": 12,
    "ptrs": [
     "arm9:A8004"
@@ -5489,7 +5489,7 @@
    "id": "arm9:90C60",
    "font": "sys",
    "jp": "黒薔薇館",
-   "en": "",
+   "en": "Black Rose Manor",
    "max": 12,
    "ptrs": [
     "arm9:A72EC"
@@ -5499,7 +5499,7 @@
    "id": "arm9:90C6C",
    "font": "sys",
    "jp": "フレースヴェルク",
-   "en": "",
+   "en": "Hraesvelgr",
    "max": 12,
    "ptrs": [
     "arm9:1016C8"
@@ -5509,7 +5509,7 @@
    "id": "arm9:90C78",
    "font": "sys",
    "jp": "ロストマテリアル",
-   "en": "",
+   "en": "Lost Material",
    "max": 12,
    "ptrs": [
     "arm9:101AE8"
@@ -5519,7 +5519,7 @@
    "id": "arm9:90C84",
    "font": "sys",
    "jp": "白薔薇軍",
-   "en": "",
+   "en": "White Rose Army",
    "max": 12,
    "ptrs": [
     "arm9:A7D6C"
@@ -5529,7 +5529,7 @@
    "id": "arm9:90C90",
    "font": "sys",
    "jp": "ラカンの秘薬",
-   "en": "",
+   "en": "Rakan's Elixir",
    "max": 12,
    "ptrs": [
     "arm9:101A28"
@@ -5539,7 +5539,7 @@
    "id": "arm9:90C9C",
    "font": "sys",
    "jp": "ヒヅメシューズ",
-   "en": "",
+   "en": "Hoof Shoes",
    "max": 12,
    "ptrs": [
     "arm9:101560"
@@ -5549,7 +5549,7 @@
    "id": "arm9:90CA8",
    "font": "sys",
    "jp": "王女ユグドラ",
-   "en": "",
+   "en": "Princess Yggdra",
    "max": 12,
    "ptrs": [
     "arm9:F53C0"
@@ -5559,7 +5559,7 @@
    "id": "arm9:90CB4",
    "font": "item",
    "jp": "映見の手鏡",
-   "en": "",
+   "en": "Scrying Hand Mirror",
    "max": 12,
    "ptrs": [
     "arm9:101B34"
@@ -5569,7 +5569,7 @@
    "id": "arm9:90CC0",
    "font": "sys",
    "jp": "ニーチェ専用",
-   "en": "",
+   "en": "Nietzsche only",
    "max": 12,
    "ptrs": [
     "arm9:10189C"
@@ -5579,7 +5579,7 @@
    "id": "arm9:90CCC",
    "font": "sys",
    "jp": "レンジャーブーツ",
-   "en": "",
+   "en": "Ranger Boots",
    "max": 12,
    "ptrs": [
     "arm9:101AB8"
@@ -5589,7 +5589,7 @@
    "id": "arm9:90CD8",
    "font": "sys",
    "jp": "白薔薇領",
-   "en": "",
+   "en": "White Rose Lands",
    "max": 12,
    "ptrs": [
     "arm9:A7D68"
@@ -5599,7 +5599,7 @@
    "id": "arm9:90CE4",
    "font": "sys",
    "jp": "悪魔のシッポ",
-   "en": "",
+   "en": "Devil's Tail",
    "max": 12,
    "ptrs": [
     "arm9:1006C0"
@@ -5609,7 +5609,7 @@
    "id": "arm9:90CF0",
    "font": "sys",
    "jp": "上級勲章",
-   "en": "",
+   "en": "High Medal",
    "max": 12,
    "ptrs": [
     "arm9:100ED0"
@@ -5619,7 +5619,7 @@
    "id": "arm9:90CFC",
    "font": "item",
    "jp": "ワープシューズ",
-   "en": "",
+   "en": "Warp Shoes",
    "max": 12,
    "ptrs": [
     "arm9:101B04"
@@ -5629,7 +5629,7 @@
    "id": "arm9:90D08",
    "font": "sys",
    "jp": "ライトニングボウ",
-   "en": "",
+   "en": "Lightning Bow",
    "max": 12,
    "ptrs": [
     "arm9:101A10"
@@ -5639,7 +5639,7 @@
    "id": "arm9:90D14",
    "font": "sys",
    "jp": "ゴーレム以外",
-   "en": "",
+   "en": "All but Golems",
    "max": 12,
    "ptrs": [
     "arm9:100C9C"
@@ -5649,7 +5649,7 @@
    "id": "arm9:90D20",
    "font": "item",
    "jp": "ダウジングロッド",
-   "en": "",
+   "en": "Dowsing Rod",
    "max": 12,
    "ptrs": [
     "arm9:1010B4"
@@ -5659,7 +5659,7 @@
    "id": "arm9:90D2C",
    "font": "sys",
    "jp": "淑女のコート",
-   "en": "",
+   "en": "Lady's Coat",
    "max": 12,
    "ptrs": [
     "arm9:100EA0"
@@ -5669,7 +5669,7 @@
    "id": "arm9:90D38",
    "font": "sys",
    "jp": "エスメラルダ家",
-   "en": "",
+   "en": "House Esmeralda",
    "max": 12,
    "ptrs": [
     "arm9:A7D64"
@@ -5679,7 +5679,7 @@
    "id": "arm9:90D44",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:101434"
@@ -5689,7 +5689,7 @@
    "id": "arm9:90D50",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:10165C"
@@ -5699,7 +5699,7 @@
    "id": "arm9:90D5C",
    "font": "item",
    "jp": "血濡れのレイピア",
-   "en": "",
+   "en": "Bloodsoaked Rapier",
    "max": 12,
    "ptrs": [
     "arm9:10115C"
@@ -5709,7 +5709,7 @@
    "id": "arm9:90D68",
    "font": "sys",
    "jp": "ウィッチ専用",
-   "en": "",
+   "en": "Witches only",
    "max": 12,
    "ptrs": [
     "arm9:1015B4"
@@ -5719,7 +5719,7 @@
    "id": "arm9:90D74",
    "font": "sys",
    "jp": "ブランテーゼ家",
-   "en": "",
+   "en": "House Branthese",
    "max": 12,
    "ptrs": [
     "arm9:A7D50"
@@ -5729,7 +5729,7 @@
    "id": "arm9:90D80",
    "font": "item",
    "jp": "珍園マセラマティ",
-   "en": "",
+   "en": "Oddgarden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:101174"
@@ -5739,7 +5739,7 @@
    "id": "arm9:90D8C",
    "font": "sys",
    "jp": "ガーゴイルロッド",
-   "en": "",
+   "en": "Gargoyle Rod",
    "max": 12,
    "ptrs": [
     "arm9:1008A0"
@@ -5749,7 +5749,7 @@
    "id": "arm9:90D98",
    "font": "item",
    "jp": "上級勲章",
-   "en": "",
+   "en": "High Medal",
    "max": 12,
    "ptrs": [
     "arm9:100ED4"
@@ -5759,7 +5759,7 @@
    "id": "arm9:90DA4",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:1015CC"
@@ -5769,7 +5769,7 @@
    "id": "arm9:90DB0",
    "font": "item",
    "jp": "帝国兵法書地ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Earth",
    "max": 12,
    "ptrs": [
     "arm9:1011A4"
@@ -5779,7 +5779,7 @@
    "id": "arm9:90DBC",
    "font": "sys",
    "jp": "マーメイドフィン",
-   "en": "",
+   "en": "Mermaid Fin",
    "max": 12,
    "ptrs": [
     "arm9:101770"
@@ -5789,7 +5789,7 @@
    "id": "arm9:90DC8",
    "font": "item",
    "jp": "シャーマンマスク",
-   "en": "",
+   "en": "Shaman Mask",
    "max": 12,
    "ptrs": [
     "arm9:100E44"
@@ -5799,7 +5799,7 @@
    "id": "arm9:90DD4",
    "font": "item",
    "jp": "神園マセラマティ",
-   "en": "",
+   "en": "Godgarden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:100F7C"
@@ -5809,7 +5809,7 @@
    "id": "arm9:90DE0",
    "font": "sys",
    "jp": "聖騎士領",
-   "en": "",
+   "en": "Temple Knight Lands",
    "max": 12,
    "ptrs": [
     "arm9:A7DB8"
@@ -5819,7 +5819,7 @@
    "id": "arm9:90DEC",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:1015FC"
@@ -5829,7 +5829,7 @@
    "id": "arm9:90DF8",
    "font": "sys",
    "jp": "ラッセル専用",
-   "en": "",
+   "en": "Russell only",
    "max": 12,
    "ptrs": [
     "arm9:100F9C"
@@ -5839,7 +5839,7 @@
    "id": "arm9:90E04",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:10075C"
@@ -5849,7 +5849,7 @@
    "id": "arm9:90E10",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:100BDC"
@@ -5859,7 +5859,7 @@
    "id": "arm9:90E1C",
    "font": "sys",
    "jp": "カノッサ街道",
-   "en": "",
+   "en": "Canossa Road",
    "max": 12,
    "ptrs": [
     "arm9:A7244"
@@ -5869,7 +5869,7 @@
    "id": "arm9:90E28",
    "font": "sys",
    "jp": "マキナ・ブリッジ",
-   "en": "",
+   "en": "Machina Bridge",
    "max": 12,
    "ptrs": [
     "arm9:A725C"
@@ -5879,7 +5879,7 @@
    "id": "arm9:90E34",
    "font": "item",
    "jp": "パワーフルーツ",
-   "en": "",
+   "en": "Power Fruit",
    "max": 12,
    "ptrs": [
     "arm9:1014EC"
@@ -5889,7 +5889,7 @@
    "id": "arm9:90E40",
    "font": "sys",
    "jp": "ロスト・アリエス",
-   "en": "",
+   "en": "Lost Aries",
    "max": 12,
    "ptrs": [
     "arm9:A72B0"
@@ -5899,7 +5899,7 @@
    "id": "arm9:90E4C",
    "font": "sys",
    "jp": "ハンター専用",
-   "en": "",
+   "en": "Hunters only",
    "max": 12,
    "ptrs": [
     "arm9:1007EC"
@@ -5909,7 +5909,7 @@
    "id": "arm9:90E58",
    "font": "sys",
    "jp": "ギロチンカッター",
-   "en": "",
+   "en": "Guillotine Cutter",
    "max": 12,
    "ptrs": [
     "arm9:100AC8"
@@ -5919,7 +5919,7 @@
    "id": "arm9:90E64",
    "font": "sys",
    "jp": "ゴーレム以外",
-   "en": "",
+   "en": "All but Golems",
    "max": 12,
    "ptrs": [
     "arm9:101854"
@@ -5929,7 +5929,7 @@
    "id": "arm9:90E70",
    "font": "sys",
    "jp": "イブニングドレス",
-   "en": "",
+   "en": "Evening Dress",
    "max": 12,
    "ptrs": [
     "arm9:100750"
@@ -5939,7 +5939,7 @@
    "id": "arm9:90E7C",
    "font": "item",
    "jp": "ロストマテリアル",
-   "en": "",
+   "en": "Lost Material",
    "max": 12,
    "ptrs": [
     "arm9:101AEC"
@@ -5949,7 +5949,7 @@
    "id": "arm9:90E88",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:100A8C"
@@ -5959,7 +5959,7 @@
    "id": "arm9:90E94",
    "font": "sys",
    "jp": "黒薔薇軍",
-   "en": "",
+   "en": "Black Rose Army",
    "max": 12,
    "ptrs": [
     "arm9:A7D58"
@@ -5969,7 +5969,7 @@
    "id": "arm9:90EA0",
    "font": "sys",
    "jp": "珊瑚のスピア",
-   "en": "",
+   "en": "Coral Spear",
    "max": 12,
    "ptrs": [
     "arm9:100DE0"
@@ -5979,7 +5979,7 @@
    "id": "arm9:90EAC",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:1008C4"
@@ -5989,7 +5989,7 @@
    "id": "arm9:90EB8",
    "font": "sys",
    "jp": "スウィートベリー",
-   "en": "",
+   "en": "Sweet Berry",
    "max": 12,
    "ptrs": [
     "arm9:100FA8"
@@ -5999,7 +5999,7 @@
    "id": "arm9:90EC4",
    "font": "sys",
    "jp": "アサシン専用",
-   "en": "",
+   "en": "Assassins only",
    "max": 12,
    "ptrs": [
     "arm9:1008F4"
@@ -6009,7 +6009,7 @@
    "id": "arm9:90ED0",
    "font": "item",
    "jp": "ネスレの花束",
-   "en": "",
+   "en": "Nesle Bouquet",
    "max": 12,
    "ptrs": [
     "arm9:1013CC"
@@ -6019,7 +6019,7 @@
    "id": "arm9:90EDC",
    "font": "sys",
    "jp": "ロザリィ以外",
-   "en": "",
+   "en": "All but Rosary",
    "max": 12,
    "ptrs": [
     "arm9:10093C"
@@ -6029,7 +6029,7 @@
    "id": "arm9:90EE8",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:10096C"
@@ -6039,7 +6039,7 @@
    "id": "arm9:90EF4",
    "font": "sys",
    "jp": "銀狼のミラノ",
-   "en": "",
+   "en": "Milanor the Silver Wolf",
    "max": 12,
    "ptrs": [
     "arm9:F549C"
@@ -6049,7 +6049,7 @@
    "id": "arm9:90F00",
    "font": "sys",
    "jp": "白薔薇館",
-   "en": "",
+   "en": "White Rose Manor",
    "max": 12,
    "ptrs": [
     "arm9:A72D4"
@@ -6059,7 +6059,7 @@
    "id": "arm9:90F0C",
    "font": "sys",
    "jp": "アースクウェイク",
-   "en": "",
+   "en": "Earthquake",
    "max": 12,
    "ptrs": [
     "arm9:A7FE8"
@@ -6069,7 +6069,7 @@
    "id": "arm9:90F18",
    "font": "sys",
    "jp": "ユグドラ専用",
-   "en": "",
+   "en": "Yggdra only",
    "max": 12,
    "ptrs": [
     "arm9:1009B4"
@@ -6079,7 +6079,7 @@
    "id": "arm9:90F24",
    "font": "sys",
    "jp": "ナナのキャンディ",
-   "en": "",
+   "en": "Nana's Candy",
    "max": 12,
    "ptrs": [
     "arm9:101380"
@@ -6089,7 +6089,7 @@
    "id": "arm9:90F30",
    "font": "sys",
    "jp": "回復について",
-   "en": "",
+   "en": "About Recovery",
    "max": 12,
    "ptrs": [
     "arm9:F7AD0"
@@ -6099,7 +6099,7 @@
    "id": "arm9:90F3C",
    "font": "item",
    "jp": "ド派手なターバン",
-   "en": "",
+   "en": "Gaudy Turban",
    "max": 12,
    "ptrs": [
     "arm9:1012C4"
@@ -6109,7 +6109,7 @@
    "id": "arm9:90F48",
    "font": "sys",
    "jp": "ブラッディクロー",
-   "en": "",
+   "en": "Bloody Claw",
    "max": 12,
    "ptrs": [
     "arm9:A7F08"
@@ -6119,7 +6119,7 @@
    "id": "arm9:90F54",
    "font": "sys",
    "jp": "ブラックブランド",
-   "en": "",
+   "en": "Black Brand",
    "max": 12,
    "ptrs": [
     "arm9:101608"
@@ -6129,7 +6129,7 @@
    "id": "arm9:90F60",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:1009E4"
@@ -6139,7 +6139,7 @@
    "id": "arm9:90F6C",
    "font": "sys",
    "jp": "マルスの大盾",
-   "en": "",
+   "en": "Great Shield of Mars",
    "max": 12,
    "ptrs": [
     "arm9:101800"
@@ -6149,7 +6149,7 @@
    "id": "arm9:90F78",
    "font": "sys",
    "jp": "ネスレの花束",
-   "en": "",
+   "en": "Nesle Bouquet",
    "max": 12,
    "ptrs": [
     "arm9:1013C8"
@@ -6159,7 +6159,7 @@
    "id": "arm9:90F84",
    "font": "item",
    "jp": "パラディンランス",
-   "en": "",
+   "en": "Paladin Lance",
    "max": 12,
    "ptrs": [
     "arm9:1014D4"
@@ -6169,7 +6169,7 @@
    "id": "arm9:90F90",
    "font": "sys",
    "jp": "堕天のネシア",
-   "en": "",
+   "en": "Nessiah the Fallen",
    "max": 12,
    "ptrs": [
     "arm9:F5654"
@@ -6179,7 +6179,7 @@
    "id": "arm9:90F9C",
    "font": "item",
    "jp": "ドラゴンステーキ",
-   "en": "",
+   "en": "Dragon Steak",
    "max": 12,
    "ptrs": [
     "arm9:1012F4"
@@ -6189,7 +6189,7 @@
    "id": "arm9:90FA8",
    "font": "sys",
    "jp": "女性全員",
-   "en": "",
+   "en": "All women",
    "max": 12,
    "ptrs": [
     "arm9:1014C4"
@@ -6199,7 +6199,7 @@
    "id": "arm9:90FB4",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:1017AC"
@@ -6209,7 +6209,7 @@
    "id": "arm9:90FC0",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:100ABC"
@@ -6219,7 +6219,7 @@
    "id": "arm9:90FCC",
    "font": "item",
    "jp": "帝国兵法書人ノ巻",
-   "en": "",
+   "en": "Imperial Tactics: Man",
    "max": 12,
    "ptrs": [
     "arm9:1011D4"
@@ -6229,7 +6229,7 @@
    "id": "arm9:90FD8",
    "font": "item",
    "jp": "ソーサリーグラス",
-   "en": "",
+   "en": "Sorcery Glass",
    "max": 12,
    "ptrs": [
     "arm9:101054"
@@ -6239,7 +6239,7 @@
    "id": "arm9:90FE4",
    "font": "sys",
    "jp": "キラービーの巣",
-   "en": "",
+   "en": "Killer Bee Nest",
    "max": 12,
    "ptrs": [
     "arm9:100A50"
@@ -6249,7 +6249,7 @@
    "id": "arm9:90FF0",
    "font": "item",
    "jp": "はぐれドラゴン",
-   "en": "",
+   "en": "Stray Dragon",
    "max": 12,
    "ptrs": [
     "arm9:101444"
@@ -6259,7 +6259,7 @@
    "id": "arm9:90FFC",
    "font": "sys",
    "jp": "ゴーレム専用",
-   "en": "",
+   "en": "Golems only",
    "max": 12,
    "ptrs": [
     "arm9:100AEC"
@@ -6269,7 +6269,7 @@
    "id": "arm9:91008",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:1017DC"
@@ -6279,7 +6279,7 @@
    "id": "arm9:91014",
    "font": "item",
    "jp": "ゴールデンスピア",
-   "en": "",
+   "en": "Golden Spear",
    "max": 12,
    "ptrs": [
     "arm9:100D0C"
@@ -6289,7 +6289,7 @@
    "id": "arm9:91020",
    "font": "item",
    "jp": "まやかしの笛",
-   "en": "",
+   "en": "Flute of Illusion",
    "max": 12,
    "ptrs": [
     "arm9:1017EC"
@@ -6299,7 +6299,7 @@
    "id": "arm9:9102C",
    "font": "sys",
    "jp": "全員不可",
-   "en": "",
+   "en": "No one",
    "max": 12,
    "ptrs": [
     "arm9:100C84"
@@ -6309,7 +6309,7 @@
    "id": "arm9:91038",
    "font": "sys",
    "jp": "出撃について",
-   "en": "",
+   "en": "About Sorties",
    "max": 12,
    "ptrs": [
     "arm9:F7A54"
@@ -6319,7 +6319,7 @@
    "id": "arm9:91044",
    "font": "sys",
    "jp": "パラディンランス",
-   "en": "",
+   "en": "Paladin Lance",
    "max": 12,
    "ptrs": [
     "arm9:1014D0"
@@ -6329,7 +6329,7 @@
    "id": "arm9:91050",
    "font": "item",
    "jp": "幻獣ヤーデのツノ",
-   "en": "",
+   "en": "Horn of the Beast Yade",
    "max": 12,
    "ptrs": [
     "arm9:100CC4"
@@ -6339,7 +6339,7 @@
    "id": "arm9:9105C",
    "font": "sys",
    "jp": "ビーストファング",
-   "en": "",
+   "en": "Beast Fang",
    "max": 12,
    "ptrs": [
     "arm9:101500"
@@ -6349,7 +6349,7 @@
    "id": "arm9:91068",
    "font": "sys",
    "jp": "毛皮のコート",
-   "en": "",
+   "en": "Fur Coat",
    "max": 12,
    "ptrs": [
     "arm9:100C90"
@@ -6359,7 +6359,7 @@
    "id": "arm9:91074",
    "font": "sys",
    "jp": "メルヘン偽翼",
-   "en": "",
+   "en": "Fairytale Fake Wings",
    "max": 12,
    "ptrs": [
     "arm9:1018F0"
@@ -6369,7 +6369,7 @@
    "id": "arm9:91080",
    "font": "sys",
    "jp": "メプルの果実",
-   "en": "",
+   "en": "Mepple Fruit",
    "max": 12,
    "ptrs": [
     "arm9:1018D8"
@@ -6379,7 +6379,7 @@
    "id": "arm9:9108C",
    "font": "item",
    "jp": "クルセイドランス",
-   "en": "",
+   "en": "Crusade Lance",
    "max": 12,
    "ptrs": [
     "arm9:100C04"
@@ -6389,7 +6389,7 @@
    "id": "arm9:91098",
    "font": "sys",
    "jp": "見習いエレナ",
-   "en": "",
+   "en": "Elena the Apprentice",
    "max": 12,
    "ptrs": [
     "arm9:F553C"
@@ -6399,7 +6399,7 @@
    "id": "arm9:910A4",
    "font": "item",
    "jp": "モーニングドレス",
-   "en": "",
+   "en": "Morning Dress",
    "max": 12,
    "ptrs": [
     "arm9:10190C"
@@ -6409,7 +6409,7 @@
    "id": "arm9:910B0",
    "font": "sys",
    "jp": "ゴールデンスピア",
-   "en": "",
+   "en": "Golden Spear",
    "max": 12,
    "ptrs": [
     "arm9:100D08"
@@ -6419,7 +6419,7 @@
    "id": "arm9:910BC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5820"
@@ -6429,7 +6429,7 @@
    "id": "arm9:910C8",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5830"
@@ -6439,7 +6439,7 @@
    "id": "arm9:910D4",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5834"
@@ -6449,7 +6449,7 @@
    "id": "arm9:910E0",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5848"
@@ -6459,7 +6459,7 @@
    "id": "arm9:910EC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5858"
@@ -6469,7 +6469,7 @@
    "id": "arm9:910F8",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F585C"
@@ -6479,7 +6479,7 @@
    "id": "arm9:91104",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5780"
@@ -6489,7 +6489,7 @@
    "id": "arm9:91110",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1018E4"
@@ -6499,7 +6499,7 @@
    "id": "arm9:9111C",
    "font": "sys",
    "jp": "武器庫のカギ",
-   "en": "",
+   "en": "Armory Key",
    "max": 12,
    "ptrs": [
     "arm9:1015C0"
@@ -6509,7 +6509,7 @@
    "id": "arm9:91128",
    "font": "item",
    "jp": "武器庫のカギ",
-   "en": "",
+   "en": "Armory Key",
    "max": 12,
    "ptrs": [
     "arm9:1015C4"
@@ -6519,7 +6519,7 @@
    "id": "arm9:91134",
    "font": "sys",
    "jp": "ジ・エインシャント",
-   "en": "",
+   "en": "The Ancient",
    "max": 12,
    "ptrs": [
     "arm9:F5C30"
@@ -6529,7 +6529,7 @@
    "id": "arm9:91140",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100D5C"
@@ -6539,7 +6539,7 @@
    "id": "arm9:9114C",
    "font": "item",
    "jp": "プラチナの髪飾り",
-   "en": "",
+   "en": "Platinum Hairpin",
    "max": 12,
    "ptrs": [
     "arm9:1015F4"
@@ -6549,7 +6549,7 @@
    "id": "arm9:91158",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100D74"
@@ -6559,7 +6559,7 @@
    "id": "arm9:91164",
    "font": "sys",
    "jp": "焔帝ガルカーサ",
-   "en": "",
+   "en": "Gulcasa the Flame Emperor",
    "max": 12,
    "ptrs": [
     "arm9:F562C"
@@ -6569,7 +6569,7 @@
    "id": "arm9:91170",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:10192C"
@@ -6579,7 +6579,7 @@
    "id": "arm9:9117C",
    "font": "sys",
    "jp": "悪霊の呪符",
-   "en": "",
+   "en": "Evil Spirit Talisman",
    "max": 12,
    "ptrs": [
     "arm9:1006D8"
@@ -6589,7 +6589,7 @@
    "id": "arm9:91188",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F577C"
@@ -6599,7 +6599,7 @@
    "id": "arm9:91194",
    "font": "sys",
    "jp": "に決定しました",
-   "en": "",
+   "en": ".",
    "max": 12,
    "ptrs": [
     "ov9_16:1000"
@@ -6609,7 +6609,7 @@
    "id": "arm9:911A0",
    "font": "item",
    "jp": "ふりふりレース",
-   "en": "",
+   "en": "Frilly Lace",
    "max": 12,
    "ptrs": [
     "arm9:101654"
@@ -6619,7 +6619,7 @@
    "id": "arm9:911AC",
    "font": "sys",
    "jp": "古びたオルゴール",
-   "en": "",
+   "en": "Old Music Box",
    "max": 12,
    "ptrs": [
     "arm9:101698"
@@ -6629,7 +6629,7 @@
    "id": "arm9:911B8",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:10198C"
@@ -6639,7 +6639,7 @@
    "id": "arm9:911C4",
    "font": "item",
    "jp": "古びたオルゴール",
-   "en": "",
+   "en": "Old Music Box",
    "max": 12,
    "ptrs": [
     "arm9:10169C"
@@ -6649,7 +6649,7 @@
    "id": "arm9:911D0",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5758"
@@ -6659,7 +6659,7 @@
    "id": "arm9:911DC",
    "font": "sys",
    "jp": "褒賞について2",
-   "en": "",
+   "en": "About Prizes 2",
    "max": 12,
    "ptrs": [
     "arm9:F7AEC"
@@ -6669,7 +6669,7 @@
    "id": "arm9:911E8",
    "font": "sys",
    "jp": "ロズウェル以外",
-   "en": "",
+   "en": "All but Roswell",
    "max": 12,
    "ptrs": [
     "arm9:100F24"
@@ -6679,7 +6679,7 @@
    "id": "arm9:911F4",
    "font": "sys",
    "jp": "貝殻の胸あて",
-   "en": "",
+   "en": "Seashell Breastplate",
    "max": 12,
    "ptrs": [
     "arm9:1008B8"
@@ -6689,7 +6689,7 @@
    "id": "arm9:91200",
    "font": "sys",
    "jp": "デュエルについて2",
-   "en": "",
+   "en": "About Duels 2",
    "max": 12,
    "ptrs": [
     "arm9:F7A20"
@@ -6699,7 +6699,7 @@
    "id": "arm9:9120C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F581C"
@@ -6709,7 +6709,7 @@
    "id": "arm9:91218",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:101A04"
@@ -6719,7 +6719,7 @@
    "id": "arm9:91224",
    "font": "item",
    "jp": "星屑の砂時計",
-   "en": "",
+   "en": "Stardust Hourglass",
    "max": 12,
    "ptrs": [
     "arm9:10172C"
@@ -6729,7 +6729,7 @@
    "id": "arm9:91230",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100FB4"
@@ -6739,7 +6739,7 @@
    "id": "arm9:9123C",
    "font": "sys",
    "jp": "奇跡のティアラ",
-   "en": "",
+   "en": "Miracle Tiara",
    "max": 12,
    "ptrs": [
     "arm9:1009A8"
@@ -6749,7 +6749,7 @@
    "id": "arm9:91248",
    "font": "sys",
    "jp": "映見の手鏡",
-   "en": "",
+   "en": "Scrying Hand Mirror",
    "max": 12,
    "ptrs": [
     "arm9:101B30"
@@ -6759,7 +6759,7 @@
    "id": "arm9:91254",
    "font": "sys",
    "jp": "黄昏のヴェール",
-   "en": "",
+   "en": "Twilight Veil",
    "max": 12,
    "ptrs": [
     "arm9:1010E0"
@@ -6769,7 +6769,7 @@
    "id": "arm9:91260",
    "font": "sys",
    "jp": "希望のロザリオ",
-   "en": "",
+   "en": "Rosario of Hope",
    "max": 12,
    "ptrs": [
     "arm9:1009F0"
@@ -6779,7 +6779,7 @@
    "id": "arm9:9126C",
    "font": "sys",
    "jp": "ユニット出撃1",
-   "en": "",
+   "en": "Unit Sorties 1",
    "max": 12,
    "ptrs": [
     "arm9:F7AF4"
@@ -6789,7 +6789,7 @@
    "id": "arm9:91278",
    "font": "sys",
    "jp": "凶刃ベルセルク",
-   "en": "",
+   "en": "Cruel Blade Berserk",
    "max": 12,
    "ptrs": [
     "arm9:100A20"
@@ -6799,7 +6799,7 @@
    "id": "arm9:91284",
    "font": "item",
    "jp": "真っ白な珍しい蝶",
-   "en": "",
+   "en": "Rare All-White Butterfly",
    "max": 12,
    "ptrs": [
     "arm9:1017D4"
@@ -6809,7 +6809,7 @@
    "id": "arm9:91290",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:101044"
@@ -6819,7 +6819,7 @@
    "id": "arm9:9129C",
    "font": "sys",
    "jp": "フェンサー専用",
-   "en": "",
+   "en": "Fencers only",
    "max": 12,
    "ptrs": [
     "arm9:101074"
@@ -6829,7 +6829,7 @@
    "id": "arm9:912A8",
    "font": "item",
    "jp": "きらきら火山灰",
-   "en": "",
+   "en": "Sparkly Volcanic Ash",
    "max": 12,
    "ptrs": [
     "arm9:100A6C"
@@ -6839,7 +6839,7 @@
    "id": "arm9:912B4",
    "font": "sys",
    "jp": "スケルトン以外",
-   "en": "",
+   "en": "All but Skeletons",
    "max": 12,
    "ptrs": [
     "arm9:1010A4"
@@ -6849,7 +6849,7 @@
    "id": "arm9:912C0",
    "font": "item",
    "jp": "歴戦のバンダナ",
-   "en": "",
+   "en": "Veteran's Bandana",
    "max": 12,
    "ptrs": [
     "arm9:101A74"
@@ -6859,7 +6859,7 @@
    "id": "arm9:912CC",
    "font": "sys",
    "jp": "禁忌のロザリオ",
-   "en": "",
+   "en": "Forbidden Rosario",
    "max": 12,
    "ptrs": [
     "arm9:100AF8"
@@ -6869,7 +6869,7 @@
    "id": "arm9:912D8",
    "font": "sys",
    "jp": "真・斬鉄剣",
-   "en": "",
+   "en": "True Steelcutter",
    "max": 12,
    "ptrs": [
     "arm9:100F90"
@@ -6879,7 +6879,7 @@
    "id": "arm9:912E4",
    "font": "sys",
    "jp": "禁断の果実",
-   "en": "",
+   "en": "Forbidden Fruit",
    "max": 12,
    "ptrs": [
     "arm9:100B10"
@@ -6889,7 +6889,7 @@
    "id": "arm9:912F0",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:101464"
@@ -6899,7 +6899,7 @@
    "id": "arm9:912FC",
    "font": "sys",
    "jp": "魅惑のビスチェ",
-   "en": "",
+   "en": "Alluring Bustier",
    "max": 12,
    "ptrs": [
     "arm9:101860"
@@ -6909,7 +6909,7 @@
    "id": "arm9:91308",
    "font": "item",
    "jp": "魅惑のビスチェ",
-   "en": "",
+   "en": "Alluring Bustier",
    "max": 12,
    "ptrs": [
     "arm9:101864"
@@ -6919,7 +6919,7 @@
    "id": "arm9:91314",
    "font": "sys",
    "jp": "スケルトン専用",
-   "en": "",
+   "en": "Skeletons only",
    "max": 12,
    "ptrs": [
     "arm9:10111C"
@@ -6929,7 +6929,7 @@
    "id": "arm9:91320",
    "font": "sys",
    "jp": "朽ち果てた剣",
-   "en": "",
+   "en": "Rotted Sword",
    "max": 12,
    "ptrs": [
     "arm9:100B58"
@@ -6939,7 +6939,7 @@
    "id": "arm9:9132C",
    "font": "item",
    "jp": "名馬ワードナ",
-   "en": "",
+   "en": "Werdna the Steed",
    "max": 12,
    "ptrs": [
     "arm9:1018AC"
@@ -6949,7 +6949,7 @@
    "id": "arm9:91338",
    "font": "sys",
    "jp": "褒賞について1",
-   "en": "",
+   "en": "About Prizes 1",
    "max": 12,
    "ptrs": [
     "arm9:F7A94"
@@ -6959,7 +6959,7 @@
    "id": "arm9:91344",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5754"
@@ -6969,7 +6969,7 @@
    "id": "arm9:91350",
    "font": "sys",
    "jp": "ユニット出撃2",
-   "en": "",
+   "en": "Unit Sorties 2",
    "max": 12,
    "ptrs": [
     "arm9:F7AFC"
@@ -6979,7 +6979,7 @@
    "id": "arm9:9135C",
    "font": "sys",
    "jp": "闇のカタストロフ",
-   "en": "",
+   "en": "Dark Catastrophe",
    "max": 12,
    "ptrs": [
     "arm9:101938"
@@ -6989,7 +6989,7 @@
    "id": "arm9:91368",
    "font": "item",
    "jp": "闇のカタストロフ",
-   "en": "",
+   "en": "Dark Catastrophe",
    "max": 12,
    "ptrs": [
     "arm9:10193C"
@@ -6999,7 +6999,7 @@
    "id": "arm9:91374",
    "font": "sys",
    "jp": "ゲテモノOKな人",
-   "en": "",
+   "en": "Anyone who eats weird stuff",
    "max": 12,
    "ptrs": [
     "arm9:101284"
@@ -7009,7 +7009,7 @@
    "id": "arm9:91380",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1014F4"
@@ -7019,7 +7019,7 @@
    "id": "arm9:9138C",
    "font": "sys",
    "jp": "金色の麦穂",
-   "en": "",
+   "en": "Golden Wheat Ear",
    "max": 12,
    "ptrs": [
     "arm9:100D68"
@@ -7029,7 +7029,7 @@
    "id": "arm9:91398",
    "font": "sys",
    "jp": "殺意の仮面",
-   "en": "",
+   "en": "Mask of Malice",
    "max": 12,
    "ptrs": [
     "arm9:100D98"
@@ -7039,7 +7039,7 @@
    "id": "arm9:913A4",
    "font": "item",
    "jp": "ユミナの日記",
-   "en": "",
+   "en": "Yumina's Diary",
    "max": 12,
    "ptrs": [
     "arm9:10199C"
@@ -7049,7 +7049,7 @@
    "id": "arm9:913B0",
    "font": "sys",
    "jp": "夢見の帽子",
-   "en": "",
+   "en": "Dreamer's Hat",
    "max": 12,
    "ptrs": [
     "arm9:1019B0"
@@ -7059,7 +7059,7 @@
    "id": "arm9:913BC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57D0"
@@ -7069,7 +7069,7 @@
    "id": "arm9:913C8",
    "font": "item",
    "jp": "四葉のクローバー",
-   "en": "",
+   "en": "Four-Leaf Clover",
    "max": 12,
    "ptrs": [
     "arm9:1019E4"
@@ -7079,7 +7079,7 @@
    "id": "arm9:913D4",
    "font": "sys",
    "jp": "歴戦のバンダナ",
-   "en": "",
+   "en": "Veteran's Bandana",
    "max": 12,
    "ptrs": [
     "arm9:101A70"
@@ -7089,7 +7089,7 @@
    "id": "arm9:913E0",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5704"
@@ -7099,7 +7099,7 @@
    "id": "arm9:913EC",
    "font": "sys",
    "jp": "首領のハチマキ",
-   "en": "",
+   "en": "Boss's Headband",
    "max": 12,
    "ptrs": [
     "arm9:100EB8"
@@ -7109,7 +7109,7 @@
    "id": "arm9:913F8",
    "font": "sys",
    "jp": "丈夫な長靴",
-   "en": "",
+   "en": "Sturdy Boots",
    "max": 12,
    "ptrs": [
     "arm9:100EE8"
@@ -7119,7 +7119,7 @@
    "id": "arm9:91404",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1013EC"
@@ -7129,7 +7129,7 @@
    "id": "arm9:91410",
    "font": "sys",
    "jp": "発芽プロテイモ",
-   "en": "",
+   "en": "Sprouted Protato",
    "max": 12,
    "ptrs": [
     "arm9:101458"
@@ -7139,7 +7139,7 @@
    "id": "arm9:9141C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5718"
@@ -7149,7 +7149,7 @@
    "id": "arm9:91428",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F572C"
@@ -7159,7 +7159,7 @@
    "id": "arm9:91434",
    "font": "sys",
    "jp": "レヴォリューション",
-   "en": "",
+   "en": "Revolution",
    "max": 12,
    "ptrs": [
     "arm9:A8020"
@@ -7169,7 +7169,7 @@
    "id": "arm9:91440",
    "font": "sys",
    "jp": "錬金のモノクル",
-   "en": "",
+   "en": "Alchemist's Monocle",
    "max": 12,
    "ptrs": [
     "arm9:101AA0"
@@ -7179,7 +7179,7 @@
    "id": "arm9:9144C",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:10147C"
@@ -7189,7 +7189,7 @@
    "id": "arm9:91458",
    "font": "sys",
    "jp": "リフレッシュメント",
-   "en": "",
+   "en": "Refreshment",
    "max": 12,
    "ptrs": [
     "arm9:A8074"
@@ -7199,7 +7199,7 @@
    "id": "arm9:91464",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56DC"
@@ -7219,7 +7219,7 @@
    "id": "arm9:9147C",
    "font": "sys",
    "jp": "ゲテモノOKな人",
-   "en": "",
+   "en": "Anyone who eats weird stuff",
    "max": 12,
    "ptrs": [
     "arm9:10153C"
@@ -7259,7 +7259,7 @@
    "id": "arm9:914AC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5730"
@@ -7279,7 +7279,7 @@
    "id": "arm9:914C4",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100684"
@@ -7299,7 +7299,7 @@
    "id": "arm9:914DC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57CC"
@@ -7329,7 +7329,7 @@
    "id": "arm9:91500",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1006E4"
@@ -7349,7 +7349,7 @@
    "id": "arm9:91518",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1006FC"
@@ -7369,7 +7369,7 @@
    "id": "arm9:91530",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100774"
@@ -7389,7 +7389,7 @@
    "id": "arm9:91548",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56B4"
@@ -7399,7 +7399,7 @@
    "id": "arm9:91554",
    "font": "sys",
    "jp": "フェンサー専用",
-   "en": "",
+   "en": "Fencers only",
    "max": 12,
    "ptrs": [
     "arm9:1007D4"
@@ -7469,7 +7469,7 @@
    "id": "arm9:915A8",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F568C"
@@ -7479,7 +7479,7 @@
    "id": "arm9:915B4",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1016BC"
@@ -7489,7 +7489,7 @@
    "id": "arm9:915C0",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1016EC"
@@ -7499,7 +7499,7 @@
    "id": "arm9:915CC",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57A4"
@@ -7519,7 +7519,7 @@
    "id": "arm9:915E4",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100954"
@@ -7549,7 +7549,7 @@
    "id": "arm9:91608",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:1009FC"
@@ -7569,7 +7569,7 @@
    "id": "arm9:91620",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:101764"
@@ -7579,7 +7579,7 @@
    "id": "arm9:9162C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5678"
@@ -7589,7 +7589,7 @@
    "id": "arm9:91638",
    "font": "sys",
    "jp": "スケルトン専用",
-   "en": "",
+   "en": "Skeletons only",
    "max": 12,
    "ptrs": [
     "arm9:100A44"
@@ -7609,7 +7609,7 @@
    "id": "arm9:91650",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5844"
@@ -7629,7 +7629,7 @@
    "id": "arm9:91668",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5664"
@@ -7689,7 +7689,7 @@
    "id": "arm9:916B0",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100B04"
@@ -7709,7 +7709,7 @@
    "id": "arm9:916C8",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100B1C"
@@ -7729,7 +7729,7 @@
    "id": "arm9:916E0",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57F4"
@@ -7769,7 +7769,7 @@
    "id": "arm9:91710",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5668"
@@ -7779,7 +7779,7 @@
    "id": "arm9:9171C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F567C"
@@ -7789,7 +7789,7 @@
    "id": "arm9:91728",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5690"
@@ -7799,7 +7799,7 @@
    "id": "arm9:91734",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56A0"
@@ -7809,7 +7809,7 @@
    "id": "arm9:91740",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56A4"
@@ -7819,7 +7819,7 @@
    "id": "arm9:9174C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56B8"
@@ -7829,7 +7829,7 @@
    "id": "arm9:91758",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56C8"
@@ -7839,7 +7839,7 @@
    "id": "arm9:91764",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56CC"
@@ -7849,7 +7849,7 @@
    "id": "arm9:91770",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56E0"
@@ -7859,7 +7859,7 @@
    "id": "arm9:9177C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56F0"
@@ -7869,7 +7869,7 @@
    "id": "arm9:91788",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F56F4"
@@ -7879,7 +7879,7 @@
    "id": "arm9:91794",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5708"
@@ -7889,7 +7889,7 @@
    "id": "arm9:917A0",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F571C"
@@ -7899,7 +7899,7 @@
    "id": "arm9:917AC",
    "font": "sys",
    "jp": "モンスター以外",
-   "en": "",
+   "en": "All but monsters",
    "max": 12,
    "ptrs": [
     "arm9:100C24"
@@ -7919,7 +7919,7 @@
    "id": "arm9:917C4",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5744"
@@ -7949,7 +7949,7 @@
    "id": "arm9:917E8",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5768"
@@ -7959,7 +7959,7 @@
    "id": "arm9:917F4",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F576C"
@@ -7979,7 +7979,7 @@
    "id": "arm9:9180C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5790"
@@ -7989,7 +7989,7 @@
    "id": "arm9:91818",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5794"
@@ -7999,7 +7999,7 @@
    "id": "arm9:91824",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57A8"
@@ -8009,7 +8009,7 @@
    "id": "arm9:91830",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57B8"
@@ -8019,7 +8019,7 @@
    "id": "arm9:9183C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57BC"
@@ -8039,7 +8039,7 @@
    "id": "arm9:91854",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57E0"
@@ -8049,7 +8049,7 @@
    "id": "arm9:91860",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57E4"
@@ -8059,7 +8059,7 @@
    "id": "arm9:9186C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F57F8"
@@ -8069,7 +8069,7 @@
    "id": "arm9:91878",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5808"
@@ -8079,7 +8079,7 @@
    "id": "arm9:91884",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F580C"
@@ -8099,7 +8099,7 @@
    "id": "arm9:9189C",
    "font": "sys",
    "jp": "名無し兵士",
-   "en": "",
+   "en": "Nameless Soldier",
    "max": 12,
    "ptrs": [
     "arm9:F5740"

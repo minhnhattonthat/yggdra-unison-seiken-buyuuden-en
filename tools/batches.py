@@ -164,9 +164,19 @@ def glossary():
     return rows
 
 
+PRONOUNS = ("オレ", "オイラ", "ワシ", "ボク", "アタシ", "アタイ", "アンタ", "オマエ", "テメェ", "キサマ", "オラ")
+
+
 def honorific_after_name(jp, form):
-    return any(m.start() > 0 and kind(jp[m.start() - 1]) == "katakana" and
-               (m.end() == len(jp) or kind(jp[m.end()]) != kind(form[-1])) for m in re.finditer(form, jp))
+    """form right after a katakana run that isn't a pronoun (オレ様 is a self-title, not a name)."""
+    for m in re.finditer(form, jp):
+        a = m.start()
+        while a > 0 and kind(jp[a - 1]) == "katakana":
+            a -= 1
+        if a < m.start() and not jp[a:m.start()].endswith(PRONOUNS) and \
+                (m.end() == len(jp) or kind(jp[m.end()]) != kind(form[-1])):
+            return True
+    return False
 
 
 def problems(entry, en, terms):
@@ -387,6 +397,7 @@ def selftest():
     assert honorific_after_name("エミリオ殿、勝負", "殿") and not honorific_after_name("殿下", "殿")
     assert honorific_after_name("ミラノさん", "さん") and not honorific_after_name("おじさん", "さん")
     assert honorific_after_name("ユグドラ様の", "様") and not honorific_after_name("お姫様", "様")
+    assert not honorific_after_name("オレ様の剣", "様")
     assert needs_english({"jp": "勝負"}) and not needs_english({"jp": "あいうえお\nあいう"})
     assert not needs_english({"jp": "P"}) and not needs_english({"jp": "勝負", "en": "Duel"})
 

@@ -6,7 +6,11 @@ check tool - judge translation quality. Return the report as your final message:
 controller saves it.
 
 ## Inputs (paths in your dispatch)
-- Pairs file: every translated entry as `>> id | JP` / `EN` with +-2 context lines. Read ALL of it, in passes if large.
+- Pairs file: every translated entry as `>> id | speaker | JP` / `EN`, in file order (neighbours are the context;
+  speaker is a bytecode guess, trust the line's style over it; ` / ` = line break in a tiny box, 142 px x 2 lines
+  for bubbles, so terse English is by design). Read ALL of it, in passes if large.
+- Identical JP lines were translated once and copied to every copy; a few lines are system pieces glued together
+  by the game (keep their breaks). Honorifics after names are kept on purpose (D1).
 - `glossary.md` (rulings at the top), `docs/style-reference.md`, the translator's report (unverified claims).
 
 ## Judge

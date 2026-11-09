@@ -3,7 +3,13 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 6. Translate (not started; width gate closed, every string has a budget in script/windows.json).
+- **Phase:** 6. Translate in progress (76 batches work/tl/b001-b076 from `tools/batches.py split`; wave 1 b001-b032
+  dispatched session 8; merged batches listed below).
+- **Phase 6 kit (session 8):** `tools/batches.py` split/check/merge/fit/wrap/terms (identical JP in the same box kind
+  batched once, merge copies it to every id; speaker from bytecode opcode `35 id id` / `33 id expr`, ids = unit
+  table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
+  docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
+  script/.
 - **Phase 5 done (2026-11-10, session 7):**
   - Width gate closed: 0 strings on a guessed budget (lint). 13,399 strings measured on screen, 60 from code (x/y
     constants: small separators, medallion popups, extras prompts, sound titles, tutorial scroll text), 150 composite

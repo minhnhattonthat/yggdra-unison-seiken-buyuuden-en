@@ -54,6 +54,10 @@ Run `python -X utf8 tools/batches.py check <batch>` from the repo root and fix e
 - Item names: the same item appears twice (system font +8, display font +C, `item name in FONT_ITEM`): translate
   both identically. Item "who can equip" lines are often jokes about the character: keep the joke.
 - Help/tutorial text: clear instructions, game terms from the glossary, "you" addressing the player.
+- Notes from earlier batches (reviewers): オレ様/俺様 = "the great me" everywhere (never "Inzaghi-sama", not "yours
+  truly"); "dear" only for Mistel and Amareus (not Eudy or soldiers); "sonny" only for Dort; Nietzsche always speaks
+  of herself in the third person; Nessiah's teasing ませんよ? -> "..., you know?" keep the question; かしら is not
+  always "I wonder" (use "hmm?", "shall we?" where it is rhetorical); keep !? vs ?! as the JP has it.
 - Mistakes earlier projects made (avoid): ordinal glued to a number ("1th"); a name off by one letter; stock phrases
   like "TIPS ... GET!"; a joke losing its punchline; an old man or a brat speaking neutral English.
 

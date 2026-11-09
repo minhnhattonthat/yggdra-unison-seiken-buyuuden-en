@@ -34,7 +34,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ロズウェル | Roswell | | Necromancer, head of House Branthese (Black Rose) | |
 | ロザリィ | Rosary | | Witch, head of House Esmeralda (White Rose) | |
 | ラッセル | Russell | | Astral Fencer (魔剣士) | Russel |
-| クルス | Cruz | | revolutionary, Karona Resistance | Kurusu / Cross |
+| クルス | Cruz | | revolutionary, Karona Resistance | Kurusu |
 | エレナ | Elena | | trainee assassin, Leon's sister | |
 | ゴードン | Gordon | | Temple Knight, "Gordon of Steel" | |
 | ガルカーサ | Gulcasa | | Bronquian Emperor, the Flame Emperor (焔帝) | Garcasa |
@@ -196,4 +196,17 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ジャッジメント・ゼロ | Judgment Zero | | | |
 
 ## Decisions from earlier batches
-- (none yet)
+- b001-b004 faction lands (…領): Imperial / Kingdom / Embellian / Milanor's / Nessiah's / Forest / Theocracy /
+  Bandit / Brigand / Black Rose / White Rose / Temple Knight Lands. Armies (…軍/団): Imperial Army, Royal Army,
+  Embellian Army, Theocracy Army, Forest Army, Nessiah's Army, Thieves (Milanor), Bandits (Dort), Brigands (Ortega),
+  Temple Knights, Black/White Rose Army. ネシア勢力 Nessiah's Forces; メリア教国 Theocracy of Meria.
+- b001-b004 items: ドゼウ Loach, 斬鉄剣 Steelcutter, ロザリオ Rosario (not Rosary), サザンクロス Southern Cross,
+  グランドクロス Grand Cross; キルアウト Kill Out; ユニット出撃 Unit Sorties.
+- b001-b004 composite sentences (pieces joined by code; keep these joins): "After a fierce battle...\n" + army +
+  ": " + territory + " captured!"; "Capital taken! The " + lands + " are\n" + "all yours now!"; "Headed here: " +
+  unit + ",\n" + "already scheduled to go."; "Already sent: " + unit + ".\nBack in " + digits + " turn(s).";
+  "This turn's strategy card is " + card + ".".
+- b017-b024: 親分 Boss (Flunky to Milanor); ザコ small fry; 猊下 Your Eminence; 守り神様 guardian god (not the
+  Mamorigami unit); オレ様 = Inzaghi's boastful "me" (the great me), never a name + -sama.
+- b025-b032: 姐さん (Flunky) Sis; 砲台 cannon (capture-point cannon); アンク Ankh (Verlaine's Ankhs, Yggdra
+  Union); 山賊 brigands (Ortega's), 盗賊 bandits (Dort's) / thieves (Milanor's).
