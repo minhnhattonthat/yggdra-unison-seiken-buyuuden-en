@@ -2,13 +2,21 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 1. Research and recon in progress. Last build: none yet (2026-11-09).
-- **Done:** Step 0 (DeSmuME QA fork qa-2 in tools/desmume/, original boots and takes input, check + pre-commit gate, guard hook proven, AGENTS.md). Recon so far: DATA.SFS directory/hash/LZ (docs/re/sfs.md), text encoding + text file families + MESSAGE string refs (docs/re/text.md), partial tbl/jp.tbl (kana/latin/punct). No prior fan patch exists.
-- **Next (phase 1, in order):**
-  1. Control-code inventory over all MESSAGE/SPMES/EDMES/TUTO/P/WD strings (non-glyph bytes, arg counts); map MESSAGE header + opcodes enough to find every string pointer.
-  2. Menu/unit/item/skill/place name tables: search arm9, overlays and `work/sfs/_unk` for FF-terminated tables; check if FONT_SYSTEM/FONT_ITEM share FONT_MES order.
-  3. Resolve graphics file names (loader at 0x021023B0 builds `%s.NTFT/.NTFP/.NTFI`; log names at runtime with an on_exec hook on 0x0200A540).
-  4. Graphics-text survey -> docs/re/graphics.md (title, faction banners, prologue scroll, faction descriptions, battle UI, game over, endings, credits) + static sweep of NTFT files.
-  5. Kanji readings for tbl/kanji.tsv (~1154 glyphs EC-56D; sheets via tools/fontsheet.py; template matching failed) - can start phase 4 instead.
+- **Phase:** 2. Debug tool next (phase 1 recon done 2026-11-09). Last build: none yet.
+- **Done:** Step 0. Phase 1 recon (docs/re/): DATA.SFS directory/hash/LZ and 3,846/4,001 file names (sfs.md); text encoding,
+  fonts, control codes (FD/FF only), script string refs `30 xx u32` / `51 u32` with full coverage, EDMES record table,
+  system text in arm9 (pool 0x8F000-0x95FFF) + overlays via u32 pointers (text.md); .PACK = NDS 3D textures, decoder,
+  static sweep of all 2,497 textures read, Japanese graphics listed by group (graphics.md). Free space: ~9 MB at cart end;
+  DATA.SFS is rebuilt with a re-laid directory (sfs.md). No prior fan patch exists.
+- **Next (phase 2, debug tool):**
+  1. Scene list `tools/debug/scenes.txt` + `tools/debug/warp.lua` (AGENTS.md warp command): title, faction select (one per
+     faction), prologue scroll (OP_WR), a battle, world map, card/item menus, save/load, explore, war report, prisoner,
+     tutorial, endings (EDMES/ED_N), epilogue (EPI_*), credits, game over.
+  2. Find the game-state/scene variable and story flags (RAM search with `ramsearch.py`; the MESSAGE/SPMES script loader is a
+     good anchor: log names with `tools/lua/fileopen.lua`, which also resolves the ~120 unnamed war-event textures).
+  3. On the way, shoot the alpha-format textures listed in graphics.md (QUEST, PRIZE, PRISONER, *_TGA, WARRESULT) and add
+     rows if Japanese; find what FONT_ITEM draws.
+- **Later phases, known work:** kanji readings for FONT_MES/FONT_SYSTEM/FONT_END (transfer by bitmap hash, text.md);
+  4x4 texture encoder; system-string relocation plan (phase 5); SPMES_WR sentence fragments.
 - **Open bugs:** none.
 - **Waiting on the user:** nothing.
