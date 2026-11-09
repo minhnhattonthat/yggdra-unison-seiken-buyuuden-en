@@ -5,17 +5,17 @@
   {
    "id": "MESSAGE198:0640",
    "jp": "仕方ないが…\n行ってみるか",
-   "en": ""
+   "en": "No choice...\nI'll go, I suppose."
   },
   {
    "id": "MESSAGE198:0650",
    "jp": "気が乗らないが…\n行ってくるゼ……",
-   "en": ""
+   "en": "Not feelin' it...\nbut I'm goin'..."
   },
   {
    "id": "MESSAGE198:0664",
    "jp": "苦手な地形だけど…\n行ってきます",
-   "en": ""
+   "en": "Not my kind of\nterrain... but I'll go."
   },
   {
    "id": "MESSAGE198:0679",
@@ -25,17 +25,17 @@
   {
    "id": "MESSAGE198:0692",
    "jp": "気乗りしないが…\n行ってくるか……",
-   "en": ""
+   "en": "I'm not keen...\nbut I'll go..."
   },
   {
    "id": "MESSAGE198:06A6",
    "jp": "気乗りしないが…\n待っているがいい",
-   "en": ""
+   "en": "I'm not keen...\nbut wait here."
   },
   {
    "id": "MESSAGE198:06BB",
    "jp": "少し心配だけど…\n行くしかないわね……",
-   "en": ""
+   "en": "I'm a bit worried...\nbut I have to go..."
   },
   {
    "id": "MESSAGE198:06D2",
@@ -50,17 +50,17 @@
   {
    "id": "MESSAGE198:06FA",
    "jp": "あまり期待なさらぬよう…",
-   "en": ""
+   "en": "Expect not\ntoo much..."
   },
   {
    "id": "MESSAGE198:0709",
    "jp": "承知…",
-   "en": ""
+   "en": "Understood..."
   },
   {
    "id": "MESSAGE198:070F",
    "jp": "う~ん…\n行ってみようかな…",
-   "en": ""
+   "en": "Hmm...\nMaybe I'll go try..."
   },
   {
    "id": "MESSAGE198:071E",
@@ -70,27 +70,27 @@
   {
    "id": "MESSAGE198:072D",
    "jp": "どうしても行かなければ\nならないのですか?",
-   "en": ""
+   "en": "Is it truly\nnecessary that I go?"
   },
   {
    "id": "MESSAGE198:0743",
    "jp": "バックレてぇ気分だぜ…",
-   "en": ""
+   "en": "Man, I feel like\nditchin'..."
   },
   {
    "id": "MESSAGE198:0751",
    "jp": "気分が乗らないで\nやんすよ…",
-   "en": ""
+   "en": "Ain't feelin' it,\nyessir..."
   },
   {
    "id": "MESSAGE198:0763",
    "jp": "ワシが行くのか?\n仕方ないか…",
-   "en": ""
+   "en": "I gotta go?\nGuess so..."
   },
   {
    "id": "MESSAGE198:0775",
    "jp": "どうしてもワシでなければ\nダメなのかのう?",
-   "en": ""
+   "en": "Does it really\nhave to be me, eh?"
   },
   {
    "id": "MESSAGE198:078B",
@@ -100,47 +100,47 @@
   {
    "id": "MESSAGE198:079D",
    "jp": "じゃあ…行ってくる",
-   "en": ""
+   "en": "Well... I'm off."
   },
   {
    "id": "MESSAGE198:07A7",
    "jp": "…行けばいいんだろ?",
-   "en": ""
+   "en": "...I just have to\ngo, right?"
   },
   {
    "id": "MESSAGE198:07B2",
    "jp": "行きたくねぇなぁ…",
-   "en": ""
+   "en": "Don't wanna go..."
   },
   {
    "id": "MESSAGE198:07BC",
    "jp": "…確認をして参ります……",
-   "en": ""
+   "en": "...I shall go\nand confirm it..."
   },
   {
    "id": "MESSAGE198:07CC",
    "jp": "…行ってくるか……",
-   "en": ""
+   "en": "...Guess I'll go..."
   },
   {
    "id": "MESSAGE198:07D6",
    "jp": "…わかったわ……",
-   "en": ""
+   "en": "...Very well..."
   },
   {
    "id": "MESSAGE198:07DF",
    "jp": "私が行かねばならんのか?",
-   "en": ""
+   "en": "Must I be the\none to go?"
   },
   {
    "id": "MESSAGE198:07EC",
    "jp": "神は行くなと告げて\nおられるぞ?",
-   "en": ""
+   "en": "God bids me not\nto go, you know?"
   },
   {
    "id": "MESSAGE198:07FE",
    "jp": "わ、わしは遠出はできんぞ?",
-   "en": ""
+   "en": "I-I can't travel\nfar, you know!"
   },
   {
    "id": "MESSAGE198:080E",
@@ -150,7 +150,7 @@
   {
    "id": "MESSAGE198:0823",
    "jp": "…私が行くの?\nどうしても?",
-   "en": ""
+   "en": "...Me? Do I\nreally have to?"
   },
   {
    "id": "MESSAGE198:0832",
@@ -160,7 +160,7 @@
   {
    "id": "MESSAGE198:0843",
    "jp": "ク、クケ…?",
-   "en": ""
+   "en": "K-kukeh...?"
   },
   {
    "id": "MESSAGE198:084A",
@@ -180,7 +180,7 @@
   {
    "id": "MESSAGE198:085D",
    "jp": "どうしても\n行かないとダメですの?",
-   "en": ""
+   "en": "Must I really go,\ndear?"
   },
   {
    "id": "MESSAGE198:086F",
@@ -190,62 +190,62 @@
   {
    "id": "MESSAGE198:0880",
    "jp": "気分が乗らないぜ…",
-   "en": ""
+   "en": "Ain't feelin' it..."
   },
   {
    "id": "MESSAGE198:088D",
    "jp": "…行くだけ無駄じゃ\nないかしら……?",
-   "en": ""
+   "en": "...Isn't going\npointless...?"
   },
   {
    "id": "MESSAGE198:08A2",
    "jp": "馬が嫌がっているのだが…",
-   "en": ""
+   "en": "My horse doesn't\nwant to, but..."
   },
   {
    "id": "MESSAGE198:08B1",
    "jp": "何も得られない\n気がするのよ…",
-   "en": ""
+   "en": "I just feel we'll\nget nothing..."
   },
   {
    "id": "MESSAGE198:08C4",
    "jp": "面倒くせぇなぁ…\nブツブツ……",
-   "en": ""
+   "en": "What a pain...\nGrumble, grumble..."
   },
   {
    "id": "MESSAGE198:08D6",
    "jp": "きっと無駄足になる、\nそんな気がするの…",
-   "en": ""
+   "en": "I just know it'll\nbe a wasted trip..."
   },
   {
    "id": "MESSAGE198:08EF",
    "jp": "何も見つからなくても\n怒らないでくれよ…",
-   "en": ""
+   "en": "Don't get mad if\nI find nothing..."
   },
   {
    "id": "MESSAGE198:0907",
    "jp": "何か見つかる可能性は…\n低そうね……",
-   "en": ""
+   "en": "The odds of finding\nanything... seem low..."
   },
   {
    "id": "MESSAGE198:0920",
    "jp": "どうにも気が進まないが…",
-   "en": ""
+   "en": "I really don't feel\nlike it, but..."
   },
   {
    "id": "MESSAGE198:092F",
    "jp": "…行かないとダメ?",
-   "en": ""
+   "en": "...Do I have to go?"
   },
   {
    "id": "MESSAGE198:0939",
    "jp": "気が進まんな…",
-   "en": ""
+   "en": "I'm not keen..."
   },
   {
    "id": "MESSAGE198:0943",
    "jp": "ク、クケ…?",
-   "en": ""
+   "en": "K-kukeh...?"
   },
   {
    "id": "MESSAGE198:094A",
@@ -255,12 +255,12 @@
   {
    "id": "MESSAGE198:094E",
    "jp": "何も見つからないような\n気もするが…",
-   "en": ""
+   "en": "I've a feeling I'll\nfind nothing..."
   },
   {
    "id": "MESSAGE198:0964",
    "jp": "期待しないでね…",
-   "en": ""
+   "en": "Don't expect much..."
   }
  ]
 }

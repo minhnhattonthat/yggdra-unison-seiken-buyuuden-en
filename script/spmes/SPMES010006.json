@@ -25,12 +25,12 @@
   {
    "id": "SPMES010006:01C2",
    "jp": "そ、そんな…",
-   "en": ""
+   "en": "N-no..."
   },
   {
    "id": "SPMES010006:01C9",
    "jp": "勝負はつきました。\nもう武器を置きなさい!",
-   "en": ""
+   "en": "The match is decided.\nLay down your weapon!"
   },
   {
    "id": "SPMES010006:01E4",
@@ -40,7 +40,7 @@
   {
    "id": "SPMES010006:01F3",
    "jp": "私としたことが…ふ、不覚!",
-   "en": ""
+   "en": "How could I...?\nA d-disgrace!"
   }
  ]
 }

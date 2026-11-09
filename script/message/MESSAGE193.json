@@ -10,7 +10,7 @@
   {
    "id": "MESSAGE193:064A",
    "jp": "じゃあ、ちょっくら\n行ってくるゼ!",
-   "en": ""
+   "en": "Gonna pop over\nthere real quick!"
   },
   {
    "id": "MESSAGE193:065C",
@@ -20,17 +20,17 @@
   {
    "id": "MESSAGE193:0667",
    "jp": "行ってみます!",
-   "en": ""
+   "en": "I shall go and see!"
   },
   {
    "id": "MESSAGE193:066F",
    "jp": "お任せを",
-   "en": ""
+   "en": "Leave it to me."
   },
   {
    "id": "MESSAGE193:0675",
    "jp": "行ってまいります!",
-   "en": ""
+   "en": "I shall go!"
   },
   {
    "id": "MESSAGE193:067F",
@@ -45,17 +45,17 @@
   {
    "id": "MESSAGE193:069F",
    "jp": "分かったよ、\n行って来るぜ",
-   "en": ""
+   "en": "Fine, fine,\nI'm goin'."
   },
   {
    "id": "MESSAGE193:06AF",
    "jp": "お任せ頂こうか…",
-   "en": ""
+   "en": "Leave it to me..."
   },
   {
    "id": "MESSAGE193:06BA",
    "jp": "ここは私が行こう",
-   "en": ""
+   "en": "I shall go."
   },
   {
    "id": "MESSAGE193:06C3",
@@ -75,22 +75,22 @@
   {
    "id": "MESSAGE193:06E3",
    "jp": "すぐに戻るぜ",
-   "en": ""
+   "en": "Be right back."
   },
   {
    "id": "MESSAGE193:06EB",
    "jp": "急いで見てくるで\nやんすよ!",
-   "en": ""
+   "en": "I'll go take a quick\nlook, yessir!"
   },
   {
    "id": "MESSAGE193:06FC",
    "jp": "見てきてやるぞぉ!",
-   "en": ""
+   "en": "I'll go take a looook!"
   },
   {
    "id": "MESSAGE193:0707",
    "jp": "では、行ってくるかのう!",
-   "en": ""
+   "en": "Well, I'll be off, eh!"
   },
   {
    "id": "MESSAGE193:0714",
@@ -115,7 +115,7 @@
   {
    "id": "MESSAGE193:0740",
    "jp": "では…行って参ります",
-   "en": ""
+   "en": "Then... I shall go."
   },
   {
    "id": "MESSAGE193:074C",
@@ -125,7 +125,7 @@
   {
    "id": "MESSAGE193:0750",
    "jp": "御意…",
-   "en": ""
+   "en": "As you wish..."
   },
   {
    "id": "MESSAGE193:0756",
@@ -135,7 +135,7 @@
   {
    "id": "MESSAGE193:0763",
    "jp": "早速調べてみましょう",
-   "en": ""
+   "en": "I shall look into\nit at once."
   },
   {
    "id": "MESSAGE193:0771",
@@ -150,7 +150,7 @@
   {
    "id": "MESSAGE193:0789",
    "jp": "行ってきましょう",
-   "en": ""
+   "en": "I'll go, then."
   },
   {
    "id": "MESSAGE193:0792",
@@ -165,12 +165,12 @@
   {
    "id": "MESSAGE193:07A5",
    "jp": "グォ~!",
-   "en": ""
+   "en": "Grooh~!"
   },
   {
    "id": "MESSAGE193:07AA",
    "jp": "グワォ~!",
-   "en": ""
+   "en": "Grwaoh~!"
   },
   {
    "id": "MESSAGE193:07B0",
@@ -185,7 +185,7 @@
   {
    "id": "MESSAGE193:07CF",
    "jp": "何かあるかも\n知れませんね。フフフ…",
-   "en": ""
+   "en": "Something may be\nthere. Heh heh heh..."
   },
   {
    "id": "MESSAGE193:07E4",
@@ -210,32 +210,32 @@
   {
    "id": "MESSAGE193:080B",
    "jp": "行ってきますぜ!",
-   "en": ""
+   "en": "Headin' out!"
   },
   {
    "id": "MESSAGE193:0814",
    "jp": "調べてくるよ!",
-   "en": ""
+   "en": "I'll check it out!"
   },
   {
    "id": "MESSAGE193:081D",
    "jp": "見てきましょう!",
-   "en": ""
+   "en": "I'll take a look!"
   },
   {
    "id": "MESSAGE193:0827",
    "jp": "見て参ります!",
-   "en": ""
+   "en": "I shall go see!"
   },
   {
    "id": "MESSAGE193:0831",
    "jp": "見て参りましょう",
-   "en": ""
+   "en": "I shall go and see."
   },
   {
    "id": "MESSAGE193:083C",
    "jp": "じゃあ、行ってきます!",
-   "en": ""
+   "en": "Well, I'm off!"
   },
   {
    "id": "MESSAGE193:0848",
@@ -250,7 +250,7 @@
   {
    "id": "MESSAGE193:085A",
    "jp": "グォ~!",
-   "en": ""
+   "en": "Grooh~!"
   },
   {
    "id": "MESSAGE193:085F",
@@ -260,7 +260,7 @@
   {
    "id": "MESSAGE193:0869",
    "jp": "何か見つけてきましょう!",
-   "en": ""
+   "en": "I'll go find\nsomething!"
   }
  ]
 }

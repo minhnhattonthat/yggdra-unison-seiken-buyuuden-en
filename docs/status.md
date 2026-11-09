@@ -10,9 +10,12 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
-- **Batch state (session 9, 2026-11-10):** merged + reviewed (+ fixes): b001-b016 incl. b005-b012, b013-b034.
-  Translated, check OK, NOT reviewed, NOT merged: b035-b070, b072-b076. b071 fails check only on 7 EDMES epithets
-  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b035-b036 ... b075-b076).
+- **Batch state (session 10, 2026-11-10):** merged + reviewed (+ fixes): b001-b058.
+  Translated, check OK, NOT reviewed, NOT merged: b059-b070, b072-b076. b071 fails check only on 7 EDMES epithets
+  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b059-b060 ... b075-b076), regenerated
+  session 10 after the session-9 fixes (older pairs files were stale: rerun `pairs.py bA bB` if a .out.tsv changes).
+  Session 10 fixes: Eudy "dears" MESSAGE179:075D; Amareus MESSAGE141:0644 / MESSAGE168:06E3; Juvelon
+  MESSAGE142:062C; Flunky MESSAGE169:0593. Swept b049-b076 pairs: no Eudy dear/darling left.
   Session 9 already applied to the pending .out.tsv files: every "dear" on Eudy (dropped) / Rosary (-> darling),
   Brai -> Bly, Bronga -> Brongaa, holy knight -> Temple Knight; glossary rows now enforce Bly, Brongaa, Temple
   Knight (聖騎士), Duchy of Embellia (エンベリア公国) in `batches.py check`.
@@ -22,7 +25,8 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   2026-11-11 13:07); the controller reviewed pairs itself (~12k tokens per pair). With codex back,
   `sh tools/codex_review.sh bA bB` runs review + fix for one pair (reports in work/qa/review/). Per pair: read
   work/qa/pairs/bA-bB.txt, fix Critical/Important in work/tl/bN.out.tsv (Edit; `tools/setval.py` for values ending
-  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b035-b036.
+  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b059-b060
+  (SPMES DUEL EVENT lines from here on; ~40 KB per pair, ~6 pairs per worker context). Codex still out session 10.
 - **Review flags still to check in review:** 戦意 = morale in system text, "will to fight" allowed in dialogue;
   敵将 foe/enemy general. Speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
 - **EDMES epithets need engine room (phase 7, D4):** the epithet run is 150 px x1 incl. the name; b071 LONG

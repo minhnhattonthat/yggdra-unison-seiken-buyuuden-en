@@ -94,3 +94,12 @@ to run while any line is unticked.
 
 ## b049-b050 (weapon/Appraiser/item barks, approved; controller review)
 - [ ] MESSAGE188:08F2 Nameless Soldier - no end punctuation: Looks like we can / get cards appraised!
+
+## b051-b054 (explore/path barks, approved; controller review)
+- [ ] MESSAGE201:078E Juvelon - no end punctuation: ...a path to the left, eh.
+
+## b055-b056 (loot-box picks, conquest lines, first DUEL EVENTs; approved; controller review)
+- [ ] MESSAGE210:0641 / MESSAGE212:0616 Ortega - lines carry Dort's ぞい / 盗賊稼業 (known Ortega/Dort tag swap): voice is neutral enough; recheck on screen
+
+## b057-b058 (DUEL EVENT lines Russell..Yggdra, approved; controller review)
+- (no Minors)

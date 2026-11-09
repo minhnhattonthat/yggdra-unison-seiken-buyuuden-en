@@ -5,52 +5,52 @@
   {
    "id": "MESSAGE195:0640",
    "jp": "ちょっと大変そうだが…\n行ってみるか……",
-   "en": ""
+   "en": "Looks a bit rough...\nShall I go...?"
   },
   {
    "id": "MESSAGE195:0657",
    "jp": "う…マジかよ…?\nまぁ、任せとけって!",
-   "en": ""
+   "en": "Ugh... seriously?\nWell, leave it to me!"
   },
   {
    "id": "MESSAGE195:066C",
    "jp": "少し大変そうだけど…\n行ってきます!",
-   "en": ""
+   "en": "Looks a bit hard...\nbut I'm off!"
   },
   {
    "id": "MESSAGE195:0682",
    "jp": "少し大変そうだけど…\n行ってみます!",
-   "en": ""
+   "en": "It looks a bit hard...\nbut I shall try!"
   },
   {
    "id": "MESSAGE195:0698",
    "jp": "少し時間がかかるが…\n私が行ってきてやろう",
-   "en": ""
+   "en": "It will take a while...\nbut I'll go for you."
   },
   {
    "id": "MESSAGE195:06B1",
    "jp": "少し時間がかかるが…\n待っていろ",
-   "en": ""
+   "en": "It will take a\nwhile... Wait."
   },
   {
    "id": "MESSAGE195:06C6",
    "jp": "少し心配だけど…\n行ってくるわ",
-   "en": ""
+   "en": "I'm a bit worried...\nbut I'll go."
   },
   {
    "id": "MESSAGE195:06D9",
    "jp": "馬では進み難い場所の\nようですが…お任せを",
-   "en": ""
+   "en": "Rough going for a\nhorse... but trust me."
   },
   {
    "id": "MESSAGE195:06F5",
    "jp": "やっかいだな…\nまあ、行って来るか",
-   "en": ""
+   "en": "What a pain...\nWell, guess I'll go."
   },
   {
    "id": "MESSAGE195:0708",
    "jp": "ならば少々お時間を\n頂けますかな?",
-   "en": ""
+   "en": "Then might I have\na little time?"
   },
   {
    "id": "MESSAGE195:071F",
@@ -60,52 +60,52 @@
   {
    "id": "MESSAGE195:072A",
    "jp": "とりあえず、行ってみる…",
-   "en": ""
+   "en": "Well, I'll\njust go try..."
   },
   {
    "id": "MESSAGE195:0737",
    "jp": "私が…行くのか?\nならば、仕方が無い……",
-   "en": ""
+   "en": "I... am to go?\nThen so be it..."
   },
   {
    "id": "MESSAGE195:074F",
    "jp": "わたくしが行かなければ\nならないのですね?",
-   "en": ""
+   "en": "I must be the\none to go, then?"
   },
   {
    "id": "MESSAGE195:0765",
    "jp": "やっかいだが…\n行ってみるか……",
-   "en": ""
+   "en": "Tricky, but...\nI'll give it a go..."
   },
   {
    "id": "MESSAGE195:0776",
    "jp": "う…ま、まぁちょっと、\n行ってくるでやんす!",
-   "en": ""
+   "en": "Uh... w-well, I'll\ngo, yessir!"
   },
   {
    "id": "MESSAGE195:078D",
    "jp": "ワシが…行くのか?\n分かった、分かった!",
-   "en": ""
+   "en": "Me... go?\nFine, fine!"
   },
   {
    "id": "MESSAGE195:07A4",
    "jp": "こういうことはワシ以外に\n任せてもらえんかのう…",
-   "en": ""
+   "en": "Couldn't ya leave this\nto someone else, eh..."
   },
   {
    "id": "MESSAGE195:07C0",
    "jp": "うーん…あまり気分が\n乗らないけど……",
-   "en": ""
+   "en": "Hmm... I'm not really\nin the mood, but..."
   },
   {
    "id": "MESSAGE195:07D7",
    "jp": "じゃあウチ…調べてくる",
-   "en": ""
+   "en": "Guess I'll...\ngo check it out."
   },
   {
    "id": "MESSAGE195:07E4",
    "jp": "…行ってみるよ",
-   "en": ""
+   "en": "...I'll go see."
   },
   {
    "id": "MESSAGE195:07EC",
@@ -125,7 +125,7 @@
   {
    "id": "MESSAGE195:080B",
    "jp": "…わかったわ。\n見てきてあげる",
-   "en": ""
+   "en": "...Very well.\nI'll go look for you."
   },
   {
    "id": "MESSAGE195:081C",
@@ -140,22 +140,22 @@
   {
    "id": "MESSAGE195:0846",
    "jp": "行かなければならんのか?",
-   "en": ""
+   "en": "Must I really go?"
   },
   {
    "id": "MESSAGE195:0853",
    "jp": "どうしてもって言うのなら…\n見てくるけど……?",
-   "en": ""
+   "en": "If you really insist...\nI'll go look, but...?"
   },
   {
    "id": "MESSAGE195:086D",
    "jp": "…行ってみるわ",
-   "en": ""
+   "en": "...I'll go see."
   },
   {
    "id": "MESSAGE195:0875",
    "jp": "うほっ!?\n任されてる?　強制?",
-   "en": ""
+   "en": "Ooh!? Leaving it to\nme? Or forcing me?"
   },
   {
    "id": "MESSAGE195:0889",
@@ -165,12 +165,12 @@
   {
    "id": "MESSAGE195:088D",
    "jp": "グオ~?",
-   "en": ""
+   "en": "Grooh~?"
   },
   {
    "id": "MESSAGE195:0892",
    "jp": "グワオ~?",
-   "en": ""
+   "en": "Grwaoh~?"
   },
   {
    "id": "MESSAGE195:0898",
@@ -180,67 +180,67 @@
   {
    "id": "MESSAGE195:08A0",
    "jp": "行けとおっしゃるのなら…\n仕方ありませんけど……",
-   "en": ""
+   "en": "If you insist I go...\nI suppose I must..."
   },
   {
    "id": "MESSAGE195:08BB",
    "jp": "行くしか無いようですね…",
-   "en": ""
+   "en": "It seems I have\nno choice but to go..."
   },
   {
    "id": "MESSAGE195:08C9",
    "jp": "じゃあ…ちょっと\n行ってくるぜ",
-   "en": ""
+   "en": "Well... I'll go\nfor a bit."
   },
   {
    "id": "MESSAGE195:08D9",
    "jp": "…とにかく\n行ってみるわ",
-   "en": ""
+   "en": "...I'll just\ngo try."
   },
   {
    "id": "MESSAGE195:08E6",
    "jp": "何か見つけられるかどうかは\n馬次第だが…",
-   "en": ""
+   "en": "Finding anything is\nup to my horse..."
   },
   {
    "id": "MESSAGE195:0900",
    "jp": "…行かないとだめかしら?",
-   "en": ""
+   "en": "...Do I have to go?"
   },
   {
    "id": "MESSAGE195:090D",
    "jp": "仕方ねぇなぁ…\n行きゃあいいんだろ?",
-   "en": ""
+   "en": "Ugh, fine...\nI just gotta go, right?"
   },
   {
    "id": "MESSAGE195:0922",
    "jp": "ちょっと不安だけど…\n行った方がいい?",
-   "en": ""
+   "en": "I'm a bit nervous...\nshould I go?"
   },
   {
    "id": "MESSAGE195:0939",
    "jp": "あまり期待せずに\n待っていてくれよ",
-   "en": ""
+   "en": "Don't expect too\nmuch, okay?"
   },
   {
    "id": "MESSAGE195:094E",
    "jp": "…仕方ない。見てくるわ",
-   "en": ""
+   "en": "...Fine. I'll go look."
   },
   {
    "id": "MESSAGE195:095D",
    "jp": "…仕方ない\n見てくるとしよう",
-   "en": ""
+   "en": "...No choice.\nI'll go and see."
   },
   {
    "id": "MESSAGE195:096F",
    "jp": "ちょっと、面倒だけど…\n見てくるわね",
-   "en": ""
+   "en": "Kind of a pain, but...\nI'll go look."
   },
   {
    "id": "MESSAGE195:0985",
    "jp": "確認してみるか…",
-   "en": ""
+   "en": "Let's check it out..."
   },
   {
    "id": "MESSAGE195:0990",
@@ -250,17 +250,17 @@
   {
    "id": "MESSAGE195:0994",
    "jp": "グオ~?",
-   "en": ""
+   "en": "Grooh~?"
   },
   {
    "id": "MESSAGE195:0999",
    "jp": "…ちょっと\n行ってくるか……",
-   "en": ""
+   "en": "...Guess I'll go\nfor a bit..."
   },
   {
    "id": "MESSAGE195:09A8",
    "jp": "…とにかく\n行ってみるわね",
-   "en": ""
+   "en": "...I'll just go\nand try."
   }
  ]
 }

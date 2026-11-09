@@ -5,12 +5,12 @@
   {
    "id": "MESSAGE194:0640",
    "jp": "分かった。行ってくるよ",
-   "en": ""
+   "en": "Got it. I'm off."
   },
   {
    "id": "MESSAGE194:064D",
    "jp": "まぁ、任せとけって!",
-   "en": ""
+   "en": "Just leave it\nto me!"
   },
   {
    "id": "MESSAGE194:0659",
@@ -20,12 +20,12 @@
   {
    "id": "MESSAGE194:066A",
    "jp": "分かりました。\n任せてください!",
-   "en": ""
+   "en": "Understood.\nPlease leave it to me!"
   },
   {
    "id": "MESSAGE194:067D",
    "jp": "任せろ。\n私が行ってきてやろう",
-   "en": ""
+   "en": "Leave it to me.\nI'll go for you."
   },
   {
    "id": "MESSAGE194:068E",
@@ -40,7 +40,7 @@
   {
    "id": "MESSAGE194:06A4",
    "jp": "行って参りましょう!",
-   "en": ""
+   "en": "I shall go!"
   },
   {
    "id": "MESSAGE194:06B0",
@@ -50,12 +50,12 @@
   {
    "id": "MESSAGE194:06BB",
    "jp": "あい分かった。\nでは、お任せ頂こう",
-   "en": ""
+   "en": "So be it.\nLeave it to me."
   },
   {
    "id": "MESSAGE194:06D0",
    "jp": "御意にございます。\nお任せを!",
-   "en": ""
+   "en": "As you will.\nLeave it to me!"
   },
   {
    "id": "MESSAGE194:06E3",
@@ -65,32 +65,32 @@
   {
    "id": "MESSAGE194:06EE",
    "jp": "分かった。\n私が調べてこよう",
-   "en": ""
+   "en": "Understood.\nI will investigate."
   },
   {
    "id": "MESSAGE194:06FF",
    "jp": "わかりました\n行ってまいりましょう",
-   "en": ""
+   "en": "Very well.\nI shall go."
   },
   {
    "id": "MESSAGE194:0711",
    "jp": "そうだな…よし!\nオレに任せとけって!",
-   "en": ""
+   "en": "Let's see... Alright!\nLeave it to me!"
   },
   {
    "id": "MESSAGE194:0726",
    "jp": "ここは俺に\n任せるでやんすよ!",
-   "en": ""
+   "en": "Leave this one\nto me, yessir!"
   },
   {
    "id": "MESSAGE194:0738",
    "jp": "ワシが見てきてやろう!",
-   "en": ""
+   "en": "I'll go take\na look!"
   },
   {
    "id": "MESSAGE194:0745",
    "jp": "こういうことはワシに\n任せておけ!",
-   "en": ""
+   "en": "Leave this sorta\nthing to me, eh!"
   },
   {
    "id": "MESSAGE194:0758",
@@ -115,12 +115,12 @@
   {
    "id": "MESSAGE194:0783",
    "jp": "すぐに戻ります…",
-   "en": ""
+   "en": "I will return soon..."
   },
   {
    "id": "MESSAGE194:078D",
    "jp": "わかった…待っていろ",
-   "en": ""
+   "en": "Very well... Wait here."
   },
   {
    "id": "MESSAGE194:0799",
@@ -155,7 +155,7 @@
   {
    "id": "MESSAGE194:07E1",
    "jp": "うほっ!?\n任せてくれるのね?",
-   "en": ""
+   "en": "Ooh!? You're leaving\nit to me?"
   },
   {
    "id": "MESSAGE194:07F2",
@@ -190,57 +190,57 @@
   {
    "id": "MESSAGE194:0838",
    "jp": "任せときな!",
-   "en": ""
+   "en": "Leave it to me!"
   },
   {
    "id": "MESSAGE194:0840",
    "jp": "任せてもらうわね!",
-   "en": ""
+   "en": "I'll handle it!"
   },
   {
    "id": "MESSAGE194:084B",
    "jp": "よし、行ってこよう!",
-   "en": ""
+   "en": "Alright, I'll go!"
   },
   {
    "id": "MESSAGE194:0856",
    "jp": "何か見つかるかも\n知れないわね!",
-   "en": ""
+   "en": "We might find\nsomething!"
   },
   {
    "id": "MESSAGE194:086A",
    "jp": "よっしゃ、任せときなよ!",
-   "en": ""
+   "en": "Alright, leave it\nto me!"
   },
   {
    "id": "MESSAGE194:0878",
    "jp": "何か見つかると\nラッキーだね!",
-   "en": ""
+   "en": "Be lucky if we\nfind something!"
   },
   {
    "id": "MESSAGE194:088A",
    "jp": "分かった。任せてくれ!",
-   "en": ""
+   "en": "Got it. Leave it\nto me!"
   },
   {
    "id": "MESSAGE194:0898",
    "jp": "分かった。見てくるわ",
-   "en": ""
+   "en": "Got it. I'll go look."
   },
   {
    "id": "MESSAGE194:08A5",
    "jp": "では、見てくるとしようか",
-   "en": ""
+   "en": "Well, I'll go\ntake a look."
   },
   {
    "id": "MESSAGE194:08B3",
    "jp": "じゃあ、見てくるわね!",
-   "en": ""
+   "en": "Well, I'll go look!"
   },
   {
    "id": "MESSAGE194:08C0",
    "jp": "確認してこよう",
-   "en": ""
+   "en": "I'll go check."
   },
   {
    "id": "MESSAGE194:08CA",
@@ -255,12 +255,12 @@
   {
    "id": "MESSAGE194:08D7",
    "jp": "よし、任せてくれ",
-   "en": ""
+   "en": "Alright, leave it\nto me."
   },
   {
    "id": "MESSAGE194:08E1",
    "jp": "任せてもらうわ!",
-   "en": ""
+   "en": "I'll handle it!"
   }
  ]
 }
