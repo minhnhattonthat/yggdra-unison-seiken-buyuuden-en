@@ -116,3 +116,6 @@ to run while any line is unticked.
 
 ## b065-b066 (DUEL EVENT lines Kylier..Mardym, approved; controller review)
 - [ ] SPMES020004:0140 Cruz - JP names Aegina but the duel file is Luciana's (game text?): check on screen
+
+## b067-b068 (DUEL EVENT lines Luciana..Gulcasa, approved; controller review)
+- [ ] SPMES030036:01EF / 020D Nessiah - ユミラ "Yumira" / ユメール人 "Yumeru": unverified romanisation, check against Atlus lore names

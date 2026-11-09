@@ -10,10 +10,12 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   table F5380), `tools/pairs.py` (reviewer input), glossary.md (official Atlus names), docs/style-reference.md,
   docs/synopsis.md, docs/translator-brief.md, docs/reviewer-brief.md. work/tl is gitignored: merged English lives in
   script/.
-- **Batch state (session 10, 2026-11-10):** merged + reviewed (+ fixes): b001-b058.
-  Translated, check OK, NOT reviewed, NOT merged: b059-b070, b072-b076. b071 fails check only on 7 EDMES epithets
-  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b059-b060 ... b075-b076), regenerated
+- **Batch state (session 11, 2026-11-10):** merged + reviewed (+ fixes): b001-b068.
+  Translated, check OK, NOT reviewed, NOT merged: b069-b070, b072-b076. b071 fails check only on 7 EDMES epithets
+  (LONG, below). Pairs files for every pending pair are in work/qa/pairs/ (b069-b070 ... b075-b076), regenerated
   session 10 after the session-9 fixes (older pairs files were stale: rerun `pairs.py bA bB` if a .out.tsv changes).
+  Session 11 fixes: Mistel/Milanor Sailor Moon parody SPMES014035:0197/01B6 ("tidy you up" / "punish you"); Dort
+  old-man voice SPMES007017:0188/01B6, SPMES021017:017B; Leon おらおら SPMES008007:0204; Yggdra SPMES034003:019D.
   Session 10 fixes: Eudy "dears" MESSAGE179:075D; Amareus MESSAGE141:0644 / MESSAGE168:06E3; Juvelon
   MESSAGE142:062C; Flunky MESSAGE169:0593. Swept b049-b076 pairs: no Eudy dear/darling left.
   Session 9 already applied to the pending .out.tsv files: every "dear" on Eudy (dropped) / Rosary (-> darling),
@@ -25,8 +27,9 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   2026-11-11 13:07); the controller reviewed pairs itself (~12k tokens per pair). With codex back,
   `sh tools/codex_review.sh bA bB` runs review + fix for one pair (reports in work/qa/review/). Per pair: read
   work/qa/pairs/bA-bB.txt, fix Critical/Important in work/tl/bN.out.tsv (Edit; `tools/setval.py` for values ending
-  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b059-b060
-  (SPMES DUEL EVENT lines from here on; ~40 KB per pair, ~6 pairs per worker context). Codex still out session 10.
+  in a space), `batches.py merge bA bB`, append Minors to docs/polish.md, check.py, commit. Next: b069-b070,
+  then b071-b072 (EDMES epithets: phase-7 engine work or temporary fit, D4), b073-b074, b075-b076; then phase 6 is
+  done (DUEL EVENT ~40 KB per pair, ~5 pairs per worker context). Codex still out session 11.
 - **Review flags still to check in review:** 戦意 = morale in system text, "will to fight" allowed in dialogue;
   敵将 foe/enemy general. Speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
 - **EDMES epithets need engine room (phase 7, D4):** the epithet run is 150 px x1 incl. the name; b071 LONG
