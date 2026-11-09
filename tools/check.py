@@ -7,4 +7,5 @@ ROOT = Path(__file__).resolve().parents[1]
 
 rc = subprocess.call([sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests")], cwd=ROOT)
 rc |= subprocess.call([sys.executable, "-X", "utf8", str(ROOT / "tools/lint.py")], cwd=ROOT)
+rc |= subprocess.call([sys.executable, "-X", "utf8", str(ROOT / "tools/batches.py"), "check"], cwd=ROOT)  # glossary, item twins
 sys.exit(rc)

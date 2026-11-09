@@ -49,7 +49,7 @@ Run `python -X utf8 tools/batches.py check <batch>` from the repo root and fix e
 - Use names and terms exactly as in the glossary (the check enforces them). Honorifics after a name stay:
   ジルヴァ様 -> Zilva-sama, エミリオ殿 -> Emilia-dono, ミラノさん -> Milanor-san (check enforces). 陛下 -> Your
   Majesty / His Majesty, 殿下 -> Your Highness, 王女/姫様 -> Princess, お兄様/兄様 -> Big Brother / brother.
-- Punctuation: 「」 -> "...", … and ・・・ -> `...`, ！？ -> `?!`, ♪ -> `~` or `!`, stretched ー -> repeated
+- Punctuation: 「」 -> "...", … and ・・・ -> `...`, ！？ / ？！ kept as the JP has them, ♪ -> `~` or `!`, stretched ー -> repeated
   letters ("Nooo!"). Laughs and roars become English sounds of similar length (glossary rulings).
 - Item names: the same item appears twice (system font +8, display font +C, `item name in FONT_ITEM`): translate
   both identically. Item "who can equip" lines are often jokes about the character: keep the joke.

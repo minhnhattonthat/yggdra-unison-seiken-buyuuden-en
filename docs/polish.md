@@ -7,14 +7,14 @@ to run while any line is unticked.
 - [ ] arm9:90B58/90DB0/90FCC - 帝国兵法書 天/地/人ノ巻: "Man" beside Heaven/Earth reads odd (Humanity?)
 - [ ] arm9:91398 - 殺意の仮面 "Malice" is weak: Mask of Bloodlust
 - [ ] arm9:91278 - 凶刃ベルセルク: "Cruel" soft: Berserk, the Bloody Blade
-- [ ] arm9:904FC vs 91050 - 巨獣ロコン / 幻獣ヤーデ both "Beast": distinguish (Giant Beast / Phantom Beast)
+- [x] arm9:904FC vs 91050 - 巨獣ロコン / 幻獣ヤーデ both "Beast": fixed (phase 6 review): Giant Rokon / Phantom Yade, twins unified
 - [ ] arm9:9046C - 命のミサンガ: Life Bracelet?
 - [ ] arm9:90414 - アラン人形: is Alan Kylier's griffon Al? check description
 - [ ] arm9:90CB4/91248 - 映見の手鏡 "Scrying Hand Mirror": check description
 - [ ] arm9:91374 - ゲテモノOKな人: "Anyone OK with weird food"
 - [ ] arm9:90CF0/90D98 - 上級勲章 "High Medal": Senior Medal? check medal ranks
 - [ ] arm9:90960/91332 - 名馬ワードナ: Werdna the Fine Steed
-- [ ] arm9:90D80/90DD4 - 珍園 / 神園マセラマティ coinages Oddgarden / Godgarden: ok if no Atlus name
+- [x] arm9:90D80/90DD4 - 珍園 / 神園マセラマティ coinages Oddgarden / Godgarden: kept, glossary rows, twins unified
 - [ ] arm9:91194 - glued "." after card name: confirm in-game (phase 8)
 
 ## b001-b002 (system, approved)
@@ -22,7 +22,7 @@ to run while any line is unticked.
 - [ ] arm9:8FC5C - アラン人形 "Alan Doll": Al (Kylier's griffon)? check description
 - [ ] arm9:8FC2C - チカラダケ "Power Shroom": Power Mushroom
 - [ ] arm9:8FC44/8FC64 - どくまむし "Pit Viper": Venom Viper
-- [ ] arm9:8FD84 - 豪槍一本鬼: One-Horned Oni Spear
+- [x] arm9:8FD84 - 豪槍一本鬼: fixed: One-Horned Oni Lance (both twins)
 - [ ] arm9:90214 - 凶刃ベルセルク (match 91278 fix)
 - [ ] arm9:8FD9C - Imperial Soldier's Armor
 - [ ] arm9:902D4/90344 - White Goat's Milk / Cheese
@@ -38,7 +38,7 @@ to run while any line is unticked.
 - [ ] MESSAGE031:0640 Russell - アンタ: Nice skills, pal!
 - [ ] MESSAGE031:0675 Luciana - てやろう: I'll deign to be your\nopponent!
 - [ ] MESSAGE028:0649 Inzaghi - "ticked off" mild: pissed off
-- [ ] "dear" on Eudy 025:0644 and soldiers 027:07F6 / 027:080A: drop (Mistel/Amareus only)
+- [x] fixed (phase 6 review): "dear" on Eudy 025:0644 and soldiers 027:07F6 / 027:080A: drop (Mistel/Amareus only)
 - [ ] MESSAGE024:0656 Juvelon - Th-this is abuse,\nI say!?
 
 ## b019-b020 (approved; ids are offsets inside b019-b020, look up with grep)
@@ -55,7 +55,7 @@ to run while any line is unticked.
 - [ ] 04B2 Kylier - ?! vs !? consistency
 - [ ] 05B8 Juvelon - G-God above!
 - [ ] 04F8 Luciana - Splendid...\nwork, truly.
-- [ ] 0696 Leon - 俺様: The great me... losing...!
+- [x] 0696 Leon - 俺様: fixed (phase 6 review, with the other 10 俺様 lines)
 - [ ] 0590 Flunky - 姐さん: Big Sis
 
 ## b005-b012 (system/help/tutorial/start barks, approved; reviewed by the controller, codex quota out)
@@ -64,20 +64,17 @@ to run while any line is unticked.
 - [ ] TUTO00_03:0099 - 『ファンタジニア王国』 shortened to 'Fantasinia' (fit?)
 - [ ] TUTO01_06:00B5 - "But only up to bases / held + 1 units." awkward
 - [ ] TUTO01_15:00DF - JP says 探索 at the end of the points page (game's slip): keep or say "points"
-- [ ] MESSAGE001:02D5 Juvelon - "ain't ... I tell ye" too thuggish for a cardinal: "Our fight is not over yet, I say!"
+- [x] fixed (phase 6 review): MESSAGE001:02D5 Juvelon - "ain't ... I tell ye" too thuggish for a cardinal: "Our fight is not over yet, I say!"
 - [ ] ov9_06:3ED8 - "Rare" lacks the colon "For:" has (Rare: is 33 px > 32): move the value x (phase 7 to-do)
 
 ## b033-b034 (cannon/barricade barks, approved after "dear" fix)
 
 ## b035-b036 (retreat/village barks, approved; controller review)
 - [ ] MESSAGE115:0614 Zilva - 勝負あったな "It's decided": It's over... Elena.
-- [ ] MESSAGE108:0646 Juvelon - "I'm outta here" slangy for a cardinal: I'm fleeing for now!
+- [x] fixed (phase 6 review): MESSAGE108:0646 Juvelon - "I'm outta here" slangy for a cardinal: I'm fleeing for now!
 
 ## b037-b040 (capture/prisoner barks, approved; controller review)
-- [ ] MESSAGE132:0603 Juvelon - わしゃ…嫌じゃあ old-man voice flat: I don't want to die, I say!
-
-## b041-b042 (recruit/release barks, approved; Amareus/Juvelon lines fixed in review)
-- [ ] MESSAGE141:051F Leon - 100年早え idiom literal: You're a hundred years too early, trash!
+- [x] fixed (phase 6 review): MESSAGE132:0603 Juvelon - わしゃ…嫌じゃあ old-man voice flat: I don't want to die, I say!
 
 ## b041-b042 (recruit/release barks, approved; Amareus/Juvelon lines fixed in review)
 - [ ] MESSAGE141:051F Leon - 100年早え idiom literal: You're a hundred years too early, trash!
@@ -99,7 +96,7 @@ to run while any line is unticked.
 - [ ] MESSAGE201:078E Juvelon - no end punctuation: ...a path to the left, eh.
 
 ## b055-b056 (loot-box picks, conquest lines, first DUEL EVENTs; approved; controller review)
-- [ ] MESSAGE210:0641 / MESSAGE212:0616 Ortega - lines carry Dort's ぞい / 盗賊稼業 (known Ortega/Dort tag swap): voice is neutral enough; recheck on screen
+- [x] MESSAGE210:0641 / MESSAGE212:0616 Ortega - waived: no swap. MESSAGE210-219 put one line per leader in the same order; line 1 always carries ほっほー/ぞぉ (Ortega), line 2 のう/じゃ/かのう (Dort); ぞい is used by both, so tags and voices are consistent
 
 ## b057-b058 (DUEL EVENT lines Russell..Yggdra, approved; controller review)
 - (no Minors)
@@ -118,10 +115,10 @@ to run while any line is unticked.
 - [ ] SPMES020004:0140 Cruz - JP names Aegina but the duel file is Luciana's (game text?): check on screen
 
 ## b067-b068 (DUEL EVENT lines Luciana..Gulcasa, approved; controller review)
-- [ ] SPMES030036:01EF / 020D Nessiah - ユミラ "Yumira" / ユメール人 "Yumeru": unverified romanisation, check against Atlus lore names
+- [x] SPMES030036:01EF / 020D Nessiah - ユミラ "Yumira" / ユメール人 "Yumeru": kept (no Atlus name found), glossary rows
 
 ## b069-b070 (DUEL EVENT lines Gulcasa..Nessiah, approved; Luciana addressee + Nessiah taunt fixed in review)
-- [ ] SPMES034036:0160 Nessiah - フフフ dropped (room): add "Heh heh..." if the box allows
+- [x] SPMES034036:0160 Nessiah - フフフ restored: Still alive? How surprising, / Flame Emperor. Heh heh...
 
 ## b071-b072 (APP/TRE/WR system lines, EDMES00-13; approved; epithet run widened to 186 px, controller review)
 - [ ] EDMES00:00EA Russell - 悲運 shipped as "Tragic" (Ill-Fated was 196 px): fine unless the ED_H texture wording differs
@@ -130,5 +127,5 @@ to run while any line is unticked.
 ## b073-b076 (EDMES13-37 epithets + epilogues; approved; cut ranks restored at 186 px, controller review)
 - [ ] EDMES25:038A Roswell - 黒薔薇にその人在り "The Black Rose has its man" awkward: "Black Rose has its great man"
 - [ ] EDMES25:00E2 / EDMES28:00DB - 大賢者/大魔導師 shipped Sage / Magus (Archsage/Archmage 189 px > 186): recheck if the budget is ever measured to 190
-- [ ] EDMES30:00B7-00E5 Pamela - ビッグオブ/グレートオブ broken-English joke flattened (Big Mage / Great Mage): consider "Big of Mages"
-- [ ] EDMES26:00D8 / EDMES20:009C / EDMES18:00A7 - translator unsure (流神 Evangelist, ぶち Hothead, 卑屈姫 Sulky): check lore
+- [x] EDMES30:00B7-00E5 Pamela - fixed: Big of Mages / Great of Mages Pamela (ED_H/ED_N textures must match)
+- [x] EDMES26:00D8 / EDMES20:009C / EDMES18:00A7 - 流神 Evangelist, ぶち Hothead, 卑屈姫 Sulky Princess: kept, in glossary

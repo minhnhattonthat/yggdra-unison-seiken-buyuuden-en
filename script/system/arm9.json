@@ -1466,7 +1466,7 @@
    "id": "arm9:8FD84",
    "font": "item",
    "jp": "豪槍一本鬼",
-   "en": "Great Spear One-Horn",
+   "en": "One-Horned Oni Lance",
    "max": 8,
    "ptrs": [
     "arm9:100CF4"
@@ -3009,7 +3009,7 @@
    "id": "arm9:90254",
    "font": "sys",
    "jp": "ひらひらリボン",
-   "en": "Fluttery Ribbon",
+   "en": "Frilly Ribbon",
    "max": 8,
    "ptrs": [
     "arm9:101578"
@@ -3859,7 +3859,7 @@
    "id": "arm9:904FC",
    "font": "item",
    "jp": "巨獣ロコンの骨",
-   "en": "Bone of the Beast Rokon",
+   "en": "Bone of Giant Rokon",
    "max": 8,
    "ptrs": [
     "arm9:100A3C"
@@ -4379,7 +4379,7 @@
    "id": "arm9:9072C",
    "font": "item",
    "jp": "風ヲ切裂ク蒼ノ爪",
-   "en": "Wind-Rending Azure Claw",
+   "en": "Wind-Rending Blue Claw",
    "max": 12,
    "ptrs": [
     "arm9:1008EC"
@@ -4509,7 +4509,7 @@
    "id": "arm9:907C8",
    "font": "item",
    "jp": "魔槍ブラシェンド",
-   "en": "Demon Spear Brachend",
+   "en": "Demon Lance Brachend",
    "max": 12,
    "ptrs": [
     "arm9:1017BC"
@@ -4929,7 +4929,7 @@
    "id": "arm9:909C0",
    "font": "item",
    "jp": "悲槍シルヴィア",
-   "en": "Grief Spear Sylvia",
+   "en": "Sorrow Lance Sylvia",
    "max": 12,
    "ptrs": [
     "arm9:10154C"
@@ -5699,7 +5699,7 @@
    "id": "arm9:90D5C",
    "font": "item",
    "jp": "血濡れのレイピア",
-   "en": "Bloodsoaked Rapier",
+   "en": "Bloodstained Rapier",
    "max": 12,
    "ptrs": [
     "arm9:10115C"
@@ -6099,7 +6099,7 @@
    "id": "arm9:90F3C",
    "font": "item",
    "jp": "ド派手なターバン",
-   "en": "Gaudy Turban",
+   "en": "Super-Gaudy Turban",
    "max": 12,
    "ptrs": [
     "arm9:1012C4"
@@ -6329,7 +6329,7 @@
    "id": "arm9:91050",
    "font": "item",
    "jp": "幻獣ヤーデのツノ",
-   "en": "Horn of the Beast Yade",
+   "en": "Horn of Phantom Yade",
    "max": 12,
    "ptrs": [
     "arm9:100CC4"
@@ -6799,7 +6799,7 @@
    "id": "arm9:91284",
    "font": "item",
    "jp": "真っ白な珍しい蝶",
-   "en": "Rare All-White Butterfly",
+   "en": "Rare Pure-White Butterfly",
    "max": 12,
    "ptrs": [
     "arm9:1017D4"
@@ -7969,7 +7969,7 @@
    "id": "arm9:91800",
    "font": "sys",
    "jp": "悲槍シルヴィア",
-   "en": "Sylvia, Lance of Sorrow",
+   "en": "Sorrow Lance Sylvia",
    "max": 12,
    "ptrs": [
     "arm9:101548"
@@ -8189,7 +8189,7 @@
    "id": "arm9:91908",
    "font": "sys",
    "jp": "巨獣ロコンの骨",
-   "en": "Bone of Giant Rocon",
+   "en": "Bone of Giant Rokon",
    "max": 12,
    "ptrs": [
     "arm9:100A38"
@@ -8259,7 +8259,7 @@
    "id": "arm9:9195C",
    "font": "sys",
    "jp": "幻獣ヤーデのツノ",
-   "en": "Horn of Mythic Yade",
+   "en": "Horn of Phantom Yade",
    "max": 12,
    "ptrs": [
     "arm9:100CC0"
@@ -8279,7 +8279,7 @@
    "id": "arm9:91974",
    "font": "sys",
    "jp": "豪槍一本鬼",
-   "en": "Great Spear Lone Ogre",
+   "en": "One-Horned Oni Lance",
    "max": 12,
    "ptrs": [
     "arm9:100CF0"
@@ -8440,7 +8440,7 @@
    "id": "arm9:91A34",
    "font": "sys",
    "jp": "珍園マセラマティ",
-   "en": "Odd-Garden Maseramati",
+   "en": "Oddgarden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:101170"
@@ -8490,7 +8490,7 @@
    "id": "arm9:91A70",
    "font": "sys",
    "jp": "神園マセラマティ",
-   "en": "Holy-Garden Maseramati",
+   "en": "Godgarden Maseramati",
    "max": 12,
    "ptrs": [
     "arm9:100F78"

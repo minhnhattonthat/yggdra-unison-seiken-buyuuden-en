@@ -211,6 +211,19 @@ def index():
     return {e["id"]: e for _, _, entries in docs() for e in entries}
 
 
+def item_twins(entries):
+    """Each item record (arm9 0x100640, 225 x 0x18) names the item at +8 (system font) and +C (FONT_ITEM):
+    both must carry the same English, or one item shows two names (docs/re/text.md)."""
+    by_ptr = {p: e for e in entries.values() for p in e.get("ptrs", [])}
+    out = []
+    for i in range(225):
+        rec = 0x100640 + i * 0x18
+        a, b = by_ptr.get(f"arm9:{rec + 8:X}"), by_ptr.get(f"arm9:{rec + 0xC:X}")
+        if a and b and a.get("en") != b.get("en"):
+            out.append(f"{a['id']} / {b['id']}: item name twins differ: {a.get('en')!r} / {b.get('en')!r}")
+    return out
+
+
 def read_tsv(path):
     return [line.split("\t") for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
@@ -372,6 +385,7 @@ def main(argv):
     entries, terms = index(), glossary()
     if cmd == "check" and not names:
         bad = [f"{i}: {p}: {e['en']!r}" for i, e in entries.items() if e.get("en") for p in problems(e, e["en"], terms)]
+        bad += item_twins(entries)
         print(f"{len(entries)} entries, {len(bad)} problems")
         print("\n".join(bad[:200]))
         return 1 if bad else 0

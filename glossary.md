@@ -17,7 +17,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   "Kekekeh!", フフフ -> "Heh heh heh..." (or "Hmhmhm..." for a lady), ガハハハ -> "Gwahahaha!".
 
 ## Style rules
-- Punctuation: 「」 -> "...", 『』 -> '...', … / ・・・ -> ..., ！？ / !? -> ?!, ー (stretched vowel) -> repeated letter,
+- Punctuation: 「」 -> "...", 『』 -> '...', … / ・・・ -> ..., keep !? / ?! as the JP has it, ー (stretched vowel) -> repeated letter,
   ～ -> ~ (allowed: the font has ~), full-width space -> one space. No [ ] < > (no glyphs).
 - Box sizes are tight (dialogue bubble 142 px x 2 lines, about 22-26 letters a line). Fit by rephrasing, never by
   cutting meaning or abbreviating. Use `tools/batches.py wrap ID "text"` to break lines.
@@ -163,6 +163,15 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 教皇 | Pope | | Juvelon epithets | |
 | 枢機卿 | Cardinal | | Juvelon | |
 | 魔導師 | Mage | | Pamela, Rosary (大魔導師 Magus in the White Rose epithet) | |
+| 流神 | Evangelist | | 流神の聖者 Evangelist Mardym (EDMES26 coinage, no Atlus name) | |
+| 卑屈姫 | Sulky Princess | | Emilia epithet (EDMES18) | |
+| ユミラ | Yumira | | Nessiah, SPMES030036 (Hepburn, no Atlus name found) | |
+| ユメール | Yumeru | | ユメール人 "a Yumeru" (SPMES030036) | |
+| 珍園 | Oddgarden | | 珍園マセラマティ item (both twins) | |
+| 神園 | Godgarden | | 神園マセラマティ item (both twins) | |
+| ロコン | Rokon | | 巨獣ロコンの骨 Bone of Giant Rokon | Rocon |
+| ヤーデ | Yade | | 幻獣ヤーデのツノ Horn of Phantom Yade | |
+| 一本鬼 | One-Horned Oni | | 豪槍一本鬼 One-Horned Oni Lance | |
 | 賞金稼ぎ | Bounty Hunter | | Mizer | |
 
 ## Cards (A7E44; card names are also CARDNAME textures)
@@ -222,6 +231,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   Mamorigami unit); オレ様 = Inzaghi's boastful "me" (the great me), never a name + -sama.
 - b025-b032: 姐さん (Flunky) Sis; 砲台 cannon (capture-point cannon); アンク Ankh (Verlaine's Ankhs, Yggdra
   Union); 山賊 brigands (Ortega's), 盗賊 bandits (Dort's) / thieves (Milanor's).
+- Phase 6 review fixes: weapon 槍 = Lance in item names too (魔槍 Demon Lance, 悲槍 Sorrow Lance, story "lance");
+  ぶちクルス epithet = Hothead Cruz (EDMES20; ぶち elsewhere is the verb prefix, so no table row);
+  ビッグオブ / グレートオブ / キングオブ / ゴッドオブ魔導師 = Big of / Great of / King of / God of Mages (broken-English
+  gag kept).
 - b005-b008 (help/system): 作戦カード strategy card; 攻撃兵器 siege weapon; 戦意 morale; 集落 village; 都市 city;
   鑑定所 Appraiser; 本拠地 home base; 攻撃拠点 attack base; 拠点 base; 出撃 deploy (出撃ボタン Sortie button);
   褒賞 reward; 戦功値 merit; 密偵 spies; 勢力 faction; 火炎/冷気/雷撃/暗黒/神聖 Fire/Ice/Lightning/Dark/Holy;
