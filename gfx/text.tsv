@@ -1363,3 +1363,167 @@ PRIZE_FONT	Reward	size=12 box=38,0,32,16
 PRIZE_FONT	Rewarded!	size=10 box=72,0,42,12
 PRIZE_FONT	Equip Bonus	size=10 box=0,19,57,11
 PRIZE_FONT	No Bonus	size=10 box=59,19,58,11
+# Title logo (D5: "Yggdra Unison" kept): katakana ruby cleared, subtitle ～聖剣武勇伝～ on the ribbon replaced
+TIT_LOGO	 	box=40,4,182,23
+TIT_LOGO	~ Legend of the Holy Sword ~	font=serif-b size=11 wide=0 clear=row fill=32,24,16 outline=230,230,230 box=76,83,132,14
+# SAVE_BG0 (save/load top screen, half-size logo over art): ruby and the 6-px subtitle blended out (clear=vert)
+SAVE_BG0	 	clear=vert box=33,70,82,11
+SAVE_BG0	 	clear=vert box=54,105,46,6
+# Session 19 atlases: none drawn on a warp scene (quads), boxes = ink rects read off zoomed grids, snapped to the
+# bright ink + 1 px outline. ★ ー ○ △ × digits, English words and icons are left as they are.
+# TR_FONT (explore report / medallion popups): Get (No) Item! already English
+#! TR_FONT font=serif-b wide=0
+TR_FONT	Medallion Supply	box=0,31,125,19
+TR_FONT	Exploration Report	box=0,52,74,19
+TR_FONT	Rarity	font=sans-b box=76,53,31,12
+# TUKOKU_FONT (territory expansion / dismissal): NEW kept
+#! TUKOKU_FONT font=serif-b wide=0
+TUKOKU_FONT	Expansion	align=l box=0,0,73,19
+TUKOKU_FONT	Dismissal	box=38,18,80,15
+TUKOKU_FONT	Dismissal	align=l box=0,34,93,19
+# CDSKILLFNT0/1 (card skill / appraisal banners): the English second lines are original
+CDSKILLFNT0	Card Skill Activated	font=serif-b wide=0 align=l box=15,0,141,19
+CDSKILLFNT1	Card Appraisal	font=serif-b wide=0 align=l box=15,0,89,19
+# ENETREFONT (prisoner treatment): tilted brush 新戦力 / 拒否! / 追放! drawn straight, two lines where tall
+#! ENETREFONT font=serif-b wide=0
+ENETREFONT	New\nRecruit!	box=17,1,95,61
+ENETREFONT	Refused!	box=19,66,74,56
+ENETREFONT	Banished!	box=1,124,75,56
+ENETREFONT	Prisoners	font=sans-b box=0,180,73,19
+# TREFONT (explore prep / explore map): terrain words as BTLFONT, elements Fire Ice Bolt Dark Holy (20-px cells)
+#! TREFONT font=sans-b wide=0
+TREFONT	Explore	font=serif-b box=0,0,40,18
+TREFONT	Explorable Land	box=40,0,77,15
+TREFONT	Base	box=118,0,24,14
+TREFONT	Waste	box=140,0,22,14
+TREFONT	Desert	box=162,1,22,13
+TREFONT	Peaks	box=184,0,24,14
+TREFONT	Fort	box=208,0,36,14
+TREFONT	Front	size=9 min_x=0.5 box=0,16,16,16
+TREFONT	Rear	size=9 min_x=0.5 box=17,16,16,16
+TREFONT	Left	box=33,19,16,13
+TREFONT	Right	size=9 min_x=0.5 box=49,16,15,16
+TREFONT	Forest	box=90,16,23,13
+TREFONT	Water	box=113,16,24,13
+TREFONT	Plain	box=136,16,24,13
+TREFONT	Swamp	box=160,16,24,13
+TREFONT	Road	box=184,16,22,13
+TREFONT	Town	box=206,16,31,13
+TREFONT	Exploration Prep	font=serif-b box=91,33,80,16
+TREFONT	Fire	box=171,32,24,15
+TREFONT	Ice	box=195,32,23,12
+TREFONT	Bolt	box=218,32,23,15
+TREFONT	Save and End Exploring	box=6,50,121,15
+TREFONT	Dark	box=128,51,24,14
+TREFONT	Holy	box=154,50,26,14
+TREFONT	Neutral Land	box=181,47,48,16
+TREFONT	Left	box=232,47,21,16
+TREFONT	End Without Saving	box=0,65,131,16
+TREFONT	Terrain	box=132,66,30,14
+TREFONT	Element	box=166,66,32,14
+TREFONT	Turns	box=203,61,33,10
+TREFONT	OK	box=236,61,17,11
+TREFONT	Continue Exploring	box=36,84,80,15
+TREFONT	steps	size=9 min_x=0.5 box=115,84,15,14
+TREFONT	Distance	box=132,84,30,12
+TREFONT	Return	box=166,84,32,12
+TREFONT	Here	box=200,85,40,12
+TREFONT	Stop This Unit Exploring	box=0,99,146,16
+TREFONT	Exploring	font=serif-b box=146,97,56,19
+TREFONT	Selected	box=200,97,42,11
+TREFONT	Dispatched	box=200,108,42,13
+# BTLMN_FONT (battle pause menu, unit info / affinity pages, duel data): weapon headers are 16-px cells
+#! BTLMN_FONT font=sans-b wide=0
+BTLMN_FONT	Resume	box=37,0,77,15
+BTLMN_FONT	Back to Title	box=114,0,99,14
+BTLMN_FONT	Fencer	box=216,0,37,12
+BTLMN_FONT	Unit Info	box=0,16,86,15
+BTLMN_FONT	Retry	box=87,16,49,14
+BTLMN_FONT	Weapon Affinity	box=137,16,63,16
+BTLMN_FONT	Valkyrie	box=213,17,43,12
+BTLMN_FONT	Unit Info	box=0,36,70,14
+BTLMN_FONT	Terrain Affinity	box=72,33,64,16
+BTLMN_FONT	Weapon/Element	box=137,32,71,16
+BTLMN_FONT	Knight	box=210,30,20,11
+BTLMN_FONT	Undine	box=210,42,43,11
+BTLMN_FONT	~Terrain Affinity~	box=0,54,79,15
+BTLMN_FONT	Terrain Affinity	box=80,55,54,12
+BTLMN_FONT	Necromancer	box=134,56,52,12
+BTLMN_FONT	Assassin	box=186,56,32,12
+BTLMN_FONT	Bandit	box=218,56,38,12
+BTLMN_FONT	Skeleton	box=142,68,42,12
+BTLMN_FONT	Witch	box=184,68,28,12
+BTLMN_FONT	Griffon Rider	box=212,68,44,12
+BTLMN_FONT	Terrain	box=23,84,25,14
+BTLMN_FONT	Terrain	box=59,84,27,14
+BTLMN_FONT	Dragoon	box=164,80,42,12
+BTLMN_FONT	Golem	box=206,80,27,12
+BTLMN_FONT	Hunter	box=233,80,23,12
+BTLMN_FONT	The Ancient	box=150,92,62,10
+BTLMN_FONT	Tactician	box=212,92,44,10
+BTLMN_FONT	Weapon Affinity	box=1,99,61,14
+BTLMN_FONT	~Weapon/Element~	box=62,98,64,15
+BTLMN_FONT	Weapon Type	box=128,100,52,12
+BTLMN_FONT	Weapon/Element	box=180,100,58,12
+BTLMN_FONT	Sword	size=9 min_x=0.5 box=0,127,16,16
+BTLMN_FONT	Lance	size=9 min_x=0.5 box=16,127,15,16
+BTLMN_FONT	Axe	size=9 min_x=0.5 box=32,127,16,16
+BTLMN_FONT	Bow	size=9 min_x=0.5 box=48,127,15,16
+BTLMN_FONT	Staff	size=9 min_x=0.5 box=64,127,16,16
+BTLMN_FONT	Rock	size=9 min_x=0.5 box=81,127,15,16
+BTLMN_FONT	Scythe	size=9 min_x=0.5 box=96,127,16,16
+BTLMN_FONT	Book	size=9 min_x=0.5 box=112,127,16,16
+BTLMN_FONT	Uses	box=208,127,42,16
+BTLMN_FONT	Duel Data	font=serif-b box=172,112,84,15
+BTLMN_FONT	Duel Data	box=1,144,78,12
+BTLMN_FONT	~ Each Nation's Record in This War ~	box=80,144,155,12
+# SYSTEX (battle unit info / status, card panel, army names on the battle HUD: 王国軍 seen at the top left)
+#! SYSTEX font=sans-b wide=0
+SYSTEX	Special	box=147,20,21,11
+SYSTEX	Equip	box=169,19,27,12
+SYSTEX	Empire	box=196,19,33,15
+SYSTEX	Thieves	box=166,32,44,15
+SYSTEX	Check Forces	font=serif-b box=0,47,64,16
+SYSTEX	Unit Info	font=serif-b box=66,41,80,16
+SYSTEX	Terrain	box=146,41,26,14
+SYSTEX	Bandits	box=172,42,37,15
+SYSTEX	Speed	box=146,54,26,14
+SYSTEX	Brigands	box=172,56,37,15
+SYSTEX	???	box=74,57,20,12
+SYSTEX	Move Type	box=95,56,47,12
+SYSTEX	Theocracy Army	box=155,65,46,13
+SYSTEX	Trigger Timing	box=0,64,66,11
+SYSTEX	Immune	box=73,68,40,11
+SYSTEX	Weakness	box=114,69,42,11
+SYSTEX	Condition	box=0,76,46,11
+SYSTEX	Effect	box=48,76,24,12
+SYSTEX	Dragoon	box=75,79,47,10
+SYSTEX	Tactician	box=122,79,55,10
+SYSTEX	Forest Army	box=179,78,38,11
+SYSTEX	Black Rose Army	box=0,88,54,12
+SYSTEX	The Ancient	box=73,88,74,11
+SYSTEX	Temple Knights	box=148,88,55,12
+SYSTEX	White Rose Army	box=80,99,52,12
+SYSTEX	Embellian Army	box=133,99,44,12
+SYSTEX	Nessiah's Army	box=177,100,46,11
+SYSTEX	Royal Army	box=82,111,40,11
+SYSTEX	Holy	box=123,111,20,10
+SYSTEX	Bolt	box=143,111,21,10
+SYSTEX	Ice	box=164,111,21,10
+SYSTEX	Dark	box=185,111,20,10
+SYSTEX	Fire	box=205,111,19,10
+SYSTEX	Fencer	box=0,121,44,10
+SYSTEX	Hunter	box=45,121,36,10
+SYSTEX	HP Regen	box=89,122,32,11
+SYSTEX	HP Loss	box=123,123,33,10
+SYSTEX	Valkyrie	box=0,133,56,9
+SYSTEX	Assassin	box=56,132,32,12
+SYSTEX	Witch	box=89,133,32,10
+SYSTEX	Time	box=204,133,30,10
+SYSTEX	Knight	box=0,142,25,9
+SYSTEX	Necromancer	box=26,142,60,10
+SYSTEX	Golem	box=86,142,38,9
+SYSTEX	Undine	box=0,152,62,11
+SYSTEX	Bandit	box=62,152,41,11
+SYSTEX	Skeleton	box=104,152,47,11
+SYSTEX	Griffon Rider	box=151,149,54,10

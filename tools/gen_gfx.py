@@ -9,7 +9,9 @@ PREFIX (a row's own options win). Options (space separated, key=value):
   align=c       l / c / r inside the box;  wide=N  how far the text may spread past the box (default: to the edge)
   maxw=N        widest the text may be, px (the part of the texture the screen shows; overrides wide)
   stroke=1      outline px;  min_x=0.7  narrowest horizontal squeeze before the size shrinks
-  clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency
+  fill=r,g,b    text colour (default below);  outline=r,g,b  outline colour
+  clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency;
+                clear=vert  blend each column between the rows above and below the box (text over art)
 Colours come from the original: fill = per-row brightest opaque colour in the box (keeps gradients), outline =
 the darkest common opaque colour. Alpha is binary (4x4 textures have no partial alpha).
 
@@ -101,6 +103,10 @@ def draw(a, text, o):
     x, y, w, h = box
     H, W = a.shape[:2]
     outline, fill = colours(a, box)
+    if "fill" in o:  # explicit r,g,b (dark text on a light panel, where the brightest colour is the panel)
+        fill = np.array([list(map(int, o["fill"].split(",")))] * h)
+    if "outline" in o:
+        outline = np.array(list(map(int, o["outline"].split(","))))
     wide = int(o["wide"]) if "wide" in o else None
     align = o.get("align", "c")
     if "maxw" in o:
@@ -128,6 +134,9 @@ def draw(a, text, o):
     outer, inner = (np.array(im.resize((nw, ch), Image.LANCZOS)) / 255.0 for im in (outer, inner))
     if o.get("clear") == "row":  # text on a panel: repaint each row with the panel colour left of the box
         a[y:y + h, x:x + w] = a[y:y + h, x - 1:x]
+    elif o.get("clear") == "vert":  # text on art: blend each column from the row above the box to the row below
+        t = (np.arange(1, h + 1) / (h + 1))[:, None, None]
+        a[y:y + h, x:x + w] = np.round(a[y - 1, x:x + w] * (1 - t) + a[y + h, x:x + w] * t)
     else:
         a[y:y + h, x:x + w] = 0
     if align == "c":

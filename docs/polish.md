@@ -140,3 +140,9 @@ to run while any line is unticked.
 - [ ] SEN_FONT 戦 / 撃 / 斬 cells (13-14 px, 戦績 page "0戦 0撃 0斬") are "Btl" / "KO" / "Kill": abbreviations; widen the cells (page code) or reword
 - [ ] SAVE_FONT "Theocracy of Meria" squeezed to 0.52 in its 53-px ink rect: see the save slot on screen, widen if the game rect allows
 - [ ] BTLFONT terrain / move-type / speed cells squeezed 0.53-0.8 (20 px): see the battle HUD, consider a narrow pixel font
+- [ ] BTLMN_FONT weapon headers (Sword .. Book, 16-px cells) and TREFONT 前後左右 / 歩 (Front Rear Left Right, "steps")
+  squeezed 0.5-0.6 at 9 px; 雷撃 = "Bolt" in the 20-px element cells (SYSTEX, TREFONT): see on screen, reword or a pixel font
+- [ ] SYSTEX army names on the battle HUD at 8 px (Royal Army, Forest Army ..), 帝国軍 = "Empire" (33-px cell); 不明 = "???";
+  a 2-px mark above "Royal Army" on the HUD (the game's rect starts a row into the White Rose cell: move that label up)
+- [ ] Session 19 atlases (TR_FONT, TUKOKU_FONT, CDSKILLFNT0/1, ENETREFONT, TREFONT, BTLMN_FONT, SYSTEX): boxes are ink
+  rects, none seen drawn: check each on screen (ENETREFONT brush text is drawn straight now, not tilted)

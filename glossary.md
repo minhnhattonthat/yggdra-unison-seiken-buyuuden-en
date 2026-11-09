@@ -253,6 +253,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   (配下/領主称号 Unit/Lord Titles); 残存戦力 Strength; terrain 街区 Town 街道 Road 荒野 Waste 砂漠 Desert 城砦 Fort
   森林 Forest 水辺 Water 草原 Plain 毒沼 Swamp 山岳 Peaks; speeds 激遅 Crawl 遅い Slow 普通 Normal 速い Fast; move
   types 騎馬 Horse 哨戒 Scout 水棲 Swim 鈍足 Heavy 飛行 Fly 歩行 Foot 夜襲 Night 竜騎 Dragon (20-px cells).
+  Session 19: 武器相性 Weapon Affinity; 地形相性 Terrain Affinity; 武器・属性 Weapon/Element; 無効属性 Immune; 弱点属性
+  Weakness; 発動タイミング Trigger Timing; 発動条件 Condition; 雷撃 Bolt (atlas cells; Lightning in text); weapons 剣槍斧弓杖塊鎌書
+  Sword Lance Axe Bow Staff Rock Scythe Book; 新戦力 New Recruit!; 拒否 Refused!; 追放 Banished!; 捕虜処遇 Prisoners;
+  無属領土 Neutral Land; 探索可能領地 Explorable Land; 派遣中 Dispatched; HUD army names 帝国軍 Empire, 王国軍 Royal Army.
   ▲/▼ dropped, the sign carries it (ATK+2, DEF-1). Composite: "Attack base: " + n + " more can deploy!";
   unit + " will explore."; "This item is held by (" + unit + ")\nso it can't be selected."; unit + " has\njoined
   your forces!".

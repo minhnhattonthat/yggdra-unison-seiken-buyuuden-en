@@ -4,6 +4,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 8 progress (session 19):** gfx/text.tsv gained the last UI atlases: TR_FONT (Medallion Supply, Exploration
+  Report, Rarity), TUKOKU_FONT (Expansion, Dismissal x2), CDSKILLFNT0/1 (Card Skill Activated / Card Appraisal),
+  ENETREFONT (prisoner: New Recruit! / Refused! / Banished! drawn straight, Prisoners = the 捕虜処遇 band), TREFONT
+  (explore prep + map, 41 labels), BTLMN_FONT (battle pause menu, affinity pages, duel data, 42), SYSTEX (unit info /
+  card panel / HUD army names / classes / elements, 48). SYSTEX2 is art. None drawn on a warp scene (quads.lua), so
+  boxes are ink rects read off zoomed grids and snapped to ink + 1 px; the 王国軍 on the battle HUD top-left is SYSTEX
+  drawn by another path (not in the quads log). Squeezes flagged in docs/polish.md "Phase 8". UI atlases are now all
+  in text.tsv. Title logo: TIT_LOGO ruby cleared, subtitle "~ Legend of the Holy Sword ~" (dark on the ribbon: new
+  gen_gfx `fill=r,g,b` / `outline=r,g,b`); SAVE_BG0 ruby + 6-px subtitle blended out (new `clear=vert`: text over
+  art). Seen English on screen: title subtitle (work/qa/s19_title.png), battle HUD "Royal Army" (work/qa/s19_hud.png;
+  a 2-px mark above its R = the 白薔薇軍 cell's bottom row inside the game's rect: polish). Build 2026-11-10 sha1
+  d229fa1a (smoke ok, check.py green); work/states are from build 038ac7cc (differs only in SYSTEX): regen first.
+  **Next:** see on screen: battle HUD army name (work/states/battle.dst top screen), battle pause menu (BTLMN: find the
+  MENU tap), explore map (TREFONT: from explore.dst), prisoner result (ENETREFONT), SAVE slot names, 戦績 page, title
+  logo subtitle (TU_T01_00 and `_unk` logo variants still Japanese); then `_unk` PACKs (war-event titles/paragraphs, credit line: needs hash keys in
+  build.rebuild_sfs), TU_* (57 tutorial shots, late); then QA tour + verdicts, inkbox, textcover.
 - **Phase 8 progress (session 18):** gfx/text.tsv gained CN_N_00-36 (territory leaders on the sortie Targets panel,
   = unit epithet strings; seen Japanese there before: tap t155,65 from work/states/sortie.dst), BTLFONT (残存戦力 +
   terrain / move-type / speed cells, 20 px wide, squeezed 0.53-0.8; War Result, Terrain View, Unit Sortie!,
