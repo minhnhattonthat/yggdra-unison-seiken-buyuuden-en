@@ -3,7 +3,25 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 7. Insert, fit, check in progress (phase 6 done 2026-11-10, session 12).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase 7 done (session 13):** English insert `tools/insert.py` (script files re-laid, system strings in place or
+  relocated, empty en = original bytes, only ids in `script/keep_jp.txt`: MESSAGE000 filler + 7 symbol strings; lint
+  enforces it). `tools/romcheck.py` (also tests/test_build.py, builds its own ROM): code-image writes only at string
+  slots / pointer words / engine sites / SFS dir / module params, every pointer reads its English, no stale pointer
+  to a vacated slot, other SFS files identical, every script string = script/ (12,056 + 1,629 checked, 0 errors;
+  no control codes but {br} exist, JP/EN multisets equal). 54 ellipsis-only lines -> "..." (work/tl/fix7a).
+  SPMES_WR war-report composites (6 forms, "id|id" alternatives in lint part_texts) fit 184 x 2. Engine:
+  `lines_px` / `lines_px12` replace 0x02013274 at 7 centring callers (text.md "Per-line centring counts"): seen
+  centred in English: territory capital-taken, HINT! tip 0, confirm band, faction unlock message.
+  Item encyclopedia labels (Rare / For:) fit the x 46 value column: no code change.
+- **Next (phase 8):** graphics text (textures still Japanese: prologue scrolls OP_WR / OPK_WR / MS_PRO, scene banners,
+  faction info panel, battle HUD 王国軍 / 残存戦力, CNAME name plates, buttons 戻る / 決定, tutorial topics, レア度 in
+  the Get Item! popup, ED_H/ED_N, 戦績 BG label 称号：): references/graphics.md + docs/re/graphics.md; then the QA
+  tour, visual-QA verdicts (do them yourself, read-only pass, no subagents in an Orca worker), inkbox, textcover.
+  Phase-7 leftovers to see on screen: docs/polish.md "Phase 7".
+- **Builds session 13 (2026-11-10 ~05:55):** `build/yggdra_en.nds` sha1 f56f2adb (smoke ok, English text, 35/35
+  warps reached on this build, states regenerated from it); `build/yggdra_marker.nds` sha1 67f7db67 (states NOT
+  from it: regen before using marker states).
 - **Phase 6 done (session 12):** all 76 batches merged into script/ and reviewed (b069-b076 by the controller: codex
   out, no subagents in an Orca worker); `batches.py check` = 13723 entries, 0 problems; check.py 17 passed, lint 0
   errors. Session 12 fixes: Luciana addressee SPMES036004:01D4, Nessiah taunt SPMES036000:01DA, Kylier "!?"
@@ -18,13 +36,6 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   epithets keep "Astral Fencer" (悲運 -> Tragic); ranks cut in b073-b076 restored (Bounty Hunter Mizer, Black Rose
   King/Emperor Roswell, White Rose Queen/Empress Rosary, Fallen Angel Nessiah, Full-Time Housewife Mistel,
   "Best"/Peerless/Global/Galactic/Cosmic Mage Pamela-sama). ED_H/ED_N textures carry the same words.
-- **Next (phase 7):** the English build still shows Japanese text: `build.py` inserts script/ only in marker mode
-  (`marker.script_files` / `marker.system_images`). Write the English insert (same SFS repack + system string
-  relocation as the marker path, tools/sysreloc.py), then romdiff with the write log, control codes matched, lint
-  clean, smoke + warp sheet. Engine to-do in "Phase 7 to-do" below. SPMES_WR scout sentence fragments have no
-  composite rule in windows.json yet: add one so lint checks every combination.
-- **Builds session 12 (2026-11-10 ~05:20):** `build/yggdra_en.nds` sha1 591fc5ec (smoke ok, still Japanese text);
-  `build/yggdra_marker.nds` sha1 a3702768. States regenerated from that marker build, 35/35.
 - **Review flags for QA:** speaker tags doubted (Ortega/Dort swapped MESSAGE210-219, Emilia "ボク" MESSAGE187/192).
 - **Phase 6 history (session 11, 2026-11-10):** merged + reviewed (+ fixes): b001-b068.
   Session 11 fixes: Mistel/Milanor Sailor Moon parody SPMES014035:0197/01B6 ("tidy you up" / "punish you"); Dort
@@ -56,17 +67,11 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   docs/translator-brief.md etc. as the skill sets up; glossary.md first: official Atlus Yggdra Union names, D2).
   Translate as sets: item name +8 and its FONT_ITEM twin +C alike; SPMES_WR fragments; composites (lint checks every
   combination); EDMES epithet one-liner = ED_N/ED_H texture wording (graphics phase).
-- **Phase 7 to-do (engine/insert):**
-  - 0x02013274 per-line glyph counts x 11 centre the HINT! tips (0x02080258 / 0x020802E8) and the medallion line
-    (ov9_10 0x0211C004): make it px-based like count11 (0x02013224), else English sits left of centre.
-  - Option menu 0x0201038C centres by a stored glyph count (unlock message line 2 at x 46): centre by px.
-  - Faction conditions header count digit at fixed x 162 (ov9_18 near 0x0211EE48, an immediate): set after translation.
-  - Item encyclopedia value x 46 after レア：/装備： is hard-coded in ov9_06: move it if the English labels need more.
 - **Debug-tool gaps (add before phase 8 QA):** game over; real battle play (moves: drag + tap, unverified); specific
   MESSAGE events (`MSG=n`, untested on screen); 38 EDMES ending variants and 10 more epilogues; faction 5 has no
   start territory; explore unit-select info-band composites not seen on screen (budget = the measured band).
   `work/play/tuto` is a play.py session inside the tutorial; widthgate.sh replays it from work/states/tutorial.dst.
-- **Later phases, known work:** 4x4 texture encoder; SPMES_WR sentence fragments; alpha-format textures (QUEST,
+- **Later phases, known work:** 4x4 texture encoder; alpha-format textures (QUEST,
   PRIZE, PRISONER, *_TGA, WARRESULT) to shoot for graphics.md; textures seen Japanese in tours (faction_select top,
   save/load band, turn_end buttons, battle HUD, name tags CNAMEC, ED_H/ED_N epithets): graphics.md; lowercase p/q
   maybe redrawn (no descender room).

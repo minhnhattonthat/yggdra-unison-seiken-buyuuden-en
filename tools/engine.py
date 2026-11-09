@@ -19,6 +19,8 @@ HOOKS = f"""
     b pack_run                 @ entry +14
     b hook_qw                  @ entry +18
     b count11                  @ entry +1C
+    b lines_px                 @ entry +20
+    b lines_px12               @ entry +24
 
 ov_adv:                      @ ov9_15 0x0211DC8C add r4,r4,#0xB (ending epilogue, one glyph per 0x02012FFC call)
     push {{lr}}                   @ r7 = glyph code, fp = font id; r0-r3/ip are free here
@@ -541,6 +543,59 @@ c11_end:
 c11_done:
     pop {{r4, r5, r11, pc}}
 
+@ 0x02013274 contract (r0 string, r1 u8 per-line counts, each += n, r2 lines -> r0 total) for callers that centre
+@ a line at 128 - 11 n / 2 (HINT! tips, info band 0x0210E672, territory): n = round(line px / 11), not glyphs.
+lines_px12:                  @ the same for a caller laying out 12 x n (ov9_10 medallion line)
+    push {{r4, r5, r6, r7, r8, r9, r10, r11, lr}}
+    mov r9, #12
+    b lp_go
+lines_px:
+    push {{r4, r5, r6, r7, r8, r9, r10, r11, lr}}
+    mov r9, #11
+lp_go:
+    ldr r11, =ps
+    movs r4, r0
+    beq lp_ret
+    mov r6, r1
+    mov r7, r2
+    mov r0, #0
+    str r0, [r11, #0xC]
+    mov r0, #11
+    str r0, [r11, #0x3C]
+    mov r8, #0                 @ line
+    mov r5, #0                 @ line px
+    mov r10, #0                @ total
+lp_loop:
+    bl glyph_at
+    cmp r0, #0x10000
+    addlo r5, r5, r1
+    blo lp_loop
+    and r0, r0, #0xFF
+    add r4, r4, #1
+    cmp r0, #0xFC
+    addeq r4, r4, #1
+    cmpne r0, #0xFE
+    beq lp_loop
+    add r1, r5, r9, lsr #1     @ FD / FF ends a line: n = (px + d / 2) / d
+    mov r2, #0
+lp_div:
+    cmp r1, r9
+    subhs r1, r1, r9
+    addhs r2, r2, #1
+    bhs lp_div
+    add r10, r10, r2
+    cmp r8, r7
+    ldrblt r1, [r6, r8]
+    addlt r1, r1, r2
+    strblt r1, [r6, r8]
+    add r8, r8, #1
+    mov r5, #0
+    cmp r0, #0xFF
+    bne lp_loop
+    mov r0, r10
+lp_ret:
+    pop {{r4, r5, r6, r7, r8, r9, r10, r11, pc}}
+
 glyph_at:                    @ r4 = string -> r0 code (0x100xx = break byte FC-FF, r4 stays), r1 advance, r2 visible
     ldrb r0, [r4]
     cmp r0, #0xFC
@@ -647,10 +702,17 @@ SITES = [  # (address, original instruction word, entry offset, or an instructio
     (0x02012DF4, 0xE92D4FF0, ("b", 0x14)),  # system text run -> pack_run (whole function replaced)
     (0x020130AC, 0xE92D4FF8, ("b", 0x8)),   # centred system text -> pack_ctr
     (0x02013224, 0xE3500000, ("b", 0x1C)),  # glyph count (layout 11 x n) -> count11 = ceil(px / 11)
+    (0x0200FDB4, 0xEB000D2E, 0x20),      # info band per-line counts (0x0210E672, centred 128 - 11 n / 2) -> lines_px
+    (0x02010770, 0xEB000ABF, 0x20),      # the same, option menu band (0x0201038C: unlock message)
+    (0x02080258, 0xEBFE4C05, 0x20),      # HINT! tip line 1 centring -> lines_px
+    (0x020802E8, 0xEBFE4BE1, 0x20),      # HINT! tip line 2
 ]
 OV_SITES = [  # (overlay image, address, original word, entry offset or instruction): overlays load at 0x0211B780
     ("ov9_15", 0x0211DC8C, 0xE284400B, 0x10),  # EDMES epilogue text: fixed 11 px advance -> VWF
     ("ov9_15", 0x0211E004, 0xE3A00066, "mov r0, #0x42"),  # EDMES epithet run x 102 -> 66, over the 称号： label
+    ("ov9_10", 0x0211C004, 0xEBFBDC9A, 0x24),  # medallion line: 0x02013274 -> lines_px12 (centred 128 - 12 n / 2)
+    ("ov9_14", 0x0211CF58, 0xEBFBD8C5, 0x20),  # territory captured line 2: -> lines_px
+    ("ov9_14", 0x0211CFE0, 0xEBFBD8A3, 0x20),  # capital taken line 2: -> lines_px
 ]
 OV_BASE = 0x0211B780
 

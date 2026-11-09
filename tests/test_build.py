@@ -40,3 +40,15 @@ def test_replaced_file_relaid():
         if h != sfs.name_hash("MESSAGE001.BIN"):
             nsize, nsec = ents[h]
             assert nsize == size and new[nsec * 0x200:][:size] == data[sec * 0x200:][:size]
+
+
+@needs_rom
+def test_english_build(tmp_path):
+    """The English insert: builds, and romcheck (allowed writes, every string and pointer) is clean."""
+    import romcheck
+    repl, images = build.edits()
+    out = tmp_path / "en.nds"
+    out.write_bytes(build.build_rom(repl, images=images))
+    errs, n, nsys = romcheck.run(out)
+    assert not errs, errs[:20]
+    assert n > 12000 and nsys > 1600

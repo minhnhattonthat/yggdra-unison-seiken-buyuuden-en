@@ -1,6 +1,6 @@
 """lint.py: text lint over script/ (run by tools/check.py). Exit 1 on any error.
 
-Per string with English: every character encodable in tbl/en.tbl, no Japanese left, line count and pixel width
+Per string: empty en only for ids in script/keep_jp.txt. With English: every character encodable in tbl/en.tbl, no Japanese left, line count and pixel width
 within the box budget from script/windows.json (first matching rule; line px = sum of VWF advances + 1, the outline
 column of the last glyph). Lines held to a "guess" budget are counted in one summary line, not listed.
 
@@ -101,14 +101,14 @@ def all_strings():
 
 
 def part_texts(part):
-    """English of one composite part: a string id, "table:START+F" (every string of that table field) or "'text"
-    (a literal the code inserts, e.g. a digit). [] while untranslated."""
+    """English of one composite part: a string id, "id|id|..." (any one of them), "table:START+F" (every string of
+    that table field) or "'text" (a literal the code inserts, e.g. a digit). [] while untranslated."""
     if part.startswith("'"):
         return [part[1:]]
     if part.startswith("table:"):
         ids = [sid for sid, f in table_fields().items() if f == part[6:]]
     else:
-        ids = [part]
+        ids = part.split("|")
     return [all_strings()[i]["en"] for i in ids if all_strings().get(i, {}).get("en")]
 
 
@@ -142,6 +142,25 @@ def selftest():
     assert rule_for("EDMES07:0100", "a\nb", "end")["lines"] == 4 and rule_for("EDMES07:009C", "a", "end")["lines"] == 1
     assert rule_for("arm9:8F98C", "a", "item")["font"] == "item"
     assert rule_for("arm9:900EC", "a", "sys")["table"] == "A71F0+0"  # territory name (item gallery location)
+    assert check_keep({"id": "x:1", "jp": "あ", "en": ""}) and not check_keep({"id": "MESSAGE000:0590", "jp": "あ"})
+    assert check_keep({"id": "arm9:8F988", "jp": "P", "en": "P"})
+
+
+@cache
+def keep_jp():
+    """fnmatch patterns from script/keep_jp.txt: rows allowed to ship with empty en."""
+    lines = (ROOT / "script/keep_jp.txt").read_text(encoding="utf-8").splitlines()
+    return [ln.split("\t")[0] for ln in lines if ln.strip() and not ln.startswith("#")]
+
+
+def check_keep(s):
+    import fnmatch
+    kept = any(fnmatch.fnmatchcase(s["id"], p) for p in keep_jp())
+    if s["jp"] and not s.get("en") and not kept:
+        return ["no English (add it, or list the id in script/keep_jp.txt with a reason)"]
+    if s["id"] in keep_jp() and s.get("en"):  # exact ids only: a pattern may cover translated rows too
+        return ["has English but is listed in script/keep_jp.txt"]
+    return []
 
 
 def main():
@@ -153,6 +172,7 @@ def main():
         doc = json.loads(p.read_text(encoding="utf-8"))
         for s in doc["strings"]:
             e, g = check_string(s, doc.get("font"))
+            e += check_keep(s)
             errors += [f"{s['id']}: {m}" for m in e]
             guess += g
             done += bool(s.get("en"))

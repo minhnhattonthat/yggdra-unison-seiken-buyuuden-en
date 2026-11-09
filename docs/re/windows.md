@@ -64,7 +64,7 @@ relocates it (`MARKER_SYS=slot` = old short codes in place); `MARKER_QA` overrid
 | save / load prompts (ov9_19, ov9_15, ov9_05) | ctr 0x020102F8 | 240 x 2 | measured (save band) |
 | in-game HELP popup (help on at new game): title x 22 y 59, body x 24 y 76 x 3 lines, frame at 236 = table F79D8+0 | run 0x02011168 / 0x020111AC | 210 / 210 x 3 | measured (tour_hp 0006) |
 | textures, no system text: battle menu (SELECT), L unit panel, unit status, unit lists, sortie territory panel, faction info panel, VS names | | | toured 2026-11-10 |
-| battle HINT! popup (100500, task 0x0207FD6C): entry 2n white y 49, 2n+1 red y 82/97, yellow panel spans the screen; centred by per-line glyph count (0x02013274) x 11, not px: **phase 7 fix** | run | 220 x 2 | measured (work/qa/tip0_top.png; `spmes.lua --var CALL=0x02080388` + `tips.lua --var TIP=n`) |
+| battle HINT! popup (100500, task 0x0207FD6C): entry 2n white y 49, 2n+1 red y 82/97, yellow panel spans the screen; centred by per-line count (0x02013274) x 11, now px-based (`lines_px`, text.md) | run | 220 x 2 | measured (work/qa/tip0_top.png; `spmes.lua --var CALL=0x02080388` + `tips.lua --var TIP=n`) |
 | battle results (War Result page, 100554 labels x 40 y 48 + 21 n, digits from x 176) | run 0x02080D88 | 120 | measured (work/qa/res_final.png; `spmes.lua --var CALL=0x02081350 --var R0=8` = YOU WIN + results) |
 | ending epithet one-liner (EDMES record +0): ov9_15 0x0211E010 run x 66 (was 102, after 称号：) y 35 bottom screen, bar count11*11+40 from x 66 | run | 186 | measured (work/qa/epi_mk f000900) |
 | ending results bubble MESSAGE168 (戦績 page): pen x 7, cloud to ~165 | MESSAGE | 142 x 2 | measured (work/qa/m168_zoom.png) |

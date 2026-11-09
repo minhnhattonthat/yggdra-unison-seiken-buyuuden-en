@@ -1,0 +1,10 @@
+# Rows that ship with empty en (original bytes kept, tools/insert.py). id (fnmatch pattern) <TAB> reason.
+# tools/lint.py fails on any other row with jp and no en, and on a listed exact id that has English.
+MESSAGE000:*	debug test file: its あいうえお filler lines stay (no event reaches them, text.md); its real lines are English
+arm9:8F984	one-glyph … : composite/separator glyph E8, kept in the en font
+arm9:8F988	"P" (battle results), Latin glyph already
+arm9:8FC3C	"CLEAR", Latin already
+ov9_02:1698	"0000" digit placeholder, Latin already
+ov9_06:3ED4	"—" dash (item encyclopedia empty value), glyph E9 kept in the en font
+ov9_06:3EE0	"————" dash run, glyph E9 kept in the en font
+ov9_18:3744	"☆" (faction conditions), FONT_END kanji-table glyph enfont leaves alone

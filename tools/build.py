@@ -1,4 +1,4 @@
-"""build.py: original ROM -> build/yggdra_en.nds.
+"""build.py: original ROM -> build/yggdra_en.nds (English text from script/, tools/insert.py; --marker: ids).
 
 Re-lays DATA.SFS (docs/re/sfs.md "Rebuild plan") with any replaced files, patches the arm9 directory, saves via
 ndspy and undoes ndspy's two quirks (size word at 0x1000, no 0xFF pad to cart size). With no replacements the
@@ -78,6 +78,10 @@ def edits(marker=False):
         skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else ()
         repl |= mk.script_files(skip)
         images, extra = mk.system_images()
+    else:
+        import insert
+        repl |= insert.script_files()
+        images, extra = insert.system_images()
     orig = text.code_images()
     arm9 = images.get("arm9", orig["arm9"])
     images["arm9"] = engine.patch_arm9(arm9, wtab, extra)

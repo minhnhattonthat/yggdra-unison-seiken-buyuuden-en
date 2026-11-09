@@ -129,3 +129,9 @@ to run while any line is unticked.
 - [ ] EDMES25:00E2 / EDMES28:00DB - 大賢者/大魔導師 shipped Sage / Magus (Archsage/Archmage 189 px > 186): recheck if the budget is ever measured to 190
 - [x] EDMES30:00B7-00E5 Pamela - fixed: Big of Mages / Great of Mages Pamela (ED_H/ED_N textures must match)
 - [x] EDMES26:00D8 / EDMES20:009C / EDMES18:00A7 - 流神 Evangelist, ぶち Hothead, 卑屈姫 Sulky Princess: kept, in glossary
+
+## Phase 7 (insert, controller)
+- [ ] ov9_18:3748 + faction name - the '"' glyph leaves a ~3 px gap before the name in the unlock message (work/qa/p7_quote.png): tighten the quote glyph or its advance (enfont PUNCT)
+- [ ] ov9_18:3D58 - faction conditions header: count digit at fixed x 162 lands in the 4-space gap (prefix ends x 159, "of" at x 175), computed, not seen on screen: check in phase 8
+- [ ] ov9_10 medallion unit + territory line (lines_px12) - not seen on screen: check in phase 8
+- [ ] MESSAGE*/SPMES* ellipsis-only lines (54) set to "..." by fix7a (glossary rule), unreviewed in context

@@ -90,6 +90,15 @@
   re-blitted only when its content changes. Slots past the pool capacity (+8) are not drawn (the original overran
   the pool and crashed). FC xx sets the colour and the line goes on at the real px. Return value = ceil(px / 11)
   (0x0201038C sizes a highlight bar as 11 x that). Single glyphs (0x02012FFC, EDMES) keep one slot each.
+- **Per-line centring counts** (0x02013274, glyphs per line; callers centre at 128 - 11 n / 2): every caller but the
+  dialogue one (cells_count) is redirected to `lines_px` (n = round(line px / 11)): info band 0x0200FDB4 and option
+  band 0x02010770 (both fill 0x0210E672), HINT! tips 0x02080258 / 0x020802E8, territory ov9_14 0x0211CF58 /
+  0x0211CFE0; the medallion line ov9_10 0x0211C004 lays out 12 x n, so it gets `lines_px12`. Centring error <= 3 px.
+- **Insert** (`tools/insert.py`, phase 7): script files re-laid by text.rebuild, system strings in place or
+  relocated (sysreloc); empty en keeps the original bytes (ids in script/keep_jp.txt). `tools/romcheck.py` checks
+  the build: code-image writes only at string slots / pointer words / engine sites / SFS directory / module params,
+  every pointer reads its string's English, no word left pointing at a vacated slot, SFS files other than fonts and
+  script unchanged, every script string decodes to script/ (tests/test_build.py builds and runs it).
 - **EDMES paragraphs** (ov9_15 0x0211DC88 -> 0x02012FFC, one glyph per call, x += 11 by the overlay): `ov_adv` hook
   at 0x0211DC8C (engine.OV_SITES, patched per overlay in build.edits). Only caller of 0x02012FFC. Budgets: windows.md.
 
