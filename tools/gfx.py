@@ -37,12 +37,25 @@ def pack_of(name):
     return originals()[name]
 
 
-def decode(b):
-    """PACK bytes -> (RGBA image, (tex, pal, idx, kind, w))."""
+WIDTH = {"CNAMEC": 64}  # tex.guess reads 21 of the 72 CNAMEC name tags as 128 x 8; all are 64 x 16
+
+
+def load(name):
+    """Decode original NAME.PACK, with the WIDTH override."""
+    return decode(pack_of(name), next((w for p, w in WIDTH.items() if name.startswith(p)), None))
+
+
+def decode(b, w=None):
+    """PACK bytes -> (RGBA image, (tex, pal, idx, kind, w)). w: width (default: tex.guess)."""
     t, p, i = tex.parts(b)
-    w = tex.guess(t, p, i)
+    w = w or tex.guess(t, p, i)
     k = tex.kind(t, p, i)
-    return tex.render(t, p, i, w), (t, p, i, k, w)
+    img = tex.render(t, p, i, w)
+    if k != "4x4" and p:  # paletted: colour 0 is the transparent key (magenta in these PACKs)
+        a = np.array(img)
+        a[(a[..., :3] == tex.colours(p)[0][:3]).all(-1)] = 0
+        img = Image.fromarray(a)
+    return img, (t, p, i, k, w)
 
 
 def _rgba(pal):
@@ -103,7 +116,8 @@ def encode_4x4(img, pal, nblocks):
 def encode_pal(img, pal, bpp, n):
     a = np.array(img.convert("RGBA"), dtype=np.int32).reshape(-1, 4)[:n]
     c = _rgba(pal)
-    k = ((a[:, None, :3] - c[None, :, :3]) ** 2).sum(-1).argmin(1)
+    k = ((a[:, None, :3] - c[None, 1:, :3]) ** 2).sum(-1).argmin(1) + 1
+    k[a[:, 3] < 128] = 0
     per = 8 // bpp
     k = np.concatenate([k, np.zeros(-len(k) % per, dtype=k.dtype)]).reshape(-1, per)
     return bytes(int(sum(int(v) << (bpp * j) for j, v in enumerate(row))) for row in k)
@@ -111,7 +125,7 @@ def encode_pal(img, pal, bpp, n):
 
 def encode(orig_pack, img):
     """New PACK bytes for img (same size as the original decode)."""
-    _, (t, p, i, k, w) = decode(orig_pack)
+    _, (t, p, i, k, w) = decode(orig_pack, img.size[0])
     ref = tex.render(t, p, i, w)
     assert img.size == ref.size, f"image {img.size} != texture {ref.size}"
     if k == "4x4":
@@ -137,7 +151,7 @@ def main(argv):
         out = Path(argv[argv.index("--out") + 1]) if "--out" in argv else ROOT / "work/gfx/orig"
         out.mkdir(parents=True, exist_ok=True)
         for n in [a for a in argv[1:] if not a.startswith("--") and Path(a) != out]:
-            img, (_, p, _, k, w) = decode(pack_of(n + ".PACK"))
+            img, (_, p, _, k, w) = load(n + ".PACK")
             img.save(out / f"{n}.png")
             print(f"{out / n}.png {k} {img.size} pal {len(p) // 2}")
         return 0
@@ -145,9 +159,9 @@ def main(argv):
         prev = ROOT / "work/gfx/enc"  # what the game will show: the encoded texture decoded again
         prev.mkdir(parents=True, exist_ok=True)
         for name, b in files().items():
-            new, _ = decode(b)
+            old, (*_, w) = load(name)
+            new, _ = decode(b, w)  # the edit can change tex.guess's pick; the game's width is fixed in code
             new.save(prev / (name[:-5] + ".png"))
-            old, _ = decode(pack_of(name))
             want = np.array(Image.open(GFX / (name[:-5] + ".png")).convert("RGBA"), dtype=np.int32)
             got = np.array(new, dtype=np.int32)
             off = int((np.abs(got - want).max(-1) > 24).sum())

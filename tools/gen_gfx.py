@@ -52,11 +52,12 @@ def colours(a, box):
     dark = Counter(tuple(c) for c in sub[op & (lum < 200)][:, :3]).most_common(1)
     outline = np.array(dark[0][0] if dark else (0, 0, 0))
     fill = []
+    bright = lum[op].max() // 2  # rows with only panel/outline colours take the brightest inked row's fill
     for r in range(h):
-        m = op[r]
+        m = op[r] & (lum[r] >= bright)
         fill.append(sub[r][m][lum[r][m].argmax()][:3] if m.any() else None)
-    known = [f for f in fill if f is not None]
-    fill = [f if f is not None else known[0] for f in fill]
+    top = max((f for f in fill if f is not None), key=lambda f: int(f.sum()))
+    fill = [f if f is not None else top for f in fill]
     return outline, np.array(fill)
 
 
@@ -101,12 +102,14 @@ def draw(a, text, o):
     f, xs, lh, top, bot = layout(text, o, box, maxw)
     stroke = int(o.get("stroke", 1))
     lines = text.split("\n")
-    cw = int(max(f.getlength(ln) for ln in lines) + 2 * stroke + 4)
+    tw = max(f.getlength(ln) for ln in lines)
+    cw = int(tw + 2 * stroke + 4)
     ch = int(round(lh)) * len(lines) + 4
     outer = Image.new("L", (cw, ch))
     inner = Image.new("L", (cw, ch))
     for n, ln in enumerate(lines):
-        pos = (stroke + 2, n * lh + (lh - (bot - top)) / 2 - top + 2)
+        dx = {"c": (tw - f.getlength(ln)) / 2, "r": tw - f.getlength(ln)}.get(align, 0)  # each line aligned
+        pos = (stroke + 2 + dx, n * lh + (lh - (bot - top)) / 2 - top + 2)
         ImageDraw.Draw(outer).text(pos, ln, font=f, fill=255, stroke_width=stroke, stroke_fill=255)
         ImageDraw.Draw(inner).text(pos, ln, font=f, fill=255)
     nw = max(1, round(cw * xs))
@@ -138,7 +141,7 @@ def main(argv):
         if not want or name in want:
             by_name.setdefault(name, []).append((en, o))
     for name, labels in by_name.items():
-        img, _ = gfx.decode(gfx.pack_of(name + ".PACK"))
+        img, _ = gfx.load(name + ".PACK")
         a = np.array(img.convert("RGBA"), dtype=np.int32)
         for en, o in labels:
             box, size, xs = draw(a, en, o)

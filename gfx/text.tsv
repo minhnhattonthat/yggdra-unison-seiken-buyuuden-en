@@ -50,3 +50,889 @@ WD_N_33	Temple Cities of Lombardia	size=24
 WD_N_34	St. Meriata Church Domain	size=24
 WD_N_35	Lenessey Volcanic Region	size=24
 WD_N_36	Ancardia, the Lost Paradise	size=24
+# Factions nn = table arm9 A7D00 + nn*0x14 (+0 name, +4 lands, +8 army): same English as the strings
+IN_PRO_000	~ New Bronquian Empire ~	font=sans-b size=12
+IN_PRO_001	~ Kingdom of Fantasinia ~	font=sans-b size=12
+IN_PRO_002	~ Milanor's Thieves ~	font=sans-b size=12
+IN_PRO_003	~ Duchy of Embellia ~	font=sans-b size=12
+IN_PRO_004	~ House Branthese ~	font=sans-b size=12
+IN_PRO_005	~ House Esmeralda ~	font=sans-b size=12
+IN_PRO_006	~ Ortega Brigands ~	font=sans-b size=12
+IN_PRO_007	~ Dort's Bandits ~	font=sans-b size=12
+IN_PRO_008	~ Theocracy of Meria ~	font=sans-b size=12
+IN_PRO_009	~ Temple Knights ~	font=sans-b size=12
+IN_PRO_010	~ Forest Alliance ~	font=sans-b size=12
+IN_PRO_011	~ Nessiah's Forces ~	font=sans-b size=12
+TM_M_00	New Bronquian Empire	size=22
+TM_M_01	Kingdom of Fantasinia	size=22
+TM_M_02	Milanor's Thieves	size=22
+TM_M_03	Duchy of Embellia	size=22
+TM_M_04	House Branthese	size=22
+TM_M_05	House Esmeralda	size=22
+TM_M_06	Ortega Brigands	size=22
+TM_M_10	Forest Alliance	size=22
+TM_M_11	Nessiah's Forces	size=22
+EVSFORCE00	Imperial Army	size=15 align=l
+EVSFORCE01	Royal Army	size=15 align=l
+EVSFORCE02	Thieves	size=15 align=l
+EVSFORCE03	Embellian Army	size=15 align=l
+EVSFORCE04	Black Rose Army	size=15 align=l
+EVSFORCE05	White Rose Army	size=15 align=l
+EVSFORCE06	Brigands	size=15 align=l
+EVSFORCE07	Bandits	size=15 align=l
+EVSFORCE08	Theocracy Army	size=15 align=l
+EVSFORCE09	Temple Knights	size=15 align=l
+EVSFORCE10	Forest Army	size=15 align=l
+EVSFORCE11	Nessiah's Army	size=15 align=l
+# Faction leaders (CN_M_nn, same English as the unit epithet strings at F5380+)
+CN_M_00	Gulcasa the\nFlame Emperor	font=sans-b align=l size=14 box=0,0,127,31
+CN_M_01	Princess Yggdra	font=sans-b align=l size=14
+CN_M_02	Milanor the\nSilver Wolf	font=sans-b align=l size=14 box=0,0,127,31
+CN_M_03	Queen Emelone	font=sans-b align=l size=14
+CN_M_04	Roswell, Head of\nHouse Branthese	font=sans-b align=l size=14 box=0,0,127,31
+CN_M_05	Rosary, Head of\nHouse Esmeralda	font=sans-b align=l size=14 box=0,0,127,31
+CN_M_06	Brigand King Ortega	font=sans-b align=l size=14
+CN_M_07	Bandit King Dort	font=sans-b align=l size=14
+CN_M_08	Cardinal Juvelon	font=sans-b align=l size=14
+CN_M_09	Gordon of Steel	font=sans-b align=l size=14
+CN_M_10	Wondrous Witch\nPamela	font=sans-b align=l size=14 box=0,0,127,31
+CN_M_11	Nessiah\nthe Fallen	font=sans-b align=l size=14 box=0,0,127,31
+# Faction descriptions (MS_M_nn, read off the texture)
+MS_M_00	A great power ruling the lands west\nof Canossa under the Flame Emperor	font=sans-b
+MS_M_01	A rich realm on the fertile heartland,\ncentered on the royal capital Paltina	font=sans-b
+MS_M_02	A band of thieves based in the southern\nwastes, its power ever growing	font=sans-b
+MS_M_03	Ruled by the queen of the Undines, who\nhave dwelt by the Five Lakes of old	font=sans-b
+MS_M_04	A noble house of the Black Rose crest,\nruling the eastern Verlaine Hills	font=sans-b
+MS_M_05	A noble house of the White Rose crest,\nruling the western Verlaine Hills	font=sans-b
+MS_M_06	Ruffians under Brigand King Ortega,\nnesting in the Lenessey Mountains	font=sans-b
+MS_M_07	A reckless horde under Bandit King\nDort, roaming the Nyllard Desert	font=sans-b
+MS_M_08	A new regime run by Juvelon's faction,\nwhich ousted Pope Johaim by force	font=sans-b
+MS_M_09	Meria's own knights, long sworn to guard\nthe Pope and the holy land	font=sans-b
+MS_M_10	An alliance of the witch of Marduk\nand a band of bounty hunters	font=sans-b
+MS_M_11	A band in revolt against the gods,\nled by Nessiah the Fallen Angel	font=sans-b
+# Cards nn = table arm9 A7E44 + nn*0x1C (+0 name -> CARDNAMEA, +4 effect -> CS_M as one line)
+CARDNAMEA00	Make Doll	font=sans-b size=12
+CARDNAMEA01	Necrogate	font=sans-b size=12
+CARDNAMEA02	Medusa Eye	font=sans-b size=12
+CARDNAMEA03	Poison Breath	font=sans-b size=12
+CARDNAMEA04	Gravity Chaos	font=sans-b size=12
+CARDNAMEA05	Item Break	font=sans-b size=12
+CARDNAMEA06	Steal	font=sans-b size=12
+CARDNAMEA07	Bloody Claw	font=sans-b size=12
+CARDNAMEA08	Chariot	font=sans-b size=12
+CARDNAMEA09	Shield Barrier	font=sans-b size=12
+CARDNAMEA10	Flame	font=sans-b size=12
+CARDNAMEA11	Blizzard	font=sans-b size=12
+CARDNAMEA12	Thunderbolt	font=sans-b size=12
+CARDNAMEA13	Banish	font=sans-b size=12
+CARDNAMEA14	Dragon Killer	font=sans-b size=12
+CARDNAMEA15	Earthquake	font=sans-b size=12
+CARDNAMEA16	Mind Change	font=sans-b size=12
+CARDNAMEA17	Revolution	font=sans-b size=12
+CARDNAMEA18	Jihad	font=sans-b size=12
+CARDNAMEA19	Sanctuary	font=sans-b size=12
+CARDNAMEA20	Refreshment	font=sans-b size=12
+CARDNAMEA21	Kiss of Death	font=sans-b size=12
+CARDNAMEA22	Fortune	font=sans-b size=12
+CARDNAMEA23	Mirage	font=sans-b size=12
+CARDNAMEA24	Banshee's Cry	font=sans-b size=12
+CARDNAMEA25	Ivy Whip	font=sans-b size=12
+CARDNAMEA26	Sandstorm	font=sans-b size=12
+CARDNAMEA27	Mantrap	font=sans-b size=12
+CARDNAMEA28	Rockfall	font=sans-b size=12
+CARDNAMEA29	Ace Guard	font=sans-b size=12
+CARDNAMEA30	Genocide	font=sans-b size=12
+CARDNAMEA31	Reincarnation	font=sans-b size=12
+CARDNAMEA32	Rebellion	font=sans-b size=12
+CARDNAMEA33	Diamond Dust	font=sans-b size=12
+CARDNAMEA34	Coma Karma	font=sans-b size=12
+CARDNAMEA35	Judgment Zero	font=sans-b size=12
+CS_M_00	For a time, turns enemies into Golems.	font=sans-b size=13
+CS_M_01	For a time, turns enemies into Skeletons.	font=sans-b size=13
+CS_M_02	Stuns the enemy.	font=sans-b size=13
+CS_M_03	Enemy HP slowly drops for a time.	font=sans-b size=13
+CS_M_04	Dark damage that halves enemy HP.	font=sans-b size=13
+CS_M_05	Breaks your units' equipped items!	font=sans-b size=13
+CS_M_06	One random held item vanishes!	font=sans-b size=13
+CS_M_07	For a time, the 1st Unison is always critical.	font=sans-b size=13
+CS_M_08	Halves the HP of all enemies except large ones.	font=sans-b size=13
+CS_M_09	For a time, damage to your units is halved.	font=sans-b size=13
+CS_M_10	Fire damage that halves enemy HP.	font=sans-b size=13
+CS_M_11	Ice damage that halves enemy HP.	font=sans-b size=13
+CS_M_12	Lightning damage that halves enemy HP.	font=sans-b size=13
+CS_M_13	Holy damage that halves enemy HP.	font=sans-b size=13
+CS_M_14	For a time, the Impact Circle becomes huge.	font=sans-b size=13
+CS_M_15	For a time, your units can't be controlled.	font=sans-b size=13
+CS_M_16	Everyone's remaining and lost HP swap places!	font=sans-b size=13
+CS_M_17	Sets all enemies but the commander to 1 HP.	font=sans-b size=13
+CS_M_18	Sets the enemy commander to 1 HP and wipes out the rest.	font=sans-b size=13
+CS_M_19	For a time, your units' HP slowly recovers.	font=sans-b size=13
+CS_M_20	For a time, the Impact Circle becomes tiny.	font=sans-b size=13
+CS_M_21	For a time, every unit moves at high speed!	font=sans-b size=13
+CS_M_22	All units on both sides warp to random spots!	font=sans-b size=13
+CS_M_23	Swaps the positions of both sides' bases.	font=sans-b size=13
+CS_M_24	For a time, sets enemy units' POW to 1.	font=sans-b size=13
+CS_M_25	All units in forest terrain vanish.	font=sans-b size=13
+CS_M_26	All units in desert terrain vanish.	font=sans-b size=13
+CS_M_27	All units in poison swamp terrain vanish.	font=sans-b size=13
+CS_M_28	All units in wasteland terrain vanish.	font=sans-b size=13
+CS_M_29	For a time, guards against enemy first strikes.	font=sans-b size=13
+CS_M_30	For a time, all units' POW becomes 6!	font=sans-b size=13
+CS_M_31	For a time, all units' classes get shuffled!	font=sans-b size=13
+CS_M_32	Sets all units to 1 HP and wipes out enemy reserves.	font=sans-b size=13
+CS_M_33	For a time, turns your units into Undines.	font=sans-b size=13
+CS_M_34	For a time, darkness shrouds the battle map.	font=sans-b size=13
+CS_M_35	Retreated units on both sides return to the field.	font=sans-b size=13
+# Item effect tags IT_EFnnn = item record nnn-1 (arm9 100640 + 0x18*n, +10 effect); IT_EF113 decodes as noise: not edited
+IT_EF001	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF002	Ice attacks	font=sans-b size=11 align=l
+IT_EF003	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF004	Class Change: Necromancer	font=sans-b size=11 align=l
+IT_EF005	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF006	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF007	Class Change: Skeleton	font=sans-b size=11 align=l
+IT_EF008	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF009	Can't be unequipped	font=sans-b size=11 align=l
+IT_EF010	Holy attacks	font=sans-b size=11 align=l
+IT_EF011	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF012	Knockback halved	font=sans-b size=11 align=l
+IT_EF013	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF014	Dark attacks	font=sans-b size=11 align=l
+IT_EF015	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF016	HP slowly drops	font=sans-b size=11 align=l
+IT_EF017	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF018	Move speed +1	font=sans-b size=11 align=l
+IT_EF019	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF020	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF021	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF022	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF023	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF024	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF025	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF026	Move speed +1	font=sans-b size=11 align=l
+IT_EF027	Move speed +1	font=sans-b size=11 align=l
+IT_EF028	No effect	font=sans-b size=11 align=l
+IT_EF029	Always strikes first	font=sans-b size=11 align=l
+IT_EF030	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF031	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF032	No effect	font=sans-b size=11 align=l
+IT_EF033	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF034	No effect	font=sans-b size=11 align=l
+IT_EF035	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF036	Knockback halved	font=sans-b size=11 align=l
+IT_EF037	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF038	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF039	Knockback halved	font=sans-b size=11 align=l
+IT_EF040	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF041	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF042	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF043	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF044	Critical on 3-Unison	font=sans-b size=11 align=l
+IT_EF045	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF046	No effect	font=sans-b size=11 align=l
+IT_EF047	Critical on 4-Unison	font=sans-b size=11 align=l
+IT_EF048	No effect	font=sans-b size=11 align=l
+IT_EF049	Critical on 2-Unison	font=sans-b size=11 align=l
+IT_EF050	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF051	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF052	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF053	Can destroy siege weapons	font=sans-b size=11 align=l
+IT_EF054	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF055	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF056	No effect	font=sans-b size=11 align=l
+IT_EF057	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF058	Ice attacks	font=sans-b size=11 align=l
+IT_EF059	Critical on 3-Unison	font=sans-b size=11 align=l
+IT_EF060	Class Change: Griffon Rider	font=sans-b size=11 align=l
+IT_EF061	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF062	Lightning attacks	font=sans-b size=11 align=l
+IT_EF063	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF064	Can destroy siege weapons	font=sans-b size=11 align=l
+IT_EF065	Move speed +1	font=sans-b size=11 align=l
+IT_EF066	Dark attacks	font=sans-b size=11 align=l
+IT_EF067	No effect	font=sans-b size=11 align=l
+IT_EF068	Knockback halved	font=sans-b size=11 align=l
+IT_EF069	Class Change: Bandit	font=sans-b size=11 align=l
+IT_EF070	Ice attacks	font=sans-b size=11 align=l
+IT_EF071	Critical on 4-Unison	font=sans-b size=11 align=l
+IT_EF072	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF073	Lightning attacks	font=sans-b size=11 align=l
+IT_EF074	Class Change: Golem	font=sans-b size=11 align=l
+IT_EF075	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF076	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF077	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF078	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF079	Class Change: Assassin	font=sans-b size=11 align=l
+IT_EF080	Move speed -1	font=sans-b size=11 align=l
+IT_EF081	Fire attacks	font=sans-b size=11 align=l
+IT_EF082	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF083	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF084	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF085	Always strikes first	font=sans-b size=11 align=l
+IT_EF086	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF087	Move speed +1	font=sans-b size=11 align=l
+IT_EF088	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF089	Lightning attacks	font=sans-b size=11 align=l
+IT_EF090	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF091	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF092	Immune to Knockback	font=sans-b size=11 align=l
+IT_EF093	No poison swamp damage	font=sans-b size=11 align=l
+IT_EF094	Holy attacks	font=sans-b size=11 align=l
+IT_EF095	Holy attacks	font=sans-b size=11 align=l
+IT_EF096	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF097	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF098	Fire attacks	font=sans-b size=11 align=l
+IT_EF099	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF100	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF101	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF102	Move speed +1	font=sans-b size=11 align=l
+IT_EF103	Lightning attacks	font=sans-b size=11 align=l
+IT_EF104	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF105	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF106	Holy attacks	font=sans-b size=11 align=l
+IT_EF107	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF108	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF109	Dark attacks	font=sans-b size=11 align=l
+IT_EF110	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF111	Fire attacks	font=sans-b size=11 align=l
+IT_EF112	Reveals village locations	font=sans-b size=11 align=l
+IT_EF114	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF115	Enemy always strikes first	font=sans-b size=11 align=l
+IT_EF116	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF117	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF118	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF119	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF120	Enemy always strikes first	font=sans-b size=11 align=l
+IT_EF121	Knockback halved	font=sans-b size=11 align=l
+IT_EF122	Edge vs. Golems	font=sans-b size=11 align=l
+IT_EF123	Edge vs. Griffon Riders	font=sans-b size=11 align=l
+IT_EF124	Edge vs. Skeletons	font=sans-b size=11 align=l
+IT_EF125	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF126	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF127	Move type: Slow	font=sans-b size=11 align=l
+IT_EF128	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF129	Felling a foe restores HP	font=sans-b size=11 align=l
+IT_EF130	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF131	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF132	Villages can't be found	font=sans-b size=11 align=l
+IT_EF133	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF134	Move speed +1	font=sans-b size=11 align=l
+IT_EF135	Edge vs. Dragoons	font=sans-b size=11 align=l
+IT_EF136	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF137	Move type: Dragon	font=sans-b size=11 align=l
+IT_EF138	Move speed -1	font=sans-b size=11 align=l
+IT_EF139	Edge vs. Knights	font=sans-b size=11 align=l
+IT_EF140	Always strikes first	font=sans-b size=11 align=l
+IT_EF141	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF142	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF143	No effect	font=sans-b size=11 align=l
+IT_EF144	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF145	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF146	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF147	Fire attacks	font=sans-b size=11 align=l
+IT_EF148	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF149	Can destroy siege weapons	font=sans-b size=11 align=l
+IT_EF150	Class Change: Dragoon	font=sans-b size=11 align=l
+IT_EF151	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF152	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF153	Move type: Flying	font=sans-b size=11 align=l
+IT_EF154	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF155	Class Change: Witch	font=sans-b size=11 align=l
+IT_EF156	Holy attacks	font=sans-b size=11 align=l
+IT_EF157	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF158	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF159	Min Impact Circle	font=sans-b size=11 align=l
+IT_EF160	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF161	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF162	Move type: Cavalry	font=sans-b size=11 align=l
+IT_EF163	Always strikes first	font=sans-b size=11 align=l
+IT_EF164	HP slowly recovers	font=sans-b size=11 align=l
+IT_EF165	Ice attacks	font=sans-b size=11 align=l
+IT_EF166	No effect	font=sans-b size=11 align=l
+IT_EF167	No effect	font=sans-b size=11 align=l
+IT_EF168	Class Change: Valkyrie	font=sans-b size=11 align=l
+IT_EF169	Dark attacks	font=sans-b size=11 align=l
+IT_EF170	Knockback halved	font=sans-b size=11 align=l
+IT_EF171	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF172	Always strikes first	font=sans-b size=11 align=l
+IT_EF173	Move speed -1	font=sans-b size=11 align=l
+IT_EF174	Ice attacks	font=sans-b size=11 align=l
+IT_EF175	Edge vs. Skeletons	font=sans-b size=11 align=l
+IT_EF176	Always strikes first	font=sans-b size=11 align=l
+IT_EF177	Edge vs. Griffon Riders	font=sans-b size=11 align=l
+IT_EF178	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF179	Move speed -1	font=sans-b size=11 align=l
+IT_EF180	Evades Smash Hits	font=sans-b size=11 align=l
+IT_EF181	Always strikes first	font=sans-b size=11 align=l
+IT_EF182	No effect	font=sans-b size=11 align=l
+IT_EF183	HP slowly drops	font=sans-b size=11 align=l
+IT_EF184	Class Change: Undine	font=sans-b size=11 align=l
+IT_EF185	HP slowly drops	font=sans-b size=11 align=l
+IT_EF186	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF187	HP slowly drops	font=sans-b size=11 align=l
+IT_EF188	No effect	font=sans-b size=11 align=l
+IT_EF189	Edge vs. Hunters	font=sans-b size=11 align=l
+IT_EF190	Move speed -1	font=sans-b size=11 align=l
+IT_EF191	Critical on 3-Unison	font=sans-b size=11 align=l
+IT_EF192	Siege damage halved	font=sans-b size=11 align=l
+IT_EF193	Always strikes first	font=sans-b size=11 align=l
+IT_EF194	Max Impact Circle	font=sans-b size=11 align=l
+IT_EF195	Class Change: Hunter	font=sans-b size=11 align=l
+IT_EF196	No effect	font=sans-b size=11 align=l
+IT_EF197	Class Change: Knight	font=sans-b size=11 align=l
+IT_EF198	Move speed -1	font=sans-b size=11 align=l
+IT_EF199	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF200	Move type: Flying	font=sans-b size=11 align=l
+IT_EF201	Knockback halved	font=sans-b size=11 align=l
+IT_EF202	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF203	Dark attacks	font=sans-b size=11 align=l
+IT_EF204	Always strikes first	font=sans-b size=11 align=l
+IT_EF205	Ignores enemy DEF	font=sans-b size=11 align=l
+IT_EF206	Move speed +1	font=sans-b size=11 align=l
+IT_EF207	No effect	font=sans-b size=11 align=l
+IT_EF208	Move speed -1	font=sans-b size=11 align=l
+IT_EF209	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF210	Critical on 4-Unison	font=sans-b size=11 align=l
+IT_EF211	Breaks enemy guard	font=sans-b size=11 align=l
+IT_EF212	Lightning attacks	font=sans-b size=11 align=l
+IT_EF213	Revives once at 0 HP	font=sans-b size=11 align=l
+IT_EF214	Critical on 3-Unison	font=sans-b size=11 align=l
+IT_EF215	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF216	Class Change: Fencer	font=sans-b size=11 align=l
+IT_EF217	Fire attacks	font=sans-b size=11 align=l
+IT_EF218	HP-drain attacks	font=sans-b size=11 align=l
+IT_EF219	Move speed +1	font=sans-b size=11 align=l
+IT_EF220	Move speed -1	font=sans-b size=11 align=l
+IT_EF221	No effect	font=sans-b size=11 align=l
+IT_EF222	Warps every 20 sec	font=sans-b size=11 align=l
+IT_EF223	No effect	font=sans-b size=11 align=l
+IT_EF224	No effect	font=sans-b size=11 align=l
+IT_EF225	No effect	font=sans-b size=11 align=l
+# Ending epithets ED_N_ccv = EDMEScc string v, ED_H_ccv = string 6+v (same English as the EDMES title strings)
+ED_H_030	Fresh Princess Yggdra	size=17
+ED_H_031	Raw Princess Yggdra	size=17
+ED_H_032	Holy Princess Yggdra	size=17
+ED_H_033	Final Princess Yggdra	size=17
+ED_H_034	Doom Princess Yggdra	size=17
+ED_H_035	Savior Princess Yggdra	size=17
+ED_H_100	Green Captain Gordon	size=17
+ED_H_101	Fill-In Captain Gordon	size=17
+ED_H_102	Just Captain Gordon	size=17
+ED_H_103	Holy Captain Gordon	size=17
+ED_H_104	Holy General Gordon	size=17
+ED_H_105	Holy Marshal Gordon	size=17
+ED_H_130	Token Queen Emelone	size=17
+ED_H_131	Naive Queen Emelone	size=17
+ED_H_132	Pretty Queen Emelone	size=17
+ED_H_133	Just Queen Emelone	size=17
+ED_H_134	Water Guide Emelone	size=17
+ED_H_135	Eternal Guide Emelone	size=17
+ED_H_140	Punk King Milanor	size=17
+ED_H_141	Pilferer King Milanor	size=17
+ED_H_142	Thief King Milanor	size=17
+ED_H_143	Untouchable Milanor	size=17
+ED_H_144	Silver Wolf Milanor	size=17
+ED_H_145	Silver Wolf Hero Milanor	size=17
+ED_H_160	Deadbeat Boss Ortega	size=17
+ED_H_161	Lecher Boss Ortega	size=17
+ED_H_162	Ruffian King Ortega	size=17
+ED_H_163	Brigand King Ortega	size=17
+ED_H_164	Brigand Emperor Ortega	size=17
+ED_H_165	Mountain God Ortega	size=17
+ED_H_170	Lazy Booze King Dort	size=17
+ED_H_171	Reckless King Dort	size=17
+ED_H_172	Plague King Dort	size=17
+ED_H_173	Bandit King Dort	size=17
+ED_H_174	Bandit Emperor Dort	size=17
+ED_H_175	Desert Nightmare Dort	size=17
+ED_H_250	Rich-Boy Lord Roswell	size=17
+ED_H_251	Callow Lord Roswell	size=17
+ED_H_252	Shrewd Lord Roswell	size=17
+ED_H_253	Great Lord Roswell	size=17
+ED_H_254	Black Rose King Roswell	size=17
+ED_H_255	Black Rose Emperor Roswell	size=17
+ED_H_270	Dud Cardinal Juvelon	size=17
+ED_H_271	Acting Pope Juvelon	size=17
+ED_H_272	Sly Cardinal Juvelon	size=17
+ED_H_273	Evil Cardinal Juvelon	size=17
+ED_H_274	Fiend Cardinal Juvelon	size=17
+ED_H_275	New Pope Juvelon	size=17
+ED_H_280	Prickly Lady Rosary	size=17
+ED_H_281	Hot-Cold Lady Rosary	size=17
+ED_H_282	Big Sis Ruler Rosary	size=17
+ED_H_283	Fair Flower Rosary	size=17
+ED_H_284	White Rose Queen Rosary	size=17
+ED_H_285	White Rose Empress Rosary	size=17
+ED_H_300	Weakling Mage Pamela-sama	size=17
+ED_H_301	"Best" Mage Pamela-sama	size=17
+ED_H_302	Peerless Mage Pamela-sama	size=17
+ED_H_303	Global Mage Pamela-sama	size=17
+ED_H_304	Galactic Mage Pamela-sama	size=17
+ED_H_305	Cosmic Mage Pamela-sama	size=17
+ED_H_340	Wild Emperor Gulcasa	size=17
+ED_H_341	Brat Emperor Gulcasa	size=17
+ED_H_342	Ogre Emperor Gulcasa	size=17
+ED_H_343	Mad Emperor Gulcasa	size=17
+ED_H_344	Firebrand Gulcasa	size=17
+ED_H_345	Hellfire Lord Gulcasa	size=17
+ED_H_360	Lame Fallen Angel Nessiah	size=17
+ED_H_361	Puny Fallen Angel Nessiah	size=17
+ED_H_362	Fallen Angel Nessiah	size=17
+ED_H_363	Super Fallen Angel Nessiah	size=17
+ED_H_364	Hyper Fallen Angel Nessiah	size=17
+ED_H_365	Ultra Fallen Angel Nessiah	size=17
+ED_H_370	Some Local Lord	size=17
+ED_H_371	Lord Nobody Knows	size=17
+ED_H_372	The Nameless Lord	size=17
+ED_H_373	Lord of a Hundred	size=17
+ED_H_374	Lord of a Thousand	size=17
+ED_H_375	Grunt-Turned-General	size=17
+ED_N_000	Blunt Astral Fencer Russell	size=17
+ED_N_001	Lazy Astral Fencer Russell	size=17
+ED_N_002	Hunky Astral Fencer Russell	size=17
+ED_N_003	Cool Astral Fencer Russell	size=17
+ED_N_004	Godhand Russell	size=17
+ED_N_005	Tragic Astral Fencer Russell	size=17
+ED_N_010	Hired Grunt Inzaghi	size=17
+ED_N_011	Meh Sellsword Inzaghi	size=17
+ED_N_012	Drifting Blade Inzaghi	size=17
+ED_N_013	Roving Blade Inzaghi	size=17
+ED_N_014	Ghost Blade Inzaghi	size=17
+ED_N_015	Fabled Blade Inzaghi	size=17
+ED_N_020	Wannabe Hero Canaan	size=17
+ED_N_021	Bungling Hero Canaan	size=17
+ED_N_022	Rookie Hero Canaan	size=17
+ED_N_023	Diligent Hero Canaan	size=17
+ED_N_024	Chosen Hero Canaan	size=17
+ED_N_025	Fabled Hero Canaan	size=17
+ED_N_030	Just a Lady Yggdra	size=17
+ED_N_031	Spirit-Only Yggdra	size=17
+ED_N_032	Cut-If-Close Yggdra	size=17
+ED_N_033	Gallant Lady Yggdra	size=17
+ED_N_034	Chaos Heroine Yggdra	size=17
+ED_N_035	Chaos Savior Yggdra	size=17
+ED_N_040	Novice Luciana	size=17
+ED_N_041	75% Luciana	size=17
+ED_N_042	Valkyrie Luciana	size=17
+ED_N_043	True Valkyrie Luciana	size=17
+ED_N_044	Fair Valkyrie Luciana	size=17
+ED_N_045	Savior Valkyrie Luciana	size=17
+ED_N_050	Novice Aegina	size=17
+ED_N_051	75% Aegina	size=17
+ED_N_052	Valkyrie Aegina	size=17
+ED_N_053	True Valkyrie Aegina	size=17
+ED_N_054	Fair Valkyrie Aegina	size=17
+ED_N_055	Savior Valkyrie Aegina	size=17
+ED_N_060	Reckless Girl Monica	size=17
+ED_N_061	Hapless Lass Monica	size=17
+ED_N_062	Brave Lass Monica	size=17
+ED_N_063	War Saint Monica	size=17
+ED_N_064	Lady Victory Monica	size=17
+ED_N_065	Militia Hero Monica	size=17
+ED_N_070	Rookie Knight Durant	size=17
+ED_N_071	Officer Cadet Durant	size=17
+ED_N_072	Rookie Captain Durant	size=17
+ED_N_073	Star Captain Durant	size=17
+ED_N_074	Famed Captain Durant	size=17
+ED_N_075	Glorious Knight Durant	size=17
+ED_N_080	Thug Knight Leon	size=17
+ED_N_081	Rowdy Knight Leon	size=17
+ED_N_082	Violent Knight Leon	size=17
+ED_N_083	Black Whirlwind Leon	size=17
+ED_N_084	Jet-Black Demon Leon	size=17
+ED_N_085	Reaper Devil Leon	size=17
+ED_N_090	Retired General Baldus	size=17
+ED_N_091	Old General Baldus	size=17
+ED_N_092	Quiet Warrior Baldus	size=17
+ED_N_093	Unshakable Baldus	size=17
+ED_N_094	Steel General Baldus	size=17
+ED_N_095	War-Tested Baldus	size=17
+ED_N_100	Trainee Knight Gordon	size=17
+ED_N_101	Inept Knight Gordon	size=17
+ED_N_102	Late-Bloomer Gordon	size=17
+ED_N_103	Temple Knight Gordon	size=17
+ED_N_104	Chosen Knight Gordon	size=17
+ED_N_105	God's Spear Gordon	size=17
+ED_N_110	Tagalong Nietzsche	size=17
+ED_N_111	Shut-In Nietzsche	size=17
+ED_N_112	Nietzsche Can Do It!	size=17
+ED_N_113	Girl Warrior Nietzsche	size=17
+ED_N_114	Wave Envoy Nietzsche	size=17
+ED_N_115	Water Deity Nietzsche	size=17
+ED_N_120	Reckless Ishiene	size=17
+ED_N_121	Daredevil Ishiene	size=17
+ED_N_122	Mule-Headed Ishiene	size=17
+ED_N_123	Sturdy Maiden Ishiene	size=17
+ED_N_124	Steel Maiden Ishiene	size=17
+ED_N_125	Fabled Charger Ishiene	size=17
+ED_N_130	Crybaby Emelone	size=17
+ED_N_131	Naive Emelone	size=17
+ED_N_132	Rare Beauty Emelone	size=17
+ED_N_133	Gifted Beauty Emelone	size=17
+ED_N_134	War Venus Emelone	size=17
+ED_N_135	War Goddess Emelone	size=17
+ED_N_140	Punk Kid Milanor	size=17
+ED_N_141	Petty Thief Milanor	size=17
+ED_N_142	Spirited Kid Milanor	size=17
+ED_N_143	Wolfpack Milanor	size=17
+ED_N_144	Charismatic Hero Milanor	size=17
+ED_N_145	Silver Titan Milanor	size=17
+ED_N_150	Lazy Flunky	size=17
+ED_N_151	Scatterbrain Flunky	size=17
+ED_N_152	Foot Soldier Flunky	size=17
+ED_N_153	Veteran Flunky	size=17
+ED_N_154	Right-Hand Flunky	size=17
+ED_N_155	Field Marshal Flunky	size=17
+ED_N_160	Old Deadbeat Ortega	size=17
+ED_N_161	Ortega the Lecher	size=17
+ED_N_162	Ortega the Ruffian	size=17
+ED_N_163	Ortega the Bold	size=17
+ED_N_164	Ortega the Immovable	size=17
+ED_N_165	Mountain King Ortega	size=17
+ED_N_170	Drunkard Dort	size=17
+ED_N_171	Loose Cannon Dort	size=17
+ED_N_172	Boozing Bandit Dort	size=17
+ED_N_173	Grand Guzzler Dort	size=17
+ED_N_174	Quake Axeman Dort	size=17
+ED_N_175	Desert Destroyer Dort	size=17
+ED_N_180	Novice Princess Emilia	size=17
+ED_N_181	Sulky Princess Emilia	size=17
+ED_N_182	Devoted Sister Emilia	size=17
+ED_N_183	Emilia the Aloof	size=17
+ED_N_184	Prodigy Emilia	size=17
+ED_N_185	Scarlet Prodigy Emilia	size=17
+ED_N_190	Tomboy Kylier	size=17
+ED_N_191	Wayward Girl Kylier	size=17
+ED_N_192	Kylier the Drifter	size=17
+ED_N_193	Roving Warrior Kylier	size=17
+ED_N_194	Soaring Warrior Kylier	size=17
+ED_N_195	Sky Sovereign Kylier	size=17
+ED_N_200	Hothead Cruz	size=17
+ED_N_201	Belated Rebel Cruz	size=17
+ED_N_202	Lone Fighter Cruz	size=17
+ED_N_203	Freedom Fighter Cruz	size=17
+ED_N_204	Revolutionary Cruz	size=17
+ED_N_205	Legendary Rebel Cruz	size=17
+ED_N_210	Broke Bounty Hunter Mizer	size=17
+ED_N_211	Poor Bounty Hunter Mizer	size=17
+ED_N_212	Wishful Bounty Hunter Mizer	size=17
+ED_N_213	Gritty Bounty Hunter Mizer	size=17
+ED_N_214	Ace Bounty Hunter Mizer	size=17
+ED_N_215	Outlaw Killer Mizer	size=17
+ED_N_220	Crybaby Elena	size=17
+ED_N_221	Scaredy-Cat Elena	size=17
+ED_N_222	Underling Elena	size=17
+ED_N_223	Maiden Warrior Elena	size=17
+ED_N_224	Tragic Assassin Elena	size=17
+ED_N_225	Righteous Killer Elena	size=17
+ED_N_230	All-Talk Zilva	size=17
+ED_N_231	Middle Manager Zilva	size=17
+ED_N_232	Stealthy Zilva	size=17
+ED_N_233	Zilva the Razor Wind	size=17
+ED_N_234	Dark Panther Zilva	size=17
+ED_N_235	Night Assassin Zilva	size=17
+ED_N_240	Town Dancer Amareus	size=17
+ED_N_241	Dancer Amareus	size=17
+ED_N_242	Dance Legend Amareus	size=17
+ED_N_243	Icy Smile Amareus	size=17
+ED_N_244	Dark Empress Amareus	size=17
+ED_N_245	Holy War Empress Amareus	size=17
+ED_N_250	Overconfident Roswell	size=17
+ED_N_251	Rash Young Roswell	size=17
+ED_N_252	Honor Student Roswell	size=17
+ED_N_253	Strategist Roswell	size=17
+ED_N_254	Great Sage Roswell	size=17
+ED_N_255	Black Rose Sage Roswell	size=17
+ED_N_260	Two-Bit Fraud Mardym	size=17
+ED_N_261	Rash Upstart Mardym	size=17
+ED_N_262	Sly Schemer Mardym	size=17
+ED_N_263	False Apostle Mardym	size=17
+ED_N_264	Evangelist Mardym	size=17
+ED_N_265	Deicide Saint Mardym	size=17
+ED_N_270	Man-Child Juvelon	size=17
+ED_N_271	Shady Official Juvelon	size=17
+ED_N_272	Moneybags Juvelon	size=17
+ED_N_273	Merchant King Juvelon	size=17
+ED_N_274	Mega-Mogul Juvelon	size=17
+ED_N_275	Rich & Mighty Juvelon	size=17
+ED_N_280	Spoiled Rosary	size=17
+ED_N_281	Bad Girl Rosary	size=17
+ED_N_282	White Meteor Rosary	size=17
+ED_N_283	Magic Herald Rosary	size=17
+ED_N_284	Great Mage Rosary	size=17
+ED_N_285	White Rose Magus Rosary	size=17
+ED_N_290	Dim Strategist Eudy	size=17
+ED_N_291	So-So Strategist Eudy	size=17
+ED_N_292	Genius Strategist Eudy	size=17
+ED_N_293	Ace Tactician Eudy	size=17
+ED_N_294	Master Tactician Eudy	size=17
+ED_N_295	Grand Tactician Eudy	size=17
+ED_N_300	Wimpy Mage Pamela	size=17
+ED_N_301	Shadow Mage Pamela	size=17
+ED_N_302	Big of Mages Pamela	size=17
+ED_N_303	Great of Mages Pamela	size=17
+ED_N_304	King of Mages Pamela	size=17
+ED_N_305	God of Mages Pamela	size=17
+ED_N_310	Vacant Shimobe	size=17
+ED_N_311	Mindless Shimobe	size=17
+ED_N_312	Cheerful Shimobe	size=17
+ED_N_313	Reassuring Shimobe	size=17
+ED_N_314	Reliable Shimobe	size=17
+ED_N_315	Faithful Shimobe	size=17
+ED_N_320	Dud Warrior Sodom	size=17
+ED_N_321	Gofer Warrior Sodom	size=17
+ED_N_322	Stray Warrior Sodom	size=17
+ED_N_323	Mighty Warrior Sodom	size=17
+ED_N_324	Top Warrior Sodom	size=17
+ED_N_325	Blast Warrior Sodom	size=17
+ED_N_330	Rubble Mamorigami	size=17
+ED_N_331	Name-Only Mamorigami	size=17
+ED_N_332	Lucky Mamorigami	size=17
+ED_N_333	Superalloy Mamorigami	size=17
+ED_N_334	Ultimate Mamorigami	size=17
+ED_N_335	Most-High Mamorigami	size=17
+ED_N_340	Wild Outlaw Gulcasa	size=17
+ED_N_341	Fool Lord Gulcasa	size=17
+ED_N_342	Demon Fighter Gulcasa	size=17
+ED_N_343	Hell Berserker Gulcasa	size=17
+ED_N_344	Blaze Fiend Gulcasa	size=17
+ED_N_345	Wildfire Hero Gulcasa	size=17
+ED_N_350	Klutz Housewife Mistel	size=17
+ED_N_351	Newlywed Mistel	size=17
+ED_N_352	Housewife Mistel	size=17
+ED_N_353	Full-Time Housewife Mistel	size=17
+ED_N_354	Housewives' Pal Mistel	size=17
+ED_N_355	Housewives' Ally Mistel	size=17
+ED_N_360	Lousy Prophet Nessiah	size=17
+ED_N_361	Fake Prophet Nessiah	size=17
+ED_N_362	Great Prophet Nessiah	size=17
+ED_N_363	Super Prophet Nessiah	size=17
+ED_N_364	Transcendent Nessiah	size=17
+ED_N_365	Super-God Nessiah	size=17
+ED_N_370	John Doe	size=17
+ED_N_371	Small-Fry Soldier	size=17
+ED_N_372	Unknown Soldier	size=17
+ED_N_373	Captain of a Hundred	size=17
+ED_N_374	Captain of a Thousand	size=17
+ED_N_375	His Excellency General	size=17
+# Unit name plates: 00-36 = unit table arm9 F5380 + n*0x14 (+0 name, +4 epithet); 37-71 generic types read
+# off CNAMEA (the table has Nameless Soldier there). A = 2-line plate, B = 1-line epithet, C = name tag 64x16
+CNAMEA00	Astral Fencer\nRussell	font=sans-b size=12 box=0,0,128,28
+CNAMEA01	Mercenary Captain\nInzaghi	font=sans-b size=12 box=0,0,128,28
+CNAMEA02	Canaan\nthe Hero	font=sans-b size=12 box=0,0,128,28
+CNAMEA03	Princess\nYggdra	font=sans-b size=12 box=0,0,128,28
+CNAMEA04	Twin Valkyrie\nLuciana	font=sans-b size=12 box=0,0,128,28
+CNAMEA05	Twin Valkyrie\nAegina	font=sans-b size=12 box=0,0,128,28
+CNAMEA06	Monica\nGirl of Flaube	font=sans-b size=12 box=0,0,128,28
+CNAMEA07	Knight Captain\nDurant	font=sans-b size=12 box=0,0,128,28
+CNAMEA08	Black Knight\nLeon	font=sans-b size=12 box=0,0,128,28
+CNAMEA09	God of War\nBaldus	font=sans-b size=12 box=0,0,128,28
+CNAMEA10	Gordon\nof Steel	font=sans-b size=12 box=0,0,128,28
+CNAMEA11	Airhead\nNietzsche	font=sans-b size=12 box=0,0,128,28
+CNAMEA12	Ishiene\nthe Reckless	font=sans-b size=12 box=0,0,128,28
+CNAMEA13	Queen\nEmelone	font=sans-b size=12 box=0,0,128,28
+CNAMEA14	Milanor\nthe Silver Wolf	font=sans-b size=12 box=0,0,128,28
+CNAMEA15	Loyal\nFlunky	font=sans-b size=12 box=0,0,128,28
+CNAMEA16	Brigand King\nOrtega	font=sans-b size=12 box=0,0,128,28
+CNAMEA17	Bandit King\nDort	font=sans-b size=12 box=0,0,128,28
+CNAMEA18	Scarlet Princess\nEmilia	font=sans-b size=12 box=0,0,128,28
+CNAMEA19	Fickle\nKylier	font=sans-b size=12 box=0,0,128,28
+CNAMEA20	Revolutionary\nCruz	font=sans-b size=12 box=0,0,128,28
+CNAMEA21	Bounty Hunter\nMizer	font=sans-b size=12 box=0,0,128,28
+CNAMEA22	Elena\nthe Apprentice	font=sans-b size=12 box=0,0,128,28
+CNAMEA23	Assassin\nZilva	font=sans-b size=12 box=0,0,128,28
+CNAMEA24	Bewitching\nAmareus	font=sans-b size=12 box=0,0,128,28
+CNAMEA25	Roswell\nHead of House Branthese	font=sans-b size=12 box=0,0,128,28
+CNAMEA26	Archbishop\nMardym	font=sans-b size=12 box=0,0,128,28
+CNAMEA27	Cardinal\nJuvelon	font=sans-b size=12 box=0,0,128,28
+CNAMEA28	Rosary\nHead of House Esmeralda	font=sans-b size=12 box=0,0,128,28
+CNAMEA29	Court Magician\nEudy	font=sans-b size=12 box=0,0,128,28
+CNAMEA30	Wondrous Witch\nPamela	font=sans-b size=12 box=0,0,128,28
+CNAMEA31	Eternal\nShimobe	font=sans-b size=12 box=0,0,128,28
+CNAMEA32	Magic Warrior\nSodom	font=sans-b size=12 box=0,0,128,28
+CNAMEA33	Living Fortress\nMamorigami	font=sans-b size=12 box=0,0,128,28
+CNAMEA34	Gulcasa\nthe Flame Emperor	font=sans-b size=12 box=0,0,128,28
+CNAMEA35	Full-Time Housewife\nMistel	font=sans-b size=12 box=0,0,128,28
+CNAMEA36	Nessiah\nthe Fallen	font=sans-b size=12 box=0,0,128,28
+CNAMEA37	Holy Cavalry	font=sans-b size=12 box=0,0,128,28
+CNAMEA38	Imperial Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA39	Royal Guard	font=sans-b size=12 box=0,0,128,28
+CNAMEA40	Court Magician	font=sans-b size=12 box=0,0,128,28
+CNAMEA41	Guardian Statue	font=sans-b size=12 box=0,0,128,28
+CNAMEA42	Scarlet Sky Rider	font=sans-b size=12 box=0,0,128,28
+CNAMEA43	Volunteer	font=sans-b size=12 box=0,0,128,28
+CNAMEA44	Militia	font=sans-b size=12 box=0,0,128,28
+CNAMEA45	Steel Cavalry	font=sans-b size=12 box=0,0,128,28
+CNAMEA46	Shadow	font=sans-b size=12 box=0,0,128,28
+CNAMEA47	Royal Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA48	Bounty Hunter	font=sans-b size=12 box=0,0,128,28
+CNAMEA49	Attendant	font=sans-b size=12 box=0,0,128,28
+CNAMEA50	Prototype	font=sans-b size=12 box=0,0,128,28
+CNAMEA51	Escort	font=sans-b size=12 box=0,0,128,28
+CNAMEA52	Heavy Cavalry	font=sans-b size=12 box=0,0,128,28
+CNAMEA53	Mercenary	font=sans-b size=12 box=0,0,128,28
+CNAMEA54	Monster	font=sans-b size=12 box=0,0,128,28
+CNAMEA55	Brigand	font=sans-b size=12 box=0,0,128,28
+CNAMEA56	White Rose Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA57	Mass Model	font=sans-b size=12 box=0,0,128,28
+CNAMEA58	Black Rose Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA59	Shimobe	font=sans-b size=12 box=0,0,128,28
+CNAMEA60	Water Folk	font=sans-b size=12 box=0,0,128,28
+CNAMEA61	Embellian Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA62	Lackey	font=sans-b size=12 box=0,0,128,28
+CNAMEA63	Puppet	font=sans-b size=12 box=0,0,128,28
+CNAMEA64	Marauder	font=sans-b size=12 box=0,0,128,28
+CNAMEA65	Meriant	font=sans-b size=12 box=0,0,128,28
+CNAMEA66	Bishop	font=sans-b size=12 box=0,0,128,28
+CNAMEA67	Temple Knight	font=sans-b size=12 box=0,0,128,28
+CNAMEA68	Theocracy Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA69	Divine Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEA70	Outlaw	font=sans-b size=12 box=0,0,128,28
+CNAMEA71	Nameless Soldier	font=sans-b size=12 box=0,0,128,28
+CNAMEB000	Astral Fencer Russell	font=sans-b size=12 align=l
+CNAMEB001	Mercenary Captain Inzaghi	font=sans-b size=12 align=l
+CNAMEB002	Canaan the Hero	font=sans-b size=12 align=l
+CNAMEB003	Princess Yggdra	font=sans-b size=12 align=l
+CNAMEB004	Twin Valkyrie Luciana	font=sans-b size=12 align=l
+CNAMEB005	Twin Valkyrie Aegina	font=sans-b size=12 align=l
+CNAMEB006	Monica, Girl of Flaube	font=sans-b size=12 align=l
+CNAMEB007	Knight Captain Durant	font=sans-b size=12 align=l
+CNAMEB008	Black Knight Leon	font=sans-b size=12 align=l
+CNAMEB009	God of War Baldus	font=sans-b size=12 align=l
+CNAMEB010	Gordon of Steel	font=sans-b size=12 align=l
+CNAMEB011	Airhead Nietzsche	font=sans-b size=12 align=l
+CNAMEB012	Ishiene the Reckless	font=sans-b size=12 align=l
+CNAMEB013	Queen Emelone	font=sans-b size=12 align=l
+CNAMEB014	Milanor the Silver Wolf	font=sans-b size=12 align=l
+CNAMEB015	Loyal Flunky	font=sans-b size=12 align=l
+CNAMEB016	Brigand King Ortega	font=sans-b size=12 align=l
+CNAMEB017	Bandit King Dort	font=sans-b size=12 align=l
+CNAMEB018	Scarlet Princess Emilia	font=sans-b size=12 align=l
+CNAMEB019	Fickle Kylier	font=sans-b size=12 align=l
+CNAMEB020	Revolutionary Cruz	font=sans-b size=12 align=l
+CNAMEB021	Bounty Hunter Mizer	font=sans-b size=12 align=l
+CNAMEB022	Elena the Apprentice	font=sans-b size=12 align=l
+CNAMEB023	Assassin Zilva	font=sans-b size=12 align=l
+CNAMEB024	Bewitching Amareus	font=sans-b size=12 align=l
+CNAMEB025	Roswell,\nHead of House Branthese	font=sans-b size=11 align=l box=0,0,127,28
+CNAMEB026	Archbishop Mardym	font=sans-b size=12 align=l
+CNAMEB027	Cardinal Juvelon	font=sans-b size=12 align=l
+CNAMEB028	Rosary,\nHead of House Esmeralda	font=sans-b size=11 align=l box=0,0,127,28
+CNAMEB029	Court Magician Eudy	font=sans-b size=12 align=l
+CNAMEB030	Wondrous Witch Pamela	font=sans-b size=12 align=l
+CNAMEB031	Eternal Shimobe	font=sans-b size=12 align=l
+CNAMEB032	Magic Warrior Sodom	font=sans-b size=12 align=l
+CNAMEB033	Living Fortress Mamorigami	font=sans-b size=12 align=l
+CNAMEB034	Gulcasa the Flame Emperor	font=sans-b size=12 align=l
+CNAMEB035	Full-Time Housewife Mistel	font=sans-b size=12 align=l
+CNAMEB036	Nessiah the Fallen	font=sans-b size=12 align=l
+CNAMEB037	Holy Cavalry	font=sans-b size=12 align=l
+CNAMEB038	Imperial Soldier	font=sans-b size=12 align=l
+CNAMEB039	Royal Guard	font=sans-b size=12 align=l
+CNAMEB040	Court Magician	font=sans-b size=12 align=l
+CNAMEB041	Guardian Statue	font=sans-b size=12 align=l
+CNAMEB042	Scarlet Sky Rider	font=sans-b size=12 align=l
+CNAMEB043	Volunteer	font=sans-b size=12 align=l
+CNAMEB044	Militia	font=sans-b size=12 align=l
+CNAMEB045	Steel Cavalry	font=sans-b size=12 align=l
+CNAMEB046	Shadow	font=sans-b size=12 align=l
+CNAMEB047	Royal Soldier	font=sans-b size=12 align=l
+CNAMEB048	Bounty Hunter	font=sans-b size=12 align=l
+CNAMEB049	Attendant	font=sans-b size=12 align=l
+CNAMEB050	Prototype	font=sans-b size=12 align=l
+CNAMEB051	Escort	font=sans-b size=12 align=l
+CNAMEB052	Heavy Cavalry	font=sans-b size=12 align=l
+CNAMEB053	Mercenary	font=sans-b size=12 align=l
+CNAMEB054	Monster	font=sans-b size=12 align=l
+CNAMEB055	Brigand	font=sans-b size=12 align=l
+CNAMEB056	White Rose Soldier	font=sans-b size=12 align=l
+CNAMEB057	Mass Model	font=sans-b size=12 align=l
+CNAMEB058	Black Rose Soldier	font=sans-b size=12 align=l
+CNAMEB059	Shimobe	font=sans-b size=12 align=l
+CNAMEB060	Water Folk	font=sans-b size=12 align=l
+CNAMEB061	Embellian Soldier	font=sans-b size=12 align=l
+CNAMEB062	Lackey	font=sans-b size=12 align=l
+CNAMEB063	Puppet	font=sans-b size=12 align=l
+CNAMEB064	Marauder	font=sans-b size=12 align=l
+CNAMEB065	Meriant	font=sans-b size=12 align=l
+CNAMEB066	Bishop	font=sans-b size=12 align=l
+CNAMEB067	Temple Knight	font=sans-b size=12 align=l
+CNAMEB068	Theocracy Soldier	font=sans-b size=12 align=l
+CNAMEB069	Divine Soldier	font=sans-b size=12 align=l
+CNAMEB070	Outlaw	font=sans-b size=12 align=l
+CNAMEB071	Nameless Soldier	font=sans-b size=12 align=l
+CNAMEB098	Nameless Soldier	font=sans-b size=12 align=l
+CNAMEB099	Spy	font=sans-b size=12 align=l
+CNAMEB253	Spy	font=sans-b size=12 align=l
+CNAMEC00	Russell	font=sans-b size=10 align=l min_x=0.6
+CNAMEC01	Inzaghi	font=sans-b size=10 align=l min_x=0.6
+CNAMEC02	Canaan	font=sans-b size=10 align=l min_x=0.6
+CNAMEC03	Yggdra	font=sans-b size=10 align=l min_x=0.6
+CNAMEC04	Luciana	font=sans-b size=10 align=l min_x=0.6
+CNAMEC05	Aegina	font=sans-b size=10 align=l min_x=0.6
+CNAMEC06	Monica	font=sans-b size=10 align=l min_x=0.6
+CNAMEC07	Durant	font=sans-b size=10 align=l min_x=0.6
+CNAMEC08	Leon	font=sans-b size=10 align=l min_x=0.6
+CNAMEC09	Baldus	font=sans-b size=10 align=l min_x=0.6
+CNAMEC10	Gordon	font=sans-b size=10 align=l min_x=0.6
+CNAMEC11	Nietzsche	font=sans-b size=10 align=l min_x=0.6
+CNAMEC12	Ishiene	font=sans-b size=10 align=l min_x=0.6
+CNAMEC13	Emelone	font=sans-b size=10 align=l min_x=0.6
+CNAMEC14	Milanor	font=sans-b size=10 align=l min_x=0.6
+CNAMEC15	Flunky	font=sans-b size=10 align=l min_x=0.6
+CNAMEC16	Ortega	font=sans-b size=10 align=l min_x=0.6
+CNAMEC17	Dort	font=sans-b size=10 align=l min_x=0.6
+CNAMEC18	Emilia	font=sans-b size=10 align=l min_x=0.6
+CNAMEC19	Kylier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC20	Cruz	font=sans-b size=10 align=l min_x=0.6
+CNAMEC21	Mizer	font=sans-b size=10 align=l min_x=0.6
+CNAMEC22	Elena	font=sans-b size=10 align=l min_x=0.6
+CNAMEC23	Zilva	font=sans-b size=10 align=l min_x=0.6
+CNAMEC24	Amareus	font=sans-b size=10 align=l min_x=0.6
+CNAMEC25	Roswell	font=sans-b size=10 align=l min_x=0.6
+CNAMEC26	Mardym	font=sans-b size=10 align=l min_x=0.6
+CNAMEC27	Juvelon	font=sans-b size=10 align=l min_x=0.6
+CNAMEC28	Rosary	font=sans-b size=10 align=l min_x=0.6
+CNAMEC29	Eudy	font=sans-b size=10 align=l min_x=0.6
+CNAMEC30	Pamela	font=sans-b size=10 align=l min_x=0.6
+CNAMEC31	Shimobe	font=sans-b size=10 align=l min_x=0.6
+CNAMEC32	Sodom	font=sans-b size=10 align=l min_x=0.6
+CNAMEC33	Mamorigami	font=sans-b size=10 align=l min_x=0.6
+CNAMEC34	Gulcasa	font=sans-b size=10 align=l min_x=0.6
+CNAMEC35	Mistel	font=sans-b size=10 align=l min_x=0.6
+CNAMEC36	Nessiah	font=sans-b size=10 align=l min_x=0.6
+CNAMEC37	Holy Cavalry	font=sans-b size=10 align=l min_x=0.6
+CNAMEC38	Imperial Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC39	Royal Guard	font=sans-b size=10 align=l min_x=0.6
+CNAMEC40	Court Magician	font=sans-b size=10 align=l min_x=0.6
+CNAMEC41	Guardian Statue	font=sans-b size=10 align=l min_x=0.6
+CNAMEC42	Scarlet Sky Rider	font=sans-b size=10 align=l min_x=0.6
+CNAMEC43	Volunteer	font=sans-b size=10 align=l min_x=0.6
+CNAMEC44	Militia	font=sans-b size=10 align=l min_x=0.6
+CNAMEC45	Steel Cavalry	font=sans-b size=10 align=l min_x=0.6
+CNAMEC46	Shadow	font=sans-b size=10 align=l min_x=0.6
+CNAMEC47	Royal Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC48	Bounty Hunter	font=sans-b size=10 align=l min_x=0.6
+CNAMEC49	Attendant	font=sans-b size=10 align=l min_x=0.6
+CNAMEC50	Prototype	font=sans-b size=10 align=l min_x=0.6
+CNAMEC51	Escort	font=sans-b size=10 align=l min_x=0.6
+CNAMEC52	Heavy Cavalry	font=sans-b size=10 align=l min_x=0.6
+CNAMEC53	Mercenary	font=sans-b size=10 align=l min_x=0.6
+CNAMEC54	Monster	font=sans-b size=10 align=l min_x=0.6
+CNAMEC55	Brigand	font=sans-b size=10 align=l min_x=0.6
+CNAMEC56	White Rose Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC57	Mass Model	font=sans-b size=10 align=l min_x=0.6
+CNAMEC58	Black Rose Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC59	Shimobe	font=sans-b size=10 align=l min_x=0.6
+CNAMEC60	Water Folk	font=sans-b size=10 align=l min_x=0.6
+CNAMEC61	Embellian Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC62	Lackey	font=sans-b size=10 align=l min_x=0.6
+CNAMEC63	Puppet	font=sans-b size=10 align=l min_x=0.6
+CNAMEC64	Marauder	font=sans-b size=10 align=l min_x=0.6
+CNAMEC65	Meriant	font=sans-b size=10 align=l min_x=0.6
+CNAMEC66	Bishop	font=sans-b size=10 align=l min_x=0.6
+CNAMEC67	Temple Knight	font=sans-b size=10 align=l min_x=0.6
+CNAMEC68	Theocracy Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC69	Divine Soldier	font=sans-b size=10 align=l min_x=0.6
+CNAMEC70	Outlaw	font=sans-b size=10 align=l min_x=0.6
+CNAMEC71	Nameless Soldier	font=sans-b size=10 align=l min_x=0.6
