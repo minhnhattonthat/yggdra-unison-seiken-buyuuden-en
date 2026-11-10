@@ -1661,3 +1661,204 @@ _unk_f346fded	Through Queen Emelone's deeds, the\nDuchy of Embellia has widened 
 _unk_f70a3627	Hating those who mouth pretty words,\nthe Ortega Brigands have defeated the\nTemple Knights.\n\nHating, above all, any limit on what\nthey do, they could never get along with\nthe Temple Knights, keepers of order;\nin time it came to blows, and at last\nthe Temple Knights were wiped out.\nWith that nuisance gone, can anyone\nstand in their way...?	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220
 _unk_facd6e61	The Temple Knights under Gordon could\nnot let pass the taking of what belongs\nto others, noble thieves or not.\n\nMilanor's Thieves may share their spoils\nwith the people, but where that money\ncomes from is the problem. In regions\nbeyond the reach of law and order,\nnothing can stop them. So Gordon, the\nTemple Knights' commander, resolves to\nride out himself, wipe out the thieves\nand restore order.\nHow will the battle turn out?	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220
 _unk_fd3dfd22	After many campaigns, the New Bronquian\nEmpire has vastly widened its realm.\n\n\nWith more lands came great national\nstrength, and the name of Emperor\nGulcasa rang out across the continent.\nBut the nations around them did not\nlook on in silence: they readied for\nthe next war, building their strength...	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220
+# TU_* tutorial shots (256 x 100 4x4, picture 200 x 100): labels read off the textures (work/gfx/tu), ink rects by
+# tools/inkrects.py or the 3x sheets. Flat panels clear=panel, art and gradient tables clear=fill.
+#! TU_ font=sans-b wide=0 min_x=0.5 clear=fill
+TU_C03_00	Terrain Affinity	box=20,0,40,10 size=7 align=l
+TU_C03_00	Base	box=88,0,17,10 size=7
+TU_C03_00	Fort	box=105,0,17,10 size=7
+TU_C03_00	Town	box=123,0,17,10 size=7
+TU_C03_00	Road	box=140,0,17,10 size=7
+TU_C03_00	Plain	box=158,0,17,10 size=7
+TU_C03_00	Forest	box=176,0,17,10 size=7
+TU_C03_00	Fencer	box=24,13,35,10 size=9 align=l
+TU_C03_00	Valkyrie	box=24,28,35,10 size=9 align=l
+TU_C03_00	Knight	box=24,43,35,10 size=9 align=l
+TU_C03_00	Undine	box=24,57,35,10 size=9 align=l
+TU_C03_00	Bandit	box=24,72,35,10 size=9 align=l
+TU_C03_00	Griffon Rider	box=24,87,35,10 size=9 align=l
+TU_C09_00	Weapon Affinity	box=33,0,37,11 size=7
+TU_C09_00	Sword	box=69,0,14,11 size=7
+TU_C09_00	Lance	box=83,0,14,11 size=7
+TU_C09_00	Axe	box=97,0,14,11 size=7
+TU_C09_00	Bow	box=111,0,14,11 size=7
+TU_C09_00	Staff	box=125,0,14,11 size=7
+TU_C09_00	Rock	box=139,0,14,11 size=7
+TU_C09_00	Scythe	box=153,0,14,11 size=7
+TU_C09_00	Sword	box=48,12,15,9 size=7 align=l
+TU_C09_00	Lance	box=48,25,15,9 size=7 align=l
+TU_C09_00	Axe	box=48,37,15,9 size=7 align=l
+TU_C09_00	Bow	box=48,50,15,9 size=7 align=l
+TU_C09_00	Staff	box=48,63,15,9 size=7 align=l
+TU_C09_00	Rock	box=48,75,15,9 size=7 align=l
+TU_C09_00	Scythe	box=48,88,15,9 size=7 align=l
+#! TU_C12_00 clear=panel size=12
+TU_C12_00	Smash Hit Conditions (Attacker → Defender)	box=15,5,188,15 size=13
+TU_C12_00	Hunter	box=24,25,78,12 align=r
+TU_C12_00	Griffon Rider	box=24,43,78,12 align=r
+TU_C12_00	Valkyrie	box=24,60,78,12 align=r
+TU_C12_00	Necromancer	box=24,77,78,12 align=r
+TU_C12_00	Griffon Rider	box=124,25,78,12 align=l
+TU_C12_00	Knight	box=124,43,78,12 align=l
+TU_C12_00	Golem	box=124,60,78,12 align=l
+TU_C12_00	Skeleton	box=124,77,78,12 align=l
+#! TU_C13_00 clear=panel
+TU_C13_00	Critical Hit Conditions	box=11,5,120,13 align=l
+TU_C13_00	1. A Unison Attack with\n    a Unison Count of 5\n2. An Assassin's Unison Attack\n    with a Unison Count of 4	box=14,24,190,66 align=l rows=4
+#! TU_C14_00 clear=panel size=8
+TU_C14_00	Unit\nFace	box=10,18,40,18
+TU_C14_00	Unit Name	box=66,10,40,10
+TU_C14_00	Hit Points	box=122,15,53,10
+TU_C14_00	Unit	box=148,30,31,9 align=l
+TU_C14_00	Milanor	box=81,34,26,8 align=l clear=fill
+TU_C14_00	Impact	box=147,57,38,10 align=l
+TU_C14_00	Circle Size	box=146,68,58,10 align=l
+TU_C14_00	Move Speed	box=19,71,37,10
+TU_C14_00	Weapon & ATK	box=89,77,52,10
+TU_C06_01	Deploy Unit	box=125,1,42,9 clear=row
+TU_C06_01	Deploy Selected Units!	box=60,84,112,12 clear=row size=11
+TU_C06_01	Milanor	box=44,13,24,6 align=l size=6
+TU_C06_01	Kylier	box=44,36,24,6 align=l size=6
+TU_C06_01	Nameless Soldier	box=44,58,30,6 align=l size=6
+TU_C06_01	Nameless Soldier	box=109,36,30,6 align=l size=6
+TU_C15_01	White Rose Manor	box=37,38,100,10 align=l size=10
+TU_C15_01	West Verlaine Hills	box=37,52,110,11 align=l size=10
+TU_C15_01	East Verlaine Hills	box=37,67,110,11 align=l size=10
+TU_C15_01	Floland	box=37,82,80,11 align=l size=10 fill=248,240,0
+#! TU_C16_00 size=7
+TU_C16_00	Weapon/Element	box=18,2,40,10 align=l size=8
+TU_C16_00	Weapon Type	box=89,2,36,10
+TU_C16_00	Immune	box=126,2,32,10
+TU_C16_00	Weakness	box=160,2,34,10
+TU_C16_00	Fencer	box=20,15,42,10 align=l size=8
+TU_C16_00	Valkyrie	box=20,30,42,10 align=l size=8
+TU_C16_00	Knight	box=20,45,42,10 align=l size=8
+TU_C16_00	Undine	box=20,60,42,10 align=l size=8
+TU_C16_00	Bandit	box=20,75,42,10 align=l size=8
+TU_C16_00	Griffon Rider	box=20,90,42,10 align=l size=8
+TU_C16_00	Sword	box=106,15,17,10
+TU_C16_00	Sword	box=106,30,17,10
+TU_C16_00	Lance	box=106,45,17,10
+TU_C16_00	Lance	box=106,60,17,10
+TU_C16_00	Axe	box=106,75,17,10
+TU_C16_00	Axe	box=106,90,17,10
+TU_C16_00	Bolt	box=136,15,18,10
+TU_C16_00	Holy	box=136,30,18,10
+TU_C16_00	Dark	box=172,30,18,10
+TU_C16_00	Ice	box=136,60,18,10
+TU_C16_00	Fire	box=172,60,18,10
+TU_C16_00	Ice	box=172,90,18,10
+#! TU_T02_02 clear=row size=8
+TU_T02_02	Unit Info	box=80,22,50,10
+TU_T02_02	Weapon Affinity	box=83,37,48,10
+TU_T02_02	Retry	box=84,52,46,10
+TU_T02_02	Back to Title	box=80,67,53,10
+TU_T02_02	Resume	box=83,82,46,10
+TU_C05_01	Randomly lose one held item!	box=28,66,150,13
+TU_C08_00	Milanor the Silver Wolf	box=99,64,72,8 align=l size=7 fill=248,240,0
+TU_C08_00	I'm comin' at ya!	box=96,73,74,10 align=l size=8
+TU_C08_01	Water Folk	box=43,64,40,8 align=l size=7 fill=248,240,0
+TU_C08_01	Try and dodge this!	box=45,73,78,10 align=l size=8
+TU_C10_01	Milanor the Silver Wolf	box=92,89,58,9 size=7 fill=248,240,0
+TU_T04_02	Monica, Girl of Flaube	box=91,55,90,9 align=l size=8 fill=248,240,0
+TU_T04_02	There's a path to the right...	box=88,69,102,10 align=l size=8
+TU_T04_03	Monica, Girl of Flaube	box=98,57,90,9 align=l size=8 fill=248,240,0
+TU_T04_03	I found something!	box=92,71,100,10 align=l size=8
+TU_T04_04	went there and never\ncame back...	box=64,39,112,21 align=l size=9
+TU_T04_06	Durant, to\nFort Lonaris...	box=80,39,96,21 align=l size=9
+#! TU_T06_00 clear=panel size=11 align=l
+TU_T06_00	Always captured (HP 0, LP full)	box=32,6,170,14
+TU_T06_00	May die in battle (LP down)	box=32,36,170,15
+TU_T06_00	Always dies (LP 0)	box=32,67,150,15
+TU_T06_01	Foe General Captured	box=70,24,82,13 size=10 fill=248,248,248
+TU_T06_01	Nameless Soldier	box=97,51,62,9 align=l size=8 fill=248,248,200
+TU_T06_01	That settles it!	box=92,62,80,12 align=l size=9
+TU_T07_00	What will you do with the prisoner?	box=40,22,160,12 size=9
+TU_T07_00	Recruit	box=52,85,32,10 size=8
+TU_T07_00	Banish	box=136,85,30,10 size=8
+TU_T07_01	Ishiene the Reckless	box=17,54,72,9 align=l size=8 fill=248,240,0
+TU_T07_01	Do as you please!	box=17,68,100,11 align=l size=9
+TU_T08_00	Choose Your Target	box=40,9,90,10 align=l size=8
+TU_T08_00	Norn Canyon	box=55,26,75,15 size=13
+TU_T08_00	Leader: Milanor the Silver Wolf	box=35,45,72,10 align=l size=8
+TU_T08_00	Guard: 3	box=35,70,40,10 align=l size=8
+TU_T08_00	Troops: 8	box=35,82,34,11 align=l size=8
+TU_T08_00	Capital	box=77,82,24,11 align=l size=8 fill=248,240,0
+TU_T09_00	War Report	box=55,1,46,11 size=8
+TU_T09_00	Spy	box=44,68,24,7 align=l size=7 fill=248,240,0
+TU_T09_00	Reporting in!	box=60,76,60,9 align=l size=8
+#! TU_T04_01 size=8 align=l fill=240,240,240
+TU_T04_01	South Nyllard Desert	box=56,25,80,10
+TU_T04_01	Minerroad West End	box=56,35,80,10
+TU_T04_01	Holy City of Oz	box=56,45,80,10 fill=248,240,0
+TU_T04_01	Temple Cities of Lombardia	box=56,55,80,10
+TU_T04_01	St. Meriata Church Domain	box=56,65,80,10
+TU_T04_01	Lenessey Volcanic Region	box=56,75,80,10
+TU_T04_01	Back	box=52,90,16,8 size=7 align=c
+TU_T04_01	Forces	box=96,90,23,8 size=7 align=c
+TU_T04_01	Select	box=146,90,17,8 size=7 align=c
+TU_T04_05	Floland	box=40,26,80,20 size=17 align=l
+TU_T04_05	Terrain: Water	box=16,55,64,14 size=11 align=l
+TU_T04_05	Element: Ice	box=104,55,66,14 size=11 align=l
+TU_T04_05	Distance: 1 land	box=16,71,80,14 size=11 align=l
+TU_T04_05	Return: 3 turns	box=104,71,86,14 size=11 align=l
+TU_T04_05	Selected	box=40,85,36,7 size=7
+TU_T04_05	Dispatched	box=99,85,36,7 size=7
+#! TU_T05_00 size=8 align=l
+TU_T05_00	Kylier	box=26,2,22,7 size=6
+TU_T05_00	No Item	box=43,31,60,9 fill=240,240,240
+TU_T05_00	Devil's Tail	box=43,46,60,9 fill=248,240,0
+TU_T05_00	Evil Spirit Talisman	box=43,60,60,9 fill=240,240,240
+TU_T05_00	Bewitching Fruit	box=43,75,60,9 fill=240,240,240
+TU_T05_00	Alan Doll	box=43,89,60,9 fill=240,240,240
+TU_T05_01	Bone of Giant Rokon	box=90,44,60,8 size=7 align=l
+TU_T05_01	Rarity	box=55,55,18,9 size=7
+TU_T10_00	Royal Army	box=62,71,22,6 size=6
+TU_T10_00	Revolutionary Cruz	box=51,78,46,8 size=7
+TU_T10_00	Forest Army	box=127,71,22,6 size=6
+TU_T10_00	Bounty Hunter Mizer	box=117,78,46,8 size=7
+TU_T10_01	Royal Army	box=37,11,32,10 size=9
+TU_T10_01	Revolutionary Cruz	box=30,23,64,10 size=9
+TU_T10_01	Forest Army	box=135,11,34,10 size=9
+TU_T10_01	Bounty Hunter Mizer	box=120,23,66,10 size=9
+TU_T01_00	 	box=42,11,134,16
+TU_T01_00	~ Legend of the Holy Sword ~	font=serif-b size=8 clear=row fill=32,24,16 outline=230,230,230 box=74,71,80,13
+TU_T11_01	Plague Outbreak	box=62,49,84,16 size=13
+TU_T11_01	The stricken land loses troops.	box=40,77,130,10 size=8
+#! TU_T02_0 size=6 min_x=0.4 align=l
+TU_T02_04	Bandits	box=52,1,24,6 align=c
+TU_T02_04	Strength	box=44,7,26,7
+TU_T02_04	Embellian Army	box=131,1,28,6 align=c
+TU_T02_04	Strength	box=131,7,24,7
+TU_T02_05	Bandits	box=52,1,24,6 align=c
+TU_T02_05	Strength	box=44,7,26,7
+TU_T02_05	Embellian Army	box=131,1,28,6 align=c
+TU_T02_05	Strength	box=131,7,24,7
+TU_T02_04	Milanor	box=55,15,20,6
+TU_T02_04	Kylier	box=55,32,20,6
+TU_T02_04	Nameless Soldier	box=55,67,28,6
+TU_T02_04	Ishiene	box=141,15,20,6
+TU_T02_04	Water Folk	box=141,68,20,6
+TU_T02_04	Gravity Chaos	box=90,70,38,8 size=7 align=c
+TU_T02_05	Milanor	box=54,15,20,6
+TU_T02_05	Bandit	box=42,26,30,6
+TU_T02_05	Kylier	box=54,32,20,6
+TU_T02_05	Griffon Rider	box=42,42,30,6
+TU_T02_05	Bandit	box=42,59,30,6
+TU_T02_05	Nameless Soldier	box=54,67,28,6
+TU_T02_05	Necromancer	box=42,77,30,6
+TU_T02_05	Ishiene	box=104,16,22,6
+TU_T02_05	Undine	box=104,22,26,6
+TU_T02_05	Water Folk	box=104,49,22,6
+TU_T02_05	Undine	box=104,55,26,6
+TU_T02_05	Base	box=110,72,10,6 align=c
+TU_T02_05	Fort	box=122,72,10,6 align=c
+TU_T02_05	Town	box=134,72,10,6 align=c
+TU_T02_05	Road	box=146,72,10,6 align=c
+TU_T02_05	Plain	box=158,72,10,6 align=c
+TU_T02_05	Forest	box=99,86,10,6 align=c
+TU_T02_05	Waste	box=111,86,10,6 align=c
+TU_T02_05	Desert	box=123,86,10,6 align=c
+TU_T02_05	Peaks	box=135,86,10,6 align=c
+TU_T02_05	Water	box=147,86,10,6 align=c
+TU_T02_05	Swamp	box=159,86,10,6 align=c

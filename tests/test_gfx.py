@@ -18,3 +18,16 @@ def test_roundtrip(name):
     img, _ = gfx.decode(orig)
     new = gfx.encode(orig, img)
     assert np.array_equal(np.array(gfx.decode(new)[0]), np.array(img))
+
+
+def test_gen_gfx_clears():
+    """clear=panel paints the commonest border colour, so a leader line crossing the box doesn't streak (clear=row
+    did); clear=fill works on a box touching the texture edge (used to raise)."""
+    import gen_gfx
+    a = np.zeros((40, 80, 4), np.uint8)
+    a[...] = (0, 0, 128, 255)
+    a[10, :] = (255, 0, 0, 255)  # red leader line through the box
+    gen_gfx.draw(a, "Ab", {"box": "10,5,40,20", "clear": "panel", "fill": "255,255,255"})
+    box = a[5:25, 10:50]
+    assert not ((box[..., 0] == 255) & (box[..., 1] == 0) & (box[..., 2] == 0)).any()
+    gen_gfx.draw(a, "Ab", {"box": "0,0,30,10", "clear": "fill"})

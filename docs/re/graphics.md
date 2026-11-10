@@ -38,7 +38,7 @@ Counts are files. "atlas" = many labels packed in one texture (needs the layout:
 | SHOOTNAME00-11,99, WR_SHN00-05, WR_FONT, EVSFONT00-17, EVSFONTSB00-07, BATTLEOUT1-3, SELSORTIE, TERAGGFONT | ~55 | phase banners (勢力選択 カード選択 出撃先選択 戦況報告 探索 ...), war report (戦争勃発 占領成功 ... 疫病発生, 勝利 敗北), event goals (が都市を制圧 ... タイムオーバー), battle outs (戦線離脱 敵兵退却 敵兵戦死), 選択ユニット出撃! | |
 | OBJSTR00-13 | 14 | map-object help panels (title + 3 lines) | |
 | BTLFONT, BTLMN_FONT, BUTTON, SYSTEX, SYSTEX2, FORSEL_FONT, SAVE_FONT, SEN_FONT, TREFONT, TEND_FONT, TR_FONT, TUKOKU_FONT, TUTO_FONT, GMOVERFONT, EXTRA_FONT, ENETREFONT, HELP_MAT, OP_FONT, PRO_FONT, PRIZE_FONT | 20 | UI label atlases (menus, battle HUD, buttons, save/load, explore, turn end, game over, extras, prisoner, help) | atlas: needs the label rects before redraw |
-| TU_C01_00-TU_C17_00, TU_T01_00-TU_T11_01 | ~57 | tutorial screenshots with baked Japanese (UI, tables, dialogue) | redraw from English screenshots of the patched game, late (phase 8) |
+| TU_C01_00-TU_C17_00, TU_T01_00-TU_T11_01 | ~57 | tutorial screenshots with baked Japanese (UI, tables, dialogue) | session 21: labels overlaid in gfx/text.tsv (40 shots; the rest have no Japanese), boxes from `tools/inkrects.py` / zoom-4 crops (px / 4); dialogue = the script's own English |
 
 ## Already English (no work)
 STAFFROLL00-14 (credits), B_GAMECLEAR/B_GAMEOVER/B_START, BEGIN, BEATOUT, CARDNAMEB00-35, CI_ATLOGO, CI_STLOGO,

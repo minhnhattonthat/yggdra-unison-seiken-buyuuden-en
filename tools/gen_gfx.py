@@ -14,6 +14,7 @@ PREFIX (a row's own options win). Options (space separated, key=value):
   clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency;
                 clear=vert  blend each column between the rows above and below the box (text over art)
                 clear=fill  smooth fill from the whole border (busy art, where clear=vert streaks)
+                clear=panel the commonest border colour (flat panel crossed by leader lines, where row streaks)
 Colours come from the original: fill = per-row brightest opaque colour in the box (keeps gradients), outline =
 the darkest common opaque colour. Alpha is binary (4x4 textures have no partial alpha).
 
@@ -139,8 +140,12 @@ def draw(a, text, o):
     elif o.get("clear") == "vert":  # text on art: blend each column from the row above the box to the row below
         t = (np.arange(1, h + 1) / (h + 1))[:, None, None]
         a[y:y + h, x:x + w] = np.round(a[y - 1, x:x + w] * (1 - t) + a[y + h, x:x + w] * t)
+    elif o.get("clear") == "panel":  # flat panel crossed by lines: the commonest colour on the box border
+        ring = np.concatenate([a[y - 1, x:x + w], a[y + h, x:x + w], a[y:y + h, x - 1], a[y:y + h, x + w]])
+        a[y:y + h, x:x + w] = Counter(map(tuple, ring)).most_common(1)[0][0]
     elif o.get("clear") == "fill":  # text on busy art: smooth fill from the box's border (Laplace relaxation)
-        reg = a[y - 1:y + h + 1, x - 1:x + w + 1, :3].astype(float)
+        # edge-padded so a box touching the texture edge takes the edge row as its border
+        reg = np.pad(a[..., :3], ((1, 1), (1, 1), (0, 0)), mode="edge")[y:y + h + 2, x:x + w + 2].astype(float)
         for _ in range(400):
             reg[1:-1, 1:-1] = (reg[:-2, 1:-1] + reg[2:, 1:-1] + reg[1:-1, :-2] + reg[1:-1, 2:]) / 4
         a[y:y + h, x:x + w, :3] = np.round(reg[1:-1, 1:-1])

@@ -3,7 +3,21 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 20 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 21 latest).
+- **Phase 8 progress (session 21):** TU_* tutorial shots done: gfx/text.tsv has the labels of all 40 shots with
+  Japanese (the other 17 have none; dump in work/gfx/tu, 256 x 100 4x4, shown 1:1 on the bottom screen). Dialogue
+  uses the script's own English; names/terms from glossary + atlas rows. New: `tools/inkrects.py` (ink rects on a
+  picture texture; atlas.py grows to the opaque panel), gen_gfx `clear=panel` (commonest border colour: diagrams
+  with leader lines) and clear=fill on boxes touching the edge (test_gfx). Coordinates: read single-file zoom crops
+  (px / N), never multi-tile sheets (they shrink: docs/skill-gotchas.md). Leftovers/guesses in docs/polish.md
+  "TU_*". Seen English in game: Exploration topic (TU_T04_01/02/03/06, work/qa/s21_tuto.png; route: tutorial.dst,
+  t75,78 then t60,107, then t80,165 per page). Build 2026-11-10 sha1 159b2e59 (smoke ok); work/states regenerated
+  35/35 from 8dda782e (differs only in TU_*), tutorial.dst from 159b2e59.
+  **Graphics text is now all in text.tsv.** **Next:** the session-19 on-screen list (battle pause menu BTLMN, explore
+  map TREFONT, prisoner ENETREFONT, save slots, 戦績 page) as a QA tour: regen states, `qa_gate.py init
+  work/qa/manifest.tsv work/qa/tour --build build/yggdra_en.nds`, tour_jp on the original, verdicts in a fresh
+  read-only pass (no subagents in an Orca worker), inkbox on choice/centred boxes, textcover (needs build/strings.tsv
+  + a TEXT hook log).
 - **Phase 8 progress (session 20):** unnamed DATA.SFS files now go by `_unk_<hash8>.PACK` (text.sfs_files,
   sfs.name_hash; test in test_sfs), so text.tsv / gen_gfx / gfx.py / build take them. gfx/text.tsv gained all 60
   war-event titles (256 x 24) + 60 paragraphs (256 x 240, other factions' wars on the war report; read off the

@@ -150,3 +150,8 @@ to run while any line is unticked.
   reviewer): story-pass them with the faction voices; not seen on screen (window x unknown: maxw 220 assumed);
   logo variants 5851b4bc/660bec2b/73c6239a: ruby boxes eyeballed, check on screen; _unk_c85ce18c "Town of Tolstoy"
   label (unknown use) and _unk_078801f1 (noise decode, untouched)
+- [ ] TU_* tutorial shots (session 21, labels read off 256 x 100 shots, no reviewer): unread and left Japanese: the
+  2nd unit name (コアン?) on TU_C06_01 / TU_T02_04 / TU_T02_05 and the tiny portrait tags on TU_C06_01; guesses:
+  TU_T04_01 row 1 "South Nyllard Desert" (南部 or 北部), TU_T02_05 terrain row 2 order (Forest Waste Desert Peaks
+  Water Swamp), TU_T04_04/06 composite wording ("went there and never came back..." / "Durant, to Fort Lonaris...");
+  6-px labels (T02_04/05, C06_01, T10_00) are mush at that size in either language: see them in the tutorial viewer
