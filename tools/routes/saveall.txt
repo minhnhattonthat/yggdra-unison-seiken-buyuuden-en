@@ -1,0 +1,15 @@
+# save.dst (FILE 1 selected): Back -> "Continue the game without saving?" -> CANCEL; Select -> confirm OK ->
+# "Overwrite the data?" OK -> Saving... -> complete (or failed with saveall.lua FAIL=1)
+60 -
+6 t35,182
+120 -
+6 t187,180
+120 -
+6 t225,182
+90 -
+6 t75,180
+120 -
+6 t75,180
+120 -
+6 t75,150
+900 -

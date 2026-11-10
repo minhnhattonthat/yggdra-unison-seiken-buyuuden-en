@@ -595,7 +595,7 @@
    "id": "ov9_18:3D58",
    "font": "end",
    "jp": "▼以下の条件のうち、いずれか　つ達成すれば、\n選択中の勢力をプレイヤー勢力として選択可能",
-   "en": "Unlock by meeting any    of the\nconditions below to play this army.",
+   "en": "Unlock by meeting any     of the\nconditions below to play this army.",
    "max": 61,
    "ptrs": [
     "ov9_18:3728"

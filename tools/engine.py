@@ -713,6 +713,8 @@ OV_SITES = [  # (overlay image, address, original word, entry offset or instruct
     ("ov9_10", 0x0211C004, 0xEBFBDC9A, 0x24),  # medallion line: 0x02013274 -> lines_px12 (centred 128 - 12 n / 2)
     ("ov9_14", 0x0211CF58, 0xEBFBD8C5, 0x20),  # territory captured line 2: -> lines_px
     ("ov9_14", 0x0211CFE0, 0xEBFBD8A3, 0x20),  # capital taken line 2: -> lines_px
+    ("ov9_18", 0x0211EE38, 0xE3A000A2, "mov r0, #0xa1"),  # unlock-terms count digit x 162 -> 161: centred in the
+    # English header's 5-space gap ("any 4of" touched at 162 / 4 spaces; ov9_18:3D58)
 ]
 OV_BASE = 0x0211B780
 

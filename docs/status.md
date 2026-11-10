@@ -3,7 +3,32 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 29 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 30 latest).
+- **Phase 8 progress (session 30):** textcover **13,038 -> 13,429/13,723 + 111 waived (183 failing)**:
+  `textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv` (work/qa/cover2/* logs). **States
+  regenerated 35/35 on build 23:44** (all were older: old RAM text). New forcers (each header has its run line):
+  `tools/lua/helpall.lua` (all 36 HELP popup topics x pages, faction_select HELP=true), `tutoall.lua` (tutorial menu
+  both books, route `tools/routes/tuto_heaven.txt`), `profall.lua` (37 char_intro profiles), `unlockall.lua`
+  (unlock-terms page of each locked faction: UNLOCK_BITS=6, tap t20,20 then Profile t128,182), `saveall.lua` +
+  `tools/routes/saveall.txt` (Back prompt, Overwrite via slot-in-use word, FAIL=1 = save fault injection),
+  `loadfail.lua` (boot load fault), `unlock.lua` now writes on the title (boot overwrote the frame-1 write) + CLEAR=
+  (☆ CLEAR), war data both pages `tools/routes/wardata.txt` (turn_end.dst), item catalog row 4 `tools/routes/
+  items_row3.txt` (y 118 hit row 5: rows 4 were never shown), `tools/debug/cover_battle.sh` (tips 0-7: all 8 shown; results
+  screen: Clear Time / Points Earned / Allies Retreated / Foes Fled shown, 101CAC Guard / Kill Out / Unison Attack /
+  Highest Damage not: a later results page or the 戦績 record page). Waived (docs/text_unshown.tsv): 110 unread table fields (F5380+4, F5B88+0,
+  A7E44+4: windows.json status unread, single pointer each) + ov9_06:431C digit template. **Fix:** unlock-terms header
+  count digit touched "of" ("any 4of"): header got a 5th space and engine.OV_SITES ov9_18 0x0211EE38 x 162 -> 161;
+  seen centred on screen (work/qa/cover2/terms_zoom.png). Build 2026-11-11 sha1 c407236e (smoke ok); states are
+  from the 23:44 build (differs only in ov9_18). The QA manifest was inited on c55aa58a: rerun the tour +
+  `qa_gate.py init ... --build` before release (faction_select sheets may change). **Left (183):** 80 code-loaded arm9
+  prompts (battle: Not enough points / Sortie limit / can't control / out of move range / restart war / abandon;
+  explore ov9_13: prep prompts, steps, chest, deserters; prize ov9_12 held-by; prisoner ov9_11 refused + 'has joined';
+  war report ov9_08 nothing-to-report / disaster lines; territory ov9_14 'Battle won!', continent rises, Mistel joins;
+  card ov9_16 used card / strategy card composite; system save fail arm9:94948 (FAIL-style injection in ov9_03?);
+  tutorial book intros 95664/94CC8; battle menu descriptions 94918/94BC4/94C94/94ED0/94CFC), F5380+0 unit names
+  (63, 52 of them one 'Nameless Soldier' hash: likely composite parts, e.g. prisoner 'X has joined'), A7E44+0 card
+  names (36: card select strategy-card composite, force the card index), A7D00+0 3 faction names, 101CAC results labels (4), ov9_06:3FD4 'Touch a sound.' (no load site found: table?).
+  `tools/strcalls.py ID` gives each load site + the draw call after it.
 - **Phase 8 progress (session 29):** textcover **8,097 -> 13,038/13,723** (685 left, all system text): **all SPMES
   (3,282) + TUTO + SPMES_APP / TRE / WR + all 612 EDMES (456/456 records ok) + item catalog / sound titles shown.** msgall.lua loads them through the MESSAGE loader by name (FILE name swap kept on all run) and
   `duelnop` rewrites, in RAM, every op but 30 / 51 into the 1-byte no-op 1D and 39 into end 01, one start per line
