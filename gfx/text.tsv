@@ -1496,7 +1496,7 @@ BTLMN_FONT	Duel Data	box=1,144,78,12
 BTLMN_FONT	~ Each Nation's Record in This War ~	box=80,144,155,12
 # SYSTEX (battle unit info / status, card panel, army names on the battle HUD: 王国軍 seen at the top left)
 #! SYSTEX font=sans-b wide=0
-SYSTEX	Special	box=147,20,21,11
+SYSTEX	Trait	size=10 maxw=19 box=147,20,21,11
 SYSTEX	Gear	align=l maxw=19 box=169,19,24,12
 SYSTEX	Empire	box=193,19,36,12
 SYSTEX	Thieves	box=171,31,42,11

@@ -166,3 +166,4 @@ to run while any line is unticked.
   longest names (Mercenary Captain Inzaghi, Astral Fencer Russell) are now ~0.85 wide everywhere they appear
 - [ ] Tutorial top line arm9:93494 "I'll teach you how to win wars." (one line above the band; the 2-line budget in
   lint is wrong for that screen)
+- [ ] MS_M_01 faction_select description "...centered on the royal capital Paltina" fills the 256-px band edge to edge (no period); shorter wording, e.g. "around the royal capital Paltina." (check other MS_M rows for periods)

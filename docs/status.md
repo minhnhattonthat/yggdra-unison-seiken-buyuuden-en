@@ -3,7 +3,23 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 26 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 27 latest).
+- **Phase 8 progress (session 27):** **visual-QA gate green: `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts`
+  exit 0, 106/106 sheets ok on build 2026-11-10 ~23:45 sha1 c55aa58a** (smoke ok). Verdicts by hand (codex out until
+  2026-11-11 13:07): work/qa/verdicts/s27.tsv (the 68 left on 49b4f05c) + s27_c55a.tsv (39 changed by the rerun).
+  Fix: SYSTEX Unit Info 特殊 cell "Special" was squeezed into the game's 20-px rect (read "Speciali") -> "Trait"
+  size=10 maxw=19 (seen clean on prisoner / prize frames). Method for rerun sheets: `work/qa/tour_prev` = copy of the
+  previous run's sheets; each changed sheet diffed against it (scratch diff, bbox at threshold 24): sub-threshold
+  ones and the timing-only shifts of screens without SYSTEX (tutorial, extras, epilogue_f02, credits/sheet_3) took
+  the earlier verdict with that note, not a fresh read: re-read tutorial/sheet* in the story/release pass if in doubt.
+  **Dark bands / black strips at fixed rows** (epilogue, credits, battle, attract_op) are capture tears from 6
+  parallel emulators: epilogue_f01 alone (`--jobs 1`, work/qa/bandtest_en) has the original's row-luminance profile
+  (docs/skill-gotchas.md). Polish: faction_select description "...centered on the royal capital Paltina" fills the
+  band edge to edge and lacks its period. **Next worker: rest of the done-when**: save slots with data (make a save
+  via turn_end "Save and End Turn", reboot with the .sav, tour the load screen), war-event `_unk` titles on screen
+  (war_report on a later turn), inkbox on choice/centred boxes if not all done, then textcover (113/13,723: scenes
+  for MESSAGE via warp.lua MSG=n, SPMES via spmes.lua, EDMES endings, TUTO pages; waive only unreachable ids). Any
+  rebuild re-hashes ~25-50 sheets: rerun the tour with the machine idle, keep a tour_prev copy and diff.
 - **Phase 8 progress (session 26):** session 25's work committed. Verdicts by hand for the 59 sheets left on acf6a790
   (work/qa/verdicts/s26.tsv; prologue / opening / load / extras not re-read). Fixes: **game p q g glyphs were drawn
   raised** (bowl above x-height: "uPon", "sPoils", "amon9" in every dialogue / system line) -> `tools/enfont.py DROP`
