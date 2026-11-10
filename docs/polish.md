@@ -146,3 +146,7 @@ to run while any line is unticked.
   a 2-px mark above "Royal Army" on the HUD (the game's rect starts a row into the White Rose cell: move that label up)
 - [ ] Session 19 atlases (TR_FONT, TUKOKU_FONT, CDSKILLFNT0/1, ENETREFONT, TREFONT, BTLMN_FONT, SYSTEX): boxes are ink
   rects, none seen drawn: check each on screen (ENETREFONT brush text is drawn straight now, not tilted)
+- [ ] `_unk_` war-event titles/paragraphs (session 20, read off the textures, translated by the controller with no
+  reviewer): story-pass them with the faction voices; not seen on screen (window x unknown: maxw 220 assumed);
+  logo variants 5851b4bc/660bec2b/73c6239a: ruby boxes eyeballed, check on screen; _unk_c85ce18c "Town of Tolstoy"
+  label (unknown use) and _unk_078801f1 (noise decode, untouched)

@@ -59,13 +59,13 @@ def code_images(rom_path=ORIG):
 
 
 def sfs_files(wanted=None, rom_path=ORIG):
-    """{name: bytes} of the named DATA.SFS files (all, or those in wanted) of a ROM."""
+    """{name: bytes} of the DATA.SFS files (all, or those in wanted) of a ROM; unnamed ones are _unk_<hash>.PACK."""
     data, arm9 = _sfs(Path(rom_path))
     nm = names()
     out = {}
     for h, size, sec in sfs.read_dir(arm9, len(data)):
-        n = nm.get(h)
-        if n and (wanted is None or n in wanted):
+        n = nm.get(h) or f"_unk_{h:08x}.PACK"  # the hash stands in for an unknown name (sfs.name_hash)
+        if wanted is None or n in wanted:
             out[n] = data[sec * sfs.SECTOR: sec * sfs.SECTOR + size]
     return out
 

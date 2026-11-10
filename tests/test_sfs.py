@@ -25,5 +25,6 @@ def test_directory_finds_known_names():
     assert len(ents) == 4001
     by_hash = {h: (size, sec) for h, size, sec in ents}
     assert sfs.name_hash("FONT_MES.NTFT") in by_hash
+    assert sfs.name_hash("_unk_0addeae8.PACK") == 0x0ADDEAE8 in by_hash  # unnamed files go by their hash
     size, sec = by_hash[sfs.name_hash("MESSAGE001.BIN")]
     assert data[sec * 0x200 + 0x240: sec * 0x200 + 0x243] == bytes([0x0A, 0x00, 0xEB])  # "さあ、"

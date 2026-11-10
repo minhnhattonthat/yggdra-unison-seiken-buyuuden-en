@@ -11,7 +11,9 @@ SECTOR = 0x200
 
 
 def name_hash(name):
-    b = name.encode("ascii")[:16].ljust(16, b"\0")
+    if name.startswith("_unk_"):  # unnamed file, named by its hash (text.sfs_files)
+        return int(name[5:13], 16)
+    b =name.encode("ascii")[:16].ljust(16, b"\0")
     h = 0
     for c in b:
         h = (h * 0x89 + (c - 256 if c >= 128 else c)) & 0xFFFFFFFFFFFFFFFF

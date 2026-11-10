@@ -33,7 +33,7 @@ Counts are files. "atlas" = many labels packed in one texture (needs the layout:
 | IT_EF001-225 | 225 | item effect one-liners (HPが徐々に回復 ...) | 2bpp |
 | ED_N_000-375, ED_H_030-375 | ~310 | ending epithets (ナマクラ魔剣士ラッセル ...) | same wording as the EDMES title strings: translate once, use for both |
 | EPI_TIT_00-11, EPI_MES_00-11, EPI_WAKU0 | 25 | epilogue titles, epilogue paragraphs (8-10 lines), 全土統一 frame label | |
-| `_unk` war-event textures (~120, hashes in index.tsv) | ~120 | war-event titles (蛮賊団、支配領域拡大! ファンタジニア王国侵攻戦 ...) and story paragraphs; カード選択 banner | names unresolved: identify via fileopen.lua at runtime |
+| `_unk` war-event textures (~120, hashes in index.tsv) | ~120 | war-event titles (蛮賊団、支配領域拡大! ファンタジニア王国侵攻戦 ...) and story paragraphs; カード選択 banner | done (session 20) as `_unk_<hash>` rows; titles 256 x 24, paragraphs 256 x 240 (war report: other factions' wars); not seen on screen yet |
 | `_unk` 0addeae8_01421 | 1 | credit line 制作・著作 株式会社スティング | rest of credits (STAFFROLL) is English already |
 | SHOOTNAME00-11,99, WR_SHN00-05, WR_FONT, EVSFONT00-17, EVSFONTSB00-07, BATTLEOUT1-3, SELSORTIE, TERAGGFONT | ~55 | phase banners (勢力選択 カード選択 出撃先選択 戦況報告 探索 ...), war report (戦争勃発 占領成功 ... 疫病発生, 勝利 敗北), event goals (が都市を制圧 ... タイムオーバー), battle outs (戦線離脱 敵兵退却 敵兵戦死), 選択ユニット出撃! | |
 | OBJSTR00-13 | 14 | map-object help panels (title + 3 lines) | |
@@ -60,7 +60,9 @@ marks: confirm on screen.
   `gfx.py check` writes the re-decoded result to work/gfx/enc/ (look at that, not gfx/). romcheck: a changed PACK
   must equal the encode of its gfx/ PNG. tests/test_gfx.py: an unedited decode re-encodes pixel-identical.
 - The game tints some textures itself (the SHOOTNAME banner shows white texels as a yellow gradient).
-- Not handled yet: `_unk` PACKs (no name: build.rebuild_sfs takes names only), textures needing a new palette.
+- Unnamed files are `_unk_<hash8>.PACK` (text.sfs_files; sfs.name_hash reads the hash back), so gfx/text.tsv,
+  gen_gfx, gfx.py and build take them like named ones (session 20: 60 war-event titles + 60 paragraphs, credit
+  line, カード選択 banner, 3 logo variants, a town label). Not handled yet: textures needing a new palette.
 
 ## Edit plan (phase 5+)
 - Re-encode: 4x4 compression encoder needed (or switch a texture to a paletted format only if the loader reads the format

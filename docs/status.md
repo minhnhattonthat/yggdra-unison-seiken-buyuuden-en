@@ -3,7 +3,20 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 20 latest).
+- **Phase 8 progress (session 20):** unnamed DATA.SFS files now go by `_unk_<hash8>.PACK` (text.sfs_files,
+  sfs.name_hash; test in test_sfs), so text.tsv / gen_gfx / gfx.py / build take them. gfx/text.tsv gained all 60
+  war-event titles (256 x 24) + 60 paragraphs (256 x 240, other factions' wars on the war report; read off the
+  textures, translated by the controller: polish line for a story pass), credit line 制作・著作 (_unk_0addeae8),
+  カード選択 banner (_unk_441d016e), the 3 logo variants (ruby smoothed out with new gen_gfx `clear=fill`, subtitle
+  as TIT_LOGO), a "< Town of Tolstoy >" label. gen_gfx `rows=N` (fixed pitch), `gfx.py check NAME..` (fast).
+  Sheets: work/gfx/unk/para_sheet*.png (originals), title_sheet*.png. War-event names are built at runtime
+  (not in arm9/ov9_08 strings; hashes only in the SFS dir): to see one on screen, run tools/lua/hashlookup.lua
+  over war_report turns on a later turn or find the war-event selector (ov9_08?), then warp. Not done this session:
+  the session-19 "Next" on-screen list below, TU_* (57 tutorial shots), QA tour + verdicts, inkbox, textcover.
+  Build 2026-11-10 sha1 8dda782e (smoke ok, check.py green: 22 passed, lint 0); work/states are older: regen first.
+  hashlookup.lua logs every name looked up, so a war-report turn with an event will name the `_unk` files.
+  Builds take ~20 min and check.py ~40 min now (every texture re-encoded): run both in the background.
 - **Phase 8 progress (session 19):** gfx/text.tsv gained the last UI atlases: TR_FONT (Medallion Supply, Exploration
   Report, Rarity), TUKOKU_FONT (Expansion, Dismissal x2), CDSKILLFNT0/1 (Card Skill Activated / Card Appraisal),
   ENETREFONT (prisoner: New Recruit! / Refused! / Banished! drawn straight, Prisoners = the 捕虜処遇 band), TREFONT

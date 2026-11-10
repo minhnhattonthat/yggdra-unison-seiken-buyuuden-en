@@ -8,7 +8,7 @@ re-encoded, every part stored raw (flags 0x100, as the raw PACKs the game alread
 An unedited decode re-encodes to the same pixels (tests/test_gfx.py).
 
     python -X utf8 tools/gfx.py dump NAME.. [--out work/gfx/orig]   decode PACKs to PNG (start of an edit)
-    python -X utf8 tools/gfx.py check                              every gfx/*.png encodes; prints changed px,
+    python -X utf8 tools/gfx.py check [NAME..]                     every (or each named) gfx/*.png encodes; prints changed px,
                                                                    writes the re-decoded result to work/gfx/enc/
 """
 import struct
@@ -137,10 +137,12 @@ def encode(orig_pack, img):
     return struct.pack("<4I", 0x100, len(t2), len(p), len(i2)) + t2 + p + i2
 
 
-def files():
-    """{NAME.PACK: bytes} for every gfx/NAME.png."""
+def files(only=None):
+    """{NAME.PACK: bytes} for every gfx/NAME.png (or those NAMEs)."""
     out = {}
     for png in sorted(GFX.glob("*.png")):
+        if only and png.stem not in only:
+            continue
         name = png.stem + ".PACK"
         out[name] = encode(pack_of(name), Image.open(png))
     return out
@@ -158,7 +160,7 @@ def main(argv):
     if argv[:1] == ["check"]:
         prev = ROOT / "work/gfx/enc"  # what the game will show: the encoded texture decoded again
         prev.mkdir(parents=True, exist_ok=True)
-        for name, b in files().items():
+        for name, b in files(argv[1:]).items():
             old, (*_, w) = load(name)
             new, _ = decode(b, w)  # the edit can change tex.guess's pick; the game's width is fixed in code
             new.save(prev / (name[:-5] + ".png"))

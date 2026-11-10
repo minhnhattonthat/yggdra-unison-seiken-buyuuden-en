@@ -7,11 +7,13 @@ PREFIX (a row's own options win). Options (space separated, key=value):
   font=serif-b  serif-b serif sans-b sans (fonts/, docs/fonts.md)
   size=N        px (default: the largest that fits the box height per line, capped by width after squeezing)
   align=c       l / c / r inside the box;  wide=N  how far the text may spread past the box (default: to the edge)
+  rows=N        line pitch = box h / N even when the text has fewer lines (it takes the top ones)
   maxw=N        widest the text may be, px (the part of the texture the screen shows; overrides wide)
   stroke=1      outline px;  min_x=0.7  narrowest horizontal squeeze before the size shrinks
   fill=r,g,b    text colour (default below);  outline=r,g,b  outline colour
   clear=row     repaint the box row by row with the pixel left of it (text on a panel) instead of transparency;
                 clear=vert  blend each column between the rows above and below the box (text over art)
+                clear=fill  smooth fill from the whole border (busy art, where clear=vert streaks)
 Colours come from the original: fill = per-row brightest opaque colour in the box (keeps gradients), outline =
 the darkest common opaque colour. Alpha is binary (4x4 textures have no partial alpha).
 
@@ -82,7 +84,7 @@ def layout(text, o, box, maxw):
     lines = text.split("\n")
     stroke = int(o.get("stroke", 1))
     _, _, _, h = box
-    lh = h / len(lines)
+    lh = h / max(len(lines), int(o.get("rows", 0)))
     size = int(o["size"]) if "size" in o else None
     for s in ([size] if size else range(int(lh * 1.6), 5, -1)):
         f = font(o.get("font", "serif-b"), s)
@@ -137,6 +139,11 @@ def draw(a, text, o):
     elif o.get("clear") == "vert":  # text on art: blend each column from the row above the box to the row below
         t = (np.arange(1, h + 1) / (h + 1))[:, None, None]
         a[y:y + h, x:x + w] = np.round(a[y - 1, x:x + w] * (1 - t) + a[y + h, x:x + w] * t)
+    elif o.get("clear") == "fill":  # text on busy art: smooth fill from the box's border (Laplace relaxation)
+        reg = a[y - 1:y + h + 1, x - 1:x + w + 1, :3].astype(float)
+        for _ in range(400):
+            reg[1:-1, 1:-1] = (reg[:-2, 1:-1] + reg[2:, 1:-1] + reg[1:-1, :-2] + reg[1:-1, 2:]) / 4
+        a[y:y + h, x:x + w, :3] = np.round(reg[1:-1, 1:-1])
     else:
         a[y:y + h, x:x + w] = 0
     if align == "c":
