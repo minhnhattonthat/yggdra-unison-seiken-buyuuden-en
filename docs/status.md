@@ -14,6 +14,18 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   there; real sites: info band 240 x 3, widths gated by lint). "Touch a sound." shown on its own screen via
   `tools/lua/soundnone.lua` (index -1). Waived ov9_02:1698 (war-data digit template copied to the stack).
   strcalls.py misses `ldr rX,[pc,#-n]` loads placed after their pool (ov9_06:2360 is one).
+  **Save slots with data seen** (work/states/save1.dsv, gitignored: save.dst route `60 -;6 t225,182;90 -;6
+  t75,180;600 -` = FILE 1 saved; DeSmuME writes `tools/desmume/desmume-qa/Battery/yggdra_en.dsv`, **delete it after**
+  or every later run boots with that save). Load screen: `emu.py ... --sav work/states/save1.dsv --script
+  tools/debug/warp.lua --var "SCENE='load'"`. Fix: SAVE_FONT Play Time box 91,40 overwrote the time colon cell
+  (91,42,4,6: "0+00", label read "lay Time") and its top row bled under "load" (the prompt quad draws one row past
+  v 39) -> box 96,41,45,10; seen clean (work/qa/s31_load_slot.png). **Build 2026-11-11 10:09 sha1 c2cf9a8f (smoke
+  ok)**; work/states are older (regen before graphics checks).
+  **Next worker (rest of the done-when):** (1) regen states, rerun the QA tour on c2cf9a8f (machine idle; keep a
+  tour_prev copy), `qa_gate.py init work/qa/manifest.tsv work/qa/tour --glob "*/sheet*.png" --build
+  build/yggdra_en.nds`, verdicts for the changed sheets (save / load / faction_select likely; add a load case with
+  `--sav work/states/save1.dsv` if tour.txt can take it); (2) war-event `_unk` titles on screen (war_report on a later
+  turn; hashlookup.lua names them); (3) inkbox on any choice / centred box not yet checked (title menu); then phase 9.
 - **Phase 8 progress (session 30):** textcover **13,038 -> 13,429/13,723 + 111 waived (183 failing)**:
   `textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv` (work/qa/cover2/* logs). **States
   regenerated 35/35 on build 23:44** (all were older: old RAM text). New forcers (each header has its run line):

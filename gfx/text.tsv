@@ -1308,12 +1308,13 @@ EXTRA_FONT	Titles	size=17 box=0,81,37,19
 EXTRA_FONT	Unit Titles	size=9 box=216,0,40,10
 EXTRA_FONT	Lord Titles	size=9 box=215,11,40,10
 # SAVE_FONT (save/load): the two prompts drawn (quads); faction names (save slot), 領土数, プレイ時間, 進む/戻る =
-# ink rects (atlas.py --region per column), not seen drawn yet.
+# ink rects (atlas.py --region per column). Play Time: quad 96,40,45,11 (s31 quads.lua on the slot panel); the time
+# colon is its own cell 91,42,4,6, and the load prompt quad draws one row past v 39, so the label starts at v 41.
 #! SAVE_FONT font=sans-b wide=0 size=11 align=l
 SAVE_FONT	Choose a file to save to	size=12 box=0,14,189,13
 SAVE_FONT	Choose a file to load	size=12 box=0,27,189,13
 SAVE_FONT	Lands	box=101,0,37,11
-SAVE_FONT	Play Time	box=91,40,50,11
+SAVE_FONT	Play Time	box=96,41,45,10
 SAVE_FONT	New Bronquian Empire	box=0,54,98,12
 SAVE_FONT	Kingdom of Fantasinia	box=0,66,96,12
 SAVE_FONT	Milanor's Thieves	box=0,79,61,11
