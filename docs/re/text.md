@@ -36,6 +36,15 @@
   - `30 xx <u32 off>` (xx = 00/01): show message.
   - `51 <u32 off>`: string argument (SPMES_WR fragment table; 105 refs).
 - `tools/text.py` layout checks (run by tests/test_text.py on every commit): every `30`-ref lands on a string start, every string (except MESSAGE000's unused test line at 0xA78) is referenced, no data after the last FF; re-laying each file from its decoded strings gives the file back. Other opcodes seen (lengths from examples, unverified): `33` 9 B, `35` 3 B, `36` 7 B, `39` 1 B, `20` 1 B, `44` 8 B, `55` 2 B, `01` end.
+- **Interpreter (verified session 28, tools/lua/msgall.lua):** handler table at *(0x020F7900) = 0x0208F1BC, one
+  u32 per opcode; loop 0x02005768 (r4 = ctx 0x02101D64: +0 state 0 end / 1 yield / 2 go on, +8 current script obj),
+  each step at 0x02005798 with r1 = script pc. Script obj +0 = file base (the loader 0x02005488 relocates the header
+  table and entries to absolute), +0x47.. byte vars. `37 xx` var0 = loader r1 (unit id < 0x25, else derived);
+  `19 vv <u32 offs>` = switch on var vv (table unaligned, file-relative, runs up to the lowest target); `20` waits
+  while text is busy (re-runs at the same pc); `30 xx <u32 off>` makes the text object (0x020128B8); `01` end.
+  MESSAGE files: one entry = `37 00 21 00 19 00 <~53 offsets>`: one block per unit id, mostly one line each.
+  MESSAGE task 0x02078618 (loader r2 = flags; 7 in battle): the script re-runs until a tap closes the task;
+  0x0211A874 bit 0x200 = MESSAGE task alive. SPMES duel task 0x02077910 (r0 0..3) runs its file in a heap obj.
 - **Insertion:** `text.rebuild(name, bytes, new_strings)` re-lays the string area (the file can grow, DATA.SFS is rebuilt) and rewrites the u32 of each `30`/`51` ref (EDMES: each record field). Bytecode and entry table do not move.
 
 ## System text (arm9 + overlays) - extracted to script/system/<image>.json
