@@ -110,3 +110,4 @@ arm9:93378	unreachable: table field A7E44+4 has no reader in arm9 or any overlay
 arm9:934F4	unreachable: table field A7E44+4 has no reader in arm9 or any overlay (card one-liner: no code reads this field (only +0 at 0x02044FBC, +A..+18); windows.json)
 arm9:935F4	unreachable: table field A7E44+4 has no reader in arm9 or any overlay (card one-liner: no code reads this field (only +0 at 0x02044FBC, +A..+18); windows.json)
 arm9:93AB8	unreachable: table field A7E44+4 has no reader in arm9 or any overlay (card one-liner: no code reads this field (only +0 at 0x02044FBC, +A..+18); windows.json)
+ov9_02:1698	template buffer: ov9_02 0x0211C540 copies its bytes "0000" to the stack (sp+0x39), overwrites each digit, then draws from the stack (war data numbers), so the template itself is never drawn

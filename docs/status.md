@@ -4,6 +4,16 @@ Updated at the end of every session. Keep it to what the next session needs; his
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
 - **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 30 latest).
+- **Phase 8 progress (session 31):** **textcover exit 0: 13,637/13,723 shown + 86 waived, 0 failing**
+  (`textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv`). build/strings.tsv was stale (built
+  before the ov9_18 header's 5th space): rerun `tools/cover.py` after any script edit. The 180 code-loaded prompts,
+  composite parts, unit names (F5380+0), card names (A7E44+0) and 3 faction names were **forced in the battle
+  CAUTION box** (new `tools/forcelist.py IDS OUT.lua` = each id's built address via its pointer + `tools/lua/
+  forceband.lua`: swaps r2 of the CAUTION draw 0x02010BA4 for each entry, 12 castle taps; run line in its header;
+  log work/qa/cover2/force): coverage of glyphs only, not their own screens (3-line band prompts show 2 lines
+  there; real sites: info band 240 x 3, widths gated by lint). "Touch a sound." shown on its own screen via
+  `tools/lua/soundnone.lua` (index -1). Waived ov9_02:1698 (war-data digit template copied to the stack).
+  strcalls.py misses `ldr rX,[pc,#-n]` loads placed after their pool (ov9_06:2360 is one).
 - **Phase 8 progress (session 30):** textcover **13,038 -> 13,429/13,723 + 111 waived (183 failing)**:
   `textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv` (work/qa/cover2/* logs). **States
   regenerated 35/35 on build 23:44** (all were older: old RAM text). New forcers (each header has its run line):
