@@ -11,10 +11,10 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   band box 92,31,79,21 (the original's outline top at row 31 left dark dashes above it); SYSTEX Unit Info: "Speed"
   maxw 19 (the game's 20-px rect cut its d), "Move Type" -> "Movement" box h 11 + "Weakness" box from y 68 (outline
   row 68 left dashes above it); `#! CNAMEC maxw=56` (prize UNIT LIST plates cut "Nameless Soldier"'s r at col ~60).
-  Seen fixed on build 7cf885bf frames: p descenders, Speed, Movement, Nameless Soldier plate. Build 2026-11-10 21:22
-  sha1 6b31eab3 (smoke ok) has the last two box fixes (check them on explore / prisoner frames: no dashes above the
-  labels). Tour rerun on 6b31eab3 + `qa_gate.py init ... --build` done at the end of this session: the font change
-  touches almost every sheet, so **next worker: verdicts for every sheet `qa_gate.py check` lists** (codex back after
+  Seen fixed on tour frames: p descenders, Speed, Movement, Nameless Soldier plate, no dashes above Exploration Prep /
+  Weakness. Also fixed: gfx/text.tsv row CNAMEB000 had lost its tab (s25), so it kept the pre-maxw render. Build
+  2026-11-10 21:55 sha1 49b4f05c (smoke ok); tour rerun on it 36/36 + `qa_gate.py init ... --build` done: 68 sheets
+  lack a current verdict, so **next worker: verdicts for every sheet `qa_gate.py check` lists** (codex back after
   2026-11-11 13:07: `sh tools/qareview.sh` after `qa_gate.py todo`; else by hand, ~1k tokens per sheet, ~60 per
   worker). Then the rest of the done-when: save slots with data, textcover (113/13,723), war-event `_unk` on screen.
   Note: never regenerate gfx/*.png while check.py runs (test_english_build builds from them: a mid-run edit fails it).
