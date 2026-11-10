@@ -11,8 +11,8 @@
 -- file is started once per queued block: the first interpreter step jumps to it, its end op 01 ends the event (blocks
 -- chained inside one event pile up text objects and hang after ~38 strings). Strings are logged at op 30 / 51 (the
 -- draw hooks of textcover.lua miss some calls under JIT). Logs "msgall <file> done|STUCK <frame> <blocks>".
--- KIND='SPMES': FILES = SPMES numbers aaabbb (SPMES001014 = 1014), started by the duel event task 0x02077910
--- (r0 0) with its file-name sprintf (0x020772E8, r2 r3) swapped; a tap closes the event after its end op.
+-- SPMES: pass names (SPMES001014): see duelnop below. KIND='SPMES' (numbers aaabbb, run by the duel event task
+-- 0x02077910 with its file-name sprintf 0x020772E8 r2 r3 swapped) freezes the game: kept only for probing.
 local SP = KIND == "SPMES"
 local SITE, OBJ = 0x02010BA4, 0x0211B68C
 local LOADER = SP and 0x02077910 or 0x02078760
@@ -48,9 +48,39 @@ end
 
 -- per file: queue / seen hold file offsets (the buffer can move between starts)
 local fi, ORIG, armed, running, ended, fresh, lastop, lastpc, swap, blocks = 0, nil, false, false, false, false, 0, nil, nil, 0
+local duel = false                           -- the running file is an SPMES duel event (see duelnop)
 local queue, seen, inited, target
 local function push(o, b)                    -- skip bare end ops (empty switch cases); the file is freed on exit
   if o ~= 0 and not seen[o] then seen[o] = true; if rb(b + o) ~= 0x01 then queue[#queue + 1] = o end end
+end
+-- SPMES duel-event files run in the MESSAGE task (renamed in like TUTO). Their portrait / unit / wait ops need a
+-- real duel (under the duel task 0x02077910 the game freezes at the second speaker), so every op but 30 (line) /
+-- 39 / 01 becomes the 1-byte no-op 1D (handler 0x020057EC). 39 (wait for text out + page tap, 0x020066B8) becomes
+-- end op 01, and each line is queued as its own start: in the MESSAGE task a passed 39 swaps in MESSAGE001.
+-- All 402 SPMES%06d files use only these ops (lengths from SPMES001014); TUTO / SPMES_APP / SPMES_TRE add 54 (4
+-- bytes), TUTO 56 (6, arrow), SPMES_WR 52 (2), 53 (1), 14 (8, `14 a b c <u32 off>` branch), 06 (5, goto), 51 (5,
+-- string arg: kept and queued, so every branch's fragment runs). Lengths cover all 435 SPMES* / TUTO* files; an entry
+-- with any other op is left as it is.
+local LEN = { [0x44] = 3, [0x50] = 2, [0x05] = 3, [0x33] = 9, [0x35] = 3, [0x36] = 7, [0x30] = 6, [0x39] = 1,
+  [0x55] = 2, [0x54] = 4, [0x56] = 6, [0x52] = 2, [0x53] = 1, [0x14] = 8, [0x06] = 5, [0x51] = 5, [0x01] = 1 }
+local function duelnop(b)
+  for i = 0, rd(b + 4) - 1 do
+    local e, pc = rd(b + 0xC + 4 * i), nil
+    pc = e
+    while LEN[rb(pc)] and rb(pc) ~= 0x01 do pc = pc + LEN[rb(pc)] end
+    if rb(pc) ~= 0x01 then
+      if not inited then L.log(string.format("duelnop: op %02X at +%X, entry %d left as is", rb(pc), pc - b, i)) end
+    else
+      pc = e
+      while rb(pc) ~= 0x01 do
+        local op, n = rb(pc), LEN[rb(pc)]
+        if op == 0x30 or op == 0x51 then push(pc - b, b)    -- one start per line, like a MESSAGE block
+        elseif op == 0x39 then memory.writebyte(pc, 0x01)
+        else for k = 0, n - 1 do memory.writebyte(pc + k, 0x1D) end end
+        pc = pc + n
+      end
+    end
+  end
 end
 L.on_exec(0x02005798, function()
   -- the MESSAGE loader's script obj only; after its end op the task re-runs the script until a tap closes it
@@ -66,6 +96,8 @@ L.on_exec(0x02005798, function()
   curbase = b
   if fresh then                              -- first step of this start
     fresh = false
+    duel = type(files[fi]) == "string" and (files[fi]:match("^SPMES") or files[fi]:match("^TUTO")) ~= nil
+    if duel then duelnop(b) end
     if not inited then
       inited = true
       local n, t = rd(b + 4), rd(b + 8)
@@ -97,15 +129,14 @@ L.on_exec(0x0200A540, function()             -- rename MESSAGE001.BIN to the wan
   if table.concat(s) ~= "MESSAGE001.BIN" then return end
   local name = swap .. ".BIN"
   for i = 1, #name do memory.writebyte(p + i - 1, name:byte(i)) end
-  memory.writebyte(p + #name, 0)
-  swap = nil
+  memory.writebyte(p + #name, 0)   -- swap stays on: the loader opens the file more than once
 end)
 
 local function arm(next_file)
   if next_file then
     fi = fi + 1
     if fi > #files then L.log("msgall all done " .. L.frame); L.finish(0) end
-    queue, seen, inited, blocks = {}, {}, false, 0
+    queue, seen, inited, blocks, swap = {}, {}, false, 0, nil
   end
   ORIG = ORIG or rd(SITE)
   memory.writedword(SITE, bl(SITE, LOADER))
@@ -147,6 +178,6 @@ L.on_frame(function(n)
       end
     end
   end
-  local quiet = running and not ended and n - lastop < (SP and 250 or 0) and lastpc == nil  -- duel intro: no taps
+  local quiet = running and not ended and (duel or n - lastop < (SP and 250 or 0) and lastpc == nil)
   if n % GAP == 0 and not quiet then L.press(TAP, HOLD or 8) end
 end)
