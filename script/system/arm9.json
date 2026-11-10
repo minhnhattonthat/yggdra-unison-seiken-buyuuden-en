@@ -8379,7 +8379,7 @@
    "id": "arm9:919EC",
    "font": "sys",
    "jp": "激戦を制し…\n",
-   "en": "Battle won!",
+   "en": "Battle won! ",
    "max": 12,
    "ptrs": [
     "ov9_14:18FC"
@@ -11844,7 +11844,7 @@
    "id": "arm9:93494",
    "font": "sys",
    "jp": "■戦争に勝利するための秘策をお教えします",
-   "en": "Let me teach you the secrets\nof winning wars.",
+   "en": "I'll teach you how to win wars.",
    "max": 32,
    "ptrs": [
     "ov9_03:1094"

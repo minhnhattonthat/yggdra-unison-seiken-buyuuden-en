@@ -31,6 +31,9 @@ PUNCT = {
     "&": (0x9A, [".11..", "1..1.", "1.1..", ".1...", "1.1.1", "1..1.", ".11.1"], 5),
     "*": (0x9B, ["1.1.1", ".111.", "11111", ".111.", "1.1.1"], 4),
 }
+# the game draws p q g raised (bowl from row 2, reads "uPon", "amon9"): move them down to n's x-height; rows past 14
+# are cut (y's descender ends at row 14 too)
+DROP = {"p": 2, "q": 2, "g": 2}
 SPACE_W = 4
 GAP = 0  # extra px between outlines (advance = outline width + GAP - 1 overlap)
 
@@ -70,7 +73,10 @@ def glyphs(mes):
     """{char: (code, 16x16 px, advance)} in FONT_MES palette."""
     out = {}
     for ch, code in GAME.items():
-        px, w = shift_left(get(mes, code))
+        px = get(mes, code)
+        if ch in DROP:
+            px = [[0] * 16 for _ in range(DROP[ch])] + px[:15 - DROP[ch]] + [[0] * 16]
+        px, w = shift_left(px)
         out[ch] = (code, px, w + GAP - 1)
     for ch, (code, rows, top) in PUNCT.items():
         px, w = shift_left(draw(rows, top))
@@ -125,7 +131,7 @@ def main():
                     for x in range(16):
                         v = px[y][x]
                         img.putpixel((n % 16 * 16 + x, n // 16 * 16 + y), 255 if v == 0 else 200 if v == (1 if "ITEM" in name else 15) else 40)
-            img.resize((img.width * 3, img.height * 3), Image.NEAREST).save(out.replace(".png", f"_{name[5:9].lower()}.png"))
+            img.resize((img.width * 3, img.height * 3), Image.NEAREST).save(out.replace(".png", f"_{name[5:-5].lower()}.png"))
 
 
 if __name__ == "__main__":

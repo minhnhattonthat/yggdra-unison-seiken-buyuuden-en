@@ -160,3 +160,9 @@ to run while any line is unticked.
   full words
 - [ ] OPK_WR faction descriptions squeezed to 0.60-0.94 (maxw 160, the attract faction intro shows only ~160 px):
   rewrap shorter if a reader finds them cramped
+- [ ] Prize unit list (bottom screen, top-left card): "Nameless Soldier" (dialogue font) runs under the portrait, the
+  final r half hidden (the JP name is 4 kanji); a shorter generic name or a tighter font if a reader minds
+- [ ] CNAMEB name plates squeezed to maxw 110 (VS screen of the war report shows the right fighter from x ~143): the
+  longest names (Mercenary Captain Inzaghi, Astral Fencer Russell) are now ~0.85 wide everywhere they appear
+- [ ] Tutorial top line arm9:93494 "I'll teach you how to win wars." (one line above the band; the 2-line budget in
+  lint is wrong for that screen)

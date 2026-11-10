@@ -3,7 +3,42 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 24 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 26 latest).
+- **Phase 8 progress (session 26):** session 25's work committed. Verdicts by hand for the 59 sheets left on acf6a790
+  (work/qa/verdicts/s26.tsv; prologue / opening / load / extras not re-read). Fixes: **game p q g glyphs were drawn
+  raised** (bowl above x-height: "uPon", "sPoils", "amon9" in every dialogue / system line) -> `tools/enfont.py DROP`
+  moves them 2 rows down (descender to row 14 like y, widths unchanged; docs/re/windows.md); TREFONT "Exploration Prep"
+  band box 92,31,79,21 (the original's outline top at row 31 left dark dashes above it); SYSTEX Unit Info: "Speed"
+  maxw 19 (the game's 20-px rect cut its d), "Move Type" -> "Movement" box h 11 + "Weakness" box from y 68 (outline
+  row 68 left dashes above it); `#! CNAMEC maxw=56` (prize UNIT LIST plates cut "Nameless Soldier"'s r at col ~60).
+  Seen fixed on build 7cf885bf frames: p descenders, Speed, Movement, Nameless Soldier plate. Build 2026-11-10 21:22
+  sha1 6b31eab3 (smoke ok) has the last two box fixes (check them on explore / prisoner frames: no dashes above the
+  labels). Tour rerun on 6b31eab3 + `qa_gate.py init ... --build` done at the end of this session: the font change
+  touches almost every sheet, so **next worker: verdicts for every sheet `qa_gate.py check` lists** (codex back after
+  2026-11-11 13:07: `sh tools/qareview.sh` after `qa_gate.py todo`; else by hand, ~1k tokens per sheet, ~60 per
+  worker). Then the rest of the done-when: save slots with data, textcover (113/13,723), war-event `_unk` on screen.
+  Note: never regenerate gfx/*.png while check.py runs (test_english_build builds from them: a mid-run edit fails it).
+- **Phase 8 progress (session 25):** verdicts by hand for the 30 sheets session 24 left (work/qa/verdicts/s25.tsv:
+  17 ok, 13 issue) and fixes for every issue: SYSTEX boxes clipped to each label's own ink (Land / Speed cells left a
+  dashed row and cut letters; army-name boxes ate the neighbours; Griffon Rider marks; Skeleton cut by the Griffon
+  box; Valkyrie / Time / Nessiah's Army top rows); CNAMEB `#! CNAMEB maxw=110` (war-report VS screen shows the
+  right fighter from x ~143: "Bewitching Amareus" ran off screen); composite piece arm9:919EC "Battle won! " got its
+  trailing space back; tutorial top line arm9:93494 -> one line "I'll teach you how to win wars." (wrapped line ran
+  over the band); SEN_FONT 称号 blanked (38,0,30,13: the epithet run covers that spot since session 12).
+  **戦力確認 on the sortie UNIT LIST header was FORSEL_FONT's right column, not SYSTEX**: the label is drawn by the
+  path quads.lua misses; found with new probes `tools/lua/gxtex.lua` (TEXIMAGE_PARAM writes), `texvram.lua` (texture
+  VRAM dump), `tools/texdump.py` (decode by TEXIMAGE_PARAM), also `ppuevery.lua` + `tools/oamlist.py`,
+  `ramat.lua`. FORSEL_FONT gained Check Forces / Player Faction / Lords & Leaders / Unlock Terms. New
+  `tools/leftink.py` lists original ink no text.tsv box covers: run on all 23 UI atlases, the EN atlases were read
+  (work/qa/s25_atlases_0/1.png): no other Japanese left in them. Build 2026-11-10 19:20 sha1 acf6a790 (smoke ok);
+  tour rerun 36/36 on it, manifest re-inited with --build. Spot check of the fixes on the new tour frames
+  (work/qa/s25_spot.png): sortie header "Check Forces", prisoner Land / Speed / VIT clean, VS names fit, tutorial
+  line one row. **Next worker: 59 sheets lack a current verdict** (most only shifted in time; `qa_gate.py check
+  work/qa/manifest.tsv work/qa/verdicts | grep "NO VERDICT"`; prisoner, prize, sortie, territory, tutorial,
+  war_report, char_intro carry this session's fixes). Codex is back after 2026-11-11 13:07: then
+  `sh tools/qareview.sh` (re-chunk with `qa_gate.py todo`). Then the rest of the done-when: save slots with data,
+  textcover (113/13,723), war-event `_unk` on screen. Theocracy Army / Embellian Army SYSTEX cells come out ~7 px
+  (41-px cells): readable on the VS label, small on the HUD (polish).
 - **Phase 8 progress (session 24):** build 2026-11-10 17:43 sha1 7fc5f325 (smoke ok). Verdicts by hand (codex out
   until 2026-11-11 13:07) in work/qa/verdicts/s24.tsv: all prologue_f01-f11 (sheet_2/3 of f02-f11 are pixel-identical
   to f01 outside the leader bubble: bubbles checked on one crop sheet), ending_f01/f02, epilogue_f01, credits,

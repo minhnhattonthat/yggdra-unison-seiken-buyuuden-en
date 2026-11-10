@@ -95,7 +95,8 @@ cap 128 in most scenes, 256 tutorial); slots past the cap are not drawn instead 
 
 ## Glyph torture line (verified 2026-11-10, work/qa/gate/epilogue f000900)
 All 82 English glyphs (` !"%&'()*+,-./0-9:;?~—…A-Za-z`) and double spaces render with VWF spacing. The game's own
-lowercase p and q have no descender room (p reads like a small P, q like 9): legible, candidates for a redraw.
+lowercase p, q and g are drawn raised (bowl from row 2, read as P / 9: "uPon"); since session 26 tools/enfont.py
+DROP moves them 2 rows down to n's x-height (descender to row 14, as y), widths unchanged.
 
 ## Not text windows (graphics phase)
 Dialogue name tags (王女ユグドラ, 商人) are CNAMEC%02d textures (fileopen.lua in prize/explore); the battle HUD

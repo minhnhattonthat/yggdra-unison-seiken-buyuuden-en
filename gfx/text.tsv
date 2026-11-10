@@ -830,6 +830,8 @@ CNAMEA68	Theocracy Soldier	font=sans-b size=12 box=0,0,128,28
 CNAMEA69	Divine Soldier	font=sans-b size=12 box=0,0,128,28
 CNAMEA70	Outlaw	font=sans-b size=12 box=0,0,128,28
 CNAMEA71	Nameless Soldier	font=sans-b size=12 box=0,0,128,28
+# CNAMEB on the war-report VS screen: the right fighter's name is drawn from x ~143, so the screen edge shows 113 px
+#! CNAMEB maxw=110
 CNAMEB000	Astral Fencer Russell	font=sans-b size=12 align=l
 CNAMEB001	Mercenary Captain Inzaghi	font=sans-b size=12 align=l
 CNAMEB002	Canaan the Hero	font=sans-b size=12 align=l
@@ -906,6 +908,8 @@ CNAMEB098	Nameless Soldier	font=sans-b size=12 align=l
 CNAMEB099	Spy	font=sans-b size=12 align=l
 CNAMEB253	Spy	font=sans-b size=12 align=l
 CNAMEB254	Merchant	font=sans-b size=12 align=l
+# CNAMEC on the prize UNIT LIST plates: the game shows texture columns up to ~60 ("Nameless Soldier" lost its r)
+#! CNAMEC maxw=56
 CNAMEC00	Russell	font=sans-b size=10 align=l min_x=0.6
 CNAMEC01	Inzaghi	font=sans-b size=10 align=l min_x=0.6
 CNAMEC02	Canaan	font=sans-b size=10 align=l min_x=0.6
@@ -1230,6 +1234,12 @@ FORSEL_FONT	Leader	font=sans-b size=11 box=67,15,23,13 wide=0
 FORSEL_FONT	Guard	font=sans-b size=11 box=92,15,23,13 wide=0
 FORSEL_FONT	Troops	font=sans-b size=11 box=116,15,24,13 wide=0
 FORSEL_FONT	Capital	font=sans-b size=11 box=150,15,23,13 wide=0
+# FORSEL_FONT right column, drawn by the path quads.lua misses (戦力確認 = sortie UNIT LIST header, seen Japanese in
+# session 25 via tools/lua/gxtex.lua + texvram.lua + tools/texdump.py): boxes = the original's ink + 1 px
+FORSEL_FONT	Check Forces	font=serif-b box=192,0,64,16 wide=0
+FORSEL_FONT	Player Faction	font=serif-b box=184,15,72,15 wide=0
+FORSEL_FONT	Lords & Leaders	font=sans-b size=10 box=101,30,81,12 wide=0
+FORSEL_FONT	Unlock Terms	font=sans-b size=10 box=182,30,74,12 wide=0
 BUTTON	Back	font=sans-b size=11 box=56,0,22,12 wide=0
 BUTTON	Select	font=sans-b size=11 box=102,0,24,12 wide=0
 BUTTON	Forces	font=sans-b size=11 box=0,12,38,12 wide=0
@@ -1339,6 +1349,7 @@ TUTO_FONT	Imperial Tactics: Earth	size=11 box=0,101,85,13
 # misses; seen Japanese on the ending pages, session 23); 称号： next to it is not drawn.
 #! SEN_FONT font=sans-b wide=0 size=11
 SEN_FONT	Record	font=serif-b size=14 box=0,0,38,19
+SEN_FONT	 	box=38,0,30,13
 SEN_FONT	Loyalty:	align=l box=68,0,43,13
 SEN_FONT	Retreats:	align=l box=0,19,56,13
 SEN_FONT	Merit:	align=l box=56,19,32,13
@@ -1415,7 +1426,7 @@ TREFONT	Plain	box=136,16,24,13
 TREFONT	Swamp	box=160,16,24,13
 TREFONT	Road	box=184,16,22,13
 TREFONT	Town	box=206,16,31,13
-TREFONT	Exploration Prep	font=serif-b align=l maxw=69 box=92,33,79,19
+TREFONT	Exploration Prep	font=serif-b align=l maxw=69 box=92,31,79,21
 TREFONT	Fire	box=171,32,24,15
 TREFONT	Ice	box=195,32,23,12
 TREFONT	Bolt	box=218,32,23,15
@@ -1486,21 +1497,21 @@ BTLMN_FONT	~ Each Nation's Record in This War ~	box=80,144,155,12
 # SYSTEX (battle unit info / status, card panel, army names on the battle HUD: 王国軍 seen at the top left)
 #! SYSTEX font=sans-b wide=0
 SYSTEX	Special	box=147,20,21,11
-SYSTEX	Gear	align=l maxw=19 box=169,19,27,12
-SYSTEX	Empire	box=196,19,33,15
-SYSTEX	Thieves	maxw=41 box=169,32,45,15
+SYSTEX	Gear	align=l maxw=19 box=169,19,24,12
+SYSTEX	Empire	box=193,19,36,12
+SYSTEX	Thieves	box=171,31,42,11
 SYSTEX	Check Forces	font=serif-b box=0,47,64,16
 SYSTEX	Unit Info	font=serif-b box=66,41,80,16
-SYSTEX	Land	size=10 align=l maxw=21 box=143,41,29,14
-SYSTEX	Bandits	box=172,42,37,15
-SYSTEX	Speed	size=9 align=l maxw=21 box=143,54,29,14
-SYSTEX	Brigands	box=172,56,37,15
+SYSTEX	Land	size=10 maxw=21 box=144,40,22,11
+SYSTEX	Bandits	box=166,42,40,11
+SYSTEX	Speed	size=10 maxw=19 box=144,51,22,12
+SYSTEX	Brigands	box=166,53,40,12
 SYSTEX	???	box=74,57,20,12
-SYSTEX	Move Type	box=95,56,47,12
-SYSTEX	Theocracy Army	box=155,65,46,13
+SYSTEX	Movement	box=95,56,47,11
+SYSTEX	Theocracy Army	box=156,65,41,11
 SYSTEX	Trigger Timing	box=0,64,66,11
 SYSTEX	Immune	box=73,68,40,11
-SYSTEX	Weakness	box=114,69,42,11
+SYSTEX	Weakness	box=114,68,42,12
 SYSTEX	Condition	box=0,76,46,11
 SYSTEX	Effect	box=48,76,24,12
 SYSTEX	Dragoon	box=75,79,47,10
@@ -1511,7 +1522,7 @@ SYSTEX	The Ancient	box=73,88,74,11
 SYSTEX	Temple Knights	box=148,88,55,12
 SYSTEX	White Rose Army	box=80,99,52,12
 SYSTEX	Embellian Army	box=133,99,44,12
-SYSTEX	Nessiah's Army	box=177,100,46,11
+SYSTEX	Nessiah's Army	box=176,100,47,11
 SYSTEX	Royal Army	box=82,111,40,11
 SYSTEX	Holy	box=123,111,20,10
 SYSTEX	Bolt	box=143,111,21,10
@@ -1522,17 +1533,17 @@ SYSTEX	Fencer	box=0,121,44,10
 SYSTEX	Hunter	box=45,121,36,10
 SYSTEX	HP Regen	box=89,122,32,11
 SYSTEX	HP Loss	box=123,123,33,10
-SYSTEX	Valkyrie	box=0,133,56,9
+SYSTEX	Valkyrie	box=0,131,56,11
 SYSTEX	Assassin	box=56,132,32,12
 SYSTEX	Witch	box=89,133,32,10
-SYSTEX	Time	box=204,133,30,10
+SYSTEX	Time	box=204,132,30,11
 SYSTEX	Knight	box=0,142,25,9
 SYSTEX	Necromancer	box=26,142,60,10
 SYSTEX	Golem	box=86,142,38,9
 SYSTEX	Undine	box=0,152,62,11
 SYSTEX	Bandit	box=62,152,41,11
-SYSTEX	Skeleton	box=104,152,47,11
-SYSTEX	Griffon Rider	box=151,149,54,10
+SYSTEX	Skeleton	box=103,152,45,11
+SYSTEX	Griffon Rider	maxw=54 box=148,148,65,11
 # War-event reports (other factions' wars, war report screen): unnamed PACKs _unk_<hash> (tools/text.py sfs_files),
 # read off the textures. Paragraphs 256 x 240: original ink x 19-238, y 2-214 on an 18-px pitch (rows=13).
 # Other unnamed text textures: credit line, カード選択 banner, logo variants (as TIT_LOGO: ruby blended out over
