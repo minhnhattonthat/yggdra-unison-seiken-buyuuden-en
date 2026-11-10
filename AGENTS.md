@@ -9,6 +9,7 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder. Read its
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/yggdra_en.nds --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/yggdra_en.nds --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<scene>'" [--var FACTION=n] --frames 30000` (stops itself at the scene, shot `final.png`; vars per entry in `tools/debug/scenes.txt`, RAM map `docs/re/scenes.md`; never ask the user to play to a scene)
 - All states: `python -X utf8 tools/debug/regen.py [--rom build/yggdra_en.nds] [names]` -> `work/states/<name>.dst` + `work/qa/warp/sheet.png`; rerun after code/font/graphics changes
+- QA tour: `python -X utf8 tools/debug/regen.py --list tools/debug/tour.txt --qa work/qa/tour --rom build/yggdra_en.nds` (and `--qa work/qa/tour_jp` on rom/); gate `qa_gate.py` on work/qa/manifest.tsv; verdicts `sh tools/qareview.sh` (codex) or by hand; coverage: add `--qa work/qa/cover --script tools/lua/textcover.lua`, `tools/cover.py`, then `textcover.py work/qa/cover build/strings.tsv`
 - Release:  `python -X utf8 tools/release.py` (xdelta patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 

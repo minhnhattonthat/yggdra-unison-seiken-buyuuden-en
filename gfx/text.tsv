@@ -64,15 +64,16 @@ IN_PRO_009	~ Temple Knights ~	font=sans-b size=12
 IN_PRO_010	~ Forest Alliance ~	font=sans-b size=12
 IN_PRO_011	~ Nessiah's Forces ~	font=sans-b size=12
 # TM_M is drawn at screen x = texture x - 33 (faction_select info panel), the portrait covers screen x > ~225: left-align
-TM_M_00	New Bronquian Empire	size=22 align=l box=50,0,150,24
-TM_M_01	Kingdom of Fantasinia	size=22 align=l box=50,0,150,24
-TM_M_02	Milanor's Thieves	size=22 align=l box=50,0,150,24
-TM_M_03	Duchy of Embellia	size=22 align=l box=50,0,150,24
-TM_M_04	House Branthese	size=22 align=l box=50,0,150,24
-TM_M_05	House Esmeralda	size=22 align=l box=50,0,150,24
-TM_M_06	Ortega Brigands	size=22 align=l box=50,0,150,24
-TM_M_10	Forest Alliance	size=22 align=l box=50,0,150,24
-TM_M_11	Nessiah's Forces	size=22 align=l box=50,0,150,24
+# The attract faction intro draws it at x + 60 (top) and x - 59 (bottom): only u 59..196 shows on all three (JP ink 63..195)
+TM_M_00	New Bronquian Empire	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_01	Kingdom of Fantasinia	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_02	Milanor's Thieves	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_03	Duchy of Embellia	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_04	House Branthese	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_05	House Esmeralda	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_06	Ortega Brigands	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_10	Forest Alliance	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_11	Nessiah's Forces	size=22 align=l box=60,0,136,24 maxw=136
 EVSFORCE00	Imperial Army	size=15 align=l
 EVSFORCE01	Royal Army	size=15 align=l
 EVSFORCE02	Thieves	size=15 align=l
@@ -904,6 +905,7 @@ CNAMEB071	Nameless Soldier	font=sans-b size=12 align=l
 CNAMEB098	Nameless Soldier	font=sans-b size=12 align=l
 CNAMEB099	Spy	font=sans-b size=12 align=l
 CNAMEB253	Spy	font=sans-b size=12 align=l
+CNAMEB254	Merchant	font=sans-b size=12 align=l
 CNAMEC00	Russell	font=sans-b size=10 align=l min_x=0.6
 CNAMEC01	Inzaghi	font=sans-b size=10 align=l min_x=0.6
 CNAMEC02	Canaan	font=sans-b size=10 align=l min_x=0.6
@@ -1019,7 +1021,9 @@ WR_SHN05	Plague	size=24
 # Opening prologue scroll (OP_WR, 26 lines, read off the texture). Drawn as 26 strips u 0..192 x 16 (one per line,
 # quads.lua): every line must fit 192 px and sit in its own 16-px band (box h 416 / 26 lines).
 OP_WR	The New Bronquian Empire's sudden attack,\nand the fall of Karona, the fortress city\nin the Kingdom of Fantasinia's north—\nthe news shook not only Fantasinia\nbut the entire continent.\nThe long age of peace and prosperity\nhad come to an end...\nLittle by little, the tide of war rose.\nBracing for the decisive battle to come,\neach power quietly began to arm itself.\nAll watched each other's every move,\nunrest flared up across the land,\nand the world stood on a knife's edge.\nIt was truly an age of rival warlords.\nWilling or not, the people were\nswept up into the turmoil of war...\nWhile new powers rose across the land,\nothers were culled and faded away.\nA world of chaos......\nTo fulfill their own ambitions,\nmany mighty ones blazed across\nthe world: an age of flame and steel...\nSome with their wisdom,\nand some by force of arms,\nset out to repaint\nthat world of chaos...	font=sans-b align=l size=12 box=0,0,192,416 wide=0
-# Faction-select descriptions (OPK_WR_nn = faction nn, 7 lines, read off the texture)
+# Faction-select descriptions (OPK_WR_nn = faction nn, 7 lines, read off the texture). Shown on the attract faction
+# intro at top x ~92 (screen edge) and bottom x ~4 (portrait from ~165): JP lines are <= 161 px.
+#! OPK_WR_ maxw=160
 OPK_WR_00	Ruled by the Flame Emperor Gulcasa,\na military nation in the continent's\nnorthwest, home to a wealth of\nbattle-hardened generals and\nwell-drilled elite soldiers.\nWith its ample forces as its weapon,\nit can fight a steady war!	font=sans-b align=l size=13
 OPK_WR_01	A kingdom reigning over the heart\nof the continent. Once home to many\nsages, it kept expanding its power,\nbut with the rise of the Bronquian\nEmpire it now faces its downfall.\nSpreading first to the southeast\nto grow its power may be the key.	font=sans-b align=l size=13
 OPK_WR_02	A band of noble thieves led by\nMilanor, the thief king feared as\nthe Silver Wolf. Its fearless valor\nand phantom-like speed have made\nits name ring out to the far frontier.\nDefeat the nearby powers to lay\nthe groundwork for unification.	font=sans-b align=l size=13
@@ -1331,8 +1335,10 @@ TUTO_FONT	Tutorial	size=12 box=0,70,78,16
 TUTO_FONT	Imperial Tactics: Heaven	size=11 box=0,88,85,13
 TUTO_FONT	Imperial Tactics: Earth	size=11 box=0,101,85,13
 # SEN_FONT (戦績 record page, all drawn: quads.lua epilogue): "0戦 0撃 0斬" = battles / foes beaten / kills;
-# 回 after the retreat count is blanked. 戦績 and 称号： at 0,0 are not drawn from here (page BG).
+# 回 after the retreat count is blanked. 戦績 at 0,0 IS the page's band label (drawn tinted yellow, a path quads.lua
+# misses; seen Japanese on the ending pages, session 23); 称号： next to it is not drawn.
 #! SEN_FONT font=sans-b wide=0 size=11
+SEN_FONT	Record	font=serif-b size=14 box=0,0,38,19
 SEN_FONT	Loyalty:	align=l box=68,0,43,13
 SEN_FONT	Retreats:	align=l box=0,19,56,13
 SEN_FONT	Merit:	align=l box=56,19,32,13
@@ -1409,13 +1415,13 @@ TREFONT	Plain	box=136,16,24,13
 TREFONT	Swamp	box=160,16,24,13
 TREFONT	Road	box=184,16,22,13
 TREFONT	Town	box=206,16,31,13
-TREFONT	Exploration Prep	font=serif-b box=91,33,80,16
+TREFONT	Exploration Prep	font=serif-b align=l maxw=69 box=92,33,79,19
 TREFONT	Fire	box=171,32,24,15
 TREFONT	Ice	box=195,32,23,12
 TREFONT	Bolt	box=218,32,23,15
-TREFONT	Save and End Exploring	box=6,50,121,15
-TREFONT	Dark	box=128,51,24,14
-TREFONT	Holy	box=154,50,26,14
+TREFONT	Save and End Exploring	box=6,52,121,13
+TREFONT	Dark	box=128,52,24,13
+TREFONT	Holy	box=154,52,26,12
 TREFONT	Neutral Land	box=181,47,48,16
 TREFONT	Left	box=232,47,21,16
 TREFONT	End Without Saving	box=0,65,131,16
@@ -1480,14 +1486,14 @@ BTLMN_FONT	~ Each Nation's Record in This War ~	box=80,144,155,12
 # SYSTEX (battle unit info / status, card panel, army names on the battle HUD: 王国軍 seen at the top left)
 #! SYSTEX font=sans-b wide=0
 SYSTEX	Special	box=147,20,21,11
-SYSTEX	Equip	box=169,19,27,12
+SYSTEX	Gear	align=l maxw=19 box=169,19,27,12
 SYSTEX	Empire	box=196,19,33,15
-SYSTEX	Thieves	box=166,32,44,15
+SYSTEX	Thieves	maxw=41 box=169,32,45,15
 SYSTEX	Check Forces	font=serif-b box=0,47,64,16
 SYSTEX	Unit Info	font=serif-b box=66,41,80,16
-SYSTEX	Terrain	box=146,41,26,14
+SYSTEX	Land	size=10 align=l maxw=21 box=143,41,29,14
 SYSTEX	Bandits	box=172,42,37,15
-SYSTEX	Speed	box=146,54,26,14
+SYSTEX	Speed	size=9 align=l maxw=21 box=143,54,29,14
 SYSTEX	Brigands	box=172,56,37,15
 SYSTEX	???	box=74,57,20,12
 SYSTEX	Move Type	box=95,56,47,12

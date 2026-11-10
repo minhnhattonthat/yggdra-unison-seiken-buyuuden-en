@@ -3,7 +3,46 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 21 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 23 latest).
+- **Phase 8 progress (session 23):** visual-QA verdicts by hand (codex out) for chunk_000-004 and the first 6 ids of
+  chunk_005 (prize, prologue_f00): work/qa/verdicts/chunk_000..005.tsv. **Next worker: continue at chunk_005 id 7
+  (prologue_f01/sheet) through chunk_010**, same method (EN sheet, JP under tour_jp when unsure). Issues found and
+  fixed in gfx/text.tsv (build 2026-11-10 15:59 sha1 712aa806, smoke ok; tour rerun on it 36/36, manifest
+  re-inited with --build: 49 sheets changed, verdicts for 4 of them in s23_fixed.tsv; the other 45 need a fresh look,
+  many frames are shifted in time (texture sizes change load timing) and show wipe/dim strips: if a sheet looks torn,
+  rerun its case with the machine idle; the tour ran beside check.py): 戦績 band label on every ending page = SEN_FONT 0,0 (drawn
+  tinted, quads.lua misses it) -> "Record"; explore merchant speaker tag 商人 = CNAMEB254 -> "Merchant"; explore
+  band "Exploration Pre" clipped (TREFONT rect 92..161) + JP stroke remnants; attract faction intro (OPK_WR / TM_M
+  drawn at top x+60 / bottom x-59): titles + descriptions ran off screen -> TM_M box 60,0,136 maxw, OPK_WR maxw 160;
+  SYSTEX Unit Info cells (prisoner, prize): Terra / Spee / Equ clipped -> Land / Speed / Gear (20-px cells), CIRCLE's
+  E overwritten by the Thieves box -> box from x 169. Those sheets carry `issue` verdicts: after the rebuild, rerun
+  the tour on the new build (`regen.py --list tools/debug/tour.txt --qa work/qa/tour --rom build/yggdra_en.nds`),
+  `qa_gate.py init ... --build build/yggdra_en.nds` (unchanged sheets keep their verdicts), look at the changed ones
+  (attract_op/sheet_3, ending_*, explore/sheet*, prisoner/sheet_2-3, prize/sheet*) and add `fixed` lines in a new
+  verdict file. Still to fix from session 22: char_intro route (hold-only), battle route (tap units).
+- **Phase 8 progress (session 22):** QA tour built and run. `tools/debug/tour.txt` = 36 cold-boot cases (35 scenes +
+  `gameover`), warp.lua `TOUR='90-;6t128,100;..'` (route once the scene is reached) + `EVERY` (shot interval), regen.py
+  `--list` / per-line `LUA=tools/lua/x.lua`; one sheet set per case (`<qa>/<case>/sheet*.png`, 8 tiles of top+bottom
+  screen, 1024 x 768). Ran on build 159b2e59 -> work/qa/tour (106 sheets) and on rom/ -> work/qa/tour_jp.
+  `qa_gate.py init work/qa/manifest.tsv work/qa/tour --glob "*/sheet*.png" --build build/yggdra_en.nds` done (106
+  rows, build recorded); chunks of 10 in work/qa/chunks/chunk_000-010.txt. **No verdicts yet**: codex hit its usage
+  limit (until 2026-11-11 13:07), so `sh tools/qareview.sh work/qa/chunks work/qa/verdicts` (codex, read-only, EN +
+  tour_jp sheet per id, brief docs/visual-qa-brief.md) can't run today. Next worker: read each chunk's sheets yourself
+  (EN, then the same path under tour_jp when unsure) and write work/qa/verdicts/chunk_NNN.tsv (`id<TAB>ok|issue<TAB>
+  note`), ~1.5k tokens per sheet: about 6 chunks per worker, then hand back. Done: work/qa/verdicts/s22_main.tsv (5:
+  card_select/sheet, territory/sheet, char_intro/sheet + sheet_2 ok; battle/sheet issue = the known stray mark after
+  "Forest Army", polish "Phase 8"). Route fixes for the next tour round: char_intro's centre taps exit to the title
+  after 2 characters (make it hold-only, `TOUR='2400-'`); battle needs taps on units (it idles on "Touch").
+  Game over reached: `0x0207F04C(0)` via spmes.lua CALL (docs/re/scenes.md "Game over"): "Give it up?" Retry / Easy
+  Retry / Back to Title English (work/qa/tour/gameover). Text coverage: `tools/lua/textcover.lua` logs `TEXT <hash>`
+  (content hash at dialogue 0x020128B8, run, ctr, join parts) and `python -X utf8 tools/cover.py` writes
+  build/strings.tsv (13,723 ids, same hash); first pass over the 36 tour cases (work/qa/cover, probe run): 113/13,723 shown (keys verified: 70 of 78
+  logged hashes are string ids, the rest joined/number buffers). Coverage is the big remaining gate. Then
+  `textcover.py work/qa/cover build/strings.tsv --waive docs/text_unshown.tsv`: add scenes for the big gaps (MESSAGE
+  events via warp.lua MSG=n, SPMES via spmes.lua SPA/SPB, EDMES endings, TUTO pages), waive only unreachable ids.
+  Still open for the done-when: verdicts, every gfx/text.tsv row seen English in a zoomed shot (session-19 list:
+  BTLMN pause menu tap unknown, explore map TREFONT, prisoner ENETREFONT, save slots, 戦績 page; war-event `_unk`),
+  inkbox on choice/centred boxes (gameover Retry rows, confirm OK/CANCEL, title menu), textcover exit 0.
 - **Phase 8 progress (session 21):** TU_* tutorial shots done: gfx/text.tsv has the labels of all 40 shots with
   Japanese (the other 17 have none; dump in work/gfx/tu, 256 x 100 4x4, shown 1:1 on the bottom screen). Dialogue
   uses the script's own English; names/terms from glossary + atlas rows. New: `tools/inkrects.py` (ink rects on a

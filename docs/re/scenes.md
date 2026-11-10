@@ -52,9 +52,15 @@
   sortie bottom bar: 戻る (35,182), 戦力確認 (128,182), 決定 (218,182). Help popup at new game: CANCEL = no help.
 - Battle TIME (300) only drops while moving, not with time.
 
+## Game over (verified 2026-11-10, session 22)
+- `0x0207F04C(r0)` starts it (battle state 0x0211A874 |= 0x20, +8 = 4, then 0x0207EF6C: B_GAMEOVER banner task
+  0x0207EB44, fade, then 0x0207FAA0 loads GMOVERBG / GMOVERFONT: "Give it up?" Retry / Easy Retry / Back to Title,
+  plus a HINT! tip). Callers 0x0207CEBC (r0 0, battle end code 0x0E) and 0x0207CED0 (r0 1, code 9).
+- Warp: tour.txt `gameover` = battle + spmes.lua `CALL=0x0207F04C R0=0`, tap own castle (t16,152).
+- Battle: the bottom screen waits on "Touch" (no animation at all while idle); start / t9,9 opened no pause menu, so
+  the BTLMN pause menu tap is still unknown.
+
 ## Not reached yet
-- Game over (B_GAMEOVER/GMOVERBG, drawn by arm9 battle code): needs a lost battle; find the unit HP / lord-defeat
-  state in battle RAM first.
 - Specific stages / SPMES events, specific MESSAGE events, per-faction battles (ATTACK_TAP is set for faction 1) and
   the 38 EDMES ending variants are reached only as far as the default flow goes; phase 8 text coverage will list what
   is missing. `MSG=n` retargets the next MESSAGE load (dialogue viewer; untested beyond logging).

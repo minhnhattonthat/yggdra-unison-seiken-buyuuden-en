@@ -155,3 +155,8 @@ to run while any line is unticked.
   TU_T04_01 row 1 "South Nyllard Desert" (南部 or 北部), TU_T02_05 terrain row 2 order (Forest Waste Desert Peaks
   Water Swamp), TU_T04_04/06 composite wording ("went there and never came back..." / "Durant, to Fort Lonaris...");
   6-px labels (T02_04/05, C06_01, T10_00) are mush at that size in either language: see them in the tutorial viewer
+- [ ] SYSTEX Unit Info cells are ~20 px (JP 2 kanji): 地形 -> "Land" (Terrain was clipped to "Terra"), 装備 -> "Gear"
+  (Equip clipped to "Equ"), Speed squeezed 0.7 at 9 px (session 23); widen the cells in code if a later pass wants the
+  full words
+- [ ] OPK_WR faction descriptions squeezed to 0.60-0.94 (maxw 160, the attract faction intro shows only ~160 px):
+  rewrap shorter if a reader finds them cramped

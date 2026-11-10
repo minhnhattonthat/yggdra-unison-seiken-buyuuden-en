@@ -18,9 +18,9 @@ from skill import SKILL  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent.parent
 
 
-def scenes():
+def scenes(path=ROOT / "tools/debug/scenes.txt"):
     out = []
-    for line in (ROOT / "tools/debug/scenes.txt").read_text(encoding="utf-8").splitlines():
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
         line = line.split("#", 1)[0].strip()
         if line:
             name, *vars_ = line.split()
@@ -35,8 +35,8 @@ def run(rom, name, vars_, qa="work/qa/warp", extra=()):
            "--script", str(ROOT / "tools/debug/warp.lua"), "--frames", "30000", "--timeout", "600"]
     if qa == "work/qa/warp":  # probe runs (--qa elsewhere) leave the states alone
         cmd += ["--var", f"STATE=[[{state}]]"]
-    for v in vars_:
-        cmd += ["--var", v]
+    for v in vars_:  # LUA=tools/lua/x.lua in a list line = an extra --script for that entry
+        cmd += ["--script", str(ROOT / v[4:])] if v.startswith("LUA=") else ["--var", v]
     cmd += list(extra)
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     log = out / "log.txt"
@@ -51,9 +51,11 @@ def main():
     ap.add_argument("--qa", default="work/qa/warp", help="output dir; anything else = probe run, states untouched")
     ap.add_argument("--script", action="append", default=[], help="extra Lua probe (repeatable)")
     ap.add_argument("--var", action="append", default=[], help="extra NAME=LUA for every scene (repeatable)")
+    ap.add_argument("--list", default=str(ROOT / "tools/debug/scenes.txt"),
+                    help="scene list; tools/debug/tour.txt = QA tour (TOUR routes, one sheet per case)")
     ap.add_argument("names", nargs="*")
     a = ap.parse_args()
-    todo = [s for s in scenes() if not a.names or s[0] in a.names]
+    todo = [s for s in scenes(a.list) if not a.names or s[0] in a.names]
     extra = [x for s in a.script for x in ("--script", s)] + [x for v in a.var for x in ("--var", v)]
     (ROOT / "work/states").mkdir(parents=True, exist_ok=True)
     with ThreadPoolExecutor(a.jobs) as ex:
@@ -61,6 +63,14 @@ def main():
     bad = [n for n, ok, _ in res if not ok]
     for n, ok, rc in res:
         print(f"{'ok  ' if ok else 'FAIL'} {n} (exit {rc})")
+    for n, ok, _ in res:  # tour cases (TOUR=): one contact sheet per case from its t*.png shots
+        d = ROOT / a.qa / n
+        if ok and any(d.glob("t*.png")):
+            for old in d.glob("sheet*.png"):
+                old.unlink()
+            subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts/sheet.py"), str(d / "t*.png"),
+                            "--changed", "0.02", "--div", "1", "--cols", "4", "--max", "8", "--out",
+                            str(d / "sheet.png")], capture_output=True)
     shots = [str(ROOT / a.qa / n / "final.png") for n, ok, _ in res if ok]
     if shots:
         subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts/sheet.py"), *shots, "--cols", "8",

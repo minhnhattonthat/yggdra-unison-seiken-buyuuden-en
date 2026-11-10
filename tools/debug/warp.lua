@@ -69,11 +69,21 @@ L.on_frame(function(n)
   end
   if reached then
     if not done and n - reached >= hold then
-      done = true
+      done = n
       L.shot("warp.png")
       if STATE then L.save_state(STATE) end
       L.log(string.format("warp ok %s scene %d frame %d", SCENE, c, n))
-      if not KEEP then L.shot("final.png"); L.finish(0) end   -- KEEP=true: run on to --frames (routes, mash)
+      if TOUR then                           -- TOUR='60-;6t128,96;..': play it from here, shot every EVERY frames
+        for step in TOUR:gmatch("[^;]+") do
+          local k, spec = step:match("^%s*(%d+)%s*(%S+)%s*$")
+          L.press(assert(spec, "bad TOUR step " .. step), tonumber(k))
+        end
+      elseif not KEEP then L.shot("final.png"); L.finish(0) end   -- KEEP=true: run on to --frames (routes, mash)
+    end
+    if TOUR and done then
+      local k = n - done
+      if k % (EVERY or 30) == 0 then L.shot(string.format("t%05d.png", k)) end
+      if L.route_done() then L.shot("final.png"); L.log("tour done " .. k); L.finish(0) end
     end
     return
   end
