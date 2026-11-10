@@ -31,3 +31,17 @@ def test_gen_gfx_clears():
     box = a[5:25, 10:50]
     assert not ((box[..., 0] == 255) & (box[..., 1] == 0) & (box[..., 2] == 0)).any()
     gen_gfx.draw(a, "Ab", {"box": "0,0,30,10", "clear": "fill"})
+
+
+def test_gen_gfx_dx_and_inkx():
+    """dx shifts the drawn text; inkx measures where the white fill landed."""
+    import gen_gfx
+    import inkx
+    from PIL import Image
+    cols = []
+    for dx in (0, -7):
+        a = np.zeros((20, 100, 4), np.uint8)
+        a[...] = (0, 0, 128, 255)
+        gen_gfx.draw(a, "Retry", {"box": "20,2,60,15", "fill": "255,255,255", "dx": str(dx)})
+        cols.append(inkx.extent(Image.fromarray(a[..., :3]), (0, 0, 100, 20), 215))
+    assert cols[0] and cols[1][0] == cols[0][0] - 7 and cols[1][1] == cols[0][1] - 7

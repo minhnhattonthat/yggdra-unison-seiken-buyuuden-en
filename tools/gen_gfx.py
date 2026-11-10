@@ -7,6 +7,7 @@ PREFIX (a row's own options win). Options (space separated, key=value):
   font=serif-b  serif-b serif sans-b sans (fonts/, docs/fonts.md)
   size=N        px (default: the largest that fits the box height per line, capped by width after squeezing)
   align=c       l / c / r inside the box;  wide=N  how far the text may spread past the box (default: to the edge)
+  dx=N          shift the text N px after aligning (the game draws the rect off its centre: match the original's ink)
   rows=N        line pitch = box h / N even when the text has fewer lines (it takes the top ones)
   maxw=N        widest the text may be, px (the part of the texture the screen shows; overrides wide)
   stroke=1      outline px;  min_x=0.7  narrowest horizontal squeeze before the size shrinks
@@ -157,6 +158,7 @@ def draw(a, text, o):
         ox = x - stroke - 2
     else:
         ox = x + w - nw + stroke + 2
+    ox += int(o.get("dx", 0))
     oy = y - 2
     for r in range(ch):
         for c in range(nw):

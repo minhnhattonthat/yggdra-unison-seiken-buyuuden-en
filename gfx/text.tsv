@@ -1321,11 +1321,11 @@ SAVE_FONT	Back	box=86,116,19,12
 # TEND_FONT (turn end menu): drawn rects (quads) except the big title and 戦争データ (ink)
 #! TEND_FONT font=sans-b wide=0 size=12 align=l
 TEND_FONT	End Turn	size=20 box=1,0,114,24
-TEND_FONT	Check War Data	box=117,0,120,16
+TEND_FONT	Check War Data	dx=13 box=117,0,120,16
 TEND_FONT	End Turn	box=145,17,61,15
 TEND_FONT	War Data	box=145,32,63,14
-TEND_FONT	Save and End Turn	box=0,25,131,16
-TEND_FONT	End Without Saving	box=0,41,140,16
+TEND_FONT	Save and End Turn	dx=12 box=0,25,131,16
+TEND_FONT	End Without Saving	dx=14 box=0,41,140,16
 # TUTO_FONT (tutorial menu): the two book buttons drawn (quads); チュートリアル and the small copies = ink rects
 #! TUTO_FONT font=sans-b wide=0 size=12
 TUTO_FONT	Tutorial	font=serif-b size=18 box=0,20,113,19
@@ -1354,8 +1354,8 @@ OP_FONT	Level	font=sans-b size=11 wide=0 align=r box=0,0,35,12
 OP_FONT	Lord	font=sans-b size=11 wide=0 align=r box=53,0,24,13
 #! GMOVERFONT font=sans-b size=13 wide=0
 GMOVERFONT	Retry	box=0,0,49,15
-GMOVERFONT	Back to Title	box=51,0,108,15
-GMOVERFONT	Easy Retry	box=160,0,96,15
+GMOVERFONT	Back to Title	dx=-7 box=51,0,108,15
+GMOVERFONT	Easy Retry	dx=-7 box=159,0,97,15
 TERAGGFONT	Expansion	font=serif-b size=16 wide=0 align=l box=0,0,73,19
 HELP_MAT	Next	font=sans-b size=11 wide=0 align=l box=0,21,28,12
 HELP_MAT	Close	font=sans-b size=11 wide=0 align=l box=0,33,40,15
@@ -1505,7 +1505,7 @@ SYSTEX	Condition	box=0,76,46,11
 SYSTEX	Effect	box=48,76,24,12
 SYSTEX	Dragoon	box=75,79,47,10
 SYSTEX	Tactician	box=122,79,55,10
-SYSTEX	Forest Army	box=179,78,38,11
+SYSTEX	Forest Army	box=177,78,44,11
 SYSTEX	Black Rose Army	box=0,88,54,12
 SYSTEX	The Ancient	box=73,88,74,11
 SYSTEX	Temple Knights	box=148,88,55,12

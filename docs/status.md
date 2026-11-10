@@ -3,7 +3,25 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 23 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 24 latest).
+- **Phase 8 progress (session 24):** build 2026-11-10 17:43 sha1 7fc5f325 (smoke ok). Verdicts by hand (codex out
+  until 2026-11-11 13:07) in work/qa/verdicts/s24.tsv: all prologue_f01-f11 (sheet_2/3 of f02-f11 are pixel-identical
+  to f01 outside the leader bubble: bubbles checked on one crop sheet), ending_f01/f02, epilogue_f01, credits,
+  medallion, faction_select, card_select, attract_op 1-2, gameover/sheet_2, turn_end/sheet. Fixes: battle HUD
+  "Forest Army" had 森林軍 remnants at both ends (SYSTEX box 177,78,44,11); End Turn menu labels (TEND_FONT) drawn
+  12-14 px left of the original's centre -> new gen_gfx `dx=N` (shift after align; test in test_gfx); gameover Easy
+  Retry / Back to Title 7 px right -> dx=-7, stray dot left of Easy Retry = atlas column 159 not cleared (box from
+  159). New `tools/inkx.py` (centre of white text fill: inkbox.py misreads the gradient buttons; compare with the
+  tour_jp frame): CONFIRM OK / CANCEL and confirm messages match the original, gameover rows now match. char_intro
+  tour case is hold-only (`EVERY=90 TOUR='2400-'`): its tour_jp sheets are from the old route, rerun
+  `regen.py --list tools/debug/tour.txt --qa work/qa/tour_jp char_intro` (original ROM default) before judging it.
+  Reran battle char_intro gameover explore turn_end prize prisoner on 7fc5f325, manifest re-inited with --build
+  (3 stale ids of vanished sheets dropped). **Next worker: 30 sheets still lack verdicts** (`qa_gate.py check
+  work/qa/manifest.tsv work/qa/verdicts | grep "NO VERDICT"`): battle, char_intro 1-5, explore 1-3, prisoner 1-3,
+  prize 1+3, save 1-3, sortie, territory 2-3, title, turn_end 2-3, tutorial 1-3, war_report 1-3, gameover/sheet.
+  Then the rest of the done-when: graphics-text rows seen in zoomed shots (BTLMN pause menu, explore map TREFONT,
+  prisoner ENETREFONT, save slots, war-event `_unk`), textcover (113/13,723 strings shown: needs MESSAGE / SPMES /
+  EDMES / TUTO scenes).
 - **Phase 8 progress (session 23):** visual-QA verdicts by hand (codex out) for chunk_000-004 and the first 6 ids of
   chunk_005 (prize, prologue_f00): work/qa/verdicts/chunk_000..005.tsv. **Next worker: continue at chunk_005 id 7
   (prologue_f01/sheet) through chunk_010**, same method (EN sheet, JP under tour_jp when unsure). Issues found and
