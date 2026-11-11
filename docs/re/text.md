@@ -102,7 +102,7 @@
 - **Per-line centring counts** (0x02013274, glyphs per line; callers centre at 128 - 11 n / 2): every caller but the
   dialogue one (cells_count) is redirected to `lines_px` (n = round(line px / 11)): info band 0x0200FDB4 and option
   band 0x02010770 (both fill 0x0210E672), HINT! tips 0x02080258 / 0x020802E8, territory ov9_14 0x0211CF58 /
-  0x0211CFE0; the medallion line ov9_10 0x0211C004 lays out 12 x n, so it gets `lines_px12`. Centring error <= 3 px.
+  0x0211CFE0 (`lines_pxmax`: both lines start at the x of line 2's n, so n = the wider line's); the medallion line ov9_10 0x0211C004 lays out 12 x n, so it gets `lines_px12`. Centring error <= 3 px.
 - **Insert** (`tools/insert.py`, phase 7): script files re-laid by text.rebuild, system strings in place or
   relocated (sysreloc); empty en keeps the original bytes (ids in script/keep_jp.txt). `tools/romcheck.py` checks
   the build: code-image writes only at string slots / pointer words / engine sites / SFS directory / module params,

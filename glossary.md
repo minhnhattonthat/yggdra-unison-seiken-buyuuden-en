@@ -230,7 +230,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 - b001-b004 items: ドゼウ Loach, 斬鉄剣 Steelcutter, ロザリオ Rosario (not Rosary), サザンクロス Southern Cross,
   グランドクロス Grand Cross; キルアウト Kill Out; ユニット出撃 Unit Sorties.
 - b001-b004 composite sentences (pieces joined by code before one draw, so a break may sit in any piece; lint checks
-  every combination; keep these joins): "Battle won! " + army + " took\n" + territory + "!"; "Capital taken!\n" +
+  every combination; keep these joins): "Battle won! " + army + " lost\n" + territory + "!" (JP より = taken from that army); "Capital taken!\n" +
   lands + " are " + "all yours!"; "Headed here: " + unit + ",\n" + "already scheduled to go."; "Already sent: " +
   unit + ".\nBack in " + digits + " turn(s)."; "This turn's strategy card:\n" + card + "."; "This item is held by\n("
   + unit + ")\nso it can't be selected.". The Edit tool strips trailing spaces: set a piece ending in a space with

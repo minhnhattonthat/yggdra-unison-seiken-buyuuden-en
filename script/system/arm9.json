@@ -206,7 +206,7 @@
    "id": "arm9:8F9D4",
    "font": "sys",
    "jp": "より、",
-   "en": " took\n",
+   "en": " lost\n",
    "max": 4,
    "ptrs": [
     "ov9_14:1900"
@@ -1176,7 +1176,7 @@
    "id": "arm9:8FC9C",
    "font": "item",
    "jp": "殺意の仮面",
-   "en": "Mask of Malice",
+   "en": "Mask of Bloodlust",
    "max": 8,
    "ptrs": [
     "arm9:100D9C"
@@ -1246,7 +1246,7 @@
    "id": "arm9:8FCD4",
    "font": "item",
    "jp": "金色の麦穂",
-   "en": "Golden Wheat Ear",
+   "en": "Golden Ear of Wheat",
    "max": 8,
    "ptrs": [
     "arm9:100D6C"
@@ -1496,7 +1496,7 @@
    "id": "arm9:8FD9C",
    "font": "item",
    "jp": "帝国兵の鎧",
-   "en": "Imperial Soldier Armor",
+   "en": "Imperial Soldier's Armor",
    "max": 8,
    "ptrs": [
     "arm9:10118C"
@@ -3169,7 +3169,7 @@
    "id": "arm9:902D4",
    "font": "item",
    "jp": "白山羊のミルク",
-   "en": "White Goat Milk",
+   "en": "White Goat's Milk",
    "max": 8,
    "ptrs": [
     "arm9:100F4C"
@@ -3309,7 +3309,7 @@
    "id": "arm9:90344",
    "font": "item",
    "jp": "白山羊のチーズ",
-   "en": "White Goat Cheese",
+   "en": "White Goat's Cheese",
    "max": 8,
    "ptrs": [
     "arm9:100F34"
@@ -4849,7 +4849,7 @@
    "id": "arm9:90960",
    "font": "sys",
    "jp": "名馬ワードナ",
-   "en": "Werdna the Steed",
+   "en": "Werdna the Fine Steed",
    "max": 12,
    "ptrs": [
     "arm9:1018A8"
@@ -6939,7 +6939,7 @@
    "id": "arm9:9132C",
    "font": "item",
    "jp": "名馬ワードナ",
-   "en": "Werdna the Steed",
+   "en": "Werdna the Fine Steed",
    "max": 12,
    "ptrs": [
     "arm9:1018AC"
@@ -7019,7 +7019,7 @@
    "id": "arm9:9138C",
    "font": "sys",
    "jp": "金色の麦穂",
-   "en": "Golden Wheat Ear",
+   "en": "Golden Ear of Wheat",
    "max": 12,
    "ptrs": [
     "arm9:100D68"
@@ -7029,7 +7029,7 @@
    "id": "arm9:91398",
    "font": "sys",
    "jp": "殺意の仮面",
-   "en": "Mask of Malice",
+   "en": "Mask of Bloodlust",
    "max": 12,
    "ptrs": [
     "arm9:100D98"
@@ -7309,7 +7309,7 @@
    "id": "arm9:914E8",
    "font": "sys",
    "jp": "帝国兵の鎧",
-   "en": "Imperial Soldier Armor",
+   "en": "Imperial Soldier's Armor",
    "max": 12,
    "ptrs": [
     "arm9:101188"
@@ -8349,7 +8349,7 @@
    "id": "arm9:919C8",
    "font": "sys",
    "jp": "白山羊のチーズ",
-   "en": "White Goat Cheese",
+   "en": "White Goat's Cheese",
    "max": 12,
    "ptrs": [
     "arm9:100F30"
@@ -8359,7 +8359,7 @@
    "id": "arm9:919D4",
    "font": "sys",
    "jp": "白山羊のミルク",
-   "en": "White Goat Milk",
+   "en": "White Goat's Milk",
    "max": 12,
    "ptrs": [
     "arm9:100F48"
@@ -13915,7 +13915,7 @@
    "id": "arm9:95AF4",
    "font": "sys",
    "jp": "最後にクリアした領土から数えて、\n遠い領土ほど、戻ってくるまでに\n時間(＝帰還ターン)を要します。\n　\n配下ユニットを探索に派遣し、戦争に\n参加できない場合、代わりに\n名無しユニットが参戦します。",
-   "en": "The farther a territory is from the\nlast one you cleared, the longer\n(return turns) units take to return.\n \nIf units out exploring cannot join a\nwar, nameless units fight instead.",
+   "en": "The farther a territory is from the\nlast one you cleared, the longer\n(return turns) units take to return.\n \nIf units out exploring cannot join a\nwar, Nameless Soldiers fill in.",
    "max": 132,
    "ptrs": [
     "ov9_13:77C8"

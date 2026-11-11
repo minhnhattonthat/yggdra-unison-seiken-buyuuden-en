@@ -3,7 +3,51 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 32 latest).
+- **Phase:** 9. Release done 2026-11-11 (session 33b): `release/v1.0/Yggdra_Unison_EN_v1.0.zip` built and verified,
+  not published (never `gh release create`; publishing is the user's call).
+- **Release v1.0 (session 33b):** `python -X utf8 tools/release.py 1.0 --skip-tests` (check.py ran green just
+  before on this tree: 24 passed, lint 0, batches 0) -> release ok: build sha1 8ca7f876 (rebuild identical),
+  smoke, romcheck, jp_left, both qa gates, textcover, polish, README, patch 2,006,664 bytes re-applied and
+  compared; zip = xdelta + README.txt (stored); patched CRC32 BAC4E39D.
+- **Phase 9 progress (session 33b, 2026-11-11):** **build 2026-11-11 20:30 sha1 8ca7f876 (smoke ok).** Story pass
+  done: 17 `issue` chapters fixed (work/tl/story1-3.out.tsv merged with `batches.py merge --overwrite`; Leon's 俺様
+  "the great me" -> plain "me" in all 33 lines (glossary keeps "the great me" for Inzaghi's オレ様 only), Baldus
+  thee, Dort no "sonny" to women, Eudy/Pamela/Durant/Nessiah/Amareus reversals, EDMES 50% twins, Pamela epithets
+  "World's / Galaxy's / Universe's Top Pamela-sama" (one 186-px line, -sama required: ruling in s33_rereview.tsv);
+  Minors applied too). Re-review = one codex run on chapters_old vs chapters diff (work/qa/story/rereview.md);
+  **story gate exit 0** (verdicts/s33_rereview.tsv). polish.md: 0 unticked. docs/release-readme.txt written
+  (release.py fills @PATCH@ / @PATCHED_CRC32@ / @PATCHED_SHA1@). **Tour rerun 37/37** (jobs 2) on c0cee853: codex
+  found MS_M_01 texture showing "Paltinafont=sans-b size=14" (PNG rendered while its text.tsv TAB was lost;
+  regenerated with gen_gfx), rebuilt 8ca7f876, faction_select rerun; **visual gate exit 0** (111 sheets,
+  --build 8ca7f876; verdicts s33_chunk_*.tsv codex, s33_hand.tsv). **textcover exit 0** (13,637 + 86 waived;
+  work/qa/cover3: msgall msg/msg2 (MESSAGE150 STUCK but shown, resumed), edall ed, forceband force/force2).
+  States battle + ending_f01 regenerated on c0cee853 (texture-only change since). Then check.py + release (above).
+- **Phase 9 progress (session 33, 2026-11-11):** **polish: 2 lines left** (137 ellipsis lines, 149 `_unk_` rumor
+  texts: tick both from the story pass, chapters msg_* / duel_* and `textures`). The other 85 ticked: ~45 text fixes
+  in script/ (lint 0), the rest waived with reasons (cosmetic squeezes listed in README known issues). Prologue page
+  breaks fixed (MS_PRO_002/007/008: pages are fixed line groups of the original, f02 2/4/5, f07 3/3/4, f08 4/2/4;
+  sheets work/qa/tour/prologue_f0N), MS_M_01 shorter. **Story pass:** `tools/chapters.py` -> 21 chapters in
+  work/qa/story/chapters (no linear plot: MESSAGE x20 files, duel SPMES by first character, EDMES a/b, tutorial,
+  texture prose EN-only), manifest inited; `sh tools/storyreview.sh 4` = one codex run per chapter -> reports/ +
+  verdicts/ (run1.log; first 3 duel chapters came back `issue`: Baldus victory exchange reversed, Leon phrasing,
+  Gordon mercy, Dort "sonny" to women). Next: read each `issue` report, fix Critical/Important in script/, Minors
+  into polish.md, rerun chapters.py + qa_gate init, re-review changed chapters (`sh tools/storyreview.sh 4 CH..`,
+  verdict `fixed`). **New tools:** `tools/jpleft.py` (jp_left on arm9 pools + overlays with slots from the built
+  images; exit 0, 46 noise runs listed in docs/jp_known.txt), `tools/release.py VERSION` (all gates, xdelta3,
+  re-apply, zip; untested end to end), README filled (hashes, status table). **Left:** docs/release-readme.txt (zip
+  README: hashes, patched CRC, tested in DeSmuME, cold boot, credits, AI note); rebuild + smoke; the text/gfx
+  edits change the build, so the visual manifest's --build no longer matches: rerun the tour (AGENTS.md QA tour),
+  `qa_gate.py init ... --build`, verdict changed sheets; textcover is content-hashed: rerun `tools/cover.py` and
+  re-show the ~60 changed strings (warp/force scripts in tools/lua) or textcover fails. **check.py takes ~1 h**
+  (pytest 24 tests); the pre-commit hook runs it, so commit rarely and in the background. An orphan check.py from a
+  dead session was found running; kill strays before timing a run.
+- **Phase 8 done (session 32c):** **build 2026-11-11 17:10 sha1 1bd84e93 (smoke ok)**. Territory captured composite
+  was a mistranslation (JP より = taken *from* that army) and ran off the right edge: now "Battle won! " + army +
+  " lost\n" + territory + "!" (arm9:919EC / arm9:8F9D4), and both ov9_14 sites (0x0211CF58 / 0x0211CFE0) call new
+  engine `lines_pxmax` (x from the wider line, not line 2: the English puts the long part on line 1); seen x 8-245
+  (JP 9-233). sortie "Bounty Hunter" flag was a codex misread (= JP 賞金稼ぎ). `textcover.lua` now logs the join's
+  r3 part too (piece 2 was never hashed). **Gate exit 0 (107 sheets, manifest --build 1bd84e93; verdicts/s32c-d.tsv
+  by hand), textcover exit 0 (13,637 + 86 waived), lint 0.** States regenerated on 1bd84e93 (work/regen_s32c.log).
 - **Phase 8 progress (session 32):** **build 2026-11-11 15:02 sha1 76bd7aa5 (smoke ok)**; tour rerun 37/37 on it
   (new case `pause`), `qa_gate.py init ... --build` done; textcover exit 0 (13,637 + 86 waived; strings.tsv
   regenerated). **Battle pause menu found: Select**, gated by battle flags 0x0211A874 (deploy phase 0x2000);
@@ -24,15 +68,7 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   faction_select war_report card_select + ending_f01 (`--jobs 1`: the dark bands codex saw were parallel capture
   tears, gone alone), manifest re-inited on bb4818f3 (stale sortie/sheet_2 row dropped), textcover exit 0 on it.
   Codex prologue/prisoner wrap flags ruled ok by the controller (verdicts/s32_ruling.tsv, polish lines added).
-  **Gate: 107 sheets, 2 issue** -> **next worker, in order:** (1) territory/sheet_2: capture composite (glossary.md
-  "composite sentences": "Battle won! " + army + " took\n" + territory + "!", pieces arm9:919EC / ov9_14:1900 ' took\n'
-  / ...) is a **mistranslation**: JP 激戦を制し…\n + army + より、 + territory + を占領！ = territory captured *from*
-  that army; EN says the army took it. Also line 1 starts at x ~73 (count-based x, not lines_px) and runs off the
-  right edge (tour_jp/territory t00540 vs tour). Reword so piece 1 ends in \n like the JP ("Battle won!\n" + "Took "
-  ...? check every army x territory with lint) and/or move the caller to lines_px (text.md "Per-line centring
-  counts"); rerun territory, re-verdict. (2) sortie/sheet tile 3: unit card top-left shows "Bounty Hunter" (codex
-  wants "Mizer"): compare with tour_jp (JP card may show the epithet too) and verdict. (3) Tactician BTLMN cell never
-  drawn (box guessed, polish). Then phase 8 done-when is met: set Phase 9.
+  Gate then 107 sheets, 2 issue (both closed in session 32c above).
 - **Phase 8 progress (session 31b):** **build 2026-11-11 12:40 sha1 5056ec2f (smoke ok); QA gate green on it**
   (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0, 105 sheets). States regenerated 35/35 on
   c2cf9a8f (5056ec2f differs only in EXTRA_FONT + FUM_TI textures, none loaded by a saved scene). Tour rerun on
@@ -434,4 +470,5 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
 - **Gotchas this session** (docs/skill-gotchas.md): states from an older build hang the emulator on the first touch
   (regen after every build); DeSmuME registerexec = one callback per address; setregister r15 does not jump.
 - **Open bugs:** none.
-- **Waiting on the user:** nothing.
+- **Waiting on the user:** publishing v1.0 (`release/v1.0/Yggdra_Unison_EN_v1.0.zip`, verified) is the user's call;
+  the version number 1.0 was a default (no ruling), rename with `release.py X.Y --force` if wanted.

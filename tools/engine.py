@@ -21,6 +21,7 @@ HOOKS = f"""
     b count11                  @ entry +1C
     b lines_px                 @ entry +20
     b lines_px12               @ entry +24
+    b lines_pxmax              @ entry +28
 
 ov_adv:                      @ ov9_15 0x0211DC8C add r4,r4,#0xB (ending epilogue, one glyph per 0x02012FFC call)
     push {{lr}}                   @ r7 = glyph code, fp = font id; r0-r3/ip are free here
@@ -545,6 +546,15 @@ c11_done:
 
 @ 0x02013274 contract (r0 string, r1 u8 per-line counts, each += n, r2 lines -> r0 total) for callers that centre
 @ a line at 128 - 11 n / 2 (HINT! tips, info band 0x0210E672, territory): n = round(line px / 11), not glyphs.
+lines_pxmax:                 @ territory (ov9_14): both lines start at x from line 2's n; make n the wider line's,
+    push {{r1, lr}}               @ the English puts the long part on line 1 (the Japanese on line 2)
+    bl lines_px
+    pop {{r1, lr}}
+    ldrb r2, [r1]
+    ldrb r3, [r1, #1]
+    cmp r2, r3
+    strbhi r2, [r1, #1]
+    bx lr
 lines_px12:                  @ the same for a caller laying out 12 x n (ov9_10 medallion line)
     push {{r4, r5, r6, r7, r8, r9, r10, r11, lr}}
     mov r9, #12
@@ -711,8 +721,8 @@ OV_SITES = [  # (overlay image, address, original word, entry offset or instruct
     ("ov9_15", 0x0211DC8C, 0xE284400B, 0x10),  # EDMES epilogue text: fixed 11 px advance -> VWF
     ("ov9_15", 0x0211E004, 0xE3A00066, "mov r0, #0x42"),  # EDMES epithet run x 102 -> 66, over the 称号： label
     ("ov9_10", 0x0211C004, 0xEBFBDC9A, 0x24),  # medallion line: 0x02013274 -> lines_px12 (centred 128 - 12 n / 2)
-    ("ov9_14", 0x0211CF58, 0xEBFBD8C5, 0x20),  # territory captured line 2: -> lines_px
-    ("ov9_14", 0x0211CFE0, 0xEBFBD8A3, 0x20),  # capital taken line 2: -> lines_px
+    ("ov9_14", 0x0211CF58, 0xEBFBD8C5, 0x28),  # territory captured, x from line 2: -> lines_pxmax
+    ("ov9_14", 0x0211CFE0, 0xEBFBD8A3, 0x28),  # capital taken, x from line 2: -> lines_pxmax
     ("ov9_18", 0x0211EE38, 0xE3A000A2, "mov r0, #0xa1"),  # unlock-terms count digit x 162 -> 161: centred in the
     # English header's 5-space gap ("any 4of" touched at 162 / 4 spaces; ov9_18:3D58)
 ]

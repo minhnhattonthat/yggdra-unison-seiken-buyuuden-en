@@ -4,7 +4,7 @@
 -- Strings live in RAM buffers (script files) and the EXTRA block, so the key is the content, not the address:
 -- hash = fold of (h * 31 + byte + 1) mod 4294967291 over the bytes before FF (tools/cover.py strhash, keep in step).
 -- Hooks (docs/re/text.md "Draw routines"): dialogue object 0x020128B8 (r3), run 0x02012DF4 (r3), centred
--- 0x020130AC (r2), join 0x020132E0 (parts r1, r2, [sp], [sp+4]; 0 = none).
+-- 0x020130AC (r2), join 0x020132E0 (parts r1, r2, r3, [sp], [sp+4]; 0 = none).
 local seen = {}
 local function text(p)
   if p < 0x02000000 or p >= 0x02400000 then return end
@@ -22,5 +22,5 @@ L.on_exec(0x02012DF4, function() text(r(3)) end)
 L.on_exec(0x020130AC, function() text(r(2)) end)
 L.on_exec(0x020132E0, function()
   local sp = r(13)
-  for _, p in ipairs({ r(1), r(2), memory.readdword(sp), memory.readdword(sp + 4) }) do text(p) end
+  for _, p in ipairs({ r(1), r(2), r(3), memory.readdword(sp), memory.readdword(sp + 4) }) do text(p) end
 end)
