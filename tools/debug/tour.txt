@@ -37,3 +37,5 @@ epilogue_f01    SCENE='epilogue' FACTION=1 EVERY=60 TOUR='90-;6t128,100;90-;6t12
 epilogue_f02    SCENE='epilogue' FACTION=2 EVERY=60 TOUR='90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100;90-;6t128,100'
 credits         SCENE='credits' EVERY=120 TOUR='3600-'
 gameover        SCENE='battle' LUA=tools/lua/spmes.lua CALL=0x0207F04C R0=0 EVERY=60 TOUR='100-;10t16,152;1200-;6t128,100;300-'
+# battle pause menu (BTLMN_FONT): Select, once pausemenu.lua ends the deploy phase
+pause           SCENE='battle' LUA=tools/lua/pausemenu.lua EVERY=60 TOUR='100-;6select;240-;6t128,80;240-;6t20,182;120-;6t128,51;180-;6t128,63;240-;6t162,86;180-;6t20,182;120-;6t128,101;240-;6t162,86;180-;6t162,113;180-;6t20,182;120-;6t128,139;240-;6t20,182;120-;6t20,182;120-;6t128,108;240-;6t187,180;180-'

@@ -147,7 +147,9 @@ to run while any line is unticked.
 - [ ] Session 19 atlases (TR_FONT, TUKOKU_FONT, CDSKILLFNT0/1, ENETREFONT, TREFONT, BTLMN_FONT, SYSTEX): boxes are ink
   rects, none seen drawn: check each on screen (ENETREFONT brush text is drawn straight now, not tilted)
 - [ ] `_unk_` war-event titles/paragraphs (session 20, read off the textures, translated by the controller with no
-  reviewer): story-pass them with the faction voices; not seen on screen (window x unknown: maxw 220 assumed);
+  reviewer): story-pass them with the faction voices. s31: they are the rumor screen 風聞 (FUM_TI<fac><A-E> /
+  FUM<fac><A-E>, task 0x0208ED54 after a story battle), seen on screen via tools/debug/fum.txt; paragraph ink ends
+  <= x 240 (frame pillar 244, original also 240); titles slide in from the right and settle like the original;
   logo variants 5851b4bc/660bec2b/73c6239a: ruby boxes eyeballed, check on screen; _unk_c85ce18c "Town of Tolstoy"
   label (unknown use) and _unk_078801f1 (noise decode, untouched)
 - [ ] TU_* tutorial shots (session 21, labels read off 256 x 100 shots, no reviewer): unread and left Japanese: the
@@ -167,3 +169,18 @@ to run while any line is unticked.
 - [ ] Tutorial top line arm9:93494 "I'll teach you how to win wars." (one line above the band; the 2-line budget in
   lint is wrong for that screen)
 - [ ] MS_M_01 faction_select description "...centered on the royal capital Paltina" fills the 256-px band edge to edge (no period); shorter wording, e.g. "around the royal capital Paltina." (check other MS_M rows for periods)
+- [ ] MS_PRO_002 (sans-b 14): "high-born" kerns r+n into "m" at 1x; check other MS_PRO rows for rn/cl pairs (s31)
+- [ ] EXTRA_FONT "Card Catalog" small label (64-px quad) is visibly smaller than the other menu buttons; the quad
+  is the original's ink width, so a shorter label ("Cards"?) or wider quad would match (s31)
+- [ ] Battle pause menu (BTLMN_FONT): opened by Select (tour case `pause`, tools/lua/pausemenu.lua ends the deploy
+  phase); s32 boxes = the game's quads. Squeezed small in their quads: "Weapon Affinity" (menu button 64 px and
+  table header 54 px), "Weapon/Element" / "Terrain Affinity" (Unit Info buttons, page headers 48-55 px), class cells
+  Knight (22 px) / Witch / Golem (28 px); 回数 / 回 count suffixes blanked ("Smash Hit ... 0"). Tactician's quad
+  was never drawn (class absent): box guessed 208,90,48,12, see it on a battle that has one
+- [ ] MS_PRO prologues show 3-line pages of one texture: pages end mid-sentence (prologue_f02 "leader of a band" /
+  "Taking it as his chance,", f07 "to spread / the faith", f08 "Juvelon's / faction"); rewrap so pages end on a
+  sentence where the line budget allows (codex s32)
+- [ ] Prisoner dialogue one-word last lines ("You are the enemy / general?", "To be captured by / you..."): rewrap
+  or reword (codex s32)
+- [ ] BTLFONT "NOON" on the Terrain Affinity page: the N's left stem comes out as dots one column left (":NOON");
+  the edited PNG matches the original there, so it is the texture re-encode (gfx.py check BTLFONT), not the art

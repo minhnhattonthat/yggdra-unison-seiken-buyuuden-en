@@ -13,43 +13,46 @@ SHOOTNAME09	Rewards	size=28
 SHOOTNAME10	Exploration Prep	size=28
 SHOOTNAME11	Dismissal	size=28
 # World-map place names (WD_N_nn = territory nn, table arm9 A71F0+0: same English as the strings)
-WD_N_00	Castle Bronquia	size=24
-WD_N_01	Imperial Capital Flarewerk	size=24
-WD_N_02	Arc of Triumph	size=24
-WD_N_03	Drominos Marsh	size=24
-WD_N_04	Fort Genoma	size=24
-WD_N_05	Fort Lonaris	size=24
-WD_N_06	Fortress of Ishnad	size=24
-WD_N_07	Canossa Road	size=24
-WD_N_08	Castle Karona	size=24
-WD_N_09	Machina Bridge	size=24
-WD_N_10	North Paltina	size=24
-WD_N_11	South Paltina	size=24
-WD_N_12	Framm Granary	size=24
-WD_N_13	Southwest Marduk	size=24
-WD_N_14	Northwest Marduk	size=24
-WD_N_15	Valley of Lament	size=24
-WD_N_16	Lost Aries	size=24
-WD_N_17	Lunamina Pass	size=24
-WD_N_18	Lenessey Mountains	size=24
-WD_N_19	White Rose Manor	size=24
-WD_N_20	West Verlaine Hills	size=24
-WD_N_21	Black Rose Manor	size=24
-WD_N_22	East Verlaine Hills	size=24
-WD_N_23	Floland	size=24
-WD_N_24	Phelinas Lakeside	size=24
-WD_N_25	Lorca Lakeside	size=24
-WD_N_26	Orlando Plains	size=24
-WD_N_27	Jaws of the Wolf	size=24
-WD_N_28	Norn Canyon	size=24
-WD_N_29	North Nyllard Desert	size=24
-WD_N_30	South Nyllard Desert	size=24
-WD_N_31	Minerroad West End	size=24
-WD_N_32	Holy City of Oz	size=24
-WD_N_33	Temple Cities of Lombardia	size=24
-WD_N_34	St. Meriata Church Domain	size=24
-WD_N_35	Lenessey Volcanic Region	size=24
-WD_N_36	Ancardia, the Lost Paradise	size=24
+# s32: the sortie Targets panel frame spans x ~12-188 and shows the texture centred at ~100 (JP ink 44-159), so the
+# English keeps to 168 px (size from the 24-px height, squeeze to 0.7, then smaller)
+#! WD_N maxw=168 size=24
+WD_N_00	Castle Bronquia
+WD_N_01	Imperial Capital Flarewerk	size=20
+WD_N_02	Arc of Triumph
+WD_N_03	Drominos Marsh
+WD_N_04	Fort Genoma
+WD_N_05	Fort Lonaris
+WD_N_06	Fortress of Ishnad
+WD_N_07	Canossa Road
+WD_N_08	Castle Karona
+WD_N_09	Machina Bridge
+WD_N_10	North Paltina
+WD_N_11	South Paltina
+WD_N_12	Framm Granary
+WD_N_13	Southwest Marduk
+WD_N_14	Northwest Marduk
+WD_N_15	Valley of Lament
+WD_N_16	Lost Aries
+WD_N_17	Lunamina Pass
+WD_N_18	Lenessey Mountains
+WD_N_19	White Rose Manor
+WD_N_20	West Verlaine Hills
+WD_N_21	Black Rose Manor
+WD_N_22	East Verlaine Hills
+WD_N_23	Floland
+WD_N_24	Phelinas Lakeside
+WD_N_25	Lorca Lakeside
+WD_N_26	Orlando Plains
+WD_N_27	Jaws of the Wolf
+WD_N_28	Norn Canyon
+WD_N_29	North Nyllard Desert
+WD_N_30	South Nyllard Desert
+WD_N_31	Minerroad West End
+WD_N_32	Holy City of Oz
+WD_N_33	Temple Cities of Lombardia	size=20
+WD_N_34	St. Meriata Church Domain	size=20
+WD_N_35	Lenessey Volcanic Region	size=20
+WD_N_36	Ancardia, the Lost Paradise	size=20
 # Factions nn = table arm9 A7D00 + nn*0x14 (+0 name, +4 lands, +8 army): same English as the strings
 IN_PRO_000	~ New Bronquian Empire ~	font=sans-b size=12
 IN_PRO_001	~ Kingdom of Fantasinia ~	font=sans-b size=12
@@ -1296,11 +1299,12 @@ BTLFONT	Terrain View	size=11 box=109,184,79,12
 # EXTRA_FONT (Extra Contents menu): small labels drawn at x 120 (quads); the big copies, 称号 and the two
 # title-list headers (top right) are ink rects, not seen drawn yet.
 #! EXTRA_FONT font=sans-b wide=0 align=l
-EXTRA_FONT	Item Catalog	size=12 box=120,24,77,15
-EXTRA_FONT	Sound Mode	size=12 box=120,39,89,15
-EXTRA_FONT	Card Catalog	size=12 box=120,54,64,15
-EXTRA_FONT	Titles	size=12 box=120,69,28,15
-EXTRA_FONT	Back to Title	size=12 box=120,84,79,15
+# s31: menu buttons draw each quad centred, so left-aligned labels sat 4-11 px left of the original's ink (inkx.py)
+EXTRA_FONT	Item Catalog	size=12 align=c box=120,24,77,15
+EXTRA_FONT	Sound Mode	size=12 align=c box=120,39,89,15
+EXTRA_FONT	Card Catalog	size=12 align=c box=120,54,64,15
+EXTRA_FONT	Titles	size=12 align=c box=120,69,28,15
+EXTRA_FONT	Back to Title	size=12 align=c box=120,84,79,15
 EXTRA_FONT	Item Catalog	size=17 box=1,24,101,19
 EXTRA_FONT	Sound Mode	size=17 box=0,44,119,18
 EXTRA_FONT	Card Catalog	size=17 box=0,62,89,19
@@ -1450,51 +1454,54 @@ TREFONT	Stop This Unit Exploring	box=0,99,146,16
 TREFONT	Exploring	font=serif-b box=146,97,56,19
 TREFONT	Selected	box=200,97,42,11
 TREFONT	Dispatched	box=200,108,42,13
-# BTLMN_FONT (battle pause menu, unit info / affinity pages, duel data): weapon headers are 16-px cells
+# BTLMN_FONT (battle pause menu, unit info / affinity pages, duel data): weapon headers are 16-px cells.
+# Boxes = the game's quads (quads.lua on tour case `pause`: logged under a stale slot name after "load .. BTLMN_FONT")
 #! BTLMN_FONT font=sans-b wide=0
 BTLMN_FONT	Resume	box=37,0,77,15
 BTLMN_FONT	Back to Title	box=114,0,99,14
 BTLMN_FONT	Fencer	box=216,0,37,12
-BTLMN_FONT	Unit Info	box=0,16,86,15
+BTLMN_FONT	Unit Info	box=0,15,87,16
 BTLMN_FONT	Retry	box=87,16,49,14
-BTLMN_FONT	Weapon Affinity	box=137,16,63,16
+BTLMN_FONT	Weapon Affinity	box=136,16,64,16
 BTLMN_FONT	Valkyrie	box=213,17,43,12
-BTLMN_FONT	Unit Info	box=0,36,70,14
+BTLMN_FONT	Unit Info	box=0,36,70,15
 BTLMN_FONT	Terrain Affinity	box=72,33,64,16
 BTLMN_FONT	Weapon/Element	box=137,32,71,16
-BTLMN_FONT	Knight	box=210,30,20,11
-BTLMN_FONT	Undine	box=210,42,43,11
-BTLMN_FONT	~Terrain Affinity~	box=0,54,79,15
-BTLMN_FONT	Terrain Affinity	box=80,55,54,12
-BTLMN_FONT	Necromancer	box=134,56,52,12
-BTLMN_FONT	Assassin	box=186,56,32,12
-BTLMN_FONT	Bandit	box=218,56,38,12
-BTLMN_FONT	Skeleton	box=142,68,42,12
-BTLMN_FONT	Witch	box=184,68,28,12
-BTLMN_FONT	Griffon Rider	box=212,68,44,12
-BTLMN_FONT	Terrain	box=23,84,25,14
-BTLMN_FONT	Terrain	box=59,84,27,14
-BTLMN_FONT	Dragoon	box=164,80,42,12
-BTLMN_FONT	Golem	box=206,80,27,12
-BTLMN_FONT	Hunter	box=233,80,23,12
-BTLMN_FONT	The Ancient	box=150,92,62,10
-BTLMN_FONT	Tactician	box=212,92,44,10
-BTLMN_FONT	Weapon Affinity	box=1,99,61,14
-BTLMN_FONT	~Weapon/Element~	box=62,98,64,15
-BTLMN_FONT	Weapon Type	box=128,100,52,12
-BTLMN_FONT	Weapon/Element	box=180,100,58,12
+BTLMN_FONT	Knight	box=209,29,22,12
+BTLMN_FONT	Undine	box=209,41,44,12
+BTLMN_FONT	~Terrain Affinity~	box=0,54,74,15
+BTLMN_FONT	Terrain Affinity	box=80,55,48,12
+BTLMN_FONT	Necromancer	box=132,54,52,12
+BTLMN_FONT	Assassin	box=184,53,31,12
+BTLMN_FONT	Bandit	box=215,53,41,12
+BTLMN_FONT	Skeleton	box=139,66,39,12
+BTLMN_FONT	Witch	box=179,66,28,12
+BTLMN_FONT	Griffon Rider	box=207,65,49,13
+BTLMN_FONT	Terrain	box=22,84,28,14
+BTLMN_FONT	Terrain	box=58,84,28,14
+BTLMN_FONT	Dragoon	box=160,78,36,12
+BTLMN_FONT	Golem	box=196,78,28,12
+BTLMN_FONT	Hunter	box=225,78,31,12
+BTLMN_FONT	The Ancient	box=149,90,59,12
+# Tactician: quad not seen (class absent from the forced battle); guessed from its neighbours
+BTLMN_FONT	Tactician	box=208,90,48,12
+BTLMN_FONT	Weapon Affinity	box=0,99,54,14
+BTLMN_FONT	~Weapon/Element~	box=54,98,84,15
+BTLMN_FONT	Weapon Type	box=138,102,47,12
+BTLMN_FONT	Weapon/Element	box=185,102,55,12
 BTLMN_FONT	Sword	size=9 min_x=0.5 box=0,127,16,16
-BTLMN_FONT	Lance	size=9 min_x=0.5 box=16,127,15,16
+BTLMN_FONT	Lance	size=9 min_x=0.5 box=16,127,16,16
 BTLMN_FONT	Axe	size=9 min_x=0.5 box=32,127,16,16
-BTLMN_FONT	Bow	size=9 min_x=0.5 box=48,127,15,16
+BTLMN_FONT	Bow	size=9 min_x=0.5 box=48,127,16,16
 BTLMN_FONT	Staff	size=9 min_x=0.5 box=64,127,16,16
-BTLMN_FONT	Rock	size=9 min_x=0.5 box=81,127,15,16
+BTLMN_FONT	Rock	size=9 min_x=0.5 box=80,127,16,16
 BTLMN_FONT	Scythe	size=9 min_x=0.5 box=96,127,16,16
 BTLMN_FONT	Book	size=9 min_x=0.5 box=112,127,16,16
-BTLMN_FONT	Uses	box=208,127,42,16
-BTLMN_FONT	Duel Data	font=serif-b box=172,112,84,15
+# 回 (count suffix: after each Duel Data label and number; quad 224,128,12,15) + 数: blanked, "Smash Hit ... 0"
+BTLMN_FONT	 	box=224,127,32,16
+BTLMN_FONT	Duel Data	font=serif-b box=172,114,84,13
 BTLMN_FONT	Duel Data	box=1,144,78,12
-BTLMN_FONT	~ Each Nation's Record in This War ~	box=80,144,155,12
+BTLMN_FONT	~ Records of This War ~	box=80,144,155,12
 # SYSTEX (battle unit info / status, card panel, army names on the battle HUD: 王国軍 seen at the top left)
 #! SYSTEX font=sans-b wide=0
 SYSTEX	Trait	size=10 maxw=19 box=147,20,21,11
@@ -1558,67 +1565,68 @@ _unk_660bec2b	 	clear=fill box=46,5,164,17
 _unk_660bec2b	~ Legend of the Holy Sword ~	font=serif-b size=11 wide=0 clear=row fill=32,24,16 outline=230,230,230 box=55,75,136,14
 _unk_73c6239a	 	clear=fill box=46,5,164,17
 _unk_73c6239a	~ Legend of the Holy Sword ~	font=serif-b size=11 wide=0 clear=row fill=32,24,16 outline=230,230,230 box=55,75,136,14
-# Titles 256 x 24, centred.
-_unk_05d29845	Bandits Expand Their Domain!	font=serif-b size=17
-_unk_06325d9a	Invasion of Fantasinia	font=serif-b size=17
-_unk_0dcc835a	Fall of the Theocracy of Meria	font=serif-b size=17
-_unk_11779d4f	Battle with House Branthese	font=serif-b size=17
-_unk_12d7a155	Grand Landing on Meria	font=serif-b size=17
-_unk_1cbcdd04	Brigands Expand Their Domain!	font=serif-b size=17
-_unk_24b6c819	Forest Alliance Crushed	font=serif-b size=17
-_unk_2861e20e	War to Liberate Bronquia	font=serif-b size=17
-_unk_2ffc07ce	Milanor's Thieves Put Down	font=serif-b size=17
-_unk_33a721c3	House Esmeralda Expands!	font=serif-b size=17
-_unk_37f5f2e3	War to Purify Meria	font=serif-b size=17
-_unk_3ba10cd8	House Branthese Absorbed	font=serif-b size=17
-_unk_3f4c26cd	Wiping Out Milanor's Thieves	font=serif-b size=17
-_unk_46e64c8d	Duchy of Embellia Defeated	font=serif-b size=17
-_unk_4a916682	House Branthese Expands!	font=serif-b size=17
-_unk_4bf16a88	Nessiah's Forces Widen Their Hold!	font=serif-b size=17
-_unk_4ee037a2	Battle with the Temple Knights	font=serif-b size=17
-_unk_528b5197	House Esmeralda Absorbed	font=serif-b size=17
-_unk_53eb559d	Bronquia Erased	font=serif-b size=17
-_unk_56366b8c	Campaign against Nessiah's Forces	font=serif-b size=17
-_unk_5dd0914c	House Esmeralda Subdued	font=serif-b size=17
-_unk_617bab41	The Duchy Widens Its Peace!	font=serif-b size=17
-_unk_62dbaf47	Forest Alliance Expands!	font=serif-b size=17
-_unk_65ca7c61	Invasion of Meria	font=serif-b size=17
-_unk_69759656	Milanor's Thieves Subdued	font=serif-b size=17
-_unk_6ad59a5c	Duchy of Embellia Occupied	font=serif-b size=17
-_unk_74bad60b	Temple Knights Destroyed	font=serif-b size=17
-_unk_7865f000	Thieves Widen Their Freed Lands!	font=serif-b size=17
-_unk_7cb4c120	Down with the Forest Alliance!	font=serif-b size=17
-_unk_805fdb15	Showdown with the Ortega Brigands	font=serif-b size=17
-_unk_87fa00d5	Campaign against Milanor's Thieves	font=serif-b size=17
-_unk_8ba51aca	Forest Alliance Defeated	font=serif-b size=17
-_unk_8f5034bf	Kingdom Expands Its Domain!	font=serif-b size=17
-_unk_939f05df	Struggle with House Branthese	font=serif-b size=17
-_unk_974a1fd4	End of the Bronquian War	font=serif-b size=17
-_unk_9ee44594	War against the Duchy of Embellia	font=serif-b size=17
-_unk_a28f5f89	Dort's Bandits Wiped Out	font=serif-b size=17
-_unk_a3ef638f	Fantasinia Erased	font=serif-b size=17
-_unk_a63a797e	Empire Expands Its Realm!	font=serif-b size=17
-_unk_aa894a9e	Struggle with House Esmeralda	font=serif-b size=17
-_unk_abe94ea4	Plan to Erase Bronquia Begins	font=serif-b size=17
-_unk_ae346493	Kingdom of Fantasinia Subdued	font=serif-b size=17
-_unk_b5ce8a53	Invasion of Esmeralda	font=serif-b size=17
-_unk_b979a448	House Branthese Broken Up	font=serif-b size=17
-_unk_bad9a84e	Theocracy of Meria Crushed	font=serif-b size=17
-_unk_c1738f5d	Battle with Milanor's Thieves	font=serif-b size=17
-_unk_c2d39363	Grand Invasion of Embellia	font=serif-b size=17
-_unk_ccb8cf12	Down with the Temple Knights!	font=serif-b size=17
-_unk_d063e907	Liberation of the Bronquian Empire	font=serif-b size=17
-_unk_d7fe0ec7	Knights Expand Their Reach!	font=serif-b size=17
-_unk_d85dd41c	Campaign against the Ortega Brigands	font=serif-b size=17
-_unk_dff7f9dc	Meria Purified	font=serif-b size=17
-_unk_e3a313d1	Campaign against the Forest Alliance	font=serif-b size=17
-_unk_e74e2dc6	Milanor's Thieves Broken Up	font=serif-b size=17
-_unk_eee85386	Theocracy Expands Its Domain!	font=serif-b size=17
-_unk_ef4818db	The Bronquian War Begins	font=serif-b size=17
-_unk_f6e23e9b	Temple Knights Eradicated	font=serif-b size=17
-_unk_fa8d5890	Campaign against Dort's Bandits	font=serif-b size=17
-_unk_fbed5c96	Plan to Erase Fantasinia Begins	font=serif-b size=17
-_unk_fe387285	Nessiah's Forces Defeated	font=serif-b size=17
+# Titles 256 x 24, centred: rumor screen 風聞 FUM_TI<fac><A-E> (tools/debug/fum.txt). maxw 216: the frame pillars
+# start at x 244 and the original's ink spans x 24-233 at most (s31: long ones ran x 1-254).
+_unk_05d29845	Bandits Expand Their Domain!	font=serif-b size=17 maxw=216
+_unk_06325d9a	Invasion of Fantasinia	font=serif-b size=17 maxw=216
+_unk_0dcc835a	Fall of the Theocracy of Meria	font=serif-b size=17 maxw=216
+_unk_11779d4f	Battle with House Branthese	font=serif-b size=17 maxw=216
+_unk_12d7a155	Grand Landing on Meria	font=serif-b size=17 maxw=216
+_unk_1cbcdd04	Brigands Expand Their Domain!	font=serif-b size=17 maxw=216
+_unk_24b6c819	Forest Alliance Crushed	font=serif-b size=17 maxw=216
+_unk_2861e20e	War to Liberate Bronquia	font=serif-b size=17 maxw=216
+_unk_2ffc07ce	Milanor's Thieves Put Down	font=serif-b size=17 maxw=216
+_unk_33a721c3	House Esmeralda Expands!	font=serif-b size=17 maxw=216
+_unk_37f5f2e3	War to Purify Meria	font=serif-b size=17 maxw=216
+_unk_3ba10cd8	House Branthese Absorbed	font=serif-b size=17 maxw=216
+_unk_3f4c26cd	Wiping Out Milanor's Thieves	font=serif-b size=17 maxw=216
+_unk_46e64c8d	Duchy of Embellia Defeated	font=serif-b size=17 maxw=216
+_unk_4a916682	House Branthese Expands!	font=serif-b size=17 maxw=216
+_unk_4bf16a88	Nessiah's Forces Widen Their Hold!	font=serif-b size=17 maxw=216
+_unk_4ee037a2	Battle with the Temple Knights	font=serif-b size=17 maxw=216
+_unk_528b5197	House Esmeralda Absorbed	font=serif-b size=17 maxw=216
+_unk_53eb559d	Bronquia Erased	font=serif-b size=17 maxw=216
+_unk_56366b8c	Campaign against Nessiah's Forces	font=serif-b size=17 maxw=216
+_unk_5dd0914c	House Esmeralda Subdued	font=serif-b size=17 maxw=216
+_unk_617bab41	The Duchy Widens Its Peace!	font=serif-b size=17 maxw=216
+_unk_62dbaf47	Forest Alliance Expands!	font=serif-b size=17 maxw=216
+_unk_65ca7c61	Invasion of Meria	font=serif-b size=17 maxw=216
+_unk_69759656	Milanor's Thieves Subdued	font=serif-b size=17 maxw=216
+_unk_6ad59a5c	Duchy of Embellia Occupied	font=serif-b size=17 maxw=216
+_unk_74bad60b	Temple Knights Destroyed	font=serif-b size=17 maxw=216
+_unk_7865f000	Thieves Widen Their Freed Lands!	font=serif-b size=17 maxw=216
+_unk_7cb4c120	Down with the Forest Alliance!	font=serif-b size=17 maxw=216
+_unk_805fdb15	Showdown with the Ortega Brigands	font=serif-b size=17 maxw=216
+_unk_87fa00d5	Campaign against Milanor's Thieves	font=serif-b size=17 maxw=216
+_unk_8ba51aca	Forest Alliance Defeated	font=serif-b size=17 maxw=216
+_unk_8f5034bf	Kingdom Expands Its Domain!	font=serif-b size=17 maxw=216
+_unk_939f05df	Struggle with House Branthese	font=serif-b size=17 maxw=216
+_unk_974a1fd4	End of the Bronquian War	font=serif-b size=17 maxw=216
+_unk_9ee44594	War against the Duchy of Embellia	font=serif-b size=17 maxw=216
+_unk_a28f5f89	Dort's Bandits Wiped Out	font=serif-b size=17 maxw=216
+_unk_a3ef638f	Fantasinia Erased	font=serif-b size=17 maxw=216
+_unk_a63a797e	Empire Expands Its Realm!	font=serif-b size=17 maxw=216
+_unk_aa894a9e	Struggle with House Esmeralda	font=serif-b size=17 maxw=216
+_unk_abe94ea4	Plan to Erase Bronquia Begins	font=serif-b size=17 maxw=216
+_unk_ae346493	Kingdom of Fantasinia Subdued	font=serif-b size=17 maxw=216
+_unk_b5ce8a53	Invasion of Esmeralda	font=serif-b size=17 maxw=216
+_unk_b979a448	House Branthese Broken Up	font=serif-b size=17 maxw=216
+_unk_bad9a84e	Theocracy of Meria Crushed	font=serif-b size=17 maxw=216
+_unk_c1738f5d	Battle with Milanor's Thieves	font=serif-b size=17 maxw=216
+_unk_c2d39363	Grand Invasion of Embellia	font=serif-b size=17 maxw=216
+_unk_ccb8cf12	Down with the Temple Knights!	font=serif-b size=17 maxw=216
+_unk_d063e907	Liberation of the Bronquian Empire	font=serif-b size=17 maxw=216
+_unk_d7fe0ec7	Knights Expand Their Reach!	font=serif-b size=17 maxw=216
+_unk_d85dd41c	Campaign against the Ortega Brigands	font=serif-b size=17 maxw=216
+_unk_dff7f9dc	Meria Purified	font=serif-b size=17 maxw=216
+_unk_e3a313d1	Campaign against the Forest Alliance	font=serif-b size=17 maxw=216
+_unk_e74e2dc6	Milanor's Thieves Broken Up	font=serif-b size=17 maxw=216
+_unk_eee85386	Theocracy Expands Its Domain!	font=serif-b size=17 maxw=216
+_unk_ef4818db	The Bronquian War Begins	font=serif-b size=17 maxw=216
+_unk_f6e23e9b	Temple Knights Eradicated	font=serif-b size=17 maxw=216
+_unk_fa8d5890	Campaign against Dort's Bandits	font=serif-b size=17 maxw=216
+_unk_fbed5c96	Plan to Erase Fantasinia Begins	font=serif-b size=17 maxw=216
+_unk_fe387285	Nessiah's Forces Defeated	font=serif-b size=17 maxw=216
 _unk_0101355c	Through Queen Emelone's valiant fight,\nthe Duchy of Embellia has conquered\nHouse Branthese, ruled by Roswell.\n\nRoswell's sorcery-wielding troops gave\nher a hard fight, but Emelone's greater\nexperience won the day, and House\nBranthese fell to her.\nYet this war did not show her what she\nseeks: "why people turn to evil."\nAnd so the queen renews her resolve\nto march her army onward...	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220
 _unk_04c46d96	Wanting their selfishness, called\n"freedom," to go unchecked, the Ortega\nBrigands seek to rid themselves of the\nrule-obsessed Temple Knights.\n\nTo Ortega the brigand king, those nagging\nTemple Knights, ever in the way of his\nmen's free and easy ways, were nothing\nbut a nuisance.\nHis patience finally snapped. Resolved\nto wipe out the Temple Knights, he\ngathers his men and decides to invade\ntheir lands to strike them down.	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220
 _unk_0887a5d0	The Temple Knights have struck down\nthe hollow Theocracy of Meria, which\nscorned the faith and chased only gold.\n\nTemple Knight Commander Gordon struck\ndown the Theocracy, root of the rot,\nto set the corrupt faith right and\nmend the world. But he learns the rot\nis not confined to the Theocracy:\nit has spread to the world beyond.\nTo lay the path of true faith anew,\nhe sets out on a crusade against it!	font=sans-b align=l size=12 box=19,0,220,234 rows=13 maxw=220

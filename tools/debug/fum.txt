@@ -1,0 +1,64 @@
+# Rumor screen 風聞 (FUM_TI<fac><A-E> title, FUM<fac><A-E> paragraph), forced in battle via spmes.lua CALL=0x0208ED54 + fumfac.lua.
+# Modes B/D/E (R0 1/3/4) open a castle BG + bottom dialogue that the forced view can't finish, so their textures are
+# shown in the mode-A layout (LETTER swaps the file letter; same 256 x 24 / 256 x 240 textures).
+# python -X utf8 tools/debug/regen.py --list tools/debug/fum.txt --qa work/qa/fum_en --rom build/yggdra_en.nds  (and --qa work/qa/fum_jp on rom/yggdra.nds)
+fum_00A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=0
+fum_00B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=0
+fum_00C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=0
+fum_00D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=0
+fum_00E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=0
+fum_01A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=1
+fum_01B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=1
+fum_01C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=1
+fum_01D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=1
+fum_01E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=1
+fum_02A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=2
+fum_02B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=2
+fum_02C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=2
+fum_02D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=2
+fum_02E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=2
+fum_03A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=3
+fum_03B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=3
+fum_03C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=3
+fum_03D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=3
+fum_03E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=3
+fum_04A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=4
+fum_04B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=4
+fum_04C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=4
+fum_04D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=4
+fum_04E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=4
+fum_05A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=5
+fum_05B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=5
+fum_05C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=5
+fum_05D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=5
+fum_05E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=5
+fum_06A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=6
+fum_06B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=6
+fum_06C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=6
+fum_06D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=6
+fum_06E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=6
+fum_07A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=7
+fum_07B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=7
+fum_07C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=7
+fum_07D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=7
+fum_07E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=7
+fum_08A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=8
+fum_08B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=8
+fum_08C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=8
+fum_08D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=8
+fum_08E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=8
+fum_09A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=9
+fum_09B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=9
+fum_09C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=9
+fum_09D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=9
+fum_09E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=9
+fum_10A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=10
+fum_10B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=10
+fum_10C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=10
+fum_10D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=10
+fum_10E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=10
+fum_11A  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua FAC=11
+fum_11B  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='B' FAC=11
+fum_11C  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=2 LUA=tools/lua/fumfac.lua FAC=11
+fum_11D  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='D' FAC=11
+fum_11E  SCENE='battle' EVERY=60 TOUR='100-;10t16,152;1200-' LUA=tools/lua/spmes.lua CALL=0x0208ED54 R0=0 LUA=tools/lua/fumfac.lua LETTER='E' FAC=11

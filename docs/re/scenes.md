@@ -32,6 +32,12 @@
   5 owns no start territory.
 
 ## Text loaders
+- Rumor screen 風聞 (verified s31): task `0x0208ED54(n)` (arm9, main 0x0208E75C) loads FUM_BG0-3, FUM_TI<faction
+  %02d><'A'+n> (256 x 24 title) and FUM<faction><'A'+n> (256 x 240 paragraph); faction from 0x02043464; n 0/2 take
+  one layout, 1/3/4 branch at 0x0208EE50. Callers: battle end 0x02080908 (n = byte +0xE) and 0x0204C2D4.
+  Forced by tools/debug/fum.txt. Modes 1/3/4 (B/D/E) open a castle BG (FUM_BG2/3) + a bottom-screen dialogue; in the
+  forced battle view they never draw the title/paragraph quads and a tap blacks the screen, so fum.txt shows their
+  textures in the mode-0 layout (fumfac.lua LETTER= swaps the sprintf letter r5).
 - MESSAGE%03d: `0x02078760(file, r1, r2, r3, [sp])`, ~70 call sites in arm9 and overlays 10-19 (per-scene events).
   Seen: faction select confirm -> MESSAGE000, card select -> 008, sortie -> 009.
 - SPMES%03d%03d: `0x020771FC`, numbers from bytes at `*(battle+0x34)`, `*(battle+0x38)` (battle object from 0x0206F9D4).
@@ -57,8 +63,14 @@
   0x0207EB44, fade, then 0x0207FAA0 loads GMOVERBG / GMOVERFONT: "Give it up?" Retry / Easy Retry / Back to Title,
   plus a HINT! tip). Callers 0x0207CEBC (r0 0, battle end code 0x0E) and 0x0207CED0 (r0 1, code 9).
 - Warp: tour.txt `gameover` = battle + spmes.lua `CALL=0x0207F04C R0=0`, tap own castle (t16,152).
-- Battle: the bottom screen waits on "Touch" (no animation at all while idle); start / t9,9 opened no pause menu, so
-  the BTLMN pause menu tap is still unknown.
+- Battle: the bottom screen waits on "Touch" (no animation at all while idle).
+- **Battle pause menu (BTLMN_FONT, verified s32):** Select. Input handler 0x0204DF98..0x0204E01C: `0x0204BE78(1, id)`
+  = keypad test (id 6 -> mask 4 Select, 5 -> 8 Start, 4 -> 0x300 L/R ...); Select calls the menu loader 0x02089728
+  only while battle flags 0x0211A874 == 0 (or has 0x1000). The warp's battle sits in the deploy phase: flags 0x2000
+  (set at 0x02057598 by task 0x02057278, cleared at 0x02057BB0 when the deploy ends). `tools/lua/pausemenu.lua`
+  clears it once, then Select works (TIME starts running). Tour case `pause` walks Weapon Affinity, Unit Info >
+  Weapon/Element (UNIT 2 t162,86), Terrain Affinity (UNIT 2, Terrain 2 t162,113), Duel Data, Retry confirm.
+  quads.lua logs its quads under a stale slot name ("MS_PRO_001") after `load .. BTLMN_FONT`.
 
 ## Not reached yet
 - Specific stages / SPMES events, specific MESSAGE events, per-faction battles (ATTACK_TAP is set for faction 1) and

@@ -8369,7 +8369,7 @@
    "id": "arm9:919E0",
    "font": "sys",
    "jp": "領土拡大中",
-   "en": "Expanding territory",
+   "en": "Expanding",
    "max": 12,
    "ptrs": [
     "ov9_14:18F0"
@@ -13425,7 +13425,7 @@
    "id": "arm9:94C94",
    "font": "sys",
    "jp": "ユニットクラス別の地形相性一覧です\n時間帯によって地形相性は変化します",
-   "en": "Terrain affinity by unit class.\nAffinity changes\nwith the time of day.",
+   "en": "Terrain affinity by unit class.\nIt changes with the time of day.",
    "max": 52,
    "ptrs": [
     "arm9:8CCD4"

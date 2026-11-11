@@ -3,7 +3,56 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 30 latest).
+- **Phase:** 8. QA in the emulator in progress (phase 7 done 2026-11-10, session 13; session 32 latest).
+- **Phase 8 progress (session 32):** **build 2026-11-11 15:02 sha1 76bd7aa5 (smoke ok)**; tour rerun 37/37 on it
+  (new case `pause`), `qa_gate.py init ... --build` done; textcover exit 0 (13,637 + 86 waived; strings.tsv
+  regenerated). **Battle pause menu found: Select**, gated by battle flags 0x0211A874 (deploy phase 0x2000);
+  `tools/lua/pausemenu.lua` clears it (docs/re/scenes.md). BTLMN_FONT boxes re-cut to the game's own quads (quads.lua
+  logs them under a stale name, gotcha logged): fixed clipped "Weapon Affini" / "Terrain Affini" / "apon Type W"
+  headers, band titles bleeding neighbours ("ty~Weapon/Element~We"), class cells with neighbours' ink ("m Hunter",
+  Assassin, Griffon Rider), weapon-row residue ("Lance/", "'Rock"), Duel Data "ses"/"0≤€" (回数 / 回 suffix cells
+  blanked, → kept), header 各種記録 mistranslated ("Each Nation's Record" -> "~ Records of This War ~"); terrain page
+  description arm9:94C94 3 lines over the buttons -> 2 lines. Seen against tour_jp in zoomed frames (work/qa/tour/
+  pause). **Rumor modes B/D/E**: forced view never draws them (castle BG + dialogue; a tap blacks out), so fum.txt now
+  shows their textures in the mode-A layout (`fumfac.lua LETTER=`): all 36 titles + paragraphs English
+  (work/qa/fum_en/bde_0-2.png). Verdicts: s32_pause.tsv by hand; the 36 other changed sheets (timing shifts) went to
+  codex (`sh tools/qareview.sh work/qa/chunks_s32 work/qa/verdicts_s32`, copied in as verdicts/s32_chunk_*.tsv).
+  States regenerated on 76bd7aa5 (**stale again**: regen on bb4818f3 before using states). Then (session 32b) codex
+  fixes: WD_N place names spilled past the sortie Targets frame (x 4-195; frame 12-188) -> `#! WD_N maxw=168 size=24`
+  (5 long names size 20); territory "Expanding territory" (x fixed at 91, ran to 224) -> arm9:919E0 "Expanding"
+  (centre 127 vs original 126.5). **Build 2026-11-11 15:45 sha1 bb4818f3 (smoke ok)**; reran sortie territory
+  faction_select war_report card_select + ending_f01 (`--jobs 1`: the dark bands codex saw were parallel capture
+  tears, gone alone), manifest re-inited on bb4818f3 (stale sortie/sheet_2 row dropped), textcover exit 0 on it.
+  Codex prologue/prisoner wrap flags ruled ok by the controller (verdicts/s32_ruling.tsv, polish lines added).
+  **Gate: 107 sheets, 2 issue** -> **next worker, in order:** (1) territory/sheet_2: capture composite (glossary.md
+  "composite sentences": "Battle won! " + army + " took\n" + territory + "!", pieces arm9:919EC / ov9_14:1900 ' took\n'
+  / ...) is a **mistranslation**: JP 激戦を制し…\n + army + より、 + territory + を占領！ = territory captured *from*
+  that army; EN says the army took it. Also line 1 starts at x ~73 (count-based x, not lines_px) and runs off the
+  right edge (tour_jp/territory t00540 vs tour). Reword so piece 1 ends in \n like the JP ("Battle won!\n" + "Took "
+  ...? check every army x territory with lint) and/or move the caller to lines_px (text.md "Per-line centring
+  counts"); rerun territory, re-verdict. (2) sortie/sheet tile 3: unit card top-left shows "Bounty Hunter" (codex
+  wants "Mizer"): compare with tour_jp (JP card may show the epithet too) and verdict. (3) Tactician BTLMN cell never
+  drawn (box guessed, polish). Then phase 8 done-when is met: set Phase 9.
+- **Phase 8 progress (session 31b):** **build 2026-11-11 12:40 sha1 5056ec2f (smoke ok); QA gate green on it**
+  (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0, 105 sheets). States regenerated 35/35 on
+  c2cf9a8f (5056ec2f differs only in EXTRA_FONT + FUM_TI textures, none loaded by a saved scene). Tour rerun on
+  c2cf9a8f: 31 changed sheets verdicted by hand (work/qa/verdicts/s31.tsv; codex out until 13:07). On 5056ec2f only
+  extras was rerun (work/qa/tour/extras); the other sheets are the reviewed c2cf9a8f ones (verdicts re-issued in
+  s31c.tsv: a second tour flip-flops timing variants of fades and the gate's verdicts are time-based, so each rerun
+  re-asks for sheets already seen). **War-event `_unk` titles = the rumor screen 風聞**: FUM_TI<faction %02d><A-E>
+  title + FUM<faction><A-E> paragraph, task 0x0208ED54(n) (arm9; called after a story battle at 0x02080908,
+  faction from 0x02043464). Forced from battle via `tools/debug/fum.txt` (60 cases; spmes.lua CALL + new
+  `tools/lua/fumfac.lua` FAC=): modes A and C (24) show title + paragraph English on screen
+  (work/qa/fum_en/mosaic_NN.png; battle HUD bleeds into the strip there, the original does the same); modes B/D/E
+  take another path whose layers the battle BG hides in this forced view. **Fixes:** 28 titles ran x 1-254 over the
+  frame pillars (x 244+; original ink 24-233) -> maxw=216 on all 60 (now x 20-237); paragraphs all end <= x 240
+  (original 240). EXTRA_FONT menu labels were align=l in quads the game centres on the buttons: Sound Mode 10 px,
+  Back to Title 6 px left of the original -> align=c, now within 2 px (tools/inkx.py vs tour_jp, zoom checked).
+  Title menu and FILE tabs are the original's own English (pixel-identical). **Left for the done-when:** (1) battle
+  pause menu (BTLMN_FONT Resume / Back to Title / Retry): trigger still unknown (start, top-left diamond, X do
+  nothing on the deploy or Touch screens; docs/re/scenes.md:60): find the pause task (BTLMN_FONT.PACK loader via
+  hashlookup.lua + xref) and inkx it; (2) rumor modes B/D/E on screen (follow 0x0208EE50, or force from a calmer
+  scene than battle). Then phase 9. Polish items added in docs/polish.md.
 - **Phase 8 progress (session 31):** **textcover exit 0: 13,637/13,723 shown + 86 waived, 0 failing**
   (`textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv`). build/strings.tsv was stale (built
   before the ov9_18 header's 5th space): rerun `tools/cover.py` after any script edit. The 180 code-loaded prompts,
@@ -21,11 +70,7 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   (91,42,4,6: "0+00", label read "lay Time") and its top row bled under "load" (the prompt quad draws one row past
   v 39) -> box 96,41,45,10; seen clean (work/qa/s31_load_slot.png). **Build 2026-11-11 10:09 sha1 c2cf9a8f (smoke
   ok)**; work/states are older (regen before graphics checks).
-  **Next worker (rest of the done-when):** (1) regen states, rerun the QA tour on c2cf9a8f (machine idle; keep a
-  tour_prev copy), `qa_gate.py init work/qa/manifest.tsv work/qa/tour --glob "*/sheet*.png" --build
-  build/yggdra_en.nds`, verdicts for the changed sheets (save / load / faction_select likely; add a load case with
-  `--sav work/states/save1.dsv` if tour.txt can take it); (2) war-event `_unk` titles on screen (war_report on a later
-  turn; hashlookup.lua names them); (3) inkbox on any choice / centred box not yet checked (title menu); then phase 9.
+  (Its "next worker" list was done in session 31b above.)
 - **Phase 8 progress (session 30):** textcover **13,038 -> 13,429/13,723 + 111 waived (183 failing)**:
   `textcover.py work/qa build/strings.tsv --waive docs/text_unshown.tsv` (work/qa/cover2/* logs). **States
   regenerated 35/35 on build 23:44** (all were older: old RAM text). New forcers (each header has its run line):
