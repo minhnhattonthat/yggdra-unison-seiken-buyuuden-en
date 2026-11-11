@@ -3,8 +3,10 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (session-by-session
 phase 5 notes: `git show 1765c13:docs/status.md`).
 
-- **Phase:** 9. Release done 2026-11-11 (session 33b): `release/v1.0/Yggdra_Unison_EN_v1.0.zip` built and verified,
-  not published (never `gh release create`; publishing is the user's call).
+- **Phase:** 9. Release done and **published 2026-11-12** (user's go, D8): repo public,
+  https://github.com/minhnhattonthat/yggdra-unison-seiken-buyuuden-en/releases/tag/v1.0 (zip sha1 7f5a69fd, downloaded
+  back and identical; notes in release/v1.0/notes.md). Description fixed to the real game title. Next: player bug
+  reports (`gh issue list --label bug`).
 - **Release v1.0 (session 33b):** `python -X utf8 tools/release.py 1.0 --skip-tests` (check.py ran green just
   before on this tree: 24 passed, lint 0, batches 0) -> release ok: build sha1 8ca7f876 (rebuild identical),
   smoke, romcheck, jp_left, both qa gates, textcover, polish, README, patch 2,006,664 bytes re-applied and
@@ -470,5 +472,5 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
 - **Gotchas this session** (docs/skill-gotchas.md): states from an older build hang the emulator on the first touch
   (regen after every build); DeSmuME registerexec = one callback per address; setregister r15 does not jump.
 - **Open bugs:** none.
-- **Waiting on the user:** publishing v1.0 (`release/v1.0/Yggdra_Unison_EN_v1.0.zip`, verified) is the user's call;
-  the version number 1.0 was a default (no ruling), rename with `release.py X.Y --force` if wanted.
+- **Waiting on the user:** nothing. Optional: the pre-commit check takes ~55 min (pytest, likely full ROM builds in
+  tests); `pytest --durations=10` would show which tests to mark slow.

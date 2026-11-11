@@ -13,3 +13,4 @@ decision replaces one, mark the old one "replaced by D<n>" instead of deleting i
 | D5 | 2026-11-09 | Graphics text left in Japanese | none (default), list | Translate all (titles, menus, banners, cards); keep the Japanese logo only if no official English version exists. |
 | D6 | 2026-11-09 | Specs and plans | need approval, pre-approved | Pre-approved: keep going through checkpoints, report at the end. |
 | D7 | 2026-11-09 | Existing saves / savestates | user-provided, none | None provided; build the debug tool as usual. |
+| D8 | 2026-11-11 | Publishing v1.0 | release on private repo, make public + release | Make the repo public and publish the v1.0 release (user, session 33b). Version 1.0 was the default. |
