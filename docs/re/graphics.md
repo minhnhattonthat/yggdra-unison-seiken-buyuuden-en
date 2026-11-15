@@ -26,7 +26,7 @@ Counts are files. "atlas" = many labels packed in one texture (needs the layout:
 | OP_WR | 1 | opening prologue scroll (~26 lines) | tall 256-wide texture |
 | OPK_WR_00-11, MS_PRO_000-011 | 24 | faction-select descriptions (7 lines) and faction prologues (10-14 lines) | |
 | MS_M_00-11, MS_N_00-36 | 49 | faction / territory descriptions (2 lines) | |
-| IN_PRO_000-011, TM_M_00-11, EVSFORCE00-11, ED_H_90928/91928/92928 | ~40 | faction and force names (~新生ブロンキア帝国~, 帝国軍 ...) | |
+| IN_PRO_000-011, TM_M_00-11, EVSFORCE00-11 (TM_M_07-09 were misnamed ED_H_90928/91928/92928: hash collision, issue #2) | ~40 | faction and force names (~新生ブロンキア帝国~, 帝国軍 ...) | |
 | WD_N_00-36 | 37 | world-map place names (ブロンキア城 帝都フレアヴェルク ...) | names per glossary |
 | CN_M_00-11, CN_N_00-36, CNAMEA00-71, CNAMEB000-254, CNAMEC00-71 | ~270 | character / class name plates (1-line, 2-line title+name, tiny strips) | CNAMEC is 2bpp |
 | CARDNAMEA00-35, CDS_000-035, CS_M_00-35, CDSEL_MAT, CDSKILLFNT0/1 | ~110 | card names (small), card description panels, card effect one-liners, 未鑑定カード選択, カードスキル発動 / カード鑑定 | CARDNAMEB is already English |
