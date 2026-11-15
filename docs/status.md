@@ -7,6 +7,12 @@ phase 5 notes: `git show 1765c13:docs/status.md`).
   https://github.com/minhnhattonthat/yggdra-unison-seiken-buyuuden-en/releases/tag/v1.0 (zip sha1 7f5a69fd, downloaded
   back and identical; notes in release/v1.0/notes.md). Description fixed to the real game title. Next: player bug
   reports (`gh issue list --label bug`).
+- **Issue #2 fixed (2026-11-15, branch fix/issue-2, unreleased):** faction names of Dort's Bandits, Theocracy of
+  Meria and Temple Knights were Japanese (faction select panel + attract intro). TM_M_07-09 hash-collide with
+  ED_H_90928/91928/92928 (a 10^6-name guess of `ED_H_%d%d`); sfs_dump.py took the first name, so the textures were
+  never redrawn. sfs_dump.py now prefers the pattern with the best hit rate; tbl/sfs_names.tsv regenerated (only
+  those 3 changed); gfx rows + PNGs added; seen English at faction_select FACTION=7/8/9. Known leftover misname:
+  WD_50 reads as SPMES173112 (art only, no text). Build sha1 93e5ad05 (smoke ok).
 - **Release v1.0 (session 33b):** `python -X utf8 tools/release.py 1.0 --skip-tests` (check.py ran green just
   before on this tree: 24 passed, lint 0, batches 0) -> release ok: build sha1 8ca7f876 (rebuild identical),
   smoke, romcheck, jp_left, both qa gates, textcover, polish, README, patch 2,006,664 bytes re-applied and

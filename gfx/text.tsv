@@ -75,6 +75,9 @@ TM_M_03	Duchy of Embellia	size=22 align=l box=60,0,136,24 maxw=136
 TM_M_04	House Branthese	size=22 align=l box=60,0,136,24 maxw=136
 TM_M_05	House Esmeralda	size=22 align=l box=60,0,136,24 maxw=136
 TM_M_06	Ortega Brigands	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_07	Dort's Bandits	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_08	Theocracy of Meria	size=22 align=l box=60,0,136,24 maxw=136
+TM_M_09	Temple Knights	size=22 align=l box=60,0,136,24 maxw=136
 TM_M_10	Forest Alliance	size=22 align=l box=60,0,136,24 maxw=136
 TM_M_11	Nessiah's Forces	size=22 align=l box=60,0,136,24 maxw=136
 EVSFORCE00	Imperial Army	size=15 align=l

@@ -44,8 +44,8 @@ def candidate_names():
         for n in expand(pat):
             stem = n.rsplit(".", 1)[0] if "." in n else n
             for ext in EXTS:
-                yield stem + ext
-            yield n
+                yield pat, stem + ext
+            yield pat, n
 
 
 def main():
@@ -53,11 +53,16 @@ def main():
     data = (ROOT / "work/fs/DATA.SFS").read_bytes()
     ents = sfs.read_dir(arm9, len(data))
     by_hash = {e[0]: e for e in ents}
-    names = {}
-    for n in candidate_names():
+    cands, hits, tried = {}, {}, {}
+    for pat, n in candidate_names():
+        tried[pat] = tried.get(pat, 0) + 1
         h = sfs.name_hash(n)
-        if h in by_hash and h not in names:
-            names[h] = n
+        if h in by_hash:
+            cands.setdefault(h, {}).setdefault(pat, n)
+            hits.setdefault(pat, set()).add(h)
+    # 32-bit hashes collide (TM_M_07 = ED_H_90928 from a 10^6-name guess): take the name from the pattern
+    # whose guesses hit most often
+    names = {h: max(c.items(), key=lambda pn: (len(hits[pn[0]]) / tried[pn[0]], pn[0]))[1] for h, c in cands.items()}
     out = ROOT / "work/sfs"
     if out.exists():
         shutil.rmtree(out)  # work/ only: stale names from an earlier run would duplicate files
